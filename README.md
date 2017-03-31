@@ -1,3 +1,0 @@
-"# RPDigital" 
-"# RPDigitel" 
-"# RPDigitel" 
