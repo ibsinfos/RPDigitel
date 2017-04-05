@@ -1,0 +1,103 @@
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+    .mob-brand{
+        height:50px;
+        padding-left:20px !important;
+    }
+    .mob-center{
+        margin-left:25% !important;
+    }
+    .collapse
+    {
+        overflow-y: scroll !important;
+        max-height: 400px !important;
+    }
+}
+@media only screen and (min-width: 371px) and (max-width: 424px) {
+    .mob-brand{
+        height:60px;
+        padding-left:20px !important;
+    }
+    .mob-center{
+        margin-left:25% !important;
+    }
+    .collapse
+    {
+        overflow-y: scroll !important;
+        max-height: 450px !important;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 480px) {
+    .mob-brand{
+        height:60px;
+        padding-left:20px !important;
+    }
+    .mob-center{
+        margin-left:35% !important;
+    }
+    .collapse
+    {
+        overflow-y: scroll !important;
+        max-height: 450px !important;
+    }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .mob-brand{
+        height:70px;
+        padding-left:20px !important;
+    }
+    .collapse
+    {
+        overflow-y: scroll !important;
+        max-height: 450px !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .collapse
+    {
+        overflow-y: scroll !important;
+        max-height: 450px !important;
+    }
+    .mob-center{
+        margin-left:40% !important;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1366px) {
+
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1450px) {
+
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+
+}
+
+@media only screen and (max-width: 1330px) {
+
+}
+
+@media only screen and (min-width: 1330px) {
+
+}
+
+@media screen and (max-width: 1920px) {
+
+}

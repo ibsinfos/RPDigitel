@@ -1,0 +1,382 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 30px 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow:hidden;
+    background-color: #000000;
+    z-index:6;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+/*custom*/
+.top-navlinks{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.login {
+    margin-top:27px;
+}
+.set-logo {
+    background:#fff;
+    color:#ddd;
+    border-radius:500%;
+    padding:11px;
+    border: solid #ddd 14px;
+}
+.logo {
+    margin-top:27px;
+    margin-bottom:50px;
+}
+
+.last-row {
+    margin-bottom:0px;
+}
+
+.checklabel {
+    font-weight:100;
+}
+.well{
+    z-index: 0;
+    min-height: 20px;
+    padding: 80px 0 60px 0;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.btn-red{
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ac2925;
+}
+.input-lg{
+    font-size:17px;
+    height:40px;
+    font-style: italic;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.item:nth-child(1) {
+    background: url(../images/music-lovers.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(2) {
+    background: url(../images/building.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(3) {
+    background: url(../images/iceworker.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title {
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px #000;
+    color: #FFF;
+}
+h3{
+    font-size: 22px;
+}
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 0;
+    position: fixed;
+    background: #FFFFFF;
+}
+.carousel-control:focus, .carousel-control:hover{
+    opacity:0.7;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+.carousel{
+    position: absolute;
+}
+.carousel-inner{
+    position: fixed;
+}
+#facebook {
+    background-image: url(../images/social-icons/facebook.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#facebook:hover{
+    background-image: url(../images/social-icons/facebook-red.png);
+    height:40px;
+}
+#google-plus {
+    background-image: url(../images/social-icons/google-plus.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#google-plus:hover{
+    background-image: url(../images/social-icons/google-plus-red.png);
+    height:40px;
+}
+#twitter{
+    background-image: url(../images/social-icons/twitter.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#twitter:hover{
+    background-image: url(../images/social-icons/twitter-red.png);
+    height:40px;
+}
+#instagram {
+    background-image: url(../images/social-icons/instagram.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#instagram:hover{
+    background-image: url(../images/social-icons/instagram-red.png);
+    height:40px;
+}
+#linkedin {
+    background-image: url(../images/social-icons/linkedin.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#linkedin:hover{
+    background-image: url(../images/social-icons/linkedin-red.png);
+    height:40px;
+}
+#behance {
+    background-image: url(../images/social-icons/behance.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#behance:hover{
+    background-image: url(../images/social-icons/behance-red.png);
+    height:40px;
+}
+#share {
+    background-image: url(../images/social-icons/share.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+#share:hover{
+    background-image: url(../images/social-icons/share-red.png);
+    height:40px;
+}
+
+
