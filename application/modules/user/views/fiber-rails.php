@@ -241,9 +241,10 @@
                             <p class="card-text">Simplify networking, domain and webhosting with a single secured solution that caters to Startup and small businesses at every stage of growth.</p>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-danger btn-block" name="submit" type="submit">
+                            <a href="#" class="btn btn-danger btn-block">
                                 View Service
-                            </button>
+                          
+                            </a>
                         </div>
                     </div>
                     <div class="card col-md-3 col-sm-4">
@@ -285,9 +286,10 @@
                             <p class="card-text">Simplify networking, domain and webhosting with a single secured solution that caters to Startup and small businesses at every stage of growth.</p>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-danger btn-block" name="submit" type="submit">
+                           <a href="<?php echo base_url(); ?>user/Silo_wallet" class="btn btn-danger btn-block">
                                 View Service
-                            </button>
+                          
+                            </a>
                         </div>
                     </div>
                     <div class="card col-md-3 col-sm-4">

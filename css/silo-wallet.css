@@ -35,12 +35,15 @@ h6 {
 .navbar-default{
     background-color: #ffffff;
 }
+.navbar-toggle{
+   margin-top:17px;
+}
 .intro-header {
     padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../images/silo-bank/banner.jpg) no-repeat center center;
+    background: url(../images/silo-wallet/banner.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -281,4 +284,13 @@ p{
 }
 .footer-bottom p.pull-left {
     padding-top: 6px;
+}
+.footer-bottom {
+    background: #E3E3E3;
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo{
+    margin-top:15px;
 }

@@ -3,6 +3,7 @@
         height:50px;
         padding-left:20px !important;
     }
+
     .mob-center{
         margin-left:25% !important;
     }
@@ -69,6 +70,10 @@
     }
     .icn3{
         margin-top:10% !important;
+    }
+
+    .block-box {
+        margin-left: 10% !important;
     }
 }
 @media only screen and (min-width: 371px) and (max-width: 424px) {
@@ -137,6 +142,10 @@
     }
     .icn3{
         margin-top:10% !important;
+    }
+
+    .block-box {
+        margin-left: 17% !important;
     }
 }
 
@@ -210,10 +219,22 @@
     .silorailsimg{
         height: 113px;
     }
+    .block-box {
+        margin-left: 21% !important;
+    }
+    .mob-img{
+        margin-left:35%;
+    }
+    .margin-mob{
+        margin-left:23%;
+    }
 }
 @media only screen and (min-width: 630px) and (max-width: 767px) {
     .fade-carousel {
         height:58vh !important;
+    }
+    .mob-img{
+        margin-left:22%;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
