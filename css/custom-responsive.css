@@ -75,7 +75,23 @@
     .block-box {
         margin-left: 10% !important;
     }
+    .silosd-img-mob img{
+        margin-left:20%;
+    }
+    .our-platform img{
+        height:190px;
+        width:auto;
+    }
+    .margin-left-70.pricing-table{
+        margin-left:0px !important;
+    }
+    .fiber-rails-mob-img img{
+        height:136px;
+    }
 }
+
+
+
 @media only screen and (min-width: 371px) and (max-width: 424px) {
     .mob-brand{
         height:60px;
@@ -147,7 +163,26 @@
     .block-box {
         margin-left: 17% !important;
     }
+
+    .silosd-img-mob img{
+        margin-left:20%;
+    }
+    .our-platform img{
+        height:190px;
+        width:auto;
+    }
+    .margin-left-70.pricing-table{
+        margin-left:0px !important;
+    }
+    .fiber-rails-mob-img img{
+        height:100px;
+    }
+    .retailers-img{
+        margin-left:15%;
+    }
 }
+
+
 
 @media only screen and (min-width: 425px) and (max-width: 480px) {
     .mob-brand{
@@ -228,13 +263,55 @@
     .margin-mob{
         margin-left:23%;
     }
+
+    .silosd-img-mob img{
+        margin-left:27%;
+    }
+    .our-platform img{
+        height:255px;
+        width:auto;
+    }
+    .margin-left-70.pricing-table{
+        margin-left:0px !important;
+    }
+    .fiber-rails-mob-img img{
+        height:110px;
+    }
+    .retailers-img{
+        margin-left:17%;
+    }
 }
+
+
+
 @media only screen and (min-width: 630px) and (max-width: 767px) {
     .fade-carousel {
         height:58vh !important;
     }
     .mob-img{
         margin-left:22%;
+    }
+    .silosd-img-mob img{
+        margin-left:20%;
+    }
+    .our-platform img{
+        height:255px;
+        width:auto;
+    }
+    .margin-left-70.pricing-table{
+        margin-left:0px !important;
+    }
+    .fiber-rails-mob-img img{
+        height:100px;
+    }
+    .retailers-img{
+        margin-left:15%;
+    }
+    .half-img img {
+        height: 261px;
+    }
+    .cards img {
+       height:145px;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -380,10 +457,32 @@
     .retailer{
         height: 185px;
     }
+    .silosd-img-mob img{
+        margin-left:27%;
+    }
+    .our-platform img{
+        height:470px;
+        width:auto;
+    }
+    .margin-left-70.pricing-table{
+        margin-left:0px !important;
+    }
+    .fiber-rails-mob-img img{
+        height:200px;
+    }
+    .retailers-img{
+        margin-left:0%;
+    }
+    .half-img img {
+        height: 482px;
+    }
 }
 @media only screen and (min-width: 1020px) and (max-width: 1100px) {
     .fade-carousel {
         height:36vh !important;
+    }
+    .half-img img {
+        display:none;
     }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -478,6 +577,9 @@
 @media only screen and (min-width: 1300px) and (max-width: 1366px) {
     .section3-btn{
         margin-left:22%;
+    }
+    .fiber-rails-mob-img img{
+        height:355px;
     }
 }
 
