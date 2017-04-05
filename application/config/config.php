@@ -23,7 +23,7 @@
 |
 */
 // $config['base_url'] = 'http://rpdigital.rebelute.in';
-$config['base_url'] = 'http://localhost/rpdigital';
+$config['base_url'] = 'http://localhost/RPDigitel';
 
 /*
 |--------------------------------------------------------------------------
