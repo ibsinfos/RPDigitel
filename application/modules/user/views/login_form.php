@@ -129,7 +129,7 @@
                     <div class="row login">
 
                         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 well" style="margin-bottom:0px;">
-                            <form role="form" action="<?php echo base_url(); ?>user/Login/validate_credentials" method="post" >
+                            <form role="form" action="<?php echo base_url(); ?>user/Login/validate_credentials" method="post" id="signin_form">
                                 <div class="form-group text-center">
                                     <div class="logo">
                                         <img class="block" id="u45288_img" src="<?php echo base_url(); ?>images/white%20rp%20digitel.png?crc=4229791891" >
@@ -137,22 +137,26 @@
                                 </div>
 
                                 <?php
-                                echo validation_errors('<p class="error">');
+                                /*
+                                  echo validation_errors('<p class="error">');
 
-                                if ($this->session->userdata('error_msg')) {
-                                    echo "<p class='error'>" . $this->session->userdata('error_msg');
-                                    $this->session->unset_userdata('error_msg');
-                                }
+                                  if ($this->session->userdata('error_msg')) {
+                                  echo "<p class='error'>" . $this->session->userdata('error_msg');
+                                  $this->session->unset_userdata('error_msg');
+                                  } */
                                 ?>
 
+                                <div id="errors" style="color:red;">
+                                </div>
+
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="text" class="form-control input-lg" id="username" name="username" required="required" placeholder="Enter email or username">
+                                    <input type="text" class="signin_input form-control input-lg" id="username" name="username" required="required" placeholder="Enter email or username">
                                 </div>
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="password" class="form-control input-lg" id="password"  name="password" required="required" placeholder="Password">
+                                    <input type="password" class="signin_input form-control input-lg" id="password"  name="password" required="required" placeholder="Password">
                                 </div>
                                 <div class="form-group col-md-offset-3 col-md-6">
-                                    <button type="submit" class="btn btn-default btn-red btn-md btn-block">Sign In</button>
+                                    <button type="button" class="btn btn-default btn-red btn-md btn-block" id="signin_button">Sign In</button>
                                 </div>
                                 <div class="form-group last-row">
                                     <label id="sign_up">
@@ -209,6 +213,40 @@
     $('.carousel').carousel();
 
 
+    $(document).ready(function () {
 
+        $(".signin_input").keyup(function (event) {
+            if (event.keyCode == 13) {
+                $("#signin_button").click();
+            }
+        });
+
+
+        $("#signin_button").click(function () {
+
+            var form_data = $('#signin_form').serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: '<?php echo base_url(); ?>user/Login/validate_credentials',
+                data: form_data,
+                datatype: 'text',
+                success: function (data) {
+
+                    if (data == 'true') {
+                        window.location = "<?php echo base_url(); ?>user/Dashboard/members_area";
+                    } else {
+
+                        $("#errors").html(data);
+
+                    }
+
+                }
+
+            });
+
+        });
+
+    });
 
 </script>													

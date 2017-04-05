@@ -137,22 +137,19 @@
                                     </div>
                                 </div>
 
-
-
-
-                                <div id="errors">
+                                <div id="errors" style="color:red;">
                                 </div>
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="text" class="form-control input-lg" id="username" name="username" required="required" placeholder="Enter Username" >
+                                    <input type="text" class="signup_input form-control input-lg" id="username" name="username" required="required" placeholder="Enter Username" >
                                 </div>
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="email" class="form-control input-lg" id="email_address" name="email_address" required="required" placeholder="Enter email address">
+                                    <input type="email" class="signup_input form-control input-lg" id="email_address" name="email_address" required="required" placeholder="Enter email address">
                                 </div>
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="password" class="form-control input-lg" id="password" name="password" required="required" placeholder="Password">
+                                    <input type="password" class="signup_input form-control input-lg" id="password" name="password" required="required" placeholder="Password">
                                 </div>
                                 <div class="form-group col-md-offset-1 col-md-10">
-                                    <input type="password" class="form-control input-lg" id="confirmpassword" name="confirmpassword" required="required" placeholder="Confirm Password">
+                                    <input type="password" class="signup_input form-control input-lg" id="confirmpassword" name="confirmpassword" required="required" placeholder="Confirm Password">
                                 </div>
                                 <div class="form-group col-md-offset-3 col-md-6">
                                     <button type="button" class="btn btn-default btn-red btn-md btn-block" id="signup_button">Sign Up</button>
@@ -213,6 +210,12 @@
 
 
     $(document).ready(function () {
+
+        $(".signup_input").keyup(function (event) {
+            if (event.keyCode == 13) {
+                $("#signup_button").click();
+            }
+        });
 
         $("#signup_button").click(function () {
             //alert('d');

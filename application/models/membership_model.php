@@ -14,7 +14,14 @@ class Membership_model extends CI_Model {
         $query = $this->db->query("SELECT * FROM membership WHERE (username = '" . $this->input->post('username') . "' OR email_address = '" . $this->input->post('username') . "') AND password = '" . md5($this->input->post('password')) . "' AND role='" . $user_role . "'");
 
         if ($query->num_rows == 1) {
-            return true;
+            //return true;
+            foreach ($query->result() as $user_info) {
+                $username = $user_info->username;
+            }
+            return $username;
+        } else {
+            //$error_msg = 'Please Enter valid Username and Password';
+            return "error";
         }
     }
 
@@ -54,14 +61,14 @@ class Membership_model extends CI_Model {
 
         if ($chk_uname->num_rows() > 0) {
             //$this->session->set_userdata('error_msg', 'This Username already in use');
-            
-            $er_msg='This Username already in use';
-            return $er_msg;
+
+            $error_msg = 'This Username already in use';
+            return $error_msg;
         } else if ($chk_email->num_rows() > 0) {
-          //  $this->session->set_userdata('error_msg', 'This Email already in use');
-            
-            $er_msg='This Email already in use';
-            return $er_msg;
+            //  $this->session->set_userdata('error_msg', 'This Email already in use');
+
+            $error_msg = 'This Email already in use';
+            return $error_msg;
         } else {
 
             $new_member_insert_data = array(

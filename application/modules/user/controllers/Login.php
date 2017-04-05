@@ -13,41 +13,64 @@ class Login extends CI_Controller {
         $this->load->view('includes/template', $data);
     }
 
+    /*
+      //without ajax
+      function validate_credentials() {
+      $this->load->model('membership_model');
+      //$username=$this->input->post('username');
+      $user = $this->membership_model->get_user_role();
+      $query = $this->membership_model->validate_user($user['role']);
+
+
+      // $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
+      // $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
+
+
+      // if ($this->form_validation->run() == FALSE) {
+      // $this->load->view('login_form');
+      // } else {
+
+
+      if ($query) { // if the user's credentials validated...
+      $data = array(
+      'username' => $this->input->post('username'),
+      'is_logged_in' => true,
+      'role' => $user['role']
+      );
+      $this->session->set_userdata($data);
+      redirect('user/Dashboard/members_area');
+      } else { // incorrect username or password
+      // $this->index();
+      //$data['error_msg']="please enter correct Username and Password";
+      //$this->load->view('login_form',$data);
+      $this->session->set_userdata('error_msg', 'please enter correct Username and Password');
+
+      //$this->load->view('login_form');
+
+      redirect('user/login/index/');
+      }
+      // }
+      }
+     */
+
     function validate_credentials() {
         $this->load->model('membership_model');
-        //$username=$this->input->post('username');
         $user = $this->membership_model->get_user_role();
-        $query = $this->membership_model->validate_user($user['role']);
+        $query_result = $this->membership_model->validate_user($user['role']);
 
-        /*
-          $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
-          $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
-
-
-          if ($this->form_validation->run() == FALSE) {
-          $this->load->view('login_form');
-          } else {
-         */
-
-        if ($query) { // if the user's credentials validated...
+        if ($query_result == "error") {// if the user's credentials validated...
+                //echo '<p class="error">' . $query_result;
+                echo '<p class="error">Please Enter valid Username and Password';
+        } else { // incorrect username or password
             $data = array(
-                'username' => $this->input->post('username'),
+                //'username' => $this->input->post('username'),
+                'username' => $query_result,
                 'is_logged_in' => true,
                 'role' => $user['role']
             );
             $this->session->set_userdata($data);
-            redirect('user/Dashboard/members_area');
-        } else { // incorrect username or password
-            // $this->index();
-            //$data['error_msg']="please enter correct Username and Password";
-            //$this->load->view('login_form',$data);
-            $this->session->set_userdata('error_msg', 'please enter correct Username and Password');
-
-            //$this->load->view('login_form');
-
-            redirect('user/login/index/');
+            echo 'true';
         }
-        // }			
     }
 
     function signup() {
@@ -114,7 +137,7 @@ class Login extends CI_Controller {
             $query_result = $this->membership_model->create_member();
             if ($query_result !== TRUE) {
 
-                echo '<p class="error">'.$query_result;
+                echo '<p class="error">' . $query_result;
 
                 //$this->load->view('signup_form');
             } else {
