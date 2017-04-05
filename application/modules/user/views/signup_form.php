@@ -218,7 +218,6 @@
             //alert('d');
             //call ajax
 
-
             var form_data = $('#signup_form').serialize();
 
             $.ajax({

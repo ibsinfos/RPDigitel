@@ -241,9 +241,8 @@
                             <p class="card-text">Simplify networking, domain and webhosting with a single secured solution that caters to Startup and small businesses at every stage of growth.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-danger btn-block">
+                             <a href="<?php echo base_url(); ?>user/Silo_sd" class="btn btn-danger btn-block">
                                 View Service
-                          
                             </a>
                         </div>
                     </div>
