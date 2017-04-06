@@ -189,7 +189,7 @@
                     <img class="mob-img img-responsive" src="<?php echo base_url(); ?>images/silo-wallet/PCi_Dss_Logo.png" alt="">
                     <h5 class="center red">PCI-DSS LEVEL 1 </h5>
                 </div>
-                <!--img class="img-responsive" src="<?php echo base_url(); ?>images/silo-wallet/Shield1.jpg" alt=""-->
+                <!--img class="img-responsive" src="<?php //echo base_url(); ?>images/silo-wallet/Shield1.jpg" alt=""-->
 
 
             </div>

@@ -15,7 +15,7 @@ class Silo_sd extends CI_Controller {
         if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') {
             //echo 'You don\'t have permission to access this page. <a href="user/login">Login</a>';	
             echo 'You don\'t have permission to access this page.';
-            echo anchor('user/login', 'Login');
+            echo anchor('user/Login', 'Login');
             die();
             //$this->load->view('login_form');
         }
