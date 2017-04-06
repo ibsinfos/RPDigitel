@@ -22,12 +22,8 @@ class Dashboard extends CI_Controller {
         }
     }
 
-    function members_area() {
+    function index() {
         $this->load->view('fiber-rails');
-    }
-
-    function another_page() { // just for sample
-        echo 'good. you\'re logged in.';
     }
 
 }

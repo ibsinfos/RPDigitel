@@ -231,7 +231,7 @@
                 success: function (data) {
 
                     if (data == 'true') {
-                        window.location = "<?php echo base_url(); ?>user/Dashboard/members_area";
+                        window.location = "<?php echo base_url(); ?>user/Dashboard";
 
                     } else {
 

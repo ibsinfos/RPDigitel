@@ -26,7 +26,7 @@ class Login extends CI_Controller {
                                 'role'=>$user['role']
 			);
 			$this->session->set_userdata($data);
-			redirect('Admin/Dashboard/members_area');
+			redirect('Admin/Dashboard');
 		}
 		else // incorrect username or password
 		{

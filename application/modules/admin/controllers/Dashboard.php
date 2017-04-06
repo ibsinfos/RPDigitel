@@ -20,12 +20,8 @@ class Dashboard extends CI_Controller {
         }
     }
 
-    function members_area() {
+    function index() {
         $this->load->view('Admin_Dashboard');
-    }
-
-    function another_page() { // just for sample
-        echo 'good. you\'re logged in.';
     }
 
 }
