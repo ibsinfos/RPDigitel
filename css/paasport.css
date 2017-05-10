@@ -1,0 +1,20 @@
+.big-bg{
+    background: url(../images/paasport-login/enterprise-20solutions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.red-world{
+    background: url(../images/paasport-login/worldmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.qrpayment-img{
+    opacity:0.7;
+    height:80%;
+    position: relative;
+    top:-40px;
+}
+.qrpayment-img:hover{
+    opacity:1;
+}
