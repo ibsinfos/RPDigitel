@@ -233,7 +233,7 @@
                 $DB_SRC_HOST = 'localhost';
                 $DB_SRC_USER = 'root';
                 $DB_SRC_PASS = '';
-                $DB_SRC_NAME = 'rpdigitel_aws';
+                $DB_SRC_NAME = 'rpdigitel';
 				
                 $rpcon= new mysqli($DB_SRC_HOST, $DB_SRC_USER, $DB_SRC_PASS) or die($rpcon->error);
                 mysqli_select_db($rpcon, $DB_SRC_NAME) or die($rpcon->error);
@@ -904,7 +904,7 @@
 					$DB_SRC_HOST = 'localhost';
 					$DB_SRC_USER = 'root';
 					$DB_SRC_PASS = '';
-					$DB_SRC_NAME = 'rpdigitel_aws';
+					$DB_SRC_NAME = 'rpdigitel';
 					
 					$rpcon= new mysqli($DB_SRC_HOST, $DB_SRC_USER, $DB_SRC_PASS) or die($rpcon->error);
 					mysqli_select_db($rpcon, $DB_SRC_NAME) or die($rpcon->error);

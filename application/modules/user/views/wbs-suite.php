@@ -1072,7 +1072,7 @@
 								//                    alert(data);
 								if (data == true) {
 									//                        window.location = "http://localhost/crm/";
-									window.location = "<?php echo "http://".$_SERVER['SERVER_NAME']."/aws/crm/login"; ?>";
+									window.location = "<?php echo base_url()."/crm/login"; ?>";
 									//                        alert("true");
 									//                        $('#loader_image_div').hide();
 									} else {

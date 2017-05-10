@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<meta http-equiv="refresh" content="2;url=<?php echo 'http://'.$_SERVER['SERVER_NAME'].'/aws/crm/login'; ?>" />
+<meta http-equiv="refresh" content="2;url=<?php echo base_url().'crm/login'; ?>" />
 
 <html lang="en">
 <head>
