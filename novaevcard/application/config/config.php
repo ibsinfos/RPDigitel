@@ -1,7 +1,10 @@
 <?php
 error_reporting(0);
 defined('BASEPATH') OR exit('No direct script access allowed');
-date_default_timezone_set('US/Eastern');
+// date_default_timezone_set('US/Eastern');
+
+date_default_timezone_set('Asia/Kolkata');
+
 /*
   |--------------------------------------------------------------------------
   | Base Site URL

@@ -60,7 +60,7 @@
 															</div>
 															
                                                             <div class="Preview_Button">
-																<button id="btnpreviewtemplate" data-toggle="modal" data-target="#template_preview_modal">Preview</button>
+																<button id="btnpreviewtemplate" data-toggle="modal">Preview</button>
 															</div>
 															
 														</div>	<!-- /controls -->			
@@ -71,7 +71,7 @@
                                                         <div class="controls">
 															
                                                             <div class="Reload_Button">
-                                                                <button id="btnnewtemplate" data-toggle="modal" data-target="#createnewtemplate_modal">Create New Template</button>
+                                                                <button id="btnnewtemplate" data-toggle="modal">Create New Template</button>
 															</div>
 															
 														</div>	<!-- /controls -->	
