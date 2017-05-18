@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <!--<link rel="shortcut icon" href="../images/favicon.png" type="image/png">-->
 
-        <title>vCard</title>
+        <title>Paasport</title>
 
         <link rel="stylesheet" href="<?php echo asset_url() ?>/fontawesome/css/font-awesome.css">
         <link rel="stylesheet" href="<?php echo asset_url() ?>/select2/select2.css">
@@ -33,7 +33,7 @@
                 <div class="col-sm-5">
                     <div class="panel">
                         <div class="panel-heading">
-                            <h1>Novae vCard</h1>
+                            <h1>Paasport</h1>
                             <h4 class="panel-title">Create an Account!</h4>
                         </div>
                         <div class="panel-body">
@@ -56,7 +56,7 @@
                                     <select name="source" class="form-control" required>
                                         <option value="Select One">Select One</option>
                                         <option value="From a Colleague">From a Colleague</option>
-                                        <option value="A Link On a vCard">A Link On a vCard</option>
+                                        <option value="A Link On a vCard">A Link On a Paasport</option>
                                         <option value="Ad/Flyer/Brochure">Ad/Flyer/Brochure</option>
                                         <option value="Received an Email">Received an Email</option>
                                         <option value="Search Engine">Search Engine</option>
@@ -93,7 +93,7 @@
                     <div class="sign-sidebar">
                         <h3 class="signtitle mb20">Two Good Reasons to Love vCard</h3>
                         <p>When it comes to websites or apps, one of the first impression you consider is the design. It needs to be high quality enough otherwise you will lose potential users due to bad design.</p>
-                        <p>Below are some of the reasons why you love vCard.</p>
+                        <p>Below are some of the reasons why you love Paasport.</p>
 
                         <br>
 

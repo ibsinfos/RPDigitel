@@ -457,7 +457,9 @@
 <div class="modal fade" id="memberLogin" role="dialog">
     <div class="modal-dialog">
         <form action="#" method="post" name="member_login" id="member_login">
-            <header class="member_login">WbsSuite Login</header>
+            <header class="member_login">WbsSuite Login
+			<span class="close-custom-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></span>
+			</header>
             <!-- Modal content-->
             <div id="login_errors" style="color:red;">
             </div>
@@ -466,9 +468,9 @@
             <label class="form-login"><h4 style="margin-top:0px; margin-bottom:0px;">Password <span>*</span></h4></label>
             <input type="password" class="input-lg input-login" name="password" id="password" placeholder="Password" style="height: 40px;">
             <input type="button" name="member_login_button" id="member_login_button" class="form-login1" value="Login">
-            <div class="modal-footer">
+            <!--div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            </div-->
         </form>
     </div>
 </div>

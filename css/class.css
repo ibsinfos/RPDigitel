@@ -133,3 +133,19 @@
 a:hover{
     color:#ff0000;
 }
+
+
+/*Added by Ranjit on 11 May 2017*/
+
+.phone-no{
+	padding-left:0;
+}
+
+.login select.input-lg{
+	height:41px;
+}
+
+
+select.paasport-country-code {
+	height:36px;
+}

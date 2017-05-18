@@ -16,8 +16,8 @@
 			
 			$this->load->model('membership_model');
 			
-			$to_number='+919665639973';
-			$msg_body="test sms";
+			// $to_number='+919665639973';
+			// $msg_body="test sms";
 			// $response = $this->membership_model->twilioSms($this->number, $to_number, $msg_body);
             
 			
@@ -110,12 +110,13 @@
 					$data = array(
 					'username' => $query_result,
 					'role' => $user['role'],
-					'user_id' => $user['user_id']
+					'user_id' => $user['user_id'],
+					'phone_no' => $user['phone_no']
 					);
 				
 					$this->session->set_userdata($data);
 
-					$this->send_otp();
+					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
 					
@@ -192,12 +193,13 @@
 					$data = array(
 					'username' => $query_result,
 					'role' => $user['role'],
-					'user_id' => $user['user_id']
+					'user_id' => $user['user_id'],
+					'phone_no' => $user['phone_no']
 					);
 				
 					$this->session->set_userdata($data);
 
-					$this->send_otp();
+					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
 					
@@ -262,13 +264,14 @@
 					'username' => $query_result,
 					// 'is_logged_in' => true,
 					'role' => $user['role'],
-					'user_id' => $user['user_id']
+					'user_id' => $user['user_id'],
+					'phone_no' => $user['phone_no']
 					);
 					
 					
 					$this->session->set_userdata($data);
 
-					$this->send_otp();
+					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
 					
@@ -323,20 +326,26 @@
 		
 		
 		
-		function send_otp(){
+		function send_otp($phone_no=NULL){
 			
-			$to_number='+919665639973';
+			// $to_number='+919665639973';
+			if(isset($phone_no)){
+			$to_number=$phone_no;
+			}else{
+			// $to_number=$this->input->post('phone_no');
+			$to_number=$this->session->userdata('phone_no');
+			}
 			$otp = mt_rand(1000, 9999);
 			
 			// echo '<pre>'; print_r($this->session->all_userdata());exit;
 			
 			$this->load->model('membership_model');
 			
-			$msg_body="Your OTP : ".$otp;
-			//$response = $this->membership_model->twilioSms($this->number, $to_number, $msg_body);
-			$response =1;
+			$msg_body="Your OTP is ".$otp." for RPDigitel login";
+			$response = $this->membership_model->twilioSms($this->number, $to_number, $msg_body);
+			// $response =1;
 			
-			if($response){
+			if($response==1){
 				
 				//update SMS otp
 				
@@ -344,6 +353,7 @@
 				
 				// echo 'true';
 				}else{
+				echo $response;
 				// echo 'please check your mobile number';
 			}
 			
@@ -352,6 +362,10 @@
 		
 		
 		function signup() {
+		
+		$query_get_country=$this->db->get('country');
+		$data['country_list']=$query_get_country->result();
+		
 			$data['main_content'] = 'signup_form';
 			$this->load->view('includes/template', $data);
 		}
@@ -402,12 +416,12 @@
 		//$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
 		//$this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
 		$this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email');
-		$this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|regex_match[/^[0-9]{10}$/]');
+		// $this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|regex_match[/^[0-9]{10}$/]');
 		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
 		//$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]');
+		// $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]', array('required' => 'You must provide a %s.'));
 		$this->form_validation->set_rules('confirmpassword', 'Password Confirmation', 'trim|required|matches[password]');
-		
 		
 		if ($this->form_validation->run() == FALSE) {
 		

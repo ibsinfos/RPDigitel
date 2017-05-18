@@ -63,7 +63,7 @@
                                         Would you like to refer <?php echo ucfirst($data[0]['first_name'])." ".ucfirst($data[0]['last_name'])?> to your friends 
                                         and family?</b></font><p>
                                         <font face="Arial" style="font-size: 13pt">You can share 
-                                        this Mobile vCard with them by entering their details 
+                                        this Mobile Paasport with them by entering their details 
                                         below:</font></p>
                                     <table border="0" width="15%" cellpadding="0" style="border-collapse: collapse" height="175" bordercolor="#666666">
                                         <tbody><tr>
@@ -130,7 +130,7 @@
                                                         <td align="center" valign="top">
                                                             <p align="left">
                                                                 <font face="Arial" style="font-size: 13pt">Click link below to 
-                                                                quickly share this vCard with your Facebook friends:</font></p><p align="left">
+                                                                quickly share this Paasport with your Facebook friends:</font></p><p align="left">
                                                                 <font style="font-size: 13pt; font-weight:700" face="Arial"> 
                                                                 <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo base_url() . "/" . $data[0]['slug']; ?>">
                                                                     Share on Facebook</a></font></p></td></tr>
@@ -212,7 +212,7 @@
                                                                                                     <input id="submitButton" value="TEXT vCARD" type="submit" style="color:#FFFFFF;background-color:#7c7a79;border-color:#ffffff;font-size:14pt;line-height:1.33;border-radius:6px; float:right; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px"><br>
                                                                                                     &nbsp; </p></td></tr></tbody></table>
                                                                                 <p style="text-align: center"><font face="Arial">*The recipient 
-                                                                                    will need to reply "YES" to receive the Mobile vCard.</font></p></div>
+                                                                                    will need to reply "YES" to receive the Mobile Paasport.</font></p></div>
                                                                             <input type="hidden" id="sc" name="sc" value="lillyo1optin (76626)"><input type="hidden" id="ev" name="ev" value="send"><input type="hidden" id="ac" name="ac" value="7"><input type="hidden" id="me" name="me" value="MobileWebPage"><input type="hidden" id="forwardLink" name="forwardLink" value="http://m.mvcard.me/lilly_sharevcard"></form></div>
                                                                 </td>
                                                             </tr>
@@ -289,7 +289,7 @@
                                                                                                     <input id="submitButton" value="TEXT vCARD" type="submit" style="color:#FFFFFF;background-color:#7c7a79;border-color:#ffffff;font-size:14pt;line-height:1.33;border-radius:6px; float:right; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px"><br>
                                                                                                     &nbsp; </p></td></tr></tbody></table>
                                                                                 <p style="text-align: center"><font face="Arial">*The recipient 
-                                                                                    will need to reply "YES" to receive the Mobile vCard.</font></p></div>
+                                                                                    will need to reply "YES" to receive the Mobile Paasport.</font></p></div>
                                                                             <input type="hidden" id="sc" name="sc" value="lillyo1optin (76626)"><input type="hidden" id="ev" name="ev" value="send"><input type="hidden" id="ac" name="ac" value="7"><input type="hidden" id="me" name="me" value="MobileWebPage"><input type="hidden" id="forwardLink" name="forwardLink" value="http://m.mvcard.me/lilly_sharevcard"></form></div>
                                                                 </td>
                                                             </tr>
@@ -364,7 +364,7 @@
                                                                                                 <input id="submitButton" value="TEXT vCARD" type="submit" style="color:#FFFFFF;background-color:#7c7a79;border-color:#ffffff;font-size:14pt;line-height:1.33;border-radius:6px; float:right; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px"><br>
                                                                                                 &nbsp; </p></td></tr></tbody></table>
                                                                             <p style="text-align: center"><font face="Arial">*The recipient 
-                                                                                will need to reply "YES" to receive the Mobile vCard.</font></p></div>
+                                                                                will need to reply "YES" to receive the Mobile Paasport.</font></p></div>
                                                                         <input type="hidden" id="sc" name="sc" value="lillyo1optin (76626)"><input type="hidden" id="ev" name="ev" value="send"><input type="hidden" id="ac" name="ac" value="7"><input type="hidden" id="me" name="me" value="MobileWebPage"><input type="hidden" id="forwardLink" name="forwardLink" value="http://m.mvcard.me/lilly_sharevcard"></form></div>
                                                             </td>
                                                         </tr>
@@ -518,7 +518,7 @@
                                                                                                     <input id="submitButton" value="TEXT vCARD" type="submit" style="color:#FFFFFF;background-color:#7c7a79;border-color:#ffffff;font-size:14pt;line-height:1.33;border-radius:6px; float:right; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px"><br>
                                                                                                     &nbsp; </p></td></tr></tbody></table>
                                                                                 <p style="text-align: center"><font face="Arial">*The recipient 
-                                                                                    will need to reply "YES" to receive the Mobile vCard.</font></p></div>
+                                                                                    will need to reply "YES" to receive the Mobile Paasport.</font></p></div>
                                                                             <input type="hidden" id="sc" name="sc" value="lillyo1optin (76626)"><input type="hidden" id="ev" name="ev" value="send"><input type="hidden" id="ac" name="ac" value="7"><input type="hidden" id="me" name="me" value="MobileWebPage"><input type="hidden" id="forwardLink" name="forwardLink" value="http://m.mvcard.me/lilly_sharevcard"></form></div>
                                                                 </td>
                                                             </tr>
@@ -594,7 +594,7 @@
                                                                                                     <input id="submitButton" value="TEXT vCARD" type="submit" style="color:#FFFFFF;background-color:#7c7a79;border-color:#ffffff;font-size:14pt;line-height:1.33;border-radius:6px; float:right; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px"><br>
                                                                                                     &nbsp; </p></td></tr></tbody></table>
                                                                                 <p style="text-align: center"><font face="Arial">*The recipient 
-                                                                                    will need to reply "YES" to receive the Mobile vCard.</font></p></div>
+                                                                                    will need to reply "YES" to receive the Mobile Paasport.</font></p></div>
                                                                             <input type="hidden" id="sc" name="sc" value="lillyo1optin (76626)"><input type="hidden" id="ev" name="ev" value="send"><input type="hidden" id="ac" name="ac" value="7"><input type="hidden" id="me" name="me" value="MobileWebPage"><input type="hidden" id="forwardLink" name="forwardLink" value="http://m.mvcard.me/lilly_sharevcard"></form></div>
                                                                 </td>
                                                             </tr>
@@ -688,7 +688,7 @@
                                                                     <td align="center" valign="top">
                                                                         <p align="left">
                                                                             <font face="Arial" style="font-size: 13pt">Prefer to share this 
-                                                                            vCard by email? Click link below.</font></p><p align="left">
+                                                                            Paasport by email? Click link below.</font></p><p align="left">
                                                                             <font face="Arial" style="font-size: 13pt; font-weight: 700">
                                                                             <a class="email_link" target="_blank" href="mailto:?subject=<?php echo $data[0]['first_name']." ".$data[0]['last_name']?> Mobile vcard&amp;body=Hi there, Check out my Mobile vCard <?php echo base_url().$data['0']['slug']?>">Share By Email</a></font></p></td>
                                                                 </tr>
@@ -784,7 +784,7 @@
                                     <div class="block-content clearfix">               
 
                                         <div class="text-box">
-                                            <p style="text-align: center;"><a href="<?php echo base_url() . $data[0]['slug'] ?>"><span style="color:#a7b5ac;"><span style="font-size: 23px;"><strong>Return to vCard</strong></span></span></a></p>
+                                            <p style="text-align: center;"><a href="<?php echo base_url() . $data[0]['slug'] ?>"><span style="color:#a7b5ac;"><span style="font-size: 23px;"><strong>Return to Paasport</strong></span></span></a></p>
 
                                         </div> 
                                     </div>          

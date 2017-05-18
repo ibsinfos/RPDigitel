@@ -22,7 +22,7 @@
 
                                 <div class="widget-header">
                                     <i class="icon-user"></i>
-                                    <h3>Edit vCard Details</h3>
+                                    <h3>Edit Paasport Details</h3>
                                 </div>
 
                             </div>
@@ -736,7 +736,7 @@
                                                 <div class="accordion-group">
                                                     <div class="accordion-heading">
                                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
-                                                            Edit vcard tabs
+                                                            Edit Paasport tabs
                                                         </a>
                                                     </div>
                                                     <div id="collapseEight" class="accordion-body collapse">

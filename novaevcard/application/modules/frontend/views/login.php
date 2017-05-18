@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <!--<link rel="shortcut icon" href="../images/favicon.png" type="image/png">-->
 
-        <title>vCard | Login</title>
+        <title>Paasport | Login</title>
 
         <link rel="stylesheet" href="<?php echo asset_url() ?>/fontawesome/css/font-awesome.css">
 
@@ -29,7 +29,7 @@
 
         <div class="panel signin">
             <div class="panel-heading">
-                <h1>vCard</h1>
+                <h1>Paasport</h1>
             </div>
             <div class="panel-body">
                

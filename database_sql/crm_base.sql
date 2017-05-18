@@ -23076,7 +23076,7 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`user_id`, `username`, `password`, `email`, `unique_id`, `role_id`, `activated`, `banned`, `ban_reason`, `new_password_key`, `new_password_requested`, `password_id`, `new_email`, `new_email_key`, `last_ip`, `last_login`, `created`, `modified`, `online_status`, `permission`, `org_id`) VALUES
-(1, 'user51', 'b2a4836776ee5aafde93b36c17c426309553abfbbb60d7695a0e6283ae2bc892286af29893da04e546794f0af0dd6fc25d6c9278c46fd256eae64449d6a87d56', 'nayeem.edu01@gmail.com', '', 1, 1, 0, '', NULL, NULL, '', 'admin@teamdeck.co', '49315fd6116d162eea47a98904e37b9a', '::1', '2017-04-19 05:04:13', '0000-00-00 00:00:00', '2017-04-19 12:04:13', 0, 'all', 1);
+(1, 'user51', 'b2a4836776ee5aafde93b36c17c426309553abfbbb60d7695a0e6283ae2bc892286af29893da04e546794f0af0dd6fc25d6c9278c46fd256eae64449d6a87d56', 'rpdigitel@gmail.com', '', 1, 1, 0, '', NULL, NULL, '', 'admin@teamdeck.co', '49315fd6116d162eea47a98904e37b9a', '::1', '2017-04-19 05:04:13', '0000-00-00 00:00:00', '2017-04-19 12:04:13', 0, 'all', 1);
 
 -- --------------------------------------------------------
 

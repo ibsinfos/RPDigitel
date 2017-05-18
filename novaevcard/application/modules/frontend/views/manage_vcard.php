@@ -12,9 +12,16 @@
                         <!-- /widget-header -->
                         <div class="widget-content">
                             <div class="shortcuts"> 
-                                <a href="<?php echo base_url() ?>vcard" class="shortcut"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="shortcut-label">Create vcard</span> </a>
-                                <a href="<?php echo base_url() ?>vcard-edit" class="shortcut"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="shortcut-label">Update vcard</span> </a>
-                                <a  target="_blank" href="<?php echo base_url(). $_SESSION['user_account']['slug']?>" class="shortcut"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="shortcut-label">View vcard</span> </a>
+                                <a href="<?php echo base_url() ?>vcard" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/Crete_Vcar.png" width="100"/>
+								<span class="shortcut-label">Create vcard</span> </a>
+								
+                                <a href="<?php echo base_url() ?>vcard-update" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/update_Vcard.png" width="100"/>
+								<span class="shortcut-label">Update vcard</span> </a>
+                                <a  target="_blank" href="<?php echo base_url(). $_SESSION['user_account']['slug']?>" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/View_Vcard.png" width="100"/>
+								<span class="shortcut-label">View vcard</span> </a>
                             </div>
                             <!-- /shortcuts --> 
                         </div>

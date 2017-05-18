@@ -18,6 +18,7 @@ date_default_timezone_set('US/Eastern');
   | environments.
   |
  */
+ // $config['base_url'] = 'http://localhost/novaevcard/'; 
  $config['base_url'] = 'http://localhost/RPDigitel/novaevcard/'; 
 //$config['base_url']	= 'http://54.212.235.115/novaevcard/';
 

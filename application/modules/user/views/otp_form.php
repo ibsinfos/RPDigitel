@@ -251,9 +251,10 @@
         $("#resend_otp_button").click(function () {
 			
 			$("#errors").html('');
-			
+			// var mobile_no='+918806725624';
             $.ajax({
                 url: '<?php echo base_url(); ?>user/login/send_otp',
+				// data: mobile_no,
 				datatype: 'text',
                 success: function (data) {
 					

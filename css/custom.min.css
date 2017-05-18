@@ -3981,3 +3981,37 @@ ul.notifications {
 .dataTables_wrapper>.row {
     overflow: auto!important
 }
+
+/****************** BINIT *********************/
+
+.modal-dialog header {
+	position:relative;
+}
+
+.close-custom-btn {
+	position: absolute;
+    right: -7px;
+    bottom: 65px;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    height: 30px;
+    border: 4px solid #FF3838;
+    color: #ff3838;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.close-custom-btn:hover i {
+	color:#000;
+}
+
+
+
+
+
+
+
+

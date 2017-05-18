@@ -11,10 +11,14 @@ class signup extends CI_Controller {
 	function index()
 	{
             
+		$query_get_country=$this->db->get('country');
+		$data['country_list']=$query_get_country->result();
+		
 	// print_r($this->session->all_userdata());
 			// print_r($_SESSION);
 			// die(0);
 		
+        $this->template->set('country_list',$data['country_list']);
         $this->template->set_theme('default_theme');
         $this->template->set_layout('frontend')
                 ->title('Pasasport | Signup')

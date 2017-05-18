@@ -209,7 +209,9 @@ class webservices_model extends MY_Model
             $this->db->from('tbl_users as a');
             $this->db->join('tbl_account_details as b', 'a.user_id=b.user_id', 'inner');
             //$this->db->join('tbl_client as c','b.company=c.client_id','inner');
-            $this->db->where($where);
+           $this->db->where($where);
+		   
+		   
             $query = $this->db->get();
 			//echo $this->db->last_query();die;
             $count = $query->num_rows();

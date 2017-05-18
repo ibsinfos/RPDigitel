@@ -340,7 +340,7 @@
                                                             <td><font face="Arial" color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;   
                                                                 <a target="_blank" style='text-decoration:none' href="<?php echo base_url() ?>"> 
                                                                     <font color="#ffffff">
-                                                                    <span style="font-size: 12pt">Powered by Novae vCard<sup>TM</sup></span></font></a>
+                                                                    <span style="font-size: 12pt">Powered by Paasport<sup>TM</sup></span></font></a>
                                                                 <span style="font-size: 11pt">&nbsp; &nbsp;   
                                                                 </span>                                    
                                                                 <font color="#ffffff"><span style="font-size: 12pt">  
@@ -375,7 +375,7 @@
                                         <tbody><tr>                    
                                                 <td><font face="Arial" color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;   
                                                     <a target="_blank" href="http://m.mobiletivity.com">   
-                                                        <font color="#ffffff"><span style="font-size: 12pt">Powered by vCardIQ™</span></font></a>
+                                                        <font color="#ffffff"><span style="font-size: 12pt">Powered by Paasport</span></font></a>
                                                     <span style="font-size: 11pt">&nbsp; |&nbsp;     
                                                     </span>                                         
                                                     <font color="#ffffff"><span style="font-size: 12pt">  

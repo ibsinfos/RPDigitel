@@ -828,9 +828,15 @@ class MY_Model extends CI_Model {
         $achievement = round($goal_info->achievement);
         if ($goal_type_info->tbl_name == 'tbl_transactions') {
             if ($goal_type_info->type_name == 'achive_total_income_by_bank' || $goal_type_info->type_name == 'achive_total_expense_by_bank') {
-                if ($goal_info->account_id != '0') {
+                
+				//
+				// if ($goal_info->account_id != '0') {
                     $where = array('account_id' => $goal_info->account_id, 'date >=' => $start_date, 'date <=' => $end_date, 'type' => $goal_type_info->query);
-                }
+                // }
+				
+				// echo $goal_info->account_id;
+				// die('here');
+				
             } else {
 
                 $where = array('date >=' => $start_date, 'date <=' => $end_date, 'type' => $goal_type_info->query);

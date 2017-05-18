@@ -32,7 +32,7 @@ class Dashboard extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Dashboard')
+                ->title('Paasport | Dashboard')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('dashboard');
@@ -65,7 +65,7 @@ class Dashboard extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Home')
+                ->title('Paasport | Home')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('vcard_steps');
@@ -95,7 +95,7 @@ class Dashboard extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Update vCard')
+                ->title('Paasport | Update vCard')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('edit_vcard');
@@ -114,7 +114,7 @@ class Dashboard extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Manage vCard')
+                ->title('Paasport | Manage Paasport')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('manage_vcard');

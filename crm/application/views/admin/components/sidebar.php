@@ -13,7 +13,7 @@ foreach ($user_permission as $v_permission) {
     $profile_info = $this->db->where('user_id', $user_id)->get('tbl_account_details')->row();
     $user_info = $this->db->where('user_id', $user_id)->get('tbl_users')->row();
     ?>
-    <div class="aside-inner">
+    <div class="aside-inner top_spacing_sidebar">
         <nav data-sidebar-anyclick-close="" class="sidebar">
             <!-- START sidebar nav-->
             <ul class="nav">

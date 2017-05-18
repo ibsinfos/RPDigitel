@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <!--<link rel="shortcut icon" href="../images/favicon.png" type="image/png">-->
 
-        <title>vCard | Forget Passsword</title>
+        <title>Paasport | Forget Passsword</title>
 
         <link rel="stylesheet" href="<?php echo asset_url() ?>/fontawesome/css/font-awesome.css">
 

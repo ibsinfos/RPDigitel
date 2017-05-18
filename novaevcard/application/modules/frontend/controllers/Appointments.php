@@ -28,7 +28,7 @@ class Appointments extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Home')
+                ->title('Paasport | Home')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('appointment');
@@ -53,7 +53,7 @@ class Appointments extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Home')
+                ->title('Paasport | Home')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('add_appointment');

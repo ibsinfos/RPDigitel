@@ -56,6 +56,11 @@
 			//      $password = $this->input->post('password');
 			$password = $this->hash($this->input->post('password'));
 			
+			$country= $this->input->post('country');
+			$phone_number= $this->input->post('phone_number');
+			$phone_number_with_country_code= "+".$country.$phone_number;
+
+			
 			$send_mail_to = $this->input->post('email_address');
 			
 			$this->db->where('username', $username);
@@ -83,7 +88,7 @@
                 //'last_name' => $this->input->post('last_name'),
                 'email_address' => $this->input->post('email_address'),
                 'username' => $this->input->post('username'),
-                'phone_no' => $this->input->post('phone_number'),
+                'phone_no' => $phone_number_with_country_code,
 				//                'password' => md5($this->input->post('password')),
                 'password' => $this->hash($this->input->post('password')),
                 'role' => 'user'
@@ -116,7 +121,8 @@
 				$new_vcuser_insert_data = array(
                 'email' => $this->input->post('email_address'),
                 'first_name' => $this->input->post('username'),
-                'mobile' => $this->input->post('phone_number'),
+                // 'mobile' => $this->input->post('phone_number'),
+                'mobile' => $phone_number_with_country_code,
                 'verified' =>'1',
                 'email_verify' =>'1',
                 'password' => $this->hash($this->input->post('password'))
@@ -150,7 +156,7 @@
 				$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Username :" . $username . " <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Password : " . $this->input->post('password') . " ";
 				$this->load->library('email', $config);
 				$this->email->set_newline("\r\n");
-				$this->email->from('pasale.ranjit@gmail.com'); // change it to yours
+				$this->email->from('rpdigitel@gmail.com'); // change it to yours
 				$this->email->to($send_mail_to); // change it to yours
 				$this->email->subject('Welcome to RP Digital');
 				$this->email->message($message);

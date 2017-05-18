@@ -16,7 +16,7 @@
                     <div id="Wizard_form_steps" class="container">
                         <div class="row form-group">
                             <div class="span12">
-                            <h2 style="text-align:center;margin-bottom:10px">Complete your vCard steps</h2>
+                            <h2 style="text-align:center;margin-bottom:10px">Complete your Paasport steps</h2>
                                 <ul class="nav nav-pills nav-justified thumbnail setup-panel">
                                     <li class="active"><a href="#step-1">
                                             <h4 class="list-group-item-heading">Step 1</h4>

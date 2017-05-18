@@ -69,7 +69,7 @@ class Contacts extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Contacts')
+                ->title('Paasport | Contacts')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('contacts');
@@ -91,7 +91,7 @@ class Contacts extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | New Contact')
+                ->title('Paasport | New Contact')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('add_contact');
@@ -173,7 +173,7 @@ class Contacts extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | New Contact')
+                ->title('Paasport | New Contact')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('add_optinlist');
@@ -202,7 +202,7 @@ class Contacts extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | New Contact')
+                ->title('Paasport | New Contact')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('edit_optinlist');
@@ -302,7 +302,7 @@ if (!$this->common_model->isLoggedIn()) {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Home')
+                ->title('Paasport | Home')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('optinlist_users');

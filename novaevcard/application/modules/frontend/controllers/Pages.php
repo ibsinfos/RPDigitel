@@ -34,7 +34,7 @@ class Pages extends CI_Controller
         $this->template->set('page_type', 'main');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Home')        
+                ->title('Paasport | Home')        
 		->set_partial ( 'header', 'partials/header' )
 		->set_partial ( 'footer', 'partials/footer' );
         $this->template->build('homepage');
@@ -49,7 +49,7 @@ class Pages extends CI_Controller
         $this->template->set('page_type', 'main');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Pricing')        
+                ->title('Paasport | Pricing')        
 		->set_partial ( 'header', 'partials/header' )
 		->set_partial ( 'footer', 'partials/footer' );
         $this->template->build('pricing');
@@ -64,7 +64,7 @@ class Pages extends CI_Controller
         $this->template->set('page_type', 'main');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | Contact Us')        
+                ->title('Paasport | Contact Us')        
 		->set_partial ( 'header', 'partials/header' )
 		->set_partial ( 'footer', 'partials/footer' );
         $this->template->build('contact_us');
@@ -79,7 +79,7 @@ class Pages extends CI_Controller
         $this->template->set('page_type', 'main');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | How it works')        
+                ->title('Paasport | How it works')        
 		->set_partial ( 'header', 'partials/header' )
 		->set_partial ( 'footer', 'partials/footer' );
         $this->template->build('how_it_works');

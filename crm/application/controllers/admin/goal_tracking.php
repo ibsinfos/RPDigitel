@@ -29,9 +29,11 @@ class Goal_Tracking extends Admin_Controller
         if ($id) {
             $data['active'] = 2;
             $can_edit = $this->items_model->can_action('tbl_goal_tracking', 'edit', array('goal_tracking_id' => $id));
-            if (!empty($can_edit)) {
+
+			if (!empty($can_edit)) {
                 $data['goal_info'] = $this->items_model->check_by(array('goal_tracking_id' => $id), 'tbl_goal_tracking');
-            }
+
+}
         } else {
             $data['active'] = 1;
         }

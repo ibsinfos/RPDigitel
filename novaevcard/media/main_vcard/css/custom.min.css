@@ -4325,3 +4325,8 @@ margin-bottom:10px;
 		color:#ff0000;
 		cursor:pointer;
 	}
+	
+	.RTU-uploadButtonHolder{
+		
+		display:none !important;
+	}

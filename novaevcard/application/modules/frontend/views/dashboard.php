@@ -12,14 +12,28 @@
                         <!-- /widget-header -->
                         <div class="widget-content">
                             <div class="shortcuts"> 
-                                <a href="<?php echo base_url() ?>textmsg" class="shortcut"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="shortcut-label">Text Message</span> </a>
+                                <a href="<?php echo base_url() ?>textmsg" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/Text_Message.png" width="100"/>
+								<span class="shortcut-label">Text Message</span> </a>
 <!--Added by ranjit on 26 april 2017 to add one option[under dashboard menu] on dashbord page-->
-								<a href="<?php echo base_url() ?>email" class="shortcut"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="shortcut-label">E-mail</span> </a>
-                                <a href="<?php echo base_url() ?>autoresponder" class="shortcut"><i class="fa fa-reply" aria-hidden="true"></i><span class="shortcut-label">Auto Responders</span> </a>
+								<a href="<?php echo base_url() ?>emailcampaign" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/email.png" width="100"/>
+								<span class="shortcut-label">E-mail</span> </a>
+                                <a href="<?php echo base_url() ?>autoresponder" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/auto_responder.png" width="100"/>
+								<span class="shortcut-label">Auto Responders</span> </a>
                                 <!--<a href="<?php echo base_url() ?>keywords-list" class="shortcut"><i class="fa fa-search" aria-hidden="true"></i><span class="shortcut-label">Keywords</span> </a>-->
-                                <a href="<?php echo base_url() ?>appointments" class="shortcut"><i class="fa fa-calendar" aria-hidden="true"></i><span class="shortcut-label">Appointments</span> </a>
+                                
+								<a href="<?php echo base_url() ?>appointments" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/Calender.png" width="100"/>
+								<span class="shortcut-label">Appointments</span> </a>
+								
                                 <!--<a href="<?php echo base_url() ?>birthday-list" class="shortcut"><i class="fa fa-birthday-cake" aria-hidden="true"></i><span class="shortcut-label">Birthday Wishes</span> </a>-->
-                                <a href="<?php echo base_url() ?>scheduled-task" class="shortcut"><i class="fa fa-clock-o" aria-hidden="true"></i><span class="shortcut-label">Scheduled Tasks</span> </a>
+                                
+								<a href="<?php echo base_url() ?>scheduled-task" class="shortcut">
+								<img src="<?php echo base_url() ?>media/img/icon/Schedule_Task.png" width="100"/>
+								<span class="shortcut-label">Scheduled Tasks</span> </a>
+								
                                 <!--<a href="javascript:;" class="shortcut"><i class="fa fa-envelope-o" aria-hidden="true"></i></i> <span class="shortcut-label">Email Integration</span> </a>-->
                                 <!--<a href="<?php echo base_url() ?>mms-list" class="shortcut"><i class="fa fa-mobile" aria-hidden="true"></i><span class="shortcut-label">MMS</span> </a>-->
                                 <!--<a href="<?php echo base_url() ?>inbox-list" class="shortcut"><i class="fa fa-comments" aria-hidden="true"></i><span class="shortcut-label">Inbox</span> </a>-->
@@ -37,7 +51,7 @@
                         <!-- /widget-header -->
 						
 					   
-                        <div class="Accounts widget-content">
+                        <div class="Accounts widget-content" style="text-align:center;">
 
 						<img src="<?php echo base_url();?>/load_image.php?user_id=<?php echo $_SESSION['user_account']['user_id'];?>">
 							

@@ -1,11 +1,11 @@
 /*------------------------------------------------------------------
-Bootstrap Admin Template by EGrappler.com
+	Bootstrap Admin Template by EGrappler.com
 ------------------------------------------------------------------*/
 
 
 
 /*------------------------------------------------------------------
-[1. Global]
+	[1. Global]
 */
 
 body {
@@ -49,7 +49,7 @@ textarea {
     background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
-
+	
     font-size: 10px;
     color: #444;
     text-transform: uppercase;
@@ -62,7 +62,7 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[2. Navbar / .navbar]
+	[2. Navbar / .navbar]
 */
 
 .navbar .container {
@@ -71,9 +71,9 @@ textarea {
 
 .navbar-inner {
     padding: 7px 0;
-
-    background: #FF3B30 !important;
-
+	
+    background: #101010 !important;
+	
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -112,7 +112,7 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[3. Subnavbar / .subnavbar]
+	[3. Subnavbar / .subnavbar]
 */
 
 .subnavbar {
@@ -127,35 +127,35 @@ textarea {
 
 .subnavbar .container > ul {
     display: inline-block;
-
+	
     height: 80px;
     padding: 0;
     margin: 0;
-
+	
 }
 
 .subnavbar .container > ul > li {
     float: left;
-
+	
     min-width: 90px;
     height: 60px;
     padding: 0;
     margin: 0;
-
+	
     text-align: center;
     list-style: none;
-
+	
     border-left: 1px solid #d9d9d9;
-
-
+	
+	
 }
 
 .subnavbar .container > ul > li > a {
     display: block;
-
+	
     height: 100%;
     padding: 0 15px;
-
+	
     font-size: 12px;
     font-weight: bold;
     color: #b2afaa;
@@ -168,7 +168,7 @@ textarea {
 
 .subnavbar .container > ul > li > a > i {
     display: inline-block;
-
+	
     width: 24px;
     height: 24px;
     margin-top: 11px;
@@ -178,12 +178,12 @@ textarea {
 
 .subnavbar .container > ul > li > a > span {
     display: block;
-
+	
 }
 
 
 .subnavbar .container > ul > li.active > a {
-
+	
     border-bottom:3px solid #ff7f74;
     color: #383838;
 }
@@ -196,7 +196,7 @@ textarea {
 
 .subnavbar .dropdown .dropdown-menu {
     text-align: left;
-
+	
     -webkit-border-top-left-radius: 0;
     -webkit-border-top-right-radius: 0;
     -moz-border-radius-topleft: 0;
@@ -233,7 +233,7 @@ textarea {
 
 .subnavbar .caret {
     margin-top: 4px;
-
+	
     border-top-color: white;
     border-bottom-color: white;
 }
@@ -247,7 +247,7 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[4. Main / .main]
+	[4. Main / .main]
 */
 
 .main {
@@ -259,22 +259,22 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[5. Extra / .extra]
+	[5. Extra / .extra]
 */
 
 .extra {
-
+	
     border-top: 1px solid #585858;
     border-bottom: 1px solid #000;
-
+	
 }
 
 .extra-inner {
     padding: 20px 0;
-
+	
     font-size: 11px;
     color: #BBB;
-
+	
     background: #1A1A1A;
 }
 
@@ -284,7 +284,7 @@ textarea {
 
 .extra h4 {
     margin-bottom: 1em;
-
+	
     font-weight: 400;
 }
 
@@ -295,7 +295,7 @@ textarea {
 
 .extra li {
     margin-bottom: .6em;
-
+	
     list-style: none;
 }
 
@@ -304,20 +304,20 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[6. Footer/ .footer]
+	[6. Footer/ .footer]
 */
 
 .footer {
     margin-top: 0;
-
+	
     border-top: 1px solid #292929;
 }
 
 .footer-inner {
     padding: 15px 0;
-
+	
     font-size: 12px;
-    background: #111;
+    background: #000;
     color: #999;
 }
 
@@ -332,28 +332,28 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[6. Widget / .widget]
+	[6. Widget / .widget]
 */
 
 .widget {
-
+	
     position: relative;
     clear: both;
-
+	
     width: auto;
-
+	
     margin-bottom: 2em;
-
+	
     overflow: hidden;
 }
 
 .widget-header {
-
+	
     position: relative;
-
+	
     height: 40px;
     line-height: 40px;
-
+	
     background: #f9f6f1;
     background:-moz-linear-gradient(top, #f9f6f1 0%, #f2efea 100%); /* FF3.6+ */
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f6f1), color-stop(100%,#f2efea)); /* Chrome,Safari4+ */
@@ -363,43 +363,43 @@ textarea {
     background:linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
-
-
+	
+	
     border: 1px solid #d6d6d6;
-
-
+	
+	
     -webkit-background-clip: padding-box;
 }	
 
 .widget-header h3 {
-
+	
     position: relative;
     top: 2px;
     left: 10px;
-
+	
     display: inline-block;
     margin-right: 3em;
-
+	
     font-size: 14px;
     font-weight: 800;
     color: #525252;
     line-height: 18px;
-
+	
     text-shadow: 1px 1px 2px rgba(255,255,255,.5);
 }
 
 .widget-header [class^="icon-"], .widget-header [class*=" icon-"] {
-
+	
     display: inline-block;
     margin-left: 13px;
     margin-right: -2px;
-
+	
     font-size: 16px;
     color: #555;
     vertical-align: middle;
-
-
-
+	
+	
+	
 }
 
 
@@ -407,12 +407,12 @@ textarea {
 
 .widget-content {
     padding: 20px 15px 15px;
-
+	
     background: #FFF;
-
-
+	
+	
     border: 1px solid #D5D5D5;
-
+	
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -420,7 +420,7 @@ textarea {
 
 .widget-header+.widget-content {
     border-top: none;
-
+	
     -webkit-border-top-left-radius: 0;
     -webkit-border-top-right-radius: 0;
     -moz-border-radius-topleft: 0;
@@ -457,7 +457,7 @@ textarea {
 
 .widget-table .table {
     margin-bottom: 0;
-
+	
     border: none;
 }
 
@@ -473,17 +473,17 @@ textarea {
 /* Widget Plain */
 
 .widget-plain {
-
+	
     background: transparent;
-
+	
     border: none;
 }
 
 .widget-plain .widget-content {
     padding: 0;
-
+	
     background: transparent;
-
+	
     border: none;
 }
 
@@ -491,7 +491,7 @@ textarea {
 /* Widget Box */
 
 .widget-box {	
-
+	
 }
 
 .widget-box .widget-content {	
@@ -503,7 +503,7 @@ textarea {
 
 
 /*------------------------------------------------------------------
-[7. Error / .error-container]
+	[7. Error / .error-container]
 */
 
 .error-container {
@@ -514,7 +514,7 @@ textarea {
 
 .error-container h1 {
     margin-bottom: .5em;
-
+	
     font-size: 120px;
     line-height: 1em;
 }
@@ -526,7 +526,7 @@ textarea {
 
 .error-container .error-details {
     margin-bottom: 1.5em;
-
+	
     font-size: 16px;
 }
 
@@ -1097,15 +1097,15 @@ table.fc-border-separate {
     _overflow: hidden
 }
 .fc-header-left .fc-button-prev .fc-button-inner {background: url('../img/icons-sa7c41345d9.png') no-repeat; background-position: 0 -351px;
-                                                  height: 16px;
-                                                  width: 11px;}
+	height: 16px;
+width: 11px;}
 
 .fc-header-left .fc-button-next .fc-button-inner {background: url('../img/icons-sa7c41345d9.png') no-repeat; background-position: 0 -367px;
-                                                  height: 16px;
-                                                  width: 11px;}
+	height: 16px;
+width: 11px;}
 
 /*------------------------------------------------------------------
-[8. Miscellaneous]
+	[8. Miscellaneous]
 */
 
 .chart-holder {
@@ -1145,15 +1145,15 @@ table.fc-border-separate {
 
 
 /*------------------------------------------------------------------
-[1. Max Width: 480px]
+	[1. Max Width: 480px]
 */
 
 @media (max-width: 480px) {
-
+	
     .error-container h1 {
         font-size: 72px;
-    }
-
+	}
+	
 }
 
 
@@ -1161,99 +1161,99 @@ table.fc-border-separate {
 
 
 /*------------------------------------------------------------------
-[1. Max Width: 767px]
+	[1. Max Width: 767px]
 */
 
 @media (max-width: 767px) {
-
+	
     #main {
         padding: 0 10px;
         margin-right: -20px;
         margin-left: -20px;	
-    }
-
-
+	}
+	
+	
     .subnavbar {
         margin-left: -20px;
         margin-right: -20px;	
-    }
-
-
+	}
+	
+	
     .subnavbar-inner {
         height: auto;
-    }
-
+	}
+	
     .subnavbar .container > ul {
         width: 100%;
         height: auto;
-
+		
         border: none;
-    }
-
+	}
+	
     .subnavbar .container > ul > li {
         width: 33%;
         height: 70px;
         margin-bottom: 0;
-
+		
         border: none;
-    }
-
-
-
+	}
+	
+	
+	
     .subnavbar .container > ul > li.active > a {
         font-size: 11px;
         background: transparent;
-    }
-
+	}
+	
     .subnavbar .container > ul > li > a > i {	
         display: inline-block;	
         margin-bottom: 0;
-
+		
         font-size: 20px;
-    }
-
-
+	}
+	
+	
     .subnavbar-open-right .dropdown-menu {
         left: auto;
         right: 0;
-    }
-
+	}
+	
     .subnavbar-open-right .dropdown-menu:before {
         left: auto;
         right: 12px;
-    }
+	}
     .subnavbar-open-right .dropdown-menu:after {
         left: auto;
         right: 13px;
-    }
-
+	}
+	
     .extra {
         margin-right: -20px;
         margin-left: -20px;
-    }
-
+	}
+	
     .extra .container {
         padding: 0 20px;
-    }
-
+	}
+	
     .footer {
         margin-right: -20px;
         margin-left: -20px;
-    }
-
+	}
+	
     .footer .container {
         padding: 0 20px;
-    }
-
+	}
+	
     .footer .footer-terms {
         text-align: left;
-    }
-
+	}
+	
     .footer .footer-terms a {
         margin-left: 0;
         margin-right: 1em;
-    }
-
+	}
+	
 }
 
 
@@ -1261,23 +1261,23 @@ table.fc-border-separate {
 
 
 /*------------------------------------------------------------------
-[3. Max Width: 979px]
+	[3. Max Width: 979px]
 */
 
 @media (max-width: 979px) {
-
+	
     .navbar-fixed-top {
         position: static;
-
+		
         margin-bottom: 0;
-    }
-
+	}
+	
     .subnavbar {
-    }
-
+	}
+	
     .subnavbar .container {		
         width: auto;
-    }
+	}
 }
 
 
@@ -1286,91 +1286,91 @@ table.fc-border-separate {
 
 
 /*------------------------------------------------------------------
-[2. Max Width: 1200px]
+	[2. Max Width: 1200px]
 */
 
 @media (min-width: 1200px) {
     .navbar .search-query {
         width: 200px;
-    }
-
+	}
+	
 }
 
 #features .fa{
     font-size: 31px;
     color:#333333
-
+	
 }
 
 
 #features .fa:hover{
-
-
-
+	
+	
+	
 }
 
 #features .shortcut .fa:hover {
-
-
+	
+	
     color:#fff
-
+	
 }
 
 
 #Chart_Table {
-
+	
     margin-top: 31px;	
-
-
+	
+	
 }
 
 
 #features .Support_btn {
-
+	
     text-align:center
-
+	
 }
 
 
 #features .Support_btn button{
-
+	
     width: 100%;
     padding: 11px;
     background-color: #FF3B30;
     color: #fff;
     border: 0px;
     border-radius: 2px;
-
+	
 }
 
 
 #features .Support_btn button:hover{
-
+	
     /* background-color:#cc3c0e */
     background-color:#FF3B30
-
+	
 }
 
 
 #Chart_Table .controls {
-
-
+	
+	
     margin-left:111px
-
+	
 }
 
 #Chart_Table label {
-
-
+	
+	
     float:left;
     padding-top:5px
-
+	
 }
 
 #features .control-label{
     float: left;
     padding-top: 5px;
-
+	
 }
 
 
@@ -1381,27 +1381,27 @@ table.fc-border-separate {
 }
 
 #features .controls {
-
+	
     float:right
 }
 
 
 .Accounts h3{
-
+	
     text-align:center
-
+	
 }
 
 .space_top {
-
+	
     margin-top:15px
 }
 
 #Chart_Table #panel {
-
+	
     display:none
-
-
+	
+	
 }
 
 #Chart_Table .load_btn button{
@@ -1412,93 +1412,176 @@ table.fc-border-separate {
     text-align: center;
     width: 135px;
     border:0px
-
+	
 }
 
 #Chart_Table .load_btn {
     text-align:center
-
+	
 }
 
 
 #Text_Message_Form .Theme_DropDown {
-
+	
     float:left
-
-
-
+	
+	
+	
 }
 
 
 #Text_Message_Form .Reload_Button {
-
+	
     float:left;
-    margin-left:15px;
-
-
-
+    /* margin-left:15px; */
+	
+	
+	
 }
 
 
 #Text_Message_Form .Delete_Button {
-
+	
     float:left;
     margin-left:15px
+	
+	
+}
 
+/* Added by ranjit 16 May 2017 to add scroll to preview div in email campaign */
+
+#cke_editor1{
+	
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#preview_template_div {
+
+	border: 1px solid #000;
+    margin-left: 3px;
+    padding-left: 2px;
+   
+}
+
+
+
+/*Added by ranjit n 11 May 2017*/
+#Text_Message_Form .Preview_Button button {
+	
+	background-color: #fff;
+	border: 1px solid #f00;
+padding: 5px 15px;
+color: #f00;
+border-radius:1 ;
+margin-left:19px;
+}
+
+#Text_Message_Form .email-modal{
+
+/* width:588px; */
+
+
+width:47%;
+
+}
+
+.email-template-div{
+margin-top:11px;
+margin-bottom:11px;
+}
+
+.email-template-div input{
+width:86%;
+}
+
+.email-template-title{
+/* padding-left: 5px;  */
+/* text-align:center; */
+padding-top: 18px;
+padding-bottom: 10px;
+}
+
+#Text_Message_Form .Preview_Button button:hover{
+
+background-color: #f00;
+border: 1px solid #f00;
+color: #fff;
+border-radius: 1;
 
 }
 
 #Text_Message_Form .Reload_Button button{
-    padding: 5px 13px;
-    background-color: #FF3B30;
-    border: 1px solid #fff;
-    color: white;
-    border-radius: 2px;
+padding: 5px 13px;
+background-color: #FF3B30;
+border: 1px solid #fff;
+color: white;
+border-radius: 2px;
 
 }
 
 #Text_Message_Form .Delete_Button button{
-    padding: 5px 13px;
-    background-color: #fff;
-    border: 1px solid #FF3B30;
-    color: #FF3B30;
-    border-radius: 2px;
+padding: 5px 13px;
+background-color: #fff;
+border: 1px solid #FF3B30;
+color: #FF3B30;
+border-radius: 2px;
 
 }
+
+#Text_Message_Form .Delete_Button button:hover{
+
+background-color: #FF3B30;
+
+color: white;
+
+
+}
+
 
 
 #Text_Message_Form .Delete_Button button:hover{
 
-    background-color: #FF3B30;
+background-color: #FF3B30;
 
-    color: white;
+color: white;
 
 
 }
 
+#Text_Message_Form .Delete_Button button:hover{
+
+background-color: #FF3B30;
+
+color: white;
+
+
+}
+
+
 #Text_Message_Form .Reload_Button button:hover{
 
-    background-color: #fff;
-    border: 1px solid #FF3B30;
+background-color: #fff;
+border: 1px solid #FF3B30;
 
-    color: #FF3B30;
+color: #FF3B30;
 
 
 }
 .Create_New_Btn {
-    text-align: center;
-    margin: 20px auto;
-    float: left;
-    width: 100%;
+text-align: center;
+margin: 20px auto;
+float: left;
+width: 100%;
 }
 
 
 
 .Add_Message_Btn {
 
-    text-align:center;
-    margin-bottom:10px;
-    margin-top:20px
+text-align:center;
+margin-bottom:10px;
+margin-top:20px
 
 
 }
@@ -1506,15 +1589,15 @@ table.fc-border-separate {
 
 .Add_Message_Btn p{
 
-    margin-top:10px
+margin-top:10px
 
 }
 
 .message_Box_Panel hr{
 
 
-    margin-left:20px;
-    margin-right:20px
+margin-left:20px;
+margin-right:20px
 
 }
 
@@ -1522,158 +1605,158 @@ table.fc-border-separate {
 .Text_Message_Format textarea {
 
 
-    width:100%
+width:100%
 
 }
 
 .top_Spacing_Each {
 
 
-    margin-top:10px
+margin-top:10px
 
 }
 
 
 .Append_Year select{
 
-    width:179px
+width:179px
 
 }
 
 
 
 .nav-pills>.active>a, .nav-pills>.active>a:hover {
-    color: #ffffff;
-    background-color:#FF3B30;
+color: #ffffff;
+background-color:#FF3B30;
 }
 
 
 #Wizard_form_steps .disabled a{
 
 
-    color:#999
+color:#999
 
 }
 
 
 #Step_Wizard_Form .nav-tabs>li, .nav-pills>li {
 
-    width: 12.5%;
+width: 12.5%;
 }
 
 
 @media only screen and (max-width: 500px) {
-    #Step_Wizard_Form .nav-tabs>li, .nav-pills>li {
+#Step_Wizard_Form .nav-tabs>li, .nav-pills>li {
 
-        width: 100%;
-    }
+width: 100%;
+}
 }
 
 #Step_Wizard_Form .nav-tabs>li, .nav-pills>li a{
 
-    text-align:center;
-    color:#FF3B30
+text-align:center;
+color:#FF3B30
 }
 
 #Step_Wizard_Form .Btn_center{
 
-    text-align:center
+text-align:center
 
 }
 
 #Step_Wizard_Form .control-label{
-    float: left;
-    width: 140px;
-    padding-top: 5px;
-    text-align: right;
+float: left;
+width: 140px;
+padding-top: 5px;
+text-align: right;
 
 }
 
 
 #Step_Wizard_Form input, #Step_Wizard_Form select,#Step_Wizard_Form textarea{
-    margin-left:20px
+margin-left:20px
 
 }
 
 
 #Step_Wizard_Form .well{
-    background-color:#fff
+background-color:#fff
 
 }
 
 #Keywords_Search .control-label2{
 
-    float: left;
-    float: left;
-    width: 140px;
-    padding-top: 5px;
-    text-align: right;
+float: left;
+float: left;
+width: 140px;
+padding-top: 5px;
+text-align: right;
 }
 
 #Keywords_Search .controls {
 
-    margin-left: 160px;
+margin-left: 160px;
 
 
 }
 
 #Keywords_Search .controls .Theme_DropDown{
 
-    float:left;
-    margin-left:15px
+float:left;
+margin-left:15px
 
 }
 
 #Keywords_Search .Keywords_Input{
 
-    float:left;
+float:left;
 
 
 }
 
 
 #Keywords_Search .Search_Keyword {
-    float:right;
-    margin-top: 6px;
-    margin-bottom: 10px;
+float:right;
+margin-top: 6px;
+margin-bottom: 10px;
 }
 
 #Keywords_Search .Search_Keyword input{
-    color:#999;
-    border:1px solid #CCC1C1;
+color:#999;
+border:1px solid #CCC1C1;
 
 }
 
 #Keywords_Search a{
 
-    #FF3B30
+/*#FF3B30*/
 
 }
 
 #Keywords_Search .nav-tabs > li > a {
 
-    padding-bottom:25px
+padding-bottom:25px
 
 }
 
 
 #Keywords_Search .Reload_Button{
-    float: left;
-    margin-left: 15px;
+float: left;
+margin-left: 15px;
 }
 
 #Keywords_Search .Delete_Button{
-    float: left;
-    margin-left: 15px;
+float: left;
+margin-left: 15px;
 }
 
 
 #Keywords_Search .Reload_Button button{
-    padding: 5px 13px;
-    background-color: #FF3B30;
-    border: 1px solid #fff;
-    color: white;
-    border-radius: 2px;
+padding: 5px 13px;
+background-color: #FF3B30;
+border: 1px solid #fff;
+color: white;
+border-radius: 2px;
 
 }
 
@@ -1681,54 +1764,54 @@ table.fc-border-separate {
 
 
 #Keywords_Search .Reload_Button button:hover{
-    background-color: #fff;
-    border: 1px solid #FF3B30;
-    color: #FF3B30;
+background-color: #fff;
+border: 1px solid #FF3B30;
+color: #FF3B30;
 
 }
 
 
 #Keywords_Search .Delete_Button button{
-    padding: 5px 13px;
-    background-color: #fff;
-    border: 1px solid #FF3B30;
-    color: #FF3B30;
-    border-radius: 2px;
+padding: 5px 13px;
+background-color: #fff;
+border: 1px solid #FF3B30;
+color: #FF3B30;
+border-radius: 2px;
 
 }
 
 #Keywords_Search .Delete_Button button:hover{
-    background-color: #FF3B30;
-    border: 1px solid #fff;
-    color: white;
+background-color: #FF3B30;
+border: 1px solid #fff;
+color: white;
 
 }
 
 
 .Responsetourl {
 
-    text-align:center
+text-align:center
 
 }
 
 .Modal_Text ul li{
-    display:inline-block
+display:inline-block
 
 }
 
 
 #myModal .control-label2{
 
-    float: left;
-    float: left;
-    width: 140px;
-    padding-top: 5px;
-    text-align: right;
+float: left;
+float: left;
+width: 140px;
+padding-top: 5px;
+text-align: right;
 }
 
 #myModal .controls {
 
-    margin-left: 160px;
+margin-left: 160px;
 
 
 }
@@ -1736,21 +1819,21 @@ table.fc-border-separate {
 #myModal .center_div {
 
 
-    text-align:center
+text-align:center
 }
 
 
 #myModal .Margin_left_Right hr{
 
 
-    margin-left: 32px;
-    margin-right: 32px;
+margin-left: 32px;
+margin-right: 32px;
 
 }
 
 .Create_New_Btn p{
 
-    margin-top:11px
+margin-top:11px
 
 }
 
@@ -1758,27 +1841,27 @@ table.fc-border-separate {
 #Text_Message_Form .url_Converter .controls input{
 
 
-    float:left
+float:left
 
 }
 
 
 #Text_Message_Form .url_Converter .instructions{
 
-    margin-left:160px
+margin-left:160px
 
 }
 
 #Text_Message_Form h3{
 
-    margin-left:47px
+margin-left:47px
 
 }
 
 
 #Text_Message_Form  .Mobile_View {
 
-    text-align:center
+text-align:center
 
 }
 
@@ -1786,31 +1869,31 @@ table.fc-border-separate {
 #Text_Message_Form .Text_placement{
 
 
-    position:relative;
+position:relative;
 
 }
 
 #Text_Message_Form .Text_placement .Mobile_Mirror_Text textarea{
-    resize: none;
-    width: 174px;
-    border: 0px;
-    height: 260px;
-    overflow-y: hidden;
+resize: none;
+width: 174px;
+border: 0px;
+height: 260px;
+overflow-y: hidden;
 
 }
 
 
 #Text_Message_Form .Text_placement .Mobile_Mirror_Text{
 
-    position:absolute;
-    top: 88px;
-    left: 144px;
+position:absolute;
+top: 88px;
+left: 144px;
 
 
 }
 
 #Text_Message_Form .Text_placement .Mobile_Mirror_Text textarea[disabled]{
-    background-color:#fff
+background-color:#fff
 
 }
 
@@ -1818,7 +1901,7 @@ table.fc-border-separate {
 .scroll_Add_Text {
 
 
-    height:80%;
+height:80%;
 
 
 }
@@ -1826,18 +1909,171 @@ table.fc-border-separate {
 
 .calculator h4{
 
-    padding-top:10px
+padding-top:10px
 
 }
 
 .help-text {
-    margin-left: 20px;
-    color: #b2afaa;
+margin-left: 20px;
+color: #b2afaa;
 }
 .msg_dest {
-    height: 64px;
-    overflow-y: scroll;
-    width: 175px;
-    border: 1px solid #ccc;
-    padding: 10px;
+height: 64px;
+overflow-y: scroll;
+width: 346px;
+border: 1px solid #ccc;
+padding: 10px;
 }
+
+/****************** BINIT *********************/
+
+/*background: #FF3838;*/
+
+.social-links {
+	list-style:none;
+	float:right;
+	margin-top:15px;
+}
+
+.social-links li {
+    /* display: inline; */
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    float: left;
+    /* padding: 15px; */
+    text-align: center;
+    line-height: 44px;
+    margin-left: 8px;
+	margin-top:5px;
+}
+
+.social-links li:hover {
+	border: 2px solid #d80027;
+	color: #d80027;
+}
+
+.social-links li a { 
+	color:#fff;
+	font-size:18px;
+}
+
+.social-links li:hover a { 
+	color:#d80027;
+}
+
+.widget-content .shortcuts a img {
+	width:60px;
+}
+
+.subnavbar .container .mainnav img {
+    margin-top: 7px;
+}
+
+.modal-custom-footer {
+    background: #fff;
+}
+
+.modal-custom-footer .email-template-div input {
+	width:100%;
+	margin-bottom:0;
+}
+
+
+
+.modal-dialog header {
+	position:relative;
+}
+
+.close-custom-btn {
+	position: absolute;
+    right: -6px;
+    bottom: 28px;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 14px;
+    height: 30px;
+    border: 4px solid #FF3838;
+    color: #ff3838;
+    border-radius: 50%;
+    background: #fff;
+	    z-index: 9999999999;
+}
+
+.close-custom-btn:hover i {
+	color:#000;
+}
+
+ .modal .modal-header { 
+    background: #FF3838;
+    color: #fff;
+    position: relative;
+	    padding: 20px 20px;
+ }
+ 
+  .modal .modal-header h4 { 
+    font-size:18px;
+ }
+ 
+ 
+ .btn.btn-danger {
+		background: #FF3838 !important;
+		box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+		padding: 5px 15px !important;
+		font-size: 1.3em !important;
+ }
+ 
+.btn-danger:hover {
+    background: #ff5252 !important;
+}
+
+#template_preview_modal {
+	z-index:99999999999;
+}
+
+
+
+ .btn.btn-warning{
+
+		background-color: #ff0000 !important;
+		border-color: #ff0000 !important;
+		box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+		padding: 5px 15px !important;
+		font-size: 14px !important;
+ }
+ 
+.btn-warning:hover {
+    background: #ff5252 !important;
+}
+
+.btn.btn-success{
+
+		background-color: #ff0000 !important;
+		border-color: #ff0000 !important;
+		box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+		padding: 5px 15px !important;
+		font-size: 14px !important;
+ }
+ 
+.btn-success:hover {
+    background: #ff5252 !important;
+}
+
+ .btn.btn-primary{
+
+		background-color: #ff0000 !important;
+		border-color: #ff0000 !important;
+		box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+		padding: 1px 15px !important;
+		font-size: 14px !important;
+ }
+ 
+.btn-primary:hover {
+    background: #ff5252 !important;
+}
+
+
+

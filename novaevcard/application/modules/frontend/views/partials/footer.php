@@ -41,7 +41,7 @@
 </section>-->
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">Copyright © 2017 <span class="orange">Vcard, Inc.</span> All rights reserved</span>
+        <span class="text-muted">Copyright © 2017 <span class="orange">Paasport, Inc.</span> All rights reserved</span>
         <ul class="footer-links">
             <li><a href=""> Terms of Use</a></li>
             <li>|</li>

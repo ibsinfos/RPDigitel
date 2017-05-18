@@ -26,6 +26,11 @@
 			if(!isset($_SESSION)) {
 				session_start();
 			}
+			
+			
+		$query_get_country=$this->db->get('country');
+		$data['country_list']=$query_get_country->result();
+		
 			//        $_SESSION['user_id'] =$this->session->userdata('user_id');
 						 // print_r($this->session->all_userdata());
 						 // print_r($_SESSION);

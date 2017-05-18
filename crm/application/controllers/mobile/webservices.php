@@ -56,6 +56,11 @@ class webservices extends MY_Controller {
 		echo json_encode($data);
 	}
 	
+	public function test_crm()
+	{
+	echo "sdsdsd";
+	}
+	
 	public function login_user()
 	{
 		//require_once dirname(__FILE__) . '/../libraries/MCrypt.php';

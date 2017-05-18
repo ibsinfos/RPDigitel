@@ -22,7 +22,7 @@ class Mms extends CI_Controller
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
-                ->title('vCard | MMS List')
+                ->title('Paasport | MMS List')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
         $this->template->build('mms_list');

@@ -68,7 +68,7 @@
 				$this->template->set('data_qrcode',$data_qrcode);
 				$this->template->set_theme('default_theme');
 				$this->template->set_layout('default')
-                ->title('vCard | view_qrcode')
+                ->title('Paasport | view_qrcode')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
 				$this->template->build('view_qrcode');
@@ -104,7 +104,7 @@
 				$this->template->set('data_qrcode',$data_qrcode);
 				$this->template->set_theme('default_theme');
 				$this->template->set_layout('default')
-                ->title('vCard | view_qrcode')
+                ->title('Paasport | view_qrcode')
                 ->set_partial('header', 'partials/inner_header')
                 ->set_partial('footer', 'partials/inner_footer');
 				$this->template->build('view_qrcode');
