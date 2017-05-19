@@ -39,6 +39,7 @@
                                                     <label>Email
                                                         <small>(required)</small>
                                                     </label>
+                                                    
                                                     <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
                                                     <input name="email" type="email" class="form-control"
                                                            placeholder="eg. johndoe@website.com" value="<?php echo ($user_data['0']['email']) ? $user_data['0']['email'] : ''; ?>" >
@@ -114,10 +115,10 @@
                                                                 <label for="companyname">Company Name
                                                                     <small>(required)</small>
                                                                 </label>
-																<input type="hidden" value="<?php echo ($user_company[0]['id']) ? $user_company[0]['id'] : ''; ?>" name="company_id">
+																<input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="company_id">
                                                                 <input id="companyname" name="companyname" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter company name" value="<?php echo ($user_company['0']['company_name']) ? $user_company['0']['company_name'] : ''; ?>"
+                                                                       placeholder="Enter company name" value="<?php echo ($user_data['0']['company_name']) ? $user_data['0']['company_name'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_companyname" ></span>	   
                                                             </div>
@@ -127,7 +128,7 @@
                                                                 </label>
                                                                 <input id="jobTitle" name="jobtitle1" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Job Title" value="<?php echo ($user_company['0']['job_title']) ? $user_company['0']['job_title'] : ''; ?>"
+                                                                       placeholder="Enter Job Title" value="<?php echo ($user_data['0']['job_title']) ? $user_data['0']['job_title'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_jobtitle1" ></span>	 	   
                                                             </div>
@@ -135,7 +136,7 @@
                                                                 <label>Start Date</label>
                                                                 <div id="sandbox-container" class="input-group date">
                                                                     <input type="text" class="form-control"
-                                                                           value="<?php echo ($user_company['0']['start_date']) ? $user_company['0']['start_date'] : ''; ?>" name="startdate"  placeholder="12-02-2017" >
+                                                                           value="<?php echo ($user_data['0']['start_date']) ? $user_data['0']['start_date'] : ''; ?>" name="startdate"  placeholder="12-02-2017" >
                                                                     <div class="input-group-addon">
                                                                         <span class="glyphicon glyphicon-th"></span>
                                                                     </div>
@@ -149,7 +150,7 @@
                                                                        type="tel"
                                                                        class="form-control"
                                                                        placeholder="Enter Company Contact Number"
-                                                                       value="<?php echo ($user_company['0']['work_phone']) ? $user_company['0']['work_phone'] : ''; ?>" maxlength="17">
+                                                                       value="<?php echo ($user_data['0']['work_phone']) ? $user_data['0']['work_phone'] : ''; ?>" maxlength="17">
 																	   
                                                             </div>
                                                             <div class="form-group">
@@ -159,7 +160,7 @@
                                                                 <input id="companyEmail" name="companyemail"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Company Email" value="<?php echo ($user_company['0']['work_email']) ? $user_company['0']['work_email'] : ''; ?>">
+                                                                       placeholder="Enter Company Email" value="<?php echo ($user_data['0']['work_email']) ? $user_data['0']['work_email'] : ''; ?>">
 																<span id="err_companyemail" ></span>	   
                                                             </div>
                                                             <div class="form-group">
@@ -169,7 +170,7 @@
                                                                 <input id="companyWebsite" name="companywebsite"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Company Website URL" value="<?php echo ($user_company['0']['work_website']) ? $user_company['0']['work_website'] : ''; ?>">
+                                                                       placeholder="Company Website URL" value="<?php echo ($user_data['0']['work_website']) ? $user_data['0']['work_website'] : ''; ?>">
 																<span id="err_companywebsite" ></span>	   
                                                             </div>
                                                         </div>
@@ -215,9 +216,9 @@
                                                 <div class="picture">
                                                     <?php
                                                     if (!empty($user_data['0']['user_image']))
-                                                        $wizard_pic_preview = $user_data['0']['user_image'];
+                                                       $wizard_pic_preview = base_url().$user_data['0']['user_image'];
                                                     else
-                                                        $wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
+                                                        $wizard_pic_preview = asset_url() ."main_vcard/images/default-avatar.png";
 													
 													
                                                     ?>
@@ -226,6 +227,7 @@
                                                          title="" height="106"/>
                                                 </div>
                                             </div>
+											
                                             <ul class="list-inline center margin-bottom-0">
                                                 <li class="padding-right-0">
                                                     <h2 data-preview="firstname"></h2>
@@ -570,6 +572,8 @@
 																	<label for="prevCompanyName" class="col-sm-3 control-label">Skill & Expertise</label>
 																	<div class="col-sm-9">
 																		
+																		<input class="form-control" id="vcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  type="hidden">
+																		<input class="form-control" id="txt_skill_id" name="txt_skill_id"  type="hidden">
 																		<input class="form-control" id="txt_skill" name="txt_skill" placeholder="Enter Skill & Expertise" type="text">
 																		<span id="err_txt_skill"></span>	   
 																	</div>
@@ -603,11 +607,11 @@
 
                                                                                     <tr id="<?php echo $user_skill['id']; ?>">
                                                                                         <td><input name="record" type="checkbox" value="<?php echo ($user_skill['id']) ? $user_skill['id'] : ''; ?>" ></td>
-                                                                                        <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?></td>
                                                                                                                      
                                                                                          <td>
 																						
-																								<a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>','<?php echo $user_edu['institute_name']; ?>','<?php echo $user_edu['degree_or_certificate']; ?>','<?php echo $user_edu['start_date']; ?>','<?php echo $user_edu['end_date']; ?>');" >Edit</a>
+																								<a href="#" onclick="getSkillDetailUpdate('<?php echo $user_skill['id']; ?>','<?php echo $user_skill['skill']; ?>');" >Edit</a>
 																								
 																						</td>
                                                                                     </tr>
@@ -650,6 +654,7 @@
                                                                            class="col-sm-3 control-label">Company
                                                                         Name</label>
                                                                     <div class="col-sm-9">
+																		<input type="hidden" id="vcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>" />
 																		<input type="hidden" id="exp_det_id" name="exp_det_id" value="" />
                                                                         <input type="text" class="form-control"
                                                                                id="prevCompanyName"
@@ -766,6 +771,7 @@
                                                                         Name</label>
                                                                     <div class="col-sm-9">
 																		
+																		<input type="hidden" class="form-control" id="eduvcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  >
 																		<input type="hidden" class="form-control" id="edu_det_id" name="edu_det_id">
                                                                         <input type="text" class="form-control"
                                                                                id="eduInstituteName"
@@ -923,7 +929,7 @@
                                                                                     ?>
                                                                     
                                                                        
-                                            <?php //echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?><br>
+                                            <?php echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?><br>
                                                                    
                                                                     
                                                                     
@@ -1956,7 +1962,7 @@
             var skill_name = $("#txt_skill").val();
             
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveSkills",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateSkills",
                 type: "POST",
                 data: $("#frmskillsAndExerptise").serialize(),
                 success: function (data)
@@ -1966,8 +1972,10 @@
 						
 										
 						
-						var markup = "<tr id="+scnt+"><td><input type='checkbox' name='record' value=" + json.ins_skill_id + " ></td><td>" + skill_name + "</td></tr>";
-						$(".preview-table-ex-skill").append(markup);
+						/*var markup = "<tr id="+scnt+"><td><input type='checkbox' name='record' value=" + json.ins_skill_id + " ></td><td>" + skill_name + "</td></tr>";
+						$(".preview-table-ex-skill").append(markup);*/
+						
+						getSkillData();
 						
 						var mark1="<div class='skill-remove-"+ json.ins_skill_id +"' >"+skill_name + "</div><br>";
 						
@@ -1976,7 +1984,7 @@
 						$(".preview-table-ex1").append(markup1);						*/
 						
 						$("#err_txt_skill").html('');			
-						$("#txt_skill").val('');	
+						$("#txt_skill,#txt_skill_id").val('');	
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {						
@@ -3001,10 +3009,10 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getExperienceData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#vcard_id').val()
+				
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex").html(''); 					 
@@ -3016,13 +3024,14 @@ $(function() {
 	
 	function getExperienceDataMobile()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getExperienceDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex1").html(''); 					 
@@ -3035,13 +3044,14 @@ $(function() {
 	
 	function getEducationData()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getEducationData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#eduvcard_id').val()
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex2").html(''); 					 
@@ -3056,10 +3066,9 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getEducationDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#eduvcard_id').val()				
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex3").html(''); 					 
@@ -3069,7 +3078,42 @@ $(function() {
         });
 		
 	}
+	function getSkillData()
+	{
+		
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getSkillData",
+			type: "POST",
+            data: {
+				
+				vcard_id:$('#eduvcard_id').val()
+			},           		        
+            success: function (data)
+            {					
+               $(".preview-table-ex-skill").html(''); 					 
+               $(".preview-table-ex-skill").html(data); 					 
+				
+            }
+        });
+	}
 	
+	function getSkillDataMobile()
+	{
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getEducationDataMobile",
+			type: "POST",
+            data: {
+				vcard_id:$('#eduvcard_id').val()				
+			},           		        
+            success: function (data)
+            {					
+               $(".preview-table-ex3").html(''); 					 
+               $(".preview-table-ex3").html(data);					 
+				
+            }
+        });
+		
+	}
 	function getListData()
 	{
 		$.ajax({
@@ -3327,6 +3371,14 @@ $(function() {
 		$('#eduEndDate1').val(edate);
 	}
 	// End update Experience
+	// Start Skill Experience
+	function getSkillDetailUpdate(id,name)
+	{
+		$('#txt_skill').val(name);
+		$('#txt_skill_id').val(id);
+		
+	}
+	// End skill Experience
 	// start update for list
 	function openList(id,name)
 	{

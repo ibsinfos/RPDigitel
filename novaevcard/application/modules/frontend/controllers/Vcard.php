@@ -124,6 +124,7 @@ class Vcard extends CI_Controller {
             //$this->load->model('Login_model');
             $uid= $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
             if ($uid) {
+				$this->session->set_userdata('vcard_id',$uid);
                 $map ['status'] = 1;
                 $map ['msg'] = "Your data has been saved";
                 echo json_encode($map);
@@ -168,22 +169,23 @@ class Vcard extends CI_Controller {
             $map ['msg'] = $error_array;           
             echo json_encode($map);
         } else {
-            $user = array();
-            $user['company_name'] = $this->input->post('companyname');
-            $user['job_title'] = $this->input->post('jobtitle1');
-            $user['start_date'] = date("Y-m-d", strtotime($this->input->post('startdate')));
-            $user['work_phone'] = $this->input->post('companycontact');
-            $user['work_email'] = $this->input->post('companyemail');
-            $user['work_website'] = $this->input->post('companywebsite');
-			$user['user_id'] = $this->session->userdata('paasport_user_id');
-           // $user1['id'] = $this->input->post('id');
-           // $this->load->model('Login_model');
-		    $uid= $this->common_model->insertRow($user, TABLES::$VCARD_COMPANY_DETAILS);          
-            if ($uid) {
-                $map ['status'] = 1;
-                $map ['msg'] = "Your data has been saved";
-                echo json_encode($map);
-            }
+			if(!empty($this->session->userdata('vcard_id')))
+			{	
+				$user = array();
+				$user['company_name'] = $this->input->post('companyname');
+				$user['job_title'] = $this->input->post('jobtitle1');
+				$user['start_date'] = date("Y-m-d", strtotime($this->input->post('startdate')));
+				$user['work_phone'] = $this->input->post('companycontact');
+				$user['work_email'] = $this->input->post('companyemail');
+				$user['work_website'] = $this->input->post('companywebsite');
+				//$user['user_id'] = $this->session->userdata('paasport_user_id');								   
+				$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS,$user, array('id'=>$this->session->userdata('vcard_id')));
+				if ($uid) {
+					$map ['status'] = 1;
+					$map ['msg'] = "Your data has been saved";
+					echo json_encode($map);
+				}
+			}	
         }
         exit;
     }
@@ -221,24 +223,25 @@ class Vcard extends CI_Controller {
 			  echo json_encode($map);
           } 
 		  else 
-		  { 
-			$map = array();
-			$user = array();
-			$user['facebook_link'] = $this->input->post('facebook_url');
-			$user['twitter_link'] = $this->input->post('twitter_url');
-			$user['google_plus_link'] = $this->input->post('googleplus_url');
-			$user['linkedin_link'] = $this->input->post('linkedin_url');
-			$user['youtube_link'] = $this->input->post('youtube_url');
-			$user['pinterest_link'] = $this->input->post('pinterest_url');
-			$user['received_email'] = $this->input->post('user_url');
-			$user1['id'] = $this->input->post('id');
-			$this->load->model('Login_model');
-			$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('user_id'=>$this->session->userdata('paasport_user_id')));
-			if ($uid) {
-				$map ['status'] = 1;
-				$map ['msg'] = "Your data has been saved";
-				echo json_encode($map);
-			}
+		  {
+			if(!empty($this->session->userdata('vcard_id')))
+			{	
+				$map = array();
+				$user = array();
+				$user['facebook_link'] = $this->input->post('facebook_url');
+				$user['twitter_link'] = $this->input->post('twitter_url');
+				$user['google_plus_link'] = $this->input->post('googleplus_url');
+				$user['linkedin_link'] = $this->input->post('linkedin_url');
+				$user['youtube_link'] = $this->input->post('youtube_url');
+				$user['pinterest_link'] = $this->input->post('pinterest_url');
+				$user['received_email'] = $this->input->post('user_url');				
+				$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$this->session->userdata('vcard_id')));
+				if ($uid) {
+					$map ['status'] = 1;
+					$map ['msg'] = "Your data has been saved";
+					echo json_encode($map);
+				}
+			}	
         }
         //echo '<pre>';
         // print_r($_POST);
@@ -246,7 +249,8 @@ class Vcard extends CI_Controller {
     }
 
     //Added by Ranjit on 09 May 2017 to save Short Bio info End
-    public function saveShortBio() {
+    public function saveShortBio() 
+	{
         //	   $this->load->helper('utility_helper');
         $this->load->model('common_model');
         //        $this->load->helper(array(
@@ -264,18 +268,21 @@ class Vcard extends CI_Controller {
           $map ['msg'] = validation_errors();
           echo json_encode($map);
           } else { */
+		  
         $map = array();
         $user = array();
-        //            $user['short_bio'] = $this->input->post('editor1');
-        $user['short_bio'] = $this->input->post('short_bio');
-        $user1['id'] = $this->input->post('id');
-        $this->load->model('Login_model');
-        $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('user_id' => $user1['id']));
-        if ($uid) {
-            $map ['status'] = 1;
-            $map ['msg'] = "Your data has been saved";
-            echo json_encode($map);
-        }
+        if(!empty($this->session->userdata('vcard_id')))
+		{
+		    $user['short_bio'] = $this->input->post('short_bio');
+			$user1['id'] = $this->input->post('id');
+			$this->load->model('Login_model');
+			$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$this->session->userdata('vcard_id') ));
+			if ($uid) {
+				$map ['status'] = 1;
+				$map ['msg'] = "Your data has been saved";
+				echo json_encode($map);
+			}
+		}	
         //}
         //echo '<pre>';
         // print_r($_POST);
@@ -457,23 +464,27 @@ class Vcard extends CI_Controller {
           } 
 		  else 
 		  { 
-			$map = array();
-			$experience = array();
-			$experience['user_id'] = $this->session->userdata('paasport_user_id');
-			$experience['skill'] = $this->input->post('txt_skill');
-			$ins_experience = $this->common_model->insertRow($experience, TABLES::$SKILLS_AND_EXPERTISE);
-				
-			if ($ins_experience) {
-				$map ['status'] = 1;
-				$map ['ins_skill_id'] = $ins_experience;
-				$map ['msg'] = 'Skill & Expertise saved successfully.';
-			} else {
-				$map ['status'] = 0;
-				$map ['ins_skill_id'] = '';
-				$map ['msg'] = "Unable to save Skill & Expertise.";
-			}
-			echo json_encode($map);
-			exit;
+			$ins_experience='';	
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {
+				$map = array();
+				$experience = array();
+				$experience['user_id'] = $this->session->userdata('paasport_user_id');
+				$experience['skill'] = $this->input->post('txt_skill');
+				$experience['vcard_id'] = $this->session->userdata('vcard_id');
+				$ins_experience = $this->common_model->insertRow($experience, TABLES::$SKILLS_AND_EXPERTISE);
+			 }		
+				if ($ins_experience) {
+					$map ['status'] = 1;
+					$map ['ins_skill_id'] = $ins_experience;
+					$map ['msg'] = 'Skill & Expertise saved successfully.';
+				} else {
+					$map ['status'] = 0;
+					$map ['ins_skill_id'] = '';
+					$map ['msg'] = "Unable to save Skill & Expertise.";
+				}
+				echo json_encode($map);
+				exit;
 		  }	
 		
 	}
@@ -597,44 +608,42 @@ class Vcard extends CI_Controller {
           } 
 		  else 
 		  { 
-			$map = array();
-			$experience = array();
-			$experience['user_id'] = $this->session->userdata('paasport_user_id');
-			$experience['company_name'] = $this->input->post('prevCompanyName');
-			$experience['position_title'] = $this->input->post('prevJobTitle');
-			$experience['start_date'] = date('Y-m-d', strtotime($this->input->post('prevStartDate')));
-			
-			$experience['end_date'] = date('Y-m-d', strtotime($this->input->post('prevEndDate')));
-			
-			//if(empty($this->input->post('exp_det_id')))
-			//{	
+			 $ins_experience='';	
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {
+				$map = array();
+				$experience = array();
+				$experience['user_id'] = $this->session->userdata('paasport_user_id');
+				$experience['company_name'] = $this->input->post('prevCompanyName');
+				$experience['position_title'] = $this->input->post('prevJobTitle');
+				$experience['start_date'] = date('Y-m-d', strtotime($this->input->post('prevStartDate')));
 				
+				$experience['end_date'] = date('Y-m-d', strtotime($this->input->post('prevEndDate')));
+				$experience['vcard_id'] = $this->session->userdata('vcard_id');
 				$ins_experience = $this->common_model->insertRow($experience, TABLES::$EXPERIENCE_DETAILS);
-			/*}	
-			else
-			{
-				$ins_experience = $this->common_model->updateRow(TABLES::$EXPERIENCE_DETAILS, $experience, array('id'=>$this->input->post('exp_det_id')));
-			} */	
-				
-			if ($ins_experience) {
-				$map ['status'] = 1;
-				$map ['ins_experience_id'] = $ins_experience;
-				$map ['msg'] = 'Experience saved successfully.';
-			} else {
-				$map ['status'] = 0;
-				$map ['ins_experience_id'] = '';
-				$map ['msg'] = "Unable to save experience.";
-			}
-			echo json_encode($map);
-			exit;
+			 }		
+					
+				if ($ins_experience) {
+					$map ['status'] = 1;
+					$map ['ins_experience_id'] = $ins_experience;
+					$map ['msg'] = 'Experience saved successfully.';
+				} else {
+					$map ['status'] = 0;
+					$map ['ins_experience_id'] = '';
+					$map ['msg'] = "Unable to save experience.";
+				}
+				echo json_encode($map);
+				exit;
 		  }	
     }
 
    public function getExperienceData()
    {
-	    $this->load->model('common_model');
+	 
+		 
+		$this->load->model('common_model');
 		$session_data = $this->session->userdata();	
-		$user_skills= $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -660,7 +669,7 @@ class Vcard extends CI_Controller {
    {
 	    $this->load->model('common_model');	
 		 $session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' =>$session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -750,9 +759,13 @@ public function deleteExperience()
          } 
 		 else 
 		 { 
+			 $ins_experience='';
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {
 				$map = array();
 				$edu = array();
 				$edu['user_id'] = $this->session->userdata('paasport_user_id');
+				$edu['vcard_id'] = $this->session->userdata('vcard_id');
 				$edu['institute_name'] = $this->input->post('eduInstituteName');
 				$edu['degree_or_certificate'] = $this->input->post('degree');
 				$edu['start_date'] = date('Y-m-d', strtotime($this->input->post('eduStartDate')));
@@ -766,7 +779,8 @@ public function deleteExperience()
 				//else
 				//{
 				//	$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
-				//}				
+				//}	
+			 }		
 				if ($ins_experience) {
 					$map ['ins_edu_id'] = $ins_experience;
 					$map ['status'] = 1;
@@ -785,7 +799,7 @@ public function deleteExperience()
    {
 	    $this->load->model('common_model');	
 		 $session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -796,10 +810,9 @@ public function deleteExperience()
 			
 				$str.="<tr id=".$user_skill['id']."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['institute_name']."</td><td>".$user_skill['degree_or_certificate']."</td><td>".$user_skill['start_date']."</td><td>".$user_skill['end_date']."</td><td>";
 				
-				if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-				 { 
+				 
 			 			$str.="<a href='#' onclick=getEduDetailUpdate('".$user_skill['id']."','".$user_skill['institute_name']."','".$user_skill['degree_or_certificate']."','".$user_skill['start_date']."','".$user_skill['end_date']."'); >Edit</a>";
-				 }
+				 
 				$str.="</td></tr>";
 				$cnt+=1;
 			} 
@@ -810,11 +823,40 @@ public function deleteExperience()
 		exit;   
    }
     
+
+   public function getSkillData()
+   {
+	    $this->load->model('common_model');	
+		 $session_data = $this->session->userdata();
+		$user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
+		$str='';
+		if(!empty($user_skills))
+		{	
+			$cnt=1;
+			$str.="<thead><tr><th>Select</th><th>Skill</th><th></th></tr></thead><tbody>";
+			foreach ($user_skills as $user_skill)
+			{
+			
+				$str.="<tr id=".$user_skill['id']."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['skill']."</td><td>";
+				
+				 
+			 			$str.="<a href='#' onclick=getSkillDetailUpdate('".$user_skill['id']."','".$user_skill['institute_name']."','".$user_skill['degree_or_certificate']."','".$user_skill['start_date']."','".$user_skill['end_date']."'); >Edit</a>";
+				 
+				$str.="</td></tr>";
+				$cnt+=1;
+			} 
+			$str.="</tbody>";
+			
+		}	
+		echo $str;
+		exit;   
+   }	
+	
    public function getEducationDataMobile()
    {
 	    $this->load->model('common_model');	
 		 $session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -891,21 +933,26 @@ public function deleteExperience()
 			exit;
         } else 
 		{
-            $price_plan = array();          
-            $price_plan['plan_title'] = $this->input->post('pricingtitle');
-            $price_plan['plan_description'] = $this->input->post('pricingdescription');
-            $price_plan['price'] = $this->input->post('pricingprice');
-            $price_plan['user_id'] = $this->session->userdata('paasport_user_id');       	
-			
-			if(empty($this->input->post('pricing_id1')))
-				{						
-					$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$PRICE_PLAN);
-				}	
-				else
-				{
-					$ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN,$price_plan,array('id'=>$this->input->post('pricing_id1')));
-				}	
-			
+			$ins_experience='';
+			if(!empty($this->session->userdata('vcard_id')))
+			{	
+		
+				$price_plan = array();          
+				$price_plan['plan_title'] = $this->input->post('pricingtitle');
+				$price_plan['plan_description'] = $this->input->post('pricingdescription');
+				$price_plan['price'] = $this->input->post('pricingprice');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');       	
+				$price_plan['vcard_id'] = $this->session->userdata('vcard_id');       	
+				
+				if(empty($this->input->post('pricing_id1')))
+					{						
+						$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$PRICE_PLAN);
+					}	
+					else
+					{
+						$ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN,$price_plan,array('id'=>$this->input->post('pricing_id1')));
+					}	
+				}
 			
 			if ($ins_experience) {
 				$map ['ins_price_id'] = $ins_experience;
@@ -966,100 +1013,107 @@ public function deleteExperience()
 			$imap = array();
 			if(empty($this->input->post('pricing_id')))
 			{
-				if(!empty($_FILES['file']['name'][0]))
-				{
+				$img_upload_flag=0;
+				if(!empty($this->session->userdata('vcard_id')))
+				{	
+				
+					if(!empty($_FILES['file']['name'][0]))
+					{
 					
-					$img_upload_flag=0;
-					for($i=0;$i<count($_FILES['file']['name']);$i++)
-					{
-							$_FILES['ufile']['name'] = $_FILES['file']['name'][$i];
-							$_FILES['ufile']['type'] = $_FILES['file']['type'][$i];
-							$_FILES['ufile']['tmp_name'] = $_FILES['file']['tmp_name'][$i];
-							$_FILES['ufile']['error'] = $_FILES['file']['error'][$i];
-							$_FILES['ufile']['size'] = $_FILES['file']['size'][$i];
+					
+						for($i=0;$i<count($_FILES['file']['name']);$i++)
+						{
+								$_FILES['ufile']['name'] = $_FILES['file']['name'][$i];
+								$_FILES['ufile']['type'] = $_FILES['file']['type'][$i];
+								$_FILES['ufile']['tmp_name'] = $_FILES['file']['tmp_name'][$i];
+								$_FILES['ufile']['error'] = $_FILES['file']['error'][$i];
+								$_FILES['ufile']['size'] = $_FILES['file']['size'][$i];
+								
+								$config = array();
+								$config['upload_path'] = './uploads/price_plan/';
+								$config['allowed_types'] = 'gif|jpg|png|jpeg';
+								$config['remove_spaces'] = TRUE;
+								$config['encrypt_name'] = TRUE;
+								$config['overwrite'] = FALSE;
+								
+								
+								$this->load->library('upload', $config);
+								$this->upload->initialize($config);
+								if (!$this->upload->do_upload('ufile')) {
+									$error = $this->upload->display_errors();
+									$map ['status'] = 0;
+									$map ['msg'] = "User Image upload error - " . $error;
+									echo json_encode($map);
+									exit;
+								} else {
+									$data = array('upload_data' => $this->upload->data());
+								}
+								
+								$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+								$user['user_id'] = $this->session->userdata('paasport_user_id');
+								$user['vcard_id'] = $this->session->userdata('vcard_id');
+								
+								$ins_experience = $this->common_model->insertRow($user, TABLES::$PRICE_PLAN);
+								if ($ins_experience) {
+									$img_upload_flag=1;
+									$map [$i]['user_img'] = base_url().$user['plan_image'];
+									$map [$i]['ins_price_id'] = $ins_experience;
+									$map [$i]['status'] = 1;
+									$map [$i]['msg'] = 'Price Plan Image uploaded successfully.';
+								} else {
+									$map [$i]['user_img'] = '';
+									$map [$i]['ins_edu_id']='';	
+									$map [$i]['status'] = 0;
+									$map [$i]['msg'] = "Unable to upload Price Plan Image.";
+								}
+								//echo json_encode($map);
+								//exit;
+						}
+						if($img_upload_flag == 1)
+						{
+							$imap['img_upload_flag']=1;
+							$imap['image']=$map;					
+							$imap ['status'] = 1;
+							$imap ['msg'] = 'Price Plan Image uploaded successfully.';
+						}
+						else
+						{
+							$imap['img_upload_flag']=0;
+							$imap['image']='';					
+							$imap ['status'] = 0;
+							$imap ['msg'] = 'Unable to upload Price Plan Image.';
 							
-							$config = array();
-							$config['upload_path'] = './uploads/price_plan/';
-							$config['allowed_types'] = 'gif|jpg|png|jpeg';
-							$config['remove_spaces'] = TRUE;
-							$config['encrypt_name'] = TRUE;
-							$config['overwrite'] = FALSE;
-							
-							
-							$this->load->library('upload', $config);
-							$this->upload->initialize($config);
-							if (!$this->upload->do_upload('ufile')) {
-								$error = $this->upload->display_errors();
-								$map ['status'] = 0;
-								$map ['msg'] = "User Image upload error - " . $error;
-								echo json_encode($map);
-								exit;
-							} else {
-								$data = array('upload_data' => $this->upload->data());
-							}
-							
-							$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
-							$user['user_id'] = $this->session->userdata('paasport_user_id');
-							
-							$ins_experience = $this->common_model->insertRow($user, TABLES::$PRICE_PLAN);
-							if ($ins_experience) {
-								$img_upload_flag=1;
-								$map [$i]['user_img'] = base_url().$user['plan_image'];
-								$map [$i]['ins_price_id'] = $ins_experience;
-								$map [$i]['status'] = 1;
-								$map [$i]['msg'] = 'Price Plan Image uploaded successfully.';
-							} else {
-								$map [$i]['user_img'] = '';
-								$map [$i]['ins_edu_id']='';	
-								$map [$i]['status'] = 0;
-								$map [$i]['msg'] = "Unable to upload Price Plan Image.";
-							}
-							//echo json_encode($map);
-							//exit;
-					}
-					if($img_upload_flag == 1)
-					{
-						$imap['img_upload_flag']=1;
-						$imap['image']=$map;					
-						$imap ['status'] = 1;
-						$imap ['msg'] = 'Price Plan Image uploaded successfully.';
-					}
-					else
-					{
-						$imap['img_upload_flag']=0;
-						$imap['image']='';					
-						$imap ['status'] = 0;
-						$imap ['msg'] = 'Unable to upload Price Plan Image.';
-						
-					}
-					echo json_encode($imap);
-					exit;
-				}     
+						}
+						echo json_encode($imap);
+						exit;
+				}
+			 }		
 			
 			}
 			else
 			{
 				
-				$config = array();
-				$config['upload_path'] = './uploads/price_plan/';
-				$config['allowed_types'] = 'gif|jpg|png|jpeg';
-				$config['remove_spaces'] = TRUE;
-				$config['encrypt_name'] = TRUE;
-				$config['overwrite'] = FALSE;
+					
+					$config = array();
+					$config['upload_path'] = './uploads/price_plan/';
+					$config['allowed_types'] = 'gif|jpg|png|jpeg';
+					$config['remove_spaces'] = TRUE;
+					$config['encrypt_name'] = TRUE;
+					$config['overwrite'] = FALSE;
 				
-				$this->load->library('upload', $config);
-				$this->upload->initialize($config);
-				if (!$this->upload->do_upload('updatefile')) {
-					$error = $this->upload->display_errors();
-					$map ['status'] = 0;
-					$map ['msg'] = "User Image upload error - " . $error;
-					echo json_encode($map);
-					exit;
-				} else {
-					$data = array('upload_data' => $this->upload->data());
-				}
+					$this->load->library('upload', $config);
+					$this->upload->initialize($config);
+					if (!$this->upload->do_upload('updatefile')) {
+						$error = $this->upload->display_errors();
+						$map ['status'] = 0;
+						$map ['msg'] = "User Image upload error - " . $error;
+						echo json_encode($map);
+						exit;
+					} else {
+						$data = array('upload_data' => $this->upload->data());
+					}
 				
-				$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+					$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
 				
 				$ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN,$user,array('id'=>$this->input->post('pricing_id')));
 				if($ins_experience)
@@ -1162,12 +1216,17 @@ public function deleteExperience()
 			exit;
         } else 
 		{
-            $price_plan = array();          
-            $price_plan['list'] = $this->input->post('listname');
-            $price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+			 $ins_experience='';	
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {	
+			
+				$price_plan = array();          
+				$price_plan['list'] = $this->input->post('listname');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->session->userdata('vcard_id');
         	
 			
-			if(empty($this->input->post('list_id')))
+				if(empty($this->input->post('list_id')))
 				{						
 					$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$LIST_DETAILS);
 				}	
@@ -1175,7 +1234,7 @@ public function deleteExperience()
 				{
 					$ins_experience = $this->common_model->updateRow(TABLES::$LIST_DETAILS,$price_plan,array('id'=>$this->input->post('list_id')));
 				}	
-			
+			 }
 			if ($ins_experience) {
 				$map ['ins_price_id'] = $ins_experience;
 				$map ['status'] = 1;
@@ -1282,9 +1341,13 @@ public function deleteExperience()
 			exit;
         } else 
 		{
-            $price_plan = array();          
-            $price_plan['link'] = $this->input->post('addlink');
-            $price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+			$ins_experience='';	
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {	
+				$price_plan = array();          
+				$price_plan['link'] = $this->input->post('addlink');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->session->userdata('vcard_id');
 			
 				if(empty($this->input->post('addlink_id')))
 				{						
@@ -1295,7 +1358,7 @@ public function deleteExperience()
 					$ins_experience = $this->common_model->updateRow(TABLES::$LINK_DETAILS,$price_plan,array('id'=>$this->input->post('addlink_id')));
 				}	
 			
-        	
+			 }
 			
 			if ($ins_experience) {
 				$map ['ins_price_id'] = $ins_experience;
@@ -1413,12 +1476,15 @@ public function deleteExperience()
         }
 		else 
 		{
+			 $ins_experience='';
+			 if(!empty($this->session->userdata('vcard_id')))
+			 {
 			
-			$price_plan = array();          
-            $price_plan['video_url'] = $this->input->post('videourl');
-            $price_plan['video_description'] = $this->input->post('video_description');
-            $price_plan['user_id'] = $this->session->userdata('paasport_user_id');
-        	
+				$price_plan = array();          
+				$price_plan['video_url'] = $this->input->post('videourl');
+				$price_plan['video_description'] = $this->input->post('video_description');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->session->userdata('vcard_id');        	
 			
 				if(empty($this->input->post('videourl_id')))
 				{						
@@ -1430,8 +1496,9 @@ public function deleteExperience()
 					$ins_experience = $this->common_model->updateRow(TABLES::$VIDEO_DETAILS,$price_plan,array('id'=>$this->input->post('videourl_id')));
 					
 				}	
-			
-        	$this->generateQRCode1();
+				$this->generateQRCode1();
+			 }
+        	
 			
 			
 			
@@ -1640,6 +1707,7 @@ public function deleteExperience()
 						
 						$user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
 						$user['user_id'] = $this->session->userdata('paasport_user_id');
+						$user['vcard_id'] = $this->session->userdata('vcard_id');
 						
 						$ins_experience = $this->common_model->insertRow($user, TABLES::$PORTFOLIO_DETAILS);
 						if ($ins_experience) {
@@ -1704,7 +1772,7 @@ public function deleteExperience()
 						
 						$user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
 						$user['user_id'] = $this->session->userdata('paasport_user_id');
-						
+						$user['vcard_id'] = $this->session->userdata('vcard_id');
 						
 						$ins_experience = $this->common_model->updateRow(TABLES::$PORTFOLIO_DETAILS,$user,array('id'=>$this->input->post('videourl_portfolio_id')));
 						
@@ -1732,6 +1800,7 @@ public function deleteExperience()
 			{
 				$user['video_url'] = $this->input->post('videourl_portfolio');
 				$user['user_id'] = $this->session->userdata('paasport_user_id');
+				$user['vcard_id'] = $this->session->userdata('vcard_id');
 				if(!empty($user))
 				{
 					
@@ -1770,9 +1839,9 @@ public function deleteExperience()
 	// End save portfolio	
 	
 	//  vcard update
-	 public function updateVcard() {	
-		
-        if (!isset($_SESSION)) {
+	 public function updateVcard()
+	 {
+		  if (!isset($_SESSION)) {
             session_start();
         }
         if (!$this->common_model->isLoggedIn()) {
@@ -1786,24 +1855,81 @@ public function deleteExperience()
         
 		$userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
 		
+		
+		
+		//$user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
+				
+		
+        //To get User Experience, Education Details        
+        //$user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+                
+       // $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+ 
+        //$user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id']));
+        
+		//$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $session_data['user_account']['user_id']));
+		
+		//$user_list= $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		
+		//$user_link= $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		//$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		//$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+       
+        $this->template->set('user_data', $userdata_paasport);
+        //$this->template->set('user_company', $user_company);
+        //$this->template->set('user_exp_data', $user_experience_data);
+        //$this->template->set('user_edu_data', $user_education_data);
+        //$this->template->set('user_skills', $user_skills);
+        //$this->template->set('user_priceplan', $user_priceplan);
+        //$this->template->set('user_list', $user_list);
+        //$this->template->set('user_link', $user_link);
+        //$this->template->set('user_video_url', $user_video_url);
+        //$this->template->set('user_portfolio', $user_portfolio);
+        $this->template->set('page', 'dashboard');
+        $this->template->set('page', 'dashboard');
+        $this->template->set('page_type', 'inner');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('vcard_default')
+                ->title('PaasPort | Dashboard')
+                ->set_partial('header', 'partials/vcard_header');
+        $this->template->build('vcard_update_main');
+	 }
+	 public function updateVcardData($vcard_id=null) 
+	 {	
+		
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        if (!$this->common_model->isLoggedIn()) {
+            $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
+            redirect("login");
+        }
+		
+        $session_data = $this->session->userdata();
+		
+        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
+        
+		$userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id'],'id' =>$vcard_id));
+		
 		$user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
 				
-		//echo '<pre>'; print_r($userdata_paasport); exit;
+		
         //To get User Experience, Education Details        
-        $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+        $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
                 
-        $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+        $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
  
-        $user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id']));
+        $user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
         
-		$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
 		
-		$user_list= $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_list= $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
 		
-		$user_link= $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
-		$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
-		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_link= $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
+		$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
+		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
        
+	  	   
         $this->template->set('user_data', $userdata_paasport);
         $this->template->set('user_company', $user_company);
         $this->template->set('user_exp_data', $user_experience_data);
@@ -1934,7 +2060,7 @@ public function deleteExperience()
             $user['work_website'] = $this->input->post('companywebsite');
 			$user['user_id'] = $this->session->userdata('paasport_user_id');
 			$company_id = $this->input->post('company_id');
-            $uid = $this->common_model->updateRow(TABLES::$VCARD_COMPANY_DETAILS, $user, array('id'=>$company_id));	
+            $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$company_id));	
             if ($uid) {
                 $map ['status'] = 1;
                 $map ['msg'] = "Professional Information has been updated";
@@ -2026,7 +2152,7 @@ public function deleteExperience()
         $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id' => $user1['id']));
         if ($uid) {
             $map ['status'] = 1;
-            $map ['msg'] = "Your data has been saved";
+            $map ['msg'] = "Short Bio has been saved";
             echo json_encode($map);
         }
         //}
@@ -2068,11 +2194,10 @@ public function deleteExperience()
 			$experience = array();
 			$experience['user_id'] = $this->session->userdata('paasport_user_id');
 			$experience['company_name'] = $this->input->post('prevCompanyName');
-			$experience['position_title'] = $this->input->post('prevJobTitle');
-			$experience['start_date'] = date('Y-m-d', strtotime($this->input->post('prevStartDate')));
-			
+			$experience['position_title'] = $this->input->post('prevJobTitle');			
+			$experience['start_date'] = date('Y-m-d', strtotime($this->input->post('prevStartDate')));			
 			$experience['end_date'] = date('Y-m-d', strtotime($this->input->post('prevEndDate')));
-			
+			$experience['vcard_id'] = $this->input->post('vcard_id');
 			if(empty($this->input->post('exp_det_id')))
 			{	
 				
@@ -2132,10 +2257,9 @@ public function deleteExperience()
 				$edu['user_id'] = $this->session->userdata('paasport_user_id');
 				$edu['institute_name'] = $this->input->post('eduInstituteName');
 				$edu['degree_or_certificate'] = $this->input->post('degree');
-				$edu['start_date'] = date('Y-m-d', strtotime($this->input->post('eduStartDate')));
-				
+				$edu['start_date'] = date('Y-m-d', strtotime($this->input->post('eduStartDate')));				
 				$edu['end_date'] = date('Y-m-d', strtotime($this->input->post('eduEndDate')));
-
+				$edu['vcard_id'] = $this->input->post('vcard_id');
 				if(empty($this->input->post('edu_det_id')))
 				{						
 					$ins_experience = $this->common_model->insertRow($edu, TABLES::$EDUCATION_DETAILS);
@@ -2157,4 +2281,61 @@ public function deleteExperience()
 				exit;
 		  }		
     }
+	public function updateSkills()
+	{
+		$this->load->model('common_model');
+        $this->load->helper(array(
+            'form',
+            'url'
+        ));
+
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('txt_skill', 'Skill & Expertise', 'trim|required');       
+
+         if ($this->form_validation->run() == FALSE) 
+		 {
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['txt_skill']=form_error('txt_skill'); 			
+			 $map ['msg'] = $error_array;
+			 echo json_encode($map);
+          } 
+		  else 
+		  { 
+			$ins_experience='';	
+			 if(empty($this->input->post('txt_skill_id')))
+			 {
+				$map = array();
+				$experience = array();
+				$experience['user_id'] = $this->session->userdata('paasport_user_id');
+				$experience['skill'] = $this->input->post('txt_skill');
+				$experience['vcard_id'] = $this->input->post('vcard_id');
+				$ins_experience = $this->common_model->insertRow($experience, TABLES::$SKILLS_AND_EXPERTISE);
+			 }	
+			 else
+			 {
+				$map = array();
+				$experience = array();
+				$experience['user_id'] = $this->session->userdata('paasport_user_id');
+				$experience['skill'] = $this->input->post('txt_skill');
+				$experience['vcard_id'] = $this->input->post('vcard_id');
+				 $ins_experience = $this->common_model->updateRow(TABLES::$SKILLS_AND_EXPERTISE,$experience,array('id'=>$this->input->post('txt_skill_id')));
+			 }
+		 
+				if ($ins_experience) {
+					$map ['status'] = 1;
+					$map ['ins_skill_id'] = $ins_experience;
+					$map ['msg'] = 'Skill & Expertise saved successfully.';
+				} else {
+					$map ['status'] = 0;
+					$map ['ins_skill_id'] = '';
+					$map ['msg'] = "Unable to save Skill & Expertise.";
+				}
+				echo json_encode($map);
+				exit;
+		  }	
+	}
 }
