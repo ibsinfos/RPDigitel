@@ -41,14 +41,14 @@
                                                     </label>
                                                     <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
                                                     <input name="email" type="email" class="form-control"
-                                                           placeholder="eg. johndoe@website.com" value="">
+                                                           placeholder="eg. johndoe@website.com" value="<?php echo ($user_data['0']['email']) ? $user_data['0']['email'] : ''; ?>" >
 													<span id="err_email" ></span>	   
                                                 </div>
                                                 <div class="margin-top-10">
                                                     <label>Address</label>
                                                     <textarea name="address" class="form-control"
                                                               placeholder="123 6th St.Melbourne, FL 32904"
-                                                              maxlength="100"></textarea>
+                                                              maxlength="100"><?php echo ($user_data['0']['home_address']) ? $user_data['0']['home_address'] : ''; ?></textarea>
                                                 </div>
                                             </div>
 
@@ -59,13 +59,13 @@
                                                     <small>(required)</small>
                                                 </label>
                                                 <input name="firstname" id="firstname" type="text" class="form-control"
-                                                       placeholder="Enter your name" value="" maxlength="10">
+                                                       placeholder="Enter your name" value="<?php echo ($user_data['0']['first_name']) ? $user_data['0']['first_name'] : ''; ?>" maxlength="10">
 												<span id="err_firstname" ></span>	   
                                                 <div class="margin-top-10">
                                                     <label>Last Name
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input name="lastname" type="text" class="form-control" value=""
+                                                    <input name="lastname" type="text" class="form-control" value="<?php echo ($user_data['0']['last_name']) ? $user_data['0']['last_name'] : ''; ?>"
                                                            placeholder="Enter your surname"  maxlength="10">
 													<span id="err_lastname" ></span>	   
                                                 </div>
@@ -74,14 +74,14 @@
                                                         <small>(required)</small>
                                                     </label>
                                                     <input name="contact" type="tel" class="form-control"
-                                                           placeholder="eg.(417) 123-4567" value="">
+                                                           placeholder="eg.(417) 123-4567" value="<?php echo ($user_data['0']['mobile']) ? $user_data['0']['mobile'] : ''; ?>">
 													<span id="err_contact" ></span>	   
                                                 </div>
                                                 <div class="margin-top-10">
                                                     <label>Pincode
                                                     </label>
                                                     <input name="pincode" type="text" class="form-control"
-                                                           placeholder="422010" value="" >
+                                                           placeholder="422010" value="<?php echo ($user_data['0']['home_postal_code']) ? $user_data['0']['home_postal_code'] : ''; ?>" >
                                                 </div>
                                             </div>
                                         </div>
@@ -92,7 +92,7 @@
                                             <div class="col-lg-3">
                                                 <input  id="addbtn" type="button" class="btn btn-danger pull-right btn-block"
                                                        data-toggle="modal"
-                                                       data-target="#myModal" value=" Add + ">
+                                                       data-target="#myModal" value=" Edit  ">
 
                                             </div>
 
@@ -114,9 +114,10 @@
                                                                 <label for="companyname">Company Name
                                                                     <small>(required)</small>
                                                                 </label>
+																<input type="hidden" value="<?php echo ($user_company[0]['id']) ? $user_company[0]['id'] : ''; ?>" name="company_id">
                                                                 <input id="companyname" name="companyname" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter company name" value=""
+                                                                       placeholder="Enter company name" value="<?php echo ($user_company['0']['company_name']) ? $user_company['0']['company_name'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_companyname" ></span>	   
                                                             </div>
@@ -126,7 +127,7 @@
                                                                 </label>
                                                                 <input id="jobTitle" name="jobtitle1" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Job Title" value=""
+                                                                       placeholder="Enter Job Title" value="<?php echo ($user_company['0']['job_title']) ? $user_company['0']['job_title'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_jobtitle1" ></span>	 	   
                                                             </div>
@@ -134,7 +135,7 @@
                                                                 <label>Start Date</label>
                                                                 <div id="sandbox-container" class="input-group date">
                                                                     <input type="text" class="form-control"
-                                                                           value="" name="startdate"  placeholder="12-02-2017" >
+                                                                           value="<?php echo ($user_company['0']['start_date']) ? $user_company['0']['start_date'] : ''; ?>" name="startdate"  placeholder="12-02-2017" >
                                                                     <div class="input-group-addon">
                                                                         <span class="glyphicon glyphicon-th"></span>
                                                                     </div>
@@ -148,7 +149,7 @@
                                                                        type="tel"
                                                                        class="form-control"
                                                                        placeholder="Enter Company Contact Number"
-                                                                       value="" maxlength="17">
+                                                                       value="<?php echo ($user_company['0']['work_phone']) ? $user_company['0']['work_phone'] : ''; ?>" maxlength="17">
 																	   
                                                             </div>
                                                             <div class="form-group">
@@ -158,7 +159,7 @@
                                                                 <input id="companyEmail" name="companyemail"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Company Email" value="">
+                                                                       placeholder="Enter Company Email" value="<?php echo ($user_company['0']['work_email']) ? $user_company['0']['work_email'] : ''; ?>">
 																<span id="err_companyemail" ></span>	   
                                                             </div>
                                                             <div class="form-group">
@@ -168,7 +169,7 @@
                                                                 <input id="companyWebsite" name="companywebsite"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Company Website URL" value="">
+                                                                       placeholder="Company Website URL" value="<?php echo ($user_company['0']['work_website']) ? $user_company['0']['work_website'] : ''; ?>">
 																<span id="err_companywebsite" ></span>	   
                                                             </div>
                                                         </div>
@@ -213,12 +214,12 @@
                                             <div class="picture-container center">
                                                 <div class="picture">
                                                     <?php
-                                                   /* if (!empty($user_data['0']['user_image']))
+                                                    if (!empty($user_data['0']['user_image']))
                                                         $wizard_pic_preview = $user_data['0']['user_image'];
                                                     else
                                                         $wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
-													*/
-													$wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
+													
+													
                                                     ?>
                                                     <img src="<?php echo $wizard_pic_preview; ?>" class="picture-src"
                                                          id="wizardPicturePreview"
@@ -333,10 +334,10 @@
                                                            aria-hidden="true"
                                                            style="font-size:20px; color:#ffffff;">
                                                         </i></span>
-                                                    <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
+                                                    <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="social_id">
                                                     <input id="facebook" name="facebook_url" type="text"
                                                            class="form-control"
-                                                           placeholder="facebook id only" value="" >
+                                                           placeholder="facebook id only" value="<?php echo ($user_data['0']['facebook_link']) ? $user_data['0']['facebook_link'] : ''; ?>" >
 														   
 
                                                 </div>
@@ -347,7 +348,7 @@
                                                                                                                   aria-hidden="true"
                                                                                                                   style="font-size:15px; color:#ffffff;"></i></span>
                                                     <input id="twitter" name="twitter_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['twitter_link']) ? $user_data['0']['twitter_link'] : ''; ?>"
                                                            placeholder="Enter Twitter page id">
 														   
                                                 </div>
@@ -359,7 +360,7 @@
                                                             class="fa fa-google-plus" aria-hidden="true"
                                                             style="font-size:16px; color:#ffffff;"></i></span>
                                                     <input id="googleplus" name="googleplus_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['google_plus_link']) ? $user_data['0']['google_plus_link'] : ''; ?>"
                                                            placeholder="Enter google plus page id">
 														   
                                                 </div>
@@ -371,7 +372,7 @@
                                                                                                                   aria-hidden="true"
                                                                                                                   style="font-size:16px; color:#ffffff;"></i></span>
                                                     <input id="linkedin" name="linkedin_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['linkedin_link']) ? $user_data['0']['linkedin_link'] : ''; ?>"
                                                            placeholder="Enter Linked in page id">
 															   
                                                 </div>
@@ -383,7 +384,7 @@
                                                             class="fa fa-youtube-play" aria-hidden="true"
                                                             style="font-size:15px; color:#ffffff;"></i></span>
                                                     <input id="youtube" name="youtube_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['youtube_link']) ? $user_data['0']['youtube_link'] : ''; ?>"
                                                            placeholder="Enter Youtube page url">
 													   
                                                 </div>
@@ -394,7 +395,7 @@
                                                             class="fa fa-pinterest" aria-hidden="true"
                                                             style="font-size:18px; color:#ffffff;"></i></span>
                                                     <input id="pinterest" name="pinterest_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['pinterest_link']) ? $user_data['0']['pinterest_link'] : ''; ?>"
                                                            placeholder="Enter pinterest url">
 															   
                                                 </div>
@@ -406,7 +407,7 @@
                                                     <span class="input-group-addon" style="background:#34495e"><i
                                                             class="fa fa-envelope" aria-hidden="true"
                                                             style="font-size:18px; color:#ffffff;"></i></span>
-                                                    <input name="user_url" type="text" class="form-control" value=""
+                                                    <input name="user_url" type="text" class="form-control" value="<?php echo ($user_data['0']['received_email']) ? $user_data['0']['received_email'] : ''; ?>"
                                                            placeholder="johndoe@website.com">
 															   
                                                 </div>
@@ -429,40 +430,45 @@
                                              data-mcs-theme="minimal-dark">
                                             <h2 class="center">Social Links</h2>
                                             <div class="col-lg-12 padding-bottom-10">
-
-                                                <div class="col-lg-6 facebook">
-                                                    <a href="{value of facebook_url}">
+												
+                                                <div class="col-lg-6 facebook"  >		
+														
+														
+                                                    <a id="fb_url" href="<?php echo ($user_data['0']['facebook_link']) ? $user_data['0']['facebook_link'] : ''; ?>" >
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/005-facebook.png" alt="" class="center-block"
                                                              height="50">
-                                                        <p class="center">facebook</p></a>
+                                                        <p class="center">facebook</p>
+													</a>
+													
                                                 </div>
+												
                                                 <div class="col-lg-6 twitter">
-                                                    <a href="{value of twitter_url}">
+                                                    <a id="twit_url" href="<?php echo ($user_data['0']['twitter_link']) ? $user_data['0']['twitter_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/004-twitter.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">twitter</p></a>
                                                 </div>
                                                 <div class="col-lg-6 googleplus">
-                                                    <a href="{value of googleplus_url}">
+                                                    <a id="gplus_url" href="<?php echo ($user_data['0']['google_plus_link']) ? $user_data['0']['google_plus_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/001-google-plus.png" alt=""
                                                              class="center-block"
                                                              height="50">
                                                         <p class="center">Google+</p></a>
                                                 </div>
                                                 <div class="col-lg-6 linkedin">
-                                                    <a href="{value of linkedin_url}">
+                                                    <a id="linkdn_url" href="<?php echo ($user_data['0']['linkedin_link']) ? $user_data['0']['linkedin_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/002-linkedin.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Linkedin</p></a>
                                                 </div>
                                                 <div class="col-lg-6 youtube">
-                                                    <a href="{value of youtube_url}">
+                                                    <a  id="utube_url" href="<?php echo ($user_data['0']['youtube_link']) ? $user_data['0']['youtube_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/003-youtube.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Youtube</p></a>
                                                 </div>
                                                 <div class="col-lg-6 pinterest">
-                                                    <a href="{value of pinterest_url}">
+                                                    <a  id="pin_url" href="<?php echo ($user_data['0']['pinterest_link']) ? $user_data['0']['pinterest_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/pinterest.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Pinterest</p></a>
@@ -539,7 +545,7 @@
 
                                                         <label for="editor1">Add About or Short Bio :</label>
                                                         <textarea id="editor1" name="editor1" maxlength="160">
-                                                           
+                                                           <?php echo ($user_data[0]['short_bio']) ? $user_data[0]['short_bio'] : ''; ?>
                                                         </textarea>
 														
                                                         <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
@@ -588,7 +594,25 @@
 																				</tr>
 																			</thead>
 																			<tbody>
+																				<?php
+                                                                                $edu_count = 0;
+                                                                                foreach ($user_skills as $user_skill) 
+																				{
+                                                                                    $edu_count++;
+                                                                                    ?>
 
+                                                                                    <tr id="<?php echo $user_skill['id']; ?>">
+                                                                                        <td><input name="record" type="checkbox" value="<?php echo ($user_skill['id']) ? $user_skill['id'] : ''; ?>" ></td>
+                                                                                        <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
+                                                                                                                     
+                                                                                         <td>
+																						
+																								<a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>','<?php echo $user_edu['institute_name']; ?>','<?php echo $user_edu['degree_or_certificate']; ?>','<?php echo $user_edu['start_date']; ?>','<?php echo $user_edu['end_date']; ?>');" >Edit</a>
+																								
+																						</td>
+                                                                                    </tr>
+
+                                                                                <?php }  ?>
 																				
 
 																			</tbody>
@@ -669,8 +693,9 @@
                                                                 <div class="form-group">
                                                                     <div class="col-sm-12 text-right">
                                                                         <button type="button" class="btn btn-default preview-add-button1" id="add_experience" name="add_experience">
-                                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                                            Add
+                                                                            <!--<span class="glyphicon glyphicon-plus"></span>
+                                                                            Add -->
+																			Edit
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -691,7 +716,7 @@
                                                                             <tbody>
 
                                                                                 <?php
-                                                                                /*$exp_count = 0;
+                                                                                $exp_count = 0;
                                                                                 foreach ($user_exp_data as $user_exp) {
                                                                                     $exp_count++;
                                                                                     ?>
@@ -702,14 +727,13 @@
                                                                                         <td><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?></td>
-                                                                                        <td>
-																						<?php if($this->uri->segment(1)=='vcard-update') { ?>
-																								<a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>','<?php echo $user_exp['company_name']; ?>','<?php echo $user_exp['position_title']; ?>','<?php echo $user_exp['start_date']; ?>','<?php echo $user_exp['end_date']; ?>');" >Edit</a>
-																						<?php } ?>		
+                                                                                        <td>											
+																							<a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>','<?php echo $user_exp['company_name']; ?>','<?php echo $user_exp['position_title']; ?>','<?php echo $user_exp['start_date']; ?>','<?php echo $user_exp['end_date']; ?>');" >Edit</a>
+																							
 																						</td>
                                                                                     </tr>
 
-                                                                                <?php }*/ ?>
+                                                                                <?php }?>
 
 
                                                                             </tbody>
@@ -782,8 +806,8 @@
                                                                     <div class="col-sm-12 text-right">
                                                                         <button type="button"
                                                                                 class="btn btn-default preview-add-button2" id="educationSubmit">
-                                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                                            Add
+																				<!--<span class="glyphicon glyphicon-plus"></span>-->
+                                                                            Edit
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -804,25 +828,25 @@
                                                                             <tbody>
 
                                                                                 <?php
-                                                                                /*$edu_count = 0;
+                                                                                $edu_count = 0;
                                                                                 foreach ($user_edu_data as $user_edu) {
                                                                                     $edu_count++;
                                                                                     ?>
 
-                                                                                    <tr id="<?php echo $edu_count; ?>">
+                                                                                    <tr id="<?php echo $user_edu['id']; ?>">
                                                                                         <td><input name="record" type="checkbox" value="<?php echo ($user_edu['id']) ? $user_edu['id'] : ''; ?>" ></td>
                                                                                         <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['degree_or_certificate']) ? $user_edu['degree_or_certificate'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['start_date']) ? $user_edu['start_date'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['end_date']) ? $user_edu['end_date'] : ''; ?></td>
                                                                                          <td>
-																						<?php if($this->uri->segment(1)=='vcard-update') { ?>
+																						
 																								<a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>','<?php echo $user_edu['institute_name']; ?>','<?php echo $user_edu['degree_or_certificate']; ?>','<?php echo $user_edu['start_date']; ?>','<?php echo $user_edu['end_date']; ?>');" >Edit</a>
-																						<?php } ?>		
+																								
 																						</td>
                                                                                     </tr>
 
-                                                                                <?php } */ ?>
+                                                                                <?php }  ?>
 
 
                                                                             </tbody>
@@ -925,12 +949,12 @@
                                                      style="background:#f5f5f5; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                                                     <div class="preview-table-ex1">
                                                       <?php
-                                                       /* $exp_count = 0;
+                                                        $exp_count = 0;
                                                         foreach ($user_exp_data as $user_exp) {
                                                             $exp_count++;
                                                             ?>
 
-                                                            <div id="info-remove<?php echo $exp_count; ?>">
+                                                            <div id="info-remove<?php echo $user_exp['id']; ?>">
                                                                 <div class="content-company div-delete"> 
                                                                     <strong>Company Name: </strong><?php echo ($user_exp['company_name']) ? $user_exp['company_name'] : ''; ?>
                                                                 </div>
@@ -945,7 +969,7 @@
 
 
 
-                                                        <?php } */ ?>
+                                                        <?php }  ?>
 
 
 
@@ -967,13 +991,14 @@
                                                     <div class="preview-table-ex3">
 
                                                         <?php
-                                                        /*$edu_count = 0;
-                                                        foreach ($user_edu_data as $user_edu) {
+                                                        $edu_count = 0;
+                                                        foreach ($user_edu_data as $user_edu) 
+														{
                                                             $edu_count++;
                                                             ?>
 
 
-                                                            <div id="info-remove<?php echo $edu_count; ?>">
+                                                            <div id="info-remove<?php echo $user_edu['id']; ?>">
                                                                 <div class="content-company div-delete">
                                                                     <strong>Institute Name: </strong><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?>
                                                                 </div>
@@ -984,7 +1009,7 @@
                                                                 <hr>
                                                             </div>
 
-                                                        <?php } */ ?>
+                                                        <?php }  ?>
 
 
 
@@ -1662,49 +1687,80 @@
 <script>
     $('#facebook').keyup(function () {
         if ($(this).val().length)
+		{				
             $('div.facebook').show();
+			//$("#fb_url").attr('href',$("#facebook").val());
+		}	
         else
             $('div.facebook').hide();
     });
-    $('div.facebook').hide();
+	if($('#facebook').val()) {		
+		$('div.facebook').show();
+		
+	}	
+	else
+		$('div.facebook').hide();
+	
     $('#twitter').keyup(function () {
         if ($(this).val().length)
+		{	
             $('div.twitter').show();
+			//$("#twit_url").attr('href',$(this).val());
+		}	
         else
             $('div.twitter').hide();
     });
-    $('div.twitter').hide();
+	if($('#twitter').val())
+		$('div.twitter').show();
+	else
+		$('div.twitter').hide();
+    
     $('#googleplus').keyup(function () {
         if ($(this).val().length)
             $('div.googleplus').show();
         else
             $('div.googleplus').hide();
     });
-    $('div.googleplus').hide();
+	if($('#googleplus').val())
+		$('div.googleplus').show();
+	else
+		$('div.googleplus').hide();
     $('#linkedin').keyup(function () {
         if ($(this).val().length)
             $('div.linkedin').show();
         else
             $('div.linkedin').hide();
     });
-    $('div.linkedin').hide();
+	if($('#linkedin').val())
+		$('div.linkedin').show();
+	else
+		$('div.linkedin').hide();
+    
     $('#youtube').keyup(function () {
         if ($(this).val().length)
             $('div.youtube').show();
         else
             $('div.youtube').hide();
     });
-    $('div.youtube').hide();
+    if($('#youtube').val())
+		$('div.youtube').show();
+	else
+		$('div.youtube').hide();
     $('#pinterest').keyup(function () {
         if ($(this).val().length)
             $('div.pinterest').show();
         else
             $('div.pinterest').hide();
     });
-    $('div.pinterest').hide();
+	if($('#pinterest').val())
+		$('div.pinterest').show();
+	else
+		$('div.pinterest').hide();
+    
 </script>
 <script>
-    $('input[name="facebook_url"]').on('change', function () {
+	$('input[name="facebook_url"]').on('change', function () {
+			
         var self = this,
                 $self = $(self),
                 link = $self.next();
@@ -1764,7 +1820,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-	
+		
+		
 		$('.child-section').hide();
 		
 		$('.parent-section').click(function() {
@@ -1992,7 +2049,7 @@
             var prevEndDate = $("#prevEndDate1").val();
 
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveExperience",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateExperience",
                 type: "POST",
                 data: $("#frmExperience").serialize(),
                 success: function (data)
@@ -2005,14 +2062,14 @@
 						$("#err_prevStartDate").html('');
 						$("#err_prevEndDate").html('');
 						
-						//getExperienceData();
-						//getExperienceDataMobile();						
+						getExperienceData();
+						getExperienceDataMobile();						
 						
-						var markup = "<tr id="+cnt+"><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
+						/*var markup = "<tr id="+json.ins_experience_id+"><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
 						$(".preview-table-ex").append(markup);
 						
 						var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
-						$(".preview-table-ex1").append(markup1);						
+						$(".preview-table-ex1").append(markup1); */						
 						
                         $(".frmerror_experiencedetails").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
@@ -2093,7 +2150,7 @@
             var eduEndDate1 = $("#eduEndDate1").val();     
 
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveEducation",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateEducation",
                 type: "POST",
                 data: new FormData($("#frmEducationDetails")[0]),
                 contentType: false,
@@ -2110,15 +2167,15 @@
 						$("#err_eduStartDate").html('');
 						$("#err_eduEndDate").html('');	
 						
-						var markup2 = "<tr id="+cnt1+"><td><input type='checkbox' name='record' value=" + json.ins_edu_id +" ></td><td>" + eduInstituteName + "</td><td>" + degree + "</td><td>" + eduStartDate1 + "</td><td>" + eduEndDate1 + "</td></tr>";
+						/*var markup2 = "<tr id="+cnt1+"><td><input type='checkbox' name='record' value=" + json.ins_edu_id +" ></td><td>" + eduInstituteName + "</td><td>" + degree + "</td><td>" + eduStartDate1 + "</td><td>" + eduEndDate1 + "</td></tr>";
 						$(".preview-table-ex2").append(markup2);
 			
 						var markup3 = "<div id='info-remove"+cnt1+"'><div class='content-company div-delete'><strong>Institute Name: </strong>" + eduInstituteName + "</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>" + degree + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + eduStartDate1 + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + eduEndDate1 + "</div><hr></div>";
 						$(".preview-table-ex3").append(markup3);
+						*/
 						
-						
-						  // getEducationData();
-						  // getEducationDataMobile();
+						   getEducationData();
+						   getEducationDataMobile();
 						  
                         $(".frmerror_educationdetails").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
@@ -2182,7 +2239,7 @@
 			$("#err_contact").html('');
 			
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveUserinfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateUserinfo",
                 type: "POST",
                 data: new FormData($("#basicInfo")[0]),
                 contentType: false,
@@ -2226,7 +2283,7 @@
             $("#err_companywebsite").html('');
 						
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveCompanyInfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateCompanyInfo",
                 type: "POST",
                 data: new FormData($("#basicInfo")[0]),
                 contentType: false,
@@ -2268,7 +2325,7 @@
 			$("#err_user_url").html('');
 						
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveSocialInfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateSocialInfo",
                 type: "POST",
                 data: new FormData($("#frmSocialInfo")[0]),
                 contentType: false,
@@ -2315,7 +2372,7 @@
             shortbio_formdata.append('short_bio', short_bio_data);
 
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveShortBio",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateShortBio",
                 type: "POST",
                 data: shortbio_formdata,
                 contentType: false,

@@ -67,7 +67,7 @@
 							</div>
 						</li>
 					</ul>
-            <a href="basic-information.html" class="brand-name">Vcard</a>
+            <a href="#" class="brand-name">PAASPORT</a>
 
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->

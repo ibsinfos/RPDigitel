@@ -12,18 +12,16 @@ class Vcard extends CI_Controller {
         ini_set('memory_limit', '360M');
     }
 
-    public function index() {
-
+    public function index() {	
+		
         if (!isset($_SESSION)) {
             session_start();
         }
-
-
         if (!$this->common_model->isLoggedIn()) {
             $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
             redirect("login");
         }
-
+		
         $session_data = $this->session->userdata();
         $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
 
@@ -56,7 +54,7 @@ class Vcard extends CI_Controller {
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('vcard_default')
-                ->title('vCard | Dashboard')
+                ->title('PaasPort | Dashboard')
                 ->set_partial('header', 'partials/vcard_header');
         $this->template->build('vcard_main');
     }
@@ -70,15 +68,21 @@ class Vcard extends CI_Controller {
         $errorMsg = array();
         $err_num = 0;
 
-
+		
         $this->form_validation->set_rules('firstname', 'First Name', 'trim|required');
         $this->form_validation->set_rules('lastname', 'Last Name', 'trim|required');
         $this->form_validation->set_rules('contact', 'Contact Number', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
 
-        if ($this->form_validation->run() == FALSE) {
+        if ($this->form_validation->run() == FALSE) 
+		{
             $map ['status'] = 0;
-            $map ['msg'] = validation_errors();
+			$error_array=array();
+			$error_array['email']=form_error('email'); 
+			$error_array['firstname']=form_error('firstname'); 
+			$error_array['contact']=form_error('contact'); 
+			$error_array['lastname']=form_error('lastname'); 
+            $map ['msg'] = $error_array;
             echo json_encode($map);
         } else {
             $user = array();
@@ -115,9 +119,10 @@ class Vcard extends CI_Controller {
             $user['email'] = $this->input->post('email');
             $user['home_postal_code'] = $this->input->post('pincode');
             $user['home_address'] = $this->input->post('address');
-            $user1['id'] = $this->input->post('id');
-            $this->load->model('Login_model');
-            $uid = $this->common_model->updateRow(TABLES::$ADMIN_USER, $user, array('id' => $user1['id']));
+            $user['user_id'] = $this->session->userdata('paasport_user_id');
+            //$user1['id'] = $this->input->post('id');
+            //$this->load->model('Login_model');
+            $uid= $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
             if ($uid) {
                 $map ['status'] = 1;
                 $map ['msg'] = "Your data has been saved";
@@ -137,7 +142,8 @@ class Vcard extends CI_Controller {
     }
 
 	
-    public function saveCompanyInfo() {
+    public function saveCompanyInfo() 
+	{
         $this->load->helper('utility_helper');
         $this->load->model('common_model');
         $this->load->helper(array('form', 'url', 'email'));
@@ -151,9 +157,15 @@ class Vcard extends CI_Controller {
         $this->form_validation->set_rules('companyemail', 'Email', 'trim|required|valid_email');
         $this->form_validation->set_rules('companywebsite', 'Website', 'trim|required|callback_validurl');
 
-        if ($this->form_validation->run() == FALSE) {
+        if ($this->form_validation->run() == FALSE) 
+		{
             $map ['status'] = 0;
-            $map ['msg'] = validation_errors();
+			$error_array=array();
+			$error_array['companyname']=form_error('companyname'); 
+			$error_array['jobtitle1']=form_error('jobtitle1'); 
+			$error_array['companyemail']=form_error('companyemail'); 
+			$error_array['companywebsite']=form_error('companywebsite'); 
+            $map ['msg'] = $error_array;           
             echo json_encode($map);
         } else {
             $user = array();
@@ -163,9 +175,10 @@ class Vcard extends CI_Controller {
             $user['work_phone'] = $this->input->post('companycontact');
             $user['work_email'] = $this->input->post('companyemail');
             $user['work_website'] = $this->input->post('companywebsite');
-            $user1['id'] = $this->input->post('id');
-            $this->load->model('Login_model');
-            $uid = $this->common_model->updateRow(TABLES::$ADMIN_USER, $user, array('id' => $user1['id']));
+			$user['user_id'] = $this->session->userdata('paasport_user_id');
+           // $user1['id'] = $this->input->post('id');
+           // $this->load->model('Login_model');
+		    $uid= $this->common_model->insertRow($user, TABLES::$VCARD_COMPANY_DETAILS);          
             if ($uid) {
                 $map ['status'] = 1;
                 $map ['msg'] = "Your data has been saved";
@@ -186,31 +199,47 @@ class Vcard extends CI_Controller {
         $this->load->library('form_validation');
         $errorMsg = array();
         $err_num = 0;
-        //$this->form_validation->set_rules('instagram_link', 'Instagram Link', 'trim|required');
+        $this->form_validation->set_rules('facebook_url', 'Facebook Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('twitter_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('googleplus_url', 'Google Plus Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('linkedin_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('youtube_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('pinterest_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('user_url', 'Twitter Link', 'trim|required|valid_email');
 
-        /* if ($this->form_validation->run() == FALSE) {
-          $map ['status'] = 0;
-          $map ['msg'] = validation_errors();
-          echo json_encode($map);
-          } else { */
-        $map = array();
-        $user = array();
-        $user['facebook_link'] = $this->input->post('facebook_url');
-        $user['twitter_link'] = $this->input->post('twitter_url');
-        $user['google_plus_link'] = $this->input->post('googleplus_url');
-        $user['linkedin_link'] = $this->input->post('linkedin_url');
-        $user['youtube_link'] = $this->input->post('youtube_url');
-        $user['pinterest_link'] = $this->input->post('pinterest_url');
-        $user['received_email'] = $this->input->post('user_url');
-        $user1['id'] = $this->input->post('id');
-        $this->load->model('Login_model');
-        $uid = $this->common_model->updateRow(TABLES::$ADMIN_USER, $user, array('id' => $user1['id']));
-        if ($uid) {
-            $map ['status'] = 1;
-            $map ['msg'] = "Your data has been saved";
-            echo json_encode($map);
+         if ($this->form_validation->run() == FALSE) {
+			  $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['facebook_url']=form_error('facebook_url'); 
+			 $error_array['twitter_url']=form_error('twitter_url'); 
+			 $error_array['googleplus_url']=form_error('googleplus_url'); 
+			 $error_array['linkedin_url']=form_error('linkedin_url'); 
+			 $error_array['youtube_url']=form_error('youtube_url'); 
+			 $error_array['pinterest_url']=form_error('pinterest_url'); 
+			 $error_array['user_url']=form_error('user_url'); 
+			 $map ['msg'] = $error_array;
+			  echo json_encode($map);
+          } 
+		  else 
+		  { 
+			$map = array();
+			$user = array();
+			$user['facebook_link'] = $this->input->post('facebook_url');
+			$user['twitter_link'] = $this->input->post('twitter_url');
+			$user['google_plus_link'] = $this->input->post('googleplus_url');
+			$user['linkedin_link'] = $this->input->post('linkedin_url');
+			$user['youtube_link'] = $this->input->post('youtube_url');
+			$user['pinterest_link'] = $this->input->post('pinterest_url');
+			$user['received_email'] = $this->input->post('user_url');
+			$user1['id'] = $this->input->post('id');
+			$this->load->model('Login_model');
+			$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('user_id'=>$this->session->userdata('paasport_user_id')));
+			if ($uid) {
+				$map ['status'] = 1;
+				$map ['msg'] = "Your data has been saved";
+				echo json_encode($map);
+			}
         }
-        //}
         //echo '<pre>';
         // print_r($_POST);
         exit;
@@ -228,9 +257,9 @@ class Vcard extends CI_Controller {
         $this->load->library('form_validation');
         $errorMsg = array();
         $err_num = 0;
-        //$this->form_validation->set_rules('instagram_link', 'Instagram Link', 'trim|required');
+        //$this->form_validation->set_rules('editor1', 'About Information', 'trim|required');
 
-        /* if ($this->form_validation->run() == FALSE) {
+         /*if ($this->form_validation->run() == FALSE) {
           $map ['status'] = 0;
           $map ['msg'] = validation_errors();
           echo json_encode($map);
@@ -241,7 +270,7 @@ class Vcard extends CI_Controller {
         $user['short_bio'] = $this->input->post('short_bio');
         $user1['id'] = $this->input->post('id');
         $this->load->model('Login_model');
-        $uid = $this->common_model->updateRow(TABLES::$ADMIN_USER, $user, array('id' => $user1['id']));
+        $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('user_id' => $user1['id']));
         if ($uid) {
             $map ['status'] = 1;
             $map ['msg'] = "Your data has been saved";
@@ -404,6 +433,83 @@ class Vcard extends CI_Controller {
 		
 	}
 	
+	public function saveSkills()
+	{
+		$this->load->model('common_model');
+        $this->load->helper(array(
+            'form',
+            'url'
+        ));
+
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('txt_skill', 'Skill & Expertise', 'trim|required');       
+
+         if ($this->form_validation->run() == FALSE) 
+		 {
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['txt_skill']=form_error('txt_skill'); 			
+			 $map ['msg'] = $error_array;
+			 echo json_encode($map);
+          } 
+		  else 
+		  { 
+			$map = array();
+			$experience = array();
+			$experience['user_id'] = $this->session->userdata('paasport_user_id');
+			$experience['skill'] = $this->input->post('txt_skill');
+			$ins_experience = $this->common_model->insertRow($experience, TABLES::$SKILLS_AND_EXPERTISE);
+				
+			if ($ins_experience) {
+				$map ['status'] = 1;
+				$map ['ins_skill_id'] = $ins_experience;
+				$map ['msg'] = 'Skill & Expertise saved successfully.';
+			} else {
+				$map ['status'] = 0;
+				$map ['ins_skill_id'] = '';
+				$map ['msg'] = "Unable to save Skill & Expertise.";
+			}
+			echo json_encode($map);
+			exit;
+		  }	
+		
+	}
+	public function deleteSkill()
+	{
+	 $this->load->model('common_model');
+     $this->load->helper(array(
+            'form',
+            'url'
+        )); 
+    if(!empty($this->input->post('skill_ids')))
+	{
+		$delFlag=0;	
+		foreach($this->input->post('skill_ids') as $exp_id)
+		{
+			if(!empty($exp_id))
+			{
+				$this->common_model->deleteRows(array('id'=>$exp_id), TABLES::$SKILLS_AND_EXPERTISE,'id');
+				$delFlag=1;	
+			}
+			
+		}
+	}	
+      if ($delFlag) {
+            $map ['status'] = 1;
+            $map ['msg'] = 'Skill deleted successfully.';
+        } else {
+            $map ['status'] = 0;
+            $map ['msg'] = "Unable to delete Skill.";
+        }
+        echo json_encode($map);
+        exit;
+    
+        
+}
+	
     public function saveSkillsAndExerptise() {
 		
 		
@@ -478,11 +584,18 @@ class Vcard extends CI_Controller {
         $this->form_validation->set_rules('prevStartDate', 'Start Date', 'trim|required');
         $this->form_validation->set_rules('prevEndDate', 'End Date', 'trim|required');
 
-         if ($this->form_validation->run() == FALSE) {
-          $map ['status'] = 0;
-          $map ['msg'] = validation_errors();
-          echo json_encode($map);
-          } else 
+         if ($this->form_validation->run() == FALSE) 
+		 {
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['prevCompanyName']=form_error('prevCompanyName'); 
+			 $error_array['prevJobTitle']=form_error('prevJobTitle'); 
+			 $error_array['prevStartDate']=form_error('prevStartDate'); 
+			 $error_array['prevEndDate']=form_error('prevEndDate'); 
+			 $map ['msg'] = $error_array;
+			 echo json_encode($map);
+          } 
+		  else 
 		  { 
 			$map = array();
 			$experience = array();
@@ -493,15 +606,15 @@ class Vcard extends CI_Controller {
 			
 			$experience['end_date'] = date('Y-m-d', strtotime($this->input->post('prevEndDate')));
 			
-			if(empty($this->input->post('exp_det_id')))
-			{	
+			//if(empty($this->input->post('exp_det_id')))
+			//{	
 				
 				$ins_experience = $this->common_model->insertRow($experience, TABLES::$EXPERIENCE_DETAILS);
-			}	
+			/*}	
 			else
 			{
 				$ins_experience = $this->common_model->updateRow(TABLES::$EXPERIENCE_DETAILS, $experience, array('id'=>$this->input->post('exp_det_id')));
-			}	
+			} */	
 				
 			if ($ins_experience) {
 				$map ['status'] = 1;
@@ -520,7 +633,7 @@ class Vcard extends CI_Controller {
    public function getExperienceData()
    {
 	    $this->load->model('common_model');
-		 $session_data = $this->session->userdata();	
+		$session_data = $this->session->userdata();	
 		$user_skills= $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
 		$str='';
 		if(!empty($user_skills))
@@ -530,11 +643,9 @@ class Vcard extends CI_Controller {
 			foreach ($user_skills as $user_skill)
 			{
 			
-				$str.="<tr id=".$cnt."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['company_name']."</td><td>".$user_skill['position_title']."</td><td>".$user_skill['start_date']."</td><td>".$user_skill['end_date']."</td><td>";
-				 if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-				 { 
-			 			$str.="<a href='#' onclick=getExpDetailUpdate('".$user_skill['id']."','".$user_skill['company_name']."','".$user_skill['position_title']."','".$user_skill['start_date']."','".$user_skill['end_date']."'); >Edit</a>";
-				 }
+				$str.="<tr id=".$user_skill['id']."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['company_name']."</td><td>".$user_skill['position_title']."</td><td>".$user_skill['start_date']."</td><td>".$user_skill['end_date']."</td><td>";
+				$str.="<a href='#' onclick=getExpDetailUpdate('".$user_skill['id']."','".$user_skill['company_name']."','".$user_skill['position_title']."','".$user_skill['start_date']."','".$user_skill['end_date']."'); >Edit</a>";
+				 
 				$str.="</td></tr>";
 				$cnt+=1;
 			} 
@@ -556,7 +667,7 @@ class Vcard extends CI_Controller {
 			$cnt=1;			
 			foreach ($user_skills as $user_skill)
 			{			
-				$str.="<div id='info-remove".$cnt."'><div class='content-company div-delete'> <strong>Company Name: </strong>".$user_skill['company_name']."</div><div class='content-position div-delete'><strong>Position Title: </strong>".$user_skill['position_title']."</div><div class='start-date div-delete'><strong>Start Date: </strong>".$user_skill['start_date']."</div><div class='end-date div-delete'><strong>End Date: </strong>".$user_skill['end_date']."</div><hr></div>";
+				$str.="<div id='info-remove".$user_skill['id']."'><div class='content-company div-delete'> <strong>Company Name: </strong>".$user_skill['company_name']."</div><div class='content-position div-delete'><strong>Position Title: </strong>".$user_skill['position_title']."</div><div class='start-date div-delete'><strong>Start Date: </strong>".$user_skill['start_date']."</div><div class='end-date div-delete'><strong>End Date: </strong>".$user_skill['end_date']."</div><hr></div>";
 				$cnt+=1;
 			} 
 			
@@ -628,8 +739,13 @@ public function deleteExperience()
 
          if ($this->form_validation->run() == FALSE) 
 		 {
-			$map ['status'] = 0;
-			$map ['msg'] = validation_errors();
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['eduInstituteName']=form_error('eduInstituteName'); 
+			 $error_array['degree']=form_error('degree'); 
+			 $error_array['eduStartDate']=form_error('eduStartDate'); 
+			 $error_array['eduEndDate']=form_error('eduEndDate'); 
+			 $map ['msg'] = $error_array;
 			echo json_encode($map);
          } 
 		 else 
@@ -643,16 +759,14 @@ public function deleteExperience()
 				
 				$edu['end_date'] = date('Y-m-d', strtotime($this->input->post('eduEndDate')));
 
-				if(empty($this->input->post('edu_det_id')))
-				{						
+				//if(empty($this->input->post('edu_det_id')))
+				//{						
 					$ins_experience = $this->common_model->insertRow($edu, TABLES::$EDUCATION_DETAILS);
-				}	
-				else
-				{
-					$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
-				}	
-				
-				
+				//}	
+				//else
+				//{
+				//	$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
+				//}				
 				if ($ins_experience) {
 					$map ['ins_edu_id'] = $ins_experience;
 					$map ['status'] = 1;
@@ -680,7 +794,7 @@ public function deleteExperience()
 			foreach ($user_skills as $user_skill)
 			{
 			
-				$str.="<tr id=".$cnt."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['institute_name']."</td><td>".$user_skill['degree_or_certificate']."</td><td>".$user_skill['start_date']."</td><td>".$user_skill['end_date']."</td><td>";
+				$str.="<tr id=".$user_skill['id']."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['institute_name']."</td><td>".$user_skill['degree_or_certificate']."</td><td>".$user_skill['start_date']."</td><td>".$user_skill['end_date']."</td><td>";
 				
 				if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
 				 { 
@@ -707,7 +821,7 @@ public function deleteExperience()
 			$cnt=1;			
 			foreach ($user_skills as $user_skill)
 			{			
-				$str.="<div id='info-remove".$cnt."'><div class='content-company div-delete'> <strong>Institute Name: </strong>".$user_skill['institute_name']."</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>".$user_skill['degree_or_certificate']."</div><div class='start-date div-delete'><strong>Start Date: </strong>".$user_skill['start_date']."</div><div class='end-date div-delete'><strong>End Date: </strong>".$user_skill['end_date']."</div><hr></div>";				
+				$str.="<div id='info-remove".$user_skill['id']."'><div class='content-company div-delete'> <strong>Institute Name: </strong>".$user_skill['institute_name']."</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>".$user_skill['degree_or_certificate']."</div><div class='start-date div-delete'><strong>Start Date: </strong>".$user_skill['start_date']."</div><div class='end-date div-delete'><strong>End Date: </strong>".$user_skill['end_date']."</div><hr></div>";				
 				
 				$cnt+=1;
 			} 
@@ -769,7 +883,10 @@ public function deleteExperience()
 
         if ($this->form_validation->run() == FALSE) {
             $map ['status'] = 0;
-            $map ['msg'] = validation_errors();
+            $error_array=array();
+			 $error_array['pricingtitle']=form_error('pricingtitle'); 
+			 $error_array['pricingdescription']=form_error('pricingdescription'); 			
+			 $map ['msg'] = $error_array;
             echo json_encode($map);
 			exit;
         } else 
@@ -805,6 +922,32 @@ public function deleteExperience()
 			
         }
        
+		
+	}
+	public function deletePrice()
+	{
+		$this->load->model('common_model');
+		$this->load->helper(array(
+            'form',
+            'url'
+        )); 
+		$user_id = $this->session->userdata('paasport_user_id');
+		$delFlag=0;	
+		if(!empty($this->input->post('price_id')))
+		{
+			$this->common_model->deleteRows(array('id'=>$this->input->post('price_id')),TABLES::$PRICE_PLAN,'id');
+			$delFlag=1;	
+		}	
+	
+       if ($delFlag) {
+            $map ['status'] = 1;
+            $map ['msg'] = 'Price Plan deleted successfully.';
+        } else {
+            $map ['status'] = 0;
+            $map ['msg'] = "Unable to delete Price Plan.";
+        }
+        echo json_encode($map);
+        exit;
 		
 	}
 	// End save price plan
@@ -1012,7 +1155,9 @@ public function deleteExperience()
        
         if ($this->form_validation->run() == FALSE) {
             $map ['status'] = 0;
-            $map ['msg'] = validation_errors();
+             $error_array=array();
+				 $error_array['listname']=form_error('listname'); 			
+				 $map ['msg'] = $error_array;
             echo json_encode($map);
 			exit;
         } else 
@@ -1260,7 +1405,9 @@ public function deleteExperience()
        
         if ($this->form_validation->run() == FALSE) {
             $map ['status'] = 0;
-            $map ['msg'] = validation_errors();
+			$error_array=array();
+			$error_array['videourl']=form_error('videourl'); 			
+            $map ['msg'] = $error_array;            
             echo json_encode($map);
 			exit;
         }
@@ -1447,7 +1594,9 @@ public function deleteExperience()
 			$this->form_validation->set_rules('videourl_portfolio', 'Video URL', 'trim|required|callback_validvideourl');
 			if ($this->form_validation->run() == FALSE) {
 				$map ['status'] = 0;
-				$map ['msg'] = validation_errors();
+				 $error_array=array();
+				 $error_array['videourl_portfolio']=form_error('videourl_portfolio'); 			
+				 $map ['msg'] = $error_array;
 				$map['img_upload_flag']=2;
 				echo json_encode($map);
 				exit;
@@ -1619,4 +1768,393 @@ public function deleteExperience()
         exit;
 	}
 	// End save portfolio	
+	
+	//  vcard update
+	 public function updateVcard() {	
+		
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        if (!$this->common_model->isLoggedIn()) {
+            $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
+            redirect("login");
+        }
+		
+        $session_data = $this->session->userdata();
+		
+        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
+        
+		$userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
+		
+		$user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
+				
+		//echo '<pre>'; print_r($userdata_paasport); exit;
+        //To get User Experience, Education Details        
+        $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+                
+        $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+ 
+        $user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id']));
+        
+		$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $session_data['user_account']['user_id']));
+		
+		$user_list= $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		
+		$user_link= $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+       
+        $this->template->set('user_data', $userdata_paasport);
+        $this->template->set('user_company', $user_company);
+        $this->template->set('user_exp_data', $user_experience_data);
+        $this->template->set('user_edu_data', $user_education_data);
+        $this->template->set('user_skills', $user_skills);
+        $this->template->set('user_priceplan', $user_priceplan);
+        $this->template->set('user_list', $user_list);
+        $this->template->set('user_link', $user_link);
+        $this->template->set('user_video_url', $user_video_url);
+        $this->template->set('user_portfolio', $user_portfolio);
+        $this->template->set('page', 'dashboard');
+        $this->template->set('page', 'dashboard');
+        $this->template->set('page_type', 'inner');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('vcard_default')
+                ->title('PaasPort | Dashboard')
+                ->set_partial('header', 'partials/vcard_header');
+        $this->template->build('vcard_update');
+    }
+	
+	function updateUserinfo()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+
+		
+        $this->form_validation->set_rules('firstname', 'First Name', 'trim|required');
+        $this->form_validation->set_rules('lastname', 'Last Name', 'trim|required');
+        $this->form_validation->set_rules('contact', 'Contact Number', 'trim|required');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+
+        if ($this->form_validation->run() == FALSE) 
+		{
+            $map ['status'] = 0;
+			$error_array=array();
+			$error_array['email']=form_error('email'); 
+			$error_array['firstname']=form_error('firstname'); 
+			$error_array['contact']=form_error('contact'); 
+			$error_array['lastname']=form_error('lastname'); 
+            $map ['msg'] = $error_array;
+            echo json_encode($map);
+        } else {
+            $user = array();
+            if (isset($_FILES['wizard-picture']) && !empty($_FILES['wizard-picture']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/users/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('wizard-picture')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+                    $map ['msg'] = "User Image upload error - " . $error;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }
+                /* $filename = $_SERVER['DOCUMENT_ROOT']."/novaevcard/".$this->input->post('old_user_image'); 
+                  if (file_exists($filename)) {
+                  unlink($filename);
+                  } */
+                $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
+            } else {
+                // $user['user_image'] = $this->input->post('user_image_old');
+            }
+            $user['first_name'] = $this->input->post('firstname');
+            $user['last_name'] = $this->input->post('lastname');
+            $user['mobile'] = $this->input->post('contact');
+            $user['email'] = $this->input->post('email');
+            $user['home_postal_code'] = $this->input->post('pincode');
+            $user['home_address'] = $this->input->post('address');
+            $user['user_id'] = $this->session->userdata('paasport_user_id');
+            $vcard_basic_id = $this->input->post('id');
+            
+            $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id' => $vcard_basic_id));
+			
+            if ($uid) {
+                $map ['status'] = 1;
+                $map ['msg'] = "Basic Information has been updated.";
+                echo json_encode($map);
+            }
+        }
+        exit;
+	}
+	 public function updateCompanyInfo() 
+	{
+        $this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+
+        $this->form_validation->set_rules('companyname', 'Company Name', 'trim|required');
+        $this->form_validation->set_rules('jobtitle1', 'Job Title', 'trim|required');
+        $this->form_validation->set_rules('companyemail', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('companywebsite', 'Website', 'trim|required|callback_validurl');
+
+        if ($this->form_validation->run() == FALSE) 
+		{
+            $map ['status'] = 0;
+			$error_array=array();
+			$error_array['companyname']=form_error('companyname'); 
+			$error_array['jobtitle1']=form_error('jobtitle1'); 
+			$error_array['companyemail']=form_error('companyemail'); 
+			$error_array['companywebsite']=form_error('companywebsite'); 
+            $map ['msg'] = $error_array;           
+            echo json_encode($map);
+        } else {
+            $user = array();
+            $user['company_name'] = $this->input->post('companyname');
+            $user['job_title'] = $this->input->post('jobtitle1');
+            $user['start_date'] = date("Y-m-d", strtotime($this->input->post('startdate')));
+            $user['work_phone'] = $this->input->post('companycontact');
+            $user['work_email'] = $this->input->post('companyemail');
+            $user['work_website'] = $this->input->post('companywebsite');
+			$user['user_id'] = $this->session->userdata('paasport_user_id');
+			$company_id = $this->input->post('company_id');
+            $uid = $this->common_model->updateRow(TABLES::$VCARD_COMPANY_DETAILS, $user, array('id'=>$company_id));	
+            if ($uid) {
+                $map ['status'] = 1;
+                $map ['msg'] = "Professional Information has been updated";
+                echo json_encode($map);
+            }
+        }
+        exit;
+    }
+	public function updateSocialInfo()
+	{
+		 $this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array(
+            'form',
+            'url'
+        ));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('facebook_url', 'Facebook Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('twitter_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('googleplus_url', 'Google Plus Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('linkedin_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('youtube_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('pinterest_url', 'Twitter Link', 'trim|required|callback_validurl');
+        $this->form_validation->set_rules('user_url', 'Twitter Link', 'trim|required|valid_email');
+
+         if ($this->form_validation->run() == FALSE) {
+			  $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['facebook_url']=form_error('facebook_url'); 
+			 $error_array['twitter_url']=form_error('twitter_url'); 
+			 $error_array['googleplus_url']=form_error('googleplus_url'); 
+			 $error_array['linkedin_url']=form_error('linkedin_url'); 
+			 $error_array['youtube_url']=form_error('youtube_url'); 
+			 $error_array['pinterest_url']=form_error('pinterest_url'); 
+			 $error_array['user_url']=form_error('user_url'); 
+			 $map ['msg'] = $error_array;
+			  echo json_encode($map);
+          } 
+		  else 
+		  { 
+			$map = array();
+			$user = array();
+			$user['facebook_link'] = $this->input->post('facebook_url');
+			$user['twitter_link'] = $this->input->post('twitter_url');
+			$user['google_plus_link'] = $this->input->post('googleplus_url');
+			$user['linkedin_link'] = $this->input->post('linkedin_url');
+			$user['youtube_link'] = $this->input->post('youtube_url');
+			$user['pinterest_link'] = $this->input->post('pinterest_url');
+			$user['received_email'] = $this->input->post('user_url');
+			$social_id = $this->input->post('social_id');
+			$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$social_id));
+			if ($uid) {
+				$map ['status'] = 1;
+				$map ['msg'] = "Social Information has been saved";
+				echo json_encode($map);
+			}
+        }
+        //echo '<pre>';
+        // print_r($_POST);
+        exit;
+	}
+	 public function updateShortBio() {
+        //	   $this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        //        $this->load->helper(array(
+        //            'form',
+        //            'url'
+        //        ));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        //$this->form_validation->set_rules('editor1', 'About Information', 'trim|required');
+
+         /*if ($this->form_validation->run() == FALSE) {
+          $map ['status'] = 0;
+          $map ['msg'] = validation_errors();
+          echo json_encode($map);
+          } else { */
+        $map = array();
+        $user = array();
+        //            $user['short_bio'] = $this->input->post('editor1');
+        $user['short_bio'] = $this->input->post('short_bio');
+        $user1['id'] = $this->input->post('id');
+        $this->load->model('Login_model');
+        $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id' => $user1['id']));
+        if ($uid) {
+            $map ['status'] = 1;
+            $map ['msg'] = "Your data has been saved";
+            echo json_encode($map);
+        }
+        //}
+        //echo '<pre>';
+        // print_r($_POST);
+        exit;
+    }
+	public function updateExperience() 
+	{
+		$this->load->model('common_model');
+        $this->load->helper(array(
+            'form',
+            'url'
+        ));
+
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('prevCompanyName', 'Company Name', 'trim|required');
+        $this->form_validation->set_rules('prevJobTitle', 'Position Title', 'trim|required');
+        $this->form_validation->set_rules('prevStartDate', 'Start Date', 'trim|required');
+        $this->form_validation->set_rules('prevEndDate', 'End Date', 'trim|required');
+
+         if ($this->form_validation->run() == FALSE) 
+		 {
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['prevCompanyName']=form_error('prevCompanyName'); 
+			 $error_array['prevJobTitle']=form_error('prevJobTitle'); 
+			 $error_array['prevStartDate']=form_error('prevStartDate'); 
+			 $error_array['prevEndDate']=form_error('prevEndDate'); 
+			 $map ['msg'] = $error_array;
+			 echo json_encode($map);
+          } 
+		  else 
+		  { 
+			$map = array();
+			$experience = array();
+			$experience['user_id'] = $this->session->userdata('paasport_user_id');
+			$experience['company_name'] = $this->input->post('prevCompanyName');
+			$experience['position_title'] = $this->input->post('prevJobTitle');
+			$experience['start_date'] = date('Y-m-d', strtotime($this->input->post('prevStartDate')));
+			
+			$experience['end_date'] = date('Y-m-d', strtotime($this->input->post('prevEndDate')));
+			
+			if(empty($this->input->post('exp_det_id')))
+			{	
+				
+				$ins_experience = $this->common_model->insertRow($experience, TABLES::$EXPERIENCE_DETAILS);
+			}	
+			else
+			{
+				$ins_experience = $this->common_model->updateRow(TABLES::$EXPERIENCE_DETAILS, $experience, array('id'=>$this->input->post('exp_det_id')));
+			} 	
+				
+			if ($ins_experience) {
+				$map ['status'] = 1;
+				$map ['ins_experience_id'] = $ins_experience;
+				$map ['msg'] = 'Experience updated successfully.';
+			} else {
+				$map ['status'] = 0;
+				$map ['ins_experience_id'] = '';
+				$map ['msg'] = "Unable to update experience.";
+			}
+			echo json_encode($map);
+			exit;
+		  }	
+    }
+	
+	 public function updateEducation() 
+	 {
+
+        $this->load->model('common_model');
+        $this->load->helper(array(
+            'form',
+            'url'
+        ));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('eduInstituteName', 'Institute Name', 'trim|required');
+        $this->form_validation->set_rules('degree', 'Degree or Certificate', 'trim|required');
+        $this->form_validation->set_rules('eduStartDate','Start Date','trim|required');
+        $this->form_validation->set_rules('eduEndDate','End Date','trim|required');
+
+         if ($this->form_validation->run() == FALSE) 
+		 {
+			 $map ['status'] = 0;
+			 $error_array=array();
+			 $error_array['eduInstituteName']=form_error('eduInstituteName'); 
+			 $error_array['degree']=form_error('degree'); 
+			 $error_array['eduStartDate']=form_error('eduStartDate'); 
+			 $error_array['eduEndDate']=form_error('eduEndDate'); 
+			 $map ['msg'] = $error_array;
+			 echo json_encode($map);
+         } 
+		 else 
+		 { 
+				$map = array();
+				$edu = array();
+				$edu['user_id'] = $this->session->userdata('paasport_user_id');
+				$edu['institute_name'] = $this->input->post('eduInstituteName');
+				$edu['degree_or_certificate'] = $this->input->post('degree');
+				$edu['start_date'] = date('Y-m-d', strtotime($this->input->post('eduStartDate')));
+				
+				$edu['end_date'] = date('Y-m-d', strtotime($this->input->post('eduEndDate')));
+
+				if(empty($this->input->post('edu_det_id')))
+				{						
+					$ins_experience = $this->common_model->insertRow($edu, TABLES::$EDUCATION_DETAILS);
+				}	
+				else
+				{
+					$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
+				}				
+				if ($ins_experience) {
+					$map ['ins_edu_id'] = $ins_experience;
+					$map ['status'] = 1;
+					$map ['msg'] = 'Education saved successfully.';
+				} else {
+					$map ['ins_edu_id']='';	
+					$map ['status'] = 0;
+					$map ['msg'] = "Unable to save Education.";
+				}
+				echo json_encode($map);
+				exit;
+		  }		
+    }
 }
