@@ -913,9 +913,8 @@
                                                                         <p><b>
                                                                                 Skills you have added: 
                                                                             </b></p>
-														 </div>		
-														 
-                                                                     <?php 
+																			
+																			 <?php 
 																	if(!empty($user_skills)) 
 																	{
 																	?>                            
@@ -937,7 +936,10 @@
                                                                        
                                                         
                                                  
-																	<?php } ?>		
+																	<?php } ?>
+														 </div>		
+														 
+                                                                    		
 												 </div>
                                                 </div>
                                             </div>
@@ -994,7 +996,7 @@
                                                 <div id="educationdata" class="collapse padding-5"
                                                      style="background:#f5f5f5; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
 
-                                                    <div class="preview-table-ex3">
+                                                    <div class="preview-table-ex3-edu">
 
                                                         <?php
                                                         $edu_count = 0;
@@ -1897,7 +1899,7 @@
                     var json = JSON.parse(data);
                     if (json.status === 1) {	
 							getSkillsData(); 
-							getblockSkillData();
+							getSkillDataMobile();
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {
@@ -1935,7 +1937,7 @@
                     if (json.status === 1) {	
 						
 						getSkillsData();
-						getblockSkillData();
+						getSkillDataMobile();
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {
@@ -1972,10 +1974,12 @@
 						$(".preview-table-ex-skill").append(markup);*/
 						
 						getSkillData();
+						getSkillDataMobile();
 						
-						var mark1="<div class='skill-remove-"+ json.ins_skill_id +"' >"+skill_name + "</div><br>";
+						/*var mark1="<div class='skill-remove-"+ json.ins_skill_id +"' >"+skill_name + "</div><br>";						
+						$("#blockSkillDataMobile").append(mark1);*/
 						
-						$("#blockSkillDataMobile").append(mark1);
+						
 						/*var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
 						$(".preview-table-ex1").append(markup1);						*/
 						
@@ -2024,6 +2028,7 @@
                 {
                    var json = JSON.parse(data);
 					 if (json.status === 1) {
+					 getSkillDataMobile();
 					 $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
 					 return true;
 					 } else {
@@ -2208,7 +2213,7 @@
                 if ($(this).is(":checked")) {
 
 
-                    $('.preview-table-ex3 #info-remove' + $(this).parent().parent().attr('id')).remove();
+                    $('.preview-table-ex3-edu #info-remove' + $(this).parent().parent().attr('id')).remove();
                     $(this).parent().parent().remove();
 					delete_edu_array.push($(this).val());
                 }
@@ -2999,9 +3004,8 @@ $(function() {
             processData: false,			        
             success: function (data)
             {					
-                $('#blockSkillData').html('');
-                $('#blockSkillDataMobile').html('');
-                $('#blockSkillData').html(data);
+                
+                $('#blockSkillDataMobile').html('');                
                 $('#blockSkillDataMobile').html(data);
 				
             }
@@ -3076,8 +3080,8 @@ $(function() {
 			},           		        
             success: function (data)
             {					
-               $(".preview-table-ex3").html(''); 					 
-               $(".preview-table-ex3").html(data);					 
+               $(".preview-table-ex3-edu").html(''); 					 
+               $(".preview-table-ex3-edu").html(data);					 
 				
             }
         });
@@ -3105,15 +3109,16 @@ $(function() {
 	function getSkillDataMobile()
 	{
 		$.ajax({
-            url: "<?php echo base_url() ?>frontend/Vcard/getEducationDataMobile",
+            url: "<?php echo base_url() ?>frontend/Vcard/getSkillsAndExerptDetail",
 			type: "POST",
             data: {
 				vcard_id:$('#eduvcard_id').val()				
 			},           		        
             success: function (data)
-            {					
-               $(".preview-table-ex3").html(''); 					 
-               $(".preview-table-ex3").html(data);					 
+            {	
+				
+               $("#blockSkillDataMobile").html(''); 					 
+               $("#blockSkillDataMobile").html(data);					 
 				
             }
         });
@@ -3338,7 +3343,7 @@ $(function() {
 */
         // End Skills and Expertise ajax call
 
-		    $.ajax({
+		 /*   $.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/saveSkillsAndExerptise1",
 			type: "POST",
             data: new FormData($("#frmskillsAndExerptise")[0]),
@@ -3351,7 +3356,7 @@ $(function() {
                 if (json.status === 1) {
 					
 					getSkillsData();
-					getblockSkillData();
+					getSkillDataMobile();
                     $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                     return true;
                 } else {
@@ -3360,7 +3365,7 @@ $(function() {
                 }
                
             }
-        });
+        }); */
 
 		
 

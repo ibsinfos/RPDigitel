@@ -39,16 +39,17 @@
                                                     <label>Email
                                                         <small>(required)</small>
                                                     </label>
+                                                    
                                                     <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
                                                     <input name="email" type="email" class="form-control"
-                                                           placeholder="eg. johndoe@website.com" value="">
+                                                           placeholder="eg. johndoe@website.com" value="<?php echo ($user_data['0']['email']) ? $user_data['0']['email'] : ''; ?>" >
 													<span id="err_email" ></span>	   
                                                 </div>
                                                 <div class="margin-top-10">
                                                     <label>Address</label>
                                                     <textarea name="address" class="form-control"
                                                               placeholder="123 6th St.Melbourne, FL 32904"
-                                                              maxlength="100"></textarea>
+                                                              maxlength="100"><?php echo ($user_data['0']['home_address']) ? $user_data['0']['home_address'] : ''; ?></textarea>
                                                 </div>
                                             </div>
 
@@ -59,13 +60,13 @@
                                                     <small>(required)</small>
                                                 </label>
                                                 <input name="firstname" id="firstname" type="text" class="form-control"
-                                                       placeholder="Enter your name" value="" maxlength="10">
+                                                       placeholder="Enter your name" value="<?php echo ($user_data['0']['first_name']) ? $user_data['0']['first_name'] : ''; ?>" maxlength="10">
 												<span id="err_firstname" ></span>	   
                                                 <div class="margin-top-10">
                                                     <label>Last Name
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input name="lastname" type="text" class="form-control" value=""
+                                                    <input name="lastname" type="text" class="form-control" value="<?php echo ($user_data['0']['last_name']) ? $user_data['0']['last_name'] : ''; ?>"
                                                            placeholder="Enter your surname"  maxlength="10">
 													<span id="err_lastname" ></span>	   
                                                 </div>
@@ -74,14 +75,14 @@
                                                         <small>(required)</small>
                                                     </label>
                                                     <input name="contact" type="tel" class="form-control"
-                                                           placeholder="eg.(417) 123-4567" value="">
+                                                           placeholder="eg.(417) 123-4567" value="<?php echo ($user_data['0']['mobile']) ? $user_data['0']['mobile'] : ''; ?>">
 													<span id="err_contact" ></span>	   
                                                 </div>
                                                 <div class="margin-top-10">
                                                     <label>Pincode
                                                     </label>
                                                     <input name="pincode" type="text" class="form-control"
-                                                           placeholder="422010" value="" >
+                                                           placeholder="422010" value="<?php echo ($user_data['0']['home_postal_code']) ? $user_data['0']['home_postal_code'] : ''; ?>" >
                                                 </div>
                                             </div>
                                         </div>
@@ -92,7 +93,7 @@
                                             <div class="col-lg-3">
                                                 <input  id="addbtn" type="button" class="btn btn-danger pull-right btn-block"
                                                        data-toggle="modal"
-                                                       data-target="#myModal" value=" Add + ">
+                                                       data-target="#myModal" value=" Edit  ">
 
                                             </div>
 
@@ -114,9 +115,10 @@
                                                                 <label for="companyname">Company Name
                                                                     <small>(required)</small>
                                                                 </label>
+																<input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="company_id">
                                                                 <input id="companyname" name="companyname" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter company name" value=""
+                                                                       placeholder="Enter company name" value="<?php echo ($user_data['0']['company_name']) ? $user_data['0']['company_name'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_companyname" ></span>	   
                                                             </div>
@@ -126,7 +128,7 @@
                                                                 </label>
                                                                 <input id="jobTitle" name="jobtitle1" type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Job Title" value=""
+                                                                       placeholder="Enter Job Title" value="<?php echo ($user_data['0']['job_title']) ? $user_data['0']['job_title'] : ''; ?>"
                                                                        maxlength="20">
 																<span id="err_jobtitle1" ></span>	 	   
                                                             </div>
@@ -134,7 +136,7 @@
                                                                 <label>Start Date</label>
                                                                 <div id="sandbox-container" class="input-group date">
                                                                     <input type="text" class="form-control"
-                                                                           value="" name="startdate"  placeholder="12-02-2017" >
+                                                                           value="<?php echo ($user_data['0']['start_date']) ? $user_data['0']['start_date'] : ''; ?>" name="startdate"  placeholder="12-02-2017" >
                                                                     <div class="input-group-addon">
                                                                         <span class="glyphicon glyphicon-th"></span>
                                                                     </div>
@@ -148,7 +150,7 @@
                                                                        type="tel"
                                                                        class="form-control"
                                                                        placeholder="Enter Company Contact Number"
-                                                                       value="" maxlength="17">
+                                                                       value="<?php echo ($user_data['0']['work_phone']) ? $user_data['0']['work_phone'] : ''; ?>" maxlength="17">
 																	   
                                                             </div>
                                                             <div class="form-group">
@@ -158,7 +160,7 @@
                                                                 <input id="companyEmail" name="companyemail"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Enter Company Email" value="">
+                                                                       placeholder="Enter Company Email" value="<?php echo ($user_data['0']['work_email']) ? $user_data['0']['work_email'] : ''; ?>">
 																<span id="err_companyemail" ></span>	   
                                                             </div>
                                                             <div class="form-group">
@@ -168,7 +170,7 @@
                                                                 <input id="companyWebsite" name="companywebsite"
                                                                        type="text"
                                                                        class="form-control"
-                                                                       placeholder="Company Website URL" value="">
+                                                                       placeholder="Company Website URL" value="<?php echo ($user_data['0']['work_website']) ? $user_data['0']['work_website'] : ''; ?>">
 																<span id="err_companywebsite" ></span>	   
                                                             </div>
                                                         </div>
@@ -213,18 +215,19 @@
                                             <div class="picture-container center">
                                                 <div class="picture">
                                                     <?php
-                                                   /* if (!empty($user_data['0']['user_image']))
-                                                        $wizard_pic_preview = $user_data['0']['user_image'];
+                                                    if (!empty($user_data['0']['user_image']))
+                                                       $wizard_pic_preview = base_url().$user_data['0']['user_image'];
                                                     else
-                                                        $wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
-													*/
-													$wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
+                                                        $wizard_pic_preview = asset_url() ."main_vcard/images/default-avatar.png";
+													
+													
                                                     ?>
                                                     <img src="<?php echo $wizard_pic_preview; ?>" class="picture-src"
                                                          id="wizardPicturePreview"
                                                          title="" height="106"/>
                                                 </div>
                                             </div>
+											
                                             <ul class="list-inline center margin-bottom-0">
                                                 <li class="padding-right-0">
                                                     <h2 data-preview="firstname"></h2>
@@ -333,10 +336,10 @@
                                                            aria-hidden="true"
                                                            style="font-size:20px; color:#ffffff;">
                                                         </i></span>
-                                                    <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
+                                                    <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="social_id">
                                                     <input id="facebook" name="facebook_url" type="text"
                                                            class="form-control"
-                                                           placeholder="facebook id only" value="" >
+                                                           placeholder="facebook id only" value="<?php echo ($user_data['0']['facebook_link']) ? $user_data['0']['facebook_link'] : ''; ?>" >
 														   
 
                                                 </div>
@@ -347,7 +350,7 @@
                                                                                                                   aria-hidden="true"
                                                                                                                   style="font-size:15px; color:#ffffff;"></i></span>
                                                     <input id="twitter" name="twitter_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['twitter_link']) ? $user_data['0']['twitter_link'] : ''; ?>"
                                                            placeholder="Enter Twitter page id">
 														   
                                                 </div>
@@ -359,7 +362,7 @@
                                                             class="fa fa-google-plus" aria-hidden="true"
                                                             style="font-size:16px; color:#ffffff;"></i></span>
                                                     <input id="googleplus" name="googleplus_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['google_plus_link']) ? $user_data['0']['google_plus_link'] : ''; ?>"
                                                            placeholder="Enter google plus page id">
 														   
                                                 </div>
@@ -371,7 +374,7 @@
                                                                                                                   aria-hidden="true"
                                                                                                                   style="font-size:16px; color:#ffffff;"></i></span>
                                                     <input id="linkedin" name="linkedin_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['linkedin_link']) ? $user_data['0']['linkedin_link'] : ''; ?>"
                                                            placeholder="Enter Linked in page id">
 															   
                                                 </div>
@@ -383,7 +386,7 @@
                                                             class="fa fa-youtube-play" aria-hidden="true"
                                                             style="font-size:15px; color:#ffffff;"></i></span>
                                                     <input id="youtube" name="youtube_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['youtube_link']) ? $user_data['0']['youtube_link'] : ''; ?>"
                                                            placeholder="Enter Youtube page url">
 													   
                                                 </div>
@@ -394,7 +397,7 @@
                                                             class="fa fa-pinterest" aria-hidden="true"
                                                             style="font-size:18px; color:#ffffff;"></i></span>
                                                     <input id="pinterest" name="pinterest_url" type="text"
-                                                           class="form-control" value=""
+                                                           class="form-control" value="<?php echo ($user_data['0']['pinterest_link']) ? $user_data['0']['pinterest_link'] : ''; ?>"
                                                            placeholder="Enter pinterest url">
 															   
                                                 </div>
@@ -406,7 +409,7 @@
                                                     <span class="input-group-addon" style="background:#34495e"><i
                                                             class="fa fa-envelope" aria-hidden="true"
                                                             style="font-size:18px; color:#ffffff;"></i></span>
-                                                    <input name="user_url" type="text" class="form-control" value=""
+                                                    <input name="user_url" type="text" class="form-control" value="<?php echo ($user_data['0']['received_email']) ? $user_data['0']['received_email'] : ''; ?>"
                                                            placeholder="johndoe@website.com">
 															   
                                                 </div>
@@ -429,40 +432,45 @@
                                              data-mcs-theme="minimal-dark">
                                             <h2 class="center">Social Links</h2>
                                             <div class="col-lg-12 padding-bottom-10">
-
-                                                <div class="col-lg-6 facebook">
-                                                    <a href="{value of facebook_url}">
+												
+                                                <div class="col-lg-6 facebook"  >		
+														
+														
+                                                    <a id="fb_url" href="<?php echo ($user_data['0']['facebook_link']) ? $user_data['0']['facebook_link'] : ''; ?>" >
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/005-facebook.png" alt="" class="center-block"
                                                              height="50">
-                                                        <p class="center">facebook</p></a>
+                                                        <p class="center">facebook</p>
+													</a>
+													
                                                 </div>
+												
                                                 <div class="col-lg-6 twitter">
-                                                    <a href="{value of twitter_url}">
+                                                    <a id="twit_url" href="<?php echo ($user_data['0']['twitter_link']) ? $user_data['0']['twitter_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/004-twitter.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">twitter</p></a>
                                                 </div>
                                                 <div class="col-lg-6 googleplus">
-                                                    <a href="{value of googleplus_url}">
+                                                    <a id="gplus_url" href="<?php echo ($user_data['0']['google_plus_link']) ? $user_data['0']['google_plus_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/001-google-plus.png" alt=""
                                                              class="center-block"
                                                              height="50">
                                                         <p class="center">Google+</p></a>
                                                 </div>
                                                 <div class="col-lg-6 linkedin">
-                                                    <a href="{value of linkedin_url}">
+                                                    <a id="linkdn_url" href="<?php echo ($user_data['0']['linkedin_link']) ? $user_data['0']['linkedin_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/002-linkedin.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Linkedin</p></a>
                                                 </div>
                                                 <div class="col-lg-6 youtube">
-                                                    <a href="{value of youtube_url}">
+                                                    <a  id="utube_url" href="<?php echo ($user_data['0']['youtube_link']) ? $user_data['0']['youtube_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/003-youtube.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Youtube</p></a>
                                                 </div>
                                                 <div class="col-lg-6 pinterest">
-                                                    <a href="{value of pinterest_url}">
+                                                    <a  id="pin_url" href="<?php echo ($user_data['0']['pinterest_link']) ? $user_data['0']['pinterest_link'] : ''; ?>">
                                                         <img src="<?php echo asset_url(); ?>main_vcard/images/pinterest.png" alt="" class="center-block"
                                                              height="50">
                                                         <p class="center">Pinterest</p></a>
@@ -539,7 +547,7 @@
 
                                                         <label for="editor1">Add About or Short Bio :</label>
                                                         <textarea id="editor1" name="editor1" maxlength="160">
-                                                           
+                                                           <?php echo ($user_data[0]['short_bio']) ? $user_data[0]['short_bio'] : ''; ?>
                                                         </textarea>
 														
                                                         <input type="hidden" value="<?php echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
@@ -564,6 +572,8 @@
 																	<label for="prevCompanyName" class="col-sm-3 control-label">Skill & Expertise</label>
 																	<div class="col-sm-9">
 																		
+																		<input class="form-control" id="vcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  type="hidden">
+																		<input class="form-control" id="txt_skill_id" name="txt_skill_id"  type="hidden">
 																		<input class="form-control" id="txt_skill" name="txt_skill" placeholder="Enter Skill & Expertise" type="text">
 																		<span id="err_txt_skill"></span>	   
 																	</div>
@@ -588,7 +598,25 @@
 																				</tr>
 																			</thead>
 																			<tbody>
+																				<?php
+                                                                                $edu_count = 0;
+                                                                                foreach ($user_skills as $user_skill) 
+																				{
+                                                                                    $edu_count++;
+                                                                                    ?>
 
+                                                                                    <tr id="<?php echo $user_skill['id']; ?>">
+                                                                                        <td><input name="record" type="checkbox" value="<?php echo ($user_skill['id']) ? $user_skill['id'] : ''; ?>" ></td>
+                                                                                        <td><?php echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?></td>
+                                                                                                                     
+                                                                                         <td>
+																						
+																								<a href="#" onclick="getSkillDetailUpdate('<?php echo $user_skill['id']; ?>','<?php echo $user_skill['skill']; ?>');" >Edit</a>
+																								
+																						</td>
+                                                                                    </tr>
+
+                                                                                <?php }  ?>
 																				
 
 																			</tbody>
@@ -626,6 +654,7 @@
                                                                            class="col-sm-3 control-label">Company
                                                                         Name</label>
                                                                     <div class="col-sm-9">
+																		<input type="hidden" id="vcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>" />
 																		<input type="hidden" id="exp_det_id" name="exp_det_id" value="" />
                                                                         <input type="text" class="form-control"
                                                                                id="prevCompanyName"
@@ -669,8 +698,9 @@
                                                                 <div class="form-group">
                                                                     <div class="col-sm-12 text-right">
                                                                         <button type="button" class="btn btn-default preview-add-button1" id="add_experience" name="add_experience">
-                                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                                            Add
+                                                                            <!--<span class="glyphicon glyphicon-plus"></span>
+                                                                            Add -->
+																			Edit
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -691,7 +721,7 @@
                                                                             <tbody>
 
                                                                                 <?php
-                                                                                /*$exp_count = 0;
+                                                                                $exp_count = 0;
                                                                                 foreach ($user_exp_data as $user_exp) {
                                                                                     $exp_count++;
                                                                                     ?>
@@ -702,14 +732,13 @@
                                                                                         <td><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?></td>
-                                                                                        <td>
-																						<?php if($this->uri->segment(1)=='vcard-update') { ?>
-																								<a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>','<?php echo $user_exp['company_name']; ?>','<?php echo $user_exp['position_title']; ?>','<?php echo $user_exp['start_date']; ?>','<?php echo $user_exp['end_date']; ?>');" >Edit</a>
-																						<?php } ?>		
+                                                                                        <td>											
+																							<a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>','<?php echo $user_exp['company_name']; ?>','<?php echo $user_exp['position_title']; ?>','<?php echo $user_exp['start_date']; ?>','<?php echo $user_exp['end_date']; ?>');" >Edit</a>
+																							
 																						</td>
                                                                                     </tr>
 
-                                                                                <?php }*/ ?>
+                                                                                <?php }?>
 
 
                                                                             </tbody>
@@ -742,6 +771,7 @@
                                                                         Name</label>
                                                                     <div class="col-sm-9">
 																		
+																		<input type="hidden" class="form-control" id="eduvcard_id" name="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  >
 																		<input type="hidden" class="form-control" id="edu_det_id" name="edu_det_id">
                                                                         <input type="text" class="form-control"
                                                                                id="eduInstituteName"
@@ -782,8 +812,8 @@
                                                                     <div class="col-sm-12 text-right">
                                                                         <button type="button"
                                                                                 class="btn btn-default preview-add-button2" id="educationSubmit">
-                                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                                            Add
+																				<!--<span class="glyphicon glyphicon-plus"></span>-->
+                                                                            Edit
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -804,25 +834,25 @@
                                                                             <tbody>
 
                                                                                 <?php
-                                                                                /*$edu_count = 0;
+                                                                                $edu_count = 0;
                                                                                 foreach ($user_edu_data as $user_edu) {
                                                                                     $edu_count++;
                                                                                     ?>
 
-                                                                                    <tr id="<?php echo $edu_count; ?>">
+                                                                                    <tr id="<?php echo $user_edu['id']; ?>">
                                                                                         <td><input name="record" type="checkbox" value="<?php echo ($user_edu['id']) ? $user_edu['id'] : ''; ?>" ></td>
                                                                                         <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['degree_or_certificate']) ? $user_edu['degree_or_certificate'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['start_date']) ? $user_edu['start_date'] : ''; ?></td>
                                                                                         <td><?php echo ($user_edu['end_date']) ? $user_edu['end_date'] : ''; ?></td>
                                                                                          <td>
-																						<?php if($this->uri->segment(1)=='vcard-update') { ?>
+																						
 																								<a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>','<?php echo $user_edu['institute_name']; ?>','<?php echo $user_edu['degree_or_certificate']; ?>','<?php echo $user_edu['start_date']; ?>','<?php echo $user_edu['end_date']; ?>');" >Edit</a>
-																						<?php } ?>		
+																								
 																						</td>
                                                                                     </tr>
 
-                                                                                <?php } */ ?>
+                                                                                <?php }  ?>
 
 
                                                                             </tbody>
@@ -883,7 +913,7 @@
                                                                         <p><b>
                                                                                 Skills you have added: 
                                                                             </b></p>
-														 </div>		
+														</div>	
 														 
                                                                      <?php 
 																	if(!empty($user_skills)) 
@@ -899,7 +929,7 @@
                                                                                     ?>
                                                                     
                                                                        
-                                            <?php //echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?><br>
+                                            <?php echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?><br>
                                                                    
                                                                     
                                                                     
@@ -908,7 +938,7 @@
                                                         
                                                  
 																	<?php } ?>		
-												 </div>
+												 
                                                 </div>
                                             </div>
 
@@ -925,12 +955,12 @@
                                                      style="background:#f5f5f5; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                                                     <div class="preview-table-ex1">
                                                       <?php
-                                                       /* $exp_count = 0;
+                                                        $exp_count = 0;
                                                         foreach ($user_exp_data as $user_exp) {
                                                             $exp_count++;
                                                             ?>
 
-                                                            <div id="info-remove<?php echo $exp_count; ?>">
+                                                            <div id="info-remove<?php echo $user_exp['id']; ?>">
                                                                 <div class="content-company div-delete"> 
                                                                     <strong>Company Name: </strong><?php echo ($user_exp['company_name']) ? $user_exp['company_name'] : ''; ?>
                                                                 </div>
@@ -945,7 +975,7 @@
 
 
 
-                                                        <?php } */ ?>
+                                                        <?php }  ?>
 
 
 
@@ -967,13 +997,14 @@
                                                     <div class="preview-table-ex3-edu">
 
                                                         <?php
-                                                        /*$edu_count = 0;
-                                                        foreach ($user_edu_data as $user_edu) {
+                                                        $edu_count = 0;
+                                                        foreach ($user_edu_data as $user_edu) 
+														{
                                                             $edu_count++;
                                                             ?>
 
 
-                                                            <div id="info-remove<?php echo $edu_count; ?>">
+                                                            <div id="info-remove<?php echo $user_edu['id']; ?>">
                                                                 <div class="content-company div-delete">
                                                                     <strong>Institute Name: </strong><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?>
                                                                 </div>
@@ -984,7 +1015,7 @@
                                                                 <hr>
                                                             </div>
 
-                                                        <?php } */ ?>
+                                                        <?php }  ?>
 
 
 
@@ -1038,7 +1069,7 @@
 							<div class="err_priceplandetail" ></div>
 							<div id="div1" class="pricing-plan-content desc-panel targetDiv preview-table-ex5">
 								<?php 
-								/*if(!empty($user_priceplan))
+								if(!empty($user_priceplan))
 								{
 									foreach($user_priceplan as $u_plan)
 									{
@@ -1046,15 +1077,13 @@
 										{
 								?>	
 								
-									<div class="panel panel-success">
+									<div class="panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>">
 									<div class="panel-heading">
 									<h3 class="panel-title"><?php echo $u_plan['plan_title'] ?></h3>
 									<div class="pull-right">
-									<?php if($this->uri->segment(1)=='vcard-update') { ?>
 									<span id="editpanel" class="badge editbutton" onclick="openPrice('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_title']; ?>','<?php echo $u_plan['plan_description']; ?>','<?php echo $u_plan['price']; ?>');" title="Edit">
-									<?php } ?>
 									<i class="fa fa-pencil-square-o"></i></span>
-									<span id="deletepanel" class="badge editbutton" title="Delete">
+									<span id="deletepanel" class="badge editbutton" title="Delete" onclick="deletePrice('<?php echo $u_plan['id']; ?>');" >
 									<i class="fa fa-trash"></i></span><span class="pull-right clickable">
 									<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
 									<div class="panel-body"><div class="panel-body-content"><?php echo $u_plan['plan_description'] ?> </div><div class="footer1"><?php echo $u_plan['price'] ?></div>
@@ -1064,15 +1093,13 @@
 										}
 										else if(!empty($u_plan['plan_image']))
 										{ ?>
-										<div class="panel panel-success">
+										<div class="panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>">
 										<div class="panel-heading">
 										<h3 class="panel-title"></h3>
 										<div class="pull-right">
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
 										<span id="editpanel" class="badge editbutton" onclick="openPriceImage('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_image']; ?>');" title="Edit" >
-										<?php } ?>
 										<i class="fa fa-pencil-square-o"></i></span>
-										<span id="deletepanel" class="badge editbutton" title="Delete">
+										<span id="deletepanel" class="badge editbutton" title="Delete" onclick="deletePrice('<?php echo $u_plan['id']; ?>');" >
 										<i class="fa fa-trash"></i></span><span class="pull-right clickable">
 										<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
 										<div class="panel-body"><div class="panel-body-content"><img src="<?php echo base_url().$u_plan['plan_image']; ?>" class="img-responsive"/> </div><div class="footer1"></div>
@@ -1081,7 +1108,7 @@
 									<?php
 										}	
 									}
-								} */
+								} 
 								
 								?>
 							
@@ -1098,28 +1125,28 @@
 									</div>
 									<div class="panel-body portfolio-preview5">
 									
-									<?php /*if(!empty($user_portfolio)) { 
+									<?php if(!empty($user_portfolio)) { 
 										foreach($user_portfolio as $u_portfolio)
 										{
 									?>
 										<div class="panel-body-content text-center">
 										<?php if(!empty($u_portfolio['image'])) {?>
-											<?php if($this->uri->segment(1)=='vcard-update') { ?>
+											
 											<div class='pull-right'>
 												<span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioImage('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['image']; ?>')" ><i class="fa fa-pencil-square-o"></i>
 												</span>
 											</div>
-											<?php } ?>
+											
 											<img src="<?php echo base_url().$u_portfolio['image']; ?>" class="img-responsive"/>
 										<?php } ?>	
 										<hr>
 										<?php if(!empty($u_portfolio['video_url'])) { ?>
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 											<div class='pull-right'>
 												<span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioVideo('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['video_url']; ?>')" ><i class="fa fa-pencil-square-o"></i>
 												</span>
 											</div>
-											<?php } ?>
+										
 										<div class="embed-responsive embed-responsive-4by3">
 										  <iframe class="embed-responsive-item" src="<?php echo $u_portfolio['video_url'] ?>"></iframe>
 										</div>									
@@ -1127,7 +1154,7 @@
 										</div>
 									<?php
 										}
-									}*/ ?>	
+									} ?>	
 									
 									</div>
 							</div>
@@ -1145,22 +1172,22 @@
 									<div class="panel-body-content">
 									<ul class="list list-preview-table-ex5">
 										<?php
-											/*if(!empty($user_list))
+											if(!empty($user_list))
 											{
 												foreach($user_list as $ulist)
 												{
 										?>
 										<li><?php echo $ulist['list'] ?> 
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 										<div class="pull-right">
 										<span id="editpanellists" class="badge editbutton" title="Edit" onclick="openList('<?php echo $ulist['id'] ?>','<?php echo $ulist['list'] ?>');" >
 										<i class="fa fa-pencil-square-o"></i></span></div>
-										<?php } ?>
+										
 									
 										</li>
 											<?php
 												}
-											}*/ ?>
+											} ?>
 									</ul>
 									</div>
 									
@@ -1178,20 +1205,20 @@
 									</div>
 									<div class="panel-body">
 									<div class="panel-body-content text-center link-preview-ex5">
-									<?php /*if(!empty($user_link)) { 
+									<?php if(!empty($user_link)) { 
 										foreach($user_link as $u_link) {
 									?>
 										<div class="linking"><a href=""><?php echo $u_link['link'];  ?></a><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span>
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 										<div class="pull-right">
 										<span id="editpanellinks" class="badge editbutton" title="Edit" onclick="openLink('<?php echo $u_link['id'] ?>','<?php echo $u_link['link'] ?>');">
 										<i class="fa fa-pencil-square-o"></i></span>
 										</div>
-										<?php } ?>	
+										
 										</div>
 									<?php 
 										}
-									} */ ?>
+									}  ?>
 									
 									</div>
 									
@@ -1207,7 +1234,7 @@
 									</div>
 									<div class="panel-body video-preview5">
 									<?php 
-									/*if(!empty($user_video_url))
+									if(!empty($user_video_url))
 									{
 										foreach($user_video_url as $u_video_url) 
 										{	
@@ -1230,7 +1257,7 @@
 									</div>
 									<?php 
 										}
-									}*/ ?>
+									} ?>
 									
 									</div>
 							</div>
@@ -1264,14 +1291,14 @@
 													<!-- Pricing plan Starts Here-->
 													<div class="desc-panel preview-table-ex6" style="margin-top:48px">
 													<?php 
-														/*if(!empty($user_priceplan))
+														if(!empty($user_priceplan))
 														{
 															foreach($user_priceplan as $u_plan)
 															{
 																if(!empty($u_plan['plan_title']))
 																{
 														?>	
-															<div class='panel panel-success'>
+															<div class='panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>'>
 																<div class='panel-heading'>
 																	<h3 class='panel-title'> <?php echo $u_plan['plan_title']; ?> </h3>
 																	<span class='pull-right clickable'>
@@ -1285,7 +1312,7 @@
 																}
 																else if(!empty($u_plan['plan_image']))
 																{ ?>
-																<div class='panel panel-success'>
+																<div class='panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>'>
 																	<div class='panel-heading'>
 																		<h3 class='panel-title'>  </h3>
 																		<span class='pull-right clickable'>
@@ -1299,7 +1326,7 @@
 															<?php
 																}	
 															}
-														} */
+														} 
 												    ?>
 													</div>
 													<!--End Here-->
@@ -1325,7 +1352,7 @@
 																<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
 															</div>
 															<div class="panel-body portfolio-preview6">
-															<?php /* if(!empty($user_portfolio)) { 
+															<?php  if(!empty($user_portfolio)) { 
 																foreach($user_portfolio as $u_portfolio)
 																{
 															?>
@@ -1342,7 +1369,7 @@
 																</div>
 															<?php
 																}
-															}  */ ?>
+															}   ?>
 															
 															</div>
 													</div>
@@ -1375,7 +1402,7 @@
 													<div class="panel-body-content">
 													<ul class="list list-preview-table-ex6">
 														<?php
-														/*if(!empty($user_list))
+														if(!empty($user_list))
 														{
 															foreach($user_list as $ulist)
 															{
@@ -1383,7 +1410,7 @@
 														<li><?php echo $ulist['list'] ?></li>
 														<?php
 															}
-														} */?>
+														} ?>
 													</ul>
 													</div>
 													
@@ -1418,13 +1445,13 @@
 													<div class="panel-body">
 													<div class="panel-body-content">
 													<ul class="list link-preview-ex6">
-														<?php /* if(!empty($user_link)) { 
+														<?php  if(!empty($user_link)) { 
 															foreach($user_link as $u_link) {
 														?>
 															<div class="linking"><a href=""><?php echo $u_link['link'];  ?><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span></a></div>
 														<?php 
 															}
-														} */ ?>
+														}  ?>
 
 													</ul>
 													</div>
@@ -1459,7 +1486,7 @@
 															</div>
 															<div class="panel-body video-preview6">
 																<?php 
-																	/*if(!empty($user_video_url))
+																	if(!empty($user_video_url))
 																	{
 																		foreach($user_video_url as $u_video_url) 
 																		{	
@@ -1477,7 +1504,7 @@
 																	</div>
 																	<?php 
 																		}
-																	}*/ ?>
+																	}?>
 															
 															</div>
 													</div>
@@ -1662,49 +1689,80 @@
 <script>
     $('#facebook').keyup(function () {
         if ($(this).val().length)
+		{				
             $('div.facebook').show();
+			//$("#fb_url").attr('href',$("#facebook").val());
+		}	
         else
             $('div.facebook').hide();
     });
-    $('div.facebook').hide();
+	if($('#facebook').val()) {		
+		$('div.facebook').show();
+		
+	}	
+	else
+		$('div.facebook').hide();
+	
     $('#twitter').keyup(function () {
         if ($(this).val().length)
+		{	
             $('div.twitter').show();
+			//$("#twit_url").attr('href',$(this).val());
+		}	
         else
             $('div.twitter').hide();
     });
-    $('div.twitter').hide();
+	if($('#twitter').val())
+		$('div.twitter').show();
+	else
+		$('div.twitter').hide();
+    
     $('#googleplus').keyup(function () {
         if ($(this).val().length)
             $('div.googleplus').show();
         else
             $('div.googleplus').hide();
     });
-    $('div.googleplus').hide();
+	if($('#googleplus').val())
+		$('div.googleplus').show();
+	else
+		$('div.googleplus').hide();
     $('#linkedin').keyup(function () {
         if ($(this).val().length)
             $('div.linkedin').show();
         else
             $('div.linkedin').hide();
     });
-    $('div.linkedin').hide();
+	if($('#linkedin').val())
+		$('div.linkedin').show();
+	else
+		$('div.linkedin').hide();
+    
     $('#youtube').keyup(function () {
         if ($(this).val().length)
             $('div.youtube').show();
         else
             $('div.youtube').hide();
     });
-    $('div.youtube').hide();
+    if($('#youtube').val())
+		$('div.youtube').show();
+	else
+		$('div.youtube').hide();
     $('#pinterest').keyup(function () {
         if ($(this).val().length)
             $('div.pinterest').show();
         else
             $('div.pinterest').hide();
     });
-    $('div.pinterest').hide();
+	if($('#pinterest').val())
+		$('div.pinterest').show();
+	else
+		$('div.pinterest').hide();
+    
 </script>
 <script>
-    $('input[name="facebook_url"]').on('change', function () {
+	$('input[name="facebook_url"]').on('change', function () {
+			
         var self = this,
                 $self = $(self),
                 link = $self.next();
@@ -1764,7 +1822,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-	
+		
+		
 		$('.child-section').hide();
 		
 		$('.parent-section').click(function() {
@@ -1838,7 +1897,7 @@
                     var json = JSON.parse(data);
                     if (json.status === 1) {	
 							getSkillsData(); 
-							getblockSkillData();
+							getSkillDataMobile();
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {
@@ -1876,7 +1935,7 @@
                     if (json.status === 1) {	
 						
 						getSkillsData();
-						getblockSkillData();
+						getSkillDataMobile();
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {
@@ -1899,7 +1958,7 @@
             var skill_name = $("#txt_skill").val();
             
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveSkills",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateSkills",
                 type: "POST",
                 data: $("#frmskillsAndExerptise").serialize(),
                 success: function (data)
@@ -1909,17 +1968,21 @@
 						
 										
 						
-						var markup = "<tr id="+scnt+"><td><input type='checkbox' name='record' value=" + json.ins_skill_id + " ></td><td>" + skill_name + "</td></tr>";
-						$(".preview-table-ex-skill").append(markup);
+						/*var markup = "<tr id="+scnt+"><td><input type='checkbox' name='record' value=" + json.ins_skill_id + " ></td><td>" + skill_name + "</td></tr>";
+						$(".preview-table-ex-skill").append(markup);*/
 						
-						var mark1="<div class='skill-remove-"+ json.ins_skill_id +"' >"+skill_name + "</div><br>";
+						getSkillData();
+						getSkillDataMobile();
 						
-						$("#blockSkillDataMobile").append(mark1);
+						/*var mark1="<div class='skill-remove-"+ json.ins_skill_id +"' >"+skill_name + "</div><br>";						
+						$("#blockSkillDataMobile").append(mark1);*/
+						
+						
 						/*var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
 						$(".preview-table-ex1").append(markup1);						*/
 						
 						$("#err_txt_skill").html('');			
-						$("#txt_skill").val('');	
+						$("#txt_skill,#txt_skill_id").val('');	
                         $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {						
@@ -1963,6 +2026,7 @@
                 {
                    var json = JSON.parse(data);
 					 if (json.status === 1) {
+					  getSkillDataMobile();
 					 $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
 					 return true;
 					 } else {
@@ -1992,7 +2056,7 @@
             var prevEndDate = $("#prevEndDate1").val();
 
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveExperience",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateExperience",
                 type: "POST",
                 data: $("#frmExperience").serialize(),
                 success: function (data)
@@ -2005,14 +2069,14 @@
 						$("#err_prevStartDate").html('');
 						$("#err_prevEndDate").html('');
 						
-						//getExperienceData();
-						//getExperienceDataMobile();						
+						getExperienceData();
+						getExperienceDataMobile();						
 						
-						var markup = "<tr id="+cnt+"><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
+						/*var markup = "<tr id="+json.ins_experience_id+"><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
 						$(".preview-table-ex").append(markup);
 						
 						var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
-						$(".preview-table-ex1").append(markup1);						
+						$(".preview-table-ex1").append(markup1); */						
 						
                         $(".frmerror_experiencedetails").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
@@ -2093,7 +2157,7 @@
             var eduEndDate1 = $("#eduEndDate1").val();     
 
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveEducation",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateEducation",
                 type: "POST",
                 data: new FormData($("#frmEducationDetails")[0]),
                 contentType: false,
@@ -2110,15 +2174,15 @@
 						$("#err_eduStartDate").html('');
 						$("#err_eduEndDate").html('');	
 						
-						var markup2 = "<tr id="+cnt1+"><td><input type='checkbox' name='record' value=" + json.ins_edu_id +" ></td><td>" + eduInstituteName + "</td><td>" + degree + "</td><td>" + eduStartDate1 + "</td><td>" + eduEndDate1 + "</td></tr>";
+						/*var markup2 = "<tr id="+cnt1+"><td><input type='checkbox' name='record' value=" + json.ins_edu_id +" ></td><td>" + eduInstituteName + "</td><td>" + degree + "</td><td>" + eduStartDate1 + "</td><td>" + eduEndDate1 + "</td></tr>";
 						$(".preview-table-ex2").append(markup2);
 			
 						var markup3 = "<div id='info-remove"+cnt1+"'><div class='content-company div-delete'><strong>Institute Name: </strong>" + eduInstituteName + "</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>" + degree + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + eduStartDate1 + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + eduEndDate1 + "</div><hr></div>";
-						$(".preview-table-ex3-edu").append(markup3);
+						$(".preview-table-ex3").append(markup3);
+						*/
 						
-						
-						  // getEducationData();
-						  // getEducationDataMobile();
+						   getEducationData();
+						   getEducationDataMobile();
 						  
                         $(".frmerror_educationdetails").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
@@ -2182,7 +2246,7 @@
 			$("#err_contact").html('');
 			
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveUserinfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateUserinfo",
                 type: "POST",
                 data: new FormData($("#basicInfo")[0]),
                 contentType: false,
@@ -2226,7 +2290,7 @@
             $("#err_companywebsite").html('');
 						
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveCompanyInfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateCompanyInfo",
                 type: "POST",
                 data: new FormData($("#basicInfo")[0]),
                 contentType: false,
@@ -2268,7 +2332,7 @@
 			$("#err_user_url").html('');
 						
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveSocialInfo",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateSocialInfo",
                 type: "POST",
                 data: new FormData($("#frmSocialInfo")[0]),
                 contentType: false,
@@ -2315,7 +2379,7 @@
             shortbio_formdata.append('short_bio', short_bio_data);
 
             $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveShortBio",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateShortBio",
                 type: "POST",
                 data: shortbio_formdata,
                 contentType: false,
@@ -2441,7 +2505,7 @@
 			
 			
 				$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePricePlan",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePricePlan",
                 type: "POST",
                 data: new FormData($("#frmPricingPlan")[0]),
                 contentType: false,
@@ -2453,20 +2517,22 @@
                     var json = JSON.parse(data);
                     if (json.status === 1) 
 					{
-						//getPriceData();
+					
 						
 						$("#err_pricingtitle").html('');
 						$("#err_pricingdescription").html('');
 						
 						var markup4 = "<tr class='panel-price-plan-"+json.ins_price_id+"' ><td> "  +  pricingtitle + " </td><td>" + pricingdescription + "</td><td>" + pricingprice + "</td></tr>";
-						$(".preview-table-ex4").append(markup4);
+						$(".preview-table-ex4").html(markup4);
 						
-						var markup5 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><div class='pull-right'><span id='deletepanel' class='badge editbutton' title='Delete' onclick='deletePrice("+ json.ins_price_id +");' ><i class='fa fa-trash'></i></span><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
+						getPriceData();
+						
+						/*var markup5 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><div class='pull-right'><span id='deletepanel' class='badge editbutton' title='Delete' onclick='deletePrice("+ json.ins_price_id +");' ><i class='fa fa-trash'></i></span><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
 						$(".preview-table-ex5").append(markup5);
 						
 						var markup6 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
 						$(".preview-table-ex6").append(markup6);
-						
+						*/
 					
 						$('#pricingdescription, #pricingprice, #pricingtitle,#pricing_id1').val("");
 			
@@ -2491,7 +2557,7 @@
 		
 		 $('#addpricingimage').click(function(){
 			  $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePricePlanImage",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePricePlanImage",
                 type: "POST",
                 data: new FormData($("#example-1")[0]),
                 contentType: false,
@@ -2503,16 +2569,16 @@
 					var json = JSON.parse(data);
 					if(json.img_upload_flag === 1)
 					{
-						//getPriceData();
+						getPriceData();
 						$('#file,#pricing_id,#updatefile').val(""); 
-						for (var i = 0; i < json.image.length; i++)
+						/*for (var i = 0; i < json.image.length; i++)
 						{
 							var obj = json.image[i];
 							var pricemarkup5='<div class="panel panel-success panel-price-plan-'+ obj.ins_price_id +'" ><div class="panel-heading"><h3 class="panel-title"></h3><div class="pull-right"><span id="deletepanel" class="badge editbutton" onclick="deletePrice('+ obj.ins_price_id +')" title="Delete"><i class="fa fa-trash"></i></span><span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></div></div><div class="panel-body"><div class="panel-body-content"><img src="'+obj.user_img+'" class="img-responsive"/> </div><div class="footer1"></div></div></div>';
 							$(".preview-table-ex5").append(pricemarkup5);
 							$(".preview-table-ex6").append(pricemarkup5);
 							
-						}
+						}*/
 						
 						if (json.status === 1) 
 						{
@@ -2539,7 +2605,7 @@
 			var listname = $("#listname").val();
 			$("#err_listname").html('');
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveList",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateList",
                 type: "POST",
                 data: new FormData($("#frmlist")[0]),
                 contentType: false,
@@ -2554,20 +2620,20 @@
 						
 						$("#err_listname").html('');
 						
-						var markup2 = "<tr><td> " + cnt + "</td><td>" + listname +  "</td></tr>";
-						$(".list-preview-table-ex4").append(markup2);
+						var markup2 = "<tr><td> " + srlist + "</td><td>" + listname +  "</td></tr>";
+						$(".list-preview-table-ex4").html(markup2);
 						
-						var markup3 = "<li> " + listname  + " </li>";
-						$(".list-preview-table-ex5").append(markup3);
+						//var markup3 = "<li> " + listname  + " </li>";
+						//$(".list-preview-table-ex5").append(markup3);
 						
 						//var markup4 = "<tr><td> " + cnt + "</td><td>" + listname +  "</td></tr>";
-						$(".list-preview-table-ex6").append(markup3);
+						//$(".list-preview-table-ex6").append(markup3);
 						
 						//getListData();
 						
-						//getMainListData();
+						getMainListData();
 						
-						//getListDataMobile();
+						getListDataMobile();
 						
 						
 						
@@ -2595,13 +2661,13 @@
 		
 		
 		// start add link
-		var cntlink=1;
+		var cntlink=0;
 		 $("#btnAddLink").click(function() {           
           
 			var linkname = $("#addlink").val();
 		  
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveLink",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateLink",
                 type: "POST",
                 data: new FormData($("#frmaddlink")[0]),
                 contentType: false,
@@ -2609,19 +2675,20 @@
                 processData: false,
                 success: function (data)
                 {
-
+					cntlink = cntlink + 1;
+					
                     var json = JSON.parse(data);
                     if (json.status === 1) 
 					{		
 				
-						//getLinkData();					
 						
-						var markup1 = "<tr><td> 1 </td><td>"+ linkname +"</td></tr>";
-						var markup3 = "<div class='linking'><a href=''>"+ linkname +"<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
-						$(".link-preview").append(markup1);
-						$(".link-preview-ex5").append(markup3);
-						$(".link-preview-ex6").append(markup3);
+						var markup1 = "<tr><td>"+cntlink+"</td><td>"+ linkname +"</td></tr>";
+						//var markup3 = "<div class='linking'><a href=''>"+ linkname +"<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
+						$(".link-preview").html(markup1);
+						//$(".link-preview-ex5").append(markup3);
+						//$(".link-preview-ex6").append(markup3);
 						
+						getLinkData();					
 						
 						
 						
@@ -2655,7 +2722,7 @@
 			var video_description = $("#video_description").val();	
          
      		$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveVideoUrl",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateVideoUrl",
                 type: "POST",
                 data: new FormData($("#frmvideourl")[0]),
                 contentType: false,
@@ -2668,16 +2735,17 @@
                     if (json.status === 1) 
 					{	
 				
-						//getVideoData();
+						
 						$('#err_videourl').html('');
 						
 						var videomarkup4 = "<tr><td>1</td><td>" + videourl + "</td>";
-						$(".video-preview").append(videomarkup4);
+						$(".video-preview").html(videomarkup4);
 						
-						var videomarkup5 = '<div class="panel-body-content text-center"><div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl +'"></iframe></div><hr><div>'+ video_description +'</div></div>';
-						$(".video-preview5").append(videomarkup5);					
+						getVideoData();
 						
-						$(".video-preview6").append(videomarkup5); 
+						/*var videomarkup5 = '<div class="panel-body-content text-center"><div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl +'"></iframe></div><hr><div>'+ video_description +'</div></div>';
+						$(".video-preview5").append(videomarkup5);							
+						$(".video-preview6").append(videomarkup5);*/
 						
 						$('#videourl,#video_description,#videourl_id').val(""); 
                         $(".frmerror_videourl").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
@@ -2703,7 +2771,7 @@
 			var file2 = $("#file-2").val();	
 		 
      		$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePortfolio",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePortfolio",
                 type: "POST",
                 data: new FormData($("#example-2")[0]),
                 contentType: false,
@@ -2719,17 +2787,20 @@
 							var obj = json.image[i];
 							
 							var portmarkup4 = "<tr><td>" + obj.user_img + "</td><td></td>";
-							$(".portfolio-preview").append(portmarkup4);
+							$(".portfolio-preview").html(portmarkup4);
 							
-							var portmarkup5 = '<div class="panel-body-content text-center">';
+							
+							
+							/*var portmarkup5 = '<div class="panel-body-content text-center">';
 							portmarkup5 += '<img src="'+ obj.user_img +'" class="img-responsive"/>';
 						    portmarkup5 += '<hr>';
-							portmarkup5 += '</div>';
-							
-														
+							portmarkup5 += '</div>';														
 							$(".portfolio-preview5").append(portmarkup5);
-							$(".portfolio-preview6").append(portmarkup5);
+							$(".portfolio-preview6").append(portmarkup5); */
 						}
+						
+						getPortfolio();
+						
 						$('#videourl_portfolio,#file-2').val("");
 						if (json.status === 1) 
 						{
@@ -2754,7 +2825,9 @@
 							$(".portfolio-preview").append(portmarkup4);
 							
 							
-							var portmarkup5 = '<div class="panel-body-content text-center">'
+							getPortfolio();
+							
+							/*var portmarkup5 = '<div class="panel-body-content text-center">'
 							 if(videourl_portfolio !== '')
 							 {
 								portmarkup5 += '<div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl_portfolio +'"></iframe></div>';
@@ -2762,7 +2835,7 @@
 							portmarkup5 += '</div>';						 
 							$(".portfolio-preview5").append(portmarkup5);
 							$(".portfolio-preview6").append(portmarkup5);
-							
+							*/
 							
 							$(".frmerror_portfolio").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
 							return true;
@@ -2929,9 +3002,8 @@ $(function() {
             processData: false,			        
             success: function (data)
             {					
-                $('#blockSkillData').html('');
-                $('#blockSkillDataMobile').html('');
-                $('#blockSkillData').html(data);
+                
+                $('#blockSkillDataMobile').html('');                
                 $('#blockSkillDataMobile').html(data);
 				
             }
@@ -2944,10 +3016,10 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getExperienceData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#vcard_id').val()
+				
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex").html(''); 					 
@@ -2959,13 +3031,14 @@ $(function() {
 	
 	function getExperienceDataMobile()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getExperienceDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex1").html(''); 					 
@@ -2978,13 +3051,14 @@ $(function() {
 	
 	function getEducationData()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getEducationData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#eduvcard_id').val()
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex2").html(''); 					 
@@ -2999,10 +3073,9 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getEducationDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#eduvcard_id').val()				
+			},           		        
             success: function (data)
             {					
                $(".preview-table-ex3-edu").html(''); 					 
@@ -3012,7 +3085,43 @@ $(function() {
         });
 		
 	}
+	function getSkillData()
+	{
+		
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getSkillData",
+			type: "POST",
+            data: {
+				
+				vcard_id:$('#eduvcard_id').val()
+			},           		        
+            success: function (data)
+            {					
+               $(".preview-table-ex-skill").html(''); 					 
+               $(".preview-table-ex-skill").html(data); 					 
+				
+            }
+        });
+	}
 	
+	function getSkillDataMobile()
+	{
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getSkillsAndExerptDetail",
+			type: "POST",
+            data: {
+				vcard_id:$('#eduvcard_id').val()				
+			},           		        
+            success: function (data)
+            {	
+				
+               $("#blockSkillDataMobile").html(''); 					 
+               $("#blockSkillDataMobile").html(data);					 
+				
+            }
+        });
+		
+	}
 	function getListData()
 	{
 		$.ajax({
@@ -3037,10 +3146,10 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getMainListData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},          	        
             success: function (data)
             {					
                $(".list-preview-table-ex5").html(''); 					 
@@ -3055,10 +3164,11 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getListDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#vcard_id').val()
+				
+			},
+           		        
             success: function (data)
             {					
                $(".list-preview-table-ex6").html(''); 					 
@@ -3072,15 +3182,16 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getLinkData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},
+           		        
             success: function (data)
             {		
 				 var json = JSON.parse(data);					
-				 $(".link-preview").html('');	
-				 $(".link-preview").html(json.table);	
+				 //$(".link-preview").html('');	
+				// $(".link-preview").html(json.table);	
 				 $(".link-preview-ex5").html('');	
 				 $(".link-preview-ex5").html(json.main_table);	
 				 $(".link-preview-ex6").html('');	
@@ -3092,24 +3203,22 @@ $(function() {
 	}
 	function getVideoData()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getVideoData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
             success: function (data)
             {		
 				 var json = JSON.parse(data);					
-				 $(".video-preview").html('');	
-				 $(".video-preview").html(json.table);	
+				// $(".video-preview").html('');	
+				// $(".video-preview").html(json.table);	
 				 $(".video-preview5").html('');	
 				 $(".video-preview5").html(json.main_table);	
 				 $(".video-preview6").html('');	
-				 $(".video-preview6").html(json.moblie_table);	
-              
-				
+				 $(".video-preview6").html(json.moblie_table);	    
             }
         });
 	}
@@ -3118,10 +3227,9 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getPriceData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
             success: function (data)
             {		
 				// var json = JSON.parse(data);					
@@ -3130,6 +3238,26 @@ $(function() {
 				
 				$(".preview-table-ex6").html('');	
 				 $(".preview-table-ex6").html(data);
+				
+            }
+        });
+	}
+	function getPortfolio()
+	{
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getPortfolio",
+			type: "POST",
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
+            success: function (data)
+            {		
+								
+				$(".portfolio-preview5").html('');	
+				$(".portfolio-preview5").html(data);	
+				
+				$(".portfolio-preview6").html('');	
+				$(".portfolio-preview6").html(data);
 				
             }
         });
@@ -3213,7 +3341,7 @@ $(function() {
 */
         // End Skills and Expertise ajax call
 
-		    $.ajax({
+		 /*   $.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/saveSkillsAndExerptise1",
 			type: "POST",
             data: new FormData($("#frmskillsAndExerptise")[0]),
@@ -3226,7 +3354,7 @@ $(function() {
                 if (json.status === 1) {
 					
 					getSkillsData();
-					getblockSkillData();
+					getSkillDataMobile();
                     $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                     return true;
                 } else {
@@ -3235,7 +3363,7 @@ $(function() {
                 }
                
             }
-        });
+        }); */
 
 		
 
@@ -3270,6 +3398,14 @@ $(function() {
 		$('#eduEndDate1').val(edate);
 	}
 	// End update Experience
+	// Start Skill Experience
+	function getSkillDetailUpdate(id,name)
+	{
+		$('#txt_skill').val(name);
+		$('#txt_skill_id').val(id);
+		
+	}
+	// End skill Experience
 	// start update for list
 	function openList(id,name)
 	{
@@ -3281,16 +3417,7 @@ $(function() {
 		$(".list-preview-table-ex4").append(markup4);
 	}
 	// end update for list
-	function openLink(id,name)
-	{
-		$('#addlink_id').val(id);
-		$('#addlink').val(name);
-		$('#links').modal('show');
-		 var linkmarkup4 = "<tr><td>1</td><td>" + name + "</td>";
-						$(".link-preview").append(linkmarkup4);
-		
-	}
-	// end update for link
+	
 	function openvideo(id,name,desc)
 	{
 		$('#videourl_id').val(id);
@@ -3365,6 +3492,17 @@ $(function() {
 		
 	}
 	
+	function openLink(id,name)
+	{
+		$('#addlink_id').val(id);
+		$('#addlink').val(name);
+		$('#links').modal('show');
+		 var linkmarkup4 = "<tr><td>1</td><td>" + name + "</td>";
+						$(".link-preview").append(linkmarkup4);
+		
+	}
+	
+	
 	</script>
 
 
@@ -3422,6 +3560,7 @@ $(function() {
 																	
 																	<div class="form-group">
 																	<form id="example-1" action="" method="POST" enctype="multipart/form-data" class="page">
+																			<input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  >
 																			<input type="hidden" name="pricing_id" id="pricing_id" >
 																			<div class="frmerror_priceplanupload" ></div>
 																			
@@ -3458,6 +3597,7 @@ $(function() {
                                                                 <label for="jobTitle">Pricing Plan Title
                                                                     <small>(required)</small>
                                                                 </label>
+                                                               <input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>" >
                                                                <input type="hidden" name="pricing_id1" id="pricing_id1" >
 																<input id="pricingtitle" name="pricingtitle"
                                                                        type="text"
@@ -3549,6 +3689,7 @@ $(function() {
                                                         <div class="modal-body">
 															<form id="example-2" method="POST" enctype="multipart/form-data"  >
 															
+															<input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>" />
 															<input type="hidden" name="videourl_portfolio_id" id="videourl_portfolio_id" />
 															<div class="frmerror_portfolio" ></div>
 															<div class="radio radio-primary col-md-4">
@@ -3666,6 +3807,8 @@ $(function() {
                                                                 <label for="jobTitle">List Name
                                                                     <small>(required)</small>
                                                                 </label>
+																<input id="vcard_id" name="vcard_id"
+                                                                       type="hidden" value="<?php echo $user_data[0]['id']; ?>" >
 																<input id="list_id" name="list_id"
                                                                        type="hidden" >
                                                                 <input id="listname" name="listname"
@@ -3736,6 +3879,7 @@ $(function() {
 																	<label for="jobTitle">Add Your Links
 																		<small>(required)</small>
 																	</label>
+																	<input id="vcard_id" name="vcard_id" type="hidden" value="<?php echo $user_data[0]['id']; ?>" >
 																	<input id="addlink_id" name="addlink_id" type="hidden" >
 																	<input id="addlink" name="addlink"
 																		   type="text"
@@ -3809,8 +3953,10 @@ $(function() {
                                                                 <label for="jobTitle">Video URL
                                                                     <small>(required)</small>
                                                                 </label>
+																 <input id="vcard_id" name="vcard_id"
+                                                                       type="hidden" value="<?php echo $user_data[0]['id']; ?>" >	
 																 <input id="videourl_id" name="videourl_id"
-                                                                       type="hidden"    >
+                                                                       type="hidden">
                                                                 <input id="videourl" name="videourl"
                                                                        type="text"
                                                                        class="form-control"

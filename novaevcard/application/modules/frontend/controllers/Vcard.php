@@ -374,7 +374,7 @@ class Vcard extends CI_Controller {
 	public function getSkillsAndExerptDetail()
 	{
 		$this->load->model('common_model');	
-		$user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
