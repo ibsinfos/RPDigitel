@@ -1057,7 +1057,7 @@
 							
 							<div class="col-lg-8">
 							<div class="parent-section">
-							Add Section
+							Edit Section
 							</div>
 							<div class="clear"></div>
 							<div class="child-section">
@@ -1826,7 +1826,7 @@
 
 		
 		
-		$('.child-section').hide();
+		//$('.child-section').hide();
 		
 		$('.parent-section').click(function() {
 			$('.child-section').toggle();
