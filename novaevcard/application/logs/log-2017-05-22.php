@@ -8390,3 +8390,9364 @@ DEBUG - 2017-05-22 15:31:32 --> Login MX_Controller Initialized
 INFO - 2017-05-22 15:31:32 --> Helper loaded: cookie_helper
 INFO - 2017-05-22 15:31:32 --> Model Class Initialized
 INFO - 2017-05-22 15:31:32 --> Model Class Initialized
+INFO - 2017-05-22 15:34:22 --> Config Class Initialized
+INFO - 2017-05-22 15:34:22 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:34:22 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:34:22 --> URI Class Initialized
+INFO - 2017-05-22 15:34:22 --> Router Class Initialized
+INFO - 2017-05-22 15:34:22 --> Output Class Initialized
+INFO - 2017-05-22 15:34:22 --> Security Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:34:22 --> Input Class Initialized
+INFO - 2017-05-22 15:34:22 --> Language Class Initialized
+INFO - 2017-05-22 15:34:22 --> Language Class Initialized
+INFO - 2017-05-22 15:34:22 --> Config Class Initialized
+INFO - 2017-05-22 15:34:22 --> Loader Class Initialized
+INFO - 2017-05-22 15:34:22 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:34:22 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:34:22 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:34:22 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> Template Class Initialized
+INFO - 2017-05-22 15:34:22 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:34:22 --> Controller Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> Login MX_Controller Initialized
+INFO - 2017-05-22 15:34:22 --> Helper loaded: cookie_helper
+INFO - 2017-05-22 15:34:22 --> Model Class Initialized
+INFO - 2017-05-22 15:34:22 --> Model Class Initialized
+INFO - 2017-05-22 15:34:22 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:34:22 --> Model Class Initialized
+INFO - 2017-05-22 15:34:22 --> Config Class Initialized
+INFO - 2017-05-22 15:34:22 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:34:22 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:34:22 --> URI Class Initialized
+INFO - 2017-05-22 15:34:22 --> Router Class Initialized
+INFO - 2017-05-22 15:34:22 --> Output Class Initialized
+INFO - 2017-05-22 15:34:22 --> Security Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:34:22 --> Input Class Initialized
+INFO - 2017-05-22 15:34:22 --> Language Class Initialized
+INFO - 2017-05-22 15:34:22 --> Language Class Initialized
+INFO - 2017-05-22 15:34:22 --> Config Class Initialized
+INFO - 2017-05-22 15:34:22 --> Loader Class Initialized
+INFO - 2017-05-22 15:34:22 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:34:22 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:34:22 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:34:22 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:34:22 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> Template Class Initialized
+INFO - 2017-05-22 15:34:22 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:34:22 --> Controller Class Initialized
+INFO - 2017-05-22 15:34:22 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:34:22 --> Model Class Initialized
+INFO - 2017-05-22 15:34:22 --> Model Class Initialized
+DEBUG - 2017-05-22 15:34:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:34:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:34:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/dashboard.php
+DEBUG - 2017-05-22 15:34:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:34:22 --> Final output sent to browser
+DEBUG - 2017-05-22 15:34:22 --> Total execution time: 0.0716
+INFO - 2017-05-22 15:35:08 --> Config Class Initialized
+INFO - 2017-05-22 15:35:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:35:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:35:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:35:08 --> URI Class Initialized
+INFO - 2017-05-22 15:35:08 --> Router Class Initialized
+INFO - 2017-05-22 15:35:08 --> Output Class Initialized
+INFO - 2017-05-22 15:35:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:35:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:35:08 --> Input Class Initialized
+INFO - 2017-05-22 15:35:08 --> Language Class Initialized
+INFO - 2017-05-22 15:35:08 --> Language Class Initialized
+INFO - 2017-05-22 15:35:08 --> Config Class Initialized
+INFO - 2017-05-22 15:35:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:35:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:35:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:35:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:35:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:35:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:35:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:35:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:35:08 --> Template Class Initialized
+INFO - 2017-05-22 15:35:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:35:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:35:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:35:08 --> Model Class Initialized
+INFO - 2017-05-22 15:35:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:35:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:35:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:35:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/dashboard.php
+DEBUG - 2017-05-22 15:35:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:35:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:35:08 --> Total execution time: 0.0795
+INFO - 2017-05-22 15:35:11 --> Config Class Initialized
+INFO - 2017-05-22 15:35:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:35:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:35:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:35:11 --> URI Class Initialized
+INFO - 2017-05-22 15:35:11 --> Router Class Initialized
+INFO - 2017-05-22 15:35:11 --> Output Class Initialized
+INFO - 2017-05-22 15:35:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:35:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:35:11 --> Input Class Initialized
+INFO - 2017-05-22 15:35:11 --> Language Class Initialized
+INFO - 2017-05-22 15:35:11 --> Language Class Initialized
+INFO - 2017-05-22 15:35:11 --> Config Class Initialized
+INFO - 2017-05-22 15:35:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:35:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:35:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:35:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:35:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:35:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:35:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:35:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:35:11 --> Template Class Initialized
+INFO - 2017-05-22 15:35:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:35:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:35:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:35:11 --> Model Class Initialized
+INFO - 2017-05-22 15:35:11 --> Model Class Initialized
+DEBUG - 2017-05-22 15:35:11 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:35:11 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:35:11 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:35:11 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:35:11 --> Final output sent to browser
+DEBUG - 2017-05-22 15:35:11 --> Total execution time: 0.0687
+INFO - 2017-05-22 15:35:13 --> Config Class Initialized
+INFO - 2017-05-22 15:35:13 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:35:13 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:35:13 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:35:13 --> URI Class Initialized
+INFO - 2017-05-22 15:35:13 --> Router Class Initialized
+INFO - 2017-05-22 15:35:13 --> Output Class Initialized
+INFO - 2017-05-22 15:35:13 --> Security Class Initialized
+DEBUG - 2017-05-22 15:35:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:35:13 --> Input Class Initialized
+INFO - 2017-05-22 15:35:13 --> Language Class Initialized
+INFO - 2017-05-22 15:35:13 --> Language Class Initialized
+INFO - 2017-05-22 15:35:13 --> Config Class Initialized
+INFO - 2017-05-22 15:35:13 --> Loader Class Initialized
+INFO - 2017-05-22 15:35:13 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:35:13 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:35:13 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:35:13 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:35:13 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:35:13 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:35:13 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:35:13 --> Template Class Initialized
+INFO - 2017-05-22 15:35:13 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:35:13 --> Controller Class Initialized
+INFO - 2017-05-22 15:35:13 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:35:13 --> Model Class Initialized
+INFO - 2017-05-22 15:35:13 --> Model Class Initialized
+DEBUG - 2017-05-22 15:35:13 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:35:13 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:35:13 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:35:13 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:35:13 --> Final output sent to browser
+DEBUG - 2017-05-22 15:35:13 --> Total execution time: 0.0579
+INFO - 2017-05-22 15:35:59 --> Config Class Initialized
+INFO - 2017-05-22 15:35:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:35:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:35:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:35:59 --> URI Class Initialized
+INFO - 2017-05-22 15:35:59 --> Router Class Initialized
+INFO - 2017-05-22 15:35:59 --> Output Class Initialized
+INFO - 2017-05-22 15:35:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:35:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:35:59 --> Input Class Initialized
+INFO - 2017-05-22 15:35:59 --> Language Class Initialized
+INFO - 2017-05-22 15:35:59 --> Language Class Initialized
+INFO - 2017-05-22 15:35:59 --> Config Class Initialized
+INFO - 2017-05-22 15:35:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:35:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:35:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:35:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:35:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:35:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:35:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:35:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:35:59 --> Template Class Initialized
+INFO - 2017-05-22 15:35:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:35:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:35:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:35:59 --> Model Class Initialized
+INFO - 2017-05-22 15:35:59 --> Model Class Initialized
+DEBUG - 2017-05-22 15:35:59 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:35:59 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:35:59 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:35:59 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:35:59 --> Final output sent to browser
+DEBUG - 2017-05-22 15:35:59 --> Total execution time: 0.0921
+INFO - 2017-05-22 15:36:03 --> Config Class Initialized
+INFO - 2017-05-22 15:36:03 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:03 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:03 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:03 --> URI Class Initialized
+INFO - 2017-05-22 15:36:03 --> Router Class Initialized
+INFO - 2017-05-22 15:36:03 --> Output Class Initialized
+INFO - 2017-05-22 15:36:03 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:03 --> Input Class Initialized
+INFO - 2017-05-22 15:36:03 --> Language Class Initialized
+INFO - 2017-05-22 15:36:03 --> Language Class Initialized
+INFO - 2017-05-22 15:36:03 --> Config Class Initialized
+INFO - 2017-05-22 15:36:03 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:03 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:03 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:03 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:03 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:03 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:03 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:03 --> Template Class Initialized
+INFO - 2017-05-22 15:36:03 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:03 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:03 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:03 --> Model Class Initialized
+INFO - 2017-05-22 15:36:03 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:03 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:36:03 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:36:03 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:36:03 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:03 --> Total execution time: 0.0758
+INFO - 2017-05-22 15:36:06 --> Config Class Initialized
+INFO - 2017-05-22 15:36:06 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:06 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:06 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:06 --> URI Class Initialized
+INFO - 2017-05-22 15:36:06 --> Router Class Initialized
+INFO - 2017-05-22 15:36:06 --> Output Class Initialized
+INFO - 2017-05-22 15:36:06 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:06 --> Input Class Initialized
+INFO - 2017-05-22 15:36:06 --> Language Class Initialized
+INFO - 2017-05-22 15:36:06 --> Language Class Initialized
+INFO - 2017-05-22 15:36:06 --> Config Class Initialized
+INFO - 2017-05-22 15:36:06 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:06 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:06 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:06 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:06 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:06 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:06 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:06 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:06 --> Template Class Initialized
+INFO - 2017-05-22 15:36:06 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:06 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:06 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:06 --> Model Class Initialized
+INFO - 2017-05-22 15:36:06 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:06 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:36:06 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:36:06 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:36:06 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:36:06 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:06 --> Total execution time: 0.0727
+INFO - 2017-05-22 15:36:07 --> Config Class Initialized
+INFO - 2017-05-22 15:36:07 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:08 --> URI Class Initialized
+INFO - 2017-05-22 15:36:08 --> Router Class Initialized
+INFO - 2017-05-22 15:36:08 --> Output Class Initialized
+INFO - 2017-05-22 15:36:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:08 --> Input Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Template Class Initialized
+INFO - 2017-05-22 15:36:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail.php
+INFO - 2017-05-22 15:36:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:08 --> Total execution time: 0.0959
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:08 --> URI Class Initialized
+INFO - 2017-05-22 15:36:08 --> Router Class Initialized
+INFO - 2017-05-22 15:36:08 --> Output Class Initialized
+INFO - 2017-05-22 15:36:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:08 --> Input Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Template Class Initialized
+INFO - 2017-05-22 15:36:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/page_not_found.php
+INFO - 2017-05-22 15:36:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:08 --> Total execution time: 0.0840
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Hooks Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:08 --> URI Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:08 --> URI Class Initialized
+INFO - 2017-05-22 15:36:08 --> Router Class Initialized
+INFO - 2017-05-22 15:36:08 --> Output Class Initialized
+INFO - 2017-05-22 15:36:08 --> Security Class Initialized
+INFO - 2017-05-22 15:36:08 --> Router Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:08 --> Output Class Initialized
+INFO - 2017-05-22 15:36:08 --> Input Class Initialized
+INFO - 2017-05-22 15:36:08 --> Security Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:08 --> Input Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:08 --> Hooks Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Loader Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:08 --> URI Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:08 --> Router Class Initialized
+INFO - 2017-05-22 15:36:08 --> Output Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:08 --> Security Class Initialized
+INFO - 2017-05-22 15:36:08 --> Helper loaded: encrypt_helper
+DEBUG - 2017-05-22 15:36:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:08 --> Input Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:08 --> Language Class Initialized
+INFO - 2017-05-22 15:36:08 --> Config Class Initialized
+INFO - 2017-05-22 15:36:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Template Class Initialized
+INFO - 2017-05-22 15:36:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/page_not_found.php
+INFO - 2017-05-22 15:36:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:08 --> Total execution time: 0.1161
+INFO - 2017-05-22 15:36:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Template Class Initialized
+INFO - 2017-05-22 15:36:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/page_not_found.php
+INFO - 2017-05-22 15:36:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:08 --> Total execution time: 0.1552
+INFO - 2017-05-22 15:36:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> Template Class Initialized
+INFO - 2017-05-22 15:36:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+INFO - 2017-05-22 15:36:08 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:08 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/page_not_found.php
+INFO - 2017-05-22 15:36:08 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:08 --> Total execution time: 0.1651
+INFO - 2017-05-22 15:36:09 --> Config Class Initialized
+INFO - 2017-05-22 15:36:09 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:09 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:09 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:09 --> URI Class Initialized
+INFO - 2017-05-22 15:36:09 --> Router Class Initialized
+INFO - 2017-05-22 15:36:09 --> Output Class Initialized
+INFO - 2017-05-22 15:36:09 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:09 --> Input Class Initialized
+INFO - 2017-05-22 15:36:09 --> Language Class Initialized
+INFO - 2017-05-22 15:36:09 --> Language Class Initialized
+INFO - 2017-05-22 15:36:09 --> Config Class Initialized
+INFO - 2017-05-22 15:36:09 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:09 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:09 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:09 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:09 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:09 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:09 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:09 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:09 --> Template Class Initialized
+INFO - 2017-05-22 15:36:09 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:09 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:09 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:09 --> Model Class Initialized
+INFO - 2017-05-22 15:36:09 --> Model Class Initialized
+INFO - 2017-05-22 15:36:11 --> Config Class Initialized
+INFO - 2017-05-22 15:36:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:11 --> URI Class Initialized
+INFO - 2017-05-22 15:36:11 --> Router Class Initialized
+INFO - 2017-05-22 15:36:11 --> Output Class Initialized
+INFO - 2017-05-22 15:36:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:11 --> Input Class Initialized
+INFO - 2017-05-22 15:36:11 --> Language Class Initialized
+INFO - 2017-05-22 15:36:11 --> Language Class Initialized
+INFO - 2017-05-22 15:36:11 --> Config Class Initialized
+INFO - 2017-05-22 15:36:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:11 --> Template Class Initialized
+INFO - 2017-05-22 15:36:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:11 --> Model Class Initialized
+INFO - 2017-05-22 15:36:11 --> Model Class Initialized
+INFO - 2017-05-22 15:36:14 --> Config Class Initialized
+INFO - 2017-05-22 15:36:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:14 --> URI Class Initialized
+INFO - 2017-05-22 15:36:14 --> Router Class Initialized
+INFO - 2017-05-22 15:36:14 --> Output Class Initialized
+INFO - 2017-05-22 15:36:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:14 --> Input Class Initialized
+INFO - 2017-05-22 15:36:14 --> Language Class Initialized
+INFO - 2017-05-22 15:36:14 --> Language Class Initialized
+INFO - 2017-05-22 15:36:14 --> Config Class Initialized
+INFO - 2017-05-22 15:36:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:14 --> Template Class Initialized
+INFO - 2017-05-22 15:36:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:14 --> Model Class Initialized
+INFO - 2017-05-22 15:36:14 --> Model Class Initialized
+INFO - 2017-05-22 15:36:17 --> Config Class Initialized
+INFO - 2017-05-22 15:36:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:17 --> URI Class Initialized
+INFO - 2017-05-22 15:36:17 --> Router Class Initialized
+INFO - 2017-05-22 15:36:17 --> Output Class Initialized
+INFO - 2017-05-22 15:36:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:17 --> Input Class Initialized
+INFO - 2017-05-22 15:36:17 --> Language Class Initialized
+INFO - 2017-05-22 15:36:17 --> Language Class Initialized
+INFO - 2017-05-22 15:36:17 --> Config Class Initialized
+INFO - 2017-05-22 15:36:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:17 --> Template Class Initialized
+INFO - 2017-05-22 15:36:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:17 --> Model Class Initialized
+INFO - 2017-05-22 15:36:17 --> Model Class Initialized
+INFO - 2017-05-22 15:36:18 --> Config Class Initialized
+INFO - 2017-05-22 15:36:18 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:18 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:18 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:18 --> URI Class Initialized
+INFO - 2017-05-22 15:36:18 --> Router Class Initialized
+INFO - 2017-05-22 15:36:18 --> Output Class Initialized
+INFO - 2017-05-22 15:36:18 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:18 --> Input Class Initialized
+INFO - 2017-05-22 15:36:18 --> Language Class Initialized
+INFO - 2017-05-22 15:36:18 --> Language Class Initialized
+INFO - 2017-05-22 15:36:18 --> Config Class Initialized
+INFO - 2017-05-22 15:36:18 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:18 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:18 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:18 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:18 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:18 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:18 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:18 --> Template Class Initialized
+INFO - 2017-05-22 15:36:18 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:18 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:18 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:18 --> Model Class Initialized
+INFO - 2017-05-22 15:36:18 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:36:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_update_main.php
+DEBUG - 2017-05-22 15:36:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:36:18 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:18 --> Total execution time: 0.0656
+INFO - 2017-05-22 15:36:20 --> Config Class Initialized
+INFO - 2017-05-22 15:36:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:20 --> URI Class Initialized
+INFO - 2017-05-22 15:36:20 --> Router Class Initialized
+INFO - 2017-05-22 15:36:20 --> Output Class Initialized
+INFO - 2017-05-22 15:36:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:20 --> Input Class Initialized
+INFO - 2017-05-22 15:36:20 --> Language Class Initialized
+INFO - 2017-05-22 15:36:20 --> Language Class Initialized
+INFO - 2017-05-22 15:36:20 --> Config Class Initialized
+INFO - 2017-05-22 15:36:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:20 --> Template Class Initialized
+INFO - 2017-05-22 15:36:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:20 --> Model Class Initialized
+INFO - 2017-05-22 15:36:20 --> Model Class Initialized
+INFO - 2017-05-22 15:36:21 --> Config Class Initialized
+INFO - 2017-05-22 15:36:21 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:21 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:21 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:21 --> URI Class Initialized
+INFO - 2017-05-22 15:36:21 --> Router Class Initialized
+INFO - 2017-05-22 15:36:21 --> Output Class Initialized
+INFO - 2017-05-22 15:36:21 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:21 --> Input Class Initialized
+INFO - 2017-05-22 15:36:21 --> Language Class Initialized
+INFO - 2017-05-22 15:36:21 --> Language Class Initialized
+INFO - 2017-05-22 15:36:21 --> Config Class Initialized
+INFO - 2017-05-22 15:36:21 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:21 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:21 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:21 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:21 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:21 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:21 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:21 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:21 --> Template Class Initialized
+INFO - 2017-05-22 15:36:21 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:21 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:21 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:21 --> Model Class Initialized
+INFO - 2017-05-22 15:36:21 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:21 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:36:21 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_update.php
+DEBUG - 2017-05-22 15:36:21 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:36:21 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:21 --> Total execution time: 0.0662
+INFO - 2017-05-22 15:36:23 --> Config Class Initialized
+INFO - 2017-05-22 15:36:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:23 --> URI Class Initialized
+INFO - 2017-05-22 15:36:23 --> Router Class Initialized
+INFO - 2017-05-22 15:36:23 --> Output Class Initialized
+INFO - 2017-05-22 15:36:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:23 --> Input Class Initialized
+INFO - 2017-05-22 15:36:23 --> Language Class Initialized
+INFO - 2017-05-22 15:36:23 --> Language Class Initialized
+INFO - 2017-05-22 15:36:23 --> Config Class Initialized
+INFO - 2017-05-22 15:36:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:23 --> Template Class Initialized
+INFO - 2017-05-22 15:36:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:23 --> Model Class Initialized
+INFO - 2017-05-22 15:36:23 --> Model Class Initialized
+INFO - 2017-05-22 15:36:26 --> Config Class Initialized
+INFO - 2017-05-22 15:36:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:26 --> URI Class Initialized
+INFO - 2017-05-22 15:36:26 --> Router Class Initialized
+INFO - 2017-05-22 15:36:26 --> Output Class Initialized
+INFO - 2017-05-22 15:36:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:26 --> Input Class Initialized
+INFO - 2017-05-22 15:36:26 --> Language Class Initialized
+INFO - 2017-05-22 15:36:26 --> Language Class Initialized
+INFO - 2017-05-22 15:36:26 --> Config Class Initialized
+INFO - 2017-05-22 15:36:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:26 --> Template Class Initialized
+INFO - 2017-05-22 15:36:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:26 --> Model Class Initialized
+INFO - 2017-05-22 15:36:26 --> Model Class Initialized
+INFO - 2017-05-22 15:36:29 --> Config Class Initialized
+INFO - 2017-05-22 15:36:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:29 --> URI Class Initialized
+INFO - 2017-05-22 15:36:29 --> Router Class Initialized
+INFO - 2017-05-22 15:36:29 --> Output Class Initialized
+INFO - 2017-05-22 15:36:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:29 --> Input Class Initialized
+INFO - 2017-05-22 15:36:29 --> Language Class Initialized
+INFO - 2017-05-22 15:36:29 --> Language Class Initialized
+INFO - 2017-05-22 15:36:29 --> Config Class Initialized
+INFO - 2017-05-22 15:36:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:29 --> Template Class Initialized
+INFO - 2017-05-22 15:36:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:29 --> Model Class Initialized
+INFO - 2017-05-22 15:36:29 --> Model Class Initialized
+INFO - 2017-05-22 15:36:32 --> Config Class Initialized
+INFO - 2017-05-22 15:36:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:32 --> URI Class Initialized
+INFO - 2017-05-22 15:36:32 --> Router Class Initialized
+INFO - 2017-05-22 15:36:32 --> Output Class Initialized
+INFO - 2017-05-22 15:36:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:32 --> Input Class Initialized
+INFO - 2017-05-22 15:36:32 --> Language Class Initialized
+INFO - 2017-05-22 15:36:32 --> Language Class Initialized
+INFO - 2017-05-22 15:36:32 --> Config Class Initialized
+INFO - 2017-05-22 15:36:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:32 --> Template Class Initialized
+INFO - 2017-05-22 15:36:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:32 --> Model Class Initialized
+INFO - 2017-05-22 15:36:32 --> Model Class Initialized
+INFO - 2017-05-22 15:36:34 --> Config Class Initialized
+INFO - 2017-05-22 15:36:34 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:34 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:34 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:34 --> URI Class Initialized
+INFO - 2017-05-22 15:36:34 --> Router Class Initialized
+INFO - 2017-05-22 15:36:34 --> Output Class Initialized
+INFO - 2017-05-22 15:36:34 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:34 --> Input Class Initialized
+INFO - 2017-05-22 15:36:34 --> Language Class Initialized
+INFO - 2017-05-22 15:36:34 --> Language Class Initialized
+INFO - 2017-05-22 15:36:34 --> Config Class Initialized
+INFO - 2017-05-22 15:36:34 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:34 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:34 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:34 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:34 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:34 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:34 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:34 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:34 --> Template Class Initialized
+INFO - 2017-05-22 15:36:34 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:34 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:34 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:34 --> Model Class Initialized
+INFO - 2017-05-22 15:36:34 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:36:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_update_main.php
+DEBUG - 2017-05-22 15:36:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:36:34 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:34 --> Total execution time: 0.0918
+INFO - 2017-05-22 15:36:35 --> Config Class Initialized
+INFO - 2017-05-22 15:36:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:35 --> URI Class Initialized
+INFO - 2017-05-22 15:36:35 --> Router Class Initialized
+INFO - 2017-05-22 15:36:35 --> Output Class Initialized
+INFO - 2017-05-22 15:36:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:35 --> Input Class Initialized
+INFO - 2017-05-22 15:36:35 --> Language Class Initialized
+INFO - 2017-05-22 15:36:35 --> Language Class Initialized
+INFO - 2017-05-22 15:36:35 --> Config Class Initialized
+INFO - 2017-05-22 15:36:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> Template Class Initialized
+INFO - 2017-05-22 15:36:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:35 --> Model Class Initialized
+INFO - 2017-05-22 15:36:35 --> Model Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:36:35 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:36:35 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:36:35 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:36:35 --> Final output sent to browser
+DEBUG - 2017-05-22 15:36:35 --> Total execution time: 0.0775
+INFO - 2017-05-22 15:36:35 --> Config Class Initialized
+INFO - 2017-05-22 15:36:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:35 --> URI Class Initialized
+INFO - 2017-05-22 15:36:35 --> Router Class Initialized
+INFO - 2017-05-22 15:36:35 --> Output Class Initialized
+INFO - 2017-05-22 15:36:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:35 --> Input Class Initialized
+INFO - 2017-05-22 15:36:35 --> Language Class Initialized
+INFO - 2017-05-22 15:36:35 --> Language Class Initialized
+INFO - 2017-05-22 15:36:35 --> Config Class Initialized
+INFO - 2017-05-22 15:36:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:35 --> Template Class Initialized
+INFO - 2017-05-22 15:36:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:35 --> Model Class Initialized
+INFO - 2017-05-22 15:36:35 --> Model Class Initialized
+INFO - 2017-05-22 15:36:38 --> Config Class Initialized
+INFO - 2017-05-22 15:36:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:38 --> URI Class Initialized
+INFO - 2017-05-22 15:36:38 --> Router Class Initialized
+INFO - 2017-05-22 15:36:38 --> Output Class Initialized
+INFO - 2017-05-22 15:36:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:38 --> Input Class Initialized
+INFO - 2017-05-22 15:36:38 --> Language Class Initialized
+INFO - 2017-05-22 15:36:38 --> Language Class Initialized
+INFO - 2017-05-22 15:36:38 --> Config Class Initialized
+INFO - 2017-05-22 15:36:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:38 --> Template Class Initialized
+INFO - 2017-05-22 15:36:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:38 --> Model Class Initialized
+INFO - 2017-05-22 15:36:38 --> Model Class Initialized
+INFO - 2017-05-22 15:36:41 --> Config Class Initialized
+INFO - 2017-05-22 15:36:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:41 --> URI Class Initialized
+INFO - 2017-05-22 15:36:41 --> Router Class Initialized
+INFO - 2017-05-22 15:36:41 --> Output Class Initialized
+INFO - 2017-05-22 15:36:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:41 --> Input Class Initialized
+INFO - 2017-05-22 15:36:41 --> Language Class Initialized
+INFO - 2017-05-22 15:36:41 --> Language Class Initialized
+INFO - 2017-05-22 15:36:41 --> Config Class Initialized
+INFO - 2017-05-22 15:36:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:41 --> Template Class Initialized
+INFO - 2017-05-22 15:36:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:41 --> Model Class Initialized
+INFO - 2017-05-22 15:36:41 --> Model Class Initialized
+INFO - 2017-05-22 15:36:44 --> Config Class Initialized
+INFO - 2017-05-22 15:36:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:44 --> URI Class Initialized
+INFO - 2017-05-22 15:36:44 --> Router Class Initialized
+INFO - 2017-05-22 15:36:44 --> Output Class Initialized
+INFO - 2017-05-22 15:36:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:44 --> Input Class Initialized
+INFO - 2017-05-22 15:36:44 --> Language Class Initialized
+INFO - 2017-05-22 15:36:44 --> Language Class Initialized
+INFO - 2017-05-22 15:36:44 --> Config Class Initialized
+INFO - 2017-05-22 15:36:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:44 --> Template Class Initialized
+INFO - 2017-05-22 15:36:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:44 --> Model Class Initialized
+INFO - 2017-05-22 15:36:44 --> Model Class Initialized
+INFO - 2017-05-22 15:36:47 --> Config Class Initialized
+INFO - 2017-05-22 15:36:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:47 --> URI Class Initialized
+INFO - 2017-05-22 15:36:47 --> Router Class Initialized
+INFO - 2017-05-22 15:36:47 --> Output Class Initialized
+INFO - 2017-05-22 15:36:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:47 --> Input Class Initialized
+INFO - 2017-05-22 15:36:47 --> Language Class Initialized
+INFO - 2017-05-22 15:36:47 --> Language Class Initialized
+INFO - 2017-05-22 15:36:47 --> Config Class Initialized
+INFO - 2017-05-22 15:36:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:47 --> Template Class Initialized
+INFO - 2017-05-22 15:36:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:47 --> Model Class Initialized
+INFO - 2017-05-22 15:36:47 --> Model Class Initialized
+INFO - 2017-05-22 15:36:50 --> Config Class Initialized
+INFO - 2017-05-22 15:36:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:50 --> URI Class Initialized
+INFO - 2017-05-22 15:36:50 --> Router Class Initialized
+INFO - 2017-05-22 15:36:50 --> Output Class Initialized
+INFO - 2017-05-22 15:36:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:50 --> Input Class Initialized
+INFO - 2017-05-22 15:36:50 --> Language Class Initialized
+INFO - 2017-05-22 15:36:50 --> Language Class Initialized
+INFO - 2017-05-22 15:36:50 --> Config Class Initialized
+INFO - 2017-05-22 15:36:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:50 --> Template Class Initialized
+INFO - 2017-05-22 15:36:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:50 --> Model Class Initialized
+INFO - 2017-05-22 15:36:50 --> Model Class Initialized
+INFO - 2017-05-22 15:36:53 --> Config Class Initialized
+INFO - 2017-05-22 15:36:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:53 --> URI Class Initialized
+INFO - 2017-05-22 15:36:53 --> Router Class Initialized
+INFO - 2017-05-22 15:36:53 --> Output Class Initialized
+INFO - 2017-05-22 15:36:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:53 --> Input Class Initialized
+INFO - 2017-05-22 15:36:53 --> Language Class Initialized
+INFO - 2017-05-22 15:36:53 --> Language Class Initialized
+INFO - 2017-05-22 15:36:53 --> Config Class Initialized
+INFO - 2017-05-22 15:36:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:53 --> Template Class Initialized
+INFO - 2017-05-22 15:36:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:53 --> Model Class Initialized
+INFO - 2017-05-22 15:36:53 --> Model Class Initialized
+INFO - 2017-05-22 15:36:56 --> Config Class Initialized
+INFO - 2017-05-22 15:36:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:56 --> URI Class Initialized
+INFO - 2017-05-22 15:36:56 --> Router Class Initialized
+INFO - 2017-05-22 15:36:56 --> Output Class Initialized
+INFO - 2017-05-22 15:36:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:56 --> Input Class Initialized
+INFO - 2017-05-22 15:36:56 --> Language Class Initialized
+INFO - 2017-05-22 15:36:56 --> Language Class Initialized
+INFO - 2017-05-22 15:36:56 --> Config Class Initialized
+INFO - 2017-05-22 15:36:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:56 --> Template Class Initialized
+INFO - 2017-05-22 15:36:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:56 --> Model Class Initialized
+INFO - 2017-05-22 15:36:56 --> Model Class Initialized
+INFO - 2017-05-22 15:36:59 --> Config Class Initialized
+INFO - 2017-05-22 15:36:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:36:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:36:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:36:59 --> URI Class Initialized
+INFO - 2017-05-22 15:36:59 --> Router Class Initialized
+INFO - 2017-05-22 15:36:59 --> Output Class Initialized
+INFO - 2017-05-22 15:36:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:36:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:36:59 --> Input Class Initialized
+INFO - 2017-05-22 15:36:59 --> Language Class Initialized
+INFO - 2017-05-22 15:36:59 --> Language Class Initialized
+INFO - 2017-05-22 15:36:59 --> Config Class Initialized
+INFO - 2017-05-22 15:36:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:36:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:36:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:36:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:36:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:36:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:36:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:36:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:36:59 --> Template Class Initialized
+INFO - 2017-05-22 15:36:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:36:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:36:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:36:59 --> Model Class Initialized
+INFO - 2017-05-22 15:36:59 --> Model Class Initialized
+INFO - 2017-05-22 15:37:02 --> Config Class Initialized
+INFO - 2017-05-22 15:37:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:02 --> URI Class Initialized
+INFO - 2017-05-22 15:37:02 --> Router Class Initialized
+INFO - 2017-05-22 15:37:02 --> Output Class Initialized
+INFO - 2017-05-22 15:37:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:02 --> Input Class Initialized
+INFO - 2017-05-22 15:37:02 --> Language Class Initialized
+INFO - 2017-05-22 15:37:02 --> Language Class Initialized
+INFO - 2017-05-22 15:37:02 --> Config Class Initialized
+INFO - 2017-05-22 15:37:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:02 --> Template Class Initialized
+INFO - 2017-05-22 15:37:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:02 --> Model Class Initialized
+INFO - 2017-05-22 15:37:02 --> Model Class Initialized
+INFO - 2017-05-22 15:37:05 --> Config Class Initialized
+INFO - 2017-05-22 15:37:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:05 --> URI Class Initialized
+INFO - 2017-05-22 15:37:05 --> Router Class Initialized
+INFO - 2017-05-22 15:37:05 --> Output Class Initialized
+INFO - 2017-05-22 15:37:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:05 --> Input Class Initialized
+INFO - 2017-05-22 15:37:05 --> Language Class Initialized
+INFO - 2017-05-22 15:37:05 --> Language Class Initialized
+INFO - 2017-05-22 15:37:05 --> Config Class Initialized
+INFO - 2017-05-22 15:37:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:05 --> Template Class Initialized
+INFO - 2017-05-22 15:37:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:05 --> Model Class Initialized
+INFO - 2017-05-22 15:37:05 --> Model Class Initialized
+INFO - 2017-05-22 15:37:08 --> Config Class Initialized
+INFO - 2017-05-22 15:37:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:08 --> URI Class Initialized
+INFO - 2017-05-22 15:37:08 --> Router Class Initialized
+INFO - 2017-05-22 15:37:08 --> Output Class Initialized
+INFO - 2017-05-22 15:37:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:08 --> Input Class Initialized
+INFO - 2017-05-22 15:37:08 --> Language Class Initialized
+INFO - 2017-05-22 15:37:08 --> Language Class Initialized
+INFO - 2017-05-22 15:37:08 --> Config Class Initialized
+INFO - 2017-05-22 15:37:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:08 --> Template Class Initialized
+INFO - 2017-05-22 15:37:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:08 --> Model Class Initialized
+INFO - 2017-05-22 15:37:08 --> Model Class Initialized
+INFO - 2017-05-22 15:37:11 --> Config Class Initialized
+INFO - 2017-05-22 15:37:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:11 --> URI Class Initialized
+INFO - 2017-05-22 15:37:11 --> Router Class Initialized
+INFO - 2017-05-22 15:37:11 --> Output Class Initialized
+INFO - 2017-05-22 15:37:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:11 --> Input Class Initialized
+INFO - 2017-05-22 15:37:11 --> Language Class Initialized
+INFO - 2017-05-22 15:37:11 --> Language Class Initialized
+INFO - 2017-05-22 15:37:11 --> Config Class Initialized
+INFO - 2017-05-22 15:37:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:11 --> Template Class Initialized
+INFO - 2017-05-22 15:37:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:11 --> Model Class Initialized
+INFO - 2017-05-22 15:37:11 --> Model Class Initialized
+INFO - 2017-05-22 15:37:14 --> Config Class Initialized
+INFO - 2017-05-22 15:37:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:14 --> URI Class Initialized
+INFO - 2017-05-22 15:37:14 --> Router Class Initialized
+INFO - 2017-05-22 15:37:14 --> Output Class Initialized
+INFO - 2017-05-22 15:37:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:14 --> Input Class Initialized
+INFO - 2017-05-22 15:37:14 --> Language Class Initialized
+INFO - 2017-05-22 15:37:14 --> Language Class Initialized
+INFO - 2017-05-22 15:37:14 --> Config Class Initialized
+INFO - 2017-05-22 15:37:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:14 --> Template Class Initialized
+INFO - 2017-05-22 15:37:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:14 --> Model Class Initialized
+INFO - 2017-05-22 15:37:14 --> Model Class Initialized
+INFO - 2017-05-22 15:37:17 --> Config Class Initialized
+INFO - 2017-05-22 15:37:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:17 --> URI Class Initialized
+INFO - 2017-05-22 15:37:17 --> Router Class Initialized
+INFO - 2017-05-22 15:37:17 --> Output Class Initialized
+INFO - 2017-05-22 15:37:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:17 --> Input Class Initialized
+INFO - 2017-05-22 15:37:17 --> Language Class Initialized
+INFO - 2017-05-22 15:37:17 --> Language Class Initialized
+INFO - 2017-05-22 15:37:17 --> Config Class Initialized
+INFO - 2017-05-22 15:37:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:17 --> Template Class Initialized
+INFO - 2017-05-22 15:37:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:17 --> Model Class Initialized
+INFO - 2017-05-22 15:37:17 --> Model Class Initialized
+INFO - 2017-05-22 15:37:20 --> Config Class Initialized
+INFO - 2017-05-22 15:37:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:20 --> URI Class Initialized
+INFO - 2017-05-22 15:37:20 --> Router Class Initialized
+INFO - 2017-05-22 15:37:20 --> Output Class Initialized
+INFO - 2017-05-22 15:37:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:20 --> Input Class Initialized
+INFO - 2017-05-22 15:37:20 --> Language Class Initialized
+INFO - 2017-05-22 15:37:20 --> Language Class Initialized
+INFO - 2017-05-22 15:37:20 --> Config Class Initialized
+INFO - 2017-05-22 15:37:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:20 --> Template Class Initialized
+INFO - 2017-05-22 15:37:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:20 --> Model Class Initialized
+INFO - 2017-05-22 15:37:20 --> Model Class Initialized
+INFO - 2017-05-22 15:37:23 --> Config Class Initialized
+INFO - 2017-05-22 15:37:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:23 --> URI Class Initialized
+INFO - 2017-05-22 15:37:23 --> Router Class Initialized
+INFO - 2017-05-22 15:37:23 --> Output Class Initialized
+INFO - 2017-05-22 15:37:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:23 --> Input Class Initialized
+INFO - 2017-05-22 15:37:23 --> Language Class Initialized
+INFO - 2017-05-22 15:37:23 --> Language Class Initialized
+INFO - 2017-05-22 15:37:23 --> Config Class Initialized
+INFO - 2017-05-22 15:37:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:23 --> Template Class Initialized
+INFO - 2017-05-22 15:37:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:23 --> Model Class Initialized
+INFO - 2017-05-22 15:37:23 --> Model Class Initialized
+INFO - 2017-05-22 15:37:26 --> Config Class Initialized
+INFO - 2017-05-22 15:37:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:26 --> URI Class Initialized
+INFO - 2017-05-22 15:37:26 --> Router Class Initialized
+INFO - 2017-05-22 15:37:26 --> Output Class Initialized
+INFO - 2017-05-22 15:37:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:26 --> Input Class Initialized
+INFO - 2017-05-22 15:37:26 --> Language Class Initialized
+INFO - 2017-05-22 15:37:26 --> Language Class Initialized
+INFO - 2017-05-22 15:37:26 --> Config Class Initialized
+INFO - 2017-05-22 15:37:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:26 --> Template Class Initialized
+INFO - 2017-05-22 15:37:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:26 --> Model Class Initialized
+INFO - 2017-05-22 15:37:26 --> Model Class Initialized
+INFO - 2017-05-22 15:37:29 --> Config Class Initialized
+INFO - 2017-05-22 15:37:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:29 --> URI Class Initialized
+INFO - 2017-05-22 15:37:29 --> Router Class Initialized
+INFO - 2017-05-22 15:37:29 --> Output Class Initialized
+INFO - 2017-05-22 15:37:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:29 --> Input Class Initialized
+INFO - 2017-05-22 15:37:29 --> Language Class Initialized
+INFO - 2017-05-22 15:37:29 --> Language Class Initialized
+INFO - 2017-05-22 15:37:29 --> Config Class Initialized
+INFO - 2017-05-22 15:37:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:29 --> Template Class Initialized
+INFO - 2017-05-22 15:37:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:29 --> Model Class Initialized
+INFO - 2017-05-22 15:37:29 --> Model Class Initialized
+INFO - 2017-05-22 15:37:32 --> Config Class Initialized
+INFO - 2017-05-22 15:37:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:32 --> URI Class Initialized
+INFO - 2017-05-22 15:37:32 --> Router Class Initialized
+INFO - 2017-05-22 15:37:32 --> Output Class Initialized
+INFO - 2017-05-22 15:37:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:32 --> Input Class Initialized
+INFO - 2017-05-22 15:37:32 --> Language Class Initialized
+INFO - 2017-05-22 15:37:32 --> Language Class Initialized
+INFO - 2017-05-22 15:37:32 --> Config Class Initialized
+INFO - 2017-05-22 15:37:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:32 --> Template Class Initialized
+INFO - 2017-05-22 15:37:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:32 --> Model Class Initialized
+INFO - 2017-05-22 15:37:32 --> Model Class Initialized
+INFO - 2017-05-22 15:37:35 --> Config Class Initialized
+INFO - 2017-05-22 15:37:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:35 --> URI Class Initialized
+INFO - 2017-05-22 15:37:35 --> Router Class Initialized
+INFO - 2017-05-22 15:37:35 --> Output Class Initialized
+INFO - 2017-05-22 15:37:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:35 --> Input Class Initialized
+INFO - 2017-05-22 15:37:35 --> Language Class Initialized
+INFO - 2017-05-22 15:37:35 --> Language Class Initialized
+INFO - 2017-05-22 15:37:35 --> Config Class Initialized
+INFO - 2017-05-22 15:37:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:35 --> Template Class Initialized
+INFO - 2017-05-22 15:37:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:35 --> Model Class Initialized
+INFO - 2017-05-22 15:37:35 --> Model Class Initialized
+INFO - 2017-05-22 15:37:38 --> Config Class Initialized
+INFO - 2017-05-22 15:37:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:38 --> URI Class Initialized
+INFO - 2017-05-22 15:37:38 --> Router Class Initialized
+INFO - 2017-05-22 15:37:38 --> Output Class Initialized
+INFO - 2017-05-22 15:37:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:38 --> Input Class Initialized
+INFO - 2017-05-22 15:37:38 --> Language Class Initialized
+INFO - 2017-05-22 15:37:38 --> Language Class Initialized
+INFO - 2017-05-22 15:37:38 --> Config Class Initialized
+INFO - 2017-05-22 15:37:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:38 --> Template Class Initialized
+INFO - 2017-05-22 15:37:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:38 --> Model Class Initialized
+INFO - 2017-05-22 15:37:38 --> Model Class Initialized
+INFO - 2017-05-22 15:37:41 --> Config Class Initialized
+INFO - 2017-05-22 15:37:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:41 --> URI Class Initialized
+INFO - 2017-05-22 15:37:41 --> Router Class Initialized
+INFO - 2017-05-22 15:37:41 --> Output Class Initialized
+INFO - 2017-05-22 15:37:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:41 --> Input Class Initialized
+INFO - 2017-05-22 15:37:41 --> Language Class Initialized
+INFO - 2017-05-22 15:37:41 --> Language Class Initialized
+INFO - 2017-05-22 15:37:41 --> Config Class Initialized
+INFO - 2017-05-22 15:37:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:41 --> Template Class Initialized
+INFO - 2017-05-22 15:37:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:41 --> Model Class Initialized
+INFO - 2017-05-22 15:37:41 --> Model Class Initialized
+INFO - 2017-05-22 15:37:44 --> Config Class Initialized
+INFO - 2017-05-22 15:37:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:44 --> URI Class Initialized
+INFO - 2017-05-22 15:37:44 --> Router Class Initialized
+INFO - 2017-05-22 15:37:44 --> Output Class Initialized
+INFO - 2017-05-22 15:37:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:44 --> Input Class Initialized
+INFO - 2017-05-22 15:37:44 --> Language Class Initialized
+INFO - 2017-05-22 15:37:44 --> Language Class Initialized
+INFO - 2017-05-22 15:37:44 --> Config Class Initialized
+INFO - 2017-05-22 15:37:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:44 --> Template Class Initialized
+INFO - 2017-05-22 15:37:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:44 --> Model Class Initialized
+INFO - 2017-05-22 15:37:44 --> Model Class Initialized
+INFO - 2017-05-22 15:37:47 --> Config Class Initialized
+INFO - 2017-05-22 15:37:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:47 --> URI Class Initialized
+INFO - 2017-05-22 15:37:47 --> Router Class Initialized
+INFO - 2017-05-22 15:37:47 --> Output Class Initialized
+INFO - 2017-05-22 15:37:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:47 --> Input Class Initialized
+INFO - 2017-05-22 15:37:47 --> Language Class Initialized
+INFO - 2017-05-22 15:37:47 --> Language Class Initialized
+INFO - 2017-05-22 15:37:47 --> Config Class Initialized
+INFO - 2017-05-22 15:37:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:47 --> Template Class Initialized
+INFO - 2017-05-22 15:37:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:47 --> Model Class Initialized
+INFO - 2017-05-22 15:37:47 --> Model Class Initialized
+INFO - 2017-05-22 15:37:50 --> Config Class Initialized
+INFO - 2017-05-22 15:37:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:50 --> URI Class Initialized
+INFO - 2017-05-22 15:37:50 --> Router Class Initialized
+INFO - 2017-05-22 15:37:50 --> Output Class Initialized
+INFO - 2017-05-22 15:37:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:50 --> Input Class Initialized
+INFO - 2017-05-22 15:37:50 --> Language Class Initialized
+INFO - 2017-05-22 15:37:50 --> Language Class Initialized
+INFO - 2017-05-22 15:37:50 --> Config Class Initialized
+INFO - 2017-05-22 15:37:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:50 --> Template Class Initialized
+INFO - 2017-05-22 15:37:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:50 --> Model Class Initialized
+INFO - 2017-05-22 15:37:50 --> Model Class Initialized
+INFO - 2017-05-22 15:37:53 --> Config Class Initialized
+INFO - 2017-05-22 15:37:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:53 --> URI Class Initialized
+INFO - 2017-05-22 15:37:53 --> Router Class Initialized
+INFO - 2017-05-22 15:37:53 --> Output Class Initialized
+INFO - 2017-05-22 15:37:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:53 --> Input Class Initialized
+INFO - 2017-05-22 15:37:53 --> Language Class Initialized
+INFO - 2017-05-22 15:37:53 --> Language Class Initialized
+INFO - 2017-05-22 15:37:53 --> Config Class Initialized
+INFO - 2017-05-22 15:37:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:53 --> Template Class Initialized
+INFO - 2017-05-22 15:37:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:53 --> Model Class Initialized
+INFO - 2017-05-22 15:37:53 --> Model Class Initialized
+INFO - 2017-05-22 15:37:56 --> Config Class Initialized
+INFO - 2017-05-22 15:37:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:56 --> URI Class Initialized
+INFO - 2017-05-22 15:37:56 --> Router Class Initialized
+INFO - 2017-05-22 15:37:56 --> Output Class Initialized
+INFO - 2017-05-22 15:37:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:56 --> Input Class Initialized
+INFO - 2017-05-22 15:37:56 --> Language Class Initialized
+INFO - 2017-05-22 15:37:56 --> Language Class Initialized
+INFO - 2017-05-22 15:37:56 --> Config Class Initialized
+INFO - 2017-05-22 15:37:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:56 --> Template Class Initialized
+INFO - 2017-05-22 15:37:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:56 --> Model Class Initialized
+INFO - 2017-05-22 15:37:56 --> Model Class Initialized
+INFO - 2017-05-22 15:37:59 --> Config Class Initialized
+INFO - 2017-05-22 15:37:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:37:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:37:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:37:59 --> URI Class Initialized
+INFO - 2017-05-22 15:37:59 --> Router Class Initialized
+INFO - 2017-05-22 15:37:59 --> Output Class Initialized
+INFO - 2017-05-22 15:37:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:37:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:37:59 --> Input Class Initialized
+INFO - 2017-05-22 15:37:59 --> Language Class Initialized
+INFO - 2017-05-22 15:37:59 --> Language Class Initialized
+INFO - 2017-05-22 15:37:59 --> Config Class Initialized
+INFO - 2017-05-22 15:37:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:37:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:37:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:37:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:37:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:37:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:37:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:37:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:37:59 --> Template Class Initialized
+INFO - 2017-05-22 15:37:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:37:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:37:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:37:59 --> Model Class Initialized
+INFO - 2017-05-22 15:37:59 --> Model Class Initialized
+INFO - 2017-05-22 15:38:02 --> Config Class Initialized
+INFO - 2017-05-22 15:38:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:02 --> URI Class Initialized
+INFO - 2017-05-22 15:38:02 --> Router Class Initialized
+INFO - 2017-05-22 15:38:02 --> Output Class Initialized
+INFO - 2017-05-22 15:38:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:02 --> Input Class Initialized
+INFO - 2017-05-22 15:38:02 --> Language Class Initialized
+INFO - 2017-05-22 15:38:02 --> Language Class Initialized
+INFO - 2017-05-22 15:38:02 --> Config Class Initialized
+INFO - 2017-05-22 15:38:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:02 --> Template Class Initialized
+INFO - 2017-05-22 15:38:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:02 --> Model Class Initialized
+INFO - 2017-05-22 15:38:02 --> Model Class Initialized
+INFO - 2017-05-22 15:38:05 --> Config Class Initialized
+INFO - 2017-05-22 15:38:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:05 --> URI Class Initialized
+INFO - 2017-05-22 15:38:05 --> Router Class Initialized
+INFO - 2017-05-22 15:38:05 --> Output Class Initialized
+INFO - 2017-05-22 15:38:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:05 --> Input Class Initialized
+INFO - 2017-05-22 15:38:05 --> Language Class Initialized
+INFO - 2017-05-22 15:38:05 --> Language Class Initialized
+INFO - 2017-05-22 15:38:05 --> Config Class Initialized
+INFO - 2017-05-22 15:38:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:05 --> Template Class Initialized
+INFO - 2017-05-22 15:38:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:05 --> Model Class Initialized
+INFO - 2017-05-22 15:38:05 --> Model Class Initialized
+INFO - 2017-05-22 15:38:08 --> Config Class Initialized
+INFO - 2017-05-22 15:38:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:08 --> URI Class Initialized
+INFO - 2017-05-22 15:38:08 --> Router Class Initialized
+INFO - 2017-05-22 15:38:08 --> Output Class Initialized
+INFO - 2017-05-22 15:38:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:08 --> Input Class Initialized
+INFO - 2017-05-22 15:38:08 --> Language Class Initialized
+INFO - 2017-05-22 15:38:08 --> Language Class Initialized
+INFO - 2017-05-22 15:38:08 --> Config Class Initialized
+INFO - 2017-05-22 15:38:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:08 --> Template Class Initialized
+INFO - 2017-05-22 15:38:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:08 --> Model Class Initialized
+INFO - 2017-05-22 15:38:08 --> Model Class Initialized
+INFO - 2017-05-22 15:38:11 --> Config Class Initialized
+INFO - 2017-05-22 15:38:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:11 --> URI Class Initialized
+INFO - 2017-05-22 15:38:11 --> Router Class Initialized
+INFO - 2017-05-22 15:38:11 --> Output Class Initialized
+INFO - 2017-05-22 15:38:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:11 --> Input Class Initialized
+INFO - 2017-05-22 15:38:11 --> Language Class Initialized
+INFO - 2017-05-22 15:38:11 --> Language Class Initialized
+INFO - 2017-05-22 15:38:11 --> Config Class Initialized
+INFO - 2017-05-22 15:38:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:11 --> Template Class Initialized
+INFO - 2017-05-22 15:38:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:11 --> Model Class Initialized
+INFO - 2017-05-22 15:38:11 --> Model Class Initialized
+INFO - 2017-05-22 15:38:14 --> Config Class Initialized
+INFO - 2017-05-22 15:38:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:14 --> URI Class Initialized
+INFO - 2017-05-22 15:38:14 --> Router Class Initialized
+INFO - 2017-05-22 15:38:14 --> Output Class Initialized
+INFO - 2017-05-22 15:38:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:14 --> Input Class Initialized
+INFO - 2017-05-22 15:38:14 --> Language Class Initialized
+INFO - 2017-05-22 15:38:14 --> Language Class Initialized
+INFO - 2017-05-22 15:38:14 --> Config Class Initialized
+INFO - 2017-05-22 15:38:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:14 --> Template Class Initialized
+INFO - 2017-05-22 15:38:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:14 --> Model Class Initialized
+INFO - 2017-05-22 15:38:14 --> Model Class Initialized
+INFO - 2017-05-22 15:38:17 --> Config Class Initialized
+INFO - 2017-05-22 15:38:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:17 --> URI Class Initialized
+INFO - 2017-05-22 15:38:17 --> Router Class Initialized
+INFO - 2017-05-22 15:38:17 --> Output Class Initialized
+INFO - 2017-05-22 15:38:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:17 --> Input Class Initialized
+INFO - 2017-05-22 15:38:17 --> Language Class Initialized
+INFO - 2017-05-22 15:38:17 --> Language Class Initialized
+INFO - 2017-05-22 15:38:17 --> Config Class Initialized
+INFO - 2017-05-22 15:38:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:17 --> Template Class Initialized
+INFO - 2017-05-22 15:38:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:17 --> Model Class Initialized
+INFO - 2017-05-22 15:38:17 --> Model Class Initialized
+INFO - 2017-05-22 15:38:20 --> Config Class Initialized
+INFO - 2017-05-22 15:38:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:20 --> URI Class Initialized
+INFO - 2017-05-22 15:38:20 --> Router Class Initialized
+INFO - 2017-05-22 15:38:20 --> Output Class Initialized
+INFO - 2017-05-22 15:38:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:20 --> Input Class Initialized
+INFO - 2017-05-22 15:38:20 --> Language Class Initialized
+INFO - 2017-05-22 15:38:20 --> Language Class Initialized
+INFO - 2017-05-22 15:38:20 --> Config Class Initialized
+INFO - 2017-05-22 15:38:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:20 --> Template Class Initialized
+INFO - 2017-05-22 15:38:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:20 --> Model Class Initialized
+INFO - 2017-05-22 15:38:20 --> Model Class Initialized
+INFO - 2017-05-22 15:38:23 --> Config Class Initialized
+INFO - 2017-05-22 15:38:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:23 --> URI Class Initialized
+INFO - 2017-05-22 15:38:23 --> Router Class Initialized
+INFO - 2017-05-22 15:38:23 --> Output Class Initialized
+INFO - 2017-05-22 15:38:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:23 --> Input Class Initialized
+INFO - 2017-05-22 15:38:23 --> Language Class Initialized
+INFO - 2017-05-22 15:38:23 --> Language Class Initialized
+INFO - 2017-05-22 15:38:23 --> Config Class Initialized
+INFO - 2017-05-22 15:38:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> Template Class Initialized
+INFO - 2017-05-22 15:38:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:23 --> Model Class Initialized
+INFO - 2017-05-22 15:38:23 --> Model Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:38:23 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:38:23 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:38:23 --> Final output sent to browser
+DEBUG - 2017-05-22 15:38:23 --> Total execution time: 0.0712
+INFO - 2017-05-22 15:38:23 --> Config Class Initialized
+INFO - 2017-05-22 15:38:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:23 --> URI Class Initialized
+INFO - 2017-05-22 15:38:23 --> Router Class Initialized
+INFO - 2017-05-22 15:38:23 --> Output Class Initialized
+INFO - 2017-05-22 15:38:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:23 --> Input Class Initialized
+INFO - 2017-05-22 15:38:23 --> Language Class Initialized
+INFO - 2017-05-22 15:38:23 --> Language Class Initialized
+INFO - 2017-05-22 15:38:23 --> Config Class Initialized
+INFO - 2017-05-22 15:38:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:23 --> Template Class Initialized
+INFO - 2017-05-22 15:38:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:23 --> Model Class Initialized
+INFO - 2017-05-22 15:38:23 --> Model Class Initialized
+INFO - 2017-05-22 15:38:26 --> Config Class Initialized
+INFO - 2017-05-22 15:38:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:26 --> URI Class Initialized
+INFO - 2017-05-22 15:38:26 --> Router Class Initialized
+INFO - 2017-05-22 15:38:26 --> Output Class Initialized
+INFO - 2017-05-22 15:38:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:26 --> Input Class Initialized
+INFO - 2017-05-22 15:38:26 --> Language Class Initialized
+INFO - 2017-05-22 15:38:26 --> Language Class Initialized
+INFO - 2017-05-22 15:38:26 --> Config Class Initialized
+INFO - 2017-05-22 15:38:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:26 --> Template Class Initialized
+INFO - 2017-05-22 15:38:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:26 --> Model Class Initialized
+INFO - 2017-05-22 15:38:26 --> Model Class Initialized
+INFO - 2017-05-22 15:38:29 --> Config Class Initialized
+INFO - 2017-05-22 15:38:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:29 --> URI Class Initialized
+INFO - 2017-05-22 15:38:29 --> Router Class Initialized
+INFO - 2017-05-22 15:38:29 --> Output Class Initialized
+INFO - 2017-05-22 15:38:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:29 --> Input Class Initialized
+INFO - 2017-05-22 15:38:29 --> Language Class Initialized
+INFO - 2017-05-22 15:38:29 --> Language Class Initialized
+INFO - 2017-05-22 15:38:29 --> Config Class Initialized
+INFO - 2017-05-22 15:38:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:29 --> Template Class Initialized
+INFO - 2017-05-22 15:38:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:29 --> Model Class Initialized
+INFO - 2017-05-22 15:38:29 --> Model Class Initialized
+INFO - 2017-05-22 15:38:32 --> Config Class Initialized
+INFO - 2017-05-22 15:38:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:32 --> URI Class Initialized
+INFO - 2017-05-22 15:38:32 --> Router Class Initialized
+INFO - 2017-05-22 15:38:32 --> Output Class Initialized
+INFO - 2017-05-22 15:38:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:32 --> Input Class Initialized
+INFO - 2017-05-22 15:38:32 --> Language Class Initialized
+INFO - 2017-05-22 15:38:32 --> Language Class Initialized
+INFO - 2017-05-22 15:38:32 --> Config Class Initialized
+INFO - 2017-05-22 15:38:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:32 --> Template Class Initialized
+INFO - 2017-05-22 15:38:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:32 --> Model Class Initialized
+INFO - 2017-05-22 15:38:32 --> Model Class Initialized
+INFO - 2017-05-22 15:38:35 --> Config Class Initialized
+INFO - 2017-05-22 15:38:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:35 --> URI Class Initialized
+INFO - 2017-05-22 15:38:35 --> Router Class Initialized
+INFO - 2017-05-22 15:38:35 --> Output Class Initialized
+INFO - 2017-05-22 15:38:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:35 --> Input Class Initialized
+INFO - 2017-05-22 15:38:35 --> Language Class Initialized
+INFO - 2017-05-22 15:38:35 --> Language Class Initialized
+INFO - 2017-05-22 15:38:35 --> Config Class Initialized
+INFO - 2017-05-22 15:38:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:35 --> Template Class Initialized
+INFO - 2017-05-22 15:38:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:35 --> Model Class Initialized
+INFO - 2017-05-22 15:38:35 --> Model Class Initialized
+INFO - 2017-05-22 15:38:38 --> Config Class Initialized
+INFO - 2017-05-22 15:38:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:38 --> URI Class Initialized
+INFO - 2017-05-22 15:38:38 --> Router Class Initialized
+INFO - 2017-05-22 15:38:38 --> Output Class Initialized
+INFO - 2017-05-22 15:38:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:38 --> Input Class Initialized
+INFO - 2017-05-22 15:38:38 --> Language Class Initialized
+INFO - 2017-05-22 15:38:38 --> Language Class Initialized
+INFO - 2017-05-22 15:38:38 --> Config Class Initialized
+INFO - 2017-05-22 15:38:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:38 --> Template Class Initialized
+INFO - 2017-05-22 15:38:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:38 --> Model Class Initialized
+INFO - 2017-05-22 15:38:38 --> Model Class Initialized
+INFO - 2017-05-22 15:38:41 --> Config Class Initialized
+INFO - 2017-05-22 15:38:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:41 --> URI Class Initialized
+INFO - 2017-05-22 15:38:41 --> Router Class Initialized
+INFO - 2017-05-22 15:38:41 --> Output Class Initialized
+INFO - 2017-05-22 15:38:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:41 --> Input Class Initialized
+INFO - 2017-05-22 15:38:41 --> Language Class Initialized
+INFO - 2017-05-22 15:38:41 --> Language Class Initialized
+INFO - 2017-05-22 15:38:41 --> Config Class Initialized
+INFO - 2017-05-22 15:38:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:41 --> Template Class Initialized
+INFO - 2017-05-22 15:38:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:41 --> Model Class Initialized
+INFO - 2017-05-22 15:38:41 --> Model Class Initialized
+INFO - 2017-05-22 15:38:44 --> Config Class Initialized
+INFO - 2017-05-22 15:38:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:44 --> URI Class Initialized
+INFO - 2017-05-22 15:38:44 --> Router Class Initialized
+INFO - 2017-05-22 15:38:44 --> Output Class Initialized
+INFO - 2017-05-22 15:38:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:44 --> Input Class Initialized
+INFO - 2017-05-22 15:38:44 --> Language Class Initialized
+INFO - 2017-05-22 15:38:44 --> Language Class Initialized
+INFO - 2017-05-22 15:38:44 --> Config Class Initialized
+INFO - 2017-05-22 15:38:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:44 --> Template Class Initialized
+INFO - 2017-05-22 15:38:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:44 --> Model Class Initialized
+INFO - 2017-05-22 15:38:44 --> Model Class Initialized
+INFO - 2017-05-22 15:38:47 --> Config Class Initialized
+INFO - 2017-05-22 15:38:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:47 --> URI Class Initialized
+INFO - 2017-05-22 15:38:47 --> Router Class Initialized
+INFO - 2017-05-22 15:38:47 --> Output Class Initialized
+INFO - 2017-05-22 15:38:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:47 --> Input Class Initialized
+INFO - 2017-05-22 15:38:47 --> Language Class Initialized
+INFO - 2017-05-22 15:38:47 --> Language Class Initialized
+INFO - 2017-05-22 15:38:47 --> Config Class Initialized
+INFO - 2017-05-22 15:38:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:47 --> Template Class Initialized
+INFO - 2017-05-22 15:38:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:47 --> Model Class Initialized
+INFO - 2017-05-22 15:38:47 --> Model Class Initialized
+INFO - 2017-05-22 15:38:50 --> Config Class Initialized
+INFO - 2017-05-22 15:38:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:50 --> URI Class Initialized
+INFO - 2017-05-22 15:38:50 --> Router Class Initialized
+INFO - 2017-05-22 15:38:50 --> Output Class Initialized
+INFO - 2017-05-22 15:38:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:50 --> Input Class Initialized
+INFO - 2017-05-22 15:38:50 --> Language Class Initialized
+INFO - 2017-05-22 15:38:50 --> Language Class Initialized
+INFO - 2017-05-22 15:38:50 --> Config Class Initialized
+INFO - 2017-05-22 15:38:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:50 --> Template Class Initialized
+INFO - 2017-05-22 15:38:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:50 --> Model Class Initialized
+INFO - 2017-05-22 15:38:50 --> Model Class Initialized
+INFO - 2017-05-22 15:38:53 --> Config Class Initialized
+INFO - 2017-05-22 15:38:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:53 --> URI Class Initialized
+INFO - 2017-05-22 15:38:53 --> Router Class Initialized
+INFO - 2017-05-22 15:38:53 --> Output Class Initialized
+INFO - 2017-05-22 15:38:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:53 --> Input Class Initialized
+INFO - 2017-05-22 15:38:53 --> Language Class Initialized
+INFO - 2017-05-22 15:38:53 --> Language Class Initialized
+INFO - 2017-05-22 15:38:53 --> Config Class Initialized
+INFO - 2017-05-22 15:38:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:53 --> Template Class Initialized
+INFO - 2017-05-22 15:38:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:53 --> Model Class Initialized
+INFO - 2017-05-22 15:38:53 --> Model Class Initialized
+INFO - 2017-05-22 15:38:56 --> Config Class Initialized
+INFO - 2017-05-22 15:38:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:56 --> URI Class Initialized
+INFO - 2017-05-22 15:38:56 --> Router Class Initialized
+INFO - 2017-05-22 15:38:56 --> Output Class Initialized
+INFO - 2017-05-22 15:38:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:56 --> Input Class Initialized
+INFO - 2017-05-22 15:38:56 --> Language Class Initialized
+INFO - 2017-05-22 15:38:56 --> Language Class Initialized
+INFO - 2017-05-22 15:38:56 --> Config Class Initialized
+INFO - 2017-05-22 15:38:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:56 --> Template Class Initialized
+INFO - 2017-05-22 15:38:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:56 --> Model Class Initialized
+INFO - 2017-05-22 15:38:56 --> Model Class Initialized
+INFO - 2017-05-22 15:38:59 --> Config Class Initialized
+INFO - 2017-05-22 15:38:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:38:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:38:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:38:59 --> URI Class Initialized
+INFO - 2017-05-22 15:38:59 --> Router Class Initialized
+INFO - 2017-05-22 15:38:59 --> Output Class Initialized
+INFO - 2017-05-22 15:38:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:38:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:38:59 --> Input Class Initialized
+INFO - 2017-05-22 15:38:59 --> Language Class Initialized
+INFO - 2017-05-22 15:38:59 --> Language Class Initialized
+INFO - 2017-05-22 15:38:59 --> Config Class Initialized
+INFO - 2017-05-22 15:38:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:38:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:38:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:38:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:38:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:38:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:38:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:38:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:38:59 --> Template Class Initialized
+INFO - 2017-05-22 15:38:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:38:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:38:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:38:59 --> Model Class Initialized
+INFO - 2017-05-22 15:38:59 --> Model Class Initialized
+INFO - 2017-05-22 15:39:02 --> Config Class Initialized
+INFO - 2017-05-22 15:39:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:02 --> URI Class Initialized
+INFO - 2017-05-22 15:39:02 --> Router Class Initialized
+INFO - 2017-05-22 15:39:02 --> Output Class Initialized
+INFO - 2017-05-22 15:39:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:02 --> Input Class Initialized
+INFO - 2017-05-22 15:39:02 --> Language Class Initialized
+INFO - 2017-05-22 15:39:02 --> Language Class Initialized
+INFO - 2017-05-22 15:39:02 --> Config Class Initialized
+INFO - 2017-05-22 15:39:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:02 --> Template Class Initialized
+INFO - 2017-05-22 15:39:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:02 --> Model Class Initialized
+INFO - 2017-05-22 15:39:02 --> Model Class Initialized
+INFO - 2017-05-22 15:39:05 --> Config Class Initialized
+INFO - 2017-05-22 15:39:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:05 --> URI Class Initialized
+INFO - 2017-05-22 15:39:05 --> Router Class Initialized
+INFO - 2017-05-22 15:39:05 --> Output Class Initialized
+INFO - 2017-05-22 15:39:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:05 --> Input Class Initialized
+INFO - 2017-05-22 15:39:05 --> Language Class Initialized
+INFO - 2017-05-22 15:39:05 --> Language Class Initialized
+INFO - 2017-05-22 15:39:05 --> Config Class Initialized
+INFO - 2017-05-22 15:39:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:05 --> Template Class Initialized
+INFO - 2017-05-22 15:39:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:05 --> Model Class Initialized
+INFO - 2017-05-22 15:39:05 --> Model Class Initialized
+INFO - 2017-05-22 15:39:08 --> Config Class Initialized
+INFO - 2017-05-22 15:39:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:08 --> URI Class Initialized
+INFO - 2017-05-22 15:39:08 --> Router Class Initialized
+INFO - 2017-05-22 15:39:08 --> Output Class Initialized
+INFO - 2017-05-22 15:39:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:08 --> Input Class Initialized
+INFO - 2017-05-22 15:39:08 --> Language Class Initialized
+INFO - 2017-05-22 15:39:08 --> Language Class Initialized
+INFO - 2017-05-22 15:39:08 --> Config Class Initialized
+INFO - 2017-05-22 15:39:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:08 --> Template Class Initialized
+INFO - 2017-05-22 15:39:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:08 --> Model Class Initialized
+INFO - 2017-05-22 15:39:08 --> Model Class Initialized
+INFO - 2017-05-22 15:39:11 --> Config Class Initialized
+INFO - 2017-05-22 15:39:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:11 --> URI Class Initialized
+INFO - 2017-05-22 15:39:11 --> Router Class Initialized
+INFO - 2017-05-22 15:39:11 --> Output Class Initialized
+INFO - 2017-05-22 15:39:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:11 --> Input Class Initialized
+INFO - 2017-05-22 15:39:11 --> Language Class Initialized
+INFO - 2017-05-22 15:39:11 --> Language Class Initialized
+INFO - 2017-05-22 15:39:11 --> Config Class Initialized
+INFO - 2017-05-22 15:39:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:11 --> Template Class Initialized
+INFO - 2017-05-22 15:39:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:11 --> Model Class Initialized
+INFO - 2017-05-22 15:39:11 --> Model Class Initialized
+INFO - 2017-05-22 15:39:14 --> Config Class Initialized
+INFO - 2017-05-22 15:39:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:14 --> URI Class Initialized
+INFO - 2017-05-22 15:39:14 --> Router Class Initialized
+INFO - 2017-05-22 15:39:14 --> Output Class Initialized
+INFO - 2017-05-22 15:39:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:14 --> Input Class Initialized
+INFO - 2017-05-22 15:39:14 --> Language Class Initialized
+INFO - 2017-05-22 15:39:14 --> Language Class Initialized
+INFO - 2017-05-22 15:39:14 --> Config Class Initialized
+INFO - 2017-05-22 15:39:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:14 --> Template Class Initialized
+INFO - 2017-05-22 15:39:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:14 --> Model Class Initialized
+INFO - 2017-05-22 15:39:14 --> Model Class Initialized
+INFO - 2017-05-22 15:39:17 --> Config Class Initialized
+INFO - 2017-05-22 15:39:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:17 --> URI Class Initialized
+INFO - 2017-05-22 15:39:17 --> Router Class Initialized
+INFO - 2017-05-22 15:39:17 --> Output Class Initialized
+INFO - 2017-05-22 15:39:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:17 --> Input Class Initialized
+INFO - 2017-05-22 15:39:17 --> Language Class Initialized
+INFO - 2017-05-22 15:39:17 --> Language Class Initialized
+INFO - 2017-05-22 15:39:17 --> Config Class Initialized
+INFO - 2017-05-22 15:39:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:17 --> Template Class Initialized
+INFO - 2017-05-22 15:39:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:17 --> Model Class Initialized
+INFO - 2017-05-22 15:39:17 --> Model Class Initialized
+INFO - 2017-05-22 15:39:20 --> Config Class Initialized
+INFO - 2017-05-22 15:39:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:20 --> URI Class Initialized
+INFO - 2017-05-22 15:39:20 --> Router Class Initialized
+INFO - 2017-05-22 15:39:20 --> Output Class Initialized
+INFO - 2017-05-22 15:39:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:20 --> Input Class Initialized
+INFO - 2017-05-22 15:39:20 --> Language Class Initialized
+INFO - 2017-05-22 15:39:20 --> Language Class Initialized
+INFO - 2017-05-22 15:39:20 --> Config Class Initialized
+INFO - 2017-05-22 15:39:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:20 --> Template Class Initialized
+INFO - 2017-05-22 15:39:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:20 --> Model Class Initialized
+INFO - 2017-05-22 15:39:20 --> Model Class Initialized
+INFO - 2017-05-22 15:39:23 --> Config Class Initialized
+INFO - 2017-05-22 15:39:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:23 --> URI Class Initialized
+INFO - 2017-05-22 15:39:23 --> Router Class Initialized
+INFO - 2017-05-22 15:39:23 --> Output Class Initialized
+INFO - 2017-05-22 15:39:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:23 --> Input Class Initialized
+INFO - 2017-05-22 15:39:23 --> Language Class Initialized
+INFO - 2017-05-22 15:39:23 --> Language Class Initialized
+INFO - 2017-05-22 15:39:23 --> Config Class Initialized
+INFO - 2017-05-22 15:39:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:23 --> Template Class Initialized
+INFO - 2017-05-22 15:39:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:23 --> Model Class Initialized
+INFO - 2017-05-22 15:39:23 --> Model Class Initialized
+INFO - 2017-05-22 15:39:26 --> Config Class Initialized
+INFO - 2017-05-22 15:39:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:26 --> URI Class Initialized
+INFO - 2017-05-22 15:39:26 --> Router Class Initialized
+INFO - 2017-05-22 15:39:26 --> Output Class Initialized
+INFO - 2017-05-22 15:39:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:26 --> Input Class Initialized
+INFO - 2017-05-22 15:39:26 --> Language Class Initialized
+INFO - 2017-05-22 15:39:26 --> Language Class Initialized
+INFO - 2017-05-22 15:39:26 --> Config Class Initialized
+INFO - 2017-05-22 15:39:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:26 --> Template Class Initialized
+INFO - 2017-05-22 15:39:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:26 --> Model Class Initialized
+INFO - 2017-05-22 15:39:26 --> Model Class Initialized
+INFO - 2017-05-22 15:39:29 --> Config Class Initialized
+INFO - 2017-05-22 15:39:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:29 --> URI Class Initialized
+INFO - 2017-05-22 15:39:29 --> Router Class Initialized
+INFO - 2017-05-22 15:39:29 --> Output Class Initialized
+INFO - 2017-05-22 15:39:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:29 --> Input Class Initialized
+INFO - 2017-05-22 15:39:29 --> Language Class Initialized
+INFO - 2017-05-22 15:39:29 --> Language Class Initialized
+INFO - 2017-05-22 15:39:29 --> Config Class Initialized
+INFO - 2017-05-22 15:39:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:29 --> Template Class Initialized
+INFO - 2017-05-22 15:39:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:29 --> Model Class Initialized
+INFO - 2017-05-22 15:39:29 --> Model Class Initialized
+INFO - 2017-05-22 15:39:32 --> Config Class Initialized
+INFO - 2017-05-22 15:39:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:32 --> URI Class Initialized
+INFO - 2017-05-22 15:39:32 --> Router Class Initialized
+INFO - 2017-05-22 15:39:32 --> Output Class Initialized
+INFO - 2017-05-22 15:39:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:32 --> Input Class Initialized
+INFO - 2017-05-22 15:39:32 --> Language Class Initialized
+INFO - 2017-05-22 15:39:32 --> Language Class Initialized
+INFO - 2017-05-22 15:39:32 --> Config Class Initialized
+INFO - 2017-05-22 15:39:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:32 --> Template Class Initialized
+INFO - 2017-05-22 15:39:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:32 --> Model Class Initialized
+INFO - 2017-05-22 15:39:32 --> Model Class Initialized
+INFO - 2017-05-22 15:39:35 --> Config Class Initialized
+INFO - 2017-05-22 15:39:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:35 --> URI Class Initialized
+INFO - 2017-05-22 15:39:35 --> Router Class Initialized
+INFO - 2017-05-22 15:39:35 --> Output Class Initialized
+INFO - 2017-05-22 15:39:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:35 --> Input Class Initialized
+INFO - 2017-05-22 15:39:35 --> Language Class Initialized
+INFO - 2017-05-22 15:39:35 --> Language Class Initialized
+INFO - 2017-05-22 15:39:35 --> Config Class Initialized
+INFO - 2017-05-22 15:39:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:35 --> Template Class Initialized
+INFO - 2017-05-22 15:39:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:35 --> Model Class Initialized
+INFO - 2017-05-22 15:39:35 --> Model Class Initialized
+INFO - 2017-05-22 15:39:38 --> Config Class Initialized
+INFO - 2017-05-22 15:39:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:38 --> URI Class Initialized
+INFO - 2017-05-22 15:39:38 --> Router Class Initialized
+INFO - 2017-05-22 15:39:38 --> Output Class Initialized
+INFO - 2017-05-22 15:39:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:38 --> Input Class Initialized
+INFO - 2017-05-22 15:39:38 --> Language Class Initialized
+INFO - 2017-05-22 15:39:38 --> Language Class Initialized
+INFO - 2017-05-22 15:39:38 --> Config Class Initialized
+INFO - 2017-05-22 15:39:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:38 --> Template Class Initialized
+INFO - 2017-05-22 15:39:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:38 --> Model Class Initialized
+INFO - 2017-05-22 15:39:38 --> Model Class Initialized
+INFO - 2017-05-22 15:39:41 --> Config Class Initialized
+INFO - 2017-05-22 15:39:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:41 --> URI Class Initialized
+INFO - 2017-05-22 15:39:41 --> Router Class Initialized
+INFO - 2017-05-22 15:39:41 --> Output Class Initialized
+INFO - 2017-05-22 15:39:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:41 --> Input Class Initialized
+INFO - 2017-05-22 15:39:41 --> Language Class Initialized
+INFO - 2017-05-22 15:39:41 --> Language Class Initialized
+INFO - 2017-05-22 15:39:41 --> Config Class Initialized
+INFO - 2017-05-22 15:39:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:41 --> Template Class Initialized
+INFO - 2017-05-22 15:39:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:41 --> Model Class Initialized
+INFO - 2017-05-22 15:39:41 --> Model Class Initialized
+INFO - 2017-05-22 15:39:44 --> Config Class Initialized
+INFO - 2017-05-22 15:39:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:44 --> URI Class Initialized
+INFO - 2017-05-22 15:39:44 --> Router Class Initialized
+INFO - 2017-05-22 15:39:44 --> Output Class Initialized
+INFO - 2017-05-22 15:39:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:44 --> Input Class Initialized
+INFO - 2017-05-22 15:39:44 --> Language Class Initialized
+INFO - 2017-05-22 15:39:44 --> Language Class Initialized
+INFO - 2017-05-22 15:39:44 --> Config Class Initialized
+INFO - 2017-05-22 15:39:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:44 --> Template Class Initialized
+INFO - 2017-05-22 15:39:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:44 --> Model Class Initialized
+INFO - 2017-05-22 15:39:44 --> Model Class Initialized
+INFO - 2017-05-22 15:39:47 --> Config Class Initialized
+INFO - 2017-05-22 15:39:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:47 --> URI Class Initialized
+INFO - 2017-05-22 15:39:47 --> Router Class Initialized
+INFO - 2017-05-22 15:39:47 --> Output Class Initialized
+INFO - 2017-05-22 15:39:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:47 --> Input Class Initialized
+INFO - 2017-05-22 15:39:47 --> Language Class Initialized
+INFO - 2017-05-22 15:39:47 --> Language Class Initialized
+INFO - 2017-05-22 15:39:47 --> Config Class Initialized
+INFO - 2017-05-22 15:39:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:47 --> Template Class Initialized
+INFO - 2017-05-22 15:39:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:47 --> Model Class Initialized
+INFO - 2017-05-22 15:39:47 --> Model Class Initialized
+INFO - 2017-05-22 15:39:50 --> Config Class Initialized
+INFO - 2017-05-22 15:39:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:50 --> URI Class Initialized
+INFO - 2017-05-22 15:39:50 --> Router Class Initialized
+INFO - 2017-05-22 15:39:50 --> Output Class Initialized
+INFO - 2017-05-22 15:39:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:50 --> Input Class Initialized
+INFO - 2017-05-22 15:39:50 --> Language Class Initialized
+INFO - 2017-05-22 15:39:50 --> Language Class Initialized
+INFO - 2017-05-22 15:39:50 --> Config Class Initialized
+INFO - 2017-05-22 15:39:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:50 --> Template Class Initialized
+INFO - 2017-05-22 15:39:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:50 --> Model Class Initialized
+INFO - 2017-05-22 15:39:50 --> Model Class Initialized
+INFO - 2017-05-22 15:39:53 --> Config Class Initialized
+INFO - 2017-05-22 15:39:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:53 --> URI Class Initialized
+INFO - 2017-05-22 15:39:53 --> Router Class Initialized
+INFO - 2017-05-22 15:39:53 --> Output Class Initialized
+INFO - 2017-05-22 15:39:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:53 --> Input Class Initialized
+INFO - 2017-05-22 15:39:53 --> Language Class Initialized
+INFO - 2017-05-22 15:39:53 --> Language Class Initialized
+INFO - 2017-05-22 15:39:53 --> Config Class Initialized
+INFO - 2017-05-22 15:39:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:53 --> Template Class Initialized
+INFO - 2017-05-22 15:39:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:53 --> Model Class Initialized
+INFO - 2017-05-22 15:39:53 --> Model Class Initialized
+INFO - 2017-05-22 15:39:56 --> Config Class Initialized
+INFO - 2017-05-22 15:39:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:56 --> URI Class Initialized
+INFO - 2017-05-22 15:39:56 --> Router Class Initialized
+INFO - 2017-05-22 15:39:56 --> Output Class Initialized
+INFO - 2017-05-22 15:39:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:56 --> Input Class Initialized
+INFO - 2017-05-22 15:39:56 --> Language Class Initialized
+INFO - 2017-05-22 15:39:56 --> Language Class Initialized
+INFO - 2017-05-22 15:39:56 --> Config Class Initialized
+INFO - 2017-05-22 15:39:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:56 --> Template Class Initialized
+INFO - 2017-05-22 15:39:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:56 --> Model Class Initialized
+INFO - 2017-05-22 15:39:56 --> Model Class Initialized
+INFO - 2017-05-22 15:39:59 --> Config Class Initialized
+INFO - 2017-05-22 15:39:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:39:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:39:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:39:59 --> URI Class Initialized
+INFO - 2017-05-22 15:39:59 --> Router Class Initialized
+INFO - 2017-05-22 15:39:59 --> Output Class Initialized
+INFO - 2017-05-22 15:39:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:39:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:39:59 --> Input Class Initialized
+INFO - 2017-05-22 15:39:59 --> Language Class Initialized
+INFO - 2017-05-22 15:39:59 --> Language Class Initialized
+INFO - 2017-05-22 15:39:59 --> Config Class Initialized
+INFO - 2017-05-22 15:39:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:39:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:39:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:39:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:39:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:39:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:39:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:39:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:39:59 --> Template Class Initialized
+INFO - 2017-05-22 15:39:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:39:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:39:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:39:59 --> Model Class Initialized
+INFO - 2017-05-22 15:39:59 --> Model Class Initialized
+INFO - 2017-05-22 15:40:02 --> Config Class Initialized
+INFO - 2017-05-22 15:40:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:02 --> URI Class Initialized
+INFO - 2017-05-22 15:40:02 --> Router Class Initialized
+INFO - 2017-05-22 15:40:02 --> Output Class Initialized
+INFO - 2017-05-22 15:40:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:02 --> Input Class Initialized
+INFO - 2017-05-22 15:40:02 --> Language Class Initialized
+INFO - 2017-05-22 15:40:02 --> Language Class Initialized
+INFO - 2017-05-22 15:40:02 --> Config Class Initialized
+INFO - 2017-05-22 15:40:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:02 --> Template Class Initialized
+INFO - 2017-05-22 15:40:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:02 --> Model Class Initialized
+INFO - 2017-05-22 15:40:02 --> Model Class Initialized
+INFO - 2017-05-22 15:40:05 --> Config Class Initialized
+INFO - 2017-05-22 15:40:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:05 --> URI Class Initialized
+INFO - 2017-05-22 15:40:05 --> Router Class Initialized
+INFO - 2017-05-22 15:40:05 --> Output Class Initialized
+INFO - 2017-05-22 15:40:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:05 --> Input Class Initialized
+INFO - 2017-05-22 15:40:05 --> Language Class Initialized
+INFO - 2017-05-22 15:40:05 --> Language Class Initialized
+INFO - 2017-05-22 15:40:05 --> Config Class Initialized
+INFO - 2017-05-22 15:40:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:05 --> Template Class Initialized
+INFO - 2017-05-22 15:40:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:05 --> Model Class Initialized
+INFO - 2017-05-22 15:40:05 --> Model Class Initialized
+INFO - 2017-05-22 15:40:08 --> Config Class Initialized
+INFO - 2017-05-22 15:40:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:08 --> URI Class Initialized
+INFO - 2017-05-22 15:40:08 --> Router Class Initialized
+INFO - 2017-05-22 15:40:08 --> Output Class Initialized
+INFO - 2017-05-22 15:40:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:08 --> Input Class Initialized
+INFO - 2017-05-22 15:40:08 --> Language Class Initialized
+INFO - 2017-05-22 15:40:08 --> Language Class Initialized
+INFO - 2017-05-22 15:40:08 --> Config Class Initialized
+INFO - 2017-05-22 15:40:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:08 --> Template Class Initialized
+INFO - 2017-05-22 15:40:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:08 --> Model Class Initialized
+INFO - 2017-05-22 15:40:08 --> Model Class Initialized
+INFO - 2017-05-22 15:40:11 --> Config Class Initialized
+INFO - 2017-05-22 15:40:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:11 --> URI Class Initialized
+INFO - 2017-05-22 15:40:11 --> Router Class Initialized
+INFO - 2017-05-22 15:40:11 --> Output Class Initialized
+INFO - 2017-05-22 15:40:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:11 --> Input Class Initialized
+INFO - 2017-05-22 15:40:11 --> Language Class Initialized
+INFO - 2017-05-22 15:40:11 --> Language Class Initialized
+INFO - 2017-05-22 15:40:11 --> Config Class Initialized
+INFO - 2017-05-22 15:40:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:11 --> Template Class Initialized
+INFO - 2017-05-22 15:40:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:11 --> Model Class Initialized
+INFO - 2017-05-22 15:40:11 --> Model Class Initialized
+INFO - 2017-05-22 15:40:14 --> Config Class Initialized
+INFO - 2017-05-22 15:40:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:14 --> URI Class Initialized
+INFO - 2017-05-22 15:40:14 --> Router Class Initialized
+INFO - 2017-05-22 15:40:14 --> Output Class Initialized
+INFO - 2017-05-22 15:40:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:14 --> Input Class Initialized
+INFO - 2017-05-22 15:40:14 --> Language Class Initialized
+INFO - 2017-05-22 15:40:14 --> Language Class Initialized
+INFO - 2017-05-22 15:40:14 --> Config Class Initialized
+INFO - 2017-05-22 15:40:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:14 --> Template Class Initialized
+INFO - 2017-05-22 15:40:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:14 --> Model Class Initialized
+INFO - 2017-05-22 15:40:14 --> Model Class Initialized
+INFO - 2017-05-22 15:40:17 --> Config Class Initialized
+INFO - 2017-05-22 15:40:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:17 --> URI Class Initialized
+INFO - 2017-05-22 15:40:17 --> Router Class Initialized
+INFO - 2017-05-22 15:40:17 --> Output Class Initialized
+INFO - 2017-05-22 15:40:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:17 --> Input Class Initialized
+INFO - 2017-05-22 15:40:17 --> Language Class Initialized
+INFO - 2017-05-22 15:40:17 --> Language Class Initialized
+INFO - 2017-05-22 15:40:17 --> Config Class Initialized
+INFO - 2017-05-22 15:40:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:17 --> Template Class Initialized
+INFO - 2017-05-22 15:40:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:17 --> Model Class Initialized
+INFO - 2017-05-22 15:40:17 --> Model Class Initialized
+INFO - 2017-05-22 15:40:20 --> Config Class Initialized
+INFO - 2017-05-22 15:40:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:20 --> URI Class Initialized
+INFO - 2017-05-22 15:40:20 --> Router Class Initialized
+INFO - 2017-05-22 15:40:20 --> Output Class Initialized
+INFO - 2017-05-22 15:40:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:20 --> Input Class Initialized
+INFO - 2017-05-22 15:40:20 --> Language Class Initialized
+INFO - 2017-05-22 15:40:20 --> Language Class Initialized
+INFO - 2017-05-22 15:40:20 --> Config Class Initialized
+INFO - 2017-05-22 15:40:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:20 --> Template Class Initialized
+INFO - 2017-05-22 15:40:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:20 --> Model Class Initialized
+INFO - 2017-05-22 15:40:20 --> Model Class Initialized
+INFO - 2017-05-22 15:40:23 --> Config Class Initialized
+INFO - 2017-05-22 15:40:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:23 --> URI Class Initialized
+INFO - 2017-05-22 15:40:23 --> Router Class Initialized
+INFO - 2017-05-22 15:40:23 --> Output Class Initialized
+INFO - 2017-05-22 15:40:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:23 --> Input Class Initialized
+INFO - 2017-05-22 15:40:23 --> Language Class Initialized
+INFO - 2017-05-22 15:40:23 --> Language Class Initialized
+INFO - 2017-05-22 15:40:23 --> Config Class Initialized
+INFO - 2017-05-22 15:40:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:23 --> Template Class Initialized
+INFO - 2017-05-22 15:40:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:23 --> Model Class Initialized
+INFO - 2017-05-22 15:40:23 --> Model Class Initialized
+INFO - 2017-05-22 15:40:26 --> Config Class Initialized
+INFO - 2017-05-22 15:40:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:26 --> URI Class Initialized
+INFO - 2017-05-22 15:40:26 --> Router Class Initialized
+INFO - 2017-05-22 15:40:26 --> Output Class Initialized
+INFO - 2017-05-22 15:40:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:26 --> Input Class Initialized
+INFO - 2017-05-22 15:40:26 --> Language Class Initialized
+INFO - 2017-05-22 15:40:26 --> Language Class Initialized
+INFO - 2017-05-22 15:40:26 --> Config Class Initialized
+INFO - 2017-05-22 15:40:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:26 --> Template Class Initialized
+INFO - 2017-05-22 15:40:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:26 --> Model Class Initialized
+INFO - 2017-05-22 15:40:26 --> Model Class Initialized
+INFO - 2017-05-22 15:40:29 --> Config Class Initialized
+INFO - 2017-05-22 15:40:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:29 --> URI Class Initialized
+INFO - 2017-05-22 15:40:29 --> Router Class Initialized
+INFO - 2017-05-22 15:40:29 --> Output Class Initialized
+INFO - 2017-05-22 15:40:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:29 --> Input Class Initialized
+INFO - 2017-05-22 15:40:29 --> Language Class Initialized
+INFO - 2017-05-22 15:40:29 --> Language Class Initialized
+INFO - 2017-05-22 15:40:29 --> Config Class Initialized
+INFO - 2017-05-22 15:40:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:29 --> Template Class Initialized
+INFO - 2017-05-22 15:40:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:29 --> Model Class Initialized
+INFO - 2017-05-22 15:40:29 --> Model Class Initialized
+INFO - 2017-05-22 15:40:32 --> Config Class Initialized
+INFO - 2017-05-22 15:40:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:32 --> URI Class Initialized
+INFO - 2017-05-22 15:40:32 --> Router Class Initialized
+INFO - 2017-05-22 15:40:32 --> Output Class Initialized
+INFO - 2017-05-22 15:40:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:32 --> Input Class Initialized
+INFO - 2017-05-22 15:40:32 --> Language Class Initialized
+INFO - 2017-05-22 15:40:32 --> Language Class Initialized
+INFO - 2017-05-22 15:40:32 --> Config Class Initialized
+INFO - 2017-05-22 15:40:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:32 --> Template Class Initialized
+INFO - 2017-05-22 15:40:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:32 --> Model Class Initialized
+INFO - 2017-05-22 15:40:32 --> Model Class Initialized
+INFO - 2017-05-22 15:40:35 --> Config Class Initialized
+INFO - 2017-05-22 15:40:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:35 --> URI Class Initialized
+INFO - 2017-05-22 15:40:35 --> Router Class Initialized
+INFO - 2017-05-22 15:40:35 --> Output Class Initialized
+INFO - 2017-05-22 15:40:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:35 --> Input Class Initialized
+INFO - 2017-05-22 15:40:35 --> Language Class Initialized
+INFO - 2017-05-22 15:40:35 --> Language Class Initialized
+INFO - 2017-05-22 15:40:35 --> Config Class Initialized
+INFO - 2017-05-22 15:40:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:35 --> Template Class Initialized
+INFO - 2017-05-22 15:40:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:35 --> Model Class Initialized
+INFO - 2017-05-22 15:40:35 --> Model Class Initialized
+INFO - 2017-05-22 15:40:38 --> Config Class Initialized
+INFO - 2017-05-22 15:40:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:38 --> URI Class Initialized
+INFO - 2017-05-22 15:40:38 --> Router Class Initialized
+INFO - 2017-05-22 15:40:38 --> Output Class Initialized
+INFO - 2017-05-22 15:40:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:38 --> Input Class Initialized
+INFO - 2017-05-22 15:40:38 --> Language Class Initialized
+INFO - 2017-05-22 15:40:38 --> Language Class Initialized
+INFO - 2017-05-22 15:40:38 --> Config Class Initialized
+INFO - 2017-05-22 15:40:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:38 --> Template Class Initialized
+INFO - 2017-05-22 15:40:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:38 --> Model Class Initialized
+INFO - 2017-05-22 15:40:38 --> Model Class Initialized
+INFO - 2017-05-22 15:40:41 --> Config Class Initialized
+INFO - 2017-05-22 15:40:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:41 --> URI Class Initialized
+INFO - 2017-05-22 15:40:41 --> Router Class Initialized
+INFO - 2017-05-22 15:40:41 --> Output Class Initialized
+INFO - 2017-05-22 15:40:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:41 --> Input Class Initialized
+INFO - 2017-05-22 15:40:41 --> Language Class Initialized
+INFO - 2017-05-22 15:40:41 --> Language Class Initialized
+INFO - 2017-05-22 15:40:41 --> Config Class Initialized
+INFO - 2017-05-22 15:40:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:41 --> Template Class Initialized
+INFO - 2017-05-22 15:40:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:41 --> Model Class Initialized
+INFO - 2017-05-22 15:40:41 --> Model Class Initialized
+INFO - 2017-05-22 15:40:44 --> Config Class Initialized
+INFO - 2017-05-22 15:40:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:44 --> URI Class Initialized
+INFO - 2017-05-22 15:40:44 --> Router Class Initialized
+INFO - 2017-05-22 15:40:44 --> Output Class Initialized
+INFO - 2017-05-22 15:40:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:44 --> Input Class Initialized
+INFO - 2017-05-22 15:40:44 --> Language Class Initialized
+INFO - 2017-05-22 15:40:44 --> Language Class Initialized
+INFO - 2017-05-22 15:40:44 --> Config Class Initialized
+INFO - 2017-05-22 15:40:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:44 --> Template Class Initialized
+INFO - 2017-05-22 15:40:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:44 --> Model Class Initialized
+INFO - 2017-05-22 15:40:44 --> Model Class Initialized
+INFO - 2017-05-22 15:40:47 --> Config Class Initialized
+INFO - 2017-05-22 15:40:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:47 --> URI Class Initialized
+INFO - 2017-05-22 15:40:47 --> Router Class Initialized
+INFO - 2017-05-22 15:40:47 --> Output Class Initialized
+INFO - 2017-05-22 15:40:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:47 --> Input Class Initialized
+INFO - 2017-05-22 15:40:47 --> Language Class Initialized
+INFO - 2017-05-22 15:40:47 --> Language Class Initialized
+INFO - 2017-05-22 15:40:47 --> Config Class Initialized
+INFO - 2017-05-22 15:40:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:47 --> Template Class Initialized
+INFO - 2017-05-22 15:40:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:47 --> Model Class Initialized
+INFO - 2017-05-22 15:40:47 --> Model Class Initialized
+INFO - 2017-05-22 15:40:50 --> Config Class Initialized
+INFO - 2017-05-22 15:40:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:50 --> URI Class Initialized
+INFO - 2017-05-22 15:40:50 --> Router Class Initialized
+INFO - 2017-05-22 15:40:50 --> Output Class Initialized
+INFO - 2017-05-22 15:40:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:50 --> Input Class Initialized
+INFO - 2017-05-22 15:40:50 --> Language Class Initialized
+INFO - 2017-05-22 15:40:50 --> Language Class Initialized
+INFO - 2017-05-22 15:40:50 --> Config Class Initialized
+INFO - 2017-05-22 15:40:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:50 --> Template Class Initialized
+INFO - 2017-05-22 15:40:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:50 --> Model Class Initialized
+INFO - 2017-05-22 15:40:50 --> Model Class Initialized
+INFO - 2017-05-22 15:40:53 --> Config Class Initialized
+INFO - 2017-05-22 15:40:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:53 --> URI Class Initialized
+INFO - 2017-05-22 15:40:53 --> Router Class Initialized
+INFO - 2017-05-22 15:40:53 --> Output Class Initialized
+INFO - 2017-05-22 15:40:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:53 --> Input Class Initialized
+INFO - 2017-05-22 15:40:53 --> Language Class Initialized
+INFO - 2017-05-22 15:40:53 --> Language Class Initialized
+INFO - 2017-05-22 15:40:53 --> Config Class Initialized
+INFO - 2017-05-22 15:40:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:53 --> Template Class Initialized
+INFO - 2017-05-22 15:40:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:53 --> Model Class Initialized
+INFO - 2017-05-22 15:40:53 --> Model Class Initialized
+INFO - 2017-05-22 15:40:56 --> Config Class Initialized
+INFO - 2017-05-22 15:40:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:56 --> URI Class Initialized
+INFO - 2017-05-22 15:40:56 --> Router Class Initialized
+INFO - 2017-05-22 15:40:56 --> Output Class Initialized
+INFO - 2017-05-22 15:40:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:56 --> Input Class Initialized
+INFO - 2017-05-22 15:40:56 --> Language Class Initialized
+INFO - 2017-05-22 15:40:56 --> Language Class Initialized
+INFO - 2017-05-22 15:40:56 --> Config Class Initialized
+INFO - 2017-05-22 15:40:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:56 --> Template Class Initialized
+INFO - 2017-05-22 15:40:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:56 --> Model Class Initialized
+INFO - 2017-05-22 15:40:56 --> Model Class Initialized
+INFO - 2017-05-22 15:40:59 --> Config Class Initialized
+INFO - 2017-05-22 15:40:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:40:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:40:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:40:59 --> URI Class Initialized
+INFO - 2017-05-22 15:40:59 --> Router Class Initialized
+INFO - 2017-05-22 15:40:59 --> Output Class Initialized
+INFO - 2017-05-22 15:40:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:40:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:40:59 --> Input Class Initialized
+INFO - 2017-05-22 15:40:59 --> Language Class Initialized
+INFO - 2017-05-22 15:40:59 --> Language Class Initialized
+INFO - 2017-05-22 15:40:59 --> Config Class Initialized
+INFO - 2017-05-22 15:40:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:40:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:40:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:40:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:40:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:40:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:40:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:40:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:40:59 --> Template Class Initialized
+INFO - 2017-05-22 15:40:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:40:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:40:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:40:59 --> Model Class Initialized
+INFO - 2017-05-22 15:40:59 --> Model Class Initialized
+INFO - 2017-05-22 15:41:02 --> Config Class Initialized
+INFO - 2017-05-22 15:41:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:02 --> URI Class Initialized
+INFO - 2017-05-22 15:41:02 --> Router Class Initialized
+INFO - 2017-05-22 15:41:02 --> Output Class Initialized
+INFO - 2017-05-22 15:41:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:02 --> Input Class Initialized
+INFO - 2017-05-22 15:41:02 --> Language Class Initialized
+INFO - 2017-05-22 15:41:02 --> Language Class Initialized
+INFO - 2017-05-22 15:41:02 --> Config Class Initialized
+INFO - 2017-05-22 15:41:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:02 --> Template Class Initialized
+INFO - 2017-05-22 15:41:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:02 --> Model Class Initialized
+INFO - 2017-05-22 15:41:02 --> Model Class Initialized
+INFO - 2017-05-22 15:41:05 --> Config Class Initialized
+INFO - 2017-05-22 15:41:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:05 --> URI Class Initialized
+INFO - 2017-05-22 15:41:05 --> Router Class Initialized
+INFO - 2017-05-22 15:41:05 --> Output Class Initialized
+INFO - 2017-05-22 15:41:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:05 --> Input Class Initialized
+INFO - 2017-05-22 15:41:05 --> Language Class Initialized
+INFO - 2017-05-22 15:41:05 --> Language Class Initialized
+INFO - 2017-05-22 15:41:05 --> Config Class Initialized
+INFO - 2017-05-22 15:41:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:05 --> Template Class Initialized
+INFO - 2017-05-22 15:41:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:05 --> Model Class Initialized
+INFO - 2017-05-22 15:41:05 --> Model Class Initialized
+INFO - 2017-05-22 15:41:08 --> Config Class Initialized
+INFO - 2017-05-22 15:41:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:08 --> URI Class Initialized
+INFO - 2017-05-22 15:41:08 --> Router Class Initialized
+INFO - 2017-05-22 15:41:08 --> Output Class Initialized
+INFO - 2017-05-22 15:41:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:08 --> Input Class Initialized
+INFO - 2017-05-22 15:41:08 --> Language Class Initialized
+INFO - 2017-05-22 15:41:08 --> Language Class Initialized
+INFO - 2017-05-22 15:41:08 --> Config Class Initialized
+INFO - 2017-05-22 15:41:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:08 --> Template Class Initialized
+INFO - 2017-05-22 15:41:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:08 --> Model Class Initialized
+INFO - 2017-05-22 15:41:08 --> Model Class Initialized
+INFO - 2017-05-22 15:41:11 --> Config Class Initialized
+INFO - 2017-05-22 15:41:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:11 --> URI Class Initialized
+INFO - 2017-05-22 15:41:11 --> Router Class Initialized
+INFO - 2017-05-22 15:41:11 --> Output Class Initialized
+INFO - 2017-05-22 15:41:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:11 --> Input Class Initialized
+INFO - 2017-05-22 15:41:11 --> Language Class Initialized
+INFO - 2017-05-22 15:41:11 --> Language Class Initialized
+INFO - 2017-05-22 15:41:11 --> Config Class Initialized
+INFO - 2017-05-22 15:41:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:11 --> Template Class Initialized
+INFO - 2017-05-22 15:41:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:11 --> Model Class Initialized
+INFO - 2017-05-22 15:41:11 --> Model Class Initialized
+INFO - 2017-05-22 15:41:14 --> Config Class Initialized
+INFO - 2017-05-22 15:41:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:14 --> URI Class Initialized
+INFO - 2017-05-22 15:41:14 --> Router Class Initialized
+INFO - 2017-05-22 15:41:14 --> Output Class Initialized
+INFO - 2017-05-22 15:41:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:14 --> Input Class Initialized
+INFO - 2017-05-22 15:41:14 --> Language Class Initialized
+INFO - 2017-05-22 15:41:14 --> Language Class Initialized
+INFO - 2017-05-22 15:41:14 --> Config Class Initialized
+INFO - 2017-05-22 15:41:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:14 --> Template Class Initialized
+INFO - 2017-05-22 15:41:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:14 --> Model Class Initialized
+INFO - 2017-05-22 15:41:14 --> Model Class Initialized
+INFO - 2017-05-22 15:41:17 --> Config Class Initialized
+INFO - 2017-05-22 15:41:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:17 --> URI Class Initialized
+INFO - 2017-05-22 15:41:17 --> Router Class Initialized
+INFO - 2017-05-22 15:41:17 --> Output Class Initialized
+INFO - 2017-05-22 15:41:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:17 --> Input Class Initialized
+INFO - 2017-05-22 15:41:17 --> Language Class Initialized
+INFO - 2017-05-22 15:41:17 --> Language Class Initialized
+INFO - 2017-05-22 15:41:17 --> Config Class Initialized
+INFO - 2017-05-22 15:41:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:17 --> Template Class Initialized
+INFO - 2017-05-22 15:41:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:17 --> Model Class Initialized
+INFO - 2017-05-22 15:41:17 --> Model Class Initialized
+INFO - 2017-05-22 15:41:20 --> Config Class Initialized
+INFO - 2017-05-22 15:41:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:20 --> URI Class Initialized
+INFO - 2017-05-22 15:41:20 --> Router Class Initialized
+INFO - 2017-05-22 15:41:20 --> Output Class Initialized
+INFO - 2017-05-22 15:41:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:20 --> Input Class Initialized
+INFO - 2017-05-22 15:41:20 --> Language Class Initialized
+INFO - 2017-05-22 15:41:20 --> Language Class Initialized
+INFO - 2017-05-22 15:41:20 --> Config Class Initialized
+INFO - 2017-05-22 15:41:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:20 --> Template Class Initialized
+INFO - 2017-05-22 15:41:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:20 --> Model Class Initialized
+INFO - 2017-05-22 15:41:20 --> Model Class Initialized
+INFO - 2017-05-22 15:41:23 --> Config Class Initialized
+INFO - 2017-05-22 15:41:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:23 --> URI Class Initialized
+INFO - 2017-05-22 15:41:23 --> Router Class Initialized
+INFO - 2017-05-22 15:41:23 --> Output Class Initialized
+INFO - 2017-05-22 15:41:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:23 --> Input Class Initialized
+INFO - 2017-05-22 15:41:23 --> Language Class Initialized
+INFO - 2017-05-22 15:41:23 --> Language Class Initialized
+INFO - 2017-05-22 15:41:23 --> Config Class Initialized
+INFO - 2017-05-22 15:41:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:23 --> Template Class Initialized
+INFO - 2017-05-22 15:41:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:23 --> Model Class Initialized
+INFO - 2017-05-22 15:41:23 --> Model Class Initialized
+INFO - 2017-05-22 15:41:26 --> Config Class Initialized
+INFO - 2017-05-22 15:41:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:26 --> URI Class Initialized
+INFO - 2017-05-22 15:41:26 --> Router Class Initialized
+INFO - 2017-05-22 15:41:26 --> Output Class Initialized
+INFO - 2017-05-22 15:41:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:26 --> Input Class Initialized
+INFO - 2017-05-22 15:41:26 --> Language Class Initialized
+INFO - 2017-05-22 15:41:26 --> Language Class Initialized
+INFO - 2017-05-22 15:41:26 --> Config Class Initialized
+INFO - 2017-05-22 15:41:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:26 --> Template Class Initialized
+INFO - 2017-05-22 15:41:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:26 --> Model Class Initialized
+INFO - 2017-05-22 15:41:26 --> Model Class Initialized
+INFO - 2017-05-22 15:41:29 --> Config Class Initialized
+INFO - 2017-05-22 15:41:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:29 --> URI Class Initialized
+INFO - 2017-05-22 15:41:29 --> Router Class Initialized
+INFO - 2017-05-22 15:41:29 --> Output Class Initialized
+INFO - 2017-05-22 15:41:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:29 --> Input Class Initialized
+INFO - 2017-05-22 15:41:29 --> Language Class Initialized
+INFO - 2017-05-22 15:41:29 --> Language Class Initialized
+INFO - 2017-05-22 15:41:29 --> Config Class Initialized
+INFO - 2017-05-22 15:41:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:29 --> Template Class Initialized
+INFO - 2017-05-22 15:41:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:29 --> Model Class Initialized
+INFO - 2017-05-22 15:41:29 --> Model Class Initialized
+INFO - 2017-05-22 15:41:32 --> Config Class Initialized
+INFO - 2017-05-22 15:41:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:32 --> URI Class Initialized
+INFO - 2017-05-22 15:41:32 --> Router Class Initialized
+INFO - 2017-05-22 15:41:32 --> Output Class Initialized
+INFO - 2017-05-22 15:41:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:32 --> Input Class Initialized
+INFO - 2017-05-22 15:41:32 --> Language Class Initialized
+INFO - 2017-05-22 15:41:32 --> Language Class Initialized
+INFO - 2017-05-22 15:41:32 --> Config Class Initialized
+INFO - 2017-05-22 15:41:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:32 --> Template Class Initialized
+INFO - 2017-05-22 15:41:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:32 --> Model Class Initialized
+INFO - 2017-05-22 15:41:32 --> Model Class Initialized
+INFO - 2017-05-22 15:41:35 --> Config Class Initialized
+INFO - 2017-05-22 15:41:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:35 --> URI Class Initialized
+INFO - 2017-05-22 15:41:35 --> Router Class Initialized
+INFO - 2017-05-22 15:41:35 --> Output Class Initialized
+INFO - 2017-05-22 15:41:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:35 --> Input Class Initialized
+INFO - 2017-05-22 15:41:35 --> Language Class Initialized
+INFO - 2017-05-22 15:41:35 --> Language Class Initialized
+INFO - 2017-05-22 15:41:35 --> Config Class Initialized
+INFO - 2017-05-22 15:41:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:35 --> Template Class Initialized
+INFO - 2017-05-22 15:41:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:35 --> Model Class Initialized
+INFO - 2017-05-22 15:41:35 --> Model Class Initialized
+INFO - 2017-05-22 15:41:38 --> Config Class Initialized
+INFO - 2017-05-22 15:41:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:38 --> URI Class Initialized
+INFO - 2017-05-22 15:41:38 --> Router Class Initialized
+INFO - 2017-05-22 15:41:38 --> Output Class Initialized
+INFO - 2017-05-22 15:41:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:38 --> Input Class Initialized
+INFO - 2017-05-22 15:41:38 --> Language Class Initialized
+INFO - 2017-05-22 15:41:38 --> Language Class Initialized
+INFO - 2017-05-22 15:41:38 --> Config Class Initialized
+INFO - 2017-05-22 15:41:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:38 --> Template Class Initialized
+INFO - 2017-05-22 15:41:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:38 --> Model Class Initialized
+INFO - 2017-05-22 15:41:38 --> Model Class Initialized
+INFO - 2017-05-22 15:41:41 --> Config Class Initialized
+INFO - 2017-05-22 15:41:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:41 --> URI Class Initialized
+INFO - 2017-05-22 15:41:41 --> Router Class Initialized
+INFO - 2017-05-22 15:41:41 --> Output Class Initialized
+INFO - 2017-05-22 15:41:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:41 --> Input Class Initialized
+INFO - 2017-05-22 15:41:41 --> Language Class Initialized
+INFO - 2017-05-22 15:41:41 --> Language Class Initialized
+INFO - 2017-05-22 15:41:41 --> Config Class Initialized
+INFO - 2017-05-22 15:41:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:41 --> Template Class Initialized
+INFO - 2017-05-22 15:41:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:41 --> Model Class Initialized
+INFO - 2017-05-22 15:41:41 --> Model Class Initialized
+INFO - 2017-05-22 15:41:44 --> Config Class Initialized
+INFO - 2017-05-22 15:41:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:44 --> URI Class Initialized
+INFO - 2017-05-22 15:41:44 --> Router Class Initialized
+INFO - 2017-05-22 15:41:44 --> Output Class Initialized
+INFO - 2017-05-22 15:41:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:44 --> Input Class Initialized
+INFO - 2017-05-22 15:41:44 --> Language Class Initialized
+INFO - 2017-05-22 15:41:44 --> Language Class Initialized
+INFO - 2017-05-22 15:41:44 --> Config Class Initialized
+INFO - 2017-05-22 15:41:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:44 --> Template Class Initialized
+INFO - 2017-05-22 15:41:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:44 --> Model Class Initialized
+INFO - 2017-05-22 15:41:44 --> Model Class Initialized
+INFO - 2017-05-22 15:41:47 --> Config Class Initialized
+INFO - 2017-05-22 15:41:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:47 --> URI Class Initialized
+INFO - 2017-05-22 15:41:47 --> Router Class Initialized
+INFO - 2017-05-22 15:41:47 --> Output Class Initialized
+INFO - 2017-05-22 15:41:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:47 --> Input Class Initialized
+INFO - 2017-05-22 15:41:47 --> Language Class Initialized
+INFO - 2017-05-22 15:41:47 --> Language Class Initialized
+INFO - 2017-05-22 15:41:47 --> Config Class Initialized
+INFO - 2017-05-22 15:41:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:47 --> Template Class Initialized
+INFO - 2017-05-22 15:41:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:47 --> Model Class Initialized
+INFO - 2017-05-22 15:41:47 --> Model Class Initialized
+INFO - 2017-05-22 15:41:50 --> Config Class Initialized
+INFO - 2017-05-22 15:41:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:50 --> URI Class Initialized
+INFO - 2017-05-22 15:41:50 --> Router Class Initialized
+INFO - 2017-05-22 15:41:50 --> Output Class Initialized
+INFO - 2017-05-22 15:41:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:50 --> Input Class Initialized
+INFO - 2017-05-22 15:41:50 --> Language Class Initialized
+INFO - 2017-05-22 15:41:50 --> Language Class Initialized
+INFO - 2017-05-22 15:41:50 --> Config Class Initialized
+INFO - 2017-05-22 15:41:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:50 --> Template Class Initialized
+INFO - 2017-05-22 15:41:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:50 --> Model Class Initialized
+INFO - 2017-05-22 15:41:50 --> Model Class Initialized
+INFO - 2017-05-22 15:41:53 --> Config Class Initialized
+INFO - 2017-05-22 15:41:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:53 --> URI Class Initialized
+INFO - 2017-05-22 15:41:53 --> Router Class Initialized
+INFO - 2017-05-22 15:41:53 --> Output Class Initialized
+INFO - 2017-05-22 15:41:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:53 --> Input Class Initialized
+INFO - 2017-05-22 15:41:53 --> Language Class Initialized
+INFO - 2017-05-22 15:41:53 --> Language Class Initialized
+INFO - 2017-05-22 15:41:53 --> Config Class Initialized
+INFO - 2017-05-22 15:41:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:53 --> Template Class Initialized
+INFO - 2017-05-22 15:41:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:53 --> Model Class Initialized
+INFO - 2017-05-22 15:41:53 --> Model Class Initialized
+INFO - 2017-05-22 15:41:56 --> Config Class Initialized
+INFO - 2017-05-22 15:41:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:56 --> URI Class Initialized
+INFO - 2017-05-22 15:41:56 --> Router Class Initialized
+INFO - 2017-05-22 15:41:56 --> Output Class Initialized
+INFO - 2017-05-22 15:41:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:56 --> Input Class Initialized
+INFO - 2017-05-22 15:41:56 --> Language Class Initialized
+INFO - 2017-05-22 15:41:56 --> Language Class Initialized
+INFO - 2017-05-22 15:41:56 --> Config Class Initialized
+INFO - 2017-05-22 15:41:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:56 --> Template Class Initialized
+INFO - 2017-05-22 15:41:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:56 --> Model Class Initialized
+INFO - 2017-05-22 15:41:56 --> Model Class Initialized
+INFO - 2017-05-22 15:41:59 --> Config Class Initialized
+INFO - 2017-05-22 15:41:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:41:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:41:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:41:59 --> URI Class Initialized
+INFO - 2017-05-22 15:41:59 --> Router Class Initialized
+INFO - 2017-05-22 15:41:59 --> Output Class Initialized
+INFO - 2017-05-22 15:41:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:41:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:41:59 --> Input Class Initialized
+INFO - 2017-05-22 15:41:59 --> Language Class Initialized
+INFO - 2017-05-22 15:41:59 --> Language Class Initialized
+INFO - 2017-05-22 15:41:59 --> Config Class Initialized
+INFO - 2017-05-22 15:41:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:41:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:41:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:41:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:41:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:41:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:41:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:41:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:41:59 --> Template Class Initialized
+INFO - 2017-05-22 15:41:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:41:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:41:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:41:59 --> Model Class Initialized
+INFO - 2017-05-22 15:41:59 --> Model Class Initialized
+INFO - 2017-05-22 15:42:02 --> Config Class Initialized
+INFO - 2017-05-22 15:42:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:02 --> URI Class Initialized
+INFO - 2017-05-22 15:42:02 --> Router Class Initialized
+INFO - 2017-05-22 15:42:02 --> Output Class Initialized
+INFO - 2017-05-22 15:42:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:02 --> Input Class Initialized
+INFO - 2017-05-22 15:42:02 --> Language Class Initialized
+INFO - 2017-05-22 15:42:02 --> Language Class Initialized
+INFO - 2017-05-22 15:42:02 --> Config Class Initialized
+INFO - 2017-05-22 15:42:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:02 --> Template Class Initialized
+INFO - 2017-05-22 15:42:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:02 --> Model Class Initialized
+INFO - 2017-05-22 15:42:02 --> Model Class Initialized
+INFO - 2017-05-22 15:42:05 --> Config Class Initialized
+INFO - 2017-05-22 15:42:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:05 --> URI Class Initialized
+INFO - 2017-05-22 15:42:05 --> Router Class Initialized
+INFO - 2017-05-22 15:42:05 --> Output Class Initialized
+INFO - 2017-05-22 15:42:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:05 --> Input Class Initialized
+INFO - 2017-05-22 15:42:05 --> Language Class Initialized
+INFO - 2017-05-22 15:42:05 --> Language Class Initialized
+INFO - 2017-05-22 15:42:05 --> Config Class Initialized
+INFO - 2017-05-22 15:42:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> Template Class Initialized
+INFO - 2017-05-22 15:42:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:05 --> Model Class Initialized
+INFO - 2017-05-22 15:42:05 --> Model Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:42:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:42:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:42:05 --> Final output sent to browser
+DEBUG - 2017-05-22 15:42:05 --> Total execution time: 0.0962
+INFO - 2017-05-22 15:42:05 --> Config Class Initialized
+INFO - 2017-05-22 15:42:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:05 --> URI Class Initialized
+INFO - 2017-05-22 15:42:05 --> Router Class Initialized
+INFO - 2017-05-22 15:42:05 --> Output Class Initialized
+INFO - 2017-05-22 15:42:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:05 --> Input Class Initialized
+INFO - 2017-05-22 15:42:05 --> Language Class Initialized
+INFO - 2017-05-22 15:42:05 --> Language Class Initialized
+INFO - 2017-05-22 15:42:05 --> Config Class Initialized
+INFO - 2017-05-22 15:42:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:05 --> Template Class Initialized
+INFO - 2017-05-22 15:42:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:05 --> Model Class Initialized
+INFO - 2017-05-22 15:42:05 --> Model Class Initialized
+INFO - 2017-05-22 15:42:08 --> Config Class Initialized
+INFO - 2017-05-22 15:42:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:08 --> URI Class Initialized
+INFO - 2017-05-22 15:42:08 --> Router Class Initialized
+INFO - 2017-05-22 15:42:08 --> Output Class Initialized
+INFO - 2017-05-22 15:42:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:08 --> Input Class Initialized
+INFO - 2017-05-22 15:42:08 --> Language Class Initialized
+INFO - 2017-05-22 15:42:08 --> Language Class Initialized
+INFO - 2017-05-22 15:42:08 --> Config Class Initialized
+INFO - 2017-05-22 15:42:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:08 --> Template Class Initialized
+INFO - 2017-05-22 15:42:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:08 --> Model Class Initialized
+INFO - 2017-05-22 15:42:08 --> Model Class Initialized
+INFO - 2017-05-22 15:42:11 --> Config Class Initialized
+INFO - 2017-05-22 15:42:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:11 --> URI Class Initialized
+INFO - 2017-05-22 15:42:11 --> Router Class Initialized
+INFO - 2017-05-22 15:42:11 --> Output Class Initialized
+INFO - 2017-05-22 15:42:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:11 --> Input Class Initialized
+INFO - 2017-05-22 15:42:11 --> Language Class Initialized
+INFO - 2017-05-22 15:42:11 --> Language Class Initialized
+INFO - 2017-05-22 15:42:11 --> Config Class Initialized
+INFO - 2017-05-22 15:42:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:11 --> Template Class Initialized
+INFO - 2017-05-22 15:42:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:11 --> Model Class Initialized
+INFO - 2017-05-22 15:42:11 --> Model Class Initialized
+INFO - 2017-05-22 15:42:14 --> Config Class Initialized
+INFO - 2017-05-22 15:42:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:14 --> URI Class Initialized
+INFO - 2017-05-22 15:42:14 --> Router Class Initialized
+INFO - 2017-05-22 15:42:14 --> Output Class Initialized
+INFO - 2017-05-22 15:42:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:14 --> Input Class Initialized
+INFO - 2017-05-22 15:42:14 --> Language Class Initialized
+INFO - 2017-05-22 15:42:14 --> Language Class Initialized
+INFO - 2017-05-22 15:42:14 --> Config Class Initialized
+INFO - 2017-05-22 15:42:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:14 --> Template Class Initialized
+INFO - 2017-05-22 15:42:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:14 --> Model Class Initialized
+INFO - 2017-05-22 15:42:14 --> Model Class Initialized
+INFO - 2017-05-22 15:42:17 --> Config Class Initialized
+INFO - 2017-05-22 15:42:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:17 --> URI Class Initialized
+INFO - 2017-05-22 15:42:17 --> Router Class Initialized
+INFO - 2017-05-22 15:42:17 --> Output Class Initialized
+INFO - 2017-05-22 15:42:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:17 --> Input Class Initialized
+INFO - 2017-05-22 15:42:17 --> Language Class Initialized
+INFO - 2017-05-22 15:42:17 --> Language Class Initialized
+INFO - 2017-05-22 15:42:17 --> Config Class Initialized
+INFO - 2017-05-22 15:42:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> Template Class Initialized
+INFO - 2017-05-22 15:42:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:17 --> Controller Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> Login MX_Controller Initialized
+INFO - 2017-05-22 15:42:17 --> Helper loaded: cookie_helper
+INFO - 2017-05-22 15:42:17 --> Model Class Initialized
+INFO - 2017-05-22 15:42:17 --> Model Class Initialized
+INFO - 2017-05-22 15:42:17 --> Config Class Initialized
+INFO - 2017-05-22 15:42:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:17 --> URI Class Initialized
+INFO - 2017-05-22 15:42:17 --> Router Class Initialized
+INFO - 2017-05-22 15:42:17 --> Output Class Initialized
+INFO - 2017-05-22 15:42:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:17 --> Input Class Initialized
+INFO - 2017-05-22 15:42:17 --> Language Class Initialized
+INFO - 2017-05-22 15:42:17 --> Language Class Initialized
+INFO - 2017-05-22 15:42:17 --> Config Class Initialized
+INFO - 2017-05-22 15:42:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:17 --> Template Class Initialized
+INFO - 2017-05-22 15:42:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:17 --> Model Class Initialized
+INFO - 2017-05-22 15:42:17 --> Model Class Initialized
+INFO - 2017-05-22 15:42:20 --> Config Class Initialized
+INFO - 2017-05-22 15:42:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:20 --> URI Class Initialized
+INFO - 2017-05-22 15:42:20 --> Router Class Initialized
+INFO - 2017-05-22 15:42:20 --> Output Class Initialized
+INFO - 2017-05-22 15:42:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:20 --> Input Class Initialized
+INFO - 2017-05-22 15:42:20 --> Language Class Initialized
+INFO - 2017-05-22 15:42:20 --> Language Class Initialized
+INFO - 2017-05-22 15:42:20 --> Config Class Initialized
+INFO - 2017-05-22 15:42:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:20 --> Template Class Initialized
+INFO - 2017-05-22 15:42:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:20 --> Model Class Initialized
+INFO - 2017-05-22 15:42:20 --> Model Class Initialized
+INFO - 2017-05-22 15:42:23 --> Config Class Initialized
+INFO - 2017-05-22 15:42:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:23 --> URI Class Initialized
+INFO - 2017-05-22 15:42:23 --> Router Class Initialized
+INFO - 2017-05-22 15:42:23 --> Output Class Initialized
+INFO - 2017-05-22 15:42:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:23 --> Input Class Initialized
+INFO - 2017-05-22 15:42:23 --> Language Class Initialized
+INFO - 2017-05-22 15:42:23 --> Language Class Initialized
+INFO - 2017-05-22 15:42:23 --> Config Class Initialized
+INFO - 2017-05-22 15:42:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:23 --> Template Class Initialized
+INFO - 2017-05-22 15:42:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:23 --> Model Class Initialized
+INFO - 2017-05-22 15:42:23 --> Model Class Initialized
+INFO - 2017-05-22 15:42:26 --> Config Class Initialized
+INFO - 2017-05-22 15:42:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:26 --> URI Class Initialized
+INFO - 2017-05-22 15:42:26 --> Router Class Initialized
+INFO - 2017-05-22 15:42:26 --> Output Class Initialized
+INFO - 2017-05-22 15:42:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:26 --> Input Class Initialized
+INFO - 2017-05-22 15:42:26 --> Language Class Initialized
+INFO - 2017-05-22 15:42:26 --> Language Class Initialized
+INFO - 2017-05-22 15:42:26 --> Config Class Initialized
+INFO - 2017-05-22 15:42:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:26 --> Template Class Initialized
+INFO - 2017-05-22 15:42:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:26 --> Model Class Initialized
+INFO - 2017-05-22 15:42:26 --> Model Class Initialized
+INFO - 2017-05-22 15:42:29 --> Config Class Initialized
+INFO - 2017-05-22 15:42:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:29 --> URI Class Initialized
+INFO - 2017-05-22 15:42:29 --> Router Class Initialized
+INFO - 2017-05-22 15:42:29 --> Output Class Initialized
+INFO - 2017-05-22 15:42:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:29 --> Input Class Initialized
+INFO - 2017-05-22 15:42:29 --> Language Class Initialized
+INFO - 2017-05-22 15:42:29 --> Language Class Initialized
+INFO - 2017-05-22 15:42:29 --> Config Class Initialized
+INFO - 2017-05-22 15:42:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:29 --> Template Class Initialized
+INFO - 2017-05-22 15:42:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:29 --> Model Class Initialized
+INFO - 2017-05-22 15:42:29 --> Model Class Initialized
+INFO - 2017-05-22 15:42:32 --> Config Class Initialized
+INFO - 2017-05-22 15:42:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:32 --> URI Class Initialized
+INFO - 2017-05-22 15:42:32 --> Router Class Initialized
+INFO - 2017-05-22 15:42:32 --> Output Class Initialized
+INFO - 2017-05-22 15:42:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:32 --> Input Class Initialized
+INFO - 2017-05-22 15:42:32 --> Language Class Initialized
+INFO - 2017-05-22 15:42:32 --> Language Class Initialized
+INFO - 2017-05-22 15:42:32 --> Config Class Initialized
+INFO - 2017-05-22 15:42:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:32 --> Template Class Initialized
+INFO - 2017-05-22 15:42:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:32 --> Model Class Initialized
+INFO - 2017-05-22 15:42:32 --> Model Class Initialized
+INFO - 2017-05-22 15:42:35 --> Config Class Initialized
+INFO - 2017-05-22 15:42:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:35 --> URI Class Initialized
+INFO - 2017-05-22 15:42:35 --> Router Class Initialized
+INFO - 2017-05-22 15:42:35 --> Output Class Initialized
+INFO - 2017-05-22 15:42:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:35 --> Input Class Initialized
+INFO - 2017-05-22 15:42:35 --> Language Class Initialized
+INFO - 2017-05-22 15:42:35 --> Language Class Initialized
+INFO - 2017-05-22 15:42:35 --> Config Class Initialized
+INFO - 2017-05-22 15:42:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:35 --> Template Class Initialized
+INFO - 2017-05-22 15:42:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:35 --> Model Class Initialized
+INFO - 2017-05-22 15:42:35 --> Model Class Initialized
+INFO - 2017-05-22 15:42:38 --> Config Class Initialized
+INFO - 2017-05-22 15:42:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:38 --> URI Class Initialized
+INFO - 2017-05-22 15:42:38 --> Router Class Initialized
+INFO - 2017-05-22 15:42:38 --> Output Class Initialized
+INFO - 2017-05-22 15:42:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:38 --> Input Class Initialized
+INFO - 2017-05-22 15:42:38 --> Language Class Initialized
+INFO - 2017-05-22 15:42:38 --> Language Class Initialized
+INFO - 2017-05-22 15:42:38 --> Config Class Initialized
+INFO - 2017-05-22 15:42:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:38 --> Template Class Initialized
+INFO - 2017-05-22 15:42:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:38 --> Model Class Initialized
+INFO - 2017-05-22 15:42:38 --> Model Class Initialized
+INFO - 2017-05-22 15:42:41 --> Config Class Initialized
+INFO - 2017-05-22 15:42:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:41 --> URI Class Initialized
+INFO - 2017-05-22 15:42:41 --> Router Class Initialized
+INFO - 2017-05-22 15:42:41 --> Output Class Initialized
+INFO - 2017-05-22 15:42:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:41 --> Input Class Initialized
+INFO - 2017-05-22 15:42:41 --> Language Class Initialized
+INFO - 2017-05-22 15:42:41 --> Language Class Initialized
+INFO - 2017-05-22 15:42:41 --> Config Class Initialized
+INFO - 2017-05-22 15:42:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:41 --> Template Class Initialized
+INFO - 2017-05-22 15:42:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:41 --> Model Class Initialized
+INFO - 2017-05-22 15:42:41 --> Model Class Initialized
+INFO - 2017-05-22 15:42:44 --> Config Class Initialized
+INFO - 2017-05-22 15:42:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:44 --> URI Class Initialized
+INFO - 2017-05-22 15:42:44 --> Router Class Initialized
+INFO - 2017-05-22 15:42:44 --> Output Class Initialized
+INFO - 2017-05-22 15:42:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:44 --> Input Class Initialized
+INFO - 2017-05-22 15:42:44 --> Language Class Initialized
+INFO - 2017-05-22 15:42:44 --> Language Class Initialized
+INFO - 2017-05-22 15:42:44 --> Config Class Initialized
+INFO - 2017-05-22 15:42:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:44 --> Template Class Initialized
+INFO - 2017-05-22 15:42:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:44 --> Model Class Initialized
+INFO - 2017-05-22 15:42:44 --> Model Class Initialized
+INFO - 2017-05-22 15:42:47 --> Config Class Initialized
+INFO - 2017-05-22 15:42:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:47 --> URI Class Initialized
+INFO - 2017-05-22 15:42:47 --> Router Class Initialized
+INFO - 2017-05-22 15:42:47 --> Output Class Initialized
+INFO - 2017-05-22 15:42:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:47 --> Input Class Initialized
+INFO - 2017-05-22 15:42:47 --> Language Class Initialized
+INFO - 2017-05-22 15:42:47 --> Language Class Initialized
+INFO - 2017-05-22 15:42:47 --> Config Class Initialized
+INFO - 2017-05-22 15:42:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:47 --> Template Class Initialized
+INFO - 2017-05-22 15:42:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:47 --> Model Class Initialized
+INFO - 2017-05-22 15:42:47 --> Model Class Initialized
+INFO - 2017-05-22 15:42:50 --> Config Class Initialized
+INFO - 2017-05-22 15:42:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:50 --> URI Class Initialized
+INFO - 2017-05-22 15:42:50 --> Router Class Initialized
+INFO - 2017-05-22 15:42:50 --> Output Class Initialized
+INFO - 2017-05-22 15:42:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:50 --> Input Class Initialized
+INFO - 2017-05-22 15:42:50 --> Language Class Initialized
+INFO - 2017-05-22 15:42:50 --> Language Class Initialized
+INFO - 2017-05-22 15:42:50 --> Config Class Initialized
+INFO - 2017-05-22 15:42:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:50 --> Template Class Initialized
+INFO - 2017-05-22 15:42:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:50 --> Model Class Initialized
+INFO - 2017-05-22 15:42:50 --> Model Class Initialized
+INFO - 2017-05-22 15:42:53 --> Config Class Initialized
+INFO - 2017-05-22 15:42:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:53 --> URI Class Initialized
+INFO - 2017-05-22 15:42:53 --> Router Class Initialized
+INFO - 2017-05-22 15:42:53 --> Output Class Initialized
+INFO - 2017-05-22 15:42:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:53 --> Input Class Initialized
+INFO - 2017-05-22 15:42:53 --> Language Class Initialized
+INFO - 2017-05-22 15:42:53 --> Language Class Initialized
+INFO - 2017-05-22 15:42:53 --> Config Class Initialized
+INFO - 2017-05-22 15:42:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:53 --> Template Class Initialized
+INFO - 2017-05-22 15:42:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:53 --> Model Class Initialized
+INFO - 2017-05-22 15:42:53 --> Model Class Initialized
+INFO - 2017-05-22 15:42:56 --> Config Class Initialized
+INFO - 2017-05-22 15:42:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:56 --> URI Class Initialized
+INFO - 2017-05-22 15:42:56 --> Router Class Initialized
+INFO - 2017-05-22 15:42:56 --> Output Class Initialized
+INFO - 2017-05-22 15:42:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:56 --> Input Class Initialized
+INFO - 2017-05-22 15:42:56 --> Language Class Initialized
+INFO - 2017-05-22 15:42:56 --> Language Class Initialized
+INFO - 2017-05-22 15:42:56 --> Config Class Initialized
+INFO - 2017-05-22 15:42:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:56 --> Template Class Initialized
+INFO - 2017-05-22 15:42:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:56 --> Model Class Initialized
+INFO - 2017-05-22 15:42:56 --> Model Class Initialized
+INFO - 2017-05-22 15:42:59 --> Config Class Initialized
+INFO - 2017-05-22 15:42:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:42:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:42:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:42:59 --> URI Class Initialized
+INFO - 2017-05-22 15:42:59 --> Router Class Initialized
+INFO - 2017-05-22 15:42:59 --> Output Class Initialized
+INFO - 2017-05-22 15:42:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:42:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:42:59 --> Input Class Initialized
+INFO - 2017-05-22 15:42:59 --> Language Class Initialized
+INFO - 2017-05-22 15:42:59 --> Language Class Initialized
+INFO - 2017-05-22 15:42:59 --> Config Class Initialized
+INFO - 2017-05-22 15:42:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:42:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:42:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:42:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:42:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:42:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:42:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:42:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:42:59 --> Template Class Initialized
+INFO - 2017-05-22 15:42:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:42:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:42:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:42:59 --> Model Class Initialized
+INFO - 2017-05-22 15:42:59 --> Model Class Initialized
+INFO - 2017-05-22 15:43:02 --> Config Class Initialized
+INFO - 2017-05-22 15:43:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:02 --> URI Class Initialized
+INFO - 2017-05-22 15:43:02 --> Router Class Initialized
+INFO - 2017-05-22 15:43:02 --> Output Class Initialized
+INFO - 2017-05-22 15:43:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:02 --> Input Class Initialized
+INFO - 2017-05-22 15:43:02 --> Language Class Initialized
+INFO - 2017-05-22 15:43:02 --> Language Class Initialized
+INFO - 2017-05-22 15:43:02 --> Config Class Initialized
+INFO - 2017-05-22 15:43:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:02 --> Template Class Initialized
+INFO - 2017-05-22 15:43:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:02 --> Model Class Initialized
+INFO - 2017-05-22 15:43:02 --> Model Class Initialized
+INFO - 2017-05-22 15:43:05 --> Config Class Initialized
+INFO - 2017-05-22 15:43:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:05 --> URI Class Initialized
+INFO - 2017-05-22 15:43:05 --> Router Class Initialized
+INFO - 2017-05-22 15:43:05 --> Output Class Initialized
+INFO - 2017-05-22 15:43:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:05 --> Input Class Initialized
+INFO - 2017-05-22 15:43:05 --> Language Class Initialized
+INFO - 2017-05-22 15:43:05 --> Language Class Initialized
+INFO - 2017-05-22 15:43:05 --> Config Class Initialized
+INFO - 2017-05-22 15:43:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:05 --> Template Class Initialized
+INFO - 2017-05-22 15:43:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:05 --> Model Class Initialized
+INFO - 2017-05-22 15:43:05 --> Model Class Initialized
+INFO - 2017-05-22 15:43:08 --> Config Class Initialized
+INFO - 2017-05-22 15:43:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:08 --> URI Class Initialized
+INFO - 2017-05-22 15:43:08 --> Router Class Initialized
+INFO - 2017-05-22 15:43:08 --> Output Class Initialized
+INFO - 2017-05-22 15:43:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:08 --> Input Class Initialized
+INFO - 2017-05-22 15:43:08 --> Language Class Initialized
+INFO - 2017-05-22 15:43:08 --> Language Class Initialized
+INFO - 2017-05-22 15:43:08 --> Config Class Initialized
+INFO - 2017-05-22 15:43:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:08 --> Template Class Initialized
+INFO - 2017-05-22 15:43:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:08 --> Model Class Initialized
+INFO - 2017-05-22 15:43:08 --> Model Class Initialized
+INFO - 2017-05-22 15:43:11 --> Config Class Initialized
+INFO - 2017-05-22 15:43:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:11 --> URI Class Initialized
+INFO - 2017-05-22 15:43:11 --> Router Class Initialized
+INFO - 2017-05-22 15:43:11 --> Output Class Initialized
+INFO - 2017-05-22 15:43:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:11 --> Input Class Initialized
+INFO - 2017-05-22 15:43:11 --> Language Class Initialized
+INFO - 2017-05-22 15:43:11 --> Language Class Initialized
+INFO - 2017-05-22 15:43:11 --> Config Class Initialized
+INFO - 2017-05-22 15:43:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:11 --> Template Class Initialized
+INFO - 2017-05-22 15:43:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:11 --> Model Class Initialized
+INFO - 2017-05-22 15:43:11 --> Model Class Initialized
+INFO - 2017-05-22 15:43:14 --> Config Class Initialized
+INFO - 2017-05-22 15:43:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:14 --> URI Class Initialized
+INFO - 2017-05-22 15:43:14 --> Router Class Initialized
+INFO - 2017-05-22 15:43:14 --> Output Class Initialized
+INFO - 2017-05-22 15:43:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:14 --> Input Class Initialized
+INFO - 2017-05-22 15:43:14 --> Language Class Initialized
+INFO - 2017-05-22 15:43:14 --> Language Class Initialized
+INFO - 2017-05-22 15:43:14 --> Config Class Initialized
+INFO - 2017-05-22 15:43:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:14 --> Template Class Initialized
+INFO - 2017-05-22 15:43:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:14 --> Model Class Initialized
+INFO - 2017-05-22 15:43:14 --> Model Class Initialized
+INFO - 2017-05-22 15:43:17 --> Config Class Initialized
+INFO - 2017-05-22 15:43:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:17 --> URI Class Initialized
+INFO - 2017-05-22 15:43:17 --> Router Class Initialized
+INFO - 2017-05-22 15:43:17 --> Output Class Initialized
+INFO - 2017-05-22 15:43:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:17 --> Input Class Initialized
+INFO - 2017-05-22 15:43:17 --> Language Class Initialized
+INFO - 2017-05-22 15:43:17 --> Language Class Initialized
+INFO - 2017-05-22 15:43:17 --> Config Class Initialized
+INFO - 2017-05-22 15:43:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:17 --> Template Class Initialized
+INFO - 2017-05-22 15:43:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:17 --> Model Class Initialized
+INFO - 2017-05-22 15:43:17 --> Model Class Initialized
+INFO - 2017-05-22 15:43:20 --> Config Class Initialized
+INFO - 2017-05-22 15:43:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:20 --> URI Class Initialized
+INFO - 2017-05-22 15:43:20 --> Router Class Initialized
+INFO - 2017-05-22 15:43:20 --> Output Class Initialized
+INFO - 2017-05-22 15:43:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:20 --> Input Class Initialized
+INFO - 2017-05-22 15:43:20 --> Language Class Initialized
+INFO - 2017-05-22 15:43:20 --> Language Class Initialized
+INFO - 2017-05-22 15:43:20 --> Config Class Initialized
+INFO - 2017-05-22 15:43:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:20 --> Template Class Initialized
+INFO - 2017-05-22 15:43:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:20 --> Model Class Initialized
+INFO - 2017-05-22 15:43:20 --> Model Class Initialized
+INFO - 2017-05-22 15:43:23 --> Config Class Initialized
+INFO - 2017-05-22 15:43:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:23 --> URI Class Initialized
+INFO - 2017-05-22 15:43:23 --> Router Class Initialized
+INFO - 2017-05-22 15:43:23 --> Output Class Initialized
+INFO - 2017-05-22 15:43:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:23 --> Input Class Initialized
+INFO - 2017-05-22 15:43:23 --> Language Class Initialized
+INFO - 2017-05-22 15:43:23 --> Language Class Initialized
+INFO - 2017-05-22 15:43:23 --> Config Class Initialized
+INFO - 2017-05-22 15:43:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:23 --> Template Class Initialized
+INFO - 2017-05-22 15:43:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:23 --> Model Class Initialized
+INFO - 2017-05-22 15:43:23 --> Model Class Initialized
+INFO - 2017-05-22 15:43:26 --> Config Class Initialized
+INFO - 2017-05-22 15:43:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:26 --> URI Class Initialized
+INFO - 2017-05-22 15:43:26 --> Router Class Initialized
+INFO - 2017-05-22 15:43:26 --> Output Class Initialized
+INFO - 2017-05-22 15:43:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:26 --> Input Class Initialized
+INFO - 2017-05-22 15:43:26 --> Language Class Initialized
+INFO - 2017-05-22 15:43:26 --> Language Class Initialized
+INFO - 2017-05-22 15:43:26 --> Config Class Initialized
+INFO - 2017-05-22 15:43:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:26 --> Template Class Initialized
+INFO - 2017-05-22 15:43:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:26 --> Model Class Initialized
+INFO - 2017-05-22 15:43:26 --> Model Class Initialized
+INFO - 2017-05-22 15:43:29 --> Config Class Initialized
+INFO - 2017-05-22 15:43:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:29 --> URI Class Initialized
+INFO - 2017-05-22 15:43:29 --> Router Class Initialized
+INFO - 2017-05-22 15:43:29 --> Output Class Initialized
+INFO - 2017-05-22 15:43:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:29 --> Input Class Initialized
+INFO - 2017-05-22 15:43:29 --> Language Class Initialized
+INFO - 2017-05-22 15:43:29 --> Language Class Initialized
+INFO - 2017-05-22 15:43:29 --> Config Class Initialized
+INFO - 2017-05-22 15:43:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:29 --> Template Class Initialized
+INFO - 2017-05-22 15:43:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:29 --> Model Class Initialized
+INFO - 2017-05-22 15:43:29 --> Model Class Initialized
+INFO - 2017-05-22 15:43:32 --> Config Class Initialized
+INFO - 2017-05-22 15:43:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:32 --> URI Class Initialized
+INFO - 2017-05-22 15:43:32 --> Router Class Initialized
+INFO - 2017-05-22 15:43:32 --> Output Class Initialized
+INFO - 2017-05-22 15:43:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:32 --> Input Class Initialized
+INFO - 2017-05-22 15:43:32 --> Language Class Initialized
+INFO - 2017-05-22 15:43:32 --> Language Class Initialized
+INFO - 2017-05-22 15:43:32 --> Config Class Initialized
+INFO - 2017-05-22 15:43:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:32 --> Template Class Initialized
+INFO - 2017-05-22 15:43:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:32 --> Model Class Initialized
+INFO - 2017-05-22 15:43:32 --> Model Class Initialized
+INFO - 2017-05-22 15:43:35 --> Config Class Initialized
+INFO - 2017-05-22 15:43:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:35 --> URI Class Initialized
+INFO - 2017-05-22 15:43:35 --> Router Class Initialized
+INFO - 2017-05-22 15:43:35 --> Output Class Initialized
+INFO - 2017-05-22 15:43:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:35 --> Input Class Initialized
+INFO - 2017-05-22 15:43:35 --> Language Class Initialized
+INFO - 2017-05-22 15:43:35 --> Language Class Initialized
+INFO - 2017-05-22 15:43:35 --> Config Class Initialized
+INFO - 2017-05-22 15:43:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:35 --> Template Class Initialized
+INFO - 2017-05-22 15:43:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:35 --> Model Class Initialized
+INFO - 2017-05-22 15:43:35 --> Model Class Initialized
+INFO - 2017-05-22 15:43:38 --> Config Class Initialized
+INFO - 2017-05-22 15:43:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:38 --> URI Class Initialized
+INFO - 2017-05-22 15:43:38 --> Router Class Initialized
+INFO - 2017-05-22 15:43:38 --> Output Class Initialized
+INFO - 2017-05-22 15:43:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:38 --> Input Class Initialized
+INFO - 2017-05-22 15:43:38 --> Language Class Initialized
+INFO - 2017-05-22 15:43:38 --> Language Class Initialized
+INFO - 2017-05-22 15:43:38 --> Config Class Initialized
+INFO - 2017-05-22 15:43:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:38 --> Template Class Initialized
+INFO - 2017-05-22 15:43:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:38 --> Model Class Initialized
+INFO - 2017-05-22 15:43:38 --> Model Class Initialized
+INFO - 2017-05-22 15:43:41 --> Config Class Initialized
+INFO - 2017-05-22 15:43:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:41 --> URI Class Initialized
+INFO - 2017-05-22 15:43:41 --> Router Class Initialized
+INFO - 2017-05-22 15:43:41 --> Output Class Initialized
+INFO - 2017-05-22 15:43:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:41 --> Input Class Initialized
+INFO - 2017-05-22 15:43:41 --> Language Class Initialized
+INFO - 2017-05-22 15:43:41 --> Language Class Initialized
+INFO - 2017-05-22 15:43:41 --> Config Class Initialized
+INFO - 2017-05-22 15:43:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:41 --> Template Class Initialized
+INFO - 2017-05-22 15:43:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:41 --> Model Class Initialized
+INFO - 2017-05-22 15:43:41 --> Model Class Initialized
+INFO - 2017-05-22 15:43:44 --> Config Class Initialized
+INFO - 2017-05-22 15:43:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:44 --> URI Class Initialized
+INFO - 2017-05-22 15:43:44 --> Router Class Initialized
+INFO - 2017-05-22 15:43:44 --> Output Class Initialized
+INFO - 2017-05-22 15:43:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:44 --> Input Class Initialized
+INFO - 2017-05-22 15:43:44 --> Language Class Initialized
+INFO - 2017-05-22 15:43:44 --> Language Class Initialized
+INFO - 2017-05-22 15:43:44 --> Config Class Initialized
+INFO - 2017-05-22 15:43:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:44 --> Template Class Initialized
+INFO - 2017-05-22 15:43:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:44 --> Model Class Initialized
+INFO - 2017-05-22 15:43:44 --> Model Class Initialized
+INFO - 2017-05-22 15:43:47 --> Config Class Initialized
+INFO - 2017-05-22 15:43:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:47 --> URI Class Initialized
+INFO - 2017-05-22 15:43:47 --> Router Class Initialized
+INFO - 2017-05-22 15:43:47 --> Output Class Initialized
+INFO - 2017-05-22 15:43:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:47 --> Input Class Initialized
+INFO - 2017-05-22 15:43:47 --> Language Class Initialized
+INFO - 2017-05-22 15:43:47 --> Language Class Initialized
+INFO - 2017-05-22 15:43:47 --> Config Class Initialized
+INFO - 2017-05-22 15:43:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:47 --> Template Class Initialized
+INFO - 2017-05-22 15:43:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:47 --> Model Class Initialized
+INFO - 2017-05-22 15:43:47 --> Model Class Initialized
+INFO - 2017-05-22 15:43:50 --> Config Class Initialized
+INFO - 2017-05-22 15:43:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:50 --> URI Class Initialized
+INFO - 2017-05-22 15:43:50 --> Router Class Initialized
+INFO - 2017-05-22 15:43:50 --> Output Class Initialized
+INFO - 2017-05-22 15:43:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:50 --> Input Class Initialized
+INFO - 2017-05-22 15:43:50 --> Language Class Initialized
+INFO - 2017-05-22 15:43:50 --> Language Class Initialized
+INFO - 2017-05-22 15:43:50 --> Config Class Initialized
+INFO - 2017-05-22 15:43:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:50 --> Template Class Initialized
+INFO - 2017-05-22 15:43:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:50 --> Model Class Initialized
+INFO - 2017-05-22 15:43:50 --> Model Class Initialized
+INFO - 2017-05-22 15:43:53 --> Config Class Initialized
+INFO - 2017-05-22 15:43:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:53 --> URI Class Initialized
+INFO - 2017-05-22 15:43:53 --> Router Class Initialized
+INFO - 2017-05-22 15:43:53 --> Output Class Initialized
+INFO - 2017-05-22 15:43:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:53 --> Input Class Initialized
+INFO - 2017-05-22 15:43:53 --> Language Class Initialized
+INFO - 2017-05-22 15:43:53 --> Language Class Initialized
+INFO - 2017-05-22 15:43:53 --> Config Class Initialized
+INFO - 2017-05-22 15:43:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:53 --> Template Class Initialized
+INFO - 2017-05-22 15:43:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:53 --> Model Class Initialized
+INFO - 2017-05-22 15:43:53 --> Model Class Initialized
+INFO - 2017-05-22 15:43:56 --> Config Class Initialized
+INFO - 2017-05-22 15:43:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:56 --> URI Class Initialized
+INFO - 2017-05-22 15:43:56 --> Router Class Initialized
+INFO - 2017-05-22 15:43:56 --> Output Class Initialized
+INFO - 2017-05-22 15:43:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:56 --> Input Class Initialized
+INFO - 2017-05-22 15:43:56 --> Language Class Initialized
+INFO - 2017-05-22 15:43:56 --> Language Class Initialized
+INFO - 2017-05-22 15:43:56 --> Config Class Initialized
+INFO - 2017-05-22 15:43:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:56 --> Template Class Initialized
+INFO - 2017-05-22 15:43:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:56 --> Model Class Initialized
+INFO - 2017-05-22 15:43:56 --> Model Class Initialized
+INFO - 2017-05-22 15:43:59 --> Config Class Initialized
+INFO - 2017-05-22 15:43:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:43:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:43:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:43:59 --> URI Class Initialized
+INFO - 2017-05-22 15:43:59 --> Router Class Initialized
+INFO - 2017-05-22 15:43:59 --> Output Class Initialized
+INFO - 2017-05-22 15:43:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:43:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:43:59 --> Input Class Initialized
+INFO - 2017-05-22 15:43:59 --> Language Class Initialized
+INFO - 2017-05-22 15:43:59 --> Language Class Initialized
+INFO - 2017-05-22 15:43:59 --> Config Class Initialized
+INFO - 2017-05-22 15:43:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:43:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:43:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:43:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:43:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:43:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:43:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:43:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:43:59 --> Template Class Initialized
+INFO - 2017-05-22 15:43:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:43:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:43:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:43:59 --> Model Class Initialized
+INFO - 2017-05-22 15:43:59 --> Model Class Initialized
+INFO - 2017-05-22 15:44:02 --> Config Class Initialized
+INFO - 2017-05-22 15:44:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:02 --> URI Class Initialized
+INFO - 2017-05-22 15:44:02 --> Router Class Initialized
+INFO - 2017-05-22 15:44:02 --> Output Class Initialized
+INFO - 2017-05-22 15:44:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:02 --> Input Class Initialized
+INFO - 2017-05-22 15:44:02 --> Language Class Initialized
+INFO - 2017-05-22 15:44:02 --> Language Class Initialized
+INFO - 2017-05-22 15:44:02 --> Config Class Initialized
+INFO - 2017-05-22 15:44:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:02 --> Template Class Initialized
+INFO - 2017-05-22 15:44:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:02 --> Model Class Initialized
+INFO - 2017-05-22 15:44:02 --> Model Class Initialized
+INFO - 2017-05-22 15:44:05 --> Config Class Initialized
+INFO - 2017-05-22 15:44:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:05 --> URI Class Initialized
+INFO - 2017-05-22 15:44:05 --> Router Class Initialized
+INFO - 2017-05-22 15:44:05 --> Output Class Initialized
+INFO - 2017-05-22 15:44:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:05 --> Input Class Initialized
+INFO - 2017-05-22 15:44:05 --> Language Class Initialized
+INFO - 2017-05-22 15:44:05 --> Language Class Initialized
+INFO - 2017-05-22 15:44:05 --> Config Class Initialized
+INFO - 2017-05-22 15:44:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:05 --> Template Class Initialized
+INFO - 2017-05-22 15:44:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:05 --> Model Class Initialized
+INFO - 2017-05-22 15:44:05 --> Model Class Initialized
+INFO - 2017-05-22 15:44:08 --> Config Class Initialized
+INFO - 2017-05-22 15:44:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:08 --> URI Class Initialized
+INFO - 2017-05-22 15:44:08 --> Router Class Initialized
+INFO - 2017-05-22 15:44:08 --> Output Class Initialized
+INFO - 2017-05-22 15:44:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:08 --> Input Class Initialized
+INFO - 2017-05-22 15:44:08 --> Language Class Initialized
+INFO - 2017-05-22 15:44:08 --> Language Class Initialized
+INFO - 2017-05-22 15:44:08 --> Config Class Initialized
+INFO - 2017-05-22 15:44:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:08 --> Template Class Initialized
+INFO - 2017-05-22 15:44:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:08 --> Model Class Initialized
+INFO - 2017-05-22 15:44:08 --> Model Class Initialized
+INFO - 2017-05-22 15:44:11 --> Config Class Initialized
+INFO - 2017-05-22 15:44:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:11 --> URI Class Initialized
+INFO - 2017-05-22 15:44:11 --> Router Class Initialized
+INFO - 2017-05-22 15:44:11 --> Output Class Initialized
+INFO - 2017-05-22 15:44:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:11 --> Input Class Initialized
+INFO - 2017-05-22 15:44:11 --> Language Class Initialized
+INFO - 2017-05-22 15:44:11 --> Language Class Initialized
+INFO - 2017-05-22 15:44:11 --> Config Class Initialized
+INFO - 2017-05-22 15:44:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:11 --> Template Class Initialized
+INFO - 2017-05-22 15:44:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:11 --> Model Class Initialized
+INFO - 2017-05-22 15:44:11 --> Model Class Initialized
+INFO - 2017-05-22 15:44:14 --> Config Class Initialized
+INFO - 2017-05-22 15:44:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:14 --> URI Class Initialized
+INFO - 2017-05-22 15:44:14 --> Router Class Initialized
+INFO - 2017-05-22 15:44:14 --> Output Class Initialized
+INFO - 2017-05-22 15:44:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:14 --> Input Class Initialized
+INFO - 2017-05-22 15:44:14 --> Language Class Initialized
+INFO - 2017-05-22 15:44:14 --> Language Class Initialized
+INFO - 2017-05-22 15:44:14 --> Config Class Initialized
+INFO - 2017-05-22 15:44:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:14 --> Template Class Initialized
+INFO - 2017-05-22 15:44:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:14 --> Model Class Initialized
+INFO - 2017-05-22 15:44:14 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:17 --> URI Class Initialized
+INFO - 2017-05-22 15:44:17 --> Router Class Initialized
+INFO - 2017-05-22 15:44:17 --> Output Class Initialized
+INFO - 2017-05-22 15:44:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:17 --> Input Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Template Class Initialized
+INFO - 2017-05-22 15:44:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:17 --> Controller Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Login MX_Controller Initialized
+INFO - 2017-05-22 15:44:17 --> Helper loaded: cookie_helper
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:17 --> URI Class Initialized
+INFO - 2017-05-22 15:44:17 --> Router Class Initialized
+INFO - 2017-05-22 15:44:17 --> Output Class Initialized
+INFO - 2017-05-22 15:44:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:17 --> Input Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Template Class Initialized
+INFO - 2017-05-22 15:44:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:44:17 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:44:17 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/dashboard.php
+DEBUG - 2017-05-22 15:44:17 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:44:17 --> Final output sent to browser
+DEBUG - 2017-05-22 15:44:17 --> Total execution time: 0.0548
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:17 --> URI Class Initialized
+INFO - 2017-05-22 15:44:17 --> Router Class Initialized
+INFO - 2017-05-22 15:44:17 --> Output Class Initialized
+INFO - 2017-05-22 15:44:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:17 --> Input Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Language Class Initialized
+INFO - 2017-05-22 15:44:17 --> Config Class Initialized
+INFO - 2017-05-22 15:44:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:17 --> Template Class Initialized
+INFO - 2017-05-22 15:44:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:17 --> Model Class Initialized
+INFO - 2017-05-22 15:44:19 --> Config Class Initialized
+INFO - 2017-05-22 15:44:19 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:19 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:19 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:19 --> URI Class Initialized
+INFO - 2017-05-22 15:44:19 --> Router Class Initialized
+INFO - 2017-05-22 15:44:19 --> Output Class Initialized
+INFO - 2017-05-22 15:44:19 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:19 --> Input Class Initialized
+INFO - 2017-05-22 15:44:19 --> Language Class Initialized
+INFO - 2017-05-22 15:44:19 --> Language Class Initialized
+INFO - 2017-05-22 15:44:19 --> Config Class Initialized
+INFO - 2017-05-22 15:44:19 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:19 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:19 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:19 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:19 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:19 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:19 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:19 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:19 --> Template Class Initialized
+INFO - 2017-05-22 15:44:19 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:19 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:19 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:19 --> Model Class Initialized
+INFO - 2017-05-22 15:44:19 --> Model Class Initialized
+DEBUG - 2017-05-22 15:44:19 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:44:19 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:44:19 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:44:19 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:44:19 --> Final output sent to browser
+DEBUG - 2017-05-22 15:44:19 --> Total execution time: 0.0695
+INFO - 2017-05-22 15:44:20 --> Config Class Initialized
+INFO - 2017-05-22 15:44:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:20 --> URI Class Initialized
+INFO - 2017-05-22 15:44:20 --> Router Class Initialized
+INFO - 2017-05-22 15:44:20 --> Output Class Initialized
+INFO - 2017-05-22 15:44:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:20 --> Input Class Initialized
+INFO - 2017-05-22 15:44:20 --> Language Class Initialized
+INFO - 2017-05-22 15:44:20 --> Language Class Initialized
+INFO - 2017-05-22 15:44:20 --> Config Class Initialized
+INFO - 2017-05-22 15:44:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> Template Class Initialized
+INFO - 2017-05-22 15:44:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:20 --> Model Class Initialized
+INFO - 2017-05-22 15:44:20 --> Model Class Initialized
+INFO - 2017-05-22 15:44:20 --> Config Class Initialized
+INFO - 2017-05-22 15:44:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:20 --> URI Class Initialized
+INFO - 2017-05-22 15:44:20 --> Router Class Initialized
+INFO - 2017-05-22 15:44:20 --> Output Class Initialized
+INFO - 2017-05-22 15:44:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:20 --> Input Class Initialized
+INFO - 2017-05-22 15:44:20 --> Language Class Initialized
+INFO - 2017-05-22 15:44:20 --> Language Class Initialized
+INFO - 2017-05-22 15:44:20 --> Config Class Initialized
+INFO - 2017-05-22 15:44:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> Template Class Initialized
+INFO - 2017-05-22 15:44:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:20 --> Model Class Initialized
+INFO - 2017-05-22 15:44:20 --> Model Class Initialized
+DEBUG - 2017-05-22 15:44:20 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:44:20 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:44:20 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:44:20 --> Final output sent to browser
+DEBUG - 2017-05-22 15:44:20 --> Total execution time: 0.0653
+INFO - 2017-05-22 15:44:23 --> Config Class Initialized
+INFO - 2017-05-22 15:44:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:23 --> URI Class Initialized
+INFO - 2017-05-22 15:44:23 --> Router Class Initialized
+INFO - 2017-05-22 15:44:23 --> Output Class Initialized
+INFO - 2017-05-22 15:44:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:23 --> Input Class Initialized
+INFO - 2017-05-22 15:44:23 --> Language Class Initialized
+INFO - 2017-05-22 15:44:23 --> Language Class Initialized
+INFO - 2017-05-22 15:44:23 --> Config Class Initialized
+INFO - 2017-05-22 15:44:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:23 --> Template Class Initialized
+INFO - 2017-05-22 15:44:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:23 --> Model Class Initialized
+INFO - 2017-05-22 15:44:23 --> Model Class Initialized
+INFO - 2017-05-22 15:44:26 --> Config Class Initialized
+INFO - 2017-05-22 15:44:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:26 --> URI Class Initialized
+INFO - 2017-05-22 15:44:26 --> Router Class Initialized
+INFO - 2017-05-22 15:44:26 --> Output Class Initialized
+INFO - 2017-05-22 15:44:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:26 --> Input Class Initialized
+INFO - 2017-05-22 15:44:26 --> Language Class Initialized
+INFO - 2017-05-22 15:44:26 --> Language Class Initialized
+INFO - 2017-05-22 15:44:26 --> Config Class Initialized
+INFO - 2017-05-22 15:44:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:26 --> Template Class Initialized
+INFO - 2017-05-22 15:44:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:26 --> Model Class Initialized
+INFO - 2017-05-22 15:44:26 --> Model Class Initialized
+INFO - 2017-05-22 15:44:29 --> Config Class Initialized
+INFO - 2017-05-22 15:44:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:29 --> URI Class Initialized
+INFO - 2017-05-22 15:44:29 --> Router Class Initialized
+INFO - 2017-05-22 15:44:29 --> Output Class Initialized
+INFO - 2017-05-22 15:44:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:29 --> Input Class Initialized
+INFO - 2017-05-22 15:44:29 --> Language Class Initialized
+INFO - 2017-05-22 15:44:29 --> Language Class Initialized
+INFO - 2017-05-22 15:44:29 --> Config Class Initialized
+INFO - 2017-05-22 15:44:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:29 --> Template Class Initialized
+INFO - 2017-05-22 15:44:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:29 --> Model Class Initialized
+INFO - 2017-05-22 15:44:29 --> Model Class Initialized
+INFO - 2017-05-22 15:44:32 --> Config Class Initialized
+INFO - 2017-05-22 15:44:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:32 --> URI Class Initialized
+INFO - 2017-05-22 15:44:32 --> Router Class Initialized
+INFO - 2017-05-22 15:44:32 --> Output Class Initialized
+INFO - 2017-05-22 15:44:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:32 --> Input Class Initialized
+INFO - 2017-05-22 15:44:32 --> Language Class Initialized
+INFO - 2017-05-22 15:44:32 --> Language Class Initialized
+INFO - 2017-05-22 15:44:32 --> Config Class Initialized
+INFO - 2017-05-22 15:44:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:32 --> Template Class Initialized
+INFO - 2017-05-22 15:44:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:32 --> Model Class Initialized
+INFO - 2017-05-22 15:44:32 --> Model Class Initialized
+INFO - 2017-05-22 15:44:35 --> Config Class Initialized
+INFO - 2017-05-22 15:44:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:35 --> URI Class Initialized
+INFO - 2017-05-22 15:44:35 --> Router Class Initialized
+INFO - 2017-05-22 15:44:35 --> Output Class Initialized
+INFO - 2017-05-22 15:44:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:35 --> Input Class Initialized
+INFO - 2017-05-22 15:44:35 --> Language Class Initialized
+INFO - 2017-05-22 15:44:35 --> Language Class Initialized
+INFO - 2017-05-22 15:44:35 --> Config Class Initialized
+INFO - 2017-05-22 15:44:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:35 --> Template Class Initialized
+INFO - 2017-05-22 15:44:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:35 --> Model Class Initialized
+INFO - 2017-05-22 15:44:35 --> Model Class Initialized
+INFO - 2017-05-22 15:44:38 --> Config Class Initialized
+INFO - 2017-05-22 15:44:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:38 --> URI Class Initialized
+INFO - 2017-05-22 15:44:38 --> Router Class Initialized
+INFO - 2017-05-22 15:44:38 --> Output Class Initialized
+INFO - 2017-05-22 15:44:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:38 --> Input Class Initialized
+INFO - 2017-05-22 15:44:38 --> Language Class Initialized
+INFO - 2017-05-22 15:44:38 --> Language Class Initialized
+INFO - 2017-05-22 15:44:38 --> Config Class Initialized
+INFO - 2017-05-22 15:44:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:38 --> Template Class Initialized
+INFO - 2017-05-22 15:44:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:38 --> Model Class Initialized
+INFO - 2017-05-22 15:44:38 --> Model Class Initialized
+INFO - 2017-05-22 15:44:41 --> Config Class Initialized
+INFO - 2017-05-22 15:44:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:41 --> URI Class Initialized
+INFO - 2017-05-22 15:44:41 --> Router Class Initialized
+INFO - 2017-05-22 15:44:41 --> Output Class Initialized
+INFO - 2017-05-22 15:44:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:41 --> Input Class Initialized
+INFO - 2017-05-22 15:44:41 --> Language Class Initialized
+INFO - 2017-05-22 15:44:41 --> Language Class Initialized
+INFO - 2017-05-22 15:44:41 --> Config Class Initialized
+INFO - 2017-05-22 15:44:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:41 --> Template Class Initialized
+INFO - 2017-05-22 15:44:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:41 --> Model Class Initialized
+INFO - 2017-05-22 15:44:41 --> Model Class Initialized
+INFO - 2017-05-22 15:44:44 --> Config Class Initialized
+INFO - 2017-05-22 15:44:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:44 --> URI Class Initialized
+INFO - 2017-05-22 15:44:44 --> Router Class Initialized
+INFO - 2017-05-22 15:44:44 --> Output Class Initialized
+INFO - 2017-05-22 15:44:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:44 --> Input Class Initialized
+INFO - 2017-05-22 15:44:44 --> Language Class Initialized
+INFO - 2017-05-22 15:44:44 --> Language Class Initialized
+INFO - 2017-05-22 15:44:44 --> Config Class Initialized
+INFO - 2017-05-22 15:44:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:44 --> Template Class Initialized
+INFO - 2017-05-22 15:44:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:44 --> Model Class Initialized
+INFO - 2017-05-22 15:44:44 --> Model Class Initialized
+INFO - 2017-05-22 15:44:47 --> Config Class Initialized
+INFO - 2017-05-22 15:44:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:47 --> URI Class Initialized
+INFO - 2017-05-22 15:44:47 --> Router Class Initialized
+INFO - 2017-05-22 15:44:47 --> Output Class Initialized
+INFO - 2017-05-22 15:44:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:47 --> Input Class Initialized
+INFO - 2017-05-22 15:44:47 --> Language Class Initialized
+INFO - 2017-05-22 15:44:47 --> Language Class Initialized
+INFO - 2017-05-22 15:44:47 --> Config Class Initialized
+INFO - 2017-05-22 15:44:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:47 --> Template Class Initialized
+INFO - 2017-05-22 15:44:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:47 --> Model Class Initialized
+INFO - 2017-05-22 15:44:47 --> Model Class Initialized
+INFO - 2017-05-22 15:44:50 --> Config Class Initialized
+INFO - 2017-05-22 15:44:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:50 --> URI Class Initialized
+INFO - 2017-05-22 15:44:50 --> Router Class Initialized
+INFO - 2017-05-22 15:44:50 --> Output Class Initialized
+INFO - 2017-05-22 15:44:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:50 --> Input Class Initialized
+INFO - 2017-05-22 15:44:50 --> Language Class Initialized
+INFO - 2017-05-22 15:44:50 --> Language Class Initialized
+INFO - 2017-05-22 15:44:50 --> Config Class Initialized
+INFO - 2017-05-22 15:44:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:50 --> Template Class Initialized
+INFO - 2017-05-22 15:44:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:50 --> Model Class Initialized
+INFO - 2017-05-22 15:44:50 --> Model Class Initialized
+INFO - 2017-05-22 15:44:53 --> Config Class Initialized
+INFO - 2017-05-22 15:44:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:53 --> URI Class Initialized
+INFO - 2017-05-22 15:44:53 --> Router Class Initialized
+INFO - 2017-05-22 15:44:53 --> Output Class Initialized
+INFO - 2017-05-22 15:44:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:53 --> Input Class Initialized
+INFO - 2017-05-22 15:44:53 --> Language Class Initialized
+INFO - 2017-05-22 15:44:53 --> Language Class Initialized
+INFO - 2017-05-22 15:44:53 --> Config Class Initialized
+INFO - 2017-05-22 15:44:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:53 --> Template Class Initialized
+INFO - 2017-05-22 15:44:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:53 --> Model Class Initialized
+INFO - 2017-05-22 15:44:53 --> Model Class Initialized
+INFO - 2017-05-22 15:44:56 --> Config Class Initialized
+INFO - 2017-05-22 15:44:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:56 --> URI Class Initialized
+INFO - 2017-05-22 15:44:56 --> Router Class Initialized
+INFO - 2017-05-22 15:44:56 --> Output Class Initialized
+INFO - 2017-05-22 15:44:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:56 --> Input Class Initialized
+INFO - 2017-05-22 15:44:56 --> Language Class Initialized
+INFO - 2017-05-22 15:44:56 --> Language Class Initialized
+INFO - 2017-05-22 15:44:56 --> Config Class Initialized
+INFO - 2017-05-22 15:44:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:56 --> Template Class Initialized
+INFO - 2017-05-22 15:44:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:56 --> Model Class Initialized
+INFO - 2017-05-22 15:44:56 --> Model Class Initialized
+INFO - 2017-05-22 15:44:59 --> Config Class Initialized
+INFO - 2017-05-22 15:44:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:44:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:44:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:44:59 --> URI Class Initialized
+INFO - 2017-05-22 15:44:59 --> Router Class Initialized
+INFO - 2017-05-22 15:44:59 --> Output Class Initialized
+INFO - 2017-05-22 15:44:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:44:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:44:59 --> Input Class Initialized
+INFO - 2017-05-22 15:44:59 --> Language Class Initialized
+INFO - 2017-05-22 15:44:59 --> Language Class Initialized
+INFO - 2017-05-22 15:44:59 --> Config Class Initialized
+INFO - 2017-05-22 15:44:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:44:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:44:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:44:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:44:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:44:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:44:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:44:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:44:59 --> Template Class Initialized
+INFO - 2017-05-22 15:44:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:44:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:44:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:44:59 --> Model Class Initialized
+INFO - 2017-05-22 15:44:59 --> Model Class Initialized
+INFO - 2017-05-22 15:45:02 --> Config Class Initialized
+INFO - 2017-05-22 15:45:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:02 --> URI Class Initialized
+INFO - 2017-05-22 15:45:02 --> Router Class Initialized
+INFO - 2017-05-22 15:45:02 --> Output Class Initialized
+INFO - 2017-05-22 15:45:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:02 --> Input Class Initialized
+INFO - 2017-05-22 15:45:02 --> Language Class Initialized
+INFO - 2017-05-22 15:45:02 --> Language Class Initialized
+INFO - 2017-05-22 15:45:02 --> Config Class Initialized
+INFO - 2017-05-22 15:45:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:02 --> Template Class Initialized
+INFO - 2017-05-22 15:45:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:02 --> Model Class Initialized
+INFO - 2017-05-22 15:45:02 --> Model Class Initialized
+INFO - 2017-05-22 15:45:05 --> Config Class Initialized
+INFO - 2017-05-22 15:45:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:05 --> URI Class Initialized
+INFO - 2017-05-22 15:45:05 --> Router Class Initialized
+INFO - 2017-05-22 15:45:05 --> Output Class Initialized
+INFO - 2017-05-22 15:45:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:05 --> Input Class Initialized
+INFO - 2017-05-22 15:45:05 --> Language Class Initialized
+INFO - 2017-05-22 15:45:05 --> Language Class Initialized
+INFO - 2017-05-22 15:45:05 --> Config Class Initialized
+INFO - 2017-05-22 15:45:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:05 --> Template Class Initialized
+INFO - 2017-05-22 15:45:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:05 --> Model Class Initialized
+INFO - 2017-05-22 15:45:05 --> Model Class Initialized
+INFO - 2017-05-22 15:45:08 --> Config Class Initialized
+INFO - 2017-05-22 15:45:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:08 --> URI Class Initialized
+INFO - 2017-05-22 15:45:08 --> Router Class Initialized
+INFO - 2017-05-22 15:45:08 --> Output Class Initialized
+INFO - 2017-05-22 15:45:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:08 --> Input Class Initialized
+INFO - 2017-05-22 15:45:08 --> Language Class Initialized
+INFO - 2017-05-22 15:45:08 --> Language Class Initialized
+INFO - 2017-05-22 15:45:08 --> Config Class Initialized
+INFO - 2017-05-22 15:45:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:08 --> Template Class Initialized
+INFO - 2017-05-22 15:45:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:08 --> Model Class Initialized
+INFO - 2017-05-22 15:45:08 --> Model Class Initialized
+INFO - 2017-05-22 15:45:11 --> Config Class Initialized
+INFO - 2017-05-22 15:45:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:11 --> URI Class Initialized
+INFO - 2017-05-22 15:45:11 --> Router Class Initialized
+INFO - 2017-05-22 15:45:11 --> Output Class Initialized
+INFO - 2017-05-22 15:45:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:11 --> Input Class Initialized
+INFO - 2017-05-22 15:45:11 --> Language Class Initialized
+INFO - 2017-05-22 15:45:11 --> Language Class Initialized
+INFO - 2017-05-22 15:45:11 --> Config Class Initialized
+INFO - 2017-05-22 15:45:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:11 --> Template Class Initialized
+INFO - 2017-05-22 15:45:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:11 --> Model Class Initialized
+INFO - 2017-05-22 15:45:11 --> Model Class Initialized
+INFO - 2017-05-22 15:45:14 --> Config Class Initialized
+INFO - 2017-05-22 15:45:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:14 --> URI Class Initialized
+INFO - 2017-05-22 15:45:14 --> Router Class Initialized
+INFO - 2017-05-22 15:45:14 --> Output Class Initialized
+INFO - 2017-05-22 15:45:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:14 --> Input Class Initialized
+INFO - 2017-05-22 15:45:14 --> Language Class Initialized
+INFO - 2017-05-22 15:45:14 --> Language Class Initialized
+INFO - 2017-05-22 15:45:14 --> Config Class Initialized
+INFO - 2017-05-22 15:45:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:14 --> Template Class Initialized
+INFO - 2017-05-22 15:45:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:14 --> Model Class Initialized
+INFO - 2017-05-22 15:45:14 --> Model Class Initialized
+INFO - 2017-05-22 15:45:17 --> Config Class Initialized
+INFO - 2017-05-22 15:45:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:17 --> URI Class Initialized
+INFO - 2017-05-22 15:45:17 --> Router Class Initialized
+INFO - 2017-05-22 15:45:17 --> Output Class Initialized
+INFO - 2017-05-22 15:45:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:17 --> Input Class Initialized
+INFO - 2017-05-22 15:45:17 --> Language Class Initialized
+INFO - 2017-05-22 15:45:17 --> Language Class Initialized
+INFO - 2017-05-22 15:45:17 --> Config Class Initialized
+INFO - 2017-05-22 15:45:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:17 --> Template Class Initialized
+INFO - 2017-05-22 15:45:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:17 --> Model Class Initialized
+INFO - 2017-05-22 15:45:17 --> Model Class Initialized
+INFO - 2017-05-22 15:45:20 --> Config Class Initialized
+INFO - 2017-05-22 15:45:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:20 --> URI Class Initialized
+INFO - 2017-05-22 15:45:20 --> Router Class Initialized
+INFO - 2017-05-22 15:45:20 --> Output Class Initialized
+INFO - 2017-05-22 15:45:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:20 --> Input Class Initialized
+INFO - 2017-05-22 15:45:20 --> Language Class Initialized
+INFO - 2017-05-22 15:45:20 --> Language Class Initialized
+INFO - 2017-05-22 15:45:20 --> Config Class Initialized
+INFO - 2017-05-22 15:45:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:20 --> Template Class Initialized
+INFO - 2017-05-22 15:45:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:20 --> Model Class Initialized
+INFO - 2017-05-22 15:45:20 --> Model Class Initialized
+INFO - 2017-05-22 15:45:23 --> Config Class Initialized
+INFO - 2017-05-22 15:45:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:23 --> URI Class Initialized
+INFO - 2017-05-22 15:45:23 --> Router Class Initialized
+INFO - 2017-05-22 15:45:23 --> Output Class Initialized
+INFO - 2017-05-22 15:45:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:23 --> Input Class Initialized
+INFO - 2017-05-22 15:45:23 --> Language Class Initialized
+INFO - 2017-05-22 15:45:23 --> Language Class Initialized
+INFO - 2017-05-22 15:45:23 --> Config Class Initialized
+INFO - 2017-05-22 15:45:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:23 --> Template Class Initialized
+INFO - 2017-05-22 15:45:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:23 --> Model Class Initialized
+INFO - 2017-05-22 15:45:23 --> Model Class Initialized
+INFO - 2017-05-22 15:45:26 --> Config Class Initialized
+INFO - 2017-05-22 15:45:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:26 --> URI Class Initialized
+INFO - 2017-05-22 15:45:26 --> Router Class Initialized
+INFO - 2017-05-22 15:45:26 --> Output Class Initialized
+INFO - 2017-05-22 15:45:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:26 --> Input Class Initialized
+INFO - 2017-05-22 15:45:26 --> Language Class Initialized
+INFO - 2017-05-22 15:45:26 --> Language Class Initialized
+INFO - 2017-05-22 15:45:26 --> Config Class Initialized
+INFO - 2017-05-22 15:45:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:26 --> Template Class Initialized
+INFO - 2017-05-22 15:45:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:26 --> Model Class Initialized
+INFO - 2017-05-22 15:45:26 --> Model Class Initialized
+INFO - 2017-05-22 15:45:29 --> Config Class Initialized
+INFO - 2017-05-22 15:45:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:29 --> URI Class Initialized
+INFO - 2017-05-22 15:45:29 --> Router Class Initialized
+INFO - 2017-05-22 15:45:29 --> Output Class Initialized
+INFO - 2017-05-22 15:45:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:29 --> Input Class Initialized
+INFO - 2017-05-22 15:45:29 --> Language Class Initialized
+INFO - 2017-05-22 15:45:29 --> Language Class Initialized
+INFO - 2017-05-22 15:45:29 --> Config Class Initialized
+INFO - 2017-05-22 15:45:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:29 --> Template Class Initialized
+INFO - 2017-05-22 15:45:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:29 --> Model Class Initialized
+INFO - 2017-05-22 15:45:29 --> Model Class Initialized
+INFO - 2017-05-22 15:45:32 --> Config Class Initialized
+INFO - 2017-05-22 15:45:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:32 --> URI Class Initialized
+INFO - 2017-05-22 15:45:32 --> Router Class Initialized
+INFO - 2017-05-22 15:45:32 --> Output Class Initialized
+INFO - 2017-05-22 15:45:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:32 --> Input Class Initialized
+INFO - 2017-05-22 15:45:32 --> Language Class Initialized
+INFO - 2017-05-22 15:45:32 --> Language Class Initialized
+INFO - 2017-05-22 15:45:32 --> Config Class Initialized
+INFO - 2017-05-22 15:45:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:32 --> Template Class Initialized
+INFO - 2017-05-22 15:45:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:32 --> Model Class Initialized
+INFO - 2017-05-22 15:45:32 --> Model Class Initialized
+INFO - 2017-05-22 15:45:35 --> Config Class Initialized
+INFO - 2017-05-22 15:45:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:35 --> URI Class Initialized
+INFO - 2017-05-22 15:45:35 --> Router Class Initialized
+INFO - 2017-05-22 15:45:35 --> Output Class Initialized
+INFO - 2017-05-22 15:45:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:35 --> Input Class Initialized
+INFO - 2017-05-22 15:45:35 --> Language Class Initialized
+INFO - 2017-05-22 15:45:35 --> Language Class Initialized
+INFO - 2017-05-22 15:45:35 --> Config Class Initialized
+INFO - 2017-05-22 15:45:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:35 --> Template Class Initialized
+INFO - 2017-05-22 15:45:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:35 --> Model Class Initialized
+INFO - 2017-05-22 15:45:35 --> Model Class Initialized
+INFO - 2017-05-22 15:45:38 --> Config Class Initialized
+INFO - 2017-05-22 15:45:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:38 --> URI Class Initialized
+INFO - 2017-05-22 15:45:38 --> Router Class Initialized
+INFO - 2017-05-22 15:45:38 --> Output Class Initialized
+INFO - 2017-05-22 15:45:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:38 --> Input Class Initialized
+INFO - 2017-05-22 15:45:38 --> Language Class Initialized
+INFO - 2017-05-22 15:45:38 --> Language Class Initialized
+INFO - 2017-05-22 15:45:38 --> Config Class Initialized
+INFO - 2017-05-22 15:45:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:38 --> Template Class Initialized
+INFO - 2017-05-22 15:45:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:38 --> Model Class Initialized
+INFO - 2017-05-22 15:45:38 --> Model Class Initialized
+INFO - 2017-05-22 15:45:41 --> Config Class Initialized
+INFO - 2017-05-22 15:45:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:41 --> URI Class Initialized
+INFO - 2017-05-22 15:45:41 --> Router Class Initialized
+INFO - 2017-05-22 15:45:41 --> Output Class Initialized
+INFO - 2017-05-22 15:45:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:41 --> Input Class Initialized
+INFO - 2017-05-22 15:45:41 --> Language Class Initialized
+INFO - 2017-05-22 15:45:41 --> Language Class Initialized
+INFO - 2017-05-22 15:45:41 --> Config Class Initialized
+INFO - 2017-05-22 15:45:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:41 --> Template Class Initialized
+INFO - 2017-05-22 15:45:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:41 --> Model Class Initialized
+INFO - 2017-05-22 15:45:41 --> Model Class Initialized
+INFO - 2017-05-22 15:45:44 --> Config Class Initialized
+INFO - 2017-05-22 15:45:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:44 --> URI Class Initialized
+INFO - 2017-05-22 15:45:44 --> Router Class Initialized
+INFO - 2017-05-22 15:45:44 --> Output Class Initialized
+INFO - 2017-05-22 15:45:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:44 --> Input Class Initialized
+INFO - 2017-05-22 15:45:44 --> Language Class Initialized
+INFO - 2017-05-22 15:45:44 --> Language Class Initialized
+INFO - 2017-05-22 15:45:44 --> Config Class Initialized
+INFO - 2017-05-22 15:45:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:44 --> Template Class Initialized
+INFO - 2017-05-22 15:45:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:44 --> Model Class Initialized
+INFO - 2017-05-22 15:45:44 --> Model Class Initialized
+INFO - 2017-05-22 15:45:47 --> Config Class Initialized
+INFO - 2017-05-22 15:45:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:47 --> URI Class Initialized
+INFO - 2017-05-22 15:45:47 --> Router Class Initialized
+INFO - 2017-05-22 15:45:47 --> Output Class Initialized
+INFO - 2017-05-22 15:45:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:47 --> Input Class Initialized
+INFO - 2017-05-22 15:45:47 --> Language Class Initialized
+INFO - 2017-05-22 15:45:47 --> Language Class Initialized
+INFO - 2017-05-22 15:45:47 --> Config Class Initialized
+INFO - 2017-05-22 15:45:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:47 --> Template Class Initialized
+INFO - 2017-05-22 15:45:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:47 --> Model Class Initialized
+INFO - 2017-05-22 15:45:47 --> Model Class Initialized
+INFO - 2017-05-22 15:45:50 --> Config Class Initialized
+INFO - 2017-05-22 15:45:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:50 --> URI Class Initialized
+INFO - 2017-05-22 15:45:50 --> Router Class Initialized
+INFO - 2017-05-22 15:45:50 --> Output Class Initialized
+INFO - 2017-05-22 15:45:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:50 --> Input Class Initialized
+INFO - 2017-05-22 15:45:50 --> Language Class Initialized
+INFO - 2017-05-22 15:45:50 --> Language Class Initialized
+INFO - 2017-05-22 15:45:50 --> Config Class Initialized
+INFO - 2017-05-22 15:45:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:50 --> Template Class Initialized
+INFO - 2017-05-22 15:45:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:50 --> Model Class Initialized
+INFO - 2017-05-22 15:45:50 --> Model Class Initialized
+INFO - 2017-05-22 15:45:53 --> Config Class Initialized
+INFO - 2017-05-22 15:45:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:53 --> URI Class Initialized
+INFO - 2017-05-22 15:45:53 --> Router Class Initialized
+INFO - 2017-05-22 15:45:53 --> Output Class Initialized
+INFO - 2017-05-22 15:45:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:53 --> Input Class Initialized
+INFO - 2017-05-22 15:45:53 --> Language Class Initialized
+INFO - 2017-05-22 15:45:53 --> Language Class Initialized
+INFO - 2017-05-22 15:45:53 --> Config Class Initialized
+INFO - 2017-05-22 15:45:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:53 --> Template Class Initialized
+INFO - 2017-05-22 15:45:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:53 --> Model Class Initialized
+INFO - 2017-05-22 15:45:53 --> Model Class Initialized
+INFO - 2017-05-22 15:45:56 --> Config Class Initialized
+INFO - 2017-05-22 15:45:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:56 --> URI Class Initialized
+INFO - 2017-05-22 15:45:56 --> Router Class Initialized
+INFO - 2017-05-22 15:45:56 --> Output Class Initialized
+INFO - 2017-05-22 15:45:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:56 --> Input Class Initialized
+INFO - 2017-05-22 15:45:56 --> Language Class Initialized
+INFO - 2017-05-22 15:45:56 --> Language Class Initialized
+INFO - 2017-05-22 15:45:56 --> Config Class Initialized
+INFO - 2017-05-22 15:45:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:56 --> Template Class Initialized
+INFO - 2017-05-22 15:45:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:56 --> Model Class Initialized
+INFO - 2017-05-22 15:45:56 --> Model Class Initialized
+INFO - 2017-05-22 15:45:59 --> Config Class Initialized
+INFO - 2017-05-22 15:45:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:45:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:45:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:45:59 --> URI Class Initialized
+INFO - 2017-05-22 15:45:59 --> Router Class Initialized
+INFO - 2017-05-22 15:45:59 --> Output Class Initialized
+INFO - 2017-05-22 15:45:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:45:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:45:59 --> Input Class Initialized
+INFO - 2017-05-22 15:45:59 --> Language Class Initialized
+INFO - 2017-05-22 15:45:59 --> Language Class Initialized
+INFO - 2017-05-22 15:45:59 --> Config Class Initialized
+INFO - 2017-05-22 15:45:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:45:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:45:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:45:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:45:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:45:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:45:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:45:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:45:59 --> Template Class Initialized
+INFO - 2017-05-22 15:45:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:45:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:45:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:45:59 --> Model Class Initialized
+INFO - 2017-05-22 15:45:59 --> Model Class Initialized
+INFO - 2017-05-22 15:46:02 --> Config Class Initialized
+INFO - 2017-05-22 15:46:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:02 --> URI Class Initialized
+INFO - 2017-05-22 15:46:02 --> Router Class Initialized
+INFO - 2017-05-22 15:46:02 --> Output Class Initialized
+INFO - 2017-05-22 15:46:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:02 --> Input Class Initialized
+INFO - 2017-05-22 15:46:02 --> Language Class Initialized
+INFO - 2017-05-22 15:46:02 --> Language Class Initialized
+INFO - 2017-05-22 15:46:02 --> Config Class Initialized
+INFO - 2017-05-22 15:46:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:02 --> Template Class Initialized
+INFO - 2017-05-22 15:46:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:02 --> Model Class Initialized
+INFO - 2017-05-22 15:46:02 --> Model Class Initialized
+INFO - 2017-05-22 15:46:05 --> Config Class Initialized
+INFO - 2017-05-22 15:46:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:05 --> URI Class Initialized
+INFO - 2017-05-22 15:46:05 --> Router Class Initialized
+INFO - 2017-05-22 15:46:05 --> Output Class Initialized
+INFO - 2017-05-22 15:46:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:05 --> Input Class Initialized
+INFO - 2017-05-22 15:46:05 --> Language Class Initialized
+INFO - 2017-05-22 15:46:05 --> Language Class Initialized
+INFO - 2017-05-22 15:46:05 --> Config Class Initialized
+INFO - 2017-05-22 15:46:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:05 --> Template Class Initialized
+INFO - 2017-05-22 15:46:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:05 --> Model Class Initialized
+INFO - 2017-05-22 15:46:05 --> Model Class Initialized
+INFO - 2017-05-22 15:46:08 --> Config Class Initialized
+INFO - 2017-05-22 15:46:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:08 --> URI Class Initialized
+INFO - 2017-05-22 15:46:08 --> Router Class Initialized
+INFO - 2017-05-22 15:46:08 --> Output Class Initialized
+INFO - 2017-05-22 15:46:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:08 --> Input Class Initialized
+INFO - 2017-05-22 15:46:08 --> Language Class Initialized
+INFO - 2017-05-22 15:46:08 --> Language Class Initialized
+INFO - 2017-05-22 15:46:08 --> Config Class Initialized
+INFO - 2017-05-22 15:46:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:08 --> Template Class Initialized
+INFO - 2017-05-22 15:46:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:08 --> Model Class Initialized
+INFO - 2017-05-22 15:46:08 --> Model Class Initialized
+INFO - 2017-05-22 15:46:11 --> Config Class Initialized
+INFO - 2017-05-22 15:46:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:11 --> URI Class Initialized
+INFO - 2017-05-22 15:46:11 --> Router Class Initialized
+INFO - 2017-05-22 15:46:11 --> Output Class Initialized
+INFO - 2017-05-22 15:46:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:11 --> Input Class Initialized
+INFO - 2017-05-22 15:46:11 --> Language Class Initialized
+INFO - 2017-05-22 15:46:11 --> Language Class Initialized
+INFO - 2017-05-22 15:46:11 --> Config Class Initialized
+INFO - 2017-05-22 15:46:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:11 --> Template Class Initialized
+INFO - 2017-05-22 15:46:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:11 --> Model Class Initialized
+INFO - 2017-05-22 15:46:11 --> Model Class Initialized
+INFO - 2017-05-22 15:46:14 --> Config Class Initialized
+INFO - 2017-05-22 15:46:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:14 --> URI Class Initialized
+INFO - 2017-05-22 15:46:14 --> Router Class Initialized
+INFO - 2017-05-22 15:46:14 --> Output Class Initialized
+INFO - 2017-05-22 15:46:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:14 --> Input Class Initialized
+INFO - 2017-05-22 15:46:14 --> Language Class Initialized
+INFO - 2017-05-22 15:46:14 --> Language Class Initialized
+INFO - 2017-05-22 15:46:14 --> Config Class Initialized
+INFO - 2017-05-22 15:46:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:14 --> Template Class Initialized
+INFO - 2017-05-22 15:46:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:14 --> Model Class Initialized
+INFO - 2017-05-22 15:46:14 --> Model Class Initialized
+INFO - 2017-05-22 15:46:17 --> Config Class Initialized
+INFO - 2017-05-22 15:46:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:17 --> URI Class Initialized
+INFO - 2017-05-22 15:46:17 --> Router Class Initialized
+INFO - 2017-05-22 15:46:17 --> Output Class Initialized
+INFO - 2017-05-22 15:46:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:17 --> Input Class Initialized
+INFO - 2017-05-22 15:46:17 --> Language Class Initialized
+INFO - 2017-05-22 15:46:17 --> Language Class Initialized
+INFO - 2017-05-22 15:46:17 --> Config Class Initialized
+INFO - 2017-05-22 15:46:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:17 --> Template Class Initialized
+INFO - 2017-05-22 15:46:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:17 --> Model Class Initialized
+INFO - 2017-05-22 15:46:17 --> Model Class Initialized
+INFO - 2017-05-22 15:46:20 --> Config Class Initialized
+INFO - 2017-05-22 15:46:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:20 --> URI Class Initialized
+INFO - 2017-05-22 15:46:20 --> Router Class Initialized
+INFO - 2017-05-22 15:46:20 --> Output Class Initialized
+INFO - 2017-05-22 15:46:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:20 --> Input Class Initialized
+INFO - 2017-05-22 15:46:20 --> Language Class Initialized
+INFO - 2017-05-22 15:46:20 --> Language Class Initialized
+INFO - 2017-05-22 15:46:20 --> Config Class Initialized
+INFO - 2017-05-22 15:46:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:20 --> Template Class Initialized
+INFO - 2017-05-22 15:46:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:20 --> Model Class Initialized
+INFO - 2017-05-22 15:46:20 --> Model Class Initialized
+INFO - 2017-05-22 15:46:23 --> Config Class Initialized
+INFO - 2017-05-22 15:46:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:23 --> URI Class Initialized
+INFO - 2017-05-22 15:46:23 --> Router Class Initialized
+INFO - 2017-05-22 15:46:23 --> Output Class Initialized
+INFO - 2017-05-22 15:46:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:23 --> Input Class Initialized
+INFO - 2017-05-22 15:46:23 --> Language Class Initialized
+INFO - 2017-05-22 15:46:23 --> Language Class Initialized
+INFO - 2017-05-22 15:46:23 --> Config Class Initialized
+INFO - 2017-05-22 15:46:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:23 --> Template Class Initialized
+INFO - 2017-05-22 15:46:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:23 --> Model Class Initialized
+INFO - 2017-05-22 15:46:23 --> Model Class Initialized
+INFO - 2017-05-22 15:46:26 --> Config Class Initialized
+INFO - 2017-05-22 15:46:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:26 --> URI Class Initialized
+INFO - 2017-05-22 15:46:26 --> Router Class Initialized
+INFO - 2017-05-22 15:46:26 --> Output Class Initialized
+INFO - 2017-05-22 15:46:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:26 --> Input Class Initialized
+INFO - 2017-05-22 15:46:26 --> Language Class Initialized
+INFO - 2017-05-22 15:46:26 --> Language Class Initialized
+INFO - 2017-05-22 15:46:26 --> Config Class Initialized
+INFO - 2017-05-22 15:46:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:26 --> Template Class Initialized
+INFO - 2017-05-22 15:46:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:26 --> Model Class Initialized
+INFO - 2017-05-22 15:46:26 --> Model Class Initialized
+INFO - 2017-05-22 15:46:29 --> Config Class Initialized
+INFO - 2017-05-22 15:46:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:29 --> URI Class Initialized
+INFO - 2017-05-22 15:46:29 --> Router Class Initialized
+INFO - 2017-05-22 15:46:29 --> Output Class Initialized
+INFO - 2017-05-22 15:46:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:29 --> Input Class Initialized
+INFO - 2017-05-22 15:46:29 --> Language Class Initialized
+INFO - 2017-05-22 15:46:29 --> Language Class Initialized
+INFO - 2017-05-22 15:46:29 --> Config Class Initialized
+INFO - 2017-05-22 15:46:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:29 --> Template Class Initialized
+INFO - 2017-05-22 15:46:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:29 --> Model Class Initialized
+INFO - 2017-05-22 15:46:29 --> Model Class Initialized
+INFO - 2017-05-22 15:46:32 --> Config Class Initialized
+INFO - 2017-05-22 15:46:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:32 --> URI Class Initialized
+INFO - 2017-05-22 15:46:32 --> Router Class Initialized
+INFO - 2017-05-22 15:46:32 --> Output Class Initialized
+INFO - 2017-05-22 15:46:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:32 --> Input Class Initialized
+INFO - 2017-05-22 15:46:32 --> Language Class Initialized
+INFO - 2017-05-22 15:46:32 --> Language Class Initialized
+INFO - 2017-05-22 15:46:32 --> Config Class Initialized
+INFO - 2017-05-22 15:46:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:32 --> Template Class Initialized
+INFO - 2017-05-22 15:46:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:32 --> Model Class Initialized
+INFO - 2017-05-22 15:46:32 --> Model Class Initialized
+INFO - 2017-05-22 15:46:35 --> Config Class Initialized
+INFO - 2017-05-22 15:46:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:35 --> URI Class Initialized
+INFO - 2017-05-22 15:46:35 --> Router Class Initialized
+INFO - 2017-05-22 15:46:35 --> Output Class Initialized
+INFO - 2017-05-22 15:46:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:35 --> Input Class Initialized
+INFO - 2017-05-22 15:46:35 --> Language Class Initialized
+INFO - 2017-05-22 15:46:35 --> Language Class Initialized
+INFO - 2017-05-22 15:46:35 --> Config Class Initialized
+INFO - 2017-05-22 15:46:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:35 --> Template Class Initialized
+INFO - 2017-05-22 15:46:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:35 --> Model Class Initialized
+INFO - 2017-05-22 15:46:35 --> Model Class Initialized
+INFO - 2017-05-22 15:46:38 --> Config Class Initialized
+INFO - 2017-05-22 15:46:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:38 --> URI Class Initialized
+INFO - 2017-05-22 15:46:38 --> Router Class Initialized
+INFO - 2017-05-22 15:46:38 --> Output Class Initialized
+INFO - 2017-05-22 15:46:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:38 --> Input Class Initialized
+INFO - 2017-05-22 15:46:38 --> Language Class Initialized
+INFO - 2017-05-22 15:46:38 --> Language Class Initialized
+INFO - 2017-05-22 15:46:38 --> Config Class Initialized
+INFO - 2017-05-22 15:46:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:38 --> Template Class Initialized
+INFO - 2017-05-22 15:46:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:38 --> Model Class Initialized
+INFO - 2017-05-22 15:46:38 --> Model Class Initialized
+INFO - 2017-05-22 15:46:41 --> Config Class Initialized
+INFO - 2017-05-22 15:46:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:41 --> URI Class Initialized
+INFO - 2017-05-22 15:46:41 --> Router Class Initialized
+INFO - 2017-05-22 15:46:41 --> Output Class Initialized
+INFO - 2017-05-22 15:46:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:41 --> Input Class Initialized
+INFO - 2017-05-22 15:46:41 --> Language Class Initialized
+INFO - 2017-05-22 15:46:41 --> Language Class Initialized
+INFO - 2017-05-22 15:46:41 --> Config Class Initialized
+INFO - 2017-05-22 15:46:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:41 --> Template Class Initialized
+INFO - 2017-05-22 15:46:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:41 --> Model Class Initialized
+INFO - 2017-05-22 15:46:41 --> Model Class Initialized
+INFO - 2017-05-22 15:46:44 --> Config Class Initialized
+INFO - 2017-05-22 15:46:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:44 --> URI Class Initialized
+INFO - 2017-05-22 15:46:44 --> Router Class Initialized
+INFO - 2017-05-22 15:46:44 --> Output Class Initialized
+INFO - 2017-05-22 15:46:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:44 --> Input Class Initialized
+INFO - 2017-05-22 15:46:44 --> Language Class Initialized
+INFO - 2017-05-22 15:46:44 --> Language Class Initialized
+INFO - 2017-05-22 15:46:44 --> Config Class Initialized
+INFO - 2017-05-22 15:46:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:44 --> Template Class Initialized
+INFO - 2017-05-22 15:46:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:44 --> Model Class Initialized
+INFO - 2017-05-22 15:46:44 --> Model Class Initialized
+INFO - 2017-05-22 15:46:47 --> Config Class Initialized
+INFO - 2017-05-22 15:46:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:47 --> URI Class Initialized
+INFO - 2017-05-22 15:46:47 --> Router Class Initialized
+INFO - 2017-05-22 15:46:47 --> Output Class Initialized
+INFO - 2017-05-22 15:46:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:47 --> Input Class Initialized
+INFO - 2017-05-22 15:46:47 --> Language Class Initialized
+INFO - 2017-05-22 15:46:47 --> Language Class Initialized
+INFO - 2017-05-22 15:46:47 --> Config Class Initialized
+INFO - 2017-05-22 15:46:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:47 --> Template Class Initialized
+INFO - 2017-05-22 15:46:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:47 --> Model Class Initialized
+INFO - 2017-05-22 15:46:47 --> Model Class Initialized
+INFO - 2017-05-22 15:46:50 --> Config Class Initialized
+INFO - 2017-05-22 15:46:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:50 --> URI Class Initialized
+INFO - 2017-05-22 15:46:50 --> Router Class Initialized
+INFO - 2017-05-22 15:46:50 --> Output Class Initialized
+INFO - 2017-05-22 15:46:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:50 --> Input Class Initialized
+INFO - 2017-05-22 15:46:50 --> Language Class Initialized
+INFO - 2017-05-22 15:46:50 --> Language Class Initialized
+INFO - 2017-05-22 15:46:50 --> Config Class Initialized
+INFO - 2017-05-22 15:46:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:50 --> Template Class Initialized
+INFO - 2017-05-22 15:46:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:50 --> Model Class Initialized
+INFO - 2017-05-22 15:46:50 --> Model Class Initialized
+INFO - 2017-05-22 15:46:53 --> Config Class Initialized
+INFO - 2017-05-22 15:46:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:53 --> URI Class Initialized
+INFO - 2017-05-22 15:46:53 --> Router Class Initialized
+INFO - 2017-05-22 15:46:53 --> Output Class Initialized
+INFO - 2017-05-22 15:46:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:53 --> Input Class Initialized
+INFO - 2017-05-22 15:46:53 --> Language Class Initialized
+INFO - 2017-05-22 15:46:53 --> Language Class Initialized
+INFO - 2017-05-22 15:46:53 --> Config Class Initialized
+INFO - 2017-05-22 15:46:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:53 --> Template Class Initialized
+INFO - 2017-05-22 15:46:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:53 --> Model Class Initialized
+INFO - 2017-05-22 15:46:53 --> Model Class Initialized
+INFO - 2017-05-22 15:46:56 --> Config Class Initialized
+INFO - 2017-05-22 15:46:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:56 --> URI Class Initialized
+INFO - 2017-05-22 15:46:56 --> Router Class Initialized
+INFO - 2017-05-22 15:46:56 --> Output Class Initialized
+INFO - 2017-05-22 15:46:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:56 --> Input Class Initialized
+INFO - 2017-05-22 15:46:56 --> Language Class Initialized
+INFO - 2017-05-22 15:46:56 --> Language Class Initialized
+INFO - 2017-05-22 15:46:56 --> Config Class Initialized
+INFO - 2017-05-22 15:46:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:56 --> Template Class Initialized
+INFO - 2017-05-22 15:46:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:56 --> Model Class Initialized
+INFO - 2017-05-22 15:46:56 --> Model Class Initialized
+INFO - 2017-05-22 15:46:59 --> Config Class Initialized
+INFO - 2017-05-22 15:46:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:46:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:46:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:46:59 --> URI Class Initialized
+INFO - 2017-05-22 15:46:59 --> Router Class Initialized
+INFO - 2017-05-22 15:46:59 --> Output Class Initialized
+INFO - 2017-05-22 15:46:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:46:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:46:59 --> Input Class Initialized
+INFO - 2017-05-22 15:46:59 --> Language Class Initialized
+INFO - 2017-05-22 15:46:59 --> Language Class Initialized
+INFO - 2017-05-22 15:46:59 --> Config Class Initialized
+INFO - 2017-05-22 15:46:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:46:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:46:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:46:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:46:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:46:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:46:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:46:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:46:59 --> Template Class Initialized
+INFO - 2017-05-22 15:46:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:46:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:46:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:46:59 --> Model Class Initialized
+INFO - 2017-05-22 15:46:59 --> Model Class Initialized
+INFO - 2017-05-22 15:47:02 --> Config Class Initialized
+INFO - 2017-05-22 15:47:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:02 --> URI Class Initialized
+INFO - 2017-05-22 15:47:02 --> Router Class Initialized
+INFO - 2017-05-22 15:47:02 --> Output Class Initialized
+INFO - 2017-05-22 15:47:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:02 --> Input Class Initialized
+INFO - 2017-05-22 15:47:02 --> Language Class Initialized
+INFO - 2017-05-22 15:47:02 --> Language Class Initialized
+INFO - 2017-05-22 15:47:02 --> Config Class Initialized
+INFO - 2017-05-22 15:47:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:02 --> Template Class Initialized
+INFO - 2017-05-22 15:47:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:02 --> Model Class Initialized
+INFO - 2017-05-22 15:47:02 --> Model Class Initialized
+INFO - 2017-05-22 15:47:05 --> Config Class Initialized
+INFO - 2017-05-22 15:47:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:05 --> URI Class Initialized
+INFO - 2017-05-22 15:47:05 --> Router Class Initialized
+INFO - 2017-05-22 15:47:05 --> Output Class Initialized
+INFO - 2017-05-22 15:47:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:05 --> Input Class Initialized
+INFO - 2017-05-22 15:47:05 --> Language Class Initialized
+INFO - 2017-05-22 15:47:05 --> Language Class Initialized
+INFO - 2017-05-22 15:47:05 --> Config Class Initialized
+INFO - 2017-05-22 15:47:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:05 --> Template Class Initialized
+INFO - 2017-05-22 15:47:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:05 --> Model Class Initialized
+INFO - 2017-05-22 15:47:05 --> Model Class Initialized
+INFO - 2017-05-22 15:47:08 --> Config Class Initialized
+INFO - 2017-05-22 15:47:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:08 --> URI Class Initialized
+INFO - 2017-05-22 15:47:08 --> Router Class Initialized
+INFO - 2017-05-22 15:47:08 --> Output Class Initialized
+INFO - 2017-05-22 15:47:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:08 --> Input Class Initialized
+INFO - 2017-05-22 15:47:08 --> Language Class Initialized
+INFO - 2017-05-22 15:47:08 --> Language Class Initialized
+INFO - 2017-05-22 15:47:08 --> Config Class Initialized
+INFO - 2017-05-22 15:47:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:08 --> Template Class Initialized
+INFO - 2017-05-22 15:47:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:08 --> Model Class Initialized
+INFO - 2017-05-22 15:47:08 --> Model Class Initialized
+INFO - 2017-05-22 15:47:11 --> Config Class Initialized
+INFO - 2017-05-22 15:47:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:11 --> URI Class Initialized
+INFO - 2017-05-22 15:47:11 --> Router Class Initialized
+INFO - 2017-05-22 15:47:11 --> Output Class Initialized
+INFO - 2017-05-22 15:47:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:11 --> Input Class Initialized
+INFO - 2017-05-22 15:47:11 --> Language Class Initialized
+INFO - 2017-05-22 15:47:11 --> Language Class Initialized
+INFO - 2017-05-22 15:47:11 --> Config Class Initialized
+INFO - 2017-05-22 15:47:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:11 --> Template Class Initialized
+INFO - 2017-05-22 15:47:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:11 --> Model Class Initialized
+INFO - 2017-05-22 15:47:11 --> Model Class Initialized
+INFO - 2017-05-22 15:47:14 --> Config Class Initialized
+INFO - 2017-05-22 15:47:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:14 --> URI Class Initialized
+INFO - 2017-05-22 15:47:14 --> Router Class Initialized
+INFO - 2017-05-22 15:47:14 --> Output Class Initialized
+INFO - 2017-05-22 15:47:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:14 --> Input Class Initialized
+INFO - 2017-05-22 15:47:14 --> Language Class Initialized
+INFO - 2017-05-22 15:47:14 --> Language Class Initialized
+INFO - 2017-05-22 15:47:14 --> Config Class Initialized
+INFO - 2017-05-22 15:47:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:14 --> Template Class Initialized
+INFO - 2017-05-22 15:47:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:14 --> Model Class Initialized
+INFO - 2017-05-22 15:47:14 --> Model Class Initialized
+INFO - 2017-05-22 15:47:17 --> Config Class Initialized
+INFO - 2017-05-22 15:47:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:17 --> URI Class Initialized
+INFO - 2017-05-22 15:47:17 --> Router Class Initialized
+INFO - 2017-05-22 15:47:17 --> Output Class Initialized
+INFO - 2017-05-22 15:47:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:17 --> Input Class Initialized
+INFO - 2017-05-22 15:47:17 --> Language Class Initialized
+INFO - 2017-05-22 15:47:17 --> Language Class Initialized
+INFO - 2017-05-22 15:47:17 --> Config Class Initialized
+INFO - 2017-05-22 15:47:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:17 --> Template Class Initialized
+INFO - 2017-05-22 15:47:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:17 --> Model Class Initialized
+INFO - 2017-05-22 15:47:17 --> Model Class Initialized
+INFO - 2017-05-22 15:47:20 --> Config Class Initialized
+INFO - 2017-05-22 15:47:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:20 --> URI Class Initialized
+INFO - 2017-05-22 15:47:20 --> Router Class Initialized
+INFO - 2017-05-22 15:47:20 --> Output Class Initialized
+INFO - 2017-05-22 15:47:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:20 --> Input Class Initialized
+INFO - 2017-05-22 15:47:20 --> Language Class Initialized
+INFO - 2017-05-22 15:47:20 --> Language Class Initialized
+INFO - 2017-05-22 15:47:20 --> Config Class Initialized
+INFO - 2017-05-22 15:47:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:20 --> Template Class Initialized
+INFO - 2017-05-22 15:47:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:20 --> Model Class Initialized
+INFO - 2017-05-22 15:47:20 --> Model Class Initialized
+INFO - 2017-05-22 15:47:23 --> Config Class Initialized
+INFO - 2017-05-22 15:47:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:23 --> URI Class Initialized
+INFO - 2017-05-22 15:47:23 --> Router Class Initialized
+INFO - 2017-05-22 15:47:23 --> Output Class Initialized
+INFO - 2017-05-22 15:47:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:23 --> Input Class Initialized
+INFO - 2017-05-22 15:47:23 --> Language Class Initialized
+INFO - 2017-05-22 15:47:23 --> Language Class Initialized
+INFO - 2017-05-22 15:47:23 --> Config Class Initialized
+INFO - 2017-05-22 15:47:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:23 --> Template Class Initialized
+INFO - 2017-05-22 15:47:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:23 --> Model Class Initialized
+INFO - 2017-05-22 15:47:23 --> Model Class Initialized
+INFO - 2017-05-22 15:47:26 --> Config Class Initialized
+INFO - 2017-05-22 15:47:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:26 --> URI Class Initialized
+INFO - 2017-05-22 15:47:26 --> Router Class Initialized
+INFO - 2017-05-22 15:47:26 --> Output Class Initialized
+INFO - 2017-05-22 15:47:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:26 --> Input Class Initialized
+INFO - 2017-05-22 15:47:26 --> Language Class Initialized
+INFO - 2017-05-22 15:47:26 --> Language Class Initialized
+INFO - 2017-05-22 15:47:26 --> Config Class Initialized
+INFO - 2017-05-22 15:47:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:26 --> Template Class Initialized
+INFO - 2017-05-22 15:47:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:26 --> Model Class Initialized
+INFO - 2017-05-22 15:47:26 --> Model Class Initialized
+INFO - 2017-05-22 15:47:29 --> Config Class Initialized
+INFO - 2017-05-22 15:47:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:29 --> URI Class Initialized
+INFO - 2017-05-22 15:47:29 --> Router Class Initialized
+INFO - 2017-05-22 15:47:29 --> Output Class Initialized
+INFO - 2017-05-22 15:47:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:29 --> Input Class Initialized
+INFO - 2017-05-22 15:47:29 --> Language Class Initialized
+INFO - 2017-05-22 15:47:29 --> Language Class Initialized
+INFO - 2017-05-22 15:47:29 --> Config Class Initialized
+INFO - 2017-05-22 15:47:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:29 --> Template Class Initialized
+INFO - 2017-05-22 15:47:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:29 --> Model Class Initialized
+INFO - 2017-05-22 15:47:29 --> Model Class Initialized
+INFO - 2017-05-22 15:47:32 --> Config Class Initialized
+INFO - 2017-05-22 15:47:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:32 --> URI Class Initialized
+INFO - 2017-05-22 15:47:32 --> Router Class Initialized
+INFO - 2017-05-22 15:47:32 --> Output Class Initialized
+INFO - 2017-05-22 15:47:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:32 --> Input Class Initialized
+INFO - 2017-05-22 15:47:32 --> Language Class Initialized
+INFO - 2017-05-22 15:47:32 --> Language Class Initialized
+INFO - 2017-05-22 15:47:32 --> Config Class Initialized
+INFO - 2017-05-22 15:47:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:32 --> Template Class Initialized
+INFO - 2017-05-22 15:47:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:32 --> Model Class Initialized
+INFO - 2017-05-22 15:47:32 --> Model Class Initialized
+INFO - 2017-05-22 15:47:35 --> Config Class Initialized
+INFO - 2017-05-22 15:47:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:35 --> URI Class Initialized
+INFO - 2017-05-22 15:47:35 --> Router Class Initialized
+INFO - 2017-05-22 15:47:35 --> Output Class Initialized
+INFO - 2017-05-22 15:47:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:35 --> Input Class Initialized
+INFO - 2017-05-22 15:47:35 --> Language Class Initialized
+INFO - 2017-05-22 15:47:35 --> Language Class Initialized
+INFO - 2017-05-22 15:47:35 --> Config Class Initialized
+INFO - 2017-05-22 15:47:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:35 --> Template Class Initialized
+INFO - 2017-05-22 15:47:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:35 --> Model Class Initialized
+INFO - 2017-05-22 15:47:35 --> Model Class Initialized
+INFO - 2017-05-22 15:47:38 --> Config Class Initialized
+INFO - 2017-05-22 15:47:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:38 --> URI Class Initialized
+INFO - 2017-05-22 15:47:38 --> Router Class Initialized
+INFO - 2017-05-22 15:47:38 --> Output Class Initialized
+INFO - 2017-05-22 15:47:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:38 --> Input Class Initialized
+INFO - 2017-05-22 15:47:38 --> Language Class Initialized
+INFO - 2017-05-22 15:47:38 --> Language Class Initialized
+INFO - 2017-05-22 15:47:38 --> Config Class Initialized
+INFO - 2017-05-22 15:47:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:38 --> Template Class Initialized
+INFO - 2017-05-22 15:47:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:38 --> Model Class Initialized
+INFO - 2017-05-22 15:47:38 --> Model Class Initialized
+INFO - 2017-05-22 15:47:41 --> Config Class Initialized
+INFO - 2017-05-22 15:47:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:41 --> URI Class Initialized
+INFO - 2017-05-22 15:47:41 --> Router Class Initialized
+INFO - 2017-05-22 15:47:41 --> Output Class Initialized
+INFO - 2017-05-22 15:47:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:41 --> Input Class Initialized
+INFO - 2017-05-22 15:47:41 --> Language Class Initialized
+INFO - 2017-05-22 15:47:41 --> Language Class Initialized
+INFO - 2017-05-22 15:47:41 --> Config Class Initialized
+INFO - 2017-05-22 15:47:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:41 --> Template Class Initialized
+INFO - 2017-05-22 15:47:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:41 --> Model Class Initialized
+INFO - 2017-05-22 15:47:41 --> Model Class Initialized
+INFO - 2017-05-22 15:47:44 --> Config Class Initialized
+INFO - 2017-05-22 15:47:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:44 --> URI Class Initialized
+INFO - 2017-05-22 15:47:44 --> Router Class Initialized
+INFO - 2017-05-22 15:47:44 --> Output Class Initialized
+INFO - 2017-05-22 15:47:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:44 --> Input Class Initialized
+INFO - 2017-05-22 15:47:44 --> Language Class Initialized
+INFO - 2017-05-22 15:47:44 --> Language Class Initialized
+INFO - 2017-05-22 15:47:44 --> Config Class Initialized
+INFO - 2017-05-22 15:47:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:44 --> Template Class Initialized
+INFO - 2017-05-22 15:47:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:44 --> Model Class Initialized
+INFO - 2017-05-22 15:47:44 --> Model Class Initialized
+INFO - 2017-05-22 15:47:47 --> Config Class Initialized
+INFO - 2017-05-22 15:47:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:47 --> URI Class Initialized
+INFO - 2017-05-22 15:47:47 --> Router Class Initialized
+INFO - 2017-05-22 15:47:47 --> Output Class Initialized
+INFO - 2017-05-22 15:47:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:47 --> Input Class Initialized
+INFO - 2017-05-22 15:47:47 --> Language Class Initialized
+INFO - 2017-05-22 15:47:47 --> Language Class Initialized
+INFO - 2017-05-22 15:47:47 --> Config Class Initialized
+INFO - 2017-05-22 15:47:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:47 --> Template Class Initialized
+INFO - 2017-05-22 15:47:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:47 --> Model Class Initialized
+INFO - 2017-05-22 15:47:47 --> Model Class Initialized
+INFO - 2017-05-22 15:47:50 --> Config Class Initialized
+INFO - 2017-05-22 15:47:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:50 --> URI Class Initialized
+INFO - 2017-05-22 15:47:50 --> Router Class Initialized
+INFO - 2017-05-22 15:47:50 --> Output Class Initialized
+INFO - 2017-05-22 15:47:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:50 --> Input Class Initialized
+INFO - 2017-05-22 15:47:50 --> Language Class Initialized
+INFO - 2017-05-22 15:47:50 --> Language Class Initialized
+INFO - 2017-05-22 15:47:50 --> Config Class Initialized
+INFO - 2017-05-22 15:47:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:50 --> Template Class Initialized
+INFO - 2017-05-22 15:47:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:50 --> Model Class Initialized
+INFO - 2017-05-22 15:47:50 --> Model Class Initialized
+INFO - 2017-05-22 15:47:53 --> Config Class Initialized
+INFO - 2017-05-22 15:47:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:53 --> URI Class Initialized
+INFO - 2017-05-22 15:47:53 --> Router Class Initialized
+INFO - 2017-05-22 15:47:53 --> Output Class Initialized
+INFO - 2017-05-22 15:47:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:53 --> Input Class Initialized
+INFO - 2017-05-22 15:47:53 --> Language Class Initialized
+INFO - 2017-05-22 15:47:53 --> Language Class Initialized
+INFO - 2017-05-22 15:47:53 --> Config Class Initialized
+INFO - 2017-05-22 15:47:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:53 --> Template Class Initialized
+INFO - 2017-05-22 15:47:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:53 --> Model Class Initialized
+INFO - 2017-05-22 15:47:53 --> Model Class Initialized
+INFO - 2017-05-22 15:47:56 --> Config Class Initialized
+INFO - 2017-05-22 15:47:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:56 --> URI Class Initialized
+INFO - 2017-05-22 15:47:56 --> Router Class Initialized
+INFO - 2017-05-22 15:47:56 --> Output Class Initialized
+INFO - 2017-05-22 15:47:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:56 --> Input Class Initialized
+INFO - 2017-05-22 15:47:56 --> Language Class Initialized
+INFO - 2017-05-22 15:47:56 --> Language Class Initialized
+INFO - 2017-05-22 15:47:56 --> Config Class Initialized
+INFO - 2017-05-22 15:47:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:56 --> Template Class Initialized
+INFO - 2017-05-22 15:47:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:56 --> Model Class Initialized
+INFO - 2017-05-22 15:47:56 --> Model Class Initialized
+INFO - 2017-05-22 15:47:59 --> Config Class Initialized
+INFO - 2017-05-22 15:47:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:47:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:47:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:47:59 --> URI Class Initialized
+INFO - 2017-05-22 15:47:59 --> Router Class Initialized
+INFO - 2017-05-22 15:47:59 --> Output Class Initialized
+INFO - 2017-05-22 15:47:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:47:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:47:59 --> Input Class Initialized
+INFO - 2017-05-22 15:47:59 --> Language Class Initialized
+INFO - 2017-05-22 15:47:59 --> Language Class Initialized
+INFO - 2017-05-22 15:47:59 --> Config Class Initialized
+INFO - 2017-05-22 15:47:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:47:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:47:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:47:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:47:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:47:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:47:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:47:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:47:59 --> Template Class Initialized
+INFO - 2017-05-22 15:47:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:47:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:47:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:47:59 --> Model Class Initialized
+INFO - 2017-05-22 15:47:59 --> Model Class Initialized
+INFO - 2017-05-22 15:48:02 --> Config Class Initialized
+INFO - 2017-05-22 15:48:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:02 --> URI Class Initialized
+INFO - 2017-05-22 15:48:02 --> Router Class Initialized
+INFO - 2017-05-22 15:48:02 --> Output Class Initialized
+INFO - 2017-05-22 15:48:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:02 --> Input Class Initialized
+INFO - 2017-05-22 15:48:02 --> Language Class Initialized
+INFO - 2017-05-22 15:48:02 --> Language Class Initialized
+INFO - 2017-05-22 15:48:02 --> Config Class Initialized
+INFO - 2017-05-22 15:48:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:02 --> Template Class Initialized
+INFO - 2017-05-22 15:48:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:02 --> Model Class Initialized
+INFO - 2017-05-22 15:48:02 --> Model Class Initialized
+INFO - 2017-05-22 15:48:05 --> Config Class Initialized
+INFO - 2017-05-22 15:48:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:05 --> URI Class Initialized
+INFO - 2017-05-22 15:48:05 --> Router Class Initialized
+INFO - 2017-05-22 15:48:05 --> Output Class Initialized
+INFO - 2017-05-22 15:48:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:05 --> Input Class Initialized
+INFO - 2017-05-22 15:48:05 --> Language Class Initialized
+INFO - 2017-05-22 15:48:05 --> Language Class Initialized
+INFO - 2017-05-22 15:48:05 --> Config Class Initialized
+INFO - 2017-05-22 15:48:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:05 --> Template Class Initialized
+INFO - 2017-05-22 15:48:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:05 --> Model Class Initialized
+INFO - 2017-05-22 15:48:05 --> Model Class Initialized
+INFO - 2017-05-22 15:48:08 --> Config Class Initialized
+INFO - 2017-05-22 15:48:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:08 --> URI Class Initialized
+INFO - 2017-05-22 15:48:08 --> Router Class Initialized
+INFO - 2017-05-22 15:48:08 --> Output Class Initialized
+INFO - 2017-05-22 15:48:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:08 --> Input Class Initialized
+INFO - 2017-05-22 15:48:08 --> Language Class Initialized
+INFO - 2017-05-22 15:48:08 --> Language Class Initialized
+INFO - 2017-05-22 15:48:08 --> Config Class Initialized
+INFO - 2017-05-22 15:48:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:08 --> Template Class Initialized
+INFO - 2017-05-22 15:48:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:08 --> Model Class Initialized
+INFO - 2017-05-22 15:48:08 --> Model Class Initialized
+INFO - 2017-05-22 15:48:11 --> Config Class Initialized
+INFO - 2017-05-22 15:48:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:11 --> URI Class Initialized
+INFO - 2017-05-22 15:48:11 --> Router Class Initialized
+INFO - 2017-05-22 15:48:11 --> Output Class Initialized
+INFO - 2017-05-22 15:48:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:11 --> Input Class Initialized
+INFO - 2017-05-22 15:48:11 --> Language Class Initialized
+INFO - 2017-05-22 15:48:11 --> Language Class Initialized
+INFO - 2017-05-22 15:48:11 --> Config Class Initialized
+INFO - 2017-05-22 15:48:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:11 --> Template Class Initialized
+INFO - 2017-05-22 15:48:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:11 --> Model Class Initialized
+INFO - 2017-05-22 15:48:11 --> Model Class Initialized
+INFO - 2017-05-22 15:48:14 --> Config Class Initialized
+INFO - 2017-05-22 15:48:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:14 --> URI Class Initialized
+INFO - 2017-05-22 15:48:14 --> Router Class Initialized
+INFO - 2017-05-22 15:48:14 --> Output Class Initialized
+INFO - 2017-05-22 15:48:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:14 --> Input Class Initialized
+INFO - 2017-05-22 15:48:14 --> Language Class Initialized
+INFO - 2017-05-22 15:48:14 --> Language Class Initialized
+INFO - 2017-05-22 15:48:14 --> Config Class Initialized
+INFO - 2017-05-22 15:48:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:14 --> Template Class Initialized
+INFO - 2017-05-22 15:48:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:14 --> Model Class Initialized
+INFO - 2017-05-22 15:48:14 --> Model Class Initialized
+INFO - 2017-05-22 15:48:17 --> Config Class Initialized
+INFO - 2017-05-22 15:48:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:17 --> URI Class Initialized
+INFO - 2017-05-22 15:48:17 --> Router Class Initialized
+INFO - 2017-05-22 15:48:17 --> Output Class Initialized
+INFO - 2017-05-22 15:48:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:17 --> Input Class Initialized
+INFO - 2017-05-22 15:48:17 --> Language Class Initialized
+INFO - 2017-05-22 15:48:17 --> Language Class Initialized
+INFO - 2017-05-22 15:48:17 --> Config Class Initialized
+INFO - 2017-05-22 15:48:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:17 --> Template Class Initialized
+INFO - 2017-05-22 15:48:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:17 --> Model Class Initialized
+INFO - 2017-05-22 15:48:17 --> Model Class Initialized
+INFO - 2017-05-22 15:48:20 --> Config Class Initialized
+INFO - 2017-05-22 15:48:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:20 --> URI Class Initialized
+INFO - 2017-05-22 15:48:20 --> Router Class Initialized
+INFO - 2017-05-22 15:48:20 --> Output Class Initialized
+INFO - 2017-05-22 15:48:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:20 --> Input Class Initialized
+INFO - 2017-05-22 15:48:20 --> Language Class Initialized
+INFO - 2017-05-22 15:48:20 --> Language Class Initialized
+INFO - 2017-05-22 15:48:20 --> Config Class Initialized
+INFO - 2017-05-22 15:48:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:20 --> Template Class Initialized
+INFO - 2017-05-22 15:48:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:20 --> Model Class Initialized
+INFO - 2017-05-22 15:48:20 --> Model Class Initialized
+INFO - 2017-05-22 15:48:23 --> Config Class Initialized
+INFO - 2017-05-22 15:48:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:23 --> URI Class Initialized
+INFO - 2017-05-22 15:48:23 --> Router Class Initialized
+INFO - 2017-05-22 15:48:23 --> Output Class Initialized
+INFO - 2017-05-22 15:48:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:23 --> Input Class Initialized
+INFO - 2017-05-22 15:48:23 --> Language Class Initialized
+INFO - 2017-05-22 15:48:23 --> Language Class Initialized
+INFO - 2017-05-22 15:48:23 --> Config Class Initialized
+INFO - 2017-05-22 15:48:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:23 --> Template Class Initialized
+INFO - 2017-05-22 15:48:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:23 --> Model Class Initialized
+INFO - 2017-05-22 15:48:23 --> Model Class Initialized
+INFO - 2017-05-22 15:48:26 --> Config Class Initialized
+INFO - 2017-05-22 15:48:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:26 --> URI Class Initialized
+INFO - 2017-05-22 15:48:26 --> Router Class Initialized
+INFO - 2017-05-22 15:48:26 --> Output Class Initialized
+INFO - 2017-05-22 15:48:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:26 --> Input Class Initialized
+INFO - 2017-05-22 15:48:26 --> Language Class Initialized
+INFO - 2017-05-22 15:48:26 --> Language Class Initialized
+INFO - 2017-05-22 15:48:26 --> Config Class Initialized
+INFO - 2017-05-22 15:48:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:26 --> Template Class Initialized
+INFO - 2017-05-22 15:48:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:26 --> Model Class Initialized
+INFO - 2017-05-22 15:48:26 --> Model Class Initialized
+INFO - 2017-05-22 15:48:29 --> Config Class Initialized
+INFO - 2017-05-22 15:48:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:29 --> URI Class Initialized
+INFO - 2017-05-22 15:48:29 --> Router Class Initialized
+INFO - 2017-05-22 15:48:29 --> Output Class Initialized
+INFO - 2017-05-22 15:48:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:29 --> Input Class Initialized
+INFO - 2017-05-22 15:48:29 --> Language Class Initialized
+INFO - 2017-05-22 15:48:29 --> Language Class Initialized
+INFO - 2017-05-22 15:48:29 --> Config Class Initialized
+INFO - 2017-05-22 15:48:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:29 --> Template Class Initialized
+INFO - 2017-05-22 15:48:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:29 --> Model Class Initialized
+INFO - 2017-05-22 15:48:29 --> Model Class Initialized
+INFO - 2017-05-22 15:48:32 --> Config Class Initialized
+INFO - 2017-05-22 15:48:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:32 --> URI Class Initialized
+INFO - 2017-05-22 15:48:32 --> Router Class Initialized
+INFO - 2017-05-22 15:48:32 --> Output Class Initialized
+INFO - 2017-05-22 15:48:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:32 --> Input Class Initialized
+INFO - 2017-05-22 15:48:32 --> Language Class Initialized
+INFO - 2017-05-22 15:48:32 --> Language Class Initialized
+INFO - 2017-05-22 15:48:32 --> Config Class Initialized
+INFO - 2017-05-22 15:48:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:32 --> Template Class Initialized
+INFO - 2017-05-22 15:48:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:32 --> Model Class Initialized
+INFO - 2017-05-22 15:48:32 --> Model Class Initialized
+INFO - 2017-05-22 15:48:35 --> Config Class Initialized
+INFO - 2017-05-22 15:48:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:35 --> URI Class Initialized
+INFO - 2017-05-22 15:48:35 --> Router Class Initialized
+INFO - 2017-05-22 15:48:35 --> Output Class Initialized
+INFO - 2017-05-22 15:48:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:35 --> Input Class Initialized
+INFO - 2017-05-22 15:48:35 --> Language Class Initialized
+INFO - 2017-05-22 15:48:35 --> Language Class Initialized
+INFO - 2017-05-22 15:48:35 --> Config Class Initialized
+INFO - 2017-05-22 15:48:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:35 --> Template Class Initialized
+INFO - 2017-05-22 15:48:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:35 --> Model Class Initialized
+INFO - 2017-05-22 15:48:35 --> Model Class Initialized
+INFO - 2017-05-22 15:48:38 --> Config Class Initialized
+INFO - 2017-05-22 15:48:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:38 --> URI Class Initialized
+INFO - 2017-05-22 15:48:38 --> Router Class Initialized
+INFO - 2017-05-22 15:48:38 --> Output Class Initialized
+INFO - 2017-05-22 15:48:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:38 --> Input Class Initialized
+INFO - 2017-05-22 15:48:38 --> Language Class Initialized
+INFO - 2017-05-22 15:48:38 --> Language Class Initialized
+INFO - 2017-05-22 15:48:38 --> Config Class Initialized
+INFO - 2017-05-22 15:48:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:38 --> Template Class Initialized
+INFO - 2017-05-22 15:48:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:38 --> Model Class Initialized
+INFO - 2017-05-22 15:48:38 --> Model Class Initialized
+INFO - 2017-05-22 15:48:41 --> Config Class Initialized
+INFO - 2017-05-22 15:48:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:41 --> URI Class Initialized
+INFO - 2017-05-22 15:48:41 --> Router Class Initialized
+INFO - 2017-05-22 15:48:41 --> Output Class Initialized
+INFO - 2017-05-22 15:48:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:41 --> Input Class Initialized
+INFO - 2017-05-22 15:48:41 --> Language Class Initialized
+INFO - 2017-05-22 15:48:41 --> Language Class Initialized
+INFO - 2017-05-22 15:48:41 --> Config Class Initialized
+INFO - 2017-05-22 15:48:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:41 --> Template Class Initialized
+INFO - 2017-05-22 15:48:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:41 --> Model Class Initialized
+INFO - 2017-05-22 15:48:41 --> Model Class Initialized
+INFO - 2017-05-22 15:48:44 --> Config Class Initialized
+INFO - 2017-05-22 15:48:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:44 --> URI Class Initialized
+INFO - 2017-05-22 15:48:44 --> Router Class Initialized
+INFO - 2017-05-22 15:48:44 --> Output Class Initialized
+INFO - 2017-05-22 15:48:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:44 --> Input Class Initialized
+INFO - 2017-05-22 15:48:44 --> Language Class Initialized
+INFO - 2017-05-22 15:48:44 --> Language Class Initialized
+INFO - 2017-05-22 15:48:44 --> Config Class Initialized
+INFO - 2017-05-22 15:48:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:44 --> Template Class Initialized
+INFO - 2017-05-22 15:48:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:44 --> Model Class Initialized
+INFO - 2017-05-22 15:48:44 --> Model Class Initialized
+INFO - 2017-05-22 15:48:47 --> Config Class Initialized
+INFO - 2017-05-22 15:48:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:47 --> URI Class Initialized
+INFO - 2017-05-22 15:48:47 --> Router Class Initialized
+INFO - 2017-05-22 15:48:47 --> Output Class Initialized
+INFO - 2017-05-22 15:48:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:47 --> Input Class Initialized
+INFO - 2017-05-22 15:48:47 --> Language Class Initialized
+INFO - 2017-05-22 15:48:47 --> Language Class Initialized
+INFO - 2017-05-22 15:48:47 --> Config Class Initialized
+INFO - 2017-05-22 15:48:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:47 --> Template Class Initialized
+INFO - 2017-05-22 15:48:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:47 --> Model Class Initialized
+INFO - 2017-05-22 15:48:47 --> Model Class Initialized
+INFO - 2017-05-22 15:48:50 --> Config Class Initialized
+INFO - 2017-05-22 15:48:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:50 --> URI Class Initialized
+INFO - 2017-05-22 15:48:50 --> Router Class Initialized
+INFO - 2017-05-22 15:48:50 --> Output Class Initialized
+INFO - 2017-05-22 15:48:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:50 --> Input Class Initialized
+INFO - 2017-05-22 15:48:50 --> Language Class Initialized
+INFO - 2017-05-22 15:48:50 --> Language Class Initialized
+INFO - 2017-05-22 15:48:50 --> Config Class Initialized
+INFO - 2017-05-22 15:48:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:50 --> Template Class Initialized
+INFO - 2017-05-22 15:48:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:50 --> Model Class Initialized
+INFO - 2017-05-22 15:48:50 --> Model Class Initialized
+INFO - 2017-05-22 15:48:53 --> Config Class Initialized
+INFO - 2017-05-22 15:48:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:53 --> URI Class Initialized
+INFO - 2017-05-22 15:48:53 --> Router Class Initialized
+INFO - 2017-05-22 15:48:53 --> Output Class Initialized
+INFO - 2017-05-22 15:48:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:53 --> Input Class Initialized
+INFO - 2017-05-22 15:48:53 --> Language Class Initialized
+INFO - 2017-05-22 15:48:53 --> Language Class Initialized
+INFO - 2017-05-22 15:48:53 --> Config Class Initialized
+INFO - 2017-05-22 15:48:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:53 --> Template Class Initialized
+INFO - 2017-05-22 15:48:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:53 --> Model Class Initialized
+INFO - 2017-05-22 15:48:53 --> Model Class Initialized
+INFO - 2017-05-22 15:48:56 --> Config Class Initialized
+INFO - 2017-05-22 15:48:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:56 --> URI Class Initialized
+INFO - 2017-05-22 15:48:56 --> Router Class Initialized
+INFO - 2017-05-22 15:48:56 --> Output Class Initialized
+INFO - 2017-05-22 15:48:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:56 --> Input Class Initialized
+INFO - 2017-05-22 15:48:56 --> Language Class Initialized
+INFO - 2017-05-22 15:48:56 --> Language Class Initialized
+INFO - 2017-05-22 15:48:56 --> Config Class Initialized
+INFO - 2017-05-22 15:48:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:56 --> Template Class Initialized
+INFO - 2017-05-22 15:48:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:56 --> Model Class Initialized
+INFO - 2017-05-22 15:48:56 --> Model Class Initialized
+INFO - 2017-05-22 15:48:59 --> Config Class Initialized
+INFO - 2017-05-22 15:48:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:48:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:48:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:48:59 --> URI Class Initialized
+INFO - 2017-05-22 15:48:59 --> Router Class Initialized
+INFO - 2017-05-22 15:48:59 --> Output Class Initialized
+INFO - 2017-05-22 15:48:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:48:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:48:59 --> Input Class Initialized
+INFO - 2017-05-22 15:48:59 --> Language Class Initialized
+INFO - 2017-05-22 15:48:59 --> Language Class Initialized
+INFO - 2017-05-22 15:48:59 --> Config Class Initialized
+INFO - 2017-05-22 15:48:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:48:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:48:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:48:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:48:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:48:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:48:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:48:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:48:59 --> Template Class Initialized
+INFO - 2017-05-22 15:48:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:48:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:48:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:48:59 --> Model Class Initialized
+INFO - 2017-05-22 15:48:59 --> Model Class Initialized
+INFO - 2017-05-22 15:49:02 --> Config Class Initialized
+INFO - 2017-05-22 15:49:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:02 --> URI Class Initialized
+INFO - 2017-05-22 15:49:02 --> Router Class Initialized
+INFO - 2017-05-22 15:49:02 --> Output Class Initialized
+INFO - 2017-05-22 15:49:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:02 --> Input Class Initialized
+INFO - 2017-05-22 15:49:02 --> Language Class Initialized
+INFO - 2017-05-22 15:49:02 --> Language Class Initialized
+INFO - 2017-05-22 15:49:02 --> Config Class Initialized
+INFO - 2017-05-22 15:49:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:02 --> Template Class Initialized
+INFO - 2017-05-22 15:49:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:02 --> Model Class Initialized
+INFO - 2017-05-22 15:49:02 --> Model Class Initialized
+INFO - 2017-05-22 15:49:05 --> Config Class Initialized
+INFO - 2017-05-22 15:49:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:05 --> URI Class Initialized
+INFO - 2017-05-22 15:49:05 --> Router Class Initialized
+INFO - 2017-05-22 15:49:05 --> Output Class Initialized
+INFO - 2017-05-22 15:49:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:05 --> Input Class Initialized
+INFO - 2017-05-22 15:49:05 --> Language Class Initialized
+INFO - 2017-05-22 15:49:05 --> Language Class Initialized
+INFO - 2017-05-22 15:49:05 --> Config Class Initialized
+INFO - 2017-05-22 15:49:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:05 --> Template Class Initialized
+INFO - 2017-05-22 15:49:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:05 --> Model Class Initialized
+INFO - 2017-05-22 15:49:05 --> Model Class Initialized
+INFO - 2017-05-22 15:49:08 --> Config Class Initialized
+INFO - 2017-05-22 15:49:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:08 --> URI Class Initialized
+INFO - 2017-05-22 15:49:08 --> Router Class Initialized
+INFO - 2017-05-22 15:49:08 --> Output Class Initialized
+INFO - 2017-05-22 15:49:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:08 --> Input Class Initialized
+INFO - 2017-05-22 15:49:08 --> Language Class Initialized
+INFO - 2017-05-22 15:49:08 --> Language Class Initialized
+INFO - 2017-05-22 15:49:08 --> Config Class Initialized
+INFO - 2017-05-22 15:49:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:08 --> Template Class Initialized
+INFO - 2017-05-22 15:49:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:08 --> Model Class Initialized
+INFO - 2017-05-22 15:49:08 --> Model Class Initialized
+INFO - 2017-05-22 15:49:11 --> Config Class Initialized
+INFO - 2017-05-22 15:49:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:11 --> URI Class Initialized
+INFO - 2017-05-22 15:49:11 --> Router Class Initialized
+INFO - 2017-05-22 15:49:11 --> Output Class Initialized
+INFO - 2017-05-22 15:49:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:11 --> Input Class Initialized
+INFO - 2017-05-22 15:49:11 --> Language Class Initialized
+INFO - 2017-05-22 15:49:11 --> Language Class Initialized
+INFO - 2017-05-22 15:49:11 --> Config Class Initialized
+INFO - 2017-05-22 15:49:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:11 --> Template Class Initialized
+INFO - 2017-05-22 15:49:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:11 --> Model Class Initialized
+INFO - 2017-05-22 15:49:11 --> Model Class Initialized
+INFO - 2017-05-22 15:49:14 --> Config Class Initialized
+INFO - 2017-05-22 15:49:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:14 --> URI Class Initialized
+INFO - 2017-05-22 15:49:14 --> Router Class Initialized
+INFO - 2017-05-22 15:49:14 --> Output Class Initialized
+INFO - 2017-05-22 15:49:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:14 --> Input Class Initialized
+INFO - 2017-05-22 15:49:14 --> Language Class Initialized
+INFO - 2017-05-22 15:49:14 --> Language Class Initialized
+INFO - 2017-05-22 15:49:14 --> Config Class Initialized
+INFO - 2017-05-22 15:49:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:14 --> Template Class Initialized
+INFO - 2017-05-22 15:49:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:14 --> Model Class Initialized
+INFO - 2017-05-22 15:49:14 --> Model Class Initialized
+INFO - 2017-05-22 15:49:17 --> Config Class Initialized
+INFO - 2017-05-22 15:49:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:17 --> URI Class Initialized
+INFO - 2017-05-22 15:49:17 --> Router Class Initialized
+INFO - 2017-05-22 15:49:17 --> Output Class Initialized
+INFO - 2017-05-22 15:49:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:17 --> Input Class Initialized
+INFO - 2017-05-22 15:49:17 --> Language Class Initialized
+INFO - 2017-05-22 15:49:17 --> Language Class Initialized
+INFO - 2017-05-22 15:49:17 --> Config Class Initialized
+INFO - 2017-05-22 15:49:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:17 --> Template Class Initialized
+INFO - 2017-05-22 15:49:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:17 --> Model Class Initialized
+INFO - 2017-05-22 15:49:17 --> Model Class Initialized
+INFO - 2017-05-22 15:49:20 --> Config Class Initialized
+INFO - 2017-05-22 15:49:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:20 --> URI Class Initialized
+INFO - 2017-05-22 15:49:20 --> Router Class Initialized
+INFO - 2017-05-22 15:49:20 --> Output Class Initialized
+INFO - 2017-05-22 15:49:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:20 --> Input Class Initialized
+INFO - 2017-05-22 15:49:20 --> Language Class Initialized
+INFO - 2017-05-22 15:49:20 --> Language Class Initialized
+INFO - 2017-05-22 15:49:20 --> Config Class Initialized
+INFO - 2017-05-22 15:49:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:20 --> Template Class Initialized
+INFO - 2017-05-22 15:49:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:20 --> Model Class Initialized
+INFO - 2017-05-22 15:49:20 --> Model Class Initialized
+INFO - 2017-05-22 15:49:23 --> Config Class Initialized
+INFO - 2017-05-22 15:49:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:23 --> URI Class Initialized
+INFO - 2017-05-22 15:49:23 --> Router Class Initialized
+INFO - 2017-05-22 15:49:23 --> Output Class Initialized
+INFO - 2017-05-22 15:49:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:23 --> Input Class Initialized
+INFO - 2017-05-22 15:49:23 --> Language Class Initialized
+INFO - 2017-05-22 15:49:23 --> Language Class Initialized
+INFO - 2017-05-22 15:49:23 --> Config Class Initialized
+INFO - 2017-05-22 15:49:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:23 --> Template Class Initialized
+INFO - 2017-05-22 15:49:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:23 --> Model Class Initialized
+INFO - 2017-05-22 15:49:23 --> Model Class Initialized
+INFO - 2017-05-22 15:49:26 --> Config Class Initialized
+INFO - 2017-05-22 15:49:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:26 --> URI Class Initialized
+INFO - 2017-05-22 15:49:26 --> Router Class Initialized
+INFO - 2017-05-22 15:49:26 --> Output Class Initialized
+INFO - 2017-05-22 15:49:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:26 --> Input Class Initialized
+INFO - 2017-05-22 15:49:26 --> Language Class Initialized
+INFO - 2017-05-22 15:49:26 --> Language Class Initialized
+INFO - 2017-05-22 15:49:26 --> Config Class Initialized
+INFO - 2017-05-22 15:49:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:26 --> Template Class Initialized
+INFO - 2017-05-22 15:49:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:26 --> Model Class Initialized
+INFO - 2017-05-22 15:49:26 --> Model Class Initialized
+INFO - 2017-05-22 15:49:29 --> Config Class Initialized
+INFO - 2017-05-22 15:49:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:29 --> URI Class Initialized
+INFO - 2017-05-22 15:49:29 --> Router Class Initialized
+INFO - 2017-05-22 15:49:29 --> Output Class Initialized
+INFO - 2017-05-22 15:49:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:29 --> Input Class Initialized
+INFO - 2017-05-22 15:49:29 --> Language Class Initialized
+INFO - 2017-05-22 15:49:29 --> Language Class Initialized
+INFO - 2017-05-22 15:49:29 --> Config Class Initialized
+INFO - 2017-05-22 15:49:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:29 --> Template Class Initialized
+INFO - 2017-05-22 15:49:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:29 --> Model Class Initialized
+INFO - 2017-05-22 15:49:29 --> Model Class Initialized
+INFO - 2017-05-22 15:49:32 --> Config Class Initialized
+INFO - 2017-05-22 15:49:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:32 --> URI Class Initialized
+INFO - 2017-05-22 15:49:32 --> Router Class Initialized
+INFO - 2017-05-22 15:49:32 --> Output Class Initialized
+INFO - 2017-05-22 15:49:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:32 --> Input Class Initialized
+INFO - 2017-05-22 15:49:32 --> Language Class Initialized
+INFO - 2017-05-22 15:49:32 --> Language Class Initialized
+INFO - 2017-05-22 15:49:32 --> Config Class Initialized
+INFO - 2017-05-22 15:49:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:32 --> Template Class Initialized
+INFO - 2017-05-22 15:49:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:32 --> Model Class Initialized
+INFO - 2017-05-22 15:49:32 --> Model Class Initialized
+INFO - 2017-05-22 15:49:35 --> Config Class Initialized
+INFO - 2017-05-22 15:49:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:35 --> URI Class Initialized
+INFO - 2017-05-22 15:49:35 --> Router Class Initialized
+INFO - 2017-05-22 15:49:35 --> Output Class Initialized
+INFO - 2017-05-22 15:49:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:35 --> Input Class Initialized
+INFO - 2017-05-22 15:49:35 --> Language Class Initialized
+INFO - 2017-05-22 15:49:35 --> Language Class Initialized
+INFO - 2017-05-22 15:49:35 --> Config Class Initialized
+INFO - 2017-05-22 15:49:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:35 --> Template Class Initialized
+INFO - 2017-05-22 15:49:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:35 --> Model Class Initialized
+INFO - 2017-05-22 15:49:35 --> Model Class Initialized
+INFO - 2017-05-22 15:49:38 --> Config Class Initialized
+INFO - 2017-05-22 15:49:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:38 --> URI Class Initialized
+INFO - 2017-05-22 15:49:38 --> Router Class Initialized
+INFO - 2017-05-22 15:49:38 --> Output Class Initialized
+INFO - 2017-05-22 15:49:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:38 --> Input Class Initialized
+INFO - 2017-05-22 15:49:38 --> Language Class Initialized
+INFO - 2017-05-22 15:49:38 --> Language Class Initialized
+INFO - 2017-05-22 15:49:38 --> Config Class Initialized
+INFO - 2017-05-22 15:49:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:38 --> Template Class Initialized
+INFO - 2017-05-22 15:49:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:38 --> Model Class Initialized
+INFO - 2017-05-22 15:49:38 --> Model Class Initialized
+INFO - 2017-05-22 15:49:41 --> Config Class Initialized
+INFO - 2017-05-22 15:49:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:41 --> URI Class Initialized
+INFO - 2017-05-22 15:49:41 --> Router Class Initialized
+INFO - 2017-05-22 15:49:41 --> Output Class Initialized
+INFO - 2017-05-22 15:49:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:41 --> Input Class Initialized
+INFO - 2017-05-22 15:49:41 --> Language Class Initialized
+INFO - 2017-05-22 15:49:41 --> Language Class Initialized
+INFO - 2017-05-22 15:49:41 --> Config Class Initialized
+INFO - 2017-05-22 15:49:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:41 --> Template Class Initialized
+INFO - 2017-05-22 15:49:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:41 --> Model Class Initialized
+INFO - 2017-05-22 15:49:41 --> Model Class Initialized
+INFO - 2017-05-22 15:49:44 --> Config Class Initialized
+INFO - 2017-05-22 15:49:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:44 --> URI Class Initialized
+INFO - 2017-05-22 15:49:44 --> Router Class Initialized
+INFO - 2017-05-22 15:49:44 --> Output Class Initialized
+INFO - 2017-05-22 15:49:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:44 --> Input Class Initialized
+INFO - 2017-05-22 15:49:44 --> Language Class Initialized
+INFO - 2017-05-22 15:49:44 --> Language Class Initialized
+INFO - 2017-05-22 15:49:44 --> Config Class Initialized
+INFO - 2017-05-22 15:49:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:44 --> Template Class Initialized
+INFO - 2017-05-22 15:49:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:44 --> Model Class Initialized
+INFO - 2017-05-22 15:49:44 --> Model Class Initialized
+INFO - 2017-05-22 15:49:47 --> Config Class Initialized
+INFO - 2017-05-22 15:49:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:47 --> URI Class Initialized
+INFO - 2017-05-22 15:49:47 --> Router Class Initialized
+INFO - 2017-05-22 15:49:47 --> Output Class Initialized
+INFO - 2017-05-22 15:49:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:47 --> Input Class Initialized
+INFO - 2017-05-22 15:49:47 --> Language Class Initialized
+INFO - 2017-05-22 15:49:47 --> Language Class Initialized
+INFO - 2017-05-22 15:49:47 --> Config Class Initialized
+INFO - 2017-05-22 15:49:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:47 --> Template Class Initialized
+INFO - 2017-05-22 15:49:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:47 --> Model Class Initialized
+INFO - 2017-05-22 15:49:47 --> Model Class Initialized
+INFO - 2017-05-22 15:49:50 --> Config Class Initialized
+INFO - 2017-05-22 15:49:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:50 --> URI Class Initialized
+INFO - 2017-05-22 15:49:50 --> Router Class Initialized
+INFO - 2017-05-22 15:49:50 --> Output Class Initialized
+INFO - 2017-05-22 15:49:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:50 --> Input Class Initialized
+INFO - 2017-05-22 15:49:50 --> Language Class Initialized
+INFO - 2017-05-22 15:49:50 --> Language Class Initialized
+INFO - 2017-05-22 15:49:50 --> Config Class Initialized
+INFO - 2017-05-22 15:49:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:50 --> Template Class Initialized
+INFO - 2017-05-22 15:49:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:50 --> Model Class Initialized
+INFO - 2017-05-22 15:49:50 --> Model Class Initialized
+INFO - 2017-05-22 15:49:53 --> Config Class Initialized
+INFO - 2017-05-22 15:49:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:53 --> URI Class Initialized
+INFO - 2017-05-22 15:49:53 --> Router Class Initialized
+INFO - 2017-05-22 15:49:53 --> Output Class Initialized
+INFO - 2017-05-22 15:49:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:53 --> Input Class Initialized
+INFO - 2017-05-22 15:49:53 --> Language Class Initialized
+INFO - 2017-05-22 15:49:53 --> Language Class Initialized
+INFO - 2017-05-22 15:49:53 --> Config Class Initialized
+INFO - 2017-05-22 15:49:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:53 --> Template Class Initialized
+INFO - 2017-05-22 15:49:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:53 --> Model Class Initialized
+INFO - 2017-05-22 15:49:53 --> Model Class Initialized
+INFO - 2017-05-22 15:49:56 --> Config Class Initialized
+INFO - 2017-05-22 15:49:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:56 --> URI Class Initialized
+INFO - 2017-05-22 15:49:56 --> Router Class Initialized
+INFO - 2017-05-22 15:49:56 --> Output Class Initialized
+INFO - 2017-05-22 15:49:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:56 --> Input Class Initialized
+INFO - 2017-05-22 15:49:56 --> Language Class Initialized
+INFO - 2017-05-22 15:49:56 --> Language Class Initialized
+INFO - 2017-05-22 15:49:56 --> Config Class Initialized
+INFO - 2017-05-22 15:49:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:56 --> Template Class Initialized
+INFO - 2017-05-22 15:49:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:56 --> Model Class Initialized
+INFO - 2017-05-22 15:49:56 --> Model Class Initialized
+INFO - 2017-05-22 15:49:59 --> Config Class Initialized
+INFO - 2017-05-22 15:49:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:49:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:49:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:49:59 --> URI Class Initialized
+INFO - 2017-05-22 15:49:59 --> Router Class Initialized
+INFO - 2017-05-22 15:49:59 --> Output Class Initialized
+INFO - 2017-05-22 15:49:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:49:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:49:59 --> Input Class Initialized
+INFO - 2017-05-22 15:49:59 --> Language Class Initialized
+INFO - 2017-05-22 15:49:59 --> Language Class Initialized
+INFO - 2017-05-22 15:49:59 --> Config Class Initialized
+INFO - 2017-05-22 15:49:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:49:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:49:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:49:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:49:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:49:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:49:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:49:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:49:59 --> Template Class Initialized
+INFO - 2017-05-22 15:49:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:49:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:49:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:49:59 --> Model Class Initialized
+INFO - 2017-05-22 15:49:59 --> Model Class Initialized
+INFO - 2017-05-22 15:50:02 --> Config Class Initialized
+INFO - 2017-05-22 15:50:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:02 --> URI Class Initialized
+INFO - 2017-05-22 15:50:02 --> Router Class Initialized
+INFO - 2017-05-22 15:50:02 --> Output Class Initialized
+INFO - 2017-05-22 15:50:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:02 --> Input Class Initialized
+INFO - 2017-05-22 15:50:02 --> Language Class Initialized
+INFO - 2017-05-22 15:50:02 --> Language Class Initialized
+INFO - 2017-05-22 15:50:02 --> Config Class Initialized
+INFO - 2017-05-22 15:50:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:02 --> Template Class Initialized
+INFO - 2017-05-22 15:50:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:02 --> Model Class Initialized
+INFO - 2017-05-22 15:50:02 --> Model Class Initialized
+INFO - 2017-05-22 15:50:05 --> Config Class Initialized
+INFO - 2017-05-22 15:50:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:05 --> URI Class Initialized
+INFO - 2017-05-22 15:50:05 --> Router Class Initialized
+INFO - 2017-05-22 15:50:05 --> Output Class Initialized
+INFO - 2017-05-22 15:50:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:05 --> Input Class Initialized
+INFO - 2017-05-22 15:50:05 --> Language Class Initialized
+INFO - 2017-05-22 15:50:05 --> Language Class Initialized
+INFO - 2017-05-22 15:50:05 --> Config Class Initialized
+INFO - 2017-05-22 15:50:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:05 --> Template Class Initialized
+INFO - 2017-05-22 15:50:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:05 --> Model Class Initialized
+INFO - 2017-05-22 15:50:05 --> Model Class Initialized
+INFO - 2017-05-22 15:50:08 --> Config Class Initialized
+INFO - 2017-05-22 15:50:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:08 --> URI Class Initialized
+INFO - 2017-05-22 15:50:08 --> Router Class Initialized
+INFO - 2017-05-22 15:50:08 --> Output Class Initialized
+INFO - 2017-05-22 15:50:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:08 --> Input Class Initialized
+INFO - 2017-05-22 15:50:08 --> Language Class Initialized
+INFO - 2017-05-22 15:50:08 --> Language Class Initialized
+INFO - 2017-05-22 15:50:08 --> Config Class Initialized
+INFO - 2017-05-22 15:50:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:08 --> Template Class Initialized
+INFO - 2017-05-22 15:50:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:08 --> Model Class Initialized
+INFO - 2017-05-22 15:50:08 --> Model Class Initialized
+INFO - 2017-05-22 15:50:11 --> Config Class Initialized
+INFO - 2017-05-22 15:50:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:11 --> URI Class Initialized
+INFO - 2017-05-22 15:50:11 --> Router Class Initialized
+INFO - 2017-05-22 15:50:11 --> Output Class Initialized
+INFO - 2017-05-22 15:50:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:11 --> Input Class Initialized
+INFO - 2017-05-22 15:50:11 --> Language Class Initialized
+INFO - 2017-05-22 15:50:11 --> Language Class Initialized
+INFO - 2017-05-22 15:50:11 --> Config Class Initialized
+INFO - 2017-05-22 15:50:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:11 --> Template Class Initialized
+INFO - 2017-05-22 15:50:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:11 --> Model Class Initialized
+INFO - 2017-05-22 15:50:11 --> Model Class Initialized
+INFO - 2017-05-22 15:50:14 --> Config Class Initialized
+INFO - 2017-05-22 15:50:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:14 --> URI Class Initialized
+INFO - 2017-05-22 15:50:14 --> Router Class Initialized
+INFO - 2017-05-22 15:50:14 --> Output Class Initialized
+INFO - 2017-05-22 15:50:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:14 --> Input Class Initialized
+INFO - 2017-05-22 15:50:14 --> Language Class Initialized
+INFO - 2017-05-22 15:50:14 --> Language Class Initialized
+INFO - 2017-05-22 15:50:14 --> Config Class Initialized
+INFO - 2017-05-22 15:50:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:14 --> Template Class Initialized
+INFO - 2017-05-22 15:50:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:14 --> Model Class Initialized
+INFO - 2017-05-22 15:50:14 --> Model Class Initialized
+INFO - 2017-05-22 15:50:17 --> Config Class Initialized
+INFO - 2017-05-22 15:50:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:17 --> URI Class Initialized
+INFO - 2017-05-22 15:50:17 --> Router Class Initialized
+INFO - 2017-05-22 15:50:17 --> Output Class Initialized
+INFO - 2017-05-22 15:50:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:17 --> Input Class Initialized
+INFO - 2017-05-22 15:50:17 --> Language Class Initialized
+INFO - 2017-05-22 15:50:17 --> Language Class Initialized
+INFO - 2017-05-22 15:50:17 --> Config Class Initialized
+INFO - 2017-05-22 15:50:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:17 --> Template Class Initialized
+INFO - 2017-05-22 15:50:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:17 --> Model Class Initialized
+INFO - 2017-05-22 15:50:17 --> Model Class Initialized
+INFO - 2017-05-22 15:50:20 --> Config Class Initialized
+INFO - 2017-05-22 15:50:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:20 --> URI Class Initialized
+INFO - 2017-05-22 15:50:20 --> Router Class Initialized
+INFO - 2017-05-22 15:50:20 --> Output Class Initialized
+INFO - 2017-05-22 15:50:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:20 --> Input Class Initialized
+INFO - 2017-05-22 15:50:20 --> Language Class Initialized
+INFO - 2017-05-22 15:50:20 --> Language Class Initialized
+INFO - 2017-05-22 15:50:20 --> Config Class Initialized
+INFO - 2017-05-22 15:50:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:20 --> Template Class Initialized
+INFO - 2017-05-22 15:50:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:20 --> Model Class Initialized
+INFO - 2017-05-22 15:50:20 --> Model Class Initialized
+INFO - 2017-05-22 15:50:22 --> Config Class Initialized
+INFO - 2017-05-22 15:50:22 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:22 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:22 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:22 --> URI Class Initialized
+INFO - 2017-05-22 15:50:22 --> Router Class Initialized
+INFO - 2017-05-22 15:50:22 --> Output Class Initialized
+INFO - 2017-05-22 15:50:22 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:22 --> Input Class Initialized
+INFO - 2017-05-22 15:50:22 --> Language Class Initialized
+INFO - 2017-05-22 15:50:22 --> Language Class Initialized
+INFO - 2017-05-22 15:50:22 --> Config Class Initialized
+INFO - 2017-05-22 15:50:22 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:22 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:22 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:22 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:22 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:22 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:22 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:22 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:22 --> Template Class Initialized
+INFO - 2017-05-22 15:50:22 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:22 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:22 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:22 --> Model Class Initialized
+INFO - 2017-05-22 15:50:22 --> Model Class Initialized
+DEBUG - 2017-05-22 15:50:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-22 15:50:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-22 15:50:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-22 15:50:22 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-22 15:50:22 --> Final output sent to browser
+DEBUG - 2017-05-22 15:50:22 --> Total execution time: 0.0725
+INFO - 2017-05-22 15:50:23 --> Config Class Initialized
+INFO - 2017-05-22 15:50:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:23 --> URI Class Initialized
+INFO - 2017-05-22 15:50:23 --> Router Class Initialized
+INFO - 2017-05-22 15:50:23 --> Output Class Initialized
+INFO - 2017-05-22 15:50:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:23 --> Input Class Initialized
+INFO - 2017-05-22 15:50:23 --> Language Class Initialized
+INFO - 2017-05-22 15:50:23 --> Language Class Initialized
+INFO - 2017-05-22 15:50:23 --> Config Class Initialized
+INFO - 2017-05-22 15:50:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:23 --> Template Class Initialized
+INFO - 2017-05-22 15:50:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:23 --> Model Class Initialized
+INFO - 2017-05-22 15:50:23 --> Model Class Initialized
+INFO - 2017-05-22 15:50:26 --> Config Class Initialized
+INFO - 2017-05-22 15:50:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:26 --> URI Class Initialized
+INFO - 2017-05-22 15:50:26 --> Router Class Initialized
+INFO - 2017-05-22 15:50:26 --> Output Class Initialized
+INFO - 2017-05-22 15:50:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:26 --> Input Class Initialized
+INFO - 2017-05-22 15:50:26 --> Language Class Initialized
+INFO - 2017-05-22 15:50:26 --> Language Class Initialized
+INFO - 2017-05-22 15:50:26 --> Config Class Initialized
+INFO - 2017-05-22 15:50:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:26 --> Template Class Initialized
+INFO - 2017-05-22 15:50:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:26 --> Model Class Initialized
+INFO - 2017-05-22 15:50:26 --> Model Class Initialized
+INFO - 2017-05-22 15:50:29 --> Config Class Initialized
+INFO - 2017-05-22 15:50:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:29 --> URI Class Initialized
+INFO - 2017-05-22 15:50:29 --> Router Class Initialized
+INFO - 2017-05-22 15:50:29 --> Output Class Initialized
+INFO - 2017-05-22 15:50:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:29 --> Input Class Initialized
+INFO - 2017-05-22 15:50:29 --> Language Class Initialized
+INFO - 2017-05-22 15:50:29 --> Language Class Initialized
+INFO - 2017-05-22 15:50:29 --> Config Class Initialized
+INFO - 2017-05-22 15:50:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:29 --> Template Class Initialized
+INFO - 2017-05-22 15:50:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:29 --> Model Class Initialized
+INFO - 2017-05-22 15:50:29 --> Model Class Initialized
+INFO - 2017-05-22 15:50:32 --> Config Class Initialized
+INFO - 2017-05-22 15:50:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:32 --> URI Class Initialized
+INFO - 2017-05-22 15:50:32 --> Router Class Initialized
+INFO - 2017-05-22 15:50:32 --> Output Class Initialized
+INFO - 2017-05-22 15:50:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:32 --> Input Class Initialized
+INFO - 2017-05-22 15:50:32 --> Language Class Initialized
+INFO - 2017-05-22 15:50:32 --> Language Class Initialized
+INFO - 2017-05-22 15:50:32 --> Config Class Initialized
+INFO - 2017-05-22 15:50:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:32 --> Template Class Initialized
+INFO - 2017-05-22 15:50:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:32 --> Model Class Initialized
+INFO - 2017-05-22 15:50:32 --> Model Class Initialized
+INFO - 2017-05-22 15:50:35 --> Config Class Initialized
+INFO - 2017-05-22 15:50:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:35 --> URI Class Initialized
+INFO - 2017-05-22 15:50:35 --> Router Class Initialized
+INFO - 2017-05-22 15:50:35 --> Output Class Initialized
+INFO - 2017-05-22 15:50:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:35 --> Input Class Initialized
+INFO - 2017-05-22 15:50:35 --> Language Class Initialized
+INFO - 2017-05-22 15:50:35 --> Language Class Initialized
+INFO - 2017-05-22 15:50:35 --> Config Class Initialized
+INFO - 2017-05-22 15:50:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:35 --> Template Class Initialized
+INFO - 2017-05-22 15:50:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:35 --> Model Class Initialized
+INFO - 2017-05-22 15:50:35 --> Model Class Initialized
+INFO - 2017-05-22 15:50:38 --> Config Class Initialized
+INFO - 2017-05-22 15:50:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:38 --> URI Class Initialized
+INFO - 2017-05-22 15:50:38 --> Router Class Initialized
+INFO - 2017-05-22 15:50:38 --> Output Class Initialized
+INFO - 2017-05-22 15:50:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:38 --> Input Class Initialized
+INFO - 2017-05-22 15:50:38 --> Language Class Initialized
+INFO - 2017-05-22 15:50:38 --> Language Class Initialized
+INFO - 2017-05-22 15:50:38 --> Config Class Initialized
+INFO - 2017-05-22 15:50:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:38 --> Template Class Initialized
+INFO - 2017-05-22 15:50:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:38 --> Model Class Initialized
+INFO - 2017-05-22 15:50:38 --> Model Class Initialized
+INFO - 2017-05-22 15:50:41 --> Config Class Initialized
+INFO - 2017-05-22 15:50:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:41 --> URI Class Initialized
+INFO - 2017-05-22 15:50:41 --> Router Class Initialized
+INFO - 2017-05-22 15:50:41 --> Output Class Initialized
+INFO - 2017-05-22 15:50:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:41 --> Input Class Initialized
+INFO - 2017-05-22 15:50:41 --> Language Class Initialized
+INFO - 2017-05-22 15:50:41 --> Language Class Initialized
+INFO - 2017-05-22 15:50:41 --> Config Class Initialized
+INFO - 2017-05-22 15:50:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:41 --> Template Class Initialized
+INFO - 2017-05-22 15:50:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:41 --> Model Class Initialized
+INFO - 2017-05-22 15:50:41 --> Model Class Initialized
+INFO - 2017-05-22 15:50:44 --> Config Class Initialized
+INFO - 2017-05-22 15:50:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:44 --> URI Class Initialized
+INFO - 2017-05-22 15:50:44 --> Router Class Initialized
+INFO - 2017-05-22 15:50:44 --> Output Class Initialized
+INFO - 2017-05-22 15:50:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:44 --> Input Class Initialized
+INFO - 2017-05-22 15:50:44 --> Language Class Initialized
+INFO - 2017-05-22 15:50:44 --> Language Class Initialized
+INFO - 2017-05-22 15:50:44 --> Config Class Initialized
+INFO - 2017-05-22 15:50:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> Template Class Initialized
+INFO - 2017-05-22 15:50:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:44 --> Model Class Initialized
+INFO - 2017-05-22 15:50:44 --> Model Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:50:44 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:50:44 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:50:44 --> Final output sent to browser
+DEBUG - 2017-05-22 15:50:44 --> Total execution time: 0.0631
+INFO - 2017-05-22 15:50:44 --> Config Class Initialized
+INFO - 2017-05-22 15:50:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:44 --> URI Class Initialized
+INFO - 2017-05-22 15:50:44 --> Router Class Initialized
+INFO - 2017-05-22 15:50:44 --> Output Class Initialized
+INFO - 2017-05-22 15:50:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:44 --> Input Class Initialized
+INFO - 2017-05-22 15:50:44 --> Language Class Initialized
+INFO - 2017-05-22 15:50:44 --> Language Class Initialized
+INFO - 2017-05-22 15:50:44 --> Config Class Initialized
+INFO - 2017-05-22 15:50:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:44 --> Template Class Initialized
+INFO - 2017-05-22 15:50:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:44 --> Model Class Initialized
+INFO - 2017-05-22 15:50:44 --> Model Class Initialized
+INFO - 2017-05-22 15:50:47 --> Config Class Initialized
+INFO - 2017-05-22 15:50:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:47 --> URI Class Initialized
+INFO - 2017-05-22 15:50:47 --> Router Class Initialized
+INFO - 2017-05-22 15:50:47 --> Output Class Initialized
+INFO - 2017-05-22 15:50:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:47 --> Input Class Initialized
+INFO - 2017-05-22 15:50:47 --> Language Class Initialized
+INFO - 2017-05-22 15:50:47 --> Language Class Initialized
+INFO - 2017-05-22 15:50:47 --> Config Class Initialized
+INFO - 2017-05-22 15:50:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:47 --> Template Class Initialized
+INFO - 2017-05-22 15:50:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:47 --> Model Class Initialized
+INFO - 2017-05-22 15:50:47 --> Model Class Initialized
+INFO - 2017-05-22 15:50:50 --> Config Class Initialized
+INFO - 2017-05-22 15:50:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:50 --> URI Class Initialized
+INFO - 2017-05-22 15:50:50 --> Router Class Initialized
+INFO - 2017-05-22 15:50:50 --> Output Class Initialized
+INFO - 2017-05-22 15:50:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:50 --> Input Class Initialized
+INFO - 2017-05-22 15:50:50 --> Language Class Initialized
+INFO - 2017-05-22 15:50:50 --> Language Class Initialized
+INFO - 2017-05-22 15:50:50 --> Config Class Initialized
+INFO - 2017-05-22 15:50:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:50 --> Template Class Initialized
+INFO - 2017-05-22 15:50:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:50 --> Model Class Initialized
+INFO - 2017-05-22 15:50:50 --> Model Class Initialized
+INFO - 2017-05-22 15:50:53 --> Config Class Initialized
+INFO - 2017-05-22 15:50:53 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:53 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:53 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:53 --> URI Class Initialized
+INFO - 2017-05-22 15:50:53 --> Router Class Initialized
+INFO - 2017-05-22 15:50:53 --> Output Class Initialized
+INFO - 2017-05-22 15:50:53 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:53 --> Input Class Initialized
+INFO - 2017-05-22 15:50:53 --> Language Class Initialized
+INFO - 2017-05-22 15:50:53 --> Language Class Initialized
+INFO - 2017-05-22 15:50:53 --> Config Class Initialized
+INFO - 2017-05-22 15:50:53 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:53 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:53 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:53 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:53 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:53 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:53 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:53 --> Template Class Initialized
+INFO - 2017-05-22 15:50:53 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:53 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:53 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:53 --> Model Class Initialized
+INFO - 2017-05-22 15:50:53 --> Model Class Initialized
+INFO - 2017-05-22 15:50:56 --> Config Class Initialized
+INFO - 2017-05-22 15:50:56 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:56 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:56 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:56 --> URI Class Initialized
+INFO - 2017-05-22 15:50:56 --> Router Class Initialized
+INFO - 2017-05-22 15:50:56 --> Output Class Initialized
+INFO - 2017-05-22 15:50:56 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:56 --> Input Class Initialized
+INFO - 2017-05-22 15:50:56 --> Language Class Initialized
+INFO - 2017-05-22 15:50:56 --> Language Class Initialized
+INFO - 2017-05-22 15:50:56 --> Config Class Initialized
+INFO - 2017-05-22 15:50:56 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:56 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:56 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:56 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:56 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:56 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:56 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:56 --> Template Class Initialized
+INFO - 2017-05-22 15:50:56 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:56 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:56 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:56 --> Model Class Initialized
+INFO - 2017-05-22 15:50:56 --> Model Class Initialized
+INFO - 2017-05-22 15:50:59 --> Config Class Initialized
+INFO - 2017-05-22 15:50:59 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:50:59 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:50:59 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:50:59 --> URI Class Initialized
+INFO - 2017-05-22 15:50:59 --> Router Class Initialized
+INFO - 2017-05-22 15:50:59 --> Output Class Initialized
+INFO - 2017-05-22 15:50:59 --> Security Class Initialized
+DEBUG - 2017-05-22 15:50:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:50:59 --> Input Class Initialized
+INFO - 2017-05-22 15:50:59 --> Language Class Initialized
+INFO - 2017-05-22 15:50:59 --> Language Class Initialized
+INFO - 2017-05-22 15:50:59 --> Config Class Initialized
+INFO - 2017-05-22 15:50:59 --> Loader Class Initialized
+INFO - 2017-05-22 15:50:59 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:50:59 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:50:59 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:50:59 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:50:59 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:50:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:50:59 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:50:59 --> Template Class Initialized
+INFO - 2017-05-22 15:50:59 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:50:59 --> Controller Class Initialized
+INFO - 2017-05-22 15:50:59 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:50:59 --> Model Class Initialized
+INFO - 2017-05-22 15:50:59 --> Model Class Initialized
+INFO - 2017-05-22 15:51:02 --> Config Class Initialized
+INFO - 2017-05-22 15:51:02 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:02 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:02 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:02 --> URI Class Initialized
+INFO - 2017-05-22 15:51:02 --> Router Class Initialized
+INFO - 2017-05-22 15:51:02 --> Output Class Initialized
+INFO - 2017-05-22 15:51:02 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:02 --> Input Class Initialized
+INFO - 2017-05-22 15:51:02 --> Language Class Initialized
+INFO - 2017-05-22 15:51:02 --> Language Class Initialized
+INFO - 2017-05-22 15:51:02 --> Config Class Initialized
+INFO - 2017-05-22 15:51:02 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:02 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:02 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:02 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:02 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:02 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:02 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:02 --> Template Class Initialized
+INFO - 2017-05-22 15:51:02 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:02 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:02 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:02 --> Model Class Initialized
+INFO - 2017-05-22 15:51:02 --> Model Class Initialized
+INFO - 2017-05-22 15:51:05 --> Config Class Initialized
+INFO - 2017-05-22 15:51:05 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:05 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:05 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:05 --> URI Class Initialized
+INFO - 2017-05-22 15:51:05 --> Router Class Initialized
+INFO - 2017-05-22 15:51:05 --> Output Class Initialized
+INFO - 2017-05-22 15:51:05 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:05 --> Input Class Initialized
+INFO - 2017-05-22 15:51:05 --> Language Class Initialized
+INFO - 2017-05-22 15:51:05 --> Language Class Initialized
+INFO - 2017-05-22 15:51:05 --> Config Class Initialized
+INFO - 2017-05-22 15:51:05 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:05 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:05 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:05 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:05 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:05 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:05 --> Template Class Initialized
+INFO - 2017-05-22 15:51:05 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:05 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:05 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:05 --> Model Class Initialized
+INFO - 2017-05-22 15:51:05 --> Model Class Initialized
+INFO - 2017-05-22 15:51:08 --> Config Class Initialized
+INFO - 2017-05-22 15:51:08 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:08 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:08 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:08 --> URI Class Initialized
+INFO - 2017-05-22 15:51:08 --> Router Class Initialized
+INFO - 2017-05-22 15:51:08 --> Output Class Initialized
+INFO - 2017-05-22 15:51:08 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:08 --> Input Class Initialized
+INFO - 2017-05-22 15:51:08 --> Language Class Initialized
+INFO - 2017-05-22 15:51:08 --> Language Class Initialized
+INFO - 2017-05-22 15:51:08 --> Config Class Initialized
+INFO - 2017-05-22 15:51:08 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:08 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:08 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:08 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:08 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:08 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:08 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:08 --> Template Class Initialized
+INFO - 2017-05-22 15:51:08 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:08 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:08 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:08 --> Model Class Initialized
+INFO - 2017-05-22 15:51:08 --> Model Class Initialized
+INFO - 2017-05-22 15:51:11 --> Config Class Initialized
+INFO - 2017-05-22 15:51:11 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:11 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:11 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:11 --> URI Class Initialized
+INFO - 2017-05-22 15:51:11 --> Router Class Initialized
+INFO - 2017-05-22 15:51:11 --> Output Class Initialized
+INFO - 2017-05-22 15:51:11 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:11 --> Input Class Initialized
+INFO - 2017-05-22 15:51:11 --> Language Class Initialized
+INFO - 2017-05-22 15:51:11 --> Language Class Initialized
+INFO - 2017-05-22 15:51:11 --> Config Class Initialized
+INFO - 2017-05-22 15:51:11 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:11 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:11 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:11 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:11 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:11 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:11 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:11 --> Template Class Initialized
+INFO - 2017-05-22 15:51:11 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:11 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:11 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:11 --> Model Class Initialized
+INFO - 2017-05-22 15:51:11 --> Model Class Initialized
+INFO - 2017-05-22 15:51:14 --> Config Class Initialized
+INFO - 2017-05-22 15:51:14 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:14 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:14 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:14 --> URI Class Initialized
+INFO - 2017-05-22 15:51:14 --> Router Class Initialized
+INFO - 2017-05-22 15:51:14 --> Output Class Initialized
+INFO - 2017-05-22 15:51:14 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:14 --> Input Class Initialized
+INFO - 2017-05-22 15:51:14 --> Language Class Initialized
+INFO - 2017-05-22 15:51:14 --> Language Class Initialized
+INFO - 2017-05-22 15:51:14 --> Config Class Initialized
+INFO - 2017-05-22 15:51:14 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:14 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:14 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:14 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:14 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:14 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:14 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:14 --> Template Class Initialized
+INFO - 2017-05-22 15:51:14 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:14 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:14 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:14 --> Model Class Initialized
+INFO - 2017-05-22 15:51:14 --> Model Class Initialized
+INFO - 2017-05-22 15:51:17 --> Config Class Initialized
+INFO - 2017-05-22 15:51:17 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:17 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:17 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:17 --> URI Class Initialized
+INFO - 2017-05-22 15:51:17 --> Router Class Initialized
+INFO - 2017-05-22 15:51:17 --> Output Class Initialized
+INFO - 2017-05-22 15:51:17 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:17 --> Input Class Initialized
+INFO - 2017-05-22 15:51:17 --> Language Class Initialized
+INFO - 2017-05-22 15:51:17 --> Language Class Initialized
+INFO - 2017-05-22 15:51:17 --> Config Class Initialized
+INFO - 2017-05-22 15:51:17 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:17 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:17 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:17 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:17 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:17 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:17 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:17 --> Template Class Initialized
+INFO - 2017-05-22 15:51:17 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:17 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:17 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:17 --> Model Class Initialized
+INFO - 2017-05-22 15:51:17 --> Model Class Initialized
+INFO - 2017-05-22 15:51:18 --> Config Class Initialized
+INFO - 2017-05-22 15:51:18 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:18 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:18 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:18 --> URI Class Initialized
+INFO - 2017-05-22 15:51:18 --> Router Class Initialized
+INFO - 2017-05-22 15:51:18 --> Output Class Initialized
+INFO - 2017-05-22 15:51:18 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:18 --> Input Class Initialized
+INFO - 2017-05-22 15:51:18 --> Language Class Initialized
+INFO - 2017-05-22 15:51:18 --> Language Class Initialized
+INFO - 2017-05-22 15:51:18 --> Config Class Initialized
+INFO - 2017-05-22 15:51:18 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:18 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:18 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:18 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:18 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:18 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:18 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:18 --> Template Class Initialized
+INFO - 2017-05-22 15:51:18 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:18 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:18 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:18 --> Model Class Initialized
+INFO - 2017-05-22 15:51:18 --> Model Class Initialized
+DEBUG - 2017-05-22 15:51:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-22 15:51:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-22 15:51:18 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-22 15:51:18 --> Final output sent to browser
+DEBUG - 2017-05-22 15:51:18 --> Total execution time: 0.0780
+INFO - 2017-05-22 15:51:20 --> Config Class Initialized
+INFO - 2017-05-22 15:51:20 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:20 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:20 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:20 --> URI Class Initialized
+INFO - 2017-05-22 15:51:20 --> Router Class Initialized
+INFO - 2017-05-22 15:51:20 --> Output Class Initialized
+INFO - 2017-05-22 15:51:20 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:20 --> Input Class Initialized
+INFO - 2017-05-22 15:51:20 --> Language Class Initialized
+INFO - 2017-05-22 15:51:20 --> Language Class Initialized
+INFO - 2017-05-22 15:51:20 --> Config Class Initialized
+INFO - 2017-05-22 15:51:20 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:20 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:20 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:20 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:20 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:20 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:20 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:20 --> Template Class Initialized
+INFO - 2017-05-22 15:51:20 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:20 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:20 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:20 --> Model Class Initialized
+INFO - 2017-05-22 15:51:20 --> Model Class Initialized
+INFO - 2017-05-22 15:51:23 --> Config Class Initialized
+INFO - 2017-05-22 15:51:23 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:23 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:23 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:23 --> URI Class Initialized
+INFO - 2017-05-22 15:51:23 --> Router Class Initialized
+INFO - 2017-05-22 15:51:23 --> Output Class Initialized
+INFO - 2017-05-22 15:51:23 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:23 --> Input Class Initialized
+INFO - 2017-05-22 15:51:23 --> Language Class Initialized
+INFO - 2017-05-22 15:51:23 --> Language Class Initialized
+INFO - 2017-05-22 15:51:23 --> Config Class Initialized
+INFO - 2017-05-22 15:51:23 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:23 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:23 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:23 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:23 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:23 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:23 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:23 --> Template Class Initialized
+INFO - 2017-05-22 15:51:23 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:23 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:23 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:23 --> Model Class Initialized
+INFO - 2017-05-22 15:51:23 --> Model Class Initialized
+INFO - 2017-05-22 15:51:26 --> Config Class Initialized
+INFO - 2017-05-22 15:51:26 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:26 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:26 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:26 --> URI Class Initialized
+INFO - 2017-05-22 15:51:26 --> Router Class Initialized
+INFO - 2017-05-22 15:51:26 --> Output Class Initialized
+INFO - 2017-05-22 15:51:26 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:26 --> Input Class Initialized
+INFO - 2017-05-22 15:51:26 --> Language Class Initialized
+INFO - 2017-05-22 15:51:26 --> Language Class Initialized
+INFO - 2017-05-22 15:51:26 --> Config Class Initialized
+INFO - 2017-05-22 15:51:26 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:26 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:26 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:26 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:26 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:26 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:26 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:26 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:26 --> Template Class Initialized
+INFO - 2017-05-22 15:51:26 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:26 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:26 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:26 --> Model Class Initialized
+INFO - 2017-05-22 15:51:26 --> Model Class Initialized
+INFO - 2017-05-22 15:51:29 --> Config Class Initialized
+INFO - 2017-05-22 15:51:29 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:29 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:29 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:29 --> URI Class Initialized
+INFO - 2017-05-22 15:51:29 --> Router Class Initialized
+INFO - 2017-05-22 15:51:29 --> Output Class Initialized
+INFO - 2017-05-22 15:51:29 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:29 --> Input Class Initialized
+INFO - 2017-05-22 15:51:29 --> Language Class Initialized
+INFO - 2017-05-22 15:51:29 --> Language Class Initialized
+INFO - 2017-05-22 15:51:29 --> Config Class Initialized
+INFO - 2017-05-22 15:51:29 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:29 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:29 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:29 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:29 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:29 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:29 --> Template Class Initialized
+INFO - 2017-05-22 15:51:29 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:29 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:29 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:29 --> Model Class Initialized
+INFO - 2017-05-22 15:51:29 --> Model Class Initialized
+INFO - 2017-05-22 15:51:32 --> Config Class Initialized
+INFO - 2017-05-22 15:51:32 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:32 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:32 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:32 --> URI Class Initialized
+INFO - 2017-05-22 15:51:32 --> Router Class Initialized
+INFO - 2017-05-22 15:51:32 --> Output Class Initialized
+INFO - 2017-05-22 15:51:32 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:32 --> Input Class Initialized
+INFO - 2017-05-22 15:51:32 --> Language Class Initialized
+INFO - 2017-05-22 15:51:32 --> Language Class Initialized
+INFO - 2017-05-22 15:51:32 --> Config Class Initialized
+INFO - 2017-05-22 15:51:32 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:32 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:32 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:32 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:32 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:32 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:32 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:32 --> Template Class Initialized
+INFO - 2017-05-22 15:51:32 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:32 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:32 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:32 --> Model Class Initialized
+INFO - 2017-05-22 15:51:32 --> Model Class Initialized
+INFO - 2017-05-22 15:51:35 --> Config Class Initialized
+INFO - 2017-05-22 15:51:35 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:35 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:35 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:35 --> URI Class Initialized
+INFO - 2017-05-22 15:51:35 --> Router Class Initialized
+INFO - 2017-05-22 15:51:35 --> Output Class Initialized
+INFO - 2017-05-22 15:51:35 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:35 --> Input Class Initialized
+INFO - 2017-05-22 15:51:35 --> Language Class Initialized
+INFO - 2017-05-22 15:51:35 --> Language Class Initialized
+INFO - 2017-05-22 15:51:35 --> Config Class Initialized
+INFO - 2017-05-22 15:51:35 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:35 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:35 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:35 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:35 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:35 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:35 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:35 --> Template Class Initialized
+INFO - 2017-05-22 15:51:35 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:35 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:35 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:35 --> Model Class Initialized
+INFO - 2017-05-22 15:51:35 --> Model Class Initialized
+INFO - 2017-05-22 15:51:38 --> Config Class Initialized
+INFO - 2017-05-22 15:51:38 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:38 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:38 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:38 --> URI Class Initialized
+INFO - 2017-05-22 15:51:38 --> Router Class Initialized
+INFO - 2017-05-22 15:51:38 --> Output Class Initialized
+INFO - 2017-05-22 15:51:38 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:38 --> Input Class Initialized
+INFO - 2017-05-22 15:51:38 --> Language Class Initialized
+INFO - 2017-05-22 15:51:38 --> Language Class Initialized
+INFO - 2017-05-22 15:51:38 --> Config Class Initialized
+INFO - 2017-05-22 15:51:38 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:38 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:38 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:38 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:38 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:38 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:38 --> Template Class Initialized
+INFO - 2017-05-22 15:51:38 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:38 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:38 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:38 --> Model Class Initialized
+INFO - 2017-05-22 15:51:38 --> Model Class Initialized
+INFO - 2017-05-22 15:51:41 --> Config Class Initialized
+INFO - 2017-05-22 15:51:41 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:41 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:41 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:41 --> URI Class Initialized
+INFO - 2017-05-22 15:51:41 --> Router Class Initialized
+INFO - 2017-05-22 15:51:41 --> Output Class Initialized
+INFO - 2017-05-22 15:51:41 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:41 --> Input Class Initialized
+INFO - 2017-05-22 15:51:41 --> Language Class Initialized
+INFO - 2017-05-22 15:51:41 --> Language Class Initialized
+INFO - 2017-05-22 15:51:41 --> Config Class Initialized
+INFO - 2017-05-22 15:51:41 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:41 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:41 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:41 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:41 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:41 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:41 --> Template Class Initialized
+INFO - 2017-05-22 15:51:41 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:41 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:41 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:41 --> Model Class Initialized
+INFO - 2017-05-22 15:51:41 --> Model Class Initialized
+INFO - 2017-05-22 15:51:44 --> Config Class Initialized
+INFO - 2017-05-22 15:51:44 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:44 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:44 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:44 --> URI Class Initialized
+INFO - 2017-05-22 15:51:44 --> Router Class Initialized
+INFO - 2017-05-22 15:51:44 --> Output Class Initialized
+INFO - 2017-05-22 15:51:44 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:44 --> Input Class Initialized
+INFO - 2017-05-22 15:51:44 --> Language Class Initialized
+INFO - 2017-05-22 15:51:44 --> Language Class Initialized
+INFO - 2017-05-22 15:51:44 --> Config Class Initialized
+INFO - 2017-05-22 15:51:44 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:44 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:44 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:44 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:44 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:44 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:44 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:44 --> Template Class Initialized
+INFO - 2017-05-22 15:51:44 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:44 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:44 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:44 --> Model Class Initialized
+INFO - 2017-05-22 15:51:44 --> Model Class Initialized
+INFO - 2017-05-22 15:51:47 --> Config Class Initialized
+INFO - 2017-05-22 15:51:47 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:47 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:47 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:47 --> URI Class Initialized
+INFO - 2017-05-22 15:51:47 --> Router Class Initialized
+INFO - 2017-05-22 15:51:47 --> Output Class Initialized
+INFO - 2017-05-22 15:51:47 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:47 --> Input Class Initialized
+INFO - 2017-05-22 15:51:47 --> Language Class Initialized
+INFO - 2017-05-22 15:51:47 --> Language Class Initialized
+INFO - 2017-05-22 15:51:47 --> Config Class Initialized
+INFO - 2017-05-22 15:51:47 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:47 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:47 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:47 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:47 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:47 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:47 --> Template Class Initialized
+INFO - 2017-05-22 15:51:47 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:47 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:47 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:47 --> Model Class Initialized
+INFO - 2017-05-22 15:51:47 --> Model Class Initialized
+INFO - 2017-05-22 15:51:50 --> Config Class Initialized
+INFO - 2017-05-22 15:51:50 --> Hooks Class Initialized
+DEBUG - 2017-05-22 15:51:50 --> UTF-8 Support Enabled
+INFO - 2017-05-22 15:51:50 --> Utf8 Class Initialized
+INFO - 2017-05-22 15:51:50 --> URI Class Initialized
+INFO - 2017-05-22 15:51:50 --> Router Class Initialized
+INFO - 2017-05-22 15:51:50 --> Output Class Initialized
+INFO - 2017-05-22 15:51:50 --> Security Class Initialized
+DEBUG - 2017-05-22 15:51:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-22 15:51:50 --> Input Class Initialized
+INFO - 2017-05-22 15:51:50 --> Language Class Initialized
+INFO - 2017-05-22 15:51:50 --> Language Class Initialized
+INFO - 2017-05-22 15:51:50 --> Config Class Initialized
+INFO - 2017-05-22 15:51:50 --> Loader Class Initialized
+INFO - 2017-05-22 15:51:50 --> Helper loaded: form_helper
+INFO - 2017-05-22 15:51:50 --> Helper loaded: url_helper
+INFO - 2017-05-22 15:51:50 --> Helper loaded: utility_helper
+INFO - 2017-05-22 15:51:50 --> Helper loaded: encrypt_helper
+INFO - 2017-05-22 15:51:50 --> Database Driver Class Initialized
+INFO - 2017-05-22 15:51:50 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-22 15:51:50 --> User Agent Class Initialized
+DEBUG - 2017-05-22 15:51:50 --> Template Class Initialized
+INFO - 2017-05-22 15:51:50 --> Encrypt Class Initialized
+INFO - 2017-05-22 15:51:50 --> Controller Class Initialized
+INFO - 2017-05-22 15:51:50 --> Form Validation Class Initialized
+INFO - 2017-05-22 15:51:50 --> Model Class Initialized
+INFO - 2017-05-22 15:51:50 --> Model Class Initialized
