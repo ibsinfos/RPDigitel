@@ -840,7 +840,7 @@ public function deleteExperience()
 				$str.="<tr id=".$user_skill['id']."><td><input type='checkbox' name='record' value=".$user_skill['id']."></td><td>".$user_skill['skill']."</td><td>";
 				
 				 
-			 			$str.="<a href='#' onclick=getSkillDetailUpdate('".$user_skill['id']."','".$user_skill['institute_name']."','".$user_skill['degree_or_certificate']."','".$user_skill['start_date']."','".$user_skill['end_date']."'); >Edit</a>";
+			 			$str.="<a href='#' onclick=getSkillDetailUpdate('".$user_skill['id']."','".$user_skill['skill']."'); >Edit</a>";
 				 
 				$str.="</td></tr>";
 				$cnt+=1;
@@ -1139,7 +1139,7 @@ public function deleteExperience()
 	{
 		$this->load->model('common_model');	
 		$session_data = $this->session->userdata();
-		$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_priceplan= $this->common_model->getRecords(TABLES::$PRICE_PLAN,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_priceplan))
 		{
@@ -1149,17 +1149,16 @@ public function deleteExperience()
 				{
 						
 					$var_open_price='"'.$u_plan['id'].'","'.$u_plan['plan_title'].'","'.$u_plan['plan_description'].'","'.$u_plan['price'].'"';	
+					$var_del_image='"'.$u_plan['id'].'"';	
 						
-					$str.='<div class="panel panel-success">';
+						
+					$str.='<div class="panel panel-success panel-price-plan-'.$u_plan['id'].'">';
 					$str.='<div class="panel-heading">';
 					$str.='<h3 class="panel-title">'.$u_plan['plan_title'].'</h3>';
 					$str.='<div class="pull-right">';
-					if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-					{ 
-						$str.='<span id="editpanel" class="badge editbutton" title="Edit" onclick=openPrice('.$var_open_price.') >';
-					}	
+					$str.='<span id="editpanel" class="badge editbutton" title="Edit" onclick=openPrice('.$var_open_price.') >';
 					$str.='<i class="fa fa-pencil-square-o"></i></span>';
-					$str.='<span id="deletepanel" class="badge editbutton" title="Delete">';
+					$str.='<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice('.$var_del_image.') >';
 					$str.='<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
 					$str.='<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
 					$str.='<div class="panel-body"><div class="panel-body-content">'.$u_plan['plan_description'].'</div><div class="footer1">'.$u_plan['price'].'</div>';
@@ -1169,17 +1168,15 @@ public function deleteExperience()
 				else if(!empty($u_plan['plan_image']))
 				{
 					$var_open_image='"'.$u_plan['id'].'","'.$u_plan['plan_image'].'"';
+					$var_del_image='"'.$u_plan['id'].'"';
 					
-					$str.='<div class="panel panel-success">';
+					$str.='<div class="panel panel-success panel-price-plan-'.$u_plan['id'].'">';
 					$str.='<div class="panel-heading">';
 					$str.='<h3 class="panel-title"></h3>';
 					$str.='<div class="pull-right">';
-					if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-					{ 
-						$str.='<span id="editpanel" class="badge editbutton" onclick=openPriceImage('.$var_open_image.'); title="Edit" >';
-					}	
+					$str.='<span id="editpanel" class="badge editbutton" onclick=openPriceImage('.$var_open_image.'); title="Edit" >';
 					$str.='<i class="fa fa-pencil-square-o"></i></span>';
-					$str.='<span id="deletepanel" class="badge editbutton" title="Delete">';
+					$str.='<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice('.$var_del_image.') >';
 					$str.='<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
 					$str.='<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
 					$str.='<div class="panel-body"><div class="panel-body-content"><img src="'.base_url().$u_plan['plan_image'].'" class="img-responsive"/> </div><div class="footer1"></div>';
@@ -1278,7 +1275,7 @@ public function deleteExperience()
    {
 	    $this->load->model('common_model');	
 		$session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$LIST_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$LIST_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -1302,7 +1299,7 @@ public function deleteExperience()
    {
 	    $this->load->model('common_model');	
 		$session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$LIST_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$LIST_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str='';
 		if(!empty($user_skills))
 		{	
@@ -1381,7 +1378,7 @@ public function deleteExperience()
 	{
 		$this->load->model('common_model');	
 		$session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$LINK_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$LINK_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str_arr=array();
 		if(!empty($user_skills))
 		{	
@@ -1392,12 +1389,11 @@ public function deleteExperience()
 			{			
 				$str_arr['table'].="<tr><td> ".$cnt."</td><td>".$user_skill['link']."</td></tr>";				
 				$str_arr['main_table'].="<div class='linking'><a href=''>".$user_skill['link']."</a><span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span>";				
-				if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-				{
+				
 					$str_arr['main_table'].="<div class='pull-right'>";
 					$str_arr['main_table'].="<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openLink('".$user_skill['id']."','".$user_skill['link']."');>";
 					$str_arr['main_table'].="<i class='fa fa-pencil-square-o'></i></span></div>";
-				}
+				
 				$str_arr['main_table'].="</div>";
 				$str_arr['moblie_table'].="<div class='linking'><a href=''>".$user_skill['link']."<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";				
 				$cnt+=1;
@@ -1425,9 +1421,10 @@ public function deleteExperience()
 	// start save video url	
 	public function getVideoData()
 	{
+		
 		$this->load->model('common_model');	
 		$session_data = $this->session->userdata();
-		$user_skills= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id']));
+		$user_skills= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
 		$str_arr=array();
 		if(!empty($user_skills))
 		{	
@@ -2337,5 +2334,593 @@ public function deleteExperience()
 				echo json_encode($map);
 				exit;
 		  }	
+	}
+	public function updateList()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+
+        $this->form_validation->set_rules('listname', 'List', 'trim|required');
+       
+        if ($this->form_validation->run() == FALSE) {
+            $map ['status'] = 0;
+             $error_array=array();
+				 $error_array['listname']=form_error('listname'); 			
+				 $map ['msg'] = $error_array;
+            echo json_encode($map);
+			exit;
+        } else 
+		{
+			 $ins_experience='';	
+			
+			
+				$price_plan = array();          
+				$price_plan['list'] = $this->input->post('listname');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->input->post('vcard_id');
+        	
+			
+				if(empty($this->input->post('list_id')))
+				{						
+					$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$LIST_DETAILS);
+				}	
+				else
+				{
+					$ins_experience = $this->common_model->updateRow(TABLES::$LIST_DETAILS,$price_plan,array('id'=>$this->input->post('list_id')));
+				}	
+			
+			if ($ins_experience) {
+				$map ['ins_price_id'] = $ins_experience;
+				$map ['status'] = 1;
+				$map ['msg'] = 'List saved successfully.';
+			} else {
+				$map ['ins_edu_id']='';	
+				$map ['status'] = 0;
+				$map ['msg'] = "Unable to save List.";
+			}
+			echo json_encode($map);
+			exit;
+			
+			
+        }
+		
+	}
+	public function updateLink()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+
+
+        $this->form_validation->set_rules('addlink', 'Link', 'trim|required');
+       
+        if ($this->form_validation->run() == FALSE) {
+            $map ['status'] = 0;
+            $map ['msg'] = validation_errors();
+            echo json_encode($map);
+			exit;
+        } else 
+		{
+			$ins_experience='';	
+			
+				$price_plan = array();          
+				$price_plan['link'] = $this->input->post('addlink');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->input->post('vcard_id');
+			
+				if(empty($this->input->post('addlink_id')))
+				{						
+					$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$LINK_DETAILS);
+				}	
+				else
+				{
+					$ins_experience = $this->common_model->updateRow(TABLES::$LINK_DETAILS,$price_plan,array('id'=>$this->input->post('addlink_id')));
+				}	
+			
+			
+			
+			if ($ins_experience) {
+				$map ['ins_price_id'] = $ins_experience;
+				$map ['status'] = 1;
+				$map ['msg'] = 'Link saved successfully.';
+			} else {
+				$map ['ins_edu_id']='';	
+				$map ['status'] = 0;
+				$map ['msg'] = "Unable to saved Link.";
+			}
+			echo json_encode($map);
+			exit;
+			
+			
+        }
+	}
+	public function updateVideoUrl()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+        $this->form_validation->set_rules('videourl', 'Video URL', 'trim|required|callback_validvideourl');
+       
+        if ($this->form_validation->run() == FALSE) {
+            $map ['status'] = 0;
+			$error_array=array();
+			$error_array['videourl']=form_error('videourl'); 			
+            $map ['msg'] = $error_array;            
+            echo json_encode($map);
+			exit;
+        }
+		else 
+		{
+				$ins_experience='';
+				$price_plan = array();          
+				$price_plan['video_url'] = $this->input->post('videourl');
+				$price_plan['video_description'] = $this->input->post('video_description');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');
+				$price_plan['vcard_id'] = $this->input->post('vcard_id');        	
+			
+				if(empty($this->input->post('videourl_id')))
+				{						
+					$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$VIDEO_DETAILS);
+				}	
+				else
+				{
+					$ins_experience = $this->common_model->updateRow(TABLES::$VIDEO_DETAILS,$price_plan,array('id'=>$this->input->post('videourl_id')));
+				}	
+				$this->generateQRCode1();
+       
+			if ($ins_experience) {
+				$map ['ins_price_id'] = $ins_experience;
+				$map ['status'] = 1;
+				$map ['msg'] = 'Video URL added successfully.';
+			} else {
+				$map ['ins_edu_id']='';	
+				$map ['status'] = 0;
+				$map ['msg'] = "Unable to  add Video URL.";
+			}
+			echo json_encode($map);
+			exit;		
+        }
+     	
+	}
+	public function updatePricePlanImage()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+       
+        $errorMsg = array();
+        $err_num = 0;        
+            $user = array();
+            $map = array();
+			$imap = array();
+			if(empty($this->input->post('pricing_id')))
+			{
+				$img_upload_flag=0;
+					
+				
+					if(!empty($_FILES['file']['name'][0]))
+					{
+					
+					
+						for($i=0;$i<count($_FILES['file']['name']);$i++)
+						{
+								$_FILES['ufile']['name'] = $_FILES['file']['name'][$i];
+								$_FILES['ufile']['type'] = $_FILES['file']['type'][$i];
+								$_FILES['ufile']['tmp_name'] = $_FILES['file']['tmp_name'][$i];
+								$_FILES['ufile']['error'] = $_FILES['file']['error'][$i];
+								$_FILES['ufile']['size'] = $_FILES['file']['size'][$i];
+								
+								$config = array();
+								$config['upload_path'] = './uploads/price_plan/';
+								$config['allowed_types'] = 'gif|jpg|png|jpeg';
+								$config['remove_spaces'] = TRUE;
+								$config['encrypt_name'] = TRUE;
+								$config['overwrite'] = FALSE;
+								
+								
+								$this->load->library('upload', $config);
+								$this->upload->initialize($config);
+								if (!$this->upload->do_upload('ufile')) {
+									$error = $this->upload->display_errors();
+									$map ['status'] = 0;
+									$map ['msg'] = "User Image upload error - " . $error;
+									echo json_encode($map);
+									exit;
+								} else {
+									$data = array('upload_data' => $this->upload->data());
+								}
+								
+								$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+								$user['user_id'] = $this->session->userdata('paasport_user_id');
+								$user['vcard_id'] = $this->input->post('vcard_id');
+								
+								$ins_experience = $this->common_model->insertRow($user, TABLES::$PRICE_PLAN);
+								if ($ins_experience) {
+									$img_upload_flag=1;
+									$map [$i]['user_img'] = base_url().$user['plan_image'];
+									$map [$i]['ins_price_id'] = $ins_experience;
+									$map [$i]['status'] = 1;
+									$map [$i]['msg'] = 'Price Plan Image uploaded successfully.';
+								} else {
+									$map [$i]['user_img'] = '';
+									$map [$i]['ins_edu_id']='';	
+									$map [$i]['status'] = 0;
+									$map [$i]['msg'] = "Unable to upload Price Plan Image.";
+								}
+								//echo json_encode($map);
+								//exit;
+						}
+						if($img_upload_flag == 1)
+						{
+							$imap['img_upload_flag']=1;
+							$imap['image']=$map;					
+							$imap ['status'] = 1;
+							$imap ['msg'] = 'Price Plan Image uploaded successfully.';
+						}
+						else
+						{
+							$imap['img_upload_flag']=0;
+							$imap['image']='';					
+							$imap ['status'] = 0;
+							$imap ['msg'] = 'Unable to upload Price Plan Image.';
+							
+						}
+						echo json_encode($imap);
+						exit;
+				}
+			 		
+			
+			}
+			else
+			{					
+					$config = array();
+					$config['upload_path'] = './uploads/price_plan/';
+					$config['allowed_types'] = 'gif|jpg|png|jpeg';
+					$config['remove_spaces'] = TRUE;
+					$config['encrypt_name'] = TRUE;
+					$config['overwrite'] = FALSE;
+				
+					$this->load->library('upload', $config);
+					$this->upload->initialize($config);
+					if (!$this->upload->do_upload('updatefile')) {
+						$error = $this->upload->display_errors();
+						$map ['status'] = 0;
+						$map ['msg'] = "User Image upload error - " . $error;
+						echo json_encode($map);
+						exit;
+					} else {
+						$data = array('upload_data' => $this->upload->data());
+					}
+				
+					$user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+					$user['vcard_id'] = $this->input->post('vcard_id');
+				
+				 $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN,$user,array('id'=>$this->input->post('pricing_id')));
+				if($ins_experience)
+					{
+						$map['img_upload_flag']=1;
+						$map['image']='';					
+						$map ['status'] = 1;
+						$map ['msg'] = 'Price Plan Image uploaded successfully.';
+					}
+					else
+					{
+						$map['img_upload_flag']=0;
+						$map['image']='';					
+						$map ['status'] = 0;
+						$map ['msg'] = 'Unable to upload Price Plan Image.';
+						
+					}
+			}		
+        echo json_encode($map);
+        exit;
+	}
+	public function updatePricePlan()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+
+
+        $this->form_validation->set_rules('pricingtitle', 'Price Title', 'trim|required');
+        $this->form_validation->set_rules('pricingdescription', 'Price Description', 'trim|required');
+      
+
+        if ($this->form_validation->run() == FALSE) {
+            $map ['status'] = 0;
+            $error_array=array();
+			 $error_array['pricingtitle']=form_error('pricingtitle'); 
+			 $error_array['pricingdescription']=form_error('pricingdescription'); 			
+			 $map ['msg'] = $error_array;
+            echo json_encode($map);
+			exit;
+        } else 
+		{
+			$ins_experience='';
+				
+		
+				$price_plan = array();          
+				$price_plan['plan_title'] = $this->input->post('pricingtitle');
+				$price_plan['plan_description'] = $this->input->post('pricingdescription');
+				$price_plan['price'] = $this->input->post('pricingprice');
+				$price_plan['user_id'] = $this->session->userdata('paasport_user_id');       	
+				$price_plan['vcard_id'] = $this->input->post('vcard_id');       	
+				
+				if(empty($this->input->post('pricing_id1')))
+					{						
+						$ins_experience = $this->common_model->insertRow($price_plan, TABLES::$PRICE_PLAN);
+					}	
+					else
+					{
+						$ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN,$price_plan,array('id'=>$this->input->post('pricing_id1')));
+					}	
+				
+			
+			if ($ins_experience) {
+				$map ['ins_price_id'] = $ins_experience;
+				$map ['status'] = 1;
+				$map ['msg'] = 'Price Plan added successfully.';
+			} else {
+				$map ['ins_edu_id']='';	
+				$map ['status'] = 0;
+				$map ['msg'] = "Unable to  add Price Plan.";
+			}
+			echo json_encode($map);
+			exit;
+			
+			
+        }		
+	}
+	public function updatePortfolio()
+	{
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;  
+
+		if(!empty($this->input->post('portfolioDiv')) && $this->input->post('portfolioDiv')=='descprining1')
+		{
+			$this->form_validation->set_rules('videourl_portfolio', 'Video URL', 'trim|required|callback_validvideourl');
+			if ($this->form_validation->run() == FALSE) {
+				$map ['status'] = 0;
+				 $error_array=array();
+				 $error_array['videourl_portfolio']=form_error('videourl_portfolio'); 			
+				 $map ['msg'] = $error_array;
+				$map['img_upload_flag']=2;
+				echo json_encode($map);
+				exit;
+			}
+		}	
+		   $user = array();
+		   $map = array();
+		 if(empty($this->input->post('videourl_portfolio_id')))
+		 {
+			if(!empty($_FILES['file-2']['name'][0]))
+			{
+				$imap = array();
+				$img_upload_flag=0;
+				for($i=0;$i<count($_FILES['file-2']['name']);$i++)
+				{
+						$_FILES['ufile']['name'] = $_FILES['file-2']['name'][$i];
+						$_FILES['ufile']['type'] = $_FILES['file-2']['type'][$i];
+						$_FILES['ufile']['tmp_name'] = $_FILES['file-2']['tmp_name'][$i];
+						$_FILES['ufile']['error'] = $_FILES['file-2']['error'][$i];
+						$_FILES['ufile']['size'] = $_FILES['file-2']['size'][$i];
+						
+						$config = array();
+						$config['upload_path'] = './uploads/portfolio/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+						
+						
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('ufile')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$map ['msg'] = "User Image upload error - " . $error;
+							echo json_encode($map);
+							exit;
+						} else {
+							$data = array('upload_data' => $this->upload->data());
+						}
+						
+						$user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+						$user['user_id'] = $this->session->userdata('paasport_user_id');
+						$user['vcard_id'] = $this->input->post('vcard_id');
+						
+						$ins_experience = $this->common_model->insertRow($user, TABLES::$PORTFOLIO_DETAILS);
+						if ($ins_experience) {
+							$img_upload_flag=1;
+							$map [$i]['user_img'] = base_url().$user['image'];
+							$map [$i]['ins_price_id'] = $ins_experience;
+							$map [$i]['status'] = 1;
+							$map [$i]['msg'] = 'Portfolio uploaded successfully.';
+						} else {
+							$img_upload_flag=0;
+							$map [$i]['user_img'] = '';
+							$map [$i]['ins_edu_id']='';	
+							$map [$i]['status'] = 0;
+							$map [$i]['msg'] = "Unable to upload Portfolio Image.";
+						}
+						//echo json_encode($map);
+						//exit;
+				}
+				if($img_upload_flag == 1)
+				{
+					$imap['img_upload_flag']=1;
+					$imap['image']=$map;					
+					$imap ['status'] = 1;
+					$imap ['msg'] = 'Portfolio uploaded successfully.';
+				}
+				else
+				{
+					$imap['img_upload_flag']=0;
+					$imap['image']='';					
+					$imap ['status'] = 0;
+					$imap ['msg'] = 'Unable to upload Portfolio Image.';
+					
+				}
+				echo json_encode($imap);
+				exit;
+			}     
+            
+		 }
+		else
+		{
+			if(!empty($_FILES['portfolioImg_updatefile']['name']))
+			{
+						$config = array();
+						$config['upload_path'] = './uploads/portfolio/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+						
+						
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('portfolioImg_updatefile')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$map ['msg'] = "User Image upload error - " . $error;
+							echo json_encode($map);
+							exit;
+						} else {
+							$data = array('upload_data' => $this->upload->data());
+						}
+						
+						$user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+						$user['user_id'] = $this->session->userdata('paasport_user_id');
+						$user['vcard_id'] = $this->input->post('vcard_id');
+						
+						$ins_experience = $this->common_model->updateRow(TABLES::$PORTFOLIO_DETAILS,$user,array('id'=>$this->input->post('videourl_portfolio_id')));
+						
+						if($ins_experience)
+						{
+							$map['img_upload_flag']=1;
+							$map['image']='';					
+							$map ['status'] = 1;
+							$map ['msg'] = 'Price Plan Image uploaded successfully.';
+						}
+						else
+						{
+							$map['img_upload_flag']=0;
+							$map['image']='';					
+							$map ['status'] = 0;
+							$map ['msg'] = 'Unable to upload Price Plan Image.';
+							
+						}
+						echo json_encode($map);
+						exit;
+			}
+		}		
+		
+		 if(!empty($this->input->post('videourl_portfolio')))
+			{
+				$user['video_url'] = $this->input->post('videourl_portfolio');
+				$user['user_id'] = $this->session->userdata('paasport_user_id');
+				$user['vcard_id'] = $this->input->post('vcard_id');
+				if(!empty($user))
+				{
+					
+					if(empty($this->input->post('videourl_portfolio_id')))
+					{						
+						$ins_experience = $this->common_model->insertRow($user, TABLES::$PORTFOLIO_DETAILS);
+					}	
+					else
+					{
+						$ins_experience = $this->common_model->updateRow(TABLES::$PORTFOLIO_DETAILS,$user,array('id'=>$this->input->post('videourl_portfolio_id')));
+					}	
+						
+					
+					if ($ins_experience) 
+					{
+						$map['img_upload_flag']=2;
+						$map['user_img']='';
+						$map ['ins_price_id'] = $ins_experience;
+						$map ['status'] = 1;
+						$map ['msg'] = 'Portfolio uploaded successfully.';
+					} else {
+						$map['img_upload_flag']=2;
+						$map['user_img']='';	
+						$map ['ins_edu_id']='';	
+						$map ['status'] = 0;
+						$map ['msg'] = "Unable to upload Portfolio.";
+					}
+					echo json_encode($map);
+					exit;
+				}	
+			}
+            
+        
+        exit;
+	}
+	public function getPortfolio()
+	{
+		$this->load->model('common_model');	
+		$session_data = $this->session->userdata();
+		$user_portfolio = $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS,'*',array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
+		$str='';
+		 if(!empty($user_portfolio)) 
+		 { 
+			 foreach($user_portfolio as $u_portfolio)
+			 {
+									
+				$str.='<div class="panel-body-content text-center">';
+				if(!empty($u_portfolio['image'])) 
+				{
+							
+					$var_open_port='"'.$u_portfolio['id'].'","'.$u_portfolio['image'].'"';
+							
+					$str.='<div class="pull-right">';
+					$str.='<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioImage('.$var_open_port.') ><i class="fa fa-pencil-square-o"></i>';
+					$str.='</span>';
+					$str.='</div>';
+					$str.='<img src="'.base_url().$u_portfolio['image'].'" class="img-responsive"/>';
+				} 	
+					$str.='<hr>';
+				if(!empty($u_portfolio['video_url'])) 
+				{
+							
+					$var_open_video='"'.$u_portfolio['id'].'","'.$u_portfolio['video_url'].'"';
+					
+					$str.='<div class="pull-right">';
+					$str.='<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioVideo('.$var_open_video.') ><i class="fa fa-pencil-square-o"></i>';
+					$str.='</span>';
+					$str.='</div>';
+					$str.='<div class="embed-responsive embed-responsive-4by3">';
+					$str.='<iframe class="embed-responsive-item" src="'.$u_portfolio['video_url'].'"></iframe>';
+					$str.='</div>';									
+				 } 
+					$str.='</div>';
+									
+			 }
+		} 	
+		echo $str;
+		exit; 
 	}
 }

@@ -1069,7 +1069,7 @@
 							<div class="err_priceplandetail" ></div>
 							<div id="div1" class="pricing-plan-content desc-panel targetDiv preview-table-ex5">
 								<?php 
-								/*if(!empty($user_priceplan))
+								if(!empty($user_priceplan))
 								{
 									foreach($user_priceplan as $u_plan)
 									{
@@ -1077,15 +1077,13 @@
 										{
 								?>	
 								
-									<div class="panel panel-success">
+									<div class="panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>">
 									<div class="panel-heading">
 									<h3 class="panel-title"><?php echo $u_plan['plan_title'] ?></h3>
 									<div class="pull-right">
-									<?php if($this->uri->segment(1)=='vcard-update') { ?>
 									<span id="editpanel" class="badge editbutton" onclick="openPrice('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_title']; ?>','<?php echo $u_plan['plan_description']; ?>','<?php echo $u_plan['price']; ?>');" title="Edit">
-									<?php } ?>
 									<i class="fa fa-pencil-square-o"></i></span>
-									<span id="deletepanel" class="badge editbutton" title="Delete">
+									<span id="deletepanel" class="badge editbutton" title="Delete" onclick="deletePrice('<?php echo $u_plan['id']; ?>');" >
 									<i class="fa fa-trash"></i></span><span class="pull-right clickable">
 									<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
 									<div class="panel-body"><div class="panel-body-content"><?php echo $u_plan['plan_description'] ?> </div><div class="footer1"><?php echo $u_plan['price'] ?></div>
@@ -1095,15 +1093,13 @@
 										}
 										else if(!empty($u_plan['plan_image']))
 										{ ?>
-										<div class="panel panel-success">
+										<div class="panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>">
 										<div class="panel-heading">
 										<h3 class="panel-title"></h3>
 										<div class="pull-right">
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
 										<span id="editpanel" class="badge editbutton" onclick="openPriceImage('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_image']; ?>');" title="Edit" >
-										<?php } ?>
 										<i class="fa fa-pencil-square-o"></i></span>
-										<span id="deletepanel" class="badge editbutton" title="Delete">
+										<span id="deletepanel" class="badge editbutton" title="Delete" onclick="deletePrice('<?php echo $u_plan['id']; ?>');" >
 										<i class="fa fa-trash"></i></span><span class="pull-right clickable">
 										<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
 										<div class="panel-body"><div class="panel-body-content"><img src="<?php echo base_url().$u_plan['plan_image']; ?>" class="img-responsive"/> </div><div class="footer1"></div>
@@ -1112,7 +1108,7 @@
 									<?php
 										}	
 									}
-								} */
+								} 
 								
 								?>
 							
@@ -1129,28 +1125,28 @@
 									</div>
 									<div class="panel-body portfolio-preview5">
 									
-									<?php /*if(!empty($user_portfolio)) { 
+									<?php if(!empty($user_portfolio)) { 
 										foreach($user_portfolio as $u_portfolio)
 										{
 									?>
 										<div class="panel-body-content text-center">
 										<?php if(!empty($u_portfolio['image'])) {?>
-											<?php if($this->uri->segment(1)=='vcard-update') { ?>
+											
 											<div class='pull-right'>
 												<span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioImage('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['image']; ?>')" ><i class="fa fa-pencil-square-o"></i>
 												</span>
 											</div>
-											<?php } ?>
+											
 											<img src="<?php echo base_url().$u_portfolio['image']; ?>" class="img-responsive"/>
 										<?php } ?>	
 										<hr>
 										<?php if(!empty($u_portfolio['video_url'])) { ?>
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 											<div class='pull-right'>
 												<span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioVideo('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['video_url']; ?>')" ><i class="fa fa-pencil-square-o"></i>
 												</span>
 											</div>
-											<?php } ?>
+										
 										<div class="embed-responsive embed-responsive-4by3">
 										  <iframe class="embed-responsive-item" src="<?php echo $u_portfolio['video_url'] ?>"></iframe>
 										</div>									
@@ -1158,7 +1154,7 @@
 										</div>
 									<?php
 										}
-									}*/ ?>	
+									} ?>	
 									
 									</div>
 							</div>
@@ -1176,22 +1172,22 @@
 									<div class="panel-body-content">
 									<ul class="list list-preview-table-ex5">
 										<?php
-											/*if(!empty($user_list))
+											if(!empty($user_list))
 											{
 												foreach($user_list as $ulist)
 												{
 										?>
 										<li><?php echo $ulist['list'] ?> 
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 										<div class="pull-right">
 										<span id="editpanellists" class="badge editbutton" title="Edit" onclick="openList('<?php echo $ulist['id'] ?>','<?php echo $ulist['list'] ?>');" >
 										<i class="fa fa-pencil-square-o"></i></span></div>
-										<?php } ?>
+										
 									
 										</li>
 											<?php
 												}
-											}*/ ?>
+											} ?>
 									</ul>
 									</div>
 									
@@ -1209,20 +1205,20 @@
 									</div>
 									<div class="panel-body">
 									<div class="panel-body-content text-center link-preview-ex5">
-									<?php /*if(!empty($user_link)) { 
+									<?php if(!empty($user_link)) { 
 										foreach($user_link as $u_link) {
 									?>
 										<div class="linking"><a href=""><?php echo $u_link['link'];  ?></a><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span>
-										<?php if($this->uri->segment(1)=='vcard-update') { ?>
+										
 										<div class="pull-right">
 										<span id="editpanellinks" class="badge editbutton" title="Edit" onclick="openLink('<?php echo $u_link['id'] ?>','<?php echo $u_link['link'] ?>');">
 										<i class="fa fa-pencil-square-o"></i></span>
 										</div>
-										<?php } ?>	
+										
 										</div>
 									<?php 
 										}
-									} */ ?>
+									}  ?>
 									
 									</div>
 									
@@ -1238,7 +1234,7 @@
 									</div>
 									<div class="panel-body video-preview5">
 									<?php 
-									/*if(!empty($user_video_url))
+									if(!empty($user_video_url))
 									{
 										foreach($user_video_url as $u_video_url) 
 										{	
@@ -1261,7 +1257,7 @@
 									</div>
 									<?php 
 										}
-									}*/ ?>
+									} ?>
 									
 									</div>
 							</div>
@@ -1295,14 +1291,14 @@
 													<!-- Pricing plan Starts Here-->
 													<div class="desc-panel preview-table-ex6" style="margin-top:48px">
 													<?php 
-														/*if(!empty($user_priceplan))
+														if(!empty($user_priceplan))
 														{
 															foreach($user_priceplan as $u_plan)
 															{
 																if(!empty($u_plan['plan_title']))
 																{
 														?>	
-															<div class='panel panel-success'>
+															<div class='panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>'>
 																<div class='panel-heading'>
 																	<h3 class='panel-title'> <?php echo $u_plan['plan_title']; ?> </h3>
 																	<span class='pull-right clickable'>
@@ -1316,7 +1312,7 @@
 																}
 																else if(!empty($u_plan['plan_image']))
 																{ ?>
-																<div class='panel panel-success'>
+																<div class='panel panel-success panel-price-plan-<?php echo $u_plan['id']; ?>'>
 																	<div class='panel-heading'>
 																		<h3 class='panel-title'>  </h3>
 																		<span class='pull-right clickable'>
@@ -1330,7 +1326,7 @@
 															<?php
 																}	
 															}
-														} */
+														} 
 												    ?>
 													</div>
 													<!--End Here-->
@@ -1356,7 +1352,7 @@
 																<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
 															</div>
 															<div class="panel-body portfolio-preview6">
-															<?php /* if(!empty($user_portfolio)) { 
+															<?php  if(!empty($user_portfolio)) { 
 																foreach($user_portfolio as $u_portfolio)
 																{
 															?>
@@ -1373,7 +1369,7 @@
 																</div>
 															<?php
 																}
-															}  */ ?>
+															}   ?>
 															
 															</div>
 													</div>
@@ -1406,7 +1402,7 @@
 													<div class="panel-body-content">
 													<ul class="list list-preview-table-ex6">
 														<?php
-														/*if(!empty($user_list))
+														if(!empty($user_list))
 														{
 															foreach($user_list as $ulist)
 															{
@@ -1414,7 +1410,7 @@
 														<li><?php echo $ulist['list'] ?></li>
 														<?php
 															}
-														} */?>
+														} ?>
 													</ul>
 													</div>
 													
@@ -1449,13 +1445,13 @@
 													<div class="panel-body">
 													<div class="panel-body-content">
 													<ul class="list link-preview-ex6">
-														<?php /* if(!empty($user_link)) { 
+														<?php  if(!empty($user_link)) { 
 															foreach($user_link as $u_link) {
 														?>
 															<div class="linking"><a href=""><?php echo $u_link['link'];  ?><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span></a></div>
 														<?php 
 															}
-														} */ ?>
+														}  ?>
 
 													</ul>
 													</div>
@@ -1490,7 +1486,7 @@
 															</div>
 															<div class="panel-body video-preview6">
 																<?php 
-																	/*if(!empty($user_video_url))
+																	if(!empty($user_video_url))
 																	{
 																		foreach($user_video_url as $u_video_url) 
 																		{	
@@ -1508,7 +1504,7 @@
 																	</div>
 																	<?php 
 																		}
-																	}*/ ?>
+																	}?>
 															
 															</div>
 													</div>
@@ -2506,7 +2502,7 @@
 			
 			
 				$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePricePlan",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePricePlan",
                 type: "POST",
                 data: new FormData($("#frmPricingPlan")[0]),
                 contentType: false,
@@ -2518,20 +2514,22 @@
                     var json = JSON.parse(data);
                     if (json.status === 1) 
 					{
-						//getPriceData();
+					
 						
 						$("#err_pricingtitle").html('');
 						$("#err_pricingdescription").html('');
 						
 						var markup4 = "<tr class='panel-price-plan-"+json.ins_price_id+"' ><td> "  +  pricingtitle + " </td><td>" + pricingdescription + "</td><td>" + pricingprice + "</td></tr>";
-						$(".preview-table-ex4").append(markup4);
+						$(".preview-table-ex4").html(markup4);
 						
-						var markup5 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><div class='pull-right'><span id='deletepanel' class='badge editbutton' title='Delete' onclick='deletePrice("+ json.ins_price_id +");' ><i class='fa fa-trash'></i></span><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
+						getPriceData();
+						
+						/*var markup5 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><div class='pull-right'><span id='deletepanel' class='badge editbutton' title='Delete' onclick='deletePrice("+ json.ins_price_id +");' ><i class='fa fa-trash'></i></span><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
 						$(".preview-table-ex5").append(markup5);
 						
 						var markup6 = "<div class='panel panel-success panel-price-plan-"+json.ins_price_id+" '><div class='panel-heading'><h3 class='panel-title'>" + pricingtitle + "</h3><span class='pull-right clickable'><i class='glyphicon glyphicon-chevron-up'></i></span></div><div class='panel-body'><div class='panel-body-content'>" + pricingdescription + "</div><div class='footer1'>"+ pricingprice +"</div></div></div>";
 						$(".preview-table-ex6").append(markup6);
-						
+						*/
 					
 						$('#pricingdescription, #pricingprice, #pricingtitle,#pricing_id1').val("");
 			
@@ -2556,7 +2554,7 @@
 		
 		 $('#addpricingimage').click(function(){
 			  $.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePricePlanImage",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePricePlanImage",
                 type: "POST",
                 data: new FormData($("#example-1")[0]),
                 contentType: false,
@@ -2568,16 +2566,16 @@
 					var json = JSON.parse(data);
 					if(json.img_upload_flag === 1)
 					{
-						//getPriceData();
+						getPriceData();
 						$('#file,#pricing_id,#updatefile').val(""); 
-						for (var i = 0; i < json.image.length; i++)
+						/*for (var i = 0; i < json.image.length; i++)
 						{
 							var obj = json.image[i];
 							var pricemarkup5='<div class="panel panel-success panel-price-plan-'+ obj.ins_price_id +'" ><div class="panel-heading"><h3 class="panel-title"></h3><div class="pull-right"><span id="deletepanel" class="badge editbutton" onclick="deletePrice('+ obj.ins_price_id +')" title="Delete"><i class="fa fa-trash"></i></span><span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></div></div><div class="panel-body"><div class="panel-body-content"><img src="'+obj.user_img+'" class="img-responsive"/> </div><div class="footer1"></div></div></div>';
 							$(".preview-table-ex5").append(pricemarkup5);
 							$(".preview-table-ex6").append(pricemarkup5);
 							
-						}
+						}*/
 						
 						if (json.status === 1) 
 						{
@@ -2604,7 +2602,7 @@
 			var listname = $("#listname").val();
 			$("#err_listname").html('');
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveList",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateList",
                 type: "POST",
                 data: new FormData($("#frmlist")[0]),
                 contentType: false,
@@ -2619,20 +2617,20 @@
 						
 						$("#err_listname").html('');
 						
-						var markup2 = "<tr><td> " + cnt + "</td><td>" + listname +  "</td></tr>";
-						$(".list-preview-table-ex4").append(markup2);
+						var markup2 = "<tr><td> " + srlist + "</td><td>" + listname +  "</td></tr>";
+						$(".list-preview-table-ex4").html(markup2);
 						
-						var markup3 = "<li> " + listname  + " </li>";
-						$(".list-preview-table-ex5").append(markup3);
+						//var markup3 = "<li> " + listname  + " </li>";
+						//$(".list-preview-table-ex5").append(markup3);
 						
 						//var markup4 = "<tr><td> " + cnt + "</td><td>" + listname +  "</td></tr>";
-						$(".list-preview-table-ex6").append(markup3);
+						//$(".list-preview-table-ex6").append(markup3);
 						
 						//getListData();
 						
-						//getMainListData();
+						getMainListData();
 						
-						//getListDataMobile();
+						getListDataMobile();
 						
 						
 						
@@ -2660,13 +2658,13 @@
 		
 		
 		// start add link
-		var cntlink=1;
+		var cntlink=0;
 		 $("#btnAddLink").click(function() {           
           
 			var linkname = $("#addlink").val();
 		  
 			$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveLink",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateLink",
                 type: "POST",
                 data: new FormData($("#frmaddlink")[0]),
                 contentType: false,
@@ -2674,19 +2672,20 @@
                 processData: false,
                 success: function (data)
                 {
-
+					cntlink = cntlink + 1;
+					
                     var json = JSON.parse(data);
                     if (json.status === 1) 
 					{		
 				
-						//getLinkData();					
 						
-						var markup1 = "<tr><td> 1 </td><td>"+ linkname +"</td></tr>";
-						var markup3 = "<div class='linking'><a href=''>"+ linkname +"<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
-						$(".link-preview").append(markup1);
-						$(".link-preview-ex5").append(markup3);
-						$(".link-preview-ex6").append(markup3);
+						var markup1 = "<tr><td>"+cntlink+"</td><td>"+ linkname +"</td></tr>";
+						//var markup3 = "<div class='linking'><a href=''>"+ linkname +"<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
+						$(".link-preview").html(markup1);
+						//$(".link-preview-ex5").append(markup3);
+						//$(".link-preview-ex6").append(markup3);
 						
+						getLinkData();					
 						
 						
 						
@@ -2720,7 +2719,7 @@
 			var video_description = $("#video_description").val();	
          
      		$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/saveVideoUrl",
+                url: "<?php echo base_url() ?>frontend/Vcard/updateVideoUrl",
                 type: "POST",
                 data: new FormData($("#frmvideourl")[0]),
                 contentType: false,
@@ -2733,16 +2732,17 @@
                     if (json.status === 1) 
 					{	
 				
-						//getVideoData();
+						
 						$('#err_videourl').html('');
 						
 						var videomarkup4 = "<tr><td>1</td><td>" + videourl + "</td>";
-						$(".video-preview").append(videomarkup4);
+						$(".video-preview").html(videomarkup4);
 						
-						var videomarkup5 = '<div class="panel-body-content text-center"><div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl +'"></iframe></div><hr><div>'+ video_description +'</div></div>';
-						$(".video-preview5").append(videomarkup5);					
+						getVideoData();
 						
-						$(".video-preview6").append(videomarkup5); 
+						/*var videomarkup5 = '<div class="panel-body-content text-center"><div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl +'"></iframe></div><hr><div>'+ video_description +'</div></div>';
+						$(".video-preview5").append(videomarkup5);							
+						$(".video-preview6").append(videomarkup5);*/
 						
 						$('#videourl,#video_description,#videourl_id').val(""); 
                         $(".frmerror_videourl").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
@@ -2768,7 +2768,7 @@
 			var file2 = $("#file-2").val();	
 		 
      		$.ajax({
-                url: "<?php echo base_url() ?>frontend/Vcard/savePortfolio",
+                url: "<?php echo base_url() ?>frontend/Vcard/updatePortfolio",
                 type: "POST",
                 data: new FormData($("#example-2")[0]),
                 contentType: false,
@@ -2784,17 +2784,20 @@
 							var obj = json.image[i];
 							
 							var portmarkup4 = "<tr><td>" + obj.user_img + "</td><td></td>";
-							$(".portfolio-preview").append(portmarkup4);
+							$(".portfolio-preview").html(portmarkup4);
 							
-							var portmarkup5 = '<div class="panel-body-content text-center">';
+							
+							
+							/*var portmarkup5 = '<div class="panel-body-content text-center">';
 							portmarkup5 += '<img src="'+ obj.user_img +'" class="img-responsive"/>';
 						    portmarkup5 += '<hr>';
-							portmarkup5 += '</div>';
-							
-														
+							portmarkup5 += '</div>';														
 							$(".portfolio-preview5").append(portmarkup5);
-							$(".portfolio-preview6").append(portmarkup5);
+							$(".portfolio-preview6").append(portmarkup5); */
 						}
+						
+						getPortfolio();
+						
 						$('#videourl_portfolio,#file-2').val("");
 						if (json.status === 1) 
 						{
@@ -2819,7 +2822,9 @@
 							$(".portfolio-preview").append(portmarkup4);
 							
 							
-							var portmarkup5 = '<div class="panel-body-content text-center">'
+							getPortfolio();
+							
+							/*var portmarkup5 = '<div class="panel-body-content text-center">'
 							 if(videourl_portfolio !== '')
 							 {
 								portmarkup5 += '<div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="'+ videourl_portfolio +'"></iframe></div>';
@@ -2827,7 +2832,7 @@
 							portmarkup5 += '</div>';						 
 							$(".portfolio-preview5").append(portmarkup5);
 							$(".portfolio-preview6").append(portmarkup5);
-							
+							*/
 							
 							$(".frmerror_portfolio").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
 							return true;
@@ -3138,10 +3143,10 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getMainListData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},          	        
             success: function (data)
             {					
                $(".list-preview-table-ex5").html(''); 					 
@@ -3156,10 +3161,11 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getListDataMobile",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				vcard_id:$('#vcard_id').val()
+				
+			},
+           		        
             success: function (data)
             {					
                $(".list-preview-table-ex6").html(''); 					 
@@ -3173,15 +3179,16 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getLinkData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {
+				
+				vcard_id:$('#vcard_id').val()
+			},
+           		        
             success: function (data)
             {		
 				 var json = JSON.parse(data);					
-				 $(".link-preview").html('');	
-				 $(".link-preview").html(json.table);	
+				 //$(".link-preview").html('');	
+				// $(".link-preview").html(json.table);	
 				 $(".link-preview-ex5").html('');	
 				 $(".link-preview-ex5").html(json.main_table);	
 				 $(".link-preview-ex6").html('');	
@@ -3193,24 +3200,22 @@ $(function() {
 	}
 	function getVideoData()
 	{
+		
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getVideoData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
             success: function (data)
             {		
 				 var json = JSON.parse(data);					
-				 $(".video-preview").html('');	
-				 $(".video-preview").html(json.table);	
+				// $(".video-preview").html('');	
+				// $(".video-preview").html(json.table);	
 				 $(".video-preview5").html('');	
 				 $(".video-preview5").html(json.main_table);	
 				 $(".video-preview6").html('');	
-				 $(".video-preview6").html(json.moblie_table);	
-              
-				
+				 $(".video-preview6").html(json.moblie_table);	    
             }
         });
 	}
@@ -3219,10 +3224,9 @@ $(function() {
 		$.ajax({
             url: "<?php echo base_url() ?>frontend/Vcard/getPriceData",
 			type: "POST",
-            data: {},
-            contentType: false,
-            cache: false,
-            processData: false,			        
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
             success: function (data)
             {		
 				// var json = JSON.parse(data);					
@@ -3231,6 +3235,26 @@ $(function() {
 				
 				$(".preview-table-ex6").html('');	
 				 $(".preview-table-ex6").html(data);
+				
+            }
+        });
+	}
+	function getPortfolio()
+	{
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getPortfolio",
+			type: "POST",
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
+            success: function (data)
+            {		
+								
+				$(".portfolio-preview5").html('');	
+				$(".portfolio-preview5").html(data);	
+				
+				$(".portfolio-preview6").html('');	
+				$(".portfolio-preview6").html(data);
 				
             }
         });
@@ -3390,16 +3414,7 @@ $(function() {
 		$(".list-preview-table-ex4").append(markup4);
 	}
 	// end update for list
-	function openLink(id,name)
-	{
-		$('#addlink_id').val(id);
-		$('#addlink').val(name);
-		$('#links').modal('show');
-		 var linkmarkup4 = "<tr><td>1</td><td>" + name + "</td>";
-						$(".link-preview").append(linkmarkup4);
-		
-	}
-	// end update for link
+	
 	function openvideo(id,name,desc)
 	{
 		$('#videourl_id').val(id);
@@ -3474,6 +3489,17 @@ $(function() {
 		
 	}
 	
+	function openLink(id,name)
+	{
+		$('#addlink_id').val(id);
+		$('#addlink').val(name);
+		$('#links').modal('show');
+		 var linkmarkup4 = "<tr><td>1</td><td>" + name + "</td>";
+						$(".link-preview").append(linkmarkup4);
+		
+	}
+	
+	
 	</script>
 
 
@@ -3531,6 +3557,7 @@ $(function() {
 																	
 																	<div class="form-group">
 																	<form id="example-1" action="" method="POST" enctype="multipart/form-data" class="page">
+																			<input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>"  >
 																			<input type="hidden" name="pricing_id" id="pricing_id" >
 																			<div class="frmerror_priceplanupload" ></div>
 																			
@@ -3567,6 +3594,7 @@ $(function() {
                                                                 <label for="jobTitle">Pricing Plan Title
                                                                     <small>(required)</small>
                                                                 </label>
+                                                               <input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>" >
                                                                <input type="hidden" name="pricing_id1" id="pricing_id1" >
 																<input id="pricingtitle" name="pricingtitle"
                                                                        type="text"
@@ -3658,6 +3686,7 @@ $(function() {
                                                         <div class="modal-body">
 															<form id="example-2" method="POST" enctype="multipart/form-data"  >
 															
+															<input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>" />
 															<input type="hidden" name="videourl_portfolio_id" id="videourl_portfolio_id" />
 															<div class="frmerror_portfolio" ></div>
 															<div class="radio radio-primary col-md-4">
@@ -3775,6 +3804,8 @@ $(function() {
                                                                 <label for="jobTitle">List Name
                                                                     <small>(required)</small>
                                                                 </label>
+																<input id="vcard_id" name="vcard_id"
+                                                                       type="hidden" value="<?php echo $user_data[0]['id']; ?>" >
 																<input id="list_id" name="list_id"
                                                                        type="hidden" >
                                                                 <input id="listname" name="listname"
@@ -3845,6 +3876,7 @@ $(function() {
 																	<label for="jobTitle">Add Your Links
 																		<small>(required)</small>
 																	</label>
+																	<input id="vcard_id" name="vcard_id" type="hidden" value="<?php echo $user_data[0]['id']; ?>" >
 																	<input id="addlink_id" name="addlink_id" type="hidden" >
 																	<input id="addlink" name="addlink"
 																		   type="text"
@@ -3918,8 +3950,10 @@ $(function() {
                                                                 <label for="jobTitle">Video URL
                                                                     <small>(required)</small>
                                                                 </label>
+																 <input id="vcard_id" name="vcard_id"
+                                                                       type="hidden" value="<?php echo $user_data[0]['id']; ?>" >	
 																 <input id="videourl_id" name="videourl_id"
-                                                                       type="hidden"    >
+                                                                       type="hidden">
                                                                 <input id="videourl" name="videourl"
                                                                        type="text"
                                                                        class="form-control"
