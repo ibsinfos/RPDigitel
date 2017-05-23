@@ -10749,3 +10749,273 @@ INFO - 2017-05-23 19:56:42 --> Model Class Initialized
 DEBUG - 2017-05-23 19:56:42 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
 INFO - 2017-05-23 19:56:42 --> Final output sent to browser
 DEBUG - 2017-05-23 19:56:42 --> Total execution time: 0.0709
+INFO - 2017-05-23 20:00:41 --> Config Class Initialized
+INFO - 2017-05-23 20:00:41 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:00:41 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:00:41 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:00:41 --> URI Class Initialized
+INFO - 2017-05-23 20:00:41 --> Router Class Initialized
+INFO - 2017-05-23 20:00:41 --> Output Class Initialized
+INFO - 2017-05-23 20:00:41 --> Security Class Initialized
+DEBUG - 2017-05-23 20:00:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:00:41 --> Input Class Initialized
+INFO - 2017-05-23 20:00:41 --> Language Class Initialized
+INFO - 2017-05-23 20:00:41 --> Language Class Initialized
+INFO - 2017-05-23 20:00:41 --> Config Class Initialized
+INFO - 2017-05-23 20:00:41 --> Loader Class Initialized
+INFO - 2017-05-23 20:00:41 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:00:41 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:00:41 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:00:41 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:00:41 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:00:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:00:41 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:00:41 --> Template Class Initialized
+INFO - 2017-05-23 20:00:41 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:00:41 --> Controller Class Initialized
+INFO - 2017-05-23 20:00:41 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:00:41 --> Model Class Initialized
+INFO - 2017-05-23 20:00:41 --> Model Class Initialized
+DEBUG - 2017-05-23 20:00:41 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:00:41 --> Final output sent to browser
+DEBUG - 2017-05-23 20:00:41 --> Total execution time: 0.0736
+INFO - 2017-05-23 20:01:10 --> Config Class Initialized
+INFO - 2017-05-23 20:01:10 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:01:10 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:01:10 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:01:10 --> URI Class Initialized
+INFO - 2017-05-23 20:01:10 --> Router Class Initialized
+INFO - 2017-05-23 20:01:10 --> Output Class Initialized
+INFO - 2017-05-23 20:01:10 --> Security Class Initialized
+DEBUG - 2017-05-23 20:01:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:01:10 --> Input Class Initialized
+INFO - 2017-05-23 20:01:10 --> Language Class Initialized
+INFO - 2017-05-23 20:01:10 --> Language Class Initialized
+INFO - 2017-05-23 20:01:10 --> Config Class Initialized
+INFO - 2017-05-23 20:01:10 --> Loader Class Initialized
+INFO - 2017-05-23 20:01:10 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:01:10 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:01:10 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:01:10 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:01:10 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:01:10 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:01:10 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:01:10 --> Template Class Initialized
+INFO - 2017-05-23 20:01:10 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:01:10 --> Controller Class Initialized
+INFO - 2017-05-23 20:01:10 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:01:10 --> Model Class Initialized
+INFO - 2017-05-23 20:01:10 --> Model Class Initialized
+DEBUG - 2017-05-23 20:01:10 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:01:10 --> Final output sent to browser
+DEBUG - 2017-05-23 20:01:10 --> Total execution time: 0.0655
+INFO - 2017-05-23 20:01:36 --> Config Class Initialized
+INFO - 2017-05-23 20:01:36 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:01:36 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:01:36 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:01:36 --> URI Class Initialized
+INFO - 2017-05-23 20:01:36 --> Router Class Initialized
+INFO - 2017-05-23 20:01:36 --> Output Class Initialized
+INFO - 2017-05-23 20:01:36 --> Security Class Initialized
+DEBUG - 2017-05-23 20:01:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:01:36 --> Input Class Initialized
+INFO - 2017-05-23 20:01:36 --> Language Class Initialized
+INFO - 2017-05-23 20:01:36 --> Language Class Initialized
+INFO - 2017-05-23 20:01:36 --> Config Class Initialized
+INFO - 2017-05-23 20:01:36 --> Loader Class Initialized
+INFO - 2017-05-23 20:01:36 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:01:36 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:01:36 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:01:36 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:01:36 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:01:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:01:36 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:01:36 --> Template Class Initialized
+INFO - 2017-05-23 20:01:36 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:01:36 --> Controller Class Initialized
+INFO - 2017-05-23 20:01:36 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:01:36 --> Model Class Initialized
+INFO - 2017-05-23 20:01:36 --> Model Class Initialized
+DEBUG - 2017-05-23 20:01:36 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-23 20:01:36 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_main.php
+DEBUG - 2017-05-23 20:01:36 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-23 20:01:36 --> Final output sent to browser
+DEBUG - 2017-05-23 20:01:36 --> Total execution time: 0.0826
+INFO - 2017-05-23 20:01:38 --> Config Class Initialized
+INFO - 2017-05-23 20:01:38 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:01:38 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:01:38 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:01:38 --> URI Class Initialized
+INFO - 2017-05-23 20:01:38 --> Router Class Initialized
+INFO - 2017-05-23 20:01:38 --> Output Class Initialized
+INFO - 2017-05-23 20:01:38 --> Security Class Initialized
+DEBUG - 2017-05-23 20:01:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:01:38 --> Input Class Initialized
+INFO - 2017-05-23 20:01:38 --> Language Class Initialized
+INFO - 2017-05-23 20:01:38 --> Language Class Initialized
+INFO - 2017-05-23 20:01:38 --> Config Class Initialized
+INFO - 2017-05-23 20:01:38 --> Loader Class Initialized
+INFO - 2017-05-23 20:01:38 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:01:38 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:01:38 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:01:38 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:01:38 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:01:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:01:38 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:01:38 --> Template Class Initialized
+INFO - 2017-05-23 20:01:38 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:01:38 --> Controller Class Initialized
+INFO - 2017-05-23 20:01:38 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:01:38 --> Model Class Initialized
+INFO - 2017-05-23 20:01:38 --> Model Class Initialized
+INFO - 2017-05-23 20:01:38 --> Helper loaded: email_helper
+INFO - 2017-05-23 20:01:38 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-05-23 20:02:19 --> Config Class Initialized
+INFO - 2017-05-23 20:02:19 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:02:19 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:02:19 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:02:19 --> URI Class Initialized
+INFO - 2017-05-23 20:02:19 --> Router Class Initialized
+INFO - 2017-05-23 20:02:19 --> Output Class Initialized
+INFO - 2017-05-23 20:02:19 --> Security Class Initialized
+DEBUG - 2017-05-23 20:02:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:02:19 --> Input Class Initialized
+INFO - 2017-05-23 20:02:19 --> Language Class Initialized
+INFO - 2017-05-23 20:02:19 --> Language Class Initialized
+INFO - 2017-05-23 20:02:19 --> Config Class Initialized
+INFO - 2017-05-23 20:02:19 --> Loader Class Initialized
+INFO - 2017-05-23 20:02:19 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:02:19 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:02:19 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:02:19 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:02:19 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:02:19 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:02:19 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:02:19 --> Template Class Initialized
+INFO - 2017-05-23 20:02:19 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:02:19 --> Controller Class Initialized
+INFO - 2017-05-23 20:02:19 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:02:19 --> Model Class Initialized
+INFO - 2017-05-23 20:02:19 --> Model Class Initialized
+DEBUG - 2017-05-23 20:02:19 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:02:19 --> Final output sent to browser
+DEBUG - 2017-05-23 20:02:19 --> Total execution time: 0.0667
+INFO - 2017-05-23 20:02:31 --> Config Class Initialized
+INFO - 2017-05-23 20:02:31 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:02:31 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:02:31 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:02:31 --> URI Class Initialized
+INFO - 2017-05-23 20:02:31 --> Router Class Initialized
+INFO - 2017-05-23 20:02:31 --> Output Class Initialized
+INFO - 2017-05-23 20:02:31 --> Security Class Initialized
+DEBUG - 2017-05-23 20:02:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:02:31 --> Input Class Initialized
+INFO - 2017-05-23 20:02:31 --> Language Class Initialized
+INFO - 2017-05-23 20:02:31 --> Language Class Initialized
+INFO - 2017-05-23 20:02:31 --> Config Class Initialized
+INFO - 2017-05-23 20:02:31 --> Loader Class Initialized
+INFO - 2017-05-23 20:02:31 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:02:31 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:02:31 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:02:31 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:02:31 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:02:31 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:02:31 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:02:31 --> Template Class Initialized
+INFO - 2017-05-23 20:02:31 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:02:31 --> Controller Class Initialized
+INFO - 2017-05-23 20:02:31 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:02:31 --> Model Class Initialized
+INFO - 2017-05-23 20:02:31 --> Model Class Initialized
+DEBUG - 2017-05-23 20:02:31 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:02:31 --> Final output sent to browser
+DEBUG - 2017-05-23 20:02:31 --> Total execution time: 0.0705
+INFO - 2017-05-23 20:02:47 --> Config Class Initialized
+INFO - 2017-05-23 20:02:47 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:02:47 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:02:47 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:02:47 --> URI Class Initialized
+INFO - 2017-05-23 20:02:47 --> Router Class Initialized
+INFO - 2017-05-23 20:02:47 --> Output Class Initialized
+INFO - 2017-05-23 20:02:47 --> Security Class Initialized
+DEBUG - 2017-05-23 20:02:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:02:47 --> Input Class Initialized
+INFO - 2017-05-23 20:02:47 --> Language Class Initialized
+INFO - 2017-05-23 20:02:47 --> Language Class Initialized
+INFO - 2017-05-23 20:02:47 --> Config Class Initialized
+INFO - 2017-05-23 20:02:47 --> Loader Class Initialized
+INFO - 2017-05-23 20:02:47 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:02:47 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:02:47 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:02:47 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:02:47 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:02:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:02:47 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:02:47 --> Template Class Initialized
+INFO - 2017-05-23 20:02:47 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:02:47 --> Controller Class Initialized
+INFO - 2017-05-23 20:02:47 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:02:47 --> Model Class Initialized
+INFO - 2017-05-23 20:02:47 --> Model Class Initialized
+DEBUG - 2017-05-23 20:02:47 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:02:47 --> Final output sent to browser
+DEBUG - 2017-05-23 20:02:47 --> Total execution time: 0.0594
+INFO - 2017-05-23 20:02:55 --> Config Class Initialized
+INFO - 2017-05-23 20:02:55 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:02:55 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:02:55 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:02:55 --> URI Class Initialized
+INFO - 2017-05-23 20:02:55 --> Router Class Initialized
+INFO - 2017-05-23 20:02:55 --> Output Class Initialized
+INFO - 2017-05-23 20:02:55 --> Security Class Initialized
+DEBUG - 2017-05-23 20:02:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:02:55 --> Input Class Initialized
+INFO - 2017-05-23 20:02:55 --> Language Class Initialized
+INFO - 2017-05-23 20:02:55 --> Language Class Initialized
+INFO - 2017-05-23 20:02:55 --> Config Class Initialized
+INFO - 2017-05-23 20:02:55 --> Loader Class Initialized
+INFO - 2017-05-23 20:02:55 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:02:55 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:02:55 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:02:55 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:02:55 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:02:55 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:02:55 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:02:55 --> Template Class Initialized
+INFO - 2017-05-23 20:02:55 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:02:55 --> Controller Class Initialized
+INFO - 2017-05-23 20:02:55 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:02:55 --> Model Class Initialized
+INFO - 2017-05-23 20:02:55 --> Model Class Initialized
+INFO - 2017-05-23 20:02:55 --> Helper loaded: email_helper
+INFO - 2017-05-23 20:02:55 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-05-23 20:04:29 --> Config Class Initialized
+INFO - 2017-05-23 20:04:29 --> Hooks Class Initialized
+DEBUG - 2017-05-23 20:04:29 --> UTF-8 Support Enabled
+INFO - 2017-05-23 20:04:29 --> Utf8 Class Initialized
+INFO - 2017-05-23 20:04:29 --> URI Class Initialized
+INFO - 2017-05-23 20:04:29 --> Router Class Initialized
+INFO - 2017-05-23 20:04:29 --> Output Class Initialized
+INFO - 2017-05-23 20:04:29 --> Security Class Initialized
+DEBUG - 2017-05-23 20:04:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-23 20:04:29 --> Input Class Initialized
+INFO - 2017-05-23 20:04:29 --> Language Class Initialized
+INFO - 2017-05-23 20:04:29 --> Language Class Initialized
+INFO - 2017-05-23 20:04:29 --> Config Class Initialized
+INFO - 2017-05-23 20:04:29 --> Loader Class Initialized
+INFO - 2017-05-23 20:04:29 --> Helper loaded: form_helper
+INFO - 2017-05-23 20:04:29 --> Helper loaded: url_helper
+INFO - 2017-05-23 20:04:29 --> Helper loaded: utility_helper
+INFO - 2017-05-23 20:04:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-23 20:04:29 --> Database Driver Class Initialized
+INFO - 2017-05-23 20:04:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-23 20:04:29 --> User Agent Class Initialized
+DEBUG - 2017-05-23 20:04:29 --> Template Class Initialized
+INFO - 2017-05-23 20:04:29 --> Encrypt Class Initialized
+INFO - 2017-05-23 20:04:29 --> Controller Class Initialized
+INFO - 2017-05-23 20:04:29 --> Form Validation Class Initialized
+INFO - 2017-05-23 20:04:29 --> Model Class Initialized
+INFO - 2017-05-23 20:04:29 --> Model Class Initialized
+DEBUG - 2017-05-23 20:04:29 --> File loaded: C:\xampp1\htdocs\RPDigitel\novaevcard\application\modules/frontend/views/vcard_detail_view.php
+INFO - 2017-05-23 20:04:29 --> Final output sent to browser
+DEBUG - 2017-05-23 20:04:29 --> Total execution time: 0.0883

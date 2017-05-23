@@ -256,20 +256,20 @@
 								    		</div> -->
 								    	</div>
 
-								    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								    	<p>
+										First Name : <?php echo $user[0]['first_name'] ?><br>
+										Last Name : <?php echo $user[0]['last_name'] ?><br>
+										Contact Number : <?php echo $user[0]['mobile'] ?><br>
+										Email  : <?php echo $user[0]['email'] ?>
+										</p>
 								    	<br>
-								    	<h4>Interests</h4>
-								    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								    	<h4>Professional Information </h4>
+								    	<p>
+										Company Name : <?php echo $user[0]['company_name'] ?><br>
+										Job Title : <?php echo $user[0]['job_title'] ?><br>
+										Email : <?php echo $user[0]['work_email'] ?><br>
+										Website  : <?php echo $user[0]['work_website'] ?>
+										</p>
 								  	</div>
 								</div>
 							</div>
