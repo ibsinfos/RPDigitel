@@ -19,7 +19,7 @@
                                 <a href="<?php echo base_url() ?>vcard-update" class="shortcut">
 								<img src="<?php echo base_url() ?>media/img/icon/update_Vcard.png" width="100"/>
 								<span class="shortcut-label">Update Paasport</span> </a>
-                                <a  target="_blank" href="<?php echo base_url(). $_SESSION['user_account']['slug']?>" class="shortcut">
+                                <a  target="_blank" href="<?php echo base_url() ?>vcard-update" class="shortcut">
 								<img src="<?php echo base_url() ?>media/img/icon/View_Vcard.png" width="100"/>
 								<span class="shortcut-label">View Paasport</span> </a>
                             </div>

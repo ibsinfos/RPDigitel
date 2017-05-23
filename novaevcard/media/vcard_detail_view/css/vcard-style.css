@@ -1,0 +1,1225 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+/*navbar css start */
+.navbar-default {
+	background-color: #383838;
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+.navbar-default .navbar-toggle {
+	display: block;
+	border: 0;
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-default .searchWrap,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+		background-color: #7f7f7f;
+		color: #fff;
+}
+.navbar-default .userImage {
+	padding-top: 13px;
+    padding-bottom: 12px;
+}
+.navbar-default .userImage > img {
+	width: 25px;
+    display: inline-block;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #7f7f7f;
+    margin-right: 5px;
+	vertical-align: middle;
+}
+.navbar-default .badge {
+	background-color: #f00700;
+	position: absolute;
+    top: 8px;
+    font-size: 10px;
+    padding: 2px 5px;
+    right: 5px;
+}
+/* navbar css end */
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus {
+    outline: none;
+}
+.memberLinkWrap ul {
+	box-shadow: 0 2px 15px #777;
+    padding: 5px 0;
+}
+.memberLinkWrap .membershipDate {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.bannerWrap {
+	background: url('../images/banner.jpg') no-repeat center center /cover;
+	height: 400px;
+	border-bottom: 10px solid #fb0200;
+	margin-bottom: 5px;
+}
+.versionWrap {
+	background-color: #1c1c1c;
+	position: relative;
+}
+.versionWrap .versionBtn {
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
+	width: 175px;
+	height: 45px;
+	border-radius: 25px;
+	text-transform: uppercase;
+	margin: 20px 0 50px;
+}
+.versionWrap audio {
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+/** audio player styles **/
+.audio-player, .audio-player div, 
+.audio-player h2, 
+.audio-player a, 
+.audio-player span, 
+.audio-player button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+div.audio-player {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+}
+.audio-player h2 {
+  position: absolute;
+  top: 15px;
+	left: 55px;
+  font-size: 16px;
+  color: #ececec;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* play/pause control */
+.mejs-controls .mejs-button button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.mejs-controls .mejs-play button, .mejs-controls .mejs-pause button {
+  width: 34px;
+  height: 34px;
+  top: 32px;
+  left: 7px;
+  background: transparent url('playpause.png') 0 0 no-repeat;
+}
+.mejs-controls .mejs-pause button { background-position: 0 -35px; }
+ 
+ 
+/* mute/unmute control */
+.mejs-controls .mejs-mute button, .mejs-controls .mejs-unmute button {
+  width: 18px;
+  height: 19px;
+  top: 9px;
+  right: 142px;
+  background: transparent url('audio.png') 0 0;
+}
+.mejs-controls .mejs-unmute button { background-position: 0 -19px; }
+
+
+/* volume scrubber bar */
+.mejs-controls div.mejs-horizontal-volume-slider {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  width: 120px;
+  height: 11px;
+  background: #212227;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  -moz-box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  position: absolute;
+  width: 0;
+  height: 9px;
+  top: 1px;
+  left: 1px;
+  background: #90d26a;
+  background: -webkit-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -moz-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -o-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -ms-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+
+/* time scrubber bar */
+.mejs-controls div.mejs-time-rail { width: 380px; }
+ 
+.mejs-controls .mejs-time-rail span {
+  position: absolute;
+  display: block;
+  width: 380px;
+  height: 10px;
+  top: 40px;
+  left: 55px;
+  cursor: pointer;
+  -webkit-border-radius: 0px 0px 2px 2px;
+  -moz-border-radius: 0px 0px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
+}
+ 
+.mejs-controls .mejs-time-rail .mejs-time-total { 
+  background: #333; 
+  width: 200px !important; /* fixes display bug using jQuery 1.8+ */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+  top: 0;
+  left: 0;
+  width: 0;
+  background: #7b7d82;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #90d26a;
+  background: -webkit-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -moz-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -o-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -ms-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: linear-gradient(top, #90d26a 0%, #83bb63 100%);
+}
+
+/* metallic sliders */
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 22px;
+  top: -6px;
+  background: url('handle-lg.png') no-repeat;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 14px;
+  top: -1px;
+  background: url('handle-sm.png') no-repeat;
+}
+
+
+/* time progress tooltip */
+.mejs-controls .mejs-time-rail .mejs-time-float {
+  position: absolute;
+  display: none;
+  width: 33px;
+  height: 23px;
+  top: -26px;
+  margin-left: -17px;
+  z-index: 9999;
+  background: url('time-box.png');
+}
+ 
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+  width: 33px;
+  display: block;
+  left: 0;
+  top: 4px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+  z-index: 9999;
+}
+
+.share .button {
+  font-size: 24px;
+  line-height: 1em;
+  text-align: center;
+  width: 40px;
+}
+.share .button i.fa {
+  padding: 6px 5px;
+}
+.share .button.twitter {
+  color: white;
+  background: #5EA9DD;
+}
+.share .button.twitter a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.twitter .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.twitter .counter:empty {
+  display: none;
+}
+.share .button.twitter:hover {
+  background: #7bb9e3;
+}
+.share .button.twitter:hover .counter {
+  background: #51a2da;
+}
+.share .button.twitter .counter {
+  background: #3493d4;
+}
+.share .button.twitter .counter:hover {
+  background: #51a2da;
+}
+.share .button.google-plus {
+  color: white;
+  background: #CD3C2A;
+}
+.share .button.google-plus a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.google-plus .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.google-plus .counter:empty {
+  display: none;
+}
+.share .button.google-plus:hover {
+  background: #d85342;
+}
+.share .button.google-plus:hover .counter {
+  background: #c03827;
+}
+.share .button.google-plus .counter {
+  background: #a33021;
+}
+.share .button.google-plus .counter:hover {
+  background: #c03827;
+}
+.share .button.pinterest {
+  color: white;
+  background: #BC071B;
+}
+.share .button.pinterest a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.pinterest .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.pinterest .counter:empty {
+  display: none;
+}
+.share .button.pinterest:hover {
+  background: #de0820;
+}
+.share .button.pinterest:hover .counter {
+  background: #ad0619;
+}
+.share .button.pinterest .counter {
+  background: #8b0514;
+}
+.share .button.pinterest .counter:hover {
+  background: #ad0619;
+}
+.share .button.facebook {
+  color: white;
+  background: #4966B6;
+}
+.share .button.facebook a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.facebook .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.facebook .counter:empty {
+  display: none;
+}
+.share .button.facebook:hover {
+  background: #627bc0;
+}
+.share .button.facebook:hover .counter {
+  background: #4560ab;
+}
+.share .button.facebook .counter {
+  background: #3a5292;
+}
+.share .button.facebook .counter:hover {
+  background: #4560ab;
+}
+.share .button.linkedin {
+  color: white;
+  background: #1783BC;
+}
+.share .button.linkedin a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.linkedin .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.linkedin .counter:empty {
+  display: none;
+}
+.share .button.linkedin:hover {
+  background: #1b99dc;
+}
+.share .button.linkedin:hover .counter {
+  background: #157aae;
+}
+.share .button.linkedin .counter {
+  background: #11638f;
+}
+.share .button.linkedin .counter:hover {
+  background: #157aae;
+}
+.share .button.stumbleupon {
+  color: white;
+  background: #EA4B24;
+}
+.share .button.stumbleupon a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share .button.stumbleupon .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share .button.stumbleupon .counter:empty {
+  display: none;
+}
+.share .button.stumbleupon:hover {
+  background: #ed6645;
+}
+.share .button.stumbleupon:hover .counter {
+  background: #e84016;
+}
+.share .button.stumbleupon .counter {
+  background: #c83713;
+}
+.share .button.stumbleupon .counter:hover {
+  background: #e84016;
+}
+.share.image .button.twitter {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.twitter a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.twitter .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.twitter .counter:empty {
+  display: none;
+}
+.share.image .button.twitter:hover {
+  opacity: 1;
+  background: #5EA9DD;
+}
+.share.image .button.twitter:hover .counter {
+  background: #3493d4;
+}
+.share.image .button.twitter .counter {
+  background: #676767;
+}
+.share.image .button.twitter .counter:hover {
+  background: #3493d4;
+}
+.share.image .button.google-plus {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.google-plus a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.google-plus .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.google-plus .counter:empty {
+  display: none;
+}
+.share.image .button.google-plus:hover {
+  opacity: 1;
+  background: #CD3C2A;
+}
+.share.image .button.google-plus:hover .counter {
+  background: #a33021;
+}
+.share.image .button.google-plus .counter {
+  background: #676767;
+}
+.share.image .button.google-plus .counter:hover {
+  background: #a33021;
+}
+.share.image .button.pinterest {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.pinterest a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.pinterest .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.pinterest .counter:empty {
+  display: none;
+}
+.share.image .button.pinterest:hover {
+  opacity: 1;
+  background: #BC071B;
+}
+.share.image .button.pinterest:hover .counter {
+  background: #8b0514;
+}
+.share.image .button.pinterest .counter {
+  background: #676767;
+}
+.share.image .button.pinterest .counter:hover {
+  background: #8b0514;
+}
+.share.image .button.facebook {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.facebook a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.facebook .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.facebook .counter:empty {
+  display: none;
+}
+.share.image .button.facebook:hover {
+  opacity: 1;
+  background: #4966B6;
+}
+.share.image .button.facebook:hover .counter {
+  background: #3a5292;
+}
+.share.image .button.facebook .counter {
+  background: #676767;
+}
+.share.image .button.facebook .counter:hover {
+  background: #3a5292;
+}
+.share.image .button.linkedin {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.linkedin a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.linkedin .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.linkedin .counter:empty {
+  display: none;
+}
+.share.image .button.linkedin:hover {
+  opacity: 1;
+  background: #1783BC;
+}
+.share.image .button.linkedin:hover .counter {
+  background: #11638f;
+}
+.share.image .button.linkedin .counter {
+  background: #676767;
+}
+.share.image .button.linkedin .counter:hover {
+  background: #11638f;
+}
+.share.image .button.stumbleupon {
+  color: white;
+  background: gray;
+  opacity: 0.5;
+}
+.share.image .button.stumbleupon a {
+  color: inherit;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+.share.image .button.stumbleupon .counter {
+  font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+  line-height: 1em;
+  padding: 2px 0px 1px 0px;
+}
+.share.image .button.stumbleupon .counter:empty {
+  display: none;
+}
+.share.image .button.stumbleupon:hover {
+  opacity: 1;
+  background: #EA4B24;
+}
+.share.image .button.stumbleupon:hover .counter {
+  background: #c83713;
+}
+.share.image .button.stumbleupon .counter {
+  background: #676767;
+}
+.share.image .button.stumbleupon .counter:hover {
+  background: #c83713;
+}
+
+/*horizontal styling*/
+.horizontal .share .button {
+  display: inline-block;
+  margin-right: 4px;
+}
+.horizontal .share.counter-top .button {
+  vertical-align: bottom;
+}
+.horizontal .share.counter-bottom .button {
+  vertical-align: top;
+}
+
+/* jsFiddle example */
+.post {
+  margin-left: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
+}
+.post p {
+  font-size: 20px;
+}
+.post .example {
+  margin-top: 20px;
+}
+.post .example.image {
+  position: relative;
+}
+.post .example.image .share {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.versionWrap .musicianWrap {
+	margin-top: -50px;
+}
+.musicianWrap  {
+	display: table;
+	margin: 0 auto;
+}
+.musicianWrap .btn {
+	color: #fff;
+	width: 125px;
+	height: 30px;
+	line-height: 15px;
+	border-radius: 25px;
+	text-transform: uppercase;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: 700;
+}
+.musicianWrap .subscribeBtn {
+	background-color: #f50707;
+}
+.musicianWrap .shareBtn {
+	background-color: #353535;
+}
+.musicianWrap .musicianImageName {
+    display: table-cell;
+    padding: 0 15px;
+	text-align: center;
+	color: #fff;
+}
+.musicianWrap .musicianImageName img {
+	border: 3px solid #fff;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+	margin-bottom: 15px;
+}
+.musicianWrap .musicianName {
+	font-weight: 700;
+    margin-bottom: 0;
+}
+.versionWrap .followShare {
+	text-align: right;
+}
+.versionWrap .followShare .linkedInBtn {
+	padding-right: 10px;
+}
+.versionWrap .followShare .followBtn,
+.musicianListWrap .followWrap .followBtn {
+	background-color: #ea323a;
+    color: #fff;
+    border-radius: 20px;
+    margin: 25px 0 15px;
+	padding: 4px 8px;
+}
+.versionWrap .followBtn i,
+.musicianListWrap .followWrap .followBtn i {
+	margin-right: 5px;
+}
+.musicianListWrap {
+	padding-top: 20px;
+	border-radius: 0;
+}
+.musicianListWrap ul > li .panel {
+	-webkit-box-shadow: 2px 2px 8px #ccc;
+	-moz-box-shadow: 2px 2px 8px #ccc;
+	box-shadow: 2px 2px 8px #ccc;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+.musicianListWrap ul > li .followWrap {
+	margin-top: -25px;
+    text-align: center;
+}
+.musicianListWrap ul > li .followWrap .circleImage {
+	position: relative;
+	width: 100px;
+	margin: 0 auto;
+}
+.musicianListWrap ul > li .followWrap img {
+	width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+.musicianListWrap ul > li .followWrap p {
+	font-weight: 700;
+	margin: 0;
+}
+.musicianListWrap ul > li .followWrap .btn {
+	position: absolute;
+    top: 40px;
+    margin: 0;
+    right: -50px;
+}
+.musicianListWrap ul > li .panel h4 {
+	font-weight: 700;
+    margin: 0 0 20px;
+}
+.musicianListWrap ul > li .panel .subscribeBtn {
+	background-color: #fe0000;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 6px 25px;
+	font-weight: 700;
+	-webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/* start rating css start */
+.star-rating {
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:2em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+  margin: 0 auto;
+}
+.star-rating input {
+  display:none;
+}
+.star-rating label {
+  color:#767676;
+  cursor:pointer;
+}
+/*.star-rating :checked ~ label {
+  color:#eb2d37;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#eb2d37;
+}*/
+.star-rating label.active {
+	color:#eb2d37;
+}
+/* star rating css end */
+
+/* signLoadBtnWrap css start */
+.signLoadBtnWrap {
+	background-color: #c4c4c4;
+	padding: 25px 0;
+}
+.signLoadBtnWrap .btn {
+    text-transform: uppercase;
+    width: 180px;
+    font-weight: 700;
+    color: #fff;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    height: 40px;
+}
+.signLoadBtnWrap .redBtn {
+	background-color: #fd0002;
+	margin-right: 15px;
+}
+.signLoadBtnWrap .blackBtn {
+	background-color: #000;
+}
+/* signLoadBtnWrap css start */
+
+/* footer css start */
+.footerWrap {
+    background-color: #000;
+    /*padding: 40px 0 90px;*/
+    padding: 25px 0;
+}
+.footerWrap .socialMedia {
+	float: right;
+    margin: 0;
+}
+.socialMedia li {
+	border: 2px solid #fff;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	width: 27px;
+	height: 27px;
+	line-height: 25px;
+	text-align: center;
+}
+.socialMedia li a {
+	display: block;
+	color: #fff;
+}
+/* footer css end */
+
+/* profile css start */
+.musicListWrap {
+	margin-top: 50px;
+}
+.musicListWrap h4 {
+	margin: 5px 0;
+	font-weight: 700;
+}
+.musicListWrap .trackName,
+.musicListWrap i {
+	color: #ccc;
+}
+.musicListWrap .trackLoved {
+	margin-right: 10px;
+}
+.musicListWrap .btn {
+	height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #e51a4f;
+}
+.musicListWrap .btn i { 
+	color: #e51a4f;
+}
+.learnMoreAbout .learnMoreText {
+	margin: 12px 0 35px;
+}
+.learnMoreAbout .list-inline {
+	margin-bottom: 25px;
+}
+.learnMoreAbout .list-inline li {
+	padding: 0 1px;
+}
+.learnMoreAbout .list-inline a {
+	color: #fff;
+    display: block;
+    background-color: #3b56ad;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.learnMoreAbout .list-inline a.facebook {
+	background-color: #3b56ad;
+}
+.learnMoreAbout .list-inline a.twitter {
+	background-color: #19b1f0;
+}
+.learnMoreAbout .list-inline a.googlePlus {
+	background-color: #e34e38;
+}
+.learnMoreAbout .list-inline a.pinterest-p {
+	background-color: #ca1a1c;
+}
+.learnMoreAbout .list-inline a.instagram {
+	background-color: #4072a3;
+}
+.learnMoreAbout .list-inline a.linkedin {
+	background-color: #0068a5;
+}
+.learnMoreAbout .musicianWrap .btn {
+	width: 115px;
+}
+.learnMoreAbout .musicianWrap .musicianImageName img {
+	width: 150px;
+	height: 150px;
+}
+.memberListWrap .heading {
+
+}
+.memberListWrap ul {
+	display: table;
+	width: 100%;
+}
+.memberListWrap ul li {
+	/*border-top: 1px solid #f2f4f3;
+    padding: 10px;*/
+    display: table-row;
+}
+.memberListWrap ul li .memberCol {
+	display: table-cell;
+	padding: 10px 5px;
+	vertical-align: middle;
+}
+.memberListWrap ul li .imageBlock {
+	width: 60px;
+}
+.memberListWrap ul li .imageBlock img {
+	width: 50px;
+	height: 50px;
+}
+.memberListWrap ul li .memberCol p {
+	white-space: nowrap;
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+.memberListWrap ul li.active {
+	background-color: #eff4fa;
+}
+/*.memberListWrap ul li a {
+	display: block;
+	color: #828282;
+}
+.memberListWrap ul li a img {
+	width: 50px;
+	height: 50px;
+}*/
+.memberListWrap ul li h5 {
+	color: #6e7275;
+	margin: 0 0 5px;
+}
+.memberListWrap ul li .badge {
+	background-color: #e43f43;
+}
+.nav-tabs {
+	border-bottom: 0;
+}
+.nav-tabs>li>a {
+	color: #5c5c5c;
+	font-weight: 700;
+	border-radius: 0;
+	padding: 10px 30px;
+	border: 0;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li>a:hover {
+	background-color: #dedede;
+	border: 0;
+}
+.tab-content {
+	border-top: 10px solid #7f7f7f;
+}
+.tab-content .panel {
+	border: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.tab-content h4 {
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: #787878;
+}
+.tab-content .panel-body p {
+	font-size: 12px;
+}
+.postWrap .socialMedia {
+	margin: -40px 0 14px 25px;
+}
+.postWrap .googleBtn {
+	margin-top: 5px;
+}
+.postWrap .googleBtn button {
+	background-color: transparent;
+	border: 1px solid #ccc;
+	color: #af525a;
+	height: 25px;
+	width: 40px;
+}
+.aboutMeWrap .panel-heading {
+	padding: 10px 0;
+}
+.aboutMeWrap .panel-body {
+	background-color: #f9f9f9;
+}
+.facebookCommentWrap h4 {
+	margin: 40px 0 50px;
+}
+.facebookCommentWrap .list-unstyled {
+	display: table;
+	width: 100%;
+}
+.facebookCommentWrap .list-unstyled li {
+	color: #555555;
+	/*padding: 15px 10px;*/
+	display: table-row;
+}
+.facebookCommentWrap .list-unstyled li .commentCol {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 5px;
+	border-top: 2px solid #959595;
+}
+.facebookCommentWrap .list-unstyled li .imageBlock {
+	width: 60px;
+}
+.facebookCommentWrap .list-unstyled li h5 {
+	font-weight: 700;
+	margin: 0 50px 10px 0;
+}
+.facebookCommentWrap .list-unstyled li .imageBlock img {
+	width: 55px;
+	height: 55px;
+}
+.facebookCommentWrap form {
+	border-top: 2px solid #959595;
+	padding: 15px 20px 0;
+}
+.facebookCommentWrap form h4 {
+	margin: 5px 0 15px;
+	color: #000;
+}
+.facebookCommentWrap form .btn {
+	color: #7b7c7e;
+	background-color: #f6f7f9;
+	margin-bottom: 8px;
+}
+.facebookCommentWrap form .btn,
+.facebookCommentWrap form .form-control {
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+	border-color: #d2d2d2;
+}
+.facebookCommentWrap form .form-control {
+	margin-bottom: 25px;
+}
+.facebookCommentWrap form .pluginText {
+	border-top: 1px solid #ccc;
+	color: #48558a;
+	padding-top: 10px;
+}
+
+/* profile css end */
+
+/* responsive css */
+@media (min-width: 1024px) and (max-width: 1400px) {
+	.learnMoreAbout .musicianWrap .musicianImageName img {
+		width: 120px;
+    	height: 120px;
+	}
+	.learnMoreAbout .musicianWrap .btn {
+		width: 110px;
+	}
+	.memberListWrap ul li .memberCol p {
+		width: 125px;
+	}
+}
+@media (max-width: 1024px) {
+	.facebookCommentWrap form {
+		padding: 15px 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+		-webkit-overflow-scrolling: touch;
+		border-top: 1px solid transparent;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	}
+	.navbar-collapse.in {
+		display: block !important;
+	}
+	.versionWrap .versionBtn {
+		width: 145px;
+		font-size: 12px;
+	}
+	.versionWrap .musicianWrap {
+	    margin-top: -28px;
+	}
+	.musicianWrap .btn {
+		width: 105px;	
+	}
+	.musicianWrap .musicianImageName img {
+		width: 100px;
+		height: 100px;
+	}
+	.learnMoreAbout .musicianWrap {
+		margin: 25px auto 0;
+		width: 410px;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-default .badge {
+		top: 13px;
+		right: 15px;
+	}
+	.versionWrap .versionBtn {
+		margin: 25px auto;
+	}
+	.versionWrap audio {
+		margin-bottom: 30px;
+	}
+	.versionWrap .musicianWrap,
+	.learnMoreAbout .musicianWrap {
+		margin: 25px auto 0;
+		width: 290px;
+	}
+	.versionWrap .musicianWrap .btn,
+	.learnMoreAbout .musicianWrap .btn {
+		width: 80px;
+		font-size: 10px;
+		/*margin-top: 35px;*/
+	}
+	.versionWrap .musicianWrap .musicianImageName img,
+	.learnMoreAbout .musicianWrap .musicianImageName img {
+		width: 90px;
+		height: 90px;
+	}
+	.versionWrap .versionDetails,
+	.versionWrap .followShare {
+		text-align: center;
+	}
+	.versionWrap .followShare .linkedInBtn {
+	     padding-right: 0;
+	     margin-bottom: 20px; 
+	}
+	.nav-tabs>li {
+		float: none;
+		text-align: center;
+	}
+	.postWrap .googleBtn {
+		margin-bottom: 15px;
+	}
+	.signLoadBtnWrap .btn {
+		width: 125px;
+	}
+	.footerWrap {
+		text-align: center;
+	}
+	.footerWrap .socialMedia {
+		float: none;
+    	margin-top: 20px;
+	}
+}

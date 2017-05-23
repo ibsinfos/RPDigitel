@@ -41,7 +41,7 @@
 								 <td><?php echo $up['last_name']; ?></td>
 								 <td><?php echo $up['mobile']; ?></td>
 								 <td><?php echo $up['email']; ?></td>								 
-								 <td><a href="<?php echo base_url(); ?>vcard-update/<?php echo $up['id']; ?>" > Edit </a></td>
+								 <td><a href="<?php echo base_url(); ?>vcard-update/<?php echo $up['id']; ?>" > Edit </a> | <a href="<?php echo base_url(); ?>view/<?php echo $up['slug']; ?>" > View </a> </td>
 							</tr>				
 							<?php 
 								}
@@ -50,9 +50,7 @@
 
 						  
 							<!-- preview content goes here-->
-						</table>
-
-                                                                       
+						</table>                                                                      
                          </div>
 						
 						</div>

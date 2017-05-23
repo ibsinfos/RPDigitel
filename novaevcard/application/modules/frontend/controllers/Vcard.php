@@ -39,7 +39,12 @@ class Vcard extends CI_Controller {
 		$user_link= $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
 		$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
 		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
-       
+		if(!empty($this->session->userdata('vcard_id')))
+		{
+		$user_blog= $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' =>$session_data['user_account']['user_id'],'vcard_id'=>$this->session->userdata('vcard_id')));
+        $this->template->set('user_blog', $user_blog);
+		
+		}
         $this->template->set('user_data', $userdata);
         $this->template->set('user_exp_data', $user_experience_data);
         $this->template->set('user_edu_data', $user_education_data);
@@ -59,6 +64,28 @@ class Vcard extends CI_Controller {
         $this->template->build('vcard_main');
     }
 
+	public function view($slug)
+	{
+		 $session_data = $this->session->userdata();
+		$this->load->model('common_model');
+        // $slug = $this->uri->segment(1);
+
+        $data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
+
+       //echo '<pre>';    print_r($data['user']);
+
+		
+       // $busi_strat = $this->common_model->getRecords(TABLES::$BUSINESS_STRAT, '*', array('user_id' => $arr[0]['id']));
+
+       
+
+        //$tabs = $this->common_model->getRecords(TABLES::$VCARD_TABS, '*', array('user_id' => $arr[0]['id']));
+
+        //$custom_tabs = $this->common_model->getRecords(TABLES::$VCARD_CUSTOM_TABS, '*', array('user_id' => $arr[0]['id']));
+
+		
+        $this->load->view('vcard_detail_view',$data);
+	}	
     public function saveUserinfo() {
         $this->load->helper('utility_helper');
         $this->load->model('common_model');
@@ -122,6 +149,24 @@ class Vcard extends CI_Controller {
             $user['user_id'] = $this->session->userdata('paasport_user_id');
             //$user1['id'] = $this->input->post('id');
             //$this->load->model('Login_model');
+			// create slug
+			 $config = array(
+                    'field' => 'slug',
+                    'slug' => 'slug',
+                    'table' => TABLES::$VCARD_BASIC_DETAILS,
+                    'id' => 'id',
+                );
+
+                $this->load->library('slug', $config);
+
+                $data_slug = array(
+                    'slug' => $user['first_name'] . " " . $user['last_name'],
+                );
+
+                $slug = $this->slug->create_uri($data_slug);
+
+                 $user['slug'] = $slug; 
+			// create slug
             $uid= $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
             if ($uid) {
 				$this->session->set_userdata('vcard_id',$uid);
@@ -1926,6 +1971,8 @@ public function deleteExperience()
 		$user_video_url= $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
 		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
        
+	   $user_blog= $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' =>$session_data['user_account']['user_id'],'vcard_id'=>$vcard_id));
+        $this->template->set('user_blog', $user_blog);
 	  	   
         $this->template->set('user_data', $userdata_paasport);
         $this->template->set('user_company', $user_company);
@@ -2923,8 +2970,294 @@ public function deleteExperience()
 		echo $str;
 		exit; 
 	}
-	public function blog()
+	public function saveBloginfo()
 	{
+		//echo '<pre>'; print_r($_FILES); 	echo '<pre>'; print_r($_POST); 		exit;
+        $this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+		$error_array=array();
+		$error_array['blogTitle']=''; 
+		$error_array['blogshortdesc']='';
+		$error_array['bloglongdesc']='';
+		$error_array['coverimage']='';
+		$error_array['bloguploadvideo']='';
+		
+		
+        $this->form_validation->set_rules('blogTitle', 'Title', 'trim|required');
+        $this->form_validation->set_rules('blogshortdesc', 'Short Description', 'trim|required');
+        $this->form_validation->set_rules('bloglongdesc', 'Long Description', 'trim|required');
+		if(!empty($this->input->post('blog')) && $this->input->post('blog')=='coverimagediv')
+		{
+			if (empty($_FILES['coverimage']['name'])) 
+			{
+					$map ['status'] = 0;
+					$error_array['coverimage']= "The Cover Image field is required."; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+			}
+		}	
+        if(!empty($this->input->post('blog')) && $this->input->post('blog')=='blogvideodiv')
+		{
+			if (empty($_FILES['bloguploadvideo']['name'])) 
+			{
+					$map ['status'] = 0;
+					$error_array['bloguploadvideo']= "The Video field is required."; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+			}
+		}	
+		 if(!empty($this->input->post('blog')) && $this->input->post('blog')=='blogvideourldiv')
+		{
+			 $this->form_validation->set_rules('txtblogvideourl', 'Video URL', 'trim|required|callback_validvideourl');
+		}	
+		
+		
+        if ($this->form_validation->run() == FALSE) 
+		{
+            $map ['status'] = 0;
+			
+			$error_array['blogTitle']=form_error('blogTitle'); 
+			$error_array['blogshortdesc']=form_error('blogshortdesc'); 
+			$error_array['bloglongdesc']=form_error('bloglongdesc'); 			
+			$error_array['txtblogvideourl']=form_error('txtblogvideourl'); 			
+            $map ['msg'] = $error_array;
+            echo json_encode($map);
+        } else {
+            $user = array();
+            if (isset($_FILES['coverimage']) && !empty($_FILES['coverimage']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/blogs/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('coverimage')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+					$error_array['coverimage']= "User Image upload error - " . $error; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }               
+                $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+            }
+			if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/blogs/';
+                $config['allowed_types'] = 'avi|flv|wmv|mp3|mp4';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('bloguploadvideo')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+					$error_array['bloguploadvideo']= "User Video upload error - " . $error; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }               
+                $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+            }
+			if(!empty($this->input->post('txtblogvideourl')))
+			{
+				$user['video_url'] = $this->input->post('txtblogvideourl');
+			}
+            $user['title'] = $this->input->post('blogTitle');
+            $user['short_desc'] = $this->input->post('blogshortdesc');
+            $user['long_desc'] = $this->input->post('bloglongdesc');
+            $user['user_id'] = $this->session->userdata('paasport_user_id');
+            $user['vcard_id'] = $this->session->userdata('vcard_id');           
+            $uid= $this->common_model->insertRow($user, TABLES::$BLOG_DETAILS);
+            if ($uid) {				
+                $map ['status'] = 1;
+                $map ['blogid'] = $uid;
+                $map ['msg'] = "Blog Information has been saved";
+                echo json_encode($map);
+            }
+        }
+        exit;
+    
+	}
+	public function updateBloginfo()
+	{
+		//echo '<pre>'; print_r($_FILES); 	echo '<pre>'; print_r($_POST); 		exit;
+        $this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+        $errorMsg = array();
+        $err_num = 0;
+		$error_array=array();
+		$error_array['blogTitle']=''; 
+		$error_array['blogshortdesc']='';
+		$error_array['bloglongdesc']='';
+		$error_array['coverimage']='';
+		$error_array['bloguploadvideo']='';
+		
+		
+        $this->form_validation->set_rules('blogTitle', 'Title', 'trim|required');
+        $this->form_validation->set_rules('blogshortdesc', 'Short Description', 'trim|required');
+        $this->form_validation->set_rules('bloglongdesc', 'Long Description', 'trim|required');
+		/*if(!empty($this->input->post('blog')) && $this->input->post('blog')=='coverimagediv')
+		{
+			if (empty($_FILES['coverimage']['name'])) 
+			{
+					$map ['status'] = 0;
+					$error_array['coverimage']= "The Cover Image field is required."; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+			}
+		}	
+        if(!empty($this->input->post('blog')) && $this->input->post('blog')=='blogvideodiv')
+		{
+			if (empty($_FILES['bloguploadvideo']['name'])) 
+			{
+					$map ['status'] = 0;
+					$error_array['bloguploadvideo']= "The Video field is required."; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+			}
+		}	*/
+		 if(!empty($this->input->post('blog')) && $this->input->post('blog')=='blogvideourldiv')
+		{
+			 $this->form_validation->set_rules('txtblogvideourl', 'Video URL', 'trim|required|callback_validvideourl');
+		}	
+		
+		
+        if ($this->form_validation->run() == FALSE) 
+		{
+            $map ['status'] = 0;
+			
+			$error_array['blogTitle']=form_error('blogTitle'); 
+			$error_array['blogshortdesc']=form_error('blogshortdesc'); 
+			$error_array['bloglongdesc']=form_error('bloglongdesc'); 			
+			$error_array['txtblogvideourl']=form_error('txtblogvideourl'); 			
+            $map ['msg'] = $error_array;
+            echo json_encode($map);
+        } else {
+            $user = array();
+            if (isset($_FILES['coverimage']) && !empty($_FILES['coverimage']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/blogs/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('coverimage')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+					$error_array['coverimage']= "User Image upload error - " . $error; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }               
+                $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+            }
+			if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/blogs/';
+                $config['allowed_types'] = 'avi|flv|wmv|mp3|mp4';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('bloguploadvideo')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+					$error_array['bloguploadvideo']= "User Video upload error - " . $error; 
+                    $map ['msg'] = $error_array;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }               
+                $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+            }
+			if(!empty($this->input->post('txtblogvideourl')))
+			{
+				$user['video_url'] = $this->input->post('txtblogvideourl');
+			}
+            $user['title'] = $this->input->post('blogTitle');
+            $user['short_desc'] = $this->input->post('blogshortdesc');
+            $user['long_desc'] = $this->input->post('bloglongdesc');
+            $user['user_id'] = $this->session->userdata('paasport_user_id');
+            $user['vcard_id'] = $this->input->post('vcard_id');           
+			if(empty($this->input->post('blogid')))
+			{
+				$uid= $this->common_model->insertRow($user, TABLES::$BLOG_DETAILS);
+			}
+			else
+			{
+				 $uid = $this->common_model->updateRow(TABLES::$BLOG_DETAILS,$user,array('id'=>$this->input->post('blogid')));
+			}
+            
+            if ($uid) {	
+				$map ['blogid'] = $uid;
+                $map ['status'] = 1;
+                $map ['msg'] = "Blog Information has been saved";
+                echo json_encode($map);
+            }
+        }
+        exit;
 		
 	}
+	public function getBlogData()
+   {
+	    $this->load->model('common_model');	
+		 $session_data = $this->session->userdata();
+		$user_skills= $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'vcard_id'=>$this->input->post('vcard_id')));
+		$str='';
+		if(!empty($user_skills))
+		{	
+			$cnt=1;
+			$str.="<thead><tr><th>Title</th><th>Short Description</th><th>Long Description</th><th>Action</th></tr></thead><tbody>";
+			foreach ($user_skills as $ub)
+			{
+				
+				$str.="<tr class=blog-previewdetail-".$ub['id']."  >";
+				$str.="<td> ".$ub['title']."</td>";
+				$str.="<td> ".$ub['short_desc']."</td>";
+				$str.="<td> ".$ub['long_desc']."</td>";													
+				$str.="<td><a href='#' onclick=openBlog('".$ub['id']."','".$ub['vcard_id']."','".$ub['cover_image']."','".$ub['video']."','".$ub['video_url']."','".$ub['title']."','".$ub['short_desc']."','".$ub['long_desc']."') > Edit </a></td>";
+				$str.="</tr>";
+			
+			} 
+			$str.="</tbody>";
+			
+		}	
+		echo $str;
+		exit;   
+   }
+   
 }

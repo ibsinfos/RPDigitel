@@ -12,7 +12,7 @@
                         <li><a href="#tab2default" data-toggle="tab">Social</a></li>
                         <li><a href="#tab3default" data-toggle="tab">About</a></li>
                         <li><a href="#tab4default" data-toggle="tab">Additional Information</a></li>
-                        <li><a href="#tab5default" data-toggle="tab">Lorem Ipsum</a></li>
+                        <li><a href="#tab5default" data-toggle="tab">Blog</a></li>
                     </ul>
                 </div>
                 <div class="panel-body">
@@ -1540,7 +1540,144 @@
 							
 						</div>
 						
-                        <div class="tab-pane fade" id="tab5default">Default 5</div>
+                        <div class="tab-pane fade" id="tab5default">
+						
+								<div class="col-lg-12">
+                                          
+                                            <div class="col-lg-3">
+                                                <input id="addbtnblog" class="btn btn-danger pull-right btn-block" data-toggle="modal" data-target="#myModalblog" value="Add Blog" type="button">
+
+                                            </div>
+											
+											<div style="clear:both;margin:20px 0px;" >
+											
+											</div>
+
+                                            <!--Start Modal -->
+                                            <div id="myModalblog" class="modal fade" role="dialog" style="display: none;">
+
+                                                <div class="modal-dialog">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                ×
+                                                            </button>
+                                                            <h4 class="modal-title">Blog</h4>
+                                                        </div>
+														<form id="frmblog" class="form-horizontal" enctype="multipart/form-data" >
+                                                        <div class="frmerror_blog"></div>
+                                                        <div class="modal-body">
+															<div class="form-group">
+                                                                <input type="radio" name="blog" id="blogcoverimg" value="coverimagediv" checked="checked" >
+																Upload Cover Image
+                                                                <input type="radio" name="blog" id="blogvideoupload" value="blogvideodiv"  >
+																Upload Video
+																<input type="radio" name="blog" id="blogvideourl" value="blogvideourldiv" >
+																Video URL
+                                                            </div> 
+															<div class="form-group blogclass" id="coverimagediv" style="display:block;" >
+																<label for="coverimage">Cover Image
+                                                                    <small>(required)</small>
+                                                                </label>
+																<input type="file" name="coverimage" id="coverimage" />
+																<span id="err_coverimage"></span>	
+																
+															</div>
+															<div class="form-group blogclass" id="blogvideodiv" style="display:none;" >
+																<label for="bloguploadvideo">Upload Video
+                                                                    <small>(required)</small>
+                                                                </label>
+																<input type="file" name="bloguploadvideo" id="bloguploadvideo" />	
+																<span id="err_bloguploadvideo"></span>		
+															</div>
+															<div class="form-group blogclass" id="blogvideourldiv" style="display:none;" >
+																<label for="txtblogvideourl">Video URL
+                                                                    <small>(required)</small>
+                                                                </label>	
+																 <input id="txtblogvideourl" name="txtblogvideourl" class="form-control" placeholder="Enter Video URL" value=""  type="text">
+																<span id="err_txtblogvideourl"></span>		
+															</div>	
+															
+                                                            <div class="form-group">
+                                                                <label for="blogTitle">Title
+                                                                    <small>(required)</small>
+                                                                </label>
+                                                                <input id="blogid" name="blogid"  type="hidden">
+                                                                <input id="vcard_id" name="vcard_id"  type="hidden" value="<?php echo $user_data[0]['id']; ?>"  >
+                                                                <input id="blogTitle" name="blogTitle" class="form-control" placeholder="Enter Title" value=""  type="text">
+																<span id="err_blogTitle"></span>	 	   
+                                                            </div>                                                            
+                                                            <div class="form-group">
+                                                                <label for="companyContact">Short Description <small>(required)</small>
+                                                                </label>
+                                                               
+                                                                <textarea id="blogshortdesc" name="blogshortdesc" class="form-control" placeholder="Enter Short Description" value=""  ></textarea>
+																<span id="err_blogshortdesc"></span>	   
+                                                            </div>
+															<div class="form-group">
+                                                                <label for="companyContact">Long Description <small>(required)</small>
+                                                                </label>
+                                                               
+                                                                <textarea id="bloglongdesc" name="bloglongdesc" class="form-control" placeholder="Enter Long Description" value=""  ></textarea>
+																<span id="err_bloglongdesc"></span>		   
+                                                            </div>                                                           
+                                                        </div>
+														</form>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" id="btnsaveBlogAdd"  >Save
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger btn-o" data-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                        </div>
+														
+                                                    </div>
+
+                                                </div>
+
+                                            </div>									
+                                            <!--End Modal -->
+
+											<!-- Display Table -->
+												<div class="table-responsive">
+													<table class="table blog-preview-table-ex">
+														<thead>
+															<tr>
+																
+																<th>Title</th>
+																<th>Short Description</th>
+																<th>Long Description</th>																
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+														<?php if(!empty($user_blog)) { 
+															foreach($user_blog as $ub)
+															{
+														?>
+														<tr class="blog-previewdetail-<?php echo $ub['id']; ?>" >
+															 <td><?php echo $ub['title']; ?></td>
+															 <td><?php echo $ub['short_desc']; ?></td>
+															 <td><?php echo $ub['long_desc']; ?></td>
+																						 
+															 <td><a href="#" onclick="openBlog('<?php echo $ub['id'] ?>','<?php echo $ub['vcard_id'] ?>','<?php echo $ub['cover_image'] ?>','<?php echo $ub['video'] ?>','<?php echo $ub['video_url'] ?>','<?php echo $ub['title'] ?>','<?php echo $ub['short_desc'] ?>','<?php echo $ub['long_desc'] ?>');" > Edit </a></td>
+														</tr>				
+														<?php 
+															}
+														} ?>
+															
+
+													  
+														
+													</table>                                                                      
+											</div>
+											<!-- Display Table -->
+
+                                 </div>
+						
+						
+						</div>
                     </div>
                 </div>
             </div>
@@ -1824,6 +1961,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
+		$("input[name$='blog']").click(function() {
+			var test = $(this).val();			
+			$(".blogclass").hide();
+			$("#" + test).show(); 
+		});	
 		
 		
 		//$('.child-section').hide();
@@ -2858,6 +3000,72 @@
 		// End add portfolio
 		
 		
+		// Start Save blog information ajax call	
+        $('#btnsaveBlogAdd').on('click', function (e) {
+			
+			var blogtitle=$('#blogTitle').val();
+			var blogshortdescr=$('#blogshortdesc').val();
+			var bloglongdescr=$('#blogshortdesc').val();
+			var blogid=$('#blogid').val();
+			
+			
+    		$("#err_blogTitle").html('');
+			$("#err_blogshortdesc").html('');
+			$("#err_bloglongdesc").html('');                      
+			$("#err_coverimage").html('');                      
+			$("#err_bloguploadvideo").html(''); 
+			$("#err_txtblogvideourl").html(''); 
+            $.ajax({
+                url: "<?php echo base_url() ?>frontend/Vcard/updateBloginfo",
+                type: "POST",
+                data: new FormData($("#frmblog")[0]),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data)
+                {
+                    var json = JSON.parse(data);
+                    if (json.status === 1) {
+                        $("#err_blogTitle").html('');
+                        $("#err_blogshortdesc").html('');
+                        $("#err_bloglongdesc").html('');                      
+                        $("#err_coverimage").html('');                      
+                        $("#err_bloguploadvideo").html('');                      
+                        $("#err_txtblogvideourl").html('');  
+		
+						/*if(blogid)
+						{							
+							var markup2 = "<td>" + blogtitle + "</td><td>" + blogshortdescr + "</td><td>" + bloglongdescr + "</td><td><a href="#" onclick="openBlog('<?php echo $ub['id'] ?>','<?php echo $ub['vcard_id'] ?>','<?php echo $ub['cover_image'] ?>','<?php echo $ub['video'] ?>','<?php echo $ub['video_url'] ?>','<?php echo $ub['title'] ?>','<?php echo $ub['short_desc'] ?>','<?php echo $ub['long_desc'] ?>');" > Edit </a></td>";
+							$(".blog-previewdetail-"+blogid+"").html(markup2);
+						}
+						else
+						{
+							var markup2 = "<tr class='blog-previewdetail-"+json.blogid+"'  ><td>" + blogtitle + "</td><td>" + blogshortdescr + "</td><td>" + bloglongdescr + "</td><td>Edit</td></tr>";
+							$(".blog-preview-table-ex").append(markup2);
+						}
+						*/
+						
+						getBlogData();
+						
+						$(".frmerror_blog").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+                        return true;
+                    } else {
+                       // $("#err_email").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg.email + '</div>');
+                        $("#err_blogTitle").html('<div class="text-danger">' + json.msg.blogTitle + '</div>');
+                        $("#err_blogshortdesc").html('<div class="text-danger">' + json.msg.blogshortdesc + '</div>');
+                        $("#err_bloglongdesc").html('<div class="text-danger">' + json.msg.bloglongdesc + '</div>');                      
+                        $("#err_coverimage").html('<div class="text-danger">' + json.msg.coverimage + '</div>');                      
+                        $("#err_bloguploadvideo").html('<div class="text-danger">' + json.msg.bloguploadvideo + '</div>');                      
+                        $("#err_txtblogvideourl").html('<div class="text-danger">' + json.msg.txtblogvideourl + '</div>');                      
+                        return false;
+                    }
+                }
+            });
+
+        });
+        // End Save blog information ajax call
+		
+		
 		// adding description of pricing plans
 		$("input[name$='priceimage']").click(function() {
 			var test = $(this).val();
@@ -3264,6 +3472,25 @@ $(function() {
             }
         });
 	}
+	function getBlogData()
+	{
+		$.ajax({
+            url: "<?php echo base_url() ?>frontend/Vcard/getBlogData",
+			type: "POST",
+            data: {				
+				vcard_id:$('#vcard_id').val()
+			},          		        
+            success: function (data)
+            {		
+								
+				$(".blog-preview-table-ex").html('');	
+				$(".blog-preview-table-ex").html(data);	
+				
+				
+				
+            }
+        });
+	}
     var divValue, values,values_update,values_update_id,skill_list_update,skill_list_update_id,skill_list = '';	
     function GetTextValue() {
 		
@@ -3470,6 +3697,34 @@ $(function() {
 		$("#dropzone").css('display','none');
 		$("#portfolio_image_update").css('display','block');
 		
+	}
+	function openBlog(id,vcard_id,cover_image,video,video_url,title,short_desc,long_desc)
+	{
+		$('#blogid').val(id);
+		$('#vcard_id').val(vcard_id);
+		$('#blogTitle').val(title);
+		$('#blogshortdesc').val(short_desc);
+		$('#bloglongdesc').val(long_desc);
+		if(video_url)
+		{
+			$("#blogvideourl").attr('checked',true).trigger("click");
+			$('#txtblogvideourl').val(video_url);
+			$(".blogclass").hide();
+			$("#blogvideourldiv").show(); 
+		}	
+		if(cover_image)
+		{
+			$("#blogcoverimg").attr('checked',true).trigger("click");
+			$(".blogclass").hide();
+			$("#coverimagediv").show(); 
+		}
+		if(video)
+		{
+			$("#blogvideoupload").attr('checked',true).trigger("click");
+			$(".blogclass").hide();
+			$("#blogvideodiv").show(); 
+		}
+		$('#myModalblog').modal('show');
 	}
 	function deletePrice(id)
 	{
