@@ -12,7 +12,7 @@
                         <li><a href="#tab2default" data-toggle="tab">Social</a></li>
                         <li><a href="#tab3default" data-toggle="tab">About</a></li>
                         <li><a href="#tab4default" data-toggle="tab">Additional Information</a></li>
-                        <li><a href="#tab5default" data-toggle="tab">Lorem Ipsum</a></li>
+                        <li><a href="#tab5default" data-toggle="tab">Blog</a></li>
                     </ul>
                 </div>
                 <div class="panel-body">
@@ -1511,7 +1511,101 @@
 							
 						</div>
 						
-                        <div class="tab-pane fade" id="tab5default">Default 5</div>
+                        <div class="tab-pane fade" id="tab5default">
+								
+								
+								<div class="col-lg-12">
+                                            <div class="col-lg-3">
+                                                <h4>Blog :</h4>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <input id="addbtnblog" class="btn btn-danger pull-right btn-block" data-toggle="modal" data-target="#myModalblog" value="Add Blog" type="button">
+
+                                            </div>
+
+                                            <!--Start Modal -->
+                                            <div id="myModalblog" class="modal fade" role="dialog" style="display: none;">
+
+                                                <div class="modal-dialog">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                ×
+                                                            </button>
+                                                            <h4 class="modal-title">Blog</h4>
+                                                        </div>
+                                                        <div class="frmerror_compinfo"></div>
+                                                        <div class="modal-body">
+															<div class="form-group">
+                                                                <input type="radio" name="blog" id="blogcoverimg" value="coverimagediv" checked="checked" >
+																<label for="jobTitle">Upload Cover Image</label>
+                                                                <input type="radio" name="blog" id="blogvideoupload" value="blogvideodiv"  >
+																<label for="jobTitle">Upload Video</label>
+																<input type="radio" name="blog" id="blogvideourl" value="blogvideourldiv" >
+																<label for="jobTitle">Video URL</label>	
+                                                            </div> 
+															<div class="form-group" id="coverimagediv" style="display:block;" >
+																<label for="jobTitle">Cover Image
+                                                                    <small>(required)</small>
+                                                                </label>
+																<input type="file" name="coverimage" id="coverimage" />
+															</div>
+															<div class="form-group" id="blogvideodiv" style="display:none;" >
+																<label for="jobTitle">Upload Video
+                                                                    <small>(required)</small>
+                                                                </label>																
+															</div>
+															<div class="form-group" id="blogvideourldiv" style="display:none;" >
+																<label for="jobTitle">Video URL
+                                                                    <small>(required)</small>
+                                                                </label>																
+															</div>	
+															
+                                                            <div class="form-group">
+                                                                <label for="jobTitle">Title
+                                                                    <small>(required)</small>
+                                                                </label>
+                                                                <input id="blogTitle" name="blogTitle" class="form-control" placeholder="Enter Title" value=""  type="text">
+																<span id="err_blogTitle"></span>	 	   
+                                                            </div>                                                            
+                                                            <div class="form-group">
+                                                                <label for="companyContact">Short Description <small>(required)</small>
+                                                                </label>
+                                                               
+                                                                <textarea id="blogshortdesc" name="blogshortdesc" class="form-control" placeholder="Enter Short Description" value=""  ></textarea>
+																	   
+                                                            </div>
+															<div class="form-group">
+                                                                <label for="companyContact">Long Description <small>(required)</small>
+                                                                </label>
+                                                               
+                                                                <textarea id="bloglongdesc" name="bloglongdesc" class="form-control" placeholder="Enter Long Description" value=""  ></textarea>
+																	   
+                                                            </div>                                                           
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" id="showAdd">Save
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger btn-o" data-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>									
+                                            <!--End Modal -->
+
+
+
+                                 </div>
+								
+						
+						</div>
                     </div>
                 </div>
             </div>

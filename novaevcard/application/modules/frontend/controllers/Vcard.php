@@ -2923,4 +2923,8 @@ public function deleteExperience()
 		echo $str;
 		exit; 
 	}
+	public function blog()
+	{
+		
+	}
 }
