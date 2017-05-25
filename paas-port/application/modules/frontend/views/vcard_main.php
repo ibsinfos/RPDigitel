@@ -1588,15 +1588,17 @@
                                                             <div class="form-group">
                                                                 <label for="companyContact">Short Description <small>(required)</small>
                                                                 </label>
-                                                               
-                                                                <textarea id="blogshortdesc" name="blogshortdesc" class="form-control" placeholder="Enter Short Description" value=""  ></textarea>
+                                                                 <textarea id="blogshortdesc" name="blogshortdesc" class="form-control" placeholder="Enter Short Description" >
+                                                           
+																</textarea>
+                                                                <input type="hidden" id="blogshortdesc1" name="blogshortdesc1" >
 																<span id="err_blogshortdesc"></span>	   
                                                             </div>
 															<div class="form-group">
                                                                 <label for="companyContact">Long Description <small>(required)</small>
-                                                                </label>
-                                                               
+                                                                </label>                                                               
                                                                 <textarea id="bloglongdesc" name="bloglongdesc" class="form-control" placeholder="Enter Long Description" value=""  ></textarea>
+																<input type="hidden" id="bloglongdesc1" name="bloglongdesc1" >
 																<span id="err_bloglongdesc"></span>		   
                                                             </div>    
 															<div class="form-group">
@@ -1752,6 +1754,8 @@
 
 
     /*For CK Editor*/
+    CKEDITOR.replace('blogshortdesc');
+    CKEDITOR.replace('bloglongdesc');
     CKEDITOR.replace('editor1');
     /*For CK Editor Preview*/
     timer = setInterval(updateDiv, 100);
@@ -2979,10 +2983,15 @@
 			
 			$(".frmerror_blog").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
 			
+			var short_bio_data = CKEDITOR.instances.blogshortdesc.getData();
+			var long_bio_data = CKEDITOR.instances.bloglongdesc.getData();
+			
+			$('#blogshortdesc1').val(short_bio_data);
+			$('#bloglongdesc1').val(long_bio_data);
 			
 			var blogtitle=$('#blogTitle').val();
-			var blogshortdescr=$('#blogshortdesc').val();
-			var bloglongdescr=$('#blogshortdesc').val();
+			var blogshortdescr=short_bio_data;
+			var bloglongdescr=long_bio_data;
 			
     		$("#err_blogTitle").html('');
 			$("#err_blogshortdesc").html('');
@@ -3012,10 +3021,12 @@
 						$(".blog-preview-table-ex").append(markup2);
 						
 						$("#frmblog")[0].reset();
+						CKEDITOR.instances.bloglongdesc.setData('');
+						CKEDITOR.instances.blogshortdesc.setData('');
 						$(".frmerror_blog").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
                     } else {
-						$(".frmerror_blog").html('');
+						$(".frmerror_blog").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg.main_error + '</div>');
                        // $("#err_email").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg.email + '</div>');
                         $("#err_blogTitle").html('<div class="text-danger">' + json.msg.blogTitle + '</div>');
                         $("#err_blogshortdesc").html('<div class="text-danger">' + json.msg.blogshortdesc + '</div>');
