@@ -149,7 +149,7 @@
 						<p class="musicianName text-muted"><?php echo $user[0]['first_name'] ?> <?php echo $user[0]['last_name'] ?></p>
 						<p class="text-muted"><?php echo $user[0]['home_address'] ?></p>
 					</div>
-					<button class="btn shareBtn">Share</button>
+					<button class="btn shareBtn" id="btnshare" data-toggle="modal" data-target="#myModal"  >Share</button>
 				</div>
 			</div>
 			<div class="col-sm-4 memberListWrap">
@@ -543,12 +543,109 @@
 			</div>
 		</div>
 	</div>
+
+	
+	 <!--Start Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+
+<div class="modal-dialog">
+	<!-- Modal content-->
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">
+				&times;
+			</button>
+			<h4 class="modal-title">Share </h4>
+		</div>
+		<div class="frmerror_share"></div>
+		<div class="modal-body">
+			<div class="form-group">
+				<label for="to">To
+					<small>(required)</small>
+				</label>
+				<input id="to" name="to" type="text"
+					   class="form-control"
+					   placeholder="Enter company name" value="" >
+				<span id="err_to" ></span>	   
+			</div>
+			<div class="form-group">
+				<label for="from">From
+					<small>(required)</small>
+				</label>
+				<input id="from" name="from" type="text"  class="form-control"  placeholder="Enter Job Title" value=""   >
+				<span id="err_from" ></span>	 	   
+			</div>
+			<button type="button" class="btn btn-danger"
+					id="send">Send
+			</button>
+			<div class="modal-header">
+				<h4 class="modal-title">Sharing by Social Network </h4>
+			</div>
+			<ul class="list-unstyled list-inline">
+				<?php if(!empty($user[0]['facebook_link'])) { ?>
+					<li>
+						<a href="<?php echo $user[0]['facebook_link']; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+					</li>
+				<?php } ?>	
+				<?php if(!empty($user[0]['twitter_link'])) { ?>
+					<li>
+						<a href="<?php echo $user[0]['twitter_link']; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+					</li>
+				<?php } ?>	
+				<?php if(!empty($user[0]['google_plus_link'])) { ?>	
+					<li>
+						<a href="<?php echo $user[0]['google_plus_link']; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+					</li>
+				<?php } ?>	
+				<?php if(!empty($user[0]['pinterest_link'])) { ?>	
+					<li>
+						<a href="<?php echo $user[0]['pinterest_link']; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+					</li>
+				<?php } ?>	
+				
+					<!--<li>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+					</li>-->
+				<?php if(!empty($user[0]['linkedin_link'])) { ?>	
+					<li>
+						<a href="<?php echo $user[0]['linkedin_link']; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+					</li>
+				<?php } ?>		
+				</ul>
+				<div class="modal-header">
+					<h4 class="modal-title">Short URL for Sharing Page </h4>
+				</div>
+				<p>http://www.google.com</p>
+				<div class="modal-header">
+					<h4 class="modal-title">Scan QRCode for Link</h4>
+				</div>
+				<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
+							
+		</div>
+
+		<div class="modal-footer">
+			
+			<!--<button type="button" class="btn btn-danger btn-o"
+					data-dismiss="modal">
+				Close
+			</button>-->
+		</div>
+
+	</div>
+
+</div>
+
+</div>									
+<!--End Modal -->
+
+	
 <script type="text/javascript" src="<?php echo asset_url(); ?>vcard_detail_view/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo asset_url(); ?>vcard_detail_view/js/bootstrap.min.js"></script>
 	
 	<!-- custom scrollbar plugin -->
 	<script src="<?php echo asset_url(); ?>vcard_detail_view/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="<?php echo asset_url(); ?>vcard_detail_view/js/vcard-custom.js"></script>
+	
 <script type="text/javascript">
 		// audio player script start
 		// html5media enables <video> and <audio> tags in all major browsers

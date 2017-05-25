@@ -3771,6 +3771,7 @@ $(function() {
 		$("#"+id)[0].reset();
 		
 	}
+	// Open Blog
 	function openBlog(id)
 	{
 		$.ajax({
@@ -3889,6 +3890,8 @@ $(function() {
                                                             </button>
                                                             <h4 class="modal-title"> Add Pricing Plan Details </h4>
                                                         </div>
+														<div class="frmerror_priceplanupload" ></div>
+														<div class="frmerror_price_plane" ></div>
                                                         <div class="modal-body">
                                                             
 															 <div class="radio radio-primary col-md-4">
@@ -3962,7 +3965,7 @@ $(function() {
 														<div id="descprining" class="priceplanimage" style="display: none;">
 																
 														<form id="frmPricingPlan">	
-															<div class="frmerror_price_plane" ></div>
+															
 															<div class="form-group">
                                                                 <label for="jobTitle">Pricing Plan Title
                                                                     <small>(required)</small>
@@ -4056,12 +4059,13 @@ $(function() {
                                                             </button>
                                                             <h4 class="modal-title"> Portfolio </h4>
                                                         </div>
+														<div class="frmerror_portfolio" ></div>	
                                                         <div class="modal-body">
 															<form id="example-2" method="POST" enctype="multipart/form-data"  >
 															
 															<input type="hidden" name="vcard_id" id="vcard_id" value="<?php echo $user_data[0]['id']; ?>" />
 															<input type="hidden" name="videourl_portfolio_id" id="videourl_portfolio_id" />
-															<div class="frmerror_portfolio" ></div>
+															
 															<div class="radio radio-primary col-md-4">
 																<input type="radio" name="portfolioDiv" id="radio3" value="imagediv1" checked="checked">
 																<label for="radio3">
@@ -4169,10 +4173,11 @@ $(function() {
                                                             </button>
                                                             <h4 class="modal-title"> List </h4>
                                                         </div>
+														<div class="frmerror_list" ></div>
                                                         <div class="modal-body">
                                                             
 															<form id="frmlist" >
-															<div class="frmerror_list" ></div>
+															
                                                             <div class="form-group">
                                                                 <label for="jobTitle">List Name
                                                                     <small>(required)</small>
@@ -4240,11 +4245,12 @@ $(function() {
                                                             </button>
                                                             <h4 class="modal-title"> Links </h4>
                                                         </div>
+														<div class="frmerror_addlink"></div>
                                                         <div class="modal-body">
                                                             
 															<form id="frmaddlink">
 																
-																<div class="frmerror_addlink"></div>
+																
 																<div class="form-group">
 																	<label for="jobTitle">Add Your Links
 																		<small>(required)</small>
@@ -4314,11 +4320,12 @@ $(function() {
                                                             </button>
                                                             <h4 class="modal-title"> Video </h4>
                                                         </div>
+														<div class="frmerror_videourl" ></div>
                                                         <div class="modal-body">
                                                             
 															
 														<form id="frmvideourl" >
-															<div class="frmerror_videourl" ></div>
+															
                                                             <div class="form-group">
                                                                 <label for="jobTitle">Video URL
                                                                     <small>(required)</small>

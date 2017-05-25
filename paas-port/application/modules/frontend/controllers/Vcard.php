@@ -62,6 +62,8 @@ class Vcard extends CI_Controller {
                 ->title('PaasPort | Dashboard')
                 ->set_partial('header', 'partials/vcard_header');
         $this->template->build('vcard_main');
+		
+		
     }
 
 	public function view($slug)
@@ -180,7 +182,7 @@ class Vcard extends CI_Controller {
             if ($uid) {
 				$this->session->set_userdata('vcard_id',$uid);
                 $map ['status'] = 1;
-                $map ['msg'] = "Your data has been saved";
+                $map ['msg'] = "Basic Information has been saved";
                 echo json_encode($map);
             }
         }
@@ -236,7 +238,7 @@ class Vcard extends CI_Controller {
 				$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS,$user, array('id'=>$this->session->userdata('vcard_id')));
 				if ($uid) {
 					$map ['status'] = 1;
-					$map ['msg'] = "Your data has been saved";
+					$map ['msg'] = "Professional Information has been saved";
 					echo json_encode($map);
 				}
 			}	
@@ -279,10 +281,9 @@ class Vcard extends CI_Controller {
 		{	
 			$this->form_validation->set_rules('pinterest_url', 'Twitter Link', 'callback_validurl');
 		}
-		if(!empty($this->input->post('user_url')))	
-		{	
-			$this->form_validation->set_rules('user_url', 'Twitter Link', 'valid_email');
-		}	
+		$this->form_validation->set_rules('user_url', 'Email', 'trim|required|valid_email');
+			
+			
          if ($this->form_validation->run() == FALSE) {
 			  $map ['status'] = 0;
 			 $error_array=array();
@@ -312,7 +313,7 @@ class Vcard extends CI_Controller {
 				$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$this->session->userdata('vcard_id')));
 				if ($uid) {
 					$map ['status'] = 1;
-					$map ['msg'] = "Your data has been saved";
+					$map ['msg'] = "Social Information has been saved";
 					echo json_encode($map);
 				}
 			}	
@@ -1592,71 +1593,61 @@ public function deleteExperience()
 
 	public function generateQRCode1()
 	{
-		 $session_data = $this->session->userdata();
-        $user = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
+		$this->load->model('common_model');
+		$session_data = $this->session->userdata();
+		if(!empty($session_data['user_account']['user_id']))
+		{
+			$chk_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
+			
+			if(count($chk_user)==1)
+			{	
+				if(!empty($this->session->userdata('vcard_id'))) 
+				{	
+				
+				$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id'],'id'=>$this->session->userdata('vcard_id')));
 
-		
-		 $config = array(
-       'field' => 'slug',
-       'slug' => 'slug',
-       'table' => TABLES::$ADMIN_USER,
-       'id' => 'id',
-       );
-       
-       
-       $this->load->library('slug', $config);
-       
-       
-       $data_slug = array(
-       'slug' => $user_details[0]['first_name'] . " " . $user_details[0]['last_name'],
-       );
-       
-       $slug = $this->slug->create_uri($data_slug);
-       
-       $user['slug']=$slug;
-       
-       
-       //create slug collumn in tbl-users table end
-       
-       //Generate qr code start
-       
-       $this->load->library('Ciqrcode');
-       
-       $params['data'] = base_url().$slug;
-       $params['level'] = 'H';
-       $params['size'] = 5;
-       $params['savename'] = FCPATH.'vcard_qrcode_file/vcard_qrcode.png';
-       
-       $this->ciqrcode->generate($params);
-       
-       //Generate qr code end
-       
-       
-       
-       //To update slug,qr code and ext start
-       
-       $content=file_get_contents(base_url()."vcard_qrcode_file/vcard_qrcode.png");
-       //$content=mysql_escape_string($content);
-       $qr_code_image=$content;               
-       // $user['qr_code_image'] = $qr_code_image;
-       
-       @list(, , $imtype, ) = getimagesize(base_url()."vcard_qrcode_file/vcard_qrcode.png");
-       
-       if ($imtype == 3){
-        $ext="png"; 
-        }elseif ($imtype == 2){
-        $ext="jpeg";
-        }elseif ($imtype == 1){
-        $ext="gif";
-        }else{
-        $ext="png";
-       }
-       
-       // $user['qr_code_image_ext'] = $ext;
-       
-       
-       $this->common_model->updateRow(TABLES::$ADMIN_USER, array("slug" => $slug,"qr_code_image" => $qr_code_image,"qr_code_image_ext" => $ext), array("id" => $session_data['user_account']['user_id']));
-       
+				$slug=$user[0]['slug'];	
+			   //Generate qr code start
+			   
+			   $this->load->library('Ciqrcode');
+			   
+			   $params['data'] = base_url().$slug;
+			   $params['level'] = 'H';
+			   $params['size'] = 5;
+			   $params['savename'] = FCPATH.'vcard_qrcode_file/paasport_qrcode.png';
+			   
+			   $this->ciqrcode->generate($params);
+			   
+			   //Generate qr code end
+			   
+			   
+			   
+			   //To update slug,qr code and ext start
+			   
+			   $content=file_get_contents(base_url()."vcard_qrcode_file/paasport_qrcode.png");
+			   //$content=mysql_escape_string($content);
+			   $qr_code_image=$content;               
+			   // $user['qr_code_image'] = $qr_code_image;
+			   
+			   @list(, , $imtype, ) = getimagesize(base_url()."vcard_qrcode_file/paasport_qrcode.png");
+			   
+			   if ($imtype == 3){
+				$ext="png"; 
+				}elseif ($imtype == 2){
+				$ext="jpeg";
+				}elseif ($imtype == 1){
+				$ext="gif";
+				}else{
+				$ext="png";
+			   }
+			   
+			   // $user['qr_code_image_ext'] = $ext;
+			   
+			   
+			   $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, array("qr_code_image" => $qr_code_image,"qr_code_image_ext" => $ext), array("id" =>$this->session->userdata('vcard_id')));
+			  }
+			}	
+		}		
 		
 	}
 	
@@ -2154,6 +2145,7 @@ public function deleteExperience()
         $this->load->library('form_validation');
         $errorMsg = array();
         $err_num = 0;
+		$this->form_validation->set_rules('user_url', 'Email', 'trim|required|valid_email');
         if(!empty($this->input->post('facebook_url')))
 		{
 			$this->form_validation->set_rules('facebook_url', 'Facebook Link', 'callback_validurl');
@@ -2178,11 +2170,7 @@ public function deleteExperience()
 		{	
 			$this->form_validation->set_rules('pinterest_url', 'Twitter Link', 'callback_validurl');
 		}
-		if(!empty($this->input->post('user_url')))	
-		{	
-			$this->form_validation->set_rules('user_url', 'Twitter Link', 'valid_email');
-		}	
-
+			
          if ($this->form_validation->run() == FALSE) {
 			  $map ['status'] = 0;
 			 $error_array=array();
@@ -3072,8 +3060,7 @@ public function deleteExperience()
 		
         if ($this->form_validation->run() == FALSE) 
 		{
-            $map ['status'] = 0;
-			
+            $map ['status'] = 0;		
 			$error_array['blogTitle']=form_error('blogTitle'); 
 			$error_array['blogshortdesc']=form_error('blogshortdesc1'); 
 			$error_array['bloglongdesc']=form_error('bloglongdesc1'); 			
@@ -3152,23 +3139,13 @@ public function deleteExperience()
 					}
 					else
 					{
-						$error_array['main_error']= "Unable to save Blog Information"; 
-						$map ['msg'] = $error_array;
 						$map ['status'] = 0;
 						$map ['blogid'] = '';
-						$map ['msg'] = $error_array;
+						$map ['msg'] = "Unable to save blog information";
 						echo json_encode($map);
 					}
 			}
-			else
-			{
-				$error_array['main_error']= "Unable to save Blog Information"; 
-				$map ['msg'] = $error_array;
-				$map ['status'] = 0;
-				$map ['blogid'] = '';
-				$map ['msg'] = $error_array;
-				echo json_encode($map);
-			}		
+					
         }
         exit;
     
