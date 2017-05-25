@@ -558,33 +558,36 @@
 			<h4 class="modal-title">Share </h4>
 		</div>
 		<div class="frmerror_share"></div>
+		<div class="frmerror_skillsandexpertise" ></div>
 		<div class="modal-body">
+		<form>
 			<div class="form-group">
 				<label for="to">To
 					<small>(required)</small>
 				</label>
 				<input id="to" name="to" type="text"
 					   class="form-control"
-					   placeholder="Enter company name" value="" >
+					   placeholder="Recipients Number/Email" value="" >
 				<span id="err_to" ></span>	   
 			</div>
 			<div class="form-group">
 				<label for="from">From
 					<small>(required)</small>
 				</label>
-				<input id="from" name="from" type="text"  class="form-control"  placeholder="Enter Job Title" value=""   >
+				<input id="from" name="from" type="text"  class="form-control"  placeholder="Senders Name/Email" value=""   >
 				<span id="err_from" ></span>	 	   
 			</div>
 			<button type="button" class="btn btn-danger"
-					id="send">Send
+					id="btnemailsend">Send
 			</button>
+		</form>	
 			<div class="modal-header">
 				<h4 class="modal-title">Sharing by Social Network </h4>
 			</div>
 			<ul class="list-unstyled list-inline">
 				<?php if(!empty($user[0]['facebook_link'])) { ?>
 					<li>
-						<a href="<?php echo $user[0]['facebook_link']; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="//www.facebook.com/sharer/sharer.php?u=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
 					</li>
 				<?php } ?>	
 				<?php if(!empty($user[0]['twitter_link'])) { ?>
@@ -594,12 +597,12 @@
 				<?php } ?>	
 				<?php if(!empty($user[0]['google_plus_link'])) { ?>	
 					<li>
-						<a href="<?php echo $user[0]['google_plus_link']; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+						<a href="//plus.google.com/share?url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
 					</li>
 				<?php } ?>	
 				<?php if(!empty($user[0]['pinterest_link'])) { ?>	
 					<li>
-						<a href="<?php echo $user[0]['pinterest_link']; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+						<a href="//pinterest.com/pin/create/button/?url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
 					</li>
 				<?php } ?>	
 				
@@ -608,7 +611,7 @@
 					</li>-->
 				<?php if(!empty($user[0]['linkedin_link'])) { ?>	
 					<li>
-						<a href="<?php echo $user[0]['linkedin_link']; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
 					</li>
 				<?php } ?>		
 				</ul>
@@ -640,7 +643,34 @@
 
 	
 <script type="text/javascript" src="<?php echo asset_url(); ?>vcard_detail_view/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo asset_url(); ?>vcard_detail_view/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo asset_url(); ?>vcard_detail_view/js/bootstrap.min.js"></script>
+<script type="text/javascript"  >
+ $(document).ready(function () {
+		$('#btnemailsend').click(function() {
+			$.ajax({
+                url: "<?php echo base_url() ?>frontend/Vcard/sendmail",
+                type: "POST",
+                data: {
+					to:$('#to').val()
+				},
+                success: function (data)
+                {
+                    var json = JSON.parse(data);
+                    if (json.status === 1) {						
+					
+                        $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+                        return true;
+                    } else {						
+						//$("#err_txt_skill").html('<div class="text-danger">' + json.msg.txt_skill + '</div>');
+						
+                       
+                        return false;
+                    }
+                }
+            });     
+		});
+ });
+</script>
 	
 	<!-- custom scrollbar plugin -->
 	<script src="<?php echo asset_url(); ?>vcard_detail_view/js/jquery.mCustomScrollbar.concat.min.js"></script>

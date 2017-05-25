@@ -1599,8 +1599,8 @@ public function deleteExperience()
 		{
 			$chk_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
 			
-			if(count($chk_user)==1)
-			{	
+			//if(count($chk_user)==1)
+			//{	
 				if(!empty($this->session->userdata('vcard_id'))) 
 				{	
 				
@@ -1646,7 +1646,7 @@ public function deleteExperience()
 			   
 			   $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, array("qr_code_image" => $qr_code_image,"qr_code_image_ext" => $ext), array("id" =>$this->session->userdata('vcard_id')));
 			  }
-			}	
+			//}	
 		}		
 		
 	}
@@ -3347,6 +3347,43 @@ public function deleteExperience()
 		 echo json_encode($user_blog[0]);
 		exit;
 	   }
+   }
+   public function sendmail()
+   {
+
+	     $config = Array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'ssl://smtp.googlemail.com',
+                'smtp_port' => 465,
+                'smtp_user' => 'rpdigitel@gmail.com', // change it to yours
+                'smtp_pass' => 'Rebelute@905', // change it to yours
+                'mailtype' => 'html',
+                'charset' => 'iso-8859-1',
+                'wordwrap' => TRUE
+		);
+    
+		$message = "Hello , <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Please find below Link. <br /><br /> " . $_SERVER['HTTP_REFERER'] . " ";
+		$message .= "Thanks";
+		
+		$this->load->library('email', $config);
+		$this->email->set_newline("\r\n");
+		$this->email->from('rpdigitel@gmail.com'); // change it to yours
+		$this->email->to('vaishalim@rebelute.com'); // change it to yours
+		$this->email->subject('Welcome to RP Digital');
+		$this->email->message($message);
+    
+    
+    
+		if ($this->email->send()) {
+		    $map ['status'] = 1;
+            $map ['msg'] = "Email Sent Successfully";
+		 } else {
+			 $map ['status'] = 0;
+            $map ['msg'] = $this->email->print_debugger();
+			//show_error($this->email->print_debugger());
+		}
+		echo json_encode($map);
+		exit;
    }
    
 }

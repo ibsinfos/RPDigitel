@@ -1914,7 +1914,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
+			
 	
 		$("input[name$='blog']").click(function() {
 			var test = $(this).val();			
