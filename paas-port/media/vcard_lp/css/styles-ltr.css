@@ -1,0 +1,20 @@
+.content-mobile .back-link { float:left; }
+.content-mobile .home-link { float:right; }
+
+.content-mobile .block-head .header-glyph em {border-right:10px solid transparent;}
+.content-mobile .block-head .header-glyph em, .content-mobile .block-header-menu .header-glyph em { background-position:right center; }
+.content-mobile .block-head.alink .header-glyph em { border-right: 0; }
+.content-mobile .alink .link-glyph em, .content-mobile .alink .header-glyph em { background-image:url("../images/arrow-ltr.png"); }
+
+.content-mobile .menu-wrapper ul li .item-name { text-align:left; }
+
+.content-mobile .form label input.field-checkbox { margin:0 5px 0 0; }
+
+.shopping-cart-content table tfoot td.foot-total-lbl { padding-right:5px;text-align:right; }
+.shopping-cart-content .shopping-cart-buttons { text-align:right; }
+.shopping-cart-content .shopping-cart-buttons button { margin-left:10px; }
+
+.shopping-cart-notification span { background:url("../images/icons/cart.png") 5px center no-repeat;  }
+.shopping-cart-notification span span { margin:0 10px;padding:14px 0;background:url("../images/arrow-ltr.png") right center no-repeat;  }
+
+

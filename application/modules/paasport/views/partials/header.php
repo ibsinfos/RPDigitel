@@ -227,7 +227,7 @@
 
 
                                     <?php // if ($this->session->userdata('crm_subscription')) { ?>
-                                        <li><a href="<?php echo base_url()."novaevcard/login_from_rpdigitel/"; ?>"> Go to Dashboard &nbsp; </a></li>
+                                        <li><a href="<?php echo base_url()."paas-port/login_from_rpdigitel/"; ?>"> Go to Dashboard &nbsp; </a></li>
     <?php // } ?>
                                     <li>
                                         <a href="<?php echo base_url(); ?>login/logout" onclick="return confirm('Are you sure?')"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
