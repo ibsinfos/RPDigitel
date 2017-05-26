@@ -427,35 +427,35 @@
 				<h4 class="modalHeading">Sharing by Social Network</h4>
 				
 				<ul class="list-unstyled list-inline socialShareWrap">
-					<?php if(!empty($user[0]['facebook_link'])) { ?>
+					
 						<li>
 							<a href="//www.facebook.com/sharer/sharer.php?u=<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" class="facebook"><i class="fa fa-facebook"></i></a>
 						</li>
-					<?php } ?>	
-					<?php if(!empty($user[0]['twitter_link'])) { ?>
+					
+					
 						<li>
 							<a href="http://twitter.com/intent/tweet?url=<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" class="twitter"><i class="fa fa-twitter"></i></a>
 						</li>
-					<?php } ?>	
-					<?php if(!empty($user[0]['google_plus_link'])) { ?>	
+					
+					
 						<li>
 							<a href="//plus.google.com/share?url=<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
 						</li>
-					<?php } ?>	
-					<?php if(!empty($user[0]['pinterest_link'])) { ?>	
+					
+					
 						<li>
 							<a href="//pinterest.com/pin/create/button/?url=<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
 						</li>
-					<?php } ?>	
+					
 					
 					<!--<li>
 						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
 					</li>-->
-					<?php if(!empty($user[0]['linkedin_link'])) { ?>	
+					
 						<li>
 							<a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
 						</li>
-					<?php } ?>		
+							
 				</ul>
 				<h4 class="modalHeading">Short URL for Sharing Page</h4>
 				<p><a href=""><?php echo ($shorten_url)?$shorten_url:current_url(); ?></a></p>
