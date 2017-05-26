@@ -12,7 +12,8 @@ class Vcard extends CI_Controller {
         ini_set('memory_limit', '360M');
     }
 
-    public function index() {	
+    public function index() 
+	{	
 		
         if (!isset($_SESSION)) {
             session_start();
@@ -68,6 +69,7 @@ class Vcard extends CI_Controller {
 
 	public function view($slug)
 	{
+		 $this->load->library('google_url_api');
 		 $session_data = $this->session->userdata();
 		$this->load->model('common_model');
         // $slug = $this->uri->segment(1);
@@ -82,9 +84,17 @@ class Vcard extends CI_Controller {
 		
 		$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']),'id DESC ',2);
 
-
-
-
+		
+		  $url = $_SERVER['HTTP_REFERER'];
+          $this->google_url_api->enable_debug(FALSE);
+          $short_url = $this->google_url_api->shorten($url);
+		  
+		  if(!empty($short_url->id))
+		  	  $data['shorten_url']=$short_url->id;
+		 
+		  		
+		
+		
 		
        // $busi_strat = $this->common_model->getRecords(TABLES::$BUSINESS_STRAT, '*', array('user_id' => $arr[0]['id']));
 
@@ -3351,39 +3361,63 @@ public function deleteExperience()
    public function sendmail()
    {
 
-	     $config = Array(
-                'protocol' => 'smtp',
-                'smtp_host' => 'ssl://smtp.googlemail.com',
-                'smtp_port' => 465,
-                'smtp_user' => 'rpdigitel@gmail.com', // change it to yours
-                'smtp_pass' => 'Rebelute@905', // change it to yours
-                'mailtype' => 'html',
-                'charset' => 'iso-8859-1',
-                'wordwrap' => TRUE
-		);
+		$this->load->helper('utility_helper');
+        $this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+        $errors = array();
+        $this->load->library('form_validation');
+		$errorMsg = array();
+        $err_num = 0;
+		$error_array=array();
+		$error_array['to']=''; 
+		$error_array['from']=''; 
+   
+	    $this->form_validation->set_rules('to', 'To', 'trim|required|valid_email');
+        $this->form_validation->set_rules('fromid', 'From', 'trim|required|valid_email');
     
-		$message = "Hello , <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Please find below Link. <br /><br /> " . $_SERVER['HTTP_REFERER'] . " ";
-		$message .= "Thanks";
-		
-		$this->load->library('email', $config);
-		$this->email->set_newline("\r\n");
-		$this->email->from('rpdigitel@gmail.com'); // change it to yours
-		$this->email->to('vaishalim@rebelute.com'); // change it to yours
-		$this->email->subject('Welcome to RP Digital');
-		$this->email->message($message);
-    
-    
-    
-		if ($this->email->send()) {
-		    $map ['status'] = 1;
-            $map ['msg'] = "Email Sent Successfully";
-		 } else {
-			 $map ['status'] = 0;
-            $map ['msg'] = $this->email->print_debugger();
-			//show_error($this->email->print_debugger());
-		}
-		echo json_encode($map);
-		exit;
+		if ($this->form_validation->run() == FALSE) 
+		{
+            $map ['status'] = 0;			
+			$error_array['to']=form_error('to'); 
+			$error_array['from']=form_error('fromid'); 					
+            $map ['msg'] = $error_array;
+            echo json_encode($map);
+			exit;
+        } else {
+   
+					 $config = Array(
+							'protocol' => 'smtp',
+							'smtp_host' => 'ssl://smtp.googlemail.com',
+							'smtp_port' => 465,
+							'smtp_user' => 'rpdigitel@gmail.com', // change it to yours
+							'smtp_pass' => 'Rebelute@905', // change it to yours
+							'mailtype' => 'html',
+							'charset' => 'iso-8859-1',
+							'wordwrap' => TRUE
+					);
+				
+					$message = "Hello , <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Please find below Link. <br /><br /> " . $_SERVER['HTTP_REFERER'] . " ";
+					$message .= "<br /><br /> Thanks & Regards,";
+					$message .= "<br /> RPDigitel Team";
+					
+					$this->load->library('email', $config);
+					$this->email->set_newline("\r\n");
+					$this->email->from(trim($this->input->post('fromid'))); // change it to yours
+					$this->email->to(trim($this->input->post('to'))); // change it to yours
+					$this->email->subject('Welcome to RP Digital');
+					$this->email->message($message);				
+				
+					if ($this->email->send()) {
+						$map ['status'] = 1;
+						$map ['msg'] = "Email Sent Successfully";
+					 } else {
+						 $map ['status'] = 0;
+						 $map ['msg'] = 'Email not Sent';
+						//show_error($this->email->print_debugger());
+					}
+					echo json_encode($map);
+					exit;
+		}			
    }
    
 }

@@ -93,6 +93,76 @@ body {
 	max-width: 100%;
 }
 
+/* Audio Player css start */
+.audioPlayerWrap {
+  color: #808080;
+}
+/*.audioPlayerWrap .playerCol {
+  display: table-cell;
+  vertical-align: middle;
+}*/
+.audioPlayerWrap .secondCol {
+  padding-left: 0;
+}
+.audioPlayerWrap .album-image {
+  min-height: 100px;
+  width: 110px;
+  background-size: cover;
+}
+.audioPlayerWrap .player-controls {
+  justify-content: center;
+  text-align: left;
+}
+.audioPlayerWrap .player-controls small {
+  position: relative;
+}
+.audioPlayerWrap .player-controls progress {
+  width: 100%;
+}
+.audioPlayerWrap .player-controls progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #808080;
+  color: #f72f3c;
+  height: 5px;
+}
+.audioPlayerWrap .player-controls progress[value]::-webkit-progress-bar {
+  background-color: #808080;
+  border-radius: 2px;
+  border: 1px solid #808080;
+  color: #f72f3c;
+}
+.audioPlayerWrap .player-controls progress::-webkit-progress-value {
+  background-color: #f72f3c;
+}
+.audioPlayerWrap .player-controls p {
+  font-size: 1.4rem;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.audioPlayerWrap #play-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+.audioPlayerWrap #play-btn .fa-play {
+  padding-left: 5px;
+}
+.audioPlayerWrap #play-btn.pause .fa-play,
+.audioPlayerWrap #play-btn .fa-pause {
+  display: none;
+}
+.audioPlayerWrap #play-btn.pause .fa-pause {
+  display: inline-block;
+}
+/* Audio Player css end */
+
 /* share social media css start */
 .counter-top .share {
 	float: right;
@@ -169,16 +239,18 @@ body {
 	display: table;
 	margin: 0 auto;
 }
+.musicianWrap .btnColumn {
+  display: table-cell;
+  /*vertical-align: middle;*/
+}
 .musicianWrap .btn {
-	color: #fff;
-	width: 125px;
-	height: 30px;
-	line-height: 15px;
-	border-radius: 25px;
-	text-transform: uppercase;
-	display: table-cell;
-	vertical-align: middle;
-	font-weight: 700;
+  color: #fff;
+  width: 125px;
+  height: 30px;
+  line-height: 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .musicianWrap .subscribeBtn {
 	background-color: #f50707;
@@ -380,7 +452,7 @@ audio { width:100%; }
   box-shadow:0 0 6px -1px rgba(0,0,0,.25); 
 }
 #audiowrap { 
-  background-color:#231F20; 
+  background-color:#fafafa; 
   margin:0 auto; 
 }
 #plwrap { 
@@ -411,14 +483,14 @@ audio { width:100%; }
   margin:0; 
 }
 #plList li { 
-  background-color:#231F20; 
+  background-color:#fafafa; 
   cursor:pointer; 
   display:block; 
   margin:0; 
   padding:10px 0; 
 }
 #plList li:hover { 
-  background-color:#262223; 
+  background-color:#eee; 
 }
 #plList li .plItem { 
   position:relative; 
@@ -442,12 +514,12 @@ audio { width:100%; }
   top:0; 
 }
 .plSel,.plSel:hover { 
-  background-color:#262223!important; 
+  background-color:#eee!important; 
   cursor:default!important; 
 }
 .audioPLWrap a[id^="btn"] { 
-  background-color:#231F20; 
-  color:#C8C7C8; 
+  background-color:#fafafa; 
+  color:#5a5a5a; 
   cursor:pointer; 
   display:inline-block; 
   font-size:18px; 
@@ -459,7 +531,7 @@ audio { width:100%; }
   margin-left:-4px; 
 }
 .audioPLWrap a[id^="btn"]:hover,a[id^="btn"]:active { 
-  background-color:#262223; 
+  background-color:#eee; 
 }
 .audioPLWrap a[id^="btn"]::-moz-focus-inner { 
   border:0; 
@@ -496,16 +568,6 @@ html[data-useragent*="rv:11.0"] #plList li:hover { background-color:#080808; }
 html[data-useragent*="rv:11.0"] .plSel,
 html[data-useragent*="rv:11.0"] .plSel:hover { background-color:#080808!important; }
 
-/* All Apple Products */
-html[data-useragent*="Apple"] audio { margin:0; width:100%; }
-html[data-useragent*="Apple"] #audiowrap { background-color:#000; }
-html[data-useragent*="Apple"] a[id^="btn"] { background-color:#000; }
-html[data-useragent*="Apple"] a[id^="btn"]:hover { background-color:#080808; }
-html[data-useragent*="Apple"] #plList li { background-color:#000; }
-html[data-useragent*="Apple"] #plList li:hover { background-color:#080808; }
-html[data-useragent*="Apple"] .plSel,
-html[data-useragent*="Apple"] .plSel:hover { background-color:#080808!important; }
-
 /* IOS 7 */
 html[data-useragent*="OS 7"] body { color:#373837; }
 /*html[data-useragent*="OS 7"] audio { margin-left:3px; width:690px; }*/
@@ -538,17 +600,6 @@ html[data-useragent*="OS 9"] #plList li { background-color:#d5d5d5; }
 html[data-useragent*="OS 9"] #plList li:hover { background-color:#eee; }
 html[data-useragent*="OS 9"] .plSel,
 html[data-useragent*="OS 9"] .plSel:hover { background-color:#eee!important; }
-
-/* Chrome */
-html[data-useragent*="Chrome"] body { color:#5a5a5a; }
-html[data-useragent*="Chrome"] audio { width:100%; }
-html[data-useragent*="Chrome"] #audiowrap { background-color:#fafafa; }
-html[data-useragent*="Chrome"] a[id^="btn"] { background-color:#fafafa; color:#5a5a5a; }
-html[data-useragent*="Chrome"] a[id^="btn"]:hover { background-color:#eee; }
-html[data-useragent*="Chrome"] #plList li { background-color:#fafafa; }
-html[data-useragent*="Chrome"] #plList li:hover { background-color:#eee; }
-html[data-useragent*="Chrome"] .plSel,
-html[data-useragent*="Chrome"] .plSel:hover { background-color:#eee!important; }
 
 /* Chrome / Android / Tablet */
 html[data-useragent*="Chrome"][data-useragent*="Android"] body { color:#373837; }
@@ -630,10 +681,13 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
 .learnMoreAbout .list-inline {
 	margin-bottom: 25px;
 }
-.learnMoreAbout .list-inline li {
+.socialShareWrap {
+  text-align: center;
+}
+.socialShareWrap li {
 	padding: 0 1px;
 }
-.learnMoreAbout .list-inline a {
+.socialShareWrap a {
 	color: #fff;
     display: block;
     background-color: #3b56ad;
@@ -644,22 +698,22 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
     -o-border-radius: 3px;
     border-radius: 3px;
 }
-.learnMoreAbout .list-inline a.facebook {
+.socialShareWrap a.facebook {
 	background-color: #3b56ad;
 }
-.learnMoreAbout .list-inline a.twitter {
+.socialShareWrap a.twitter {
 	background-color: #19b1f0;
 }
-.learnMoreAbout .list-inline a.googlePlus {
+.socialShareWrap a.googlePlus {
 	background-color: #e34e38;
 }
-.learnMoreAbout .list-inline a.pinterest-p {
+.socialShareWrap a.pinterest-p {
 	background-color: #ca1a1c;
 }
-.learnMoreAbout .list-inline a.instagram {
+.socialShareWrap a.instagram {
 	background-color: #4072a3;
 }
-.learnMoreAbout .list-inline a.linkedin {
+.socialShareWrap a.linkedin {
 	background-color: #0068a5;
 }
 .learnMoreAbout .musicianWrap .btn {
@@ -668,6 +722,26 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
 .learnMoreAbout .musicianWrap .musicianImageName img {
 	width: 150px;
 	height: 150px;
+}
+.modal .modal-header,
+.modal .modal-body {
+  padding: 10px;
+}
+.modal .form-group {
+  margin-bottom: 10px;
+}
+.modal .modalHeading {
+  background-color: #e0e0e0;
+  padding: 7px 5px;
+  text-align: center;
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.modal .btn {
+  background-color: #ff0000;
+  color: #fff;
 }
 .memberListWrap .mCustomScrollbar {
 	height: 275px;
@@ -848,6 +922,11 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
     	font-size: 12px;
 	}
 }
+@media (max-width: 1200px) {
+  .audioPlayerWrap .secondCol {
+    padding-left: 15px;
+  }
+}
 @media (max-width: 1024px) {
 	.facebookCommentWrap form {
 		padding: 15px 0;
@@ -924,6 +1003,10 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
 		width: 90px;
 		height: 90px;
 	}
+  .versionWrap .versionDetails .audioPlayerWrap {
+    width: 300px;
+    margin: 0 auto;
+  }
 	.versionWrap .versionDetails,
 	.versionWrap .followShare {
 		text-align: center;
@@ -976,3 +1059,13 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
     margin-bottom: 20px;
   }
 }
+
+/*start  css for loader */
+	@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+.body {  }
+.loader { font-weight: bold; width: 500px; margin: 0 auto; height: 20px; font-family: 'Josefin Sans', sans-serif; }
+.title { color: #FF3B30 ; font-size: 100%; margin-bottom: 5px }
+.load { width: 100%; height: 5px; background-color: #F0F0F0; position: relative; overflow: hidden; }
+.bar { width: 15%; height: 5px; background-color: #FF3B30 ; position: absolute;
+} 
+/* End  css for loader */

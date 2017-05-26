@@ -111,8 +111,10 @@
 			</div>
 			<div class="col-sm-4 learnMoreAbout text-center">
 				<p class="learnMoreText">Learn More about <?php echo $user[0]['first_name'] ?> <?php echo $user[0]['last_name'] ?></p>
-				<ul class="list-unstyled list-inline">
-				<?php if(!empty($user[0]['facebook_link'])) { ?>
+				<ul class="list-unstyled list-inline socialShareWrap">
+				<?php 
+				
+				if(!empty($user[0]['facebook_link'])) { ?>
 					<li>
 						<a href="<?php echo $user[0]['facebook_link']; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
 					</li>
@@ -545,64 +547,54 @@
 	</div>
 
 	
-	 <!--Start Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-
-<div class="modal-dialog">
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">
-				&times;
-			</button>
-			<h4 class="modal-title">Share </h4>
-		</div>
-		<div class="frmerror_share"></div>
-		<div class="frmerror_skillsandexpertise" ></div>
-		<div class="modal-body">
-		<form>
-			<div class="form-group">
-				<label for="to">To
-					<small>(required)</small>
-				</label>
-				<input id="to" name="to" type="text"
-					   class="form-control"
-					   placeholder="Recipients Number/Email" value="" >
-				<span id="err_to" ></span>	   
-			</div>
-			<div class="form-group">
-				<label for="from">From
-					<small>(required)</small>
-				</label>
-				<input id="from" name="from" type="text"  class="form-control"  placeholder="Senders Name/Email" value=""   >
-				<span id="err_from" ></span>	 	   
-			</div>
-			<button type="button" class="btn btn-danger"
-					id="btnemailsend">Send
-			</button>
-		</form>	
-			<div class="modal-header">
-				<h4 class="modal-title">Sharing by Social Network </h4>
-			</div>
-			<ul class="list-unstyled list-inline">
+<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Share </h4>
+	      </div>
+		  <form>
+		  <div class="err_mailsend" ></div>
+	      <div class="modal-body text-center">
+	      	<h4 class="modalHeading">Share by Text or Email</h4>
+			
+	    	<div class="form-group text-left">
+			    <label for="to">To <small>(required)</small></label>
+			    <input id="to" name="to" type="text" class="form-control" placeholder="Recipients Email" >
+			    <span id="err_to" ></span>    
+		   </div>
+		   <div class="form-group text-left">
+		    	<label for="from">From <small>(required)</small></label>
+			    <input id="fromid" name="fromid" type="text"  class="form-control"  placeholder="Senders Email" >
+			    <span id="err_from" ></span>      
+		   </div>
+		   <div class="form-group">
+		   	<button type="button" class="btn" id="btnemailsend">Send</button>
+		   </div>
+		  </form> 
+		   <h4 class="modalHeading">Sharing by Social Network</h4>
+		  	
+	   		<ul class="list-unstyled list-inline socialShareWrap">
 				<?php if(!empty($user[0]['facebook_link'])) { ?>
 					<li>
-						<a href="//www.facebook.com/sharer/sharer.php?u=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="//www.facebook.com/sharer/sharer.php?u=<?php echo current_url(); ?>" class="facebook"><i class="fa fa-facebook"></i></a>
 					</li>
 				<?php } ?>	
 				<?php if(!empty($user[0]['twitter_link'])) { ?>
 					<li>
-						<a href="<?php echo $user[0]['twitter_link']; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="http://twitter.com/intent/tweet?url=<?php echo current_url(); ?>" class="twitter"><i class="fa fa-twitter"></i></a>
 					</li>
 				<?php } ?>	
 				<?php if(!empty($user[0]['google_plus_link'])) { ?>	
 					<li>
-						<a href="//plus.google.com/share?url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+						<a href="//plus.google.com/share?url=<?php echo current_url(); ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
 					</li>
 				<?php } ?>	
 				<?php if(!empty($user[0]['pinterest_link'])) { ?>	
 					<li>
-						<a href="//pinterest.com/pin/create/button/?url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+						<a href="//pinterest.com/pin/create/button/?url=<?php echo current_url(); ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
 					</li>
 				<?php } ?>	
 				
@@ -611,34 +603,18 @@
 					</li>-->
 				<?php if(!empty($user[0]['linkedin_link'])) { ?>	
 					<li>
-						<a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $_SERVER['HTTP_REFERER']; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo current_url(); ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
 					</li>
 				<?php } ?>		
-				</ul>
-				<div class="modal-header">
-					<h4 class="modal-title">Short URL for Sharing Page </h4>
-				</div>
-				<p>http://www.google.com</p>
-				<div class="modal-header">
-					<h4 class="modal-title">Scan QRCode for Link</h4>
-				</div>
-				<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
-							
-		</div>
-
-		<div class="modal-footer">
-			
-			<!--<button type="button" class="btn btn-danger btn-o"
-					data-dismiss="modal">
-				Close
-			</button>-->
-		</div>
-
+			</ul>
+			<h4 class="modalHeading">Short URL for Sharing Page</h4>
+			<p><a href=""><?php echo ($shorten_url)?$shorten_url:current_url(); ?></a></p>
+			<h4 class="modalHeading">Scan QRCode for Link</h4>
+			<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
+	      </div>
+	    </div>
+	  </div>
 	</div>
-
-</div>
-
-</div>									
 <!--End Modal -->
 
 	
@@ -647,21 +623,37 @@
 <script type="text/javascript"  >
  $(document).ready(function () {
 		$('#btnemailsend').click(function() {
+			
+			$(".err_mailsend").html('<div class="loader"><div class="title">Sending...</div><div class="load"><div class="bar"></div></div></div>');	
+			
+			$("#err_to").html('');
+			$("#err_from").html('');
+						
 			$.ajax({
                 url: "<?php echo base_url() ?>frontend/Vcard/sendmail",
                 type: "POST",
                 data: {
-					to:$('#to').val()
+					to:$('#to').val(),
+					fromid:$('#fromid').val()
 				},
                 success: function (data)
                 {
+					$(".err_mailsend").html('');	
                     var json = JSON.parse(data);
-                    if (json.status === 1) {						
+                    if (json.status === 1) 
+					{						
 					
-                        $(".frmerror_skillsandexpertise").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+						$("#err_to").html('');
+						$("#err_from").html('');						
+                        $(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
                         return true;
-                    } else {						
-						//$("#err_txt_skill").html('<div class="text-danger">' + json.msg.txt_skill + '</div>');
+                    }
+					else 
+					{
+						
+							//$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+							$("#err_to").html('<div class="text-danger">' + json.msg.to + '</div>');
+							$("#err_from").html('<div class="text-danger">' + json.msg.from + '</div>');
 						
                        
                         return false;
