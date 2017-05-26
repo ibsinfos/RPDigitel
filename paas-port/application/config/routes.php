@@ -68,7 +68,7 @@ $route['signup'] = 'frontend/login/registration';
 $route['forget-password'] = 'frontend/login/forgetPassword';
 $route['submitsignup'] = 'frontend/login/saveUserInfo';
 $route['payment'] = 'frontend/payment/index';
-//$route['vcard'] = 'frontend/dashboard/createVcard';// start Change By vaishali$route['create-paasport'] = 'frontend/Vcard/index';$route['paasport-update'] = 'frontend/Vcard/updateVcard';$route['paasport-update/(:any)'] = 'frontend/Vcard/updateVcardData/$1';$route['paasport-manage'] = 'frontend/dashboard/manageVcard';// end Change By vaishali
+//$route['vcard'] = 'frontend/dashboard/createVcard';// start Change By vaishali$route['create-paasport'] = 'frontend/Vcard/index';$route['paasport-update'] = 'frontend/Vcard/updateVcard';$route['paasport-update/(:any)'] = 'frontend/Vcard/updateVcardData/$1';$route['paasport-manage'] = 'frontend/dashboard/manageVcard';$route['main-view/(:any)'] = 'frontend/vcard/main_view/$1';// end Change By vaishali
 $route['vcard-edit'] = 'frontend/dashboard/editVcard';//Added by Ranjit on 26 april 2017 to add menu Manage vcard in inner header Start$route['generate-qrcode'] = 'frontend/Generate_qrcode';$route['generate-qrcode/view-qr-code'] = 'frontend/Generate_qrcode/view_qr_code';
 $route['update-vcard'] = 'frontend/dashboard/updatevCard';
 $route['delete-dynamic-image'] = 'frontend/Dashboard/deleteDynamicImage';

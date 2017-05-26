@@ -85,7 +85,7 @@ class Vcard extends CI_Controller {
 		$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']),'id DESC ',2);
 
 		
-		  $url = $_SERVER['HTTP_REFERER'];
+		  $url = current_url();
           $this->google_url_api->enable_debug(FALSE);
           $short_url = $this->google_url_api->shorten($url);
 		  
@@ -1368,11 +1368,10 @@ public function deleteExperience()
 			foreach ($user_skills as $user_skill)
 			{			
 				$str.="<li>".$user_skill['list'];	
-				if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-				{
+				
 					$str.="<div class='pull-right'>";
 					$str.="<span id='editpanellists' class='badge editbutton' title='Edit' onclick=openList('".$user_skill['id']."','".$user_skill['list']."'); ><i class='fa fa-pencil-square-o'></i></span></div>";
-				}
+				
 				$str.="</li>";
 				$cnt+=1;
 			} 					
@@ -1521,12 +1520,11 @@ public function deleteExperience()
 			{			
 				$str_arr['table'].="<tr><td> ".$cnt."</td><td>".$user_skill['video_url']."</td></tr>";				
 				$str_arr['main_table'].="<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=".$user_skill['video_url']."></iframe></div><hr><div>".$user_skill['video_description']."";				
-				if(strpos($_SERVER['HTTP_REFERER'],'vcard-update')==TRUE) 
-				{
+				
 					$str_arr['main_table'].="<div class='pull-right'>";
 					$str_arr['main_table'].="<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openvideo('".$user_skill['id']."','".$user_skill['video_url']."','".$user_skill['video_description']."');>";
 					$str_arr['main_table'].="<div class='pull-right'><i class='fa fa-pencil-square-o'></i></span></div>";
-				}
+				
 				$str_arr['main_table'].="</div></div>";
 				$str_arr['moblie_table'].="<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=".$user_skill['video_url']."></iframe></div><hr><div>".$user_skill['video_description']."</div></div>";				
 				$cnt+=1;
@@ -3373,7 +3371,7 @@ public function deleteExperience()
 		$error_array['from']=''; 
    
 	    $this->form_validation->set_rules('to', 'To', 'trim|required|valid_email');
-        $this->form_validation->set_rules('fromid', 'From', 'trim|required|valid_email');
+        $this->form_validation->set_rules('fromid', 'From', 'trim|required');
     
 		if ($this->form_validation->run() == FALSE) 
 		{
@@ -3396,13 +3394,13 @@ public function deleteExperience()
 							'wordwrap' => TRUE
 					);
 				
-					$message = "Hello , <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Please find below Link. <br /><br /> " . $_SERVER['HTTP_REFERER'] . " ";
+					$message = "Hello, <br /> <br /> Please find below Link. <br /><br /> " . $this->input->post('shorten_url') . " ";
 					$message .= "<br /><br /> Thanks & Regards,";
-					$message .= "<br /> RPDigitel Team";
+					$message .= "<br /> " . $this->input->post('fromid');
 					
 					$this->load->library('email', $config);
 					$this->email->set_newline("\r\n");
-					$this->email->from(trim($this->input->post('fromid'))); // change it to yours
+					$this->email->from(trim('rpdigitel@gmail.com')); // change it to yours
 					$this->email->to(trim($this->input->post('to'))); // change it to yours
 					$this->email->subject('Welcome to RP Digital');
 					$this->email->message($message);				
@@ -3419,5 +3417,30 @@ public function deleteExperience()
 					exit;
 		}			
    }
+   public function main_view($slug)
+   {
+		$this->load->library('google_url_api');
+		$session_data = $this->session->userdata();
+		$this->load->model('common_model');
+       
+        $data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
+
+		//$data['user_experience_data'] = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
+                
+       // $data['user_education_data'] = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
+ 
+        //$data['user_skills']= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
+		
+		//$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']),'id DESC ',2);
+
+		
+		  $url = current_url(); 
+          $this->google_url_api->enable_debug(FALSE);
+          $short_url = $this->google_url_api->shorten($url);
+		  if(!empty($short_url->id))
+		  	 $data['shorten_url']=$short_url->id;
+		
+        $this->load->view('vcard_detail_view_main',$data);
+	}
    
 }
