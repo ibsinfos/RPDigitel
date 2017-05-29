@@ -69,8 +69,8 @@ class Vcard extends CI_Controller {
 
 	public function view($slug)
 	{
-		 $this->load->library('google_url_api');
-		 $session_data = $this->session->userdata();
+		$this->load->library('google_url_api');
+		$session_data = $this->session->userdata();
 		$this->load->model('common_model');
         // $slug = $this->uri->segment(1);
 
@@ -84,28 +84,36 @@ class Vcard extends CI_Controller {
 		
 		$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']),'id DESC ',2);
 
-		
-		  $url = current_url();
+		 
+		  $data['shorten_url']='';	 	
+		  $url = current_url(); 
           $this->google_url_api->enable_debug(FALSE);
           $short_url = $this->google_url_api->shorten($url);
-		  
+		  //echo '<pre>'; print_r($short_url); 
 		  if(!empty($short_url->id))
 		  	  $data['shorten_url']=$short_url->id;
 		 
 		  		
-		
-		
-		
-       // $busi_strat = $this->common_model->getRecords(TABLES::$BUSINESS_STRAT, '*', array('user_id' => $arr[0]['id']));
-
+	    $this->template->set('user',$data['user']);
+        $this->template->set('user_experience_data',$data['user_experience_data']);
+        $this->template->set('user_education_data',$data['user_education_data']);
+        $this->template->set('user_skills',$data['user_skills']);
+        $this->template->set('user_blog',$data['user_blog']);
+        $this->template->set('shorten_url',$data['shorten_url']);
        
-
-        //$tabs = $this->common_model->getRecords(TABLES::$VCARD_TABS, '*', array('user_id' => $arr[0]['id']));
-
-        //$custom_tabs = $this->common_model->getRecords(TABLES::$VCARD_CUSTOM_TABS, '*', array('user_id' => $arr[0]['id']));
-
+       
+        $this->template->set('page', 'dashboard');
+        $this->template->set('page_type', 'inner');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('vcard_view')
+                ->title('PaasPort | Dashboard')
+                ->set_partial('header', 'partials/vcard_header_view');
+        $this->template->build('vcard_detail_view');
 		
-        $this->load->view('vcard_detail_view',$data);
+		
+     
+		
+       // $this->load->view('vcard_detail_view',$data);
 	}	
     public function saveUserinfo() {
         $this->load->helper('utility_helper');
@@ -3423,15 +3431,7 @@ public function deleteExperience()
 		$session_data = $this->session->userdata();
 		$this->load->model('common_model');
        
-        $data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
-
-		//$data['user_experience_data'] = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
-                
-       // $data['user_education_data'] = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
- 
-        //$data['user_skills']= $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']));
-		
-		//$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id'=>$data['user'][0]['user_id'],'vcard_id'=>$data['user'][0]['id']),'id DESC ',2);
+		$data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
 
 		
 		  $url = current_url(); 
