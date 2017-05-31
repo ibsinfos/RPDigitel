@@ -61,5 +61,55 @@ $route['paasport'] = 'paasport/signup';
 $route['wbs_suite/wbs_subscribe_payment_success'] = 'user/wbs_suite/wbs_subscribe_payment_success';
 $route['wbs_suite/wbs_subscribe_payment_fail'] = 'user/wbs_suite/wbs_subscribe_payment_fail';
 
+/* Silo routs */
+$route['404'] = 'frontend/Pages/pageNotFound404';
+$route['account/login'] = 'backend/login';
+$route['submitlogin'] = 'backend/login/adminlogin';
+$route['dashboard'] = 'backend/Dashboard/index';
+$route['register/employee'] = 'frontend/Register/employee';
+$route['my-subscribers'] = 'backend/dashboard/mySubscribers';
+$route['order-history'] = 'backend/dashboard/orderHistory';
+$route['download-center'] = 'backend/dashboard/downloadCenter';
+
+$route['setting'] = 'backend/dashboard/setting';
+
+
+$route['subscriber-list'] = 'backend/subscriber/subscriberList';
+$route['add-subscriber'] = 'backend/subscriber/addSubscriber';
+
+
+$route['project-list'] = 'backend/project/projectList';
+$route['add-project'] = 'backend/project/addProject';
+$route['upload-files'] = 'backend/project/uploadFiles';
+$route['view-files'] = 'backend/project/browse_files';
+
+
+$route['download-data'] = 'backend/download_data/index';
+
+$route['product-list'] = 'backend/store/productList';
+$route['pending-orders'] = 'backend/store/pendingOrders';
+$route['revenue'] = 'backend/store/revenue';
+
+$route['set-store-name'] = 'backend/setting/setStoreName';
+$route['payment-details'] = 'backend/setting/paymentDetails';
+
+
+$route['sync-with-card'] = 'backend/setting/syncWithCard';
+$route['logout'] = 'backend/Login/logout';
+
+
+/*
+ * Routes for frontend
+ */
+
+$route['home'] = 'frontend/pages/home';
+$route['about-us'] = 'frontend/pages/aboutUs';
+$route['checkout'] = 'frontend/pages/checkout';
+$route['contact-us'] = 'frontend/pages/contactUs';
+$route['register'] = 'frontend/pages/register';
+$route['support'] = 'frontend/pages/support';
+//$route['silo_login'] = 'frontend/pages/login';
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

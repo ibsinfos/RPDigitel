@@ -261,6 +261,14 @@
 				echo '<p class="error">Please Enter valid Username and Password';
 				} else { // incorrect username or password
 				
+						$user_account=array();
+						$user_account['username']=$this->input->post('username');
+						$user_account['email']=$user['email_address'];
+						$user_account['user_id']=$user['user_id'];
+						$user_account['role_id']=$user['role_id'];
+						$user_account['purchase_pack']=$user['purchase_pack'];
+						
+				
 				if($user['two_way_authentication']=='Y'){//OTP verification Start
 					//redirect(base_url()."otp");
 					
@@ -274,7 +282,8 @@
 					'phone_no' => $user['phone_no'],
 					'role_id' => $user['role_id'],
 					'email' => $user['email_address'],
-					'purchase_pack' => $user['purchase_pack']
+					'purchase_pack' => $user['purchase_pack'],					
+					'user_account' => $user_account
 					);					
 					$this->session->set_userdata($data);
 					
@@ -292,14 +301,15 @@
 					'user_id' => $user['user_id'],
 					'role_id' => $user['role_id'],
 					'email' => $user['email_address'],
-					'purchase_pack' => $user['purchase_pack']
+					'purchase_pack' => $user['purchase_pack'],
+					'user_account' => $user_account
 					);
 					// ifsession_start();
 					//$_SESSION['testt']='123';
 					$this->session->set_userdata($data);
 					
 					
-					
+					//echo '<pre>'; print_r($this->session->userdata); exit;
 					
 				}
 				
@@ -342,7 +352,7 @@
 				$user_account['role_id']=$user['role_id'];
 				$user_account['purchase_pack']=$user['purchase_pack'];
 				$_SESSION['user_account']=$user_account;
-				
+				//$this->session->set_userdata($user_account);
 				//echo '<pre>'; print_r($_SESSION); exit;
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
 				

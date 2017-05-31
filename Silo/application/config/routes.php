@@ -55,11 +55,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 
 $route['404'] = 'frontend/Pages/pageNotFound404';
+
 $route['404_override'] = 'frontend/Pages/pageNotFound404';
 $route['default_controller'] = 'frontend/pages/home';
+
 $route['account/login'] = 'backend/login';
-
-
 $route['submitlogin'] = 'backend/login/adminlogin';
 $route['dashboard'] = 'backend/Dashboard/index';
 $route['register/employee'] = 'frontend/Register/employee';

@@ -11,7 +11,7 @@ if (!function_exists('backend_asset_url()')) {
     }
 
 }
-if (!function_exists('asset_url()')) {
+if (!function_exists('frontend_asset_url()')) {
 
     function frontend_asset_url()
     {
@@ -19,7 +19,14 @@ if (!function_exists('asset_url()')) {
     }
 
 }
+if (!function_exists('backend_passport_url()')) {
 
+    function backend_passport_url()
+    {
+        return base_url().'paas-port/';
+    }
+
+}
 /**
  * 
  * @param File $file

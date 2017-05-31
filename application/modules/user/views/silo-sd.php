@@ -296,7 +296,8 @@
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                         <li><a href="<?php echo base_url().'paas-port/view/'.$slug; ?>"> Profile</a></li>
 									<li><a href="<?php 
-												echo base_url()."Silo/dashboard";
+												echo base_url()."dashboard";
+												//echo base_url()."Silo/dashboard";
 												// echo base_url()."silosd/backend/login/adminlogin";
 												
 											?>"> Go to Dashboard &nbsp; </a></li>
