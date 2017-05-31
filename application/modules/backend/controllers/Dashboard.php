@@ -46,13 +46,22 @@ Class Dashboard extends MX_Controller
 
     public function index()
     {
+		//$this->load->library('google_url_api');
 			
 		 //$data['user'][0]['user_id']=31;
 		// echo '<pre>';
 		// print_r($this->session->userdata()); exit;
 		
-		 $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
-		//echo '<pre>'; print_r($user);
+		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
+		
+		// create a shorten url
+		  /*$url = current_url(); 
+          $this->google_url_api->enable_debug(FALSE);
+          $short_url = $this->google_url_api->shorten($url);
+		  if(!empty($short_url->id))
+		  	 $data['shorten_url']=$short_url->id; */
+		// create a shorten url
+		
         $this->template->set('user',$user);
         $this->template->set('page', 'dashboard');
         $this->template->set_theme('default_theme');
