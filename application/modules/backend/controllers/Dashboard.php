@@ -43,7 +43,10 @@ Class Dashboard extends MX_Controller
            redirect(base_url());
 		}
     }
-
+	public function community()
+	{
+		$this->load->view('community');
+	}
     public function index()
     {
 		//$this->load->library('google_url_api');

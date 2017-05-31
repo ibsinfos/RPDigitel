@@ -1536,3 +1536,103 @@ DEBUG - 2017-05-31 16:48:16 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-por
 DEBUG - 2017-05-31 16:48:16 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/default.php
 INFO - 2017-05-31 16:48:16 --> Final output sent to browser
 DEBUG - 2017-05-31 16:48:16 --> Total execution time: 0.0857
+INFO - 2017-05-31 19:41:28 --> Config Class Initialized
+INFO - 2017-05-31 19:41:28 --> Hooks Class Initialized
+DEBUG - 2017-05-31 19:41:29 --> UTF-8 Support Enabled
+INFO - 2017-05-31 19:41:29 --> Utf8 Class Initialized
+INFO - 2017-05-31 19:41:29 --> URI Class Initialized
+INFO - 2017-05-31 19:41:29 --> Router Class Initialized
+INFO - 2017-05-31 19:41:29 --> Output Class Initialized
+INFO - 2017-05-31 19:41:29 --> Security Class Initialized
+DEBUG - 2017-05-31 19:41:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 19:41:29 --> Input Class Initialized
+INFO - 2017-05-31 19:41:29 --> Language Class Initialized
+INFO - 2017-05-31 19:41:29 --> Language Class Initialized
+INFO - 2017-05-31 19:41:29 --> Config Class Initialized
+INFO - 2017-05-31 19:41:29 --> Loader Class Initialized
+INFO - 2017-05-31 19:41:29 --> Helper loaded: form_helper
+INFO - 2017-05-31 19:41:29 --> Helper loaded: url_helper
+INFO - 2017-05-31 19:41:29 --> Helper loaded: utility_helper
+INFO - 2017-05-31 19:41:29 --> Helper loaded: encrypt_helper
+INFO - 2017-05-31 19:41:29 --> Database Driver Class Initialized
+INFO - 2017-05-31 19:41:29 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-31 19:41:29 --> User Agent Class Initialized
+DEBUG - 2017-05-31 19:41:29 --> Template Class Initialized
+INFO - 2017-05-31 19:41:29 --> Encrypt Class Initialized
+INFO - 2017-05-31 19:41:29 --> Controller Class Initialized
+INFO - 2017-05-31 19:41:29 --> Helper loaded: text_helper
+INFO - 2017-05-31 19:41:29 --> Form Validation Class Initialized
+INFO - 2017-05-31 19:41:29 --> Model Class Initialized
+INFO - 2017-05-31 19:41:29 --> Model Class Initialized
+DEBUG - 2017-05-31 19:41:29 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/vcard_header.php
+DEBUG - 2017-05-31 19:41:29 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/vcard_update_main.php
+DEBUG - 2017-05-31 19:41:29 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/vcard_default.php
+INFO - 2017-05-31 19:41:29 --> Final output sent to browser
+DEBUG - 2017-05-31 19:41:29 --> Total execution time: 0.8618
+INFO - 2017-05-31 19:41:31 --> Config Class Initialized
+INFO - 2017-05-31 19:41:31 --> Hooks Class Initialized
+DEBUG - 2017-05-31 19:41:31 --> UTF-8 Support Enabled
+INFO - 2017-05-31 19:41:31 --> Utf8 Class Initialized
+INFO - 2017-05-31 19:41:31 --> URI Class Initialized
+INFO - 2017-05-31 19:41:31 --> Router Class Initialized
+INFO - 2017-05-31 19:41:31 --> Output Class Initialized
+INFO - 2017-05-31 19:41:31 --> Security Class Initialized
+DEBUG - 2017-05-31 19:41:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 19:41:31 --> Input Class Initialized
+INFO - 2017-05-31 19:41:31 --> Language Class Initialized
+INFO - 2017-05-31 19:41:31 --> Language Class Initialized
+INFO - 2017-05-31 19:41:31 --> Config Class Initialized
+INFO - 2017-05-31 19:41:31 --> Loader Class Initialized
+INFO - 2017-05-31 19:41:31 --> Helper loaded: form_helper
+INFO - 2017-05-31 19:41:31 --> Helper loaded: url_helper
+INFO - 2017-05-31 19:41:31 --> Helper loaded: utility_helper
+INFO - 2017-05-31 19:41:31 --> Helper loaded: encrypt_helper
+INFO - 2017-05-31 19:41:31 --> Database Driver Class Initialized
+INFO - 2017-05-31 19:41:31 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-31 19:41:31 --> User Agent Class Initialized
+DEBUG - 2017-05-31 19:41:31 --> Template Class Initialized
+INFO - 2017-05-31 19:41:31 --> Encrypt Class Initialized
+INFO - 2017-05-31 19:41:31 --> Controller Class Initialized
+INFO - 2017-05-31 19:41:31 --> Helper loaded: text_helper
+INFO - 2017-05-31 19:41:31 --> Form Validation Class Initialized
+INFO - 2017-05-31 19:41:31 --> Model Class Initialized
+INFO - 2017-05-31 19:41:31 --> Model Class Initialized
+DEBUG - 2017-05-31 19:41:31 --> Config file loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\config/google_url_api.php
+DEBUG - 2017-05-31 19:41:32 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/vcard_header_view.php
+DEBUG - 2017-05-31 19:41:32 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/vcard_detail_view.php
+DEBUG - 2017-05-31 19:41:32 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/vcard_view.php
+INFO - 2017-05-31 19:41:32 --> Final output sent to browser
+DEBUG - 2017-05-31 19:41:32 --> Total execution time: 0.6619
+INFO - 2017-05-31 19:48:34 --> Config Class Initialized
+INFO - 2017-05-31 19:48:34 --> Hooks Class Initialized
+DEBUG - 2017-05-31 19:48:34 --> UTF-8 Support Enabled
+INFO - 2017-05-31 19:48:34 --> Utf8 Class Initialized
+INFO - 2017-05-31 19:48:34 --> URI Class Initialized
+INFO - 2017-05-31 19:48:34 --> Router Class Initialized
+INFO - 2017-05-31 19:48:34 --> Output Class Initialized
+INFO - 2017-05-31 19:48:34 --> Security Class Initialized
+DEBUG - 2017-05-31 19:48:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 19:48:34 --> Input Class Initialized
+INFO - 2017-05-31 19:48:34 --> Language Class Initialized
+INFO - 2017-05-31 19:48:34 --> Language Class Initialized
+INFO - 2017-05-31 19:48:34 --> Config Class Initialized
+INFO - 2017-05-31 19:48:34 --> Loader Class Initialized
+INFO - 2017-05-31 19:48:34 --> Helper loaded: form_helper
+INFO - 2017-05-31 19:48:34 --> Helper loaded: url_helper
+INFO - 2017-05-31 19:48:34 --> Helper loaded: utility_helper
+INFO - 2017-05-31 19:48:34 --> Helper loaded: encrypt_helper
+INFO - 2017-05-31 19:48:34 --> Database Driver Class Initialized
+INFO - 2017-05-31 19:48:34 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-31 19:48:34 --> User Agent Class Initialized
+DEBUG - 2017-05-31 19:48:34 --> Template Class Initialized
+INFO - 2017-05-31 19:48:34 --> Encrypt Class Initialized
+INFO - 2017-05-31 19:48:34 --> Controller Class Initialized
+INFO - 2017-05-31 19:48:34 --> Form Validation Class Initialized
+INFO - 2017-05-31 19:48:34 --> Model Class Initialized
+INFO - 2017-05-31 19:48:34 --> Model Class Initialized
+DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/inner_header.php
+DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/inner_footer.php
+DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/manage_vcard.php
+DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/default.php
+INFO - 2017-05-31 19:48:34 --> Final output sent to browser
+DEBUG - 2017-05-31 19:48:34 --> Total execution time: 0.2181

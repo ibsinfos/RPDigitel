@@ -96,6 +96,7 @@ $route['payment-details'] = 'backend/setting/paymentDetails';
 
 $route['sync-with-card'] = 'backend/setting/syncWithCard';
 $route['logout'] = 'backend/Login/logout';
+$route['community'] = 'backend/Dashboard/community';
 
 
 /*
