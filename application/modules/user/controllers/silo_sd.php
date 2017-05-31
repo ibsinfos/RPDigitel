@@ -29,11 +29,18 @@
 		}
 		
 		function index() {
+
 			// $this->load->view('silo-sd');
+			$data['slug']=$this->getSlugname($_SESSION['paasport_user_id']); 
 			$data['main_content'] = 'silo-sd';
 			$this->load->view('includes/template', $data);
 		}
 		
-		
+		function getSlugname($user_id)
+		{
+			$this->load->model('membership_model');
+			$slug=$this->membership_model->get_paasport_slug($user_id);
+			return $slug;
+		}
 		
 	}

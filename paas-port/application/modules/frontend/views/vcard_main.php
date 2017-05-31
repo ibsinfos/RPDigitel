@@ -83,6 +83,11 @@
                                                     <input name="pincode" type="text" class="form-control"
                                                            placeholder="422010" value="" >
                                                 </div>
+												 <div class="margin-top-10">
+                                                    <label>Cover Image
+                                                    </label>
+                                                    <input name="cover_image"  type="file"   value="" >
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">

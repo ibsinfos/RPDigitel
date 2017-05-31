@@ -233,6 +233,8 @@
 				$_SESSION['email_address'] = $user['email_address'];
 				
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
+
+				// echo '<pre>'; print_r($_SESSION); die; 
 				
 				// $this->session->set_userdata($data);
 				
@@ -245,8 +247,12 @@
 			}
 		}
 		
-		function validate_credentials() {
+		function validate_credentials() 
+		{
 			$this->load->model('membership_model');
+			
+			
+			
 			$user = $this->membership_model->get_user_role();
 			$query_result = $this->membership_model->validate_user($user['role']);
 			
@@ -265,12 +271,13 @@
 					// 'is_logged_in' => true,
 					'role' => $user['role'],
 					'user_id' => $user['user_id'],
-					'phone_no' => $user['phone_no']
-					);
-					
-					
+					'phone_no' => $user['phone_no'],
+					'role_id' => $user['role_id'],
+					'email' => $user['email_address'],
+					'purchase_pack' => $user['purchase_pack']
+					);					
 					$this->session->set_userdata($data);
-
+					
 					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
@@ -282,17 +289,33 @@
 					'username' => $query_result,
 					'is_logged_in' => true,
 					'role' => $user['role'],
-					'user_id' => $user['user_id']
+					'user_id' => $user['user_id'],
+					'role_id' => $user['role_id'],
+					'email' => $user['email_address'],
+					'purchase_pack' => $user['purchase_pack']
 					);
-					
+					// ifsession_start();
+					//$_SESSION['testt']='123';
 					$this->session->set_userdata($data);
+					
+					
 					
 					
 				}
 				
+				/**/
+				//$passport_user_slug = $this->membership_model->get_paasport_slug($user['user_id']);
+				
+				/**/
+				
+				
+				
+				
 				if (!isset($_SESSION)) {
 					session_start();
 				}
+				
+				
 				
 				$_SESSION['user_name'] = $this->input->post('username');
 				//                $_SESSION['user_name']="admin";
@@ -307,14 +330,30 @@
 				$_SESSION['crm_db_id'] = $user['crm_db_id'];
 				$_SESSION['email_address'] = $user['email_address'];
 				
+				$_SESSION['email'] = $user['email_address'];
+				$_SESSION['role_id'] = $user['role_id'];
+				$_SESSION['purchase_pack'] = $user['purchase_pack'];
 				
+				
+				$user_account=array();
+				$user_account['username']=$this->input->post('username');
+				$user_account['email']=$user['email_address'];
+				$user_account['user_id']=$user['user_id'];
+				$user_account['role_id']=$user['role_id'];
+				$user_account['purchase_pack']=$user['purchase_pack'];
+				$_SESSION['user_account']=$user_account;
+				
+				//echo '<pre>'; print_r($_SESSION); exit;
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
+				
+				
 				
 				if($user['two_way_authentication']!='Y'){
 					echo 'true';
 				}
 
-
+				
+				
                 //To set flashdata Success message
                 $this->session->set_flashdata('login_success_msg','You logged in successfully');
 //                $this->session->set_userdata('login_success_msg','You logged in successfully');

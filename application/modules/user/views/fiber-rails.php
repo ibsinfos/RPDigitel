@@ -36,6 +36,8 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
 			<div class="container-fluid topnav">
 				<!-- Brand and toggle get grouped for better mobile display -->
+				
+					
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
@@ -44,8 +46,10 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+				
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>images/wbs-suite/dot-matrix.png" height="30" style="margin-right:10px; margin-left: 10px;"></a>
-					<ul class="col-lg-6 dropdown-menu mega-dropdown-menu row">
+					
+						<ul class="col-lg-6 dropdown-menu mega-dropdown-menu row">
 						<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12" >
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -73,7 +77,30 @@
 							</div>
 							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-25" >
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="<?php echo base_url(); ?>wbs_suite">
+									<?php 
+									if ($this->session->userdata('member_service_remaining_days')) 
+									{
+										if ($this->session->userdata('member_service_remaining_days')<0) {
+											
+											$websuit=base_url()."wbs_suite";
+										}
+										else
+										{
+											$websuit=base_url()."crm/login";	
+										}
+									}	
+									else if ($this->session->userdata('crm_subscription')) 
+									{
+										$websuit=base_url()."crm/login";	
+									}
+									else
+									{
+										$websuit=base_url()."wbs_suite";
+									}	
+										
+									?>
+									
+									<a href="<?php echo $websuit; ?>">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/wbssuite.png" alt="Card image cap" width="177" height="61" style="margin-bottom: 10px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">WBS Business Suite</h4>
@@ -81,7 +108,8 @@
 									</a>
 								</div>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="<?php echo base_url(); ?>paasport">
+									<!--<a href="<?php echo base_url(); ?>paasport">-->
+									<a href="<?php echo base_url(); ?>paas-port/dashboard">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">PaaSPort</h4>
@@ -100,10 +128,13 @@
 							</div>
 						</li>
 					</ul>
+					
 					<img class="block mob-brand" src="<?php echo base_url(); ?>images/frlogo.png?crc=100938625" alt="" height="70"
 					style="padding-top: 5px; padding-bottom: 5px;">
 					
 				</div>
+				
+				
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
@@ -123,7 +154,9 @@
 						
 						<?php  if(!$this->session->userdata('is_logged_in')){   ?>
 							<li>
-								<a href="#" class="top-navlinks" type="button" data-toggle="modal" data-target="#memberLogin"><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
+								<!--<a href="#" class="top-navlinks" type="button" data-toggle="modal" data-target="#memberLogin"><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
+								Member Login</a>-->
+								<a href="<?php echo base_url(); ?>login" class="top-navlinks" type="button" ><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
 								Member Login</a>
 							</li>
 							
@@ -421,7 +454,9 @@
 		<div class="row" style="background:#f8f8f8; padding:50px;">
 			<div class="container hosting col-lg-offset-1 col-lg-10 col-md-offset-0 col-md-12 col-sm-offset-3 col-sm-6">
 				<div class="col-lg-3 col-md-4" >
+					<a href="http://54.209.190.106/landingpage/" >
 					<img src="<?php echo base_url(); ?>images/silorails.png" style="padding: 20px ; background: #ffffff; border:1px transparent; border-radius:7px;" class="silorailsimg">
+					</a>
 				</div>
 				<div class="col-lg-8 col-md-8">
 					<h4 style="color: #ffffff; font-weight:600;">Host your business on Silowebhosting.com !</h4>
@@ -506,6 +541,7 @@
 						</div>
 						<div class="card-footer">
 							<a href="<?php echo base_url(); ?>paasport" class="btn btn-danger btn-block">
+							<!--<a href="<?php echo base_url(); ?>paas-port/dashboard" class="btn btn-danger btn-block">-->
                                 View Service
 								
 							</a>

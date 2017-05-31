@@ -25,7 +25,9 @@ class Vcard extends CI_Controller {
 		
         $session_data = $this->session->userdata();
         $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
-
+		
+		$first_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' =>$session_data['paasport_user_id']),'id ASC',1);
+		
         //To get User Experience, Education Details        
         $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
                 
@@ -46,6 +48,7 @@ class Vcard extends CI_Controller {
         $this->template->set('user_blog', $user_blog);
 		
 		}
+        $this->template->set('first_user',$first_user);
         $this->template->set('user_data', $userdata);
         $this->template->set('user_exp_data', $user_experience_data);
         $this->template->set('user_edu_data', $user_education_data);
@@ -166,6 +169,33 @@ class Vcard extends CI_Controller {
                   unlink($filename);
                   } */
                 $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
+            } else {
+                // $user['user_image'] = $this->input->post('user_image_old');
+            }
+			 if (isset($_FILES['cover_image']) && !empty($_FILES['cover_image']['name'])) {
+                $config = array();
+                $config['upload_path'] = './uploads/silo_scan_disc/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('cover_image')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+                    $map ['msg'] = "User Image upload error - " . $error;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }
+                /* $filename = $_SERVER['DOCUMENT_ROOT']."/novaevcard/".$this->input->post('old_user_image'); 
+                  if (file_exists($filename)) {
+                  unlink($filename);
+                  } */
+                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -2083,6 +2113,34 @@ public function deleteExperience()
                   unlink($filename);
                   } */
                 $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
+            } else {
+                // $user['user_image'] = $this->input->post('user_image_old');
+            }
+			 if (isset($_FILES['cover_image']) && !empty($_FILES['cover_image']['name'])) 
+			{
+                $config = array();
+                $config['upload_path'] = './uploads/silo_scan_disc/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['remove_spaces'] = TRUE;
+                $config['encrypt_name'] = TRUE;
+                $config['overwrite'] = FALSE;
+
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                if (!$this->upload->do_upload('cover_image')) {
+                    $error = $this->upload->display_errors();
+                    $map ['status'] = 0;
+                    $map ['msg'] = "User Image upload error - " . $error;
+                    echo json_encode($map);
+                    exit;
+                } else {
+                    $data = array('upload_data' => $this->upload->data());
+                }
+                /* $filename = $_SERVER['DOCUMENT_ROOT']."/novaevcard/".$this->input->post('old_user_image'); 
+                  if (file_exists($filename)) {
+                  unlink($filename);
+                  } */
+                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }

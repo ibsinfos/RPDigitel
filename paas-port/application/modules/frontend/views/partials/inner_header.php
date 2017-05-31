@@ -1,8 +1,11 @@
 <?php $session_data = $this->session->userdata();?>
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
-                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="<?php echo base_url()?>dashboard">Paasport </a>
+        <div class="container"> 
+		
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>					
+					<a class="brand" href="<?php echo base_url()?>dashboard">Paasport </a>
             <div class="nav-collapse">
                 <ul class="nav pull-right">
 <!--                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
@@ -16,7 +19,14 @@
                                 class="icon-user"></i> <?php echo "Hello " . ucfirst($session_data['user_account']['first_name']); ?> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <!--<li><a href="<?php echo base_url() ?>vcard-edit">Update vCard</a></li>-->
-                            <!--<li><a href="javascript:;">Profile</a></li>-->
+                            <?php 
+								$profileurl='';
+							
+								if($user[0]['id'])
+									$profileurl=base_url()."paasport-update/".$user[0]['id'];
+						?>
+							<li><a href="<?php  echo $profileurl;?>">Profile</a></li>
+							<li><a href="<?php echo base_url(); ?>paasport-manage"> Go to Dashboard</a></li>
                             <li><a href="<?php echo base_url() ?>logout" onclick="return confirm('Are you sure?')">Logout</a></li>
                         </ul>
                     </li>

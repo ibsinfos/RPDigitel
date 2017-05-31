@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+	<?php 
+		// echo '<pre>'; print_r($_SESSION); die; ?>
     <head>
 		
         <meta charset="utf-8">
@@ -92,8 +93,30 @@
 								</div>
 							</div>
 							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-25" >
+								<?php 
+									if ($this->session->userdata('member_service_remaining_days')) 
+									{
+										if ($this->session->userdata('member_service_remaining_days')<0) {
+											
+											$websuit=base_url()."wbs_suite";
+										}
+										else
+										{
+											$websuit=base_url()."crm/login";	
+										}
+									}	
+									else if ($this->session->userdata('crm_subscription')) 
+									{
+										$websuit=base_url()."crm/login";	
+									}
+									else
+									{
+										$websuit=base_url()."wbs_suite";
+									}	
+										
+									?>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="<?php echo base_url(); ?>wbs_suite">
+									<a href="<?php echo $websuit; ?>">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/wbssuite.png" alt="Card image cap" width="177" height="61" style="margin-bottom: 10px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">WBS Business Suite</h4>
@@ -101,7 +124,8 @@
 									</a>
 								</div>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="<?php echo base_url(); ?>paasport">
+									<!--<a href="<?php echo base_url(); ?>paasport">-->
+										<a href="<?php echo base_url(); ?>paas-port/dashboard">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">PaaSPort</h4>
@@ -306,7 +330,7 @@
 									?>
 									
                                     <?php 
-										
+									
 										if ($this->session->userdata('member_service_remaining_days')) {
 											
 											if ($this->session->userdata('member_service_remaining_days')<0) {

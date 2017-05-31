@@ -17,7 +17,7 @@ class Dashboard extends CI_Controller {
 	
 			// print_r($_SESSION['user_account']['user_id']);
 			
-			// print_r($_SESSION['user_account']);
+			 //echo '<pre>'; print_r(); exit;
 	
 		if(!isset($_SESSION)) {
 			session_start();
@@ -28,7 +28,13 @@ class Dashboard extends CI_Controller {
             $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
             redirect("login");
         }
-        $this->template->set('page', 'dashboard');
+		
+		
+		
+		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS,'*',array('user_id'=>$_SESSION['paasport_user_id']),'id ASC ',1);
+      
+	   $this->template->set('user',$user);
+		$this->template->set('page', 'dashboard');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('default')
@@ -109,7 +115,9 @@ class Dashboard extends CI_Controller {
             $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
             redirect("login");
         }
-
+		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS,'*',array('user_id'=>$_SESSION['paasport_user_id']),'id ASC ',1);
+      
+	   $this->template->set('user',$user);
 		$this->template->set('page', 'vcard-manage');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');

@@ -53,8 +53,10 @@
 					   
                         <div class="Accounts widget-content" style="text-align:center;">
 
-						<img src="<?php echo base_url();?>/load_image.php?user_id=<?php echo $_SESSION['user_account']['user_id'];?>">
-							
+						<!--<img src="<?php echo base_url();?>/load_image.php?user_id=<?php echo $_SESSION['user_account']['user_id'];?>">-->
+							<?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
+								<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
+							<?php } ?>
 						</div>
 
 						

@@ -84,6 +84,11 @@
                                                     <input name="pincode" type="text" class="form-control"
                                                            placeholder="422010" value="<?php echo ($user_data['0']['home_postal_code']) ? $user_data['0']['home_postal_code'] : ''; ?>" >
                                                 </div>
+												 <div class="margin-top-10">
+                                                    <label>Cover Image
+                                                    </label>
+                                                    <input name="cover_image"  type="file"   value="" >
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">

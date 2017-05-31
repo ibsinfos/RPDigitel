@@ -44,6 +44,92 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>images/wbs-suite/dot-matrix.png" height="30" style="margin-right:10px; margin-left: 10px;"></a>
+					
+						<ul class="col-lg-6 dropdown-menu mega-dropdown-menu row">
+						<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<a href="<?php echo base_url(); ?>fiberrails">
+										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/fiberrails%20main96x86.png" alt="Card image cap" style="height: 77px;">
+										<div class="card-block" style="border:none;">
+											<h4 class="card-title center black">Fiber Rails Portal</h4>
+										</div>
+									</a>
+								</div>
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<a href="<?php echo base_url(); ?>silo_sd">
+										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/silo%20main%20logo.png" alt="Card image cap" height="66" width="133" style="margin-top:10px; margin-bottom: 9px;">
+										<div class="card-block" style="border:none;">
+											<h4 class="card-title center black">Silo Cloud Services</h4>
+										</div>
+									</a>
+								</div>
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4" >
+									<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/scandisc%20main%20logo.png" alt="Card image cap" width="189" height="20" style="margin-top:25px; margin-bottom:40px;">
+									<div class="card-block" style="border:none;">
+										<h4 class="card-title center black">Scandisc Registry</h4>
+									</div>
+								</div>
+							</div>
+							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-25" >
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<?php 
+									if ($this->session->userdata('member_service_remaining_days')) 
+									{
+										if ($this->session->userdata('member_service_remaining_days')<0) {
+											
+											$websuit=base_url()."wbs_suite";
+										}
+										else
+										{
+											$websuit=base_url()."crm/login";	
+										}
+									}	
+									else if ($this->session->userdata('crm_subscription')) 
+									{
+										$websuit=base_url()."crm/login";	
+									}
+									else
+									{
+										$websuit=base_url()."wbs_suite";
+									}	
+										
+									?>
+									
+									<a href="<?php echo $websuit; ?>">
+									
+									<!--<a href="<?php echo base_url(); ?>wbs_suite">-->
+										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/wbssuite.png" alt="Card image cap" width="177" height="61" style="margin-bottom: 10px;">
+										<div class="card-block" style="border:none;">
+											<h4 class="card-title center black">WBS Business Suite</h4>
+										</div>
+									</a>
+								</div>
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<!--<a href="<?php echo base_url(); ?>paasport">-->
+									<a href="<?php echo base_url(); ?>paas-port/dashboard">
+										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
+										<div class="card-block" style="border:none;">
+											<h4 class="card-title center black">PaaSPort</h4>
+										</div>
+									</a>
+								</div>
+								
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<a href="<?php echo base_url(); ?>silo_bank">
+										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/silobank.png" alt="Card image cap" width="77" height="60"  >
+										<div class="card-block" style="border:none;">
+											<h4 class="card-title center black">Silo Bank</h4><br>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+					
 					<img src="<?php echo base_url(); ?>images/silo-bank/silobank-u3927-fr.png" class=" logo">
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->

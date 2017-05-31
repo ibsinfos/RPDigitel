@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   |	example.com/class/method/id/
   |
   | In some instances, however, you may want to remap this relationship
-  | so that a different class/function is called than the one
+  | so that a different class/function is called than the one  
   | corresponding to the URL.
   |
   | Please see the user guide for complete details:

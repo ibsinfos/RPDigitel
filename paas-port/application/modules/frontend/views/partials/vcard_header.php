@@ -1,4 +1,5 @@
 <!-- Navigation -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
     <div class="container-fluid topnav">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,7 +41,31 @@
 							</div>
 							<div class="card-deck container col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-25" >
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="../wbs_suite">
+									<?php 
+										
+									if ($_SESSION['member_service_remaining_days']) 
+									{
+										if ($_SESSION['member_service_remaining_days']<0) {
+											
+											$websuit="../wbs_suite";
+										}
+										else
+										{
+											$websuit="../crm/login";	
+										}
+									}	
+									else if ($_SESSION['crm_subscription']) 
+									{
+										$websuit="../crm/login";	
+									}
+									else
+									{
+										$websuit="../wbs_suite";
+									}	
+										
+									?>
+									
+									<a href="<?php echo $websuit; ?>">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo asset_url(); ?>main_vcard/images/services/wbssuite.png" alt="Card image cap" width="177" height="61" style="margin-bottom: 10px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">WBS Business Suite</h4>
@@ -48,7 +73,9 @@
 									</a>
 								</div>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<a href="../paasport">
+									
+									<a href="../paas-port/dashboard">
+									<!--<a href="../paasport">-->
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo asset_url(); ?>main_vcard/images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">
 											<h4 class="card-title center black">PaaSPort</h4>
@@ -210,7 +237,13 @@
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
-                        <li><a href="javascript:;"> Profile</a></li>
+						<?php 
+								$profileurl='';
+								if($first_user[0]['id'])
+									$profileurl=base_url()."paasport-update/".$first_user[0]['id'];
+						?>
+                        <li><a href="<?php echo $profileurl; ?>"> Profile</a></li>
+                        <li><a href="<?php echo base_url(); ?>paasport-manage"> Go to Dashboard</a></li>
                         <li><a href="subscribe.html"> Subscribe &nbsp;
                             <small style="background: #ff0000; color:#ffffff; padding:3px;"> Free</small>
                         </a></li>

@@ -3,6 +3,8 @@
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
+							
+						
 							<a class="navbar-brand" href="#"><img src="<?php echo asset_url(); ?>vcard_detail_view/images/logo.jpg" alt="Scanoiscs" /></a>
 							<button type="button" class="navbar-toggle collapsed visible-xs visible-sm" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 								<span class="sr-only">Toggle navigation</span>
@@ -10,6 +12,12 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
+							
+							<!--Start Add navigation -->
+							
+							<!--End Add navigation -->
+							
+							
 						</div>
 						
 						<!-- Collect the nav links, forms, and other content for toggling -->

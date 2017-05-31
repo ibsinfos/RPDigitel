@@ -45,6 +45,8 @@
 				$data['paasport_user_id'] = $row->paasport_user_id;
 				$data['phone_no'] = $row->phone_no;
 				$data['two_way_authentication'] = $row->two_way_authentication;
+				$data['role_id'] = $row->role_id;
+				$data['purchase_pack'] = $row->purchase_pack;
 				// Return the user found
 				return $data;
 			}
@@ -199,6 +201,7 @@
 				$this->session->set_userdata('advanced', $advanced);
 				$this->session->set_userdata('enterprise', $enterprise);
 				$this->session->set_userdata('crm_subscription', 'yes');
+				$_SESSION['crm_subscription']='yes';
 				/* To check whether free trial period completed or not Start*/
 				
 				if($advanced=='0' && $enterprise=='0'){
@@ -207,6 +210,7 @@
 					$member_service_remaining_days=$this->member_service_remaining_days($user_id,$service_id);
 					// if($member_service_remaining_days<0){
 						$this->session->set_userdata('member_service_remaining_days',$member_service_remaining_days);
+						$_SESSION['member_service_remaining_days']=$member_service_remaining_days;
 						// }
 				}
 				
@@ -277,7 +281,17 @@
 		/* To get any service free trial remaining days End*/
 		
 		
-		
+		public function get_paasport_slug($id=null)
+		{
+			$this->db->where('user_id',$id);
+			$query = $this->db->get('tbl_vcard_basic');
+			if ($query->num_rows() > 0) 
+			{
+				$row =  $query->first_row();
+				
+				return $row->slug;				
+			}	
+		}
 	}
 	
 ?>

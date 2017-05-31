@@ -38,7 +38,8 @@
 |
 */
 
-$route['default_controller'] = "user/login"; 
+//$route['default_controller'] = "user/login"; 
+$route['default_controller'] = "user/fiberrails"; 
 
 $route['404_override'] = '';
 

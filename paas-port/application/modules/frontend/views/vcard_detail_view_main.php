@@ -95,7 +95,16 @@
 				<p class="membershipDate">Member Since Jan 2, 2017</p>
 			</div>
 		</div>
-		<div class="bannerWrap"></div>
+		<div class="bannerWrap">
+			<?php
+			$cover_img=asset_url()."vcard_detail_view/images/banner.jpg";
+			if(!empty($user[0]['cover_image']))
+			{
+				$cover_img=base_url().$user[0]['cover_image'];
+			}
+			?>
+			<img src="<?php echo $cover_img; ?>" />
+		</div>
 		<div class="versionWrap">
 			<div class="container">
 				<div class="row">

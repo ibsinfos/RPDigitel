@@ -4,15 +4,14 @@
 		
 		function __construct() {
 			parent::__construct();
-			$this->is_logged_in();
+			//$this->is_logged_in();
 			//  modules::run('user/login/is_logged_in');
 		}
 		
 		function is_logged_in() {
 			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
-//			 print_r($this->session->userdata);
-//			 die('ddd');
+
 			if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') {
 				//echo 'You don\'t have permission to access this page. <a href="user/login">Login</a>';	
 				
@@ -37,12 +36,12 @@
 		$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
 		
-			if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') {
+			/*if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') {
 			
 				redirect('login');
 				
 				die();
-			}
+			}*/
 			
 			
 //                    $_SESSION['sess_name']='rpdigitel1';

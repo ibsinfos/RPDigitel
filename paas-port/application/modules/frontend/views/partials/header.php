@@ -47,7 +47,7 @@
 						</a>
 					</li>
 					<li class="nav-item 
-						<?php if ($page == 'pricing') echo 'active'; ?>">
+					<?php if ($page == 'pricing') echo 'active'; ?>">
 						<a class="nav-link" href="<?php echo base_url() ?>homepage?pricing-plan" id="pricing">Pricing
 						</a>
 					</li>
