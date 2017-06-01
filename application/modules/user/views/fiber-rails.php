@@ -15,6 +15,7 @@
 		<link href="<?php echo base_url(); ?>css/custom-responsive.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>css/fiber-rails.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>css/class.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>css/front-end.css" rel="stylesheet">
 		
 		<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
 		<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
@@ -31,11 +32,10 @@
 		<![endif]-->
 	</head>
 	<body style="overflow-x: hidden;">
-		
-		<!-- Navigation -->
-		<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
+		<?php $this->load->view('includes/main_header'); ?>
+		<!-- <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
 			<div class="container-fluid topnav">
-				<!-- Brand and toggle get grouped for better mobile display -->
+				Brand and toggle get grouped for better mobile display 
 				
 					
 				<div class="navbar-header">
@@ -108,7 +108,6 @@
 									</a>
 								</div>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<!--<a href="<?php echo base_url(); ?>paasport">-->
 									<a href="<?php echo base_url(); ?>paas-port/dashboard">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">
@@ -135,7 +134,7 @@
 				</div>
 				
 				
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				Collect the nav links, forms, and other content for toggling 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
 					<ul class="nav navbar-nav navbar-right">
@@ -154,8 +153,7 @@
 						
 						<?php  if(!$this->session->userdata('is_logged_in')){   ?>
 							<li>
-								<!--<a href="#" class="top-navlinks" type="button" data-toggle="modal" data-target="#memberLogin"><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
-								Member Login</a>-->
+								
 								<a href="<?php echo base_url(); ?>login" class="top-navlinks" type="button" ><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
 								Member Login</a>
 							</li>
@@ -297,8 +295,7 @@
 									<span class=" fa fa-angle-down"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-usermenu pull-right">
-									<li><a href="javascript:;"> Profile</a></li>
-									<!--<li><a href="<?php //echo base_url(); ?>user/wbs_suite/wbs_subscribe"> Subscribe &nbsp; <small style="background: #ff0000; color:#ffffff; padding:3px;"> Free</small></a></li>-->
+									<li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>"> Profile</a></li>
 									<li>
 										<a href="<?php echo base_url(); ?>login/logout" onclick="return confirm('Are you sure?')"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
 									</li>
@@ -310,9 +307,7 @@
 						
 					</ul>
 				</div>
-				<!-- /.navbar-collapse -->
 			</div>
-			<!-- /.container -->
 			<div>
 				<a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse">Learn More about Fiber Rail Services</a>
 				<div id="demo" class=" collapse" style="background: #ffffff; ">
@@ -367,8 +362,62 @@
 					</div>
 				</div>
 			</div>
-		</nav>
-		<!-- Header -->
+		</nav> -->
+		<!-- Learn More About -->
+		<div class="learnMoreAbout">
+			<a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse">Learn More about Fiber Rail Services</a>
+			<div id="demo" class=" collapse" style="background: #ffffff; ">
+				<ul class="list-inline hidden-xs" style="margin-bottom:0px; padding:20px; padding-left:10%">
+					<li class=" padding-left-30"><a class="black" href="#">RPDigital</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">FiberRails</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">SiloSD</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">SiloWebHosting</a></li>
+					<li class=" padding-left-30"><a class="black"  href="#">SiloBank</a></li>
+					<li class=" padding-left-30"><a class="black"  href="#">ScanDiscs</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">MyScandisc</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">MyScandiscTV</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">NetWork</a></li>
+					<li class=" padding-left-30"><a class="black" href="#">MarketPlace</a></li>
+				</ul>
+				<div class="col-md-6 " style="background: #ffffff;">
+					<div class="col-md-2 hidden-xs hidden-sm"> <img class="block"  src="<?php echo base_url(); ?>images/scandisc%20box82x82.png?crc=4246127547" alt="" width="70" height="70" style=" margin-top: 80px;"></div>
+					<div class="col-md-6 hidden-xs hidden-sm"><img class="block"  src="<?php echo base_url(); ?>images/thingorilla_business_135.jpg?crc=290504810" alt="" width="330" height="220" style="margin-top:80px; margin-bottom:66px;"></div>
+				</div>
+				<div class="col-md-6 col-xs-12" style="background: #ffffff">
+					<div class="margin-top-25">
+						<div class="col-md-2 ">
+							<img class="center-block img-responsive" src="<?php echo base_url(); ?>images/silo-cloud.png" alt="" style="margin-top: 25px;">
+						</div>
+						<div class="col-md-10">
+							<h3>Flexible hosting startups</h3>
+							<p>Easy to use tools, included business mail accounts, and the best dynamic page builder in the business. All to help you make your mark !</p>
+						</div>
+						<div class="col-md-2 ">
+							<img class="center-block img-responsive margin-top-10"  src="<?php echo base_url(); ?>images/websuite.png" alt="">
+						</div>
+						<div class="col-md-10">
+							<h3>All the tools you need to hang the OPEN sign...</h3>
+							<p>E-commerce, ERP and CRM centered around your ideas for growth.</p>
+						</div>
+						<div class="col-md-2 ">
+							<img class="center-block img-responsive  "  src="<?php echo base_url(); ?>images/fiber-rails.png" alt="">
+						</div>
+						<div class="col-md-10">
+							<h3>Introducing FiberRails...</h3>
+							<p>Many solutions offer platforms, our focus is on the Handrails!</p>
+						</div>
+						<div class="col-md-2 ">
+							<img class="center-block img-responsive  margin-top-25 "  src="<?php echo base_url(); ?>images/payments.png" alt="">
+						</div>
+						<div class="col-md-10 padding-bottom-40">
+							<h3>Accept Payments !</h3>
+							<p>Mobile Payments, invoicing, sales and banking services just got easier...</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- slider container-->
 		<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 			<!-- Indicators -->

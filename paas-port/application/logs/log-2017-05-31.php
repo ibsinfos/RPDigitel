@@ -1636,3 +1636,37 @@ DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-por
 DEBUG - 2017-05-31 19:48:34 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/default.php
 INFO - 2017-05-31 19:48:34 --> Final output sent to browser
 DEBUG - 2017-05-31 19:48:34 --> Total execution time: 0.2181
+INFO - 2017-05-31 19:57:05 --> Config Class Initialized
+INFO - 2017-05-31 19:57:05 --> Hooks Class Initialized
+DEBUG - 2017-05-31 19:57:05 --> UTF-8 Support Enabled
+INFO - 2017-05-31 19:57:05 --> Utf8 Class Initialized
+INFO - 2017-05-31 19:57:05 --> URI Class Initialized
+INFO - 2017-05-31 19:57:05 --> Router Class Initialized
+INFO - 2017-05-31 19:57:05 --> Output Class Initialized
+INFO - 2017-05-31 19:57:05 --> Security Class Initialized
+DEBUG - 2017-05-31 19:57:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 19:57:05 --> Input Class Initialized
+INFO - 2017-05-31 19:57:05 --> Language Class Initialized
+INFO - 2017-05-31 19:57:05 --> Language Class Initialized
+INFO - 2017-05-31 19:57:05 --> Config Class Initialized
+INFO - 2017-05-31 19:57:05 --> Loader Class Initialized
+INFO - 2017-05-31 19:57:05 --> Helper loaded: form_helper
+INFO - 2017-05-31 19:57:05 --> Helper loaded: url_helper
+INFO - 2017-05-31 19:57:05 --> Helper loaded: utility_helper
+INFO - 2017-05-31 19:57:05 --> Helper loaded: encrypt_helper
+INFO - 2017-05-31 19:57:05 --> Database Driver Class Initialized
+INFO - 2017-05-31 19:57:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-05-31 19:57:05 --> User Agent Class Initialized
+DEBUG - 2017-05-31 19:57:05 --> Template Class Initialized
+INFO - 2017-05-31 19:57:05 --> Encrypt Class Initialized
+INFO - 2017-05-31 19:57:05 --> Controller Class Initialized
+INFO - 2017-05-31 19:57:05 --> Helper loaded: text_helper
+INFO - 2017-05-31 19:57:05 --> Form Validation Class Initialized
+INFO - 2017-05-31 19:57:05 --> Model Class Initialized
+INFO - 2017-05-31 19:57:05 --> Model Class Initialized
+DEBUG - 2017-05-31 19:57:05 --> Config file loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\config/google_url_api.php
+DEBUG - 2017-05-31 19:57:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/vcard_header_view.php
+DEBUG - 2017-05-31 19:57:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\modules/frontend/views/vcard_detail_view.php
+DEBUG - 2017-05-31 19:57:05 --> File loaded: C:\xampp1\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/vcard_view.php
+INFO - 2017-05-31 19:57:05 --> Final output sent to browser
+DEBUG - 2017-05-31 19:57:05 --> Total execution time: 0.2373

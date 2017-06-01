@@ -30,10 +30,10 @@
 			}
 		}
 		
-		function index() {
+		function index() 
+		{
 		
-		
-		$is_logged_in = $this->session->userdata('is_logged_in');
+			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
 		
 			/*if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') {
@@ -79,10 +79,9 @@ $config['dbxyz']['stricton'] = FALSE;
 //Now you can load the new database using
     //    echo $this->dbxyz = $this->load->database('dbxyz'); 
 //    die();
-                    
-                    
-                    
-			$data['main_content'] = 'fiber-rails';
+            $this->load->model('common_model');    
+            $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+       		$data['main_content'] = 'fiber-rails';
 			$this->load->view('includes/template', $data);
 		}
 		

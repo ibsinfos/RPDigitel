@@ -436,5 +436,13 @@ class Common_Model extends CI_Model {
 }
 
     /* Function To Get posted days start */
+	
+	
+	public function getPaasportSlug($paasport_id=null)
+	{
+		 $vcard_user = $this->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$paasport_id),'id ASC',1);
+		 return $vcard_user[0]['slug'];	  
+	}
+	
 }
 ?>
