@@ -62,7 +62,13 @@ class Contacts extends CI_Controller {
         $lists = $this->contact_model->get_contacts($config["per_page"], $page, NULL);
 
         $pagination = $this->pagination->create_links();
-
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		
         $this->template->set('pagination', $pagination);
         $this->template->set('lists', $lists);
         $this->template->set('page', 'contacts');
@@ -84,6 +90,11 @@ class Contacts extends CI_Controller {
         if (!$this->common_model->isLoggedIn()) {
             $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
             redirect("login");
+        }
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
         }
         $contacts = $this->common_model->getRecords(TABLES::$CLIENT_CONTACTS, '*', array('user_id' => $this->user_id));
         $this->template->set('contacts', $contacts);
@@ -168,7 +179,12 @@ class Contacts extends CI_Controller {
             redirect("login");
         }
         $contacts = $this->common_model->getRecords(TABLES::$CLIENT_CONTACTS, '*', array('user_id' => $this->user_id));
-        $this->template->set('contacts', $contacts);
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		$this->template->set('contacts', $contacts);
         $this->template->set('page', 'newcontact');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
@@ -194,6 +210,13 @@ class Contacts extends CI_Controller {
             $optinlist = $this->common_model->getRecords(TABLES::$OPTIN_LIST, '*', array('id' => decode_url($listid)));
         }
         $contacts = $this->common_model->getRecords(TABLES::$CLIENT_CONTACTS, '*', array('user_id' => $this->user_id));
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		
         $this->template->set('edit_id', $listid);
         $this->template->set('optinlist', $optinlist);
         $this->template->set('contacts', $contacts);
@@ -295,7 +318,13 @@ if (!$this->common_model->isLoggedIn()) {
         }
         $this->load->model('contact_model');
         $users = $this->contact_model->getUsers(decode_url($id));
-
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		
         $this->template->set('users', $users);
         $this->template->set('list_id', $id);
         $this->template->set('page', 'contacts');

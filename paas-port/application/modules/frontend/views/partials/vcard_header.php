@@ -238,11 +238,11 @@
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
 						<?php 
-								$profileurl='';
+								/*$profileurl='';
 								if($first_user[0]['id'])
-									$profileurl=base_url()."paasport-update/".$first_user[0]['id'];
+									$profileurl=base_url()."paasport-update/".$first_user[0]['id']; */
 						?>
-                        <li><a href="<?php echo $profileurl; ?>"> Profile</a></li>
+                        <li><a href="<?php echo base_url(); ?>view/<?php echo $slug; ?>"> Profile</a></li>
                         <li><a href="<?php echo base_url(); ?>paasport-manage"> Go to Dashboard</a></li>
                         <li><a href="subscribe.html"> Subscribe &nbsp;
                             <small style="background: #ff0000; color:#ffffff; padding:3px;"> Free</small>

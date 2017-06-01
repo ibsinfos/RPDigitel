@@ -33,6 +33,12 @@ class Dashboard extends CI_Controller {
 		
 		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS,'*',array('user_id'=>$_SESSION['paasport_user_id']),'id ASC ',1);
       
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+	  
 	   $this->template->set('user',$user);
 		$this->template->set('page', 'dashboard');
         $this->template->set('page_type', 'inner');
@@ -117,7 +123,14 @@ class Dashboard extends CI_Controller {
         }
 		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS,'*',array('user_id'=>$_SESSION['paasport_user_id']),'id ASC ',1);
       
-	   $this->template->set('user',$user);
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		
+	  
+	    $this->template->set('user',$user);
 		$this->template->set('page', 'vcard-manage');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');

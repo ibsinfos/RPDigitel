@@ -48,6 +48,13 @@ class Vcard extends CI_Controller {
         $this->template->set('user_blog', $user_blog);
 		
 		}
+		
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
         $this->template->set('first_user',$first_user);
         $this->template->set('user_data', $userdata);
         $this->template->set('user_exp_data', $user_experience_data);
@@ -96,7 +103,11 @@ class Vcard extends CI_Controller {
 		  if(!empty($short_url->id))
 		  	  $data['shorten_url']=$short_url->id;
 		 
-		  		
+		 if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        } 		
 	    $this->template->set('user',$data['user']);
         $this->template->set('user_experience_data',$data['user_experience_data']);
         $this->template->set('user_education_data',$data['user_education_data']);
@@ -1993,7 +2004,14 @@ public function deleteExperience()
         //$this->template->set('user_link', $user_link);
         //$this->template->set('user_video_url', $user_video_url);
         //$this->template->set('user_portfolio', $user_portfolio);
-        $this->template->set('page', 'dashboard');
+		
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
+        }
+		$this->template->set('page', 'dashboard');
         $this->template->set('page', 'dashboard');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');
@@ -2011,6 +2029,12 @@ public function deleteExperience()
         if (!$this->common_model->isLoggedIn()) {
             $this->session->set_flashdata('msg', 'Your session is time out. Please login to continue.');
             redirect("login");
+        }
+		
+		if(!empty($_SESSION['paasport_user_id'])) 
+		{
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('slug',$slug);
         }
 		
         $session_data = $this->session->userdata();

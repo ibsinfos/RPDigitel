@@ -61,7 +61,8 @@
                     <div class="personalInfoWrap text-center">
                         <div class="musicianWrap">
                             <div class="btnColumn">
-                                <button class="btn subscribeBtn">Edit</button>
+                               <a href="<?php echo backend_passport_url(); ?>paasport-update/<?php echo $user[0]['id'];  ?>" > <button class="btn subscribeBtn">Edit</button></a>
+                                
 							</div>
                             <div class="musicianImageName">
 								<?php
@@ -70,15 +71,15 @@
 											$userImg=backend_passport_url().$user[0]['user_image'];
 								?>	
                                 <img src="<?php echo $userImg; ?>" alt="" class="img-circle">
-                                <p class="musicianName text-muted"><?php echo $user[0]['first_name'] ?> <?php echo $user[0]['last_name'] ?></p>
-                                <p class="text-muted"><?php echo $user[0]['home_address'] ?></p>
+                                <p class="musicianName text-muted"><?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?> <?php echo ($user[0]['last_name'])?$user[0]['last_name']:''; ?></p>
+                                <p class="text-muted"><?php echo ($user[0]['home_address'])?$user[0]['home_address']:''; ?></p>
 							</div>
                             <div class="btnColumn">
                                 <button class="btn shareBtn" data-toggle="modal" data-target="#myModal">Share</button>
 							</div>
 						</div>
-                        <p class="profession">Musician, Writer</p>
-                        <p>Member Since Jan 2, 2017</p>
+                        <p class="profession"><?php echo ($user[0]['job_title'])?$user[0]['job_title']:''; ?></p>
+                        <p>Member Since <?php echo ($user[0]['start_date'])?$user[0]['start_date']:''; ?></p>
 					</div>
                     <!-- <div class="audioPlayerWrap row">
                         <div class="playerCol col-xs-2 col-sm-3">
@@ -362,5 +363,76 @@
 									</div>
 									<!-- /page content -->
 									
-									<!-- Modal -->
-										
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Share </h4>
+			</div>
+			<form>
+				<div class="err_mailsend" ></div>
+				<div class="modal-body text-center">
+					<h4 class="modalHeading">Share by Text or Email</h4>
+					
+					<div class="form-group text-left">
+						<input id="shorten_url" name="shorten_url" type="hidden" value="<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" >
+						<label for="to">To <small>(required)</small></label>
+						<input id="to" name="to" type="text" class="form-control" placeholder="Recipients Email" >
+						<span id="err_to" ></span>    
+					</div>
+					<div class="form-group text-left">
+						<label for="from">From <small>(required)</small></label>
+						<input id="fromid" name="fromid" type="text"  class="form-control"  placeholder="Senders Email/Name" >
+						<span id="err_from" ></span>      
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn" id="btnemailsend">Send</button>
+					</div>
+				</form> 
+				<h4 class="modalHeading">Sharing by Social Network</h4>
+				
+				<ul class="list-unstyled list-inline socialShareWrap">
+					
+						<li>
+							<a href="//www.facebook.com/sharer/sharer.php?u=<?php echo $shorten_url; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+						</li>
+					
+					
+						<li>
+							<a href="http://twitter.com/intent/tweet?url=<?php echo $shorten_url; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+						</li>
+					
+					
+						<li>
+							<a href="//plus.google.com/share?url=<?php echo $shorten_url; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+						</li>
+					
+					
+						<li>
+							<a href="//pinterest.com/pin/create/button/?url=<?php echo $shorten_url; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+						</li>
+					
+					
+					<!--<li>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+					</li>-->
+					
+						<li>
+							<a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $shorten_url; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						</li>
+							
+				</ul>
+				<h4 class="modalHeading">Short URL for Sharing Page</h4>
+				<p><a href=""><?php echo $shorten_url; ?></a></p>
+				<?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
+					<h4 class="modalHeading">Scan QRCode for Link</h4>
+					<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
+				<?php } ?>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End Modal -->
+								
