@@ -306,7 +306,7 @@
                                     <span class=" fa fa-angle-down"></span>
 								</a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                    <li><a href="javascript:;"> Profile</a></li>
+                                    <li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>"> Profile</a></li>
 									
 									<?php if ($this->session->userdata('crm_subscription')) { ?>                          
 										<li><a href="<?php echo base_url(); ?>wbs_suite/wbs_subscribe"> Subscribe &nbsp; 

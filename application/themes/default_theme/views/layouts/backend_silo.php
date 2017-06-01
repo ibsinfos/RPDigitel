@@ -6,9 +6,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		
         <title><?php echo $template['title'] ?> </title>
-
+		
         <!-- Bootstrap -->
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome -->
@@ -17,7 +17,7 @@
         <link href="<?php echo backend_asset_url() ?>vendors/nprogress/nprogress.css" rel="stylesheet">
         <!-- iCheck -->
         <link href="<?php echo backend_asset_url() ?>vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-
+		
         <!-- bootstrap-progressbar -->
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
         <!-- JQVMap -->
@@ -26,21 +26,21 @@
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
         
         <link href="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-
+		
         <!-- Custom Theme Style -->
         <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
         <?php if ($page == 'project_list') { ?>
-        <link href="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo backend_asset_url() ?>vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo backend_asset_url() ?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo backend_asset_url() ?>vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
-        <?php } ?>
+			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+		<?php } ?>
 		
 		<!-- Dropzone.js -->
         <link href="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
-    </head>
-
+	</head>
+	
     <body class="nav-md">
         <div class="container body">
             <div class="main_container">
@@ -48,9 +48,9 @@
                 <?php if (isset($template['partials']['header'])) echo $template['partials']['header']; ?>
                 <?php echo $template['body']; ?>
                 <?php if (isset($template['partials']['footer'])) echo $template['partials']['footer']; ?>
-            </div>
-        </div>
-
+			</div>
+		</div>
+		
         <!-- jQuery -->
         <script src="<?php echo backend_asset_url() ?>vendors/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap -->
@@ -104,27 +104,73 @@
             <script src="<?php echo backend_asset_url() ?>vendors/jszip/dist/jszip.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/pdfmake/build/pdfmake.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/pdfmake/build/vfs_fonts.js"></script>
-        <?php } ?>
+		<?php } ?>
 		
 		<?php if($page=="upload_files"){?>
-		
-		 <!-- Dropzone.js -->
-         <script src="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.js"></script>
-		
+			
+			<!-- Dropzone.js -->
+			<script src="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.js"></script>
+			
 		<?php }?>
 		
         <!-- validator -->
         <script src="<?php echo backend_asset_url() ?>vendors/validator/validator.js"></script>
 		<!-- Parsley Form Validator 
-         <script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
+		<script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
         <!-- Music List Scripts used in dashboard -->
         <?php if($page=="dashboard"){?>
             <script src="<?php echo backend_asset_url() ?>build/js/music-list.js"></script>
-        <?php }?>
+		<?php }?>
         <!-- Custom Scrollbar Scripts -->
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
-
-    </body>
+		
+		
+		<script type="text/javascript"  >
+			$(document).ready(function () {
+				$('#btnemailsend').click(function() {
+					
+					$(".err_mailsend").html('<div class="loader"><div class="title">Sending...</div><div class="load"><div class="bar"></div></div></div>');	
+					
+					$("#err_to").html('');
+					$("#err_from").html('');
+					
+					$.ajax({
+						url: "<?php echo base_url() ?>backend/dashboard/sendmail",
+						type: "POST",
+						data: {
+							to:$('#to').val(),
+							fromid:$('#fromid').val(),
+							shorten_url:$('#shorten_url').val()
+						},
+						success: function (data)
+						{
+							$(".err_mailsend").html('');	
+							var json = JSON.parse(data);
+							if (json.status === 1) 
+							{						
+								
+								$("#err_to").html('');
+								$("#err_from").html('');						
+								$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+								return true;
+							}
+							else 
+							{
+								
+								//$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+								$("#err_to").html('<div class="text-danger">' + json.msg.to + '</div>');
+								$("#err_from").html('<div class="text-danger">' + json.msg.from + '</div>');
+								
+								
+								return false;
+							}
+						}
+					});     
+				});
+			});
+		</script>
+		
+	</body>
 </html>
