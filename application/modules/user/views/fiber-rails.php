@@ -31,7 +31,7 @@
 		<![endif]-->
 	</head>
 	<body style="overflow-x: hidden;">
-		
+		<?php $this->load->view('includes/main_header'); ?>
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
 			<div class="container-fluid topnav">
@@ -297,7 +297,7 @@
 									<span class=" fa fa-angle-down"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-usermenu pull-right">
-									<li><a href="javascript:;"> Profile</a></li>
+									<li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>"> Profile</a></li>
 									<!--<li><a href="<?php //echo base_url(); ?>user/wbs_suite/wbs_subscribe"> Subscribe &nbsp; <small style="background: #ff0000; color:#ffffff; padding:3px;"> Free</small></a></li>-->
 									<li>
 										<a href="<?php echo base_url(); ?>login/logout" onclick="return confirm('Are you sure?')"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
