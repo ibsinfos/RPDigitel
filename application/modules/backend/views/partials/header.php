@@ -23,7 +23,7 @@
                     <li>
                       <a href="javascript:;">
                         <img src="<?php echo backend_asset_url()?>images/img.jpg" alt="" class="img-circle" width="35">
-                        <?php echo $session_data['user_account']['username'];?>
+                        <?php echo ucfirst($session_data['user_account']['username']);?>
                       </a>
                     </li>
                     <li><a href="javascript:;"> Profile</a></li>

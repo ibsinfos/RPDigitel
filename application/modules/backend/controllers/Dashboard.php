@@ -45,7 +45,14 @@ Class Dashboard extends MX_Controller
     }
 	public function community()
 	{
-		$this->load->view('community');
+		//$this->load->view('community');
+		 $this->template->set('page','community');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('backend_community')
+                ->title('Silo | Community')
+                ->set_partial('header','partials/header_community')                
+                ->set_partial('footer','partials/footer_community');
+        $this->template->build('community');
 	}
     public function index()
     {
@@ -66,7 +73,7 @@ Class Dashboard extends MX_Controller
 		// create a shorten url
 		
         $this->template->set('user',$user);
-        $this->template->set('page', 'dashboard');
+        $this->template->set('page','dashboard');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('backend_silo')
                 ->title('Admin Dashboard | Silo')
