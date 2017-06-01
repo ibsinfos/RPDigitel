@@ -5,10 +5,11 @@
 	<title>Silo</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="css/bootstrap.min.css"  rel="stylesheet" />
-	<link href="font-awesome/css/font-awesome.min.css"  rel="stylesheet" />
-	<link href="css/jquery.mCustomScrollbar.min.css"  rel="stylesheet" />
-	<link href="css/vcard-style.css"  rel="stylesheet" />
+	<!-- Bootstrap -->
+    <link href="<?php echo backend_asset_url() ?>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="<?php echo backend_asset_url() ?>/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo backend_asset_url() ?>/css/community.css"  rel="stylesheet" />
 
 	 <!--[if lt IE 9]>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,7 +20,7 @@
 		  <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Scanoiscs" /></a>
+			  <a class="navbar-brand" href="#"><img src="<?php echo backend_asset_url() ?>/images/logo.jpg" alt="Scanoiscs" /></a>
 			  <button type="button" class="navbar-toggle collapsed visible-xs visible-sm" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -39,7 +40,7 @@
 				<li><a href="#"><i class="fa fa-file"></i></a></li>
 				<li class="searchWrap"><a href="#"><i class="fa fa-search"></i></a></li>
 				<li><a href="#" class="userImage">
-						<img src='images/user.png' alt="user" class="img-responsive">
+						<img src='<?php echo backend_asset_url() ?>/images/img.jpg' alt="user" class="img-responsive">
 						<span class="">Hi, Kerry</span>
 					</a>
 				</li>
@@ -93,14 +94,14 @@
 			</div>
 			<div class="col-sm-6">
 				<a href="" class="newsWrap firstNews">
-					<img src="images/community/news1.jpg" alt="background1" class="">
+					<img src="<?php echo backend_asset_url() ?>/images/community/news1.jpg" alt="background1" class="">
 					<div class="newsContent">
 						<span class="newsType">Technology</span>
 						<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
 					</div>
 				</a>
 				<a href="" class="newsWrap secondNews">
-					<img src="images/community/new2.jpg" alt="background1" class="">
+					<img src="<?php echo backend_asset_url() ?>/images/community/new2.jpg" alt="background1" class="">
 					<div class="newsContent">
 						<span class="newsType">Technology</span>
 						<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
@@ -116,7 +117,7 @@
 					<ul class="list-unstyled listWrap">
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="category">Entertainment</h5>
@@ -125,7 +126,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="category">Sport</h5>
@@ -134,7 +135,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="category">Entertainment</h5>
@@ -143,7 +144,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="category">Fashion</h5>
@@ -152,7 +153,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="category">Business</h5>
@@ -168,7 +169,7 @@
 					<ul class="list-unstyled">
 						<li class="row">
 							<div class="col-md-2 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="postBy">Jason Chaffetz <span>posted an update</span></h5>
@@ -176,12 +177,12 @@
 								<p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 							</div>
 							<div class="col-md-2">
-								<img src="images/community/qr-code.png" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/qr-code.png" alt="" class="img-responsive">
 							</div>
 						</li>
 						<li class="row">
 							<div class="col-md-2 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="postBy">Jason Chaffetz <span>posted an update</span></h5>
@@ -194,12 +195,12 @@
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							</div>
 							<div class="col-md-2">
-								<img src="images/community/qr-code.png" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/qr-code.png" alt="" class="img-responsive">
 							</div>
 						</li>
 						<li class="row">
 							<div class="col-md-2 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<h5 class="postBy">Jason Chaffetz <span>posted an update</span></h5>
@@ -207,7 +208,7 @@
 								<p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 							</div>
 							<div class="col-md-2">
-								<img src="images/community/qr-code.png" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/qr-code.png" alt="" class="img-responsive">
 							</div>
 						</li>
 					</ul>
@@ -217,7 +218,7 @@
 					<h4 class="heading2">Featured News</h4>
 					<div class="row">
 						<div class="col-md-6">
-							<img src="images/community/featured.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/featured.jpg" alt="" class="img-responsive">
 							<br>
 							<p class="category">Business</p>
 							<h4>Simply Sylvio is Vine's first avant -garded gorilla, and he's doing big things </h4>
@@ -228,7 +229,7 @@
 							<ul class="list-unstyled">
 								<li class="row">
 									<div class="col-md-3 imageBlock">
-										<img src="images/musician.jpg" alt="" class="img-responsive">
+										<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 									</div>
 									<div class="col-md-9">
 										<p class="category">Business</p>
@@ -237,7 +238,7 @@
 								</li>
 								<li class="row">
 									<div class="col-md-3 imageBlock">
-										<img src="images/musician.jpg" alt="" class="img-responsive">
+										<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 									</div>
 									<div class="col-md-9">
 										<p class="category">Business</p>
@@ -246,7 +247,7 @@
 								</li>
 								<li class="row">
 									<div class="col-md-3 imageBlock">
-										<img src="images/musician.jpg" alt="" class="img-responsive">
+										<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 									</div>
 									<div class="col-md-9">
 										<p class="category">Business</p>
@@ -262,17 +263,17 @@
 					<h4 class="heading3">Entertainment</h4>
 					<div class="row">
 						<div class="col-md-4">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							<p class="category">Business</p>
 							<h4 class="heading4">Simply Sylvio is Vine's first avant -garded gorilla, and he's doing big things </h4>
 						</div>
 						<div class="col-md-4">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							<p class="category">Business</p>
 							<h4 class="heading4">Simply Sylvio is Vine's first avant -garded gorilla, and he's doing big things </h4>
 						</div>
 						<div class="col-md-4">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							<p class="category">Business</p>
 							<h4 class="heading4">Simply Sylvio is Vine's first avant -garded gorilla, and he's doing big things </h4>
 						</div>
@@ -284,7 +285,7 @@
 					<ul class="list-unstyled">
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Fashion</p>
@@ -295,7 +296,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Fashion</p>
@@ -318,21 +319,21 @@
 					  	<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
 						    <div class="item active">
-						      <img src="images/community/other-news.jpg" alt="..." class="img-responsive">
+						      <img src="<?php echo backend_asset_url() ?>/images/community/other-news.jpg" alt="..." class="img-responsive">
 						      <div class="carousel-caption">
 						        <span class="newsType">Entertainment</span>
 								<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
 						      </div>
 						    </div>
 						    <div class="item">
-						      <img src="images/community/other-news.jpg" alt="..." class="img-responsive">
+						      <img src="<?php echo backend_asset_url() ?>/images/community/other-news.jpg" alt="..." class="img-responsive">
 						      <div class="carousel-caption">
 						        <span class="newsType">Entertainment</span>
 								<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
 						      </div>
 						    </div>
 						    <div class="item">
-						      <img src="images/community/other-news.jpg" alt="..." class="img-responsive">
+						      <img src="<?php echo backend_asset_url() ?>/images/community/other-news.jpg" alt="..." class="img-responsive">
 						      <div class="carousel-caption">
 						        <span class="newsType">Entertainment</span>
 								<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
@@ -345,7 +346,7 @@
 					<ul class="list-unstyled">
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Business</p>
@@ -356,7 +357,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Technology</p>
@@ -367,7 +368,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Business</p>
@@ -440,40 +441,40 @@
 					<h4 class="heading">Recently Active Members</h4>
 					<div class="row">
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<img src="images/musician.jpg" alt="" class="img-responsive">
+							<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 						</div>
 					</div>
 				</div>
@@ -483,7 +484,7 @@
 					<ul class="list-unstyled">
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">Terminator</h5>
@@ -492,7 +493,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">Source Code</h5>
@@ -501,7 +502,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">Goin in 60 Seconds<h5>
@@ -516,7 +517,7 @@
 					<ul class="list-unstyled">
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">Arnold Greitan John</h5>
@@ -525,7 +526,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">GhostPool</h5>
@@ -534,7 +535,7 @@
 						</li>
 						<li class="row">
 							<div class="col-md-3 imageBlock">
-								<img src="images/musician.jpg" alt="" class="img-responsive">
+								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-9">
 								<h5 class="listHeading">Chynna Phillips<h5>
@@ -645,7 +646,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<a class="" href="#"><img src="images/footer-logo.jpg" alt="Scanoiscs" /></a>
+					<a class="" href="#"><img src="<?php echo backend_asset_url() ?>/images/footer-logo.jpg" alt="Scanoiscs" /></a>
 				</div>
 				<div class="col-sm-6">
 					<ul class="list-unstyled list-inline socialMedia">
@@ -705,10 +706,11 @@
 	  		</div>
 		</div>
   	</div>
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- custom scrollbar plugin -->
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="js/vcard-custom.js"></script>
+  	<!-- jQuery -->
+    <script src="<?php echo backend_asset_url() ?>/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="<?php echo backend_asset_url() ?>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom -->
+	<script src="<?php echo backend_asset_url() ?>/js/community-custom.js"></script>
 </body>
 </html>
