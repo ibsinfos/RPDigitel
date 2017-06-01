@@ -79,9 +79,9 @@ $config['dbxyz']['stricton'] = FALSE;
 //Now you can load the new database using
     //    echo $this->dbxyz = $this->load->database('dbxyz'); 
 //    die();
+            $this->load->model('common_model');    
 			if(!empty($_SESSION['paasport_user_id']))
 			{
-				$this->load->model('common_model');    
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			}	
        		$data['main_content'] = 'fiber-rails';
