@@ -44,9 +44,8 @@ class Vcard extends CI_Controller {
 		$user_portfolio= $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $session_data['user_account']['user_id']));
 		if(!empty($this->session->userdata('vcard_id')))
 		{
-		$user_blog= $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' =>$session_data['user_account']['user_id'],'vcard_id'=>$this->session->userdata('vcard_id')));
-        $this->template->set('user_blog', $user_blog);
-		
+			$user_blog= $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' =>$session_data['user_account']['user_id'],'vcard_id'=>$this->session->userdata('vcard_id')));
+			$this->template->set('user_blog', $user_blog);
 		}
 		
 		
@@ -370,6 +369,7 @@ class Vcard extends CI_Controller {
 				$user['pinterest_link'] = $this->input->post('pinterest_url');
 				$user['received_email'] = $this->input->post('user_url');				
 				$uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id'=>$this->session->userdata('vcard_id')));
+				$this->generateQRCode1();
 				if ($uid) {
 					$map ['status'] = 1;
 					$map ['msg'] = "Social Information has been saved";
@@ -1625,7 +1625,7 @@ public function deleteExperience()
 					$ins_experience = $this->common_model->updateRow(TABLES::$VIDEO_DETAILS,$price_plan,array('id'=>$this->input->post('videourl_id')));
 					
 				}	
-				$this->generateQRCode1();
+				
 			 }
         	
 			

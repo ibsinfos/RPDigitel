@@ -85,7 +85,7 @@
 						</div>
 						<?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
 					<h4 class="modalHeading">Scan QRCode for Link</h4>
-					<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" height="200" />
+					<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="100px"  />
 				<?php } ?>
 					</div>
 					<div class="col-sm-4 memberListWrap">

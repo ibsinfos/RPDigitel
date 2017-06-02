@@ -89,4 +89,23 @@ $config['dbxyz']['stricton'] = FALSE;
 			$this->load->view('includes/template', $data);
 		}
 		
+		function main_dashboard()
+		{
+			$is_logged_in = $this->session->userdata('is_logged_in');
+			$user_role = $this->session->userdata('role');
+		
+			if (!isset($is_logged_in) || $is_logged_in != true || $user_role != 'user') 
+			{
+				redirect('login');
+				die();
+			}
+			$this->load->model('common_model');    
+			if(!empty($_SESSION['paasport_user_id']))
+			{
+				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			}	
+			$data['page'] = 'main_dashboard';
+			$this->load->view('user/main_dashboard',$data);			
+		}
+		
 	}

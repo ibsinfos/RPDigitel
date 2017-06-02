@@ -32,6 +32,7 @@
         <link href="<?php echo base_url(); ?>css/custom.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>css/wbs-suite.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>css/class.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>css/front-end.css" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
@@ -56,7 +57,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
             <div class="container-fluid topnav">
-                <!-- Brand and toggle get grouped for better mobile display -->
+               
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#bs-example-navbar-collapse-1">
@@ -123,8 +124,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<!--<a href="<?php echo base_url(); ?>paasport">-->
+								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">									
 										<a href="<?php echo base_url(); ?>paas-port/dashboard">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">

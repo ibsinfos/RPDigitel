@@ -14,7 +14,7 @@
 			</a>
 			<div class="dropdown-menu dotMatrixDropdown">
 				<div class="row">
-					<div class="card col-xs-4">
+					<div class="col-xs-4">
 						<a href="<?php echo base_url(); ?>fiberrails">
 							<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/fiberrails%20main96x86.png" alt="Card image cap" style="height: 77px;">
 							<div class="card-block" style="border:none;">
@@ -22,7 +22,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 						<a href="<?php echo base_url(); ?>dashboard">
 							<!--<a href="<?php echo base_url(); ?>silo_sd">-->
 							<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/silo%20main%20logo.png" alt="Card image cap" height="66" width="133" style="margin-top:10px; margin-bottom: 9px;">
@@ -31,7 +31,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4" >
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >
 						<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/scandisc%20main%20logo.png" alt="Card image cap" width="189" height="20" style="margin-top:25px; margin-bottom:40px;">
 						<div class="card-block" style="border:none;">
 							<h4 class="card-title center black">Scandisc Registry</h4>
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 				<div class="row margin-top-25" >
-					<div class="card col-xs-4">
+					<div class="col-xs-4">
 						<?php 
 							if ($this->session->userdata('member_service_remaining_days')) 
 							{
@@ -70,7 +70,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card col-xs-4">
+					<div class="col-xs-4">
 						<!--<a href="<?php echo base_url(); ?>paasport">-->
 						<a href="<?php echo base_url(); ?>paas-port/dashboard">
 							<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
@@ -79,7 +79,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card col-xs-4">
+					<div class="col-xs-4">
 						<a href="<?php echo base_url(); ?>silo_bank">
 							<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/silobank.png" alt="Card image cap" width="77" height="60"  >
 							<div class="card-block" style="border:none;">

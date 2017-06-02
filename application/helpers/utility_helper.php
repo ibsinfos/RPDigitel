@@ -27,6 +27,16 @@ if (!function_exists('backend_passport_url()')) {
     }
 
 }
+
+if (!function_exists('main_backend_passport_url()')) {
+
+    function main_backend_passport_url()
+    {
+        return base_url();
+    }
+
+}
+
 /**
  * 
  * @param File $file

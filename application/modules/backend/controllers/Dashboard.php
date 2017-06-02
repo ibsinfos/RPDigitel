@@ -32,14 +32,16 @@ Class Dashboard extends MX_Controller
 			
 		// echo $_SESSION['testt'];
 		
+		$this->sidebar = 'partials/marketplace_sidebar';
 		
-        if ($this->session['purchase_pack'] == '1') {
+       /* if ($this->session['purchase_pack'] == '1') {
             $this->sidebar = 'partials/marketplace_sidebar';
         } else if ($this->session['purchase_pack'] == '2') {
 		     $this->sidebar = 'partials/hosting_sidebar';
         } else {
             $this->sidebar = 'partials/both_sidebar';
-        }
+        } */
+		
         if (!$this->common_model->isLoggedIn())  {
            redirect(base_url());
 		}

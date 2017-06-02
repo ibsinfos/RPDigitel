@@ -52,6 +52,7 @@ $route['otp'] = 'user/otp/index';
 $route['login/logout'] = 'user/login/logout';
 $route['login/signup'] = 'user/login/signup';
 $route['fiberrails'] = 'user/fiberrails';
+$route['main_dashboard'] = 'user/fiberrails/main_dashboard';
 $route['silo_sd'] = 'user/silo_sd';
 $route['wbs_suite'] = 'user/wbs_suite';
 $route['silo_wallet'] = 'user/silo_wallet';

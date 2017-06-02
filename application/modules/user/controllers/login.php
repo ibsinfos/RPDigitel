@@ -113,9 +113,9 @@
 					'user_id' => $user['user_id'],
 					'phone_no' => $user['phone_no']
 					);
-				
+					
 					$this->session->set_userdata($data);
-
+					
 					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
@@ -151,7 +151,7 @@
 				$_SESSION['user_id'] = $user['user_id'];
 				$_SESSION['crm_db_id'] = $user['crm_db_id'];
 				$_SESSION['email_address'] = $user['email_address'];
-
+				
 				
 				/* code to check CRM db start */
 				
@@ -159,18 +159,18 @@
 				//Check record in rpdigitel.database_details table
 				
 				if($user['two_way_authentication']!='Y'){
-				
-				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
-				
-				if ($registered_with_crm == "error") {
-					echo 'true';
-					} else {
-					echo 'crm';
+					
+					$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
+					
+					if ($registered_with_crm == "error") {
+						echo 'true';
+						} else {
+						echo 'crm';
+					}
+					
+					
 				}
-
-
-				}
-
+				
                 //To set flashdata Success message
                 $this->session->set_flashdata('login_success_msg','You logged in successfully');
                 /* code to check CRM db end */
@@ -196,9 +196,9 @@
 					'user_id' => $user['user_id'],
 					'phone_no' => $user['phone_no']
 					);
-				
+					
 					$this->session->set_userdata($data);
-
+					
 					$this->send_otp($user['phone_no']);
 					
 					echo "otp";
@@ -233,7 +233,7 @@
 				$_SESSION['email_address'] = $user['email_address'];
 				
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
-
+				
 				// echo '<pre>'; print_r($_SESSION); die; 
 				
 				// $this->session->set_userdata($data);
@@ -250,8 +250,10 @@
 		function validate_credentials() 
 		{
 			$this->load->model('membership_model');
-			
-			
+			$map=array();
+			$map['otp']='';
+			$map['two_way_authentication']='';
+			$map['firsttime']='';
 			
 			$user = $this->membership_model->get_user_role();
 			$query_result = $this->membership_model->validate_user($user['role']);
@@ -261,13 +263,13 @@
 				echo '<p class="error">Please Enter valid Username and Password';
 				} else { // incorrect username or password
 				
-						$user_account=array();
-						$user_account['username']=$this->input->post('username');
-						$user_account['email']=$user['email_address'];
-						$user_account['user_id']=$user['user_id'];
-						$user_account['role_id']=$user['role_id'];
-						$user_account['purchase_pack']=$user['purchase_pack'];
-						
+				$user_account=array();
+				$user_account['username']=$this->input->post('username');
+				$user_account['email']=$user['email_address'];
+				$user_account['user_id']=$user['user_id'];
+				$user_account['role_id']=$user['role_id'];
+				$user_account['purchase_pack']=$user['purchase_pack'];
+				
 				
 				if($user['two_way_authentication']=='Y'){//OTP verification Start
 					//redirect(base_url()."otp");
@@ -289,8 +291,8 @@
 					
 					$this->send_otp($user['phone_no']);
 					
-					echo "otp";
-					
+					 $map['otp']='otp';
+					 echo json_encode($map);
 					}else{
 					
 					$data = array(
@@ -356,20 +358,23 @@
 				//echo '<pre>'; print_r($_SESSION); exit;
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
 				
-				
-				
-				if($user['two_way_authentication']!='Y'){
-					echo 'true';
+				if($user['two_way_authentication']!='Y')
+				{
+					 $map['two_way_authentication']='true';
+					 if(empty($user['last_loggedin']))
+					 {
+						 $map['firsttime']='true';
+					 }					
+					  echo json_encode($map);					
 				}
-
 				
 				
                 //To set flashdata Success message
                 $this->session->set_flashdata('login_success_msg','You logged in successfully');
-//                $this->session->set_userdata('login_success_msg','You logged in successfully');
-
-
-            }
+				//                $this->session->set_userdata('login_success_msg','You logged in successfully');
+				
+				
+			}
 		}
 		
 		
@@ -379,10 +384,10 @@
 			
 			// $to_number='+919665639973';
 			if(isset($phone_no)){
-			$to_number=$phone_no;
-			}else{
-			// $to_number=$this->input->post('phone_no');
-			$to_number=$this->session->userdata('phone_no');
+				$to_number=$phone_no;
+				}else{
+				// $to_number=$this->input->post('phone_no');
+				$to_number=$this->session->userdata('phone_no');
 			}
 			$otp = mt_rand(1000, 9999);
 			
@@ -411,10 +416,10 @@
 		
 		
 		function signup() {
-		
-		$query_get_country=$this->db->get('country');
-		$data['country_list']=$query_get_country->result();
-		
+			
+			$query_get_country=$this->db->get('country');
+			$data['country_list']=$query_get_country->result();
+			
 			$data['main_content'] = 'signup_form';
 			$this->load->view('includes/template', $data);
 		}
@@ -446,94 +451,104 @@
 			
 			$data = array(
 			'username' => $this->input->post('username'),
-		'is_logged_in' => true,
-		'role' => $user['role']
-		);
-		$this->session->set_userdata($data);
-		
-		redirect('user/Dashboard/members_area');
-		} else {
-		$this->load->view('signup_form');
-		}
-		}
-		}
+			'is_logged_in' => true,
+			'role' => $user['role']
+			);
+			$this->session->set_userdata($data);
+			
+			redirect('user/Dashboard/members_area');
+			} else {
+			$this->load->view('signup_form');
+			}
+			}
+			}
 		*/
 		
-		function create_member() {
-		
-		// field name, error message, validation rules
-		//$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
-		//$this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
-		$this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email');
-		// $this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|regex_match[/^[0-9]{10}$/]');
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
-		//$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
-        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]');
-		// $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]', array('required' => 'You must provide a %s.'));
-		$this->form_validation->set_rules('confirmpassword', 'Password Confirmation', 'trim|required|matches[password]');
-		
-		if ($this->form_validation->run() == FALSE) {
-		
-		echo validation_errors('<p class="error">');
-		// $this->load->view('signup_form');
-		} else {
-		$this->load->model('membership_model');
-		$query_result = $this->membership_model->create_member();
-		if ($query_result !== TRUE) {
-		
-		echo '<p class="error">' . $query_result;
-		
-		//$this->load->view('signup_form');
-		} else {
-		//$data['main_content'] = 'signup_successful';
-		//	$this->load->view('includes/template', $data);
-		
-		
-		$user = $this->membership_model->get_user_role($this->input->post('username'));
-		
-		$data = array(
-		'username' => $this->input->post('username'),
-		'is_logged_in' => true,
-		'role' => $user['role'],
-		'user_id' => $user['user_id']
-		);
-		
-		if (!isset($_SESSION)) {
-		session_start();
-		}
-		$_SESSION['user_name'] = $this->input->post('username');
-		//                $_SESSION['user_name']="admin";
-		$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
-		//                $_SESSION['password']="55677fc54be3b674770b697114ce0730300da0f6783202e2d17d7191ba68ec97cab4b61d3470f298d0ca2435111c29b8d5ad63058b725916336fdab9584829f4";
-		// print_r($_SESSION);
-		// die('dd');
-		
-		/* Session set to access paasport dashboard Start */
-		$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
-		/* Session set to access paasport dashboard End */
-		
-		$_SESSION['user_id'] = $user['user_id'];
-		$_SESSION['crm_db_id'] = $user['crm_db_id'];
-		$_SESSION['email_address'] = $user['email_address'];
-		
-		
-		
-		$this->session->set_userdata($data);
-		
-		echo 'true';
-		
-		//redirect('user/Dashboard/members_area');
-		}
-		}
-		}
-		
-		function logout() {
-		$this->session->sess_destroy();
-		
-		//        redirect(base_url() . 'user/login');
-		redirect(base_url() . 'login');
-		//$this->index();
-		}
-		
-		}
+		function create_member() 
+		{
+			
+			// field name, error message, validation rules
+			//$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
+			//$this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
+			$this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email');
+			// $this->form_validation->set_rules('phone_number', 'Phone Number', 'trim|required|regex_match[/^[0-9]{10}$/]');
+			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
+			//$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
+			$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]');
+			// $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]|regex_match[/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{4,}/]', array('required' => 'You must provide a %s.'));
+			$this->form_validation->set_rules('confirmpassword', 'Password Confirmation', 'trim|required|matches[password]');
+			
+			if ($this->form_validation->run() == FALSE) {
 				
+				echo validation_errors('<p class="error">');
+				// $this->load->view('signup_form');
+			}
+			else 
+			{
+				$this->load->model('membership_model');
+				$query_result = $this->membership_model->create_member();
+				if ($query_result !== TRUE) {
+					
+					echo '<p class="error">' . $query_result;
+					
+					//$this->load->view('signup_form');
+					} else {
+					//$data['main_content'] = 'signup_successful';
+					//	$this->load->view('includes/template', $data);
+					
+					
+					$user = $this->membership_model->get_user_role($this->input->post('username'));
+					
+					$user_account=array();
+					$user_account['username']=$this->input->post('username');
+					$user_account['email']=$user['email_address'];
+					$user_account['user_id']=$user['user_id'];
+					$user_account['role_id']=$user['role_id'];
+					$user_account['purchase_pack']=$user['purchase_pack'];
+					
+					$data = array(
+					'username' => $this->input->post('username'),
+					'is_logged_in' => true,
+					'role' => $user['role'],
+					'user_id' => $user['user_id'],
+					'user_account'=>$user_account
+					);
+					
+					if (!isset($_SESSION)) {
+						session_start();
+					}
+					$_SESSION['user_name'] = $this->input->post('username');
+					//                $_SESSION['user_name']="admin";
+					$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
+					//                $_SESSION['password']="55677fc54be3b674770b697114ce0730300da0f6783202e2d17d7191ba68ec97cab4b61d3470f298d0ca2435111c29b8d5ad63058b725916336fdab9584829f4";
+					
+					/* Session set to access paasport dashboard Start */
+					$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
+					/* Session set to access paasport dashboard End */
+					
+					$_SESSION['user_id'] = $user['user_id'];
+					$_SESSION['crm_db_id'] = $user['crm_db_id'];
+					$_SESSION['email_address'] = $user['email_address'];
+					
+					$_SESSION['user_account']=$user_account;
+					
+					$this->session->set_userdata($data);
+					
+					echo 'true';
+					
+					//redirect('user/Dashboard/members_area');
+				}
+			}
+		}
+		
+		function logout() 
+		{
+			$this->load->model('membership_model');
+			$this->membership_model->update_lastlogged_in($this->session->userdata('user_id'));
+			$this->session->sess_destroy();			
+			//        redirect(base_url() . 'user/login');
+			redirect(base_url() . 'login');
+			//$this->index();
+		}
+		
+	}

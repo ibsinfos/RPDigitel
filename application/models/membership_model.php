@@ -47,6 +47,7 @@
 				$data['two_way_authentication'] = $row->two_way_authentication;
 				$data['role_id'] = $row->role_id;
 				$data['purchase_pack'] = $row->purchase_pack;
+				$data['last_loggedin'] = $row->last_loggedin;
 				// Return the user found
 				return $data;
 			}
@@ -99,6 +100,10 @@
 				$insert = $this->db->insert('membership', $new_member_insert_data);
 				$membership_user_id=$this->db->insert_id();
 				
+				
+			
+				
+				
 				/*             * **************** Insert into novaecard.users table Start***************************** */
 				/*$VC_DB_SRC_HOST = 'localhost';
 					$VC_DB_SRC_USER = 'root';
@@ -140,7 +145,9 @@
 				
 				/*             * **************** Insert into novaecard.users table End***************************** */
 				
-				
+				/* start add user map entry in tbl_users_map */
+				$this->create_user_map($membership_user_id);
+				/* end add user map entry in tbl_users_map */
 				
 				/* Send mail Start */
 				
@@ -177,7 +184,21 @@
 				return $insert;
 			}
 		}
-		
+		public function create_user_map($user_id=null)
+		{
+			
+			$menuid = $this->db->get('tbl_menu')->result_array();
+			if($menuid)
+			{
+				foreach($menuid as $m)
+				{
+					$ins_arr=array();
+					$ins_arr['user_id']=$user_id;
+					$ins_arr['menu_id']=$m['id'];				
+					$insert_vc_user = $this->db->insert('tbl_user_map',$ins_arr); 
+				}
+			}
+		}
 		public function hash($string) {
 			
 			return hash('sha512', $string . config_item('encryption_key'));
@@ -291,6 +312,13 @@
 				
 				return $row->slug;				
 			}	
+		}
+		public function update_lastlogged_in($id=null)
+		{
+			$update_data=array('last_loggedin'=>date('Y-m-d h:i:s'));
+			$this->db->where('user_id',$id);
+			$q=$this->db->update('membership',$update_data);
+			
 		}
 	}
 	

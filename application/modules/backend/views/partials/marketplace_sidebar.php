@@ -29,19 +29,25 @@
             <div class="menu_section">
                
                 <ul class="nav side-menu">
-                    <li><a href="<?php echo base_url() ?>dashboard"><i class="fa fa-home"></i> Dashboard </a>
+                    <li><a href="<?php echo base_url() ?>dashboard"><i class="fa fa-home"></i> Home </a>
 
                     </li> 
-                    <li><a href="<?php echo base_url() ?>my-subscribers"><i class="fa fa-envelope-o"></i> My subscribers </a>
-
+                   <!-- <li><a href="<?php echo base_url() ?>my-subscribers"><i class="fa fa-envelope-o"></i> My subscribers </a>
+						
                     </li> 
                     <li><a href="<?php echo base_url() ?>order-history"><i class="fa fa-shopping-cart"></i> Order history </a>
 
                     </li> 
                     <li><a href="<?php echo base_url() ?>download-center"><i class="fa fa-download"></i> Download center </a>
 
-                    </li> 
+                    </li> -->
                     <li><a href="<?php echo base_url() ?>setting"><i class="fa fa-gear"></i> Setting </a>
+
+                    </li> 
+					  <li><a href="#"><i class="fa fa-gear"></i> Invoces </a>
+
+                    </li> 
+					 <li><a href="#"><i class="fa fa-gear"></i> News </a>
 
                     </li> 
                 </ul>

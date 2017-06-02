@@ -370,7 +370,7 @@
                                                            class="form-control" value=""
                                                            placeholder="Enter google plus page id">
 														   
-                                                </div>
+														   </div>
 												<span id="err_googleplus_url" ></span>	
 
                                                 <label for="linkedin">Linkedin</label>
@@ -3027,7 +3027,8 @@
 						CKEDITOR.instances.bloglongdesc.setData('');
 						CKEDITOR.instances.blogshortdesc.setData('');
 						$(".frmerror_blog").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-                        return true;
+                        window.location = "<?php echo base_url(); ?>dashboard";
+						return true;
                     } else {
 						$(".frmerror_blog").html('');
                        // $("#err_email").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg.email + '</div>');
