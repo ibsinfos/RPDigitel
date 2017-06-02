@@ -78,9 +78,15 @@
 								<img src="<?php echo $userImg; ?>" alt="user"/>
 								<p class="musicianName text-muted"><?php echo $user[0]['first_name'] ?> <?php echo $user[0]['last_name'] ?></p>
 								<p class="text-muted"><?php echo $user[0]['home_address'] ?></p>
+								
 							</div>
+							
 							<button class="btn shareBtn" id="btnshare" data-toggle="modal" data-target="#myModal"  >Share</button>
 						</div>
+						<?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
+					<h4 class="modalHeading">Scan QRCode for Link</h4>
+					<img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" height="200" />
+				<?php } ?>
 					</div>
 					<div class="col-sm-4 memberListWrap">
 						<h5 class="heading">Dashboard</h5>
