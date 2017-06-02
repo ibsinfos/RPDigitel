@@ -64,8 +64,7 @@ Class Dashboard extends MX_Controller
 		// print_r($this->session->userdata()); exit;
 		
 		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
-		$this->load->model('common_model');    
-        $slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+		$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 		
 		// create a shorten url
 		  $url = backend_passport_url()."view/".$slug; 

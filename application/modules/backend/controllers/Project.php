@@ -22,6 +22,14 @@ Class Project extends MX_Controller
         if (!$this->common_model->isLoggedIn()) {
             redirect(base_url());
         }
+		
+		if(!empty($_SESSION['paasport_user_id']))
+		{
+			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->template->set('user',$user);
+			$this->template->set('slug',$slug);
+		}
     }
 
     public function projectList()
