@@ -440,8 +440,16 @@ class Common_Model extends CI_Model {
 	
 	public function getPaasportSlug($paasport_id=null)
 	{
-		 $vcard_user = $this->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$paasport_id),'id ASC',1);
-		 return $vcard_user[0]['slug'];	  
+		$slug='';
+		if(!empty($paasport_id))
+		{
+			$vcard_user = $this->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$paasport_id),'id ASC',1);
+			if(!empty($vcard_user))
+			{
+				$slug=$vcard_user[0]['slug'];	  
+			}	
+		}	
+		 return $slug;
 	}
 	
 }
