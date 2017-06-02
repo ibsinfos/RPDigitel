@@ -98,7 +98,7 @@
 				
 				
 				<li><a href="<?php echo $websuit; ?>">Go To WBS Suite</a></li>
-				<li><a href="<?php echo base_url(); ?>silo_sd">Go To Silo Host</a></li>
+				<li><a href="<?php echo base_url(); ?>dashboard">Go To Silo Host</a></li>
 				</ul>
 				</li>
 				<li><a>
