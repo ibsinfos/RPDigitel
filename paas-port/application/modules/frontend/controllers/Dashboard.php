@@ -39,7 +39,7 @@ class Dashboard extends CI_Controller {
 			$this->template->set('slug',$slug);
         }
 	  
-	   $this->template->set('user',$user);
+	    $this->template->set('user',$user);
 		$this->template->set('page', 'dashboard');
         $this->template->set('page_type', 'inner');
         $this->template->set_theme('default_theme');

@@ -8,7 +8,8 @@
 			//  modules::run('user/login/is_logged_in');
 		}
 		
-		function is_logged_in() {
+		function is_logged_in() 
+		{
 			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
 			// print_r($this->session->userdata);
@@ -33,6 +34,7 @@
 			// $this->load->view('silo-sd');
 			$data['slug']=$this->getSlugname($_SESSION['paasport_user_id']); 
 			$data['main_content'] = 'silo-sd';
+			$data['page'] = 'silo_sd';
 			$this->load->view('includes/template', $data);
 		}
 		

@@ -19,6 +19,7 @@
     <link href="<?php echo base_url(); ?>css/class.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>css/custom.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+	<link href="<?php echo base_url(); ?>css/front-end.css" rel="stylesheet">
     <!--plugins css-->
     <!-- NProgress -->
     <link href="<?php echo base_url(); ?>vendors/nprogress/nprogress.css" rel="stylesheet">
@@ -42,10 +43,10 @@
 
 <body style="overflow-x: hidden">
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
+<?php $this->load->view('includes/main_header'); ?>
+<!--<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
     <div class="container topnav">
-        <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
+       <div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -113,7 +114,7 @@
 									</a>
 								</div>
 								<div class="card col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<!--<a href="<?php echo base_url(); ?>paasport">-->
+									
 									<a href="<?php echo base_url(); ?>paas-port/dashboard">
 										<img class="card-img-top img-responsive center-block card-img" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
 										<div class="card-block" style="border:none;">
@@ -133,8 +134,7 @@
 							</div>
 						</li>
 					</ul>
-					<!--<img class="block mob-brand" src="<?php echo base_url(); ?>images/frlogo.png?crc=100938625" alt="" height="70"
-					style="padding-top: 5px; padding-bottom: 5px;">-->
+					
 					
 				</div>
 						
@@ -147,7 +147,7 @@
             </button>
             <a class="navbar-brand topnav " href="#"><img src=" <?php echo base_url(); ?>images/silo-sd/silo.png" height="30"></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
+       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -308,10 +308,10 @@
             </ul>
 
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-    <div>
+       
+    </div> -->
+    <!-- Main container -->
+    <div class="learnMoreAbout" style="top: 54px">
         <a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse">Member Profile</a>
         <div id="demo" class="collapse" style="background: #ffffff; ">
             <div class="container-fluid">

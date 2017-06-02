@@ -85,6 +85,7 @@ $config['dbxyz']['stricton'] = FALSE;
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			}	
        		$data['main_content'] = 'fiber-rails';
+       		$data['page'] = 'fiberrails';
 			$this->load->view('includes/template', $data);
 		}
 		
