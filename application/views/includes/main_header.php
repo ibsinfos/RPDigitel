@@ -284,9 +284,10 @@
 												//echo base_url()."Silo/dashboard";
 												// echo base_url()."silosd/backend/login/adminlogin";
 												
-											?>"> Go to Dashboard &nbsp; </a></li>
-							<li>
+											?>"> Go to Dashboard &nbsp; </a>
+							</li>
 							<?php } ?>
+							<li>
 								<a href="<?php echo base_url(); ?>login/logout" onclick="return confirm('Are you sure?')">
 									<i class="fa fa-sign-out pull-right"></i>Log Out
 								</a>
