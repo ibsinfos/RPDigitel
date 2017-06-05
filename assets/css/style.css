@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+
+body {
+	font-family: 'Raleway', sans-serif;
+  padding-top: 89px;
+}
+/*navbar css start */
+.navbar-inverse {
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+  /*height: 55px;*/
+  z-index: 999;
+}
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #fff;
+}
+.navbar-inverse .navbar-toggle {
+	display: block;
+	border: 0;
+}
+.navbar-inverse .searchWrap,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #7f7f7f;
+	color: #fff;
+}
+.navbar-inverse .userImage {
+	width: 25px;
+  display: inline-block;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #7f7f7f;
+  margin-right: 5px;
+	vertical-align: middle;
+}
+.navbar-inverse .badge {
+	background-color: #f00700;
+	position: absolute;
+  top: 8px;
+  font-size: 10px;
+  padding: 2px 5px;
+  right: 5px;
+}
+.navbar .logoWrap {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 6px 0;
+}
+.navbar .logoWrap .dotMatrixImg {
+  margin-right: 10px;
+  height: 30px;
+}
+.navbar .dropdown-menu .fa-sign-out {
+  margin-top: 3px;
+}
+.dotMatrixDropdown {
+  padding: 20px 0px;
+  width: 650px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-align: center;
+}
+.dotMatrixDropdown ul li {
+  height: 125px;
+}
+.dotMatrixDropdown ul li:nth-child(1),
+.dotMatrixDropdown ul li:nth-child(2),
+.dotMatrixDropdown ul li:nth-child(3) {
+  margin-bottom: 20px;
+}
+.dotMatrixDropdown a {
+  display: block;
+  color: #333;
+}
+.navbar .logoWrap,
+.dotMatrixDropdown a:hover {
+  text-decoration: none;
+}
+.dotMatrixDropdown img {
+  margin: 0 auto;
+}
+.dotMatrixDropdown .siloSDImg {
+  width: 125px;
+  margin: 15px auto;
+}
+.dotMatrixDropdown .scanDiscImg {
+  width: 150px;
+  margin: 38px auto;
+}
+.dotMatrixDropdown .webSuiteImg {
+  width: 150px;
+  margin: 14px auto;
+}
+.dotMatrixDropdown .paasPortImg {
+  width: 150px;
+  margin: 18px auto;
+}
+.dotMatrixDropdown .siloBankImg {
+  width: 68px;
+  margin: 14px auto;
+}
+.dotMatrixDropdown.open {
+  display: block;
+}
+.dotMatrixDropdown:before {
+  content: "";
+  border-bottom: 15px solid #fff;
+  border-right: 17px solid transparent;
+  border-left: 17px solid transparent;
+  position: absolute;
+  top: -15px;
+  left: 13px;
+  z-index: 10;
+}
+/* navbar css end */
+
+/* Home css start */
+.learnMoreAbout {
+  position: fixed;
+  top: 54px;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 1px solid #101010;
+}
+.learnMoreAbout .dropdown-menu {
+  width: 100%;
+  margin: -1px 0 0 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #080808;
+}
+.learnMoreAbout .list-inline {
+  margin-bottom: 0;
+}
+#carousel-home-banner .carousel-caption h4 {
+  font-size: 42px;
+  font-weight: 700;
+  padding: 0 29%;
+}
+#carousel-home-banner .carousel-caption h5 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+#carousel-home-banner .carousel-caption .btn {
+  color: #837CD6;
+  background-color: #fff;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 6px 25px;
+  margin-bottom: 10px;
+}
+#carousel-home-banner .item ,
+#carousel-home-smartphone .item {
+  max-height: 750px;
+  overflow: hidden;
+}
+#carousel-home-banner .item:before,
+#carousel-home-smartphone .item:before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#carousel-home-banner .item img ,
+#carousel-home-smartphone .item img {
+  width: 100%;
+}
+#carousel-home-banner .carousel-caption,
+#carousel-home-smartphone .carousel-caption {
+  right: 0;
+  left: 0;
+  padding-bottom: 30px;
+  top: 35%;
+}
+#carousel-home-banner .carousel-caption h3,
+#carousel-home-smartphone .carousel-caption h3 {
+  font-size: 72px;
+  font-weight: 700;
+}
+#carousel-home-smartphone .carousel-caption h4 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+#carousel-home-smartphone .carousel-caption .btn {
+  border-width: 2px;
+  border-color: #fff;
+  background-color: transparent;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 6px 50px;
+}
+#carousel-home-smartphone .carousel-caption .btn:hover {
+  background-color: #FF0000;
+  color: #fff;
+}
+.servicesLogos {
+  padding: 30px 0;
+}
+.servicesLogos ul {
+  margin: 0;
+}
+.servicesLogos ul li {
+  padding: 0 15px;
+}
+.servicesLogos ul li img {
+  width: 60px;
+}
+.enterpriseSoln {
+  padding: 100px 0;
+}
+.enterpriseSoln img {
+  margin-bottom: 30px;
+}
+.enterpriseSoln .btn {
+  background-color: #9E0000;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto 10px;
+  display: block;
+}
+.startShopping {
+  background-color: #9E0000;
+  padding: 30px 0;
+}
+.startShopping .btn {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border-width: 2px;
+  font-weight: 500;
+}
+.startShopping .btn:hover {
+  background-color: #FF0000;
+}
+.productSection {
+  padding-top: 25px;
+}
+.productSection .panel {
+  border-color: #ddd;
+}
+.productSection .panel-heading {
+  position: relative;
+  height: 224px;
+}
+.productSection .panel img {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  max-width: 90%;
+}
+.productSection .panel .heading {
+  font-size: 16px;
+  color: #00a4ed;
+  width: 90%;
+}
+/*.productSection .panel-body {
+  padding-left: 15%;
+}*/
+.productSection ul li {
+  color: #838081;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  position: relative;
+}
+ul.typoList li:before {
+  content: "";
+  background: #00a4ed;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.productSection .panel-body .price {
+  font-weight: 600;
+  font-size: 16px;
+}
+.dragDropSection {
+  background-color: #DBDBDB;
+  padding: 50px 0;
+}
+.dragDropSection .heading,
+.siloCloudSection .heading {
+  font-size: 36px;
+  font-weight: 400;
+}
+.dragDropSection .tryOut {
+  margin-top: 80px;
+}
+.dragDropSection .btn {
+  width: 75%;
+  margin: 0 auto 10px;
+}
+.enterpriseSoln .signUpLink,
+.dragDropSection .signUpLink,
+.siloCloudSection .signUpLink {
+  color: #FF0000;
+  font-size: 12px;
+}
+.siloCloudSection {
+  background: url('../images/home/silo-cloud-bg.jpg') no-repeat center center / cover;
+  height: 690px;
+  padding-top: 100px;
+  color: #00FFFF;
+}
+.siloCloudSection .heading {
+  padding: 0 30px;
+}
+.siloCloudSection .btn {
+  display: block;
+  margin: 0 auto 10px;
+}
+.fiberRailSection {
+  background-color: #959595;
+  padding-top: 83px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.fiberRailSection .phoneImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -210px;
+  z-index: 1;
+}
+.fiberRailSection .fiberRailImg {
+  width: 60%;
+  margin-top: 35%;
+}
+.fiberRailSection .well {
+  background-color: #242424;
+  padding: 58px 64px 20px 64px;
+  color: #fff;
+  border-color: #242424;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.fiberRailSection .well .heading1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+.fiberRailSection .well .heading2 {
+  font-size: 36px;
+  margin: 5px 0;
+  font-weight: 400;
+}
+.fiberRailSection .well p {
+  margin-left: 25px;
+}
+.fiberRailSection .applyText {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 400;
+}
+/* Home css end */
+
+/* footer css start */
+.footerWrap {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 0;
+}
+.footerWrap .homeFooterText {
+  font-size: 11px;
+  margin: 0;
+}
+.footerWrap .socialMedia {
+	float: right;
+  margin: 0;
+}
+.socialMedia li {
+	padding: 0 2px;
+}
+.socialMedia li a {
+	display: block;
+	color: #fff;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+}
+.socialMedia li a:hover {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+/* footer css end */
+
+/* common css start */
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus,
+.btn:hover {
+  outline: none;
+  opacity: 0.7;
+}
+.btn,
+.learnMoreAbout .dropdown-menu,
+.fiberRailSection .well {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn-lg {
+  font-size: 15px;
+}
+.btnRed {
+  background-color: #FF0000;
+}
+.btnRed,
+.btnRed:hover,
+.btnRed:focus {
+  color: #fff;
+}
+.textWhite {
+  color: #fff;
+}
+/* common css end */
+
+/* responsive css */
+@media (max-width: 1400px) {
+	
+}
+@media (max-width: 1200px) {
+  /* Home css start */
+  #carousel-home-banner .item, #carousel-home-smartphone .item {
+    max-height: 575px;
+  }
+  #carousel-home-banner .carousel-caption, #carousel-home-smartphone .carousel-caption {
+    padding: 0 5%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 52px;
+  }
+  #carousel-home-banner .carousel-caption h4 {
+    padding: 0 15%;
+  }
+  .dragDropSection .heading, .siloCloudSection .heading {
+    font-size: 30px;
+  }
+  .fiberRailSection .fiberRailImg {
+    width: 75%;
+  }
+  .fiberRailSection .well {
+    padding: 15px;
+  }
+  .fiberRailSection .well .heading1 {
+    font-size: 22px;
+  }
+  .fiberRailSection .well .heading2 {
+    font-size: 32px;
+  }
+  .fiberRailSection .well p {
+    margin-left: 35px;
+  }
+  .fiberRailSection .applyText {
+    font-size: 24px;
+  }
+  /* Home css end */
+  .audioPlayerWrap .secondCol {
+    padding-left: 15px;
+  }
+  
+}
+@media (max-width: 1024px) {
+	
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+ 
+}
+@media (max-width: 992px) {
+  /* Home css start */
+  #carousel-home-banner .item, #carousel-home-smartphone .item {
+    max-height: 430px;
+  }
+  #carousel-home-banner .carousel-caption, #carousel-home-smartphone .carousel-caption {
+    top: 23%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 42px;
+  }
+  #carousel-home-banner .carousel-caption h4 {
+    font-size: 32px;
+  }
+  #carousel-home-banner .carousel-caption h5 {
+    margin-bottom: 20px;
+  }
+  #carousel-home-smartphone .carousel-caption h4 {
+    font-size: 28px;
+  }
+  .productSection .panel {
+    min-height: 485px;
+  }
+  .dragDropSection .tryOut {
+    margin-top: 30px;
+  }
+  /* Home css end */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	/*.navbar-header {
+		float: none;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+		-webkit-overflow-scrolling: touch;
+		border-top: 1px solid transparent;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	}
+	.navbar-collapse.in {
+		display: block !important;
+	}*/
+	
+}
+@media (max-width: 767px) {
+	.navbar-inverse .badge {
+		top: 13px;
+		right: 15px;
+	}
+	/* Footer css start */
+	.footerWrap {
+		text-align: center;
+	}
+	.footerWrap .socialMedia {
+		float: none;
+  	margin-top: 20px;
+	}
+  /* Footer css end */
+
+  /* Home css start */
+  .dotMatrixDropdown {
+    width: 290px;
+  }
+  .dotMatrixDropdown ul li {
+    height: 100px;
+  }
+  .dotMatrixDropdown img,
+  .dotMatrixDropdown .siloSDImg,
+  .dotMatrixDropdown .scanDiscImg,
+  .dotMatrixDropdown .webSuiteImg,
+  .dotMatrixDropdown .paasPortImg {
+    width: 50px;
+  }
+  .dotMatrixDropdown .siloBankImg {
+    width: 30px;
+  }
+  .dotMatrixDropdown .scanDiscImg {
+    margin: 25px auto;
+  }
+  .dotMatrixDropdown h4 {
+    font-size: 14px;
+  }
+  .learnMoreAbout ul li {
+    margin-bottom: 20px;
+  }
+  #carousel-home-banner .item img, #carousel-home-smartphone .item img {
+    min-height: 400px;
+  }
+  #carousel-home-banner .carousel-caption {
+    top: 12%;
+    padding: 0 5%;
+  }
+  #carousel-home-smartphone .carousel-caption {
+    top: 30%;
+    padding: 0 5%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 18px;
+  }
+  #carousel-home-banner .carousel-caption h4,
+  #carousel-home-smartphone .carousel-caption h4 {
+    font-size: 14px;
+    padding: 0;
+  }
+  #carousel-home-banner .carousel-caption h5 {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  #carousel-home-banner .carousel-caption .btn,
+  #carousel-home-smartphone .carousel-caption .btn {
+    font-size: 16px;
+  }
+  .servicesLogos ul li {
+    margin-bottom: 35px;
+  }
+  .servicesLogos ul li:last-child {
+    margin-bottom: 0;
+  }
+  .enterpriseSoln img {
+    width: 100%;
+  }
+  .dragDropSection .heading, .siloCloudSection .heading {
+    font-size: 20px;
+  }
+  .fiberRailSection .phoneImg {
+    width: 250px;
+    top: -145px;
+  }
+  .fiberRailSection .fiberRailImg {
+    margin: 0 auto;
+  }
+  .fiberRailSection .well .heading1 {
+    font-size: 20px;
+  }
+  .fiberRailSection .well .heading2 {
+    font-size: 28px;
+  }
+  .fiberRailSection .well .btn {
+    font-size: 12px;
+  }
+  /* Home css end */
+
+}
