@@ -15,7 +15,7 @@ class Vcard extends CI_Controller {
     public function index() 
 	{	
 		
-        if (!isset($_SESSION)) {
+		if (!isset($_SESSION)) {
             session_start();
         }
         if (!$this->common_model->isLoggedIn()) {

@@ -78,8 +78,12 @@
                                 <button class="btn shareBtn" data-toggle="modal" data-target="#myModal">Share</button>
 							</div>
 						</div>
+						<?php if(!empty($user[0]['job_title'])) { ?>
                         <p class="profession"><?php echo ($user[0]['job_title'])?$user[0]['job_title']:''; ?></p>
+						<?php } ?>
+						<?php if(!empty($user[0]['start_date']) && $user[0]['start_date']!='0000-00-00') { ?>
                         <p>Member Since <?php echo ($user[0]['start_date'])?$user[0]['start_date']:''; ?></p>
+						<?php } ?>
 					</div>
                     <!-- <div class="audioPlayerWrap row">
                         <div class="playerCol col-xs-2 col-sm-3">

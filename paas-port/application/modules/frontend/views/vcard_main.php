@@ -3027,7 +3027,7 @@
 						CKEDITOR.instances.bloglongdesc.setData('');
 						CKEDITOR.instances.blogshortdesc.setData('');
 						$(".frmerror_blog").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-                        window.location = "<?php echo base_url(); ?>dashboard";
+                        window.location = "<?php echo MAINBASEURL; ?>dashboard";
 						return true;
                     } else {
 						$(".frmerror_blog").html('');

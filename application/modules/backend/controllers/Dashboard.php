@@ -32,7 +32,7 @@ Class Dashboard extends MX_Controller
 			
 		// echo $_SESSION['testt'];
 		
-		$this->sidebar = 'partials/marketplace_sidebar';
+		$this->sidebar = 'partials/hosting_sidebar';
 		
        /* if ($this->session['purchase_pack'] == '1') {
             $this->sidebar = 'partials/marketplace_sidebar';
@@ -60,6 +60,7 @@ Class Dashboard extends MX_Controller
     public function index()
     {
 		$this->load->library('google_url_api');
+	    $this->load->model("login_model");
 			
 		 //$data['user'][0]['user_id']=31;
 		// echo '<pre>';
@@ -67,6 +68,9 @@ Class Dashboard extends MX_Controller
 		
 		$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 		$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+		
+		$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+		
 		
 		// create a shorten url
 		  $url = backend_passport_url()."view/".$slug; 
@@ -79,6 +83,7 @@ Class Dashboard extends MX_Controller
 		 
 		// create a shorten url
 		
+        $this->template->set('user_menu',$user_menu);
         $this->template->set('shorten_url',$shorten_url);
         $this->template->set('slug',$slug);
         $this->template->set('user',$user);

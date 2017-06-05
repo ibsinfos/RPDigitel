@@ -126,5 +126,24 @@ class Login_model extends CI_Model
         $result = $query->result_array();
         return $result;
     }
+	
+	public function get_menu_by_user($user_id=null)
+	{
+		$this->db->select('tbl_menu.id AS menuid,tbl_menu.menu_name,tbl_user_map.user_id,tbl_user_map.menu_id');
+		$this->db->from('tbl_user_map');
+		$this->db->join('tbl_menu','tbl_menu.id = tbl_user_map.menu_id'); 
+		$this->db->where('tbl_user_map.user_id',$user_id);
+		$query = $this->db->get();
+		$usermenu = $query->result_array();
+		$umenu1=array();
+		if(!empty($usermenu))
+		{
+			foreach($usermenu as $umenu)
+			{
+				$umenu1[]=$umenu['menu_name'];
+			}
+		}
+		return $umenu1;
+	}
 
 }
