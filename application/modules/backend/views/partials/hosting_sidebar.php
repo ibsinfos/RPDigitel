@@ -105,14 +105,14 @@
 					<?php } ?>
 					<?php if(!empty($user_menu) && in_array('Settings',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
-						<i class="iconDashboard-news"></i>
+						<i class="iconDashboard-setting"></i>
 					</div> Settings </a>
 					
 					</li>
 					<?php } ?>
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
-						<i class="iconDashboard-news"></i>
+						<i class="iconDashboard-invoice"></i>
 					</div> Invoices</a>
 					
 					</li>
