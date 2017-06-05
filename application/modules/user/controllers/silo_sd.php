@@ -22,9 +22,9 @@
 				*/
 				
 //				redirect('user/login');
-				redirect('login');
+				//redirect('login');
 //				
-				die();
+				//die();
 				//$this->load->view('login_form');
 			}
 		}
@@ -32,7 +32,11 @@
 		function index() {
 
 			// $this->load->view('silo-sd');
-			$data['slug']=$this->getSlugname($_SESSION['paasport_user_id']); 
+			$data['slug']='';
+			if(!empty($_SESSION['paasport_user_id']))
+			{
+				$data['slug']=$this->getSlugname($_SESSION['paasport_user_id']); 
+			}	
 			$data['main_content'] = 'silo-sd';
 			$data['page'] = 'silo_sd';
 			$this->load->view('includes/template', $data);

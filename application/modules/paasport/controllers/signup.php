@@ -17,9 +17,12 @@ class signup extends CI_Controller {
 	// print_r($this->session->all_userdata());
 			// print_r($_SESSION);
 			// die(0);
-		$this->load->model('common_model');    
-        $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-        
+		$this->load->model('common_model');  
+		$data['slug']='';
+		if(!empty($_SESSION['paasport_user_id']))
+		{
+			$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+        }
 		$this->template->set('slug',$data['slug']);
 		$this->template->set('country_list',$data['country_list']);
         $this->template->set_theme('default_theme');

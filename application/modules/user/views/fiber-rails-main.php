@@ -1,157 +1,21 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>RPDigitel</title>
+		<title>FiberRails</title>
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/style.css">
 	</head>
 	<body>
-		<header class="headerWrap navbar-fixed-top">
-			<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				  <a class="logoWrap" href="#">
-				  	<span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-target=".dotMatrixDropdown">
-				  		<img src="images/dot-matrix.png" alt="Dot Matrix" class="dotMatrixImg" />
-				  	</span>
-				  	<img src="images/rpdigitel.png" alt="rpdegitel" />
-				  </a>
-				  <div class="dropdown-menu dotMatrixDropdown">
-				  	<ul class="list-unstyled row">
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/fiberrails-main96x86.png" class="img-responsive">
-				  				<h4>Fiber Rails Portal</h4>
-				  			</a>
-				  		</li>
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/silo-main-logo.png" class="img-responsive siloSDImg">
-				  				<h4>Silo Cloud Services</h4>
-				  			</a>
-				  		</li>
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/scandisc-main-logo.png" class="img-responsive scanDiscImg">
-				  				<h4>Scandisc Registry</h4>
-				  			</a>
-				  		</li>
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/wbssuite.png" class="img-responsive webSuiteImg">
-				  				<h4>WBS Business Suite</h4>
-				  			</a>
-				  		</li>
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/paasport.png" class="img-responsive paasPortImg">
-				  				<h4>PaaSPort</h4>
-				  			</a>
-				  		</li>
-				  		<li class="col-xs-4">
-				  			<a href="">
-				  				<img src="images/home/silobank.png" class="img-responsive siloBankImg">
-				  				<h4>Silo Bank</h4>
-				  			</a>
-				  		</li>
-				  	</ul>
-				  </div>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				  <ul class="nav navbar-nav navbar-right">
-				  	<li class=""><a href="#">SERVICES</a></li>
-					<li><a href="#">PLANS</a></li>
-					<li><a href="#">DEVICES</a></li>
-					<li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			          	<img src='images/user.png' alt="user" class="userImage"> 
-			          	<span class="caret"></span>
-			          </a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Profile</a></li>
-						<li><a href="#">Go to Dashboard</a></li>
-						<li>
-							<a href="#">
-								<i class="fa fa-sign-out pull-right"></i>
-								Log Out
-							</a>
-						</li>
-			          </ul>
-			        </li>
-					<li>
-						<button type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</li>
-				  </ul>
-				</div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
+		<?php $this->load->view('includes/main_header_home'); ?>
 		
-			<div class="learnMoreAbout">
-				<button class="btn btnRed btn-block dropdown-toggle" type="button" id="learnMoreAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn More about Fiber Rail Services</button>
-				<div class="dropdown-menu" aria-labelledby="learnMoreAbout">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<p>Get the All New Scandisc UGC Media Package when you have the RP Digital Bundle for Business Wireless plan.</p>
-								<ul class="list-unstyled list-inline">
-									<li>
-										<p>Phone</p>
-										<img src="images/home/phone.png">
-									</li>
-									<li>
-										<p>Tablet</p>
-										<img src="images/home/tablet.png">
-									</li>
-									<li>
-										<p>Laptops</p>
-										<img src="images/home/laptop.png">
-									</li>
-									<li>
-										<p>PCs</p>
-										<img src="images/home/pc.png">
-									</li>
-									<li>
-										<p>Audio</p>
-										<img src="images/home/audio.png">
-									</li>
-									<li>
-										<p>Drones</p>
-										<img src="images/home/drone.png">
-									</li>
-									<li>
-										<p>Cameras</p>
-										<img src="images/home/camera.png">
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
 		<div id="carousel-home-banner" class="carousel slide" data-ride="carousel">
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img src="images/home/slider1.jpg" alt="">
+		      <img src="<?php echo main_asset_url(); ?>images/home/slider1.jpg" alt="">
 		      <div class="carousel-caption">
 		        <h3>LETS GET BACK TO BUSINESS</h3>
 		        <h4>Get 2 Lines of Unlimited LTE on 1 Smartphone for $99</h4>
@@ -161,7 +25,7 @@
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="images/home/slider2.jpg" alt="">
+		      <img src="<?php echo main_asset_url(); ?>images/home/slider2.jpg" alt="">
 		      <div class="carousel-caption">
 		        <h3>LETS GET BACK TO BUSINESS</h3>
 		        <h4>Get 2 Lines of Unlimited LTE on 1 Smartphone for $99</h4>
@@ -179,25 +43,25 @@
 					<div class="col-md-12 text-center">
 						<ul class="list-unstyled list-inline">
 							<li>
-								<a href=""><img src="images/home/rpphones.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/rpphones.png"></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/scandisc.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/scandisc.png"></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/paasport.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/paasport.png"></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/fbblock.png"></a></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/fbblock.png"></a></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/silosd-cloud.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/silosd-cloud.png"></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/silobank.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/silobank.png"></a>
 							</li>
 							<li>
-								<a href=""><img src="images/home/silocloud.png"></a>
+								<a href=""><img src="<?php echo main_asset_url(); ?>images/home/silocloud.png"></a>
 							</li>
 						</ul>
 					</div>
@@ -209,7 +73,7 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img src="images/home/slider4.jpg" alt="">
+		      <img src="<?php echo main_asset_url(); ?>images/home/slider4.jpg" alt="">
 		      <div class="carousel-caption">
 		        <h3>This Summer, Exercice Choice!</h3>
 		        <h4>Choose a Smart Phone Bundle package and Get Your Personal Cloud Free for a limited time. Unlimited Data &amp; Unlimited Storage! </h4>
@@ -217,7 +81,7 @@
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="images/home/slider5.jpg" alt="">
+		      <img src="<?php echo main_asset_url(); ?>images/home/slider5.jpg" alt="">
 		      <div class="carousel-caption">
 		        <h3>This Summer, Exercice Choice!</h3>
 		        <h4>Choose a Smart Phone Bundle package and Get Your Personal Cloud Free for a limited time. Unlimited Data &amp; Unlimited Storage! </h4>
@@ -231,13 +95,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4 col-xs-offset-0 col-md-2 col-md-offset-3 text-center">
-						<img src="images/home/device.png">
+						<img src="<?php echo main_asset_url(); ?>images/home/device.png">
 					</div>
 					<div class="col-xs-4 col-md-2 text-center">
-						<img src="images/home/user.png">
+						<img src="<?php echo main_asset_url(); ?>images/home/user.png">
 					</div>
 					<div class="col-xs-4 col-md-2 text-center">
-						<img src="images/home/target.png">
+						<img src="<?php echo main_asset_url(); ?>images/home/target.png">
 					</div>
 				</div>
 				<div class="row">
@@ -261,7 +125,7 @@
 					<div class="col-sm-6 col-md-3">
 						<div class="panel">
 						  	<div class="panel-heading">
-						  		<img src="images/home/flex-tablet.jpg" class="img-responsive">
+						  		<img src="<?php echo main_asset_url(); ?>images/home/flex-tablet.jpg" class="img-responsive">
 						  	</div>
 						  	<div class="panel-body">
 						  		<h4 class="heading">Flex Tablet LTE Windows 10 Mobile</h4>
@@ -280,7 +144,7 @@
 					<div class="col-sm-6 col-md-3">
 						<div class="panel">
 						  	<div class="panel-heading">
-						  		<img src="images/home/noitavonne-flex.jpg" class="img-responsive">
+						  		<img src="<?php echo main_asset_url(); ?>images/home/noitavonne-flex.jpg" class="img-responsive">
 						  	</div>
 						  	<div class="panel-body">
 						  		<h4 class="heading">FLEXIT 3G Windows 10 WorkStation 2 in 1 PC</h4>
@@ -299,7 +163,7 @@
 					<div class="col-sm-6 col-md-3">
 						<div class="panel">
 						  	<div class="panel-heading">
-						  		<img src="images/home/companion-pc.jpg" class="img-responsive">
+						  		<img src="<?php echo main_asset_url(); ?>images/home/companion-pc.jpg" class="img-responsive">
 						  	</div>
 						  	<div class="panel-body">
 						  		<h4 class="heading">Windows 10 Companion PC Mini PC w/wifi</h4>
@@ -318,7 +182,7 @@
 					<div class="col-sm-6 col-md-3">
 						<div class="panel">
 						  	<div class="panel-heading">
-						  		<img src="images/home/concord-phone.jpg" class="img-responsive">
+						  		<img src="<?php echo main_asset_url(); ?>images/home/concord-phone.jpg" class="img-responsive">
 						  	</div>
 						  	<div class="panel-body">
 						  		<h4 class="heading">CONCORD Elite LTE Windows 10</h4>
@@ -345,7 +209,7 @@
 						<h4 class="heading">Building Your Online Presence At Your Pace, Engaging your customer on Your Terms!</h4>
 					</div>
 					<div class="col-sm-6 col-md-6">
-						<img src="images/home/nerdery-threads.png" class="img-responsive">
+						<img src="<?php echo main_asset_url(); ?>images/home/nerdery-threads.png" class="img-responsive">
 					</div>
 					<div class="col-sm-5 col-md-4">
 						<div class="tryOut text-center">
@@ -370,7 +234,7 @@
 							<button class="btn btn-lg btnRed">Add the Cloud to Your Bundle</button>
 							<span class="textWhite">View more articles ></span><br>
 							<a href="" class="signUpLink">Sign up for a new merchant account</a><br><br>
-							<a href=""><img src="images/home/silo.png" alt=""></a>
+							<a href=""><img src="<?php echo main_asset_url(); ?>images/home/silo.png" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -378,11 +242,11 @@
 		</section>
 
 		<section class="fiberRailSection">
-			<img src="images/home/phone-pod.png" class="phoneImg">
+			<img src="<?php echo main_asset_url(); ?>images/home/phone-pod.png" class="phoneImg">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2 col-md-2">
-						<img src="images/home/fiberrails.png" class="img-responsive fiberRailImg">
+						<img src="<?php echo main_asset_url(); ?>images/home/fiberrails.png" class="img-responsive fiberRailImg">
 					</div>
 					<div class="col-sm-10 col-md-8 text-center">
 						<div class="well">
@@ -434,8 +298,8 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
 	</body>
 </html>

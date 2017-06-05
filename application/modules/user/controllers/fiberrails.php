@@ -83,8 +83,9 @@ $config['dbxyz']['stricton'] = FALSE;
 			if(!empty($_SESSION['paasport_user_id']))
 			{
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-			}	
-       		$data['main_content'] = 'fiber-rails';
+			}
+			//$data['main_content'] = 'fiber-rails';
+       		$data['main_content'] = 'fiber-rails-main';
        		$data['page'] = 'fiberrails';
 			$this->load->view('includes/template', $data);
 		}
@@ -99,7 +100,8 @@ $config['dbxyz']['stricton'] = FALSE;
 				redirect('login');
 				die();
 			}
-			$this->load->model('common_model');    
+			$this->load->model('common_model');  
+			$data['slug']='';
 			if(!empty($_SESSION['paasport_user_id']))
 			{
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);

@@ -36,8 +36,12 @@
 						 // print_r($_SESSION);
 						 // die(0);
 			
-			$this->load->model('common_model');    
-            $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			$this->load->model('common_model');   
+			$data['slug']='';
+			if(!empty($_SESSION['paasport_user_id']))
+			{
+				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			}	
 			$data['main_content'] = 'wbs-suite'; 
 			$this->load->view('includes/template', $data);
 		}
