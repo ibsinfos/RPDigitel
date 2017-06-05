@@ -139,6 +139,8 @@
 								
                                 <div id="errors" style="color:red;">
 								</div>
+								<div id="success" style="color:green;">
+								</div>
                                 <div class="form-group col-md-offset-1 col-md-10">
                                     <input type="text" class="signup_input form-control input-lg" id="username" name="username" required="required" placeholder="Enter Username" >
 								</div>
@@ -247,7 +249,16 @@
 				//                        window.location = "<?php // echo base_url(); ?>user/dashboard";
 				//window.location = "<?php echo base_url(); ?>fiberrails";
 				//window.location = "<?php echo backend_passport_url(); ?>create-paasport";
-				window.location = "<?php echo base_url(); ?>login";
+				//window.location = "<?php echo base_url(); ?>login";
+				// $('#signup_form').reset() 
+				// , #email_address,#phone_number,#country,#password,#confirmpassword
+				$('#username').val();
+				$('#email_address').val();
+				$('#phone_number').val();
+				$('#country').val();
+				$('#password').val();
+				$('#confirmpassword').val();
+				$("#success").html('<div class="alert"><button type="button" class="close" data-dismiss="alert">X</button><strong>You are regisered successfully, Please confirm your registration.</div>');
 				} else {
 				
 				$("#errors").html(data);

@@ -533,6 +533,8 @@
 					
 					$this->session->set_userdata($data); */
 					
+					//$this->session->set_flashdata('verify_message', 'Please verify you account before login.');
+					//redirect('user/login');
 					echo 'true';
 					
 					//redirect('user/Dashboard/members_area');

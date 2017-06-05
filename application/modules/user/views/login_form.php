@@ -144,6 +144,9 @@
 										echo "<p class='error'>" . $this->session->userdata('error_msg');
 										$this->session->unset_userdata('error_msg');
 									} */
+									
+									
+									
 								?>
 								
                                 <div id="errors" style="color:red;">
