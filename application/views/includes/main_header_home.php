@@ -137,11 +137,10 @@
 				 ?>
 					<li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			          	<img src='<?php echo main_asset_url(); ?>images/user.png' alt="user" class="userImage"> 
+			          	<img src='<?php echo main_asset_url(); ?>images/user.png' alt="user" class="userImage"> <?php echo ucfirst($session_data['username']); ?>
 			          	<span class="caret"></span>
 			          </a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#"><?php echo ucfirst($session_data['username']); ?></a></li>
 			            <li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>">Profile</a></li>
 						<!--<li><a href="#">Go to Dashboard</a></li>-->
 						<li>

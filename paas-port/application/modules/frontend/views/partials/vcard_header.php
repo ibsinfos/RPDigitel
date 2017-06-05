@@ -233,7 +233,9 @@
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                        aria-expanded="false">
-                        <img src="https://placehold.it/25x25" alt=""><?php echo ucfirst($_SESSION['user_account']['first_name']); ?>
+                        
+						<img src="<?php echo MAINBASEURL; ?>images/icons-about-user.png" style="margin-right: 4px; width: 24px;height: 24px;" alt="">
+						<?php echo ucfirst($_SESSION['user_account']['username']); ?>
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -244,9 +246,7 @@
 						?>
                         <li><a href="<?php echo base_url(); ?>view/<?php echo $slug; ?>"> Profile</a></li>
                         <li><a href="<?php echo base_url(); ?>paasport-manage"> Go to Dashboard</a></li>
-                        <li><a href="subscribe.html"> Subscribe &nbsp;
-                            <small style="background: #ff0000; color:#ffffff; padding:3px;"> Free</small>
-                        </a></li>
+                      
                         <li><a href="<?php echo base_url() ?>logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                     </ul>
                 </li>

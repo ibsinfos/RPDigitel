@@ -16,7 +16,7 @@
                         </ul>
                     </li>-->
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="icon-user"></i> <?php echo "Hello " . ucfirst($session_data['user_account']['first_name']); ?> <b class="caret"></b></a>
+                                class="icon-user"></i> <?php echo "Hello " . ucfirst($session_data['user_account']['username']); ?> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <!--<li><a href="<?php echo base_url() ?>vcard-edit">Update vCard</a></li>-->
                             <?php 
