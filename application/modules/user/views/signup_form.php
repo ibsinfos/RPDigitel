@@ -246,8 +246,8 @@
 				if (data == 'true') {
 				//                        window.location = "<?php // echo base_url(); ?>user/dashboard";
 				//window.location = "<?php echo base_url(); ?>fiberrails";
-				window.location = "<?php echo backend_passport_url(); ?>create-paasport";
-				
+				//window.location = "<?php echo backend_passport_url(); ?>create-paasport";
+				window.location = "<?php echo base_url(); ?>login";
 				} else {
 				
 				$("#errors").html(data);
