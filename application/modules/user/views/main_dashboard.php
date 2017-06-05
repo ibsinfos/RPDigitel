@@ -20,7 +20,7 @@
 		<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
 		<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 		<!-- Inline CSS based on choices in "Settings" tab -->
-		<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+		<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;} .panel { min-height: 242px; border-color: #ddd; } </style>
 		<!-- Custom Fonts -->
 		<link href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -319,76 +319,125 @@
 		<div class="row ">
 			
 			<div class="container margin-top-50">
-				<div class="card-deck col-md-offset-2" >
-					<div class="card col-md-3 col-sm-4">
-						<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/wbssuite.png" alt="Card image cap" width="177" height="61" style="margin-bottom: 10px;">
-						<div class="card-block">
-							<h4 class="card-title">WBS Business Suite</h4>
-							<p class="card-text">Our Saas Products Empower IT professionals to adapt to rapid change, utilise resource more
-							efficiently and deliver stronger value to organizations.</p>
-						</div>
-						<div class="card-footer">
-							<?php 
-							if ($this->session->userdata('member_service_remaining_days')) 
-							{
-								if ($this->session->userdata('member_service_remaining_days')<0) {
+				<div class="row" >
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/wbssuite.png" alt="Card image cap" width="177" height="61">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">WBS Business Suite</h4>
+								<p class="card-text">Our Saas Products Empower IT professionals to adapt to rapid change, utilise resource more
+								efficiently and deliver stronger value to organizations.</p>
+								<div class="text-center">
+									<?php 
+									if ($this->session->userdata('member_service_remaining_days')) {
+										if ($this->session->userdata('member_service_remaining_days')<0) {
+											
+											$websuit=base_url()."wbs_suite";
+										}
+										else
+										{
+											$websuit=base_url()."crm/login";	
+										}
+									} else if ($this->session->userdata('crm_subscription')) {
+										$websuit=base_url()."crm/login";	
+									}
+									else
+									{
+										$websuit=base_url()."wbs_suite";
+									}	
 									
-									$websuit=base_url()."wbs_suite";
-								}
-								else
-								{
-									$websuit=base_url()."crm/login";	
-								}
-							}	
-							else if ($this->session->userdata('crm_subscription')) 
-							{
-								$websuit=base_url()."crm/login";	
-							}
-							else
-							{
-								$websuit=base_url()."wbs_suite";
-							}	
-							
-						?>
-						
-						
-							<a href="<?php echo $websuit; ?>" class="btn btn-danger btn-block">
-                                View Service
-								
-							</a>
+									?>
+									<a href="<?php echo $websuit; ?>" class="btn btn-danger">
+		                                Go To Dashboard / Subscribe Now
+										
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="card col-md-3 col-sm-4">
-						<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:10px; margin-bottom: 22px;">
-						<div class="card-block" style="padding-bottom:10px;">
-							<h4 class="card-title">PaaSPort</h4>
-							<p class="card-text">Try or purchase our latest tools, apps and software to continuously enhance your infrastructure and maintain
-							a competitive advantage.</p>
-						</div>
-						<div class="card-footer">
-							<a href="<?php echo base_url(); ?>paas-port/dashboard" class="btn btn-danger btn-block">
-							<!--<a href="<?php echo base_url(); ?>paas-port/dashboard" class="btn btn-danger btn-block">-->
-                                View Service
-								
-							</a>
-						</div>
-					</div>
-					<div class="card col-md-3 col-sm-4">
-						<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/silo%20main%20logo.png" alt="Card image cap" style="margin-top:10px; margin-bottom: 22px;width:auto;height:37px;">
-						<div class="card-block" style="padding-bottom:10px;">
-							<h4 class="card-title">Silo Cloud Services</h4>
-							<p class="card-text">Simplify networking, domain and webhosting with a single secured solution that caters to Startup and small businesses at every stage of growth.</p>
-						</div>
-						<div class="card-footer">
-							<a href="<?php echo base_url(); ?>dashboard" class="btn btn-danger btn-block">
-                                View Service
-							</a>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/paasport.png" alt="Card image cap" height="39" width="136" style="margin-top:21px;">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">PaaSPort</h4>
+								<p class="card-text">Try or purchase our latest tools, apps and software to continuously enhance your infrastructure and maintain
+								a competitive advantage.</p>
+								<div class="text-center">
+									<a href="<?php echo base_url(); ?>paas-port/dashboard" class="btn btn-danger">Go To Dashboard / Subscribe Now</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					
-					
-					
-				
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/silo%20main%20logo.png" alt="Card image cap" width="80" style="margin-top:20px;">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">Silo Cloud Services</h4>
+								<p class="card-text">Simplify networking, domain and webhosting with a single secured solution that caters to Startup and small businesses at every stage of growth.</p>
+								<div class="text-center">
+									<a href="<?php echo base_url(); ?>dashboard" class="btn btn-danger">
+		                                Go To Dashboard / Subscribe Now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/fiberrails%20main96x86.png" alt="Card image cap">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">Fiber Rails Portal</h4>
+								<p class="card-text">Create your company-specific portfolio and catalogs with prices and terms, and enhance tracking, global management and order processing.</p>
+								<div class="text-center">
+									<a href="<?php echo base_url(); ?>dashboard" class="btn btn-danger">
+		                                Go To Dashboard / Subscribe Now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/scandisc%20main%20logo.png" alt="Card image cap" width="158" style="margin: 34px auto;">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">Scandisc Registry</h4>
+								<p class="card-text">User Generated Content Distribution Platform developed to protect the right and royalty of independent artisans world wide.</p>
+								<div class="text-center">
+									<a href="<?php echo base_url(); ?>dashboard" class="btn btn-danger">
+		                                Go To Dashboard / Subscribe Now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel">
+							<div class="panel-heading">
+								<img class="card-img-top img-responsive center-block" src="<?php echo base_url(); ?>images/services/silobank.png" alt="Card image cap" width="109">
+							</div>
+							<div class="panel-body">
+								<h4 class="card-title">Silo Bank</h4>
+								<p class="card-text">You have earned the right to pay less for transactions between you and your customer, Try silo bank as an option for your next gen payment gateway.</p>
+								<div class="text-center">
+									<a href="<?php echo base_url(); ?>dashboard" class="btn btn-danger">
+		                                Go To Dashboard / Subscribe Now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
