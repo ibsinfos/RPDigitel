@@ -234,6 +234,10 @@
 						$_SESSION['member_service_remaining_days']=$member_service_remaining_days;
 						// }
 				}
+				else
+				{
+					$_SESSION['member_service_remaining_days']=1;
+				}
 				
 				/* To check whether free trial period completed or not End*/
 				
@@ -331,6 +335,35 @@
 			}	
 			
 		}
-	}
+		
+		function get_user_details($user_id) {
+			$this->db->where('user_id', $user_id);
+			// $this->db->or_where('email_address', $this->input->post('username'));
+			// $this->db->where('password', md5($this->input->post('password')));
+			$query = $this->db->get('membership');
+			
+			if ($query->num_rows() > 0) {
+				// Get the last row if there are more than one
+				$row = $query->last_row();
+				// Assign the row to our return array
+				$data['user_id'] = $row->user_id;
+				$data['role'] = $row->role;
+				$data['first_name'] = $row->first_name;
+				$data['last_name'] = $row->last_name;
+				$data['email_address'] = $row->email_address;
+				$data['crm_db_id'] = $row->crm_db_id;
+				$data['paasport_user_id'] = $row->paasport_user_id;
+				$data['phone_no'] = $row->phone_no;
+				$data['two_way_authentication'] = $row->two_way_authentication;
+				$data['role_id'] = $row->role_id;
+				$data['purchase_pack'] = $row->purchase_pack;
+				$data['last_loggedin'] = $row->last_loggedin;
+				// Return the user found
+				return $data;
+			}
+		}
+		
+		
+		}
 	
 ?>
