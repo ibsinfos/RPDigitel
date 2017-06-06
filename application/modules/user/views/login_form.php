@@ -258,7 +258,7 @@
 					else 
 					{
 						$('#password').val("");
-                        $("#errors").html(data);
+                        $("#errors").html(json.error);
 						
 					}
 					

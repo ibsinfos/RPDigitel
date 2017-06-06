@@ -254,6 +254,7 @@
 			$map['otp']='';
 			$map['two_way_authentication']='';
 			$map['firsttime']='';
+			$map['error']='';
 			$user=array();
 			$user = $this->membership_model->get_user_role();
 			$query_result = $this->membership_model->validate_user($user['role']);
@@ -262,7 +263,8 @@
 			// die('sd');
 			if ($query_result == "error") {// if the user's credentials validated...
 				//echo '<p class="error">' . $query_result;
-				echo '<p class="error">Please Enter valid Username and Password';
+					$map['error']='<p class="error">Please Enter valid Username and Password';
+					echo json_encode($map); 
 				} else { // incorrect username or password
 				
 				$user_account=array();
@@ -295,7 +297,7 @@
 					
 					
 			
-			$this->send_otp($user['phone_no']);
+					$this->send_otp($user['phone_no']);
 					
 					 $map['otp']='otp';
 					 echo json_encode($map);
