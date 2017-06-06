@@ -254,7 +254,7 @@
 				// , #email_address,#phone_number,#country,#password,#confirmpassword
 				$("#errors").html('');				
 				$('#username, #email_address, #phone_number,#country,#password,#confirmpassword').val("");
-				$("#success").html('<div class="alert"><button type="button" class="close" data-dismiss="alert">X</button><strong>You are regisered successfully, Please confirm your registration.</div>');
+				$("#success").html('<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Your account was successfully created. We have sent you an e-mail to confirm your account.</div>');
 				} else {
 				
 				$("#errors").html(data);
