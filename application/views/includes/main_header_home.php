@@ -1,5 +1,5 @@
 <?php $session_data=$this->session->userdata; 
-	
+	//echo '<pre>'; print_r($session_data); exit;
 	?>
 <header class="headerWrap navbar-fixed-top">
 			<nav class="navbar navbar-inverse">

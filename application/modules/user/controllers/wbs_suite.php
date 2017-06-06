@@ -73,10 +73,13 @@
 			}
 			
 			if (isset($_SESSION['user_name'])) {
-                $user = $this->membership_model->get_user_role($_SESSION['user_name']);
+                $user = $this->membership_model->get_user_details($_SESSION['user_id']);
 				}else{
-                $user = $this->membership_model->get_user_role($this->input->post('username'));
+                $user = $this->membership_model->get_user_details($this->input->post('username'));
 			}
+			
+			// print_r($user);
+			// die('ddd');
 			
 			$data = array(
 			'username' => $this->input->post('username'),
@@ -99,7 +102,9 @@
 			$_SESSION['crm_db_id'] = $user['crm_db_id'];
 			$_SESSION['email_address'] = $user['email_address'];
 			$_SESSION['wbs_trial']='set';
-			
+			$_SESSION['member_service_remaining_days']=30;
+			$_SESSION['crm_subscription']='yes';
+						
 			// print_r($_SESSION);
 			// die('dd');
 			

@@ -252,12 +252,8 @@
 				//window.location = "<?php echo base_url(); ?>login";
 				// $('#signup_form').reset() 
 				// , #email_address,#phone_number,#country,#password,#confirmpassword
-				$('#username').val();
-				$('#email_address').val();
-				$('#phone_number').val();
-				$('#country').val();
-				$('#password').val();
-				$('#confirmpassword').val();
+				$("#errors").html('');				
+				$('#username, #email_address, #phone_number,#country,#password,#confirmpassword').val("");
 				$("#success").html('<div class="alert"><button type="button" class="close" data-dismiss="alert">X</button><strong>You are regisered successfully, Please confirm your registration.</div>');
 				} else {
 				

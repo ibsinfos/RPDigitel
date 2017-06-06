@@ -254,10 +254,12 @@
 			$map['otp']='';
 			$map['two_way_authentication']='';
 			$map['firsttime']='';
-			
+			$user=array();
 			$user = $this->membership_model->get_user_role();
 			$query_result = $this->membership_model->validate_user($user['role']);
 			
+			// print_r($user);
+			// die('sd');
 			if ($query_result == "error") {// if the user's credentials validated...
 				//echo '<p class="error">' . $query_result;
 				echo '<p class="error">Please Enter valid Username and Password';
@@ -289,7 +291,11 @@
 					);					
 					$this->session->set_userdata($data);
 					
-					$this->send_otp($user['phone_no']);
+					
+					
+					
+			
+			$this->send_otp($user['phone_no']);
 					
 					 $map['otp']='otp';
 					 echo json_encode($map);
@@ -309,6 +315,7 @@
 					// ifsession_start();
 					//$_SESSION['testt']='123';
 					$this->session->set_userdata($data);
+					
 					
 					
 					//echo '<pre>'; print_r($this->session->userdata); exit;
@@ -355,7 +362,7 @@
 				$user_account['purchase_pack']=$user['purchase_pack'];
 				$_SESSION['user_account']=$user_account;
 				//$this->session->set_userdata($user_account);
-				//echo '<pre>'; print_r($_SESSION); exit;
+				
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
 				
 				if($user['two_way_authentication']!='Y')

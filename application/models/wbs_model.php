@@ -5,14 +5,19 @@
 		
 		function get_free_trial($service_id, $days, $org_name) {
 			
-			
+		 // echo $aaaaa=print_r($_SESSION); 
+			// return $aaaaa;
 			$this->db->where('user_id', $this->session->userdata('user_id'));
 			$chk_free_trial = $this->db->get('member_services');
 			
 			if ($chk_free_trial->num_rows() > 0) {
 				
 				$error_msg = 'This Username already used for Free trial';
+				
+		 // echo $aaaaa=print_r($this->session->userdata); 
+		 // echo '<pre>'; print_r($_SESSION); die; 
 				return $error_msg;
+				// return $aaaaa;
 				} else {
 				
 				//Check for database name is_exists?
@@ -53,6 +58,8 @@
 				$this->db->where('user_id', $this->session->userdata('user_id'));
 				$this->db->update('membership', $crm_db_data);
 				
+				
+				// die('sssssssssssss');
 				//update membershipdetails table with crm db id End
 				
 				
