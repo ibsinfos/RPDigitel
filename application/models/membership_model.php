@@ -12,7 +12,7 @@
 				$query = $this->db->get('membership');
 			*/
 			
-			$query = $this->db->query("SELECT * FROM membership WHERE (username = '" . $this->input->post('username') . "' OR email_address = '" . $this->input->post('username') . "') AND password = '" . $this->hash($this->input->post('password')) . "' AND role='" . $user_role . "'");
+			$query = $this->db->query("SELECT * FROM membership WHERE (username = '" . $this->input->post('username') . "' OR email_address = '" . $this->input->post('username') . "') AND password = '" . $this->hash($this->input->post('password')) . "' AND role='" . $user_role . "' AND verified=1");
 			
 			if ($query->num_rows == 1) {
 				//return true;
@@ -162,7 +162,7 @@
                 'wordwrap' => TRUE
 				);
 				
-				$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Username :" . $username . " <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Password : " . $this->input->post('password') . " ";
+				$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "user/login/verification/".urlencode($this->input->post('email_address'))." <br><br> Thanks & Regards, <br> RPDigitel Team";
 				$this->load->library('email', $config);
 				$this->email->set_newline("\r\n");
 				$this->email->from('rpdigitel@gmail.com'); // change it to yours
@@ -318,6 +318,17 @@
 			$update_data=array('last_loggedin'=>date('Y-m-d h:i:s'));
 			$this->db->where('user_id',$id);
 			$q=$this->db->update('membership',$update_data);
+			
+		}
+		public function update_verification($email){
+			
+			if(!empty($email))
+			{
+				$update_data=array('verified'=>1);
+				$this->db->where('email_address',$email);
+				$q=$this->db->update('membership',$update_data);
+				return $q;
+			}	
 			
 		}
 	}

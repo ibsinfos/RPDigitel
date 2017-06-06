@@ -497,7 +497,7 @@
 					//	$this->load->view('includes/template', $data);
 					
 					
-					$user = $this->membership_model->get_user_role($this->input->post('username'));
+				/*	$user = $this->membership_model->get_user_role($this->input->post('username'));
 					
 					$user_account=array();
 					$user_account['username']=$this->input->post('username');
@@ -518,13 +518,12 @@
 						session_start();
 					}
 					$_SESSION['user_name'] = $this->input->post('username');
-					//                $_SESSION['user_name']="admin";
-					$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
-					//                $_SESSION['password']="55677fc54be3b674770b697114ce0730300da0f6783202e2d17d7191ba68ec97cab4b61d3470f298d0ca2435111c29b8d5ad63058b725916336fdab9584829f4";
 					
-					/* Session set to access paasport dashboard Start */
+					$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
+					
+					
 					$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
-					/* Session set to access paasport dashboard End */
+					
 					
 					$_SESSION['user_id'] = $user['user_id'];
 					$_SESSION['crm_db_id'] = $user['crm_db_id'];
@@ -532,15 +531,29 @@
 					
 					$_SESSION['user_account']=$user_account;
 					
-					$this->session->set_userdata($data);
+					$this->session->set_userdata($data); */
 					
+					//$this->session->set_flashdata('verify_message', 'Please verify you account before login.');
+					//redirect('user/login');
 					echo 'true';
 					
 					//redirect('user/Dashboard/members_area');
 				}
 			}
 		}
-		
+		function verification($email=null)
+		{
+			$this->load->model('membership_model');
+			if(!empty($email))
+			{
+				$email_addr=urldecode($email);
+				$q=$this->membership_model->update_verification($email_addr);
+				if($q)
+				{
+					redirect(base_url() . 'login');
+				}			
+			}			
+		}
 		function logout() 
 		{
 			$this->load->model('membership_model');
