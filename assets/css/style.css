@@ -273,8 +273,10 @@ body {
   color: #838081;
   font-size: 12px;
   margin-bottom: 5px;
-  padding-left: 15px;
+}
+ul.typoList li {
   position: relative;
+  padding-left: 15px;
 }
 ul.typoList li:before {
   content: "";
@@ -374,6 +376,120 @@ ul.typoList li:before {
 }
 /* Home css end */
 
+/* Subscription css start */
+.subscribeHeroSection {
+  background: rgba(0,0,0,0.3) url('../images/subscription/shop-lp-hero-image.png') no-repeat center center/contain;
+  height: 375px;
+  color: #fff;
+}
+.subscribeHeroSection .heading {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0 8%;
+  margin-top: 50px;
+}
+.subscribeHeroSection .viewMore {
+  color: #000;
+  margin-top: 8px;
+}
+.subscribeShowPrice {
+  background-color: #aaaaaa;
+  border-top: 1px solid #7F7F7F;
+  padding: 15px 0;
+  font-size: 22px;
+}
+.subscribeShowPrice p,
+.subscribeRedStrip p {
+  margin-bottom: 0;
+}
+.subscribeRedStrip {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 10px 0;
+}
+.subscribePlanSection {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+.subscribePlanSection .tab-content {
+  padding-top: 20px;
+}
+.subscribePlanSection .panel {
+  border: 1px solid #ddd;
+}
+.subscribePlanSection .planAmtWrap {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 75px;
+  margin: 0 auto -40px;
+  background: #fff;
+  font-size: 14px;
+}
+.subscribePlanSection .planAmtWrap .amt {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+/*.subscribePlanSection .typoList li:before {
+  background: #fff;
+}*/
+.subscribePlanSection .plan1 .panel-heading {
+  background-color: #ed1b24;
+}
+.subscribePlanSection .plan2 .panel-heading {
+  background-color: #f15a25;
+}
+.subscribePlanSection .plan3 .panel-heading {
+  background-color: #9a0000;
+}
+.subscribePlanSection .planName {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  margin: 20px 0;
+}
+.subscribePlanSection .panel ul {
+  margin: 40px 0 34px 15px;
+}
+.subscribePlanSection .panel ul li {
+  margin-bottom: 8px;
+}
+.subscribePlanSection .btn {
+  padding: 8px 30px;
+}
+.wirelesServicesInfo .rpDigitelLogo {
+  margin-bottom: 25px;
+}
+.wirelesServicesInfo .whyRP {
+  font-size: 29px;
+  line-height: 31px;
+  color: #616161;
+  font-weight: 700;
+}
+.wirelesServicesInfo .reImagine {
+  font-size: 49px;
+  line-height: 51px;
+  color: #FF0000;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.wirelesServicesInfo a {
+  color: #FF0000;
+  font-weight: 600;
+  margin-bottom: 50px;
+  display: block;
+}
+.wirelesServicesInfo .btn {
+  padding: 10px 55px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+/* Subscription css end */
+
+
 /* footer css start */
 .footerWrap {
   background-color: #000;
@@ -410,6 +526,9 @@ ul.typoList li:before {
 /* footer css end */
 
 /* common css start */
+.redText {
+  color: #FF0000;
+}
 .btn.active.focus, 
 .btn.active:focus, 
 .btn.focus, 
@@ -441,6 +560,29 @@ ul.typoList li:before {
 }
 .textWhite {
   color: #fff;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs>li {
+  margin-bottom: 0;
+}
+.nav-tabs>li>a {
+  color: #5c5c5c;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 10px 30px;
+  border: 0;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li>a:hover {
+  background-color: #dedede;
+  border: 0;
+}
+.tab-content {
+  border-top: 10px solid #7f7f7f;
 }
 /* common css end */
 
@@ -484,9 +626,12 @@ ul.typoList li:before {
     font-size: 24px;
   }
   /* Home css end */
-  .audioPlayerWrap .secondCol {
-    padding-left: 15px;
+  
+  /* Subscription css start */
+  .subscribePlanSection .nav-tabs>li>a {
+    padding: 10px 25px;
   }
+  /* Subscription css end */
   
 }
 @media (max-width: 1024px) {
@@ -523,6 +668,13 @@ ul.typoList li:before {
     margin-top: 30px;
   }
   /* Home css end */
+
+  /* Subscription css start */
+  .subscribePlanSection .nav-tabs>li>a {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+  /* Subscription css end */
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	/*.navbar-header {
@@ -539,6 +691,12 @@ ul.typoList li:before {
 		display: block !important;
 	}*/
 	
+}
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav>li>a {
+    padding: 0 15px;
+    line-height: 55px;
+  }
 }
 @media (max-width: 767px) {
 	.navbar-inverse .badge {
@@ -637,5 +795,29 @@ ul.typoList li:before {
     font-size: 12px;
   }
   /* Home css end */
+
+  /* Subscription css start */
+  .subscribeHeroSection {
+    background-size: cover;
+  }
+  .subscribeHeroSection .heading {
+    font-size: 32px;
+  }
+  .subscribePlanSection .nav-tabs>li {
+    float: none;
+  }
+  .wirelesServicesInfo {
+    margin-top: 15px;
+  }
+  .wirelesServicesInfo .whyRP {
+    font-size: 24px;
+  }
+  .wirelesServicesInfo .reImagine {
+    font-size: 36px;
+  }
+  .wirelesServicesInfo .imageBlock img {
+    margin: 0 auto 10px;
+  }
+  /* Subscription css end */
 
 }

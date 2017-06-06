@@ -209,58 +209,63 @@
 			</div>
 			-->
 			<div class="learnMoreAbout">
-			<a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse">Learn More about Fiber Rail Services</a>
-			<div id="demo" class=" collapse" style="background: #ffffff; ">
-				<ul class="list-inline hidden-xs" style="margin-bottom:0px; padding:20px; padding-left:10%">
-					<li class=" padding-left-30"><a class="black" href="#">RPDigital</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">FiberRails</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">SiloSD</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">SiloWebHosting</a></li>
-					<li class=" padding-left-30"><a class="black"  href="#">SiloBank</a></li>
-					<li class=" padding-left-30"><a class="black"  href="#">ScanDiscs</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">MyScandisc</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">MyScandiscTV</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">NetWork</a></li>
-					<li class=" padding-left-30"><a class="black" href="#">MarketPlace</a></li>
-				</ul>
-				<div class="col-md-6 " style="background: #ffffff;">
-					<div class="col-md-2 hidden-xs hidden-sm"> <img class="block"  src="<?php echo base_url(); ?>images/scandisc%20box82x82.png?crc=4246127547" alt="" width="70" height="70" style=" margin-top: 80px;"></div>
-					<div class="col-md-6 hidden-xs hidden-sm"><img class="block"  src="<?php echo base_url(); ?>images/thingorilla_business_135.jpg?crc=290504810" alt="" width="330" height="220" style="margin-top:80px; margin-bottom:66px;"></div>
-				</div>
-				<div class="col-md-6 col-xs-12" style="background: #ffffff">
-					<div class="margin-top-25" style="margin-top: 25px;">
-						<div class="col-md-2 ">
-							<img class="center-block img-responsive" src="<?php echo base_url(); ?>images/silo-cloud.png" alt="" style="margin-top: 25px;">
+				<button class="btn btnRed btn-block dropdown-toggle" type="button" id="learnMoreAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn More about Fiber Rail Services</button>
+				<div class="dropdown-menu" aria-labelledby="learnMoreAbout">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<ul class="list-unstyled list-inline">
+									<li><a href="#">RPDigital</a></li>
+									<li><a href="#">FiberRails</a></li>
+									<li><a href="#">SiloSD</a></li>
+									<li><a href="#">SiloWebHosting</a></li>
+									<li><a href="#">SiloBank</a></li>
+									<li><a href="#">ScanDiscs</a></li>
+									<li><a href="#">MyScandisc</a></li>
+									<li><a href="#">MyScandiscTV</a></li>
+									<li><a href="#">NetWork</a></li>
+									<li><a href="#">MarketPlace</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-md-2 hidden-xs hidden-sm"> <img class="block"  src="<?php echo base_url(); ?>images/scandisc%20box82x82.png?crc=4246127547" alt="" width="70" height="70" style=" margin-top: 80px;"></div>
+								<div class="col-md-6 hidden-xs hidden-sm"><img class="block"  src="<?php echo base_url(); ?>images/thingorilla_business_135.jpg?crc=290504810" alt="" width="330" height="220" style="margin-top:80px; margin-bottom:66px;"></div>
+							</div>
+							<div class="col-sm-6">
+								<div class="margin-top-25" style="margin-top: 25px;">
+									<div class="col-md-2 ">
+										<img class="center-block img-responsive" src="<?php echo base_url(); ?>images/silo-cloud.png" alt="" style="margin-top: 25px;">
+									</div>
+									<div class="col-md-10">
+										<h4>Flexible hosting startups</h4>
+										<p>Easy to use tools, included business mail accounts, and the best dynamic page builder in the business. All to help you make your mark !</p>
+									</div>
+									<div class="col-md-2 ">
+										<img class="center-block img-responsive margin-top-10"  src="<?php echo base_url(); ?>images/websuite.png" alt="">
+									</div>
+									<div class="col-md-10">
+										<h4>All the tools you need to hang the OPEN sign...</h4>
+										<p>E-commerce, ERP and CRM centered around your ideas for growth.</p>
+									</div>
+									<div class="col-md-2 ">
+										<img class="center-block img-responsive  "  src="<?php echo base_url(); ?>images/fiber-rails.png" alt="">
+									</div>
+									<div class="col-md-10">
+										<h4>Introducing FiberRails...</h4>
+										<p style="margin-bottom: 20px;">Many solutions offer platforms, our focus is on the Handrails!</p>
+									</div>
+									<div class="col-md-2 ">
+										<img class="center-block img-responsive  margin-top-25 "  src="<?php echo base_url(); ?>images/payments.png" alt="">
+									</div>
+									<div class="col-md-10 padding-bottom-40">
+										<h4>Accept Payments !</h4>
+										<p style="margin-bottom: 45px;">Mobile Payments, invoicing, sales and banking services just got easier...</p>
+									</div>
+									
+								</div>
+							</div>
 						</div>
-						<div class="col-md-10">
-							<h4>Flexible hosting startups</h4>
-							<p>Easy to use tools, included business mail accounts, and the best dynamic page builder in the business. All to help you make your mark !</p>
-						</div>
-						<div class="col-md-2 ">
-							<img class="center-block img-responsive margin-top-10"  src="<?php echo base_url(); ?>images/websuite.png" alt="">
-						</div>
-						<div class="col-md-10">
-							<h4>All the tools you need to hang the OPEN sign...</h4>
-							<p>E-commerce, ERP and CRM centered around your ideas for growth.</p>
-						</div>
-						<div class="col-md-2 ">
-							<img class="center-block img-responsive  "  src="<?php echo base_url(); ?>images/fiber-rails.png" alt="">
-						</div>
-						<div class="col-md-10">
-							<h4>Introducing FiberRails...</h4>
-							<p style="margin-bottom: 20px;">Many solutions offer platforms, our focus is on the Handrails!</p>
-						</div>
-						<div class="col-md-2 ">
-							<img class="center-block img-responsive  margin-top-25 "  src="<?php echo base_url(); ?>images/payments.png" alt="">
-						</div>
-						<div class="col-md-10 padding-bottom-40">
-							<h4>Accept Payments !</h4>
-							<p style="margin-bottom: 45px;">Mobile Payments, invoicing, sales and banking services just got easier...</p>
-						</div>
-						
 					</div>
 				</div>
 			</div>
-		</div>
-		
 		</header>
