@@ -53,7 +53,8 @@
 						$user['role_id'] = $user_details[0]['role_id'];
 						$user['purchase_pack'] = $user_details[0]['purchase_pack'];
 						$this->session->set_userdata('user_account', $user);										$map ['msg'] = "Logged in successfully.";
-						redirect('dashboard');
+						//redirect('dashboard');
+						redirect('add-news');
 						} else {
 						$this->session->set_userdata('msg', "Login to this site have been blocked by Admin.");
 						$map ['msg'] = "Logged in successfully.";
