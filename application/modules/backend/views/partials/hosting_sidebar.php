@@ -18,10 +18,18 @@
         <!-- menu profile quick info -->
         <div class="profileInfo">
             <img src="<?php echo $userImg; ?>" alt="" class="img-circle profile_img">
-            
-            <h2 class="profileName">Welcome, <?php //echo ucfirst($session_data['username']) ?><?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?>  </h2>
-            <h4 class="profession"><?php echo ($user[0]['job_title'])?$user[0]['job_title']:''; ?> </h4>
-            <ul class="list-unstyled list-inline">
+            <h2 class="profileName">Welcome, <?php //echo ucfirst($session_data['username']) ?>
+				
+				<?php 
+					if(!empty($user[0]['first_name']))
+					echo $user[0]['first_name'] ?>  </h2>
+            <h4 class="profession"><?php 
+				if(!empty($user[0]['job_title']))
+				{
+					echo $user[0]['job_title'];
+				}
+				 ?> </h4>
+			<ul class="list-unstyled list-inline">
             	<li><a href="<?php echo base_url(); ?>backend/dashboard/edit_profile" class="btn btnRed">Edit</a></li>
             	<li><button class="btn grayBtn" data-toggle="modal" data-target="#myModal">Share</button></li>
             </ul>

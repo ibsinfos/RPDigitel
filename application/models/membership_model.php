@@ -335,6 +335,17 @@
 			}	
 			
 		}
+
+		public function check_verification($email){
+			
+			if(!empty($email))
+			{
+				$this->db->where('email_address',$email);
+				$query = $this->db->get('membership')->row_array();
+				return $query;
+			}	
+			
+		}
 		
 		function get_user_details($user_id) {
 			$this->db->where('user_id', $user_id);

@@ -61,6 +61,10 @@
                     <div class="personalInfoWrap text-center">
                         <div class="musicianWrap">
                             <div class="btnColumn hidden">
+							<?php 
+								if(empty($user[0]['id']))
+									$user[0]['id']='';	
+								?>
                                <a href="<?php echo backend_passport_url(); ?>paasport-update/<?php echo $user[0]['id'];  ?>" > <button class="btn subscribeBtn">Edit</button></a>
                                 
 							</div>
@@ -71,8 +75,29 @@
 											$userImg=backend_passport_url().$user[0]['user_image'];
 								?>	
                                 <img src="<?php echo $userImg; ?>" alt="" class="img-circle">
-                                <p class="musicianName text-muted"><?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?> <?php echo ($user[0]['last_name'])?$user[0]['last_name']:''; ?></p>
-                                <p class="text-muted"><?php echo ($user[0]['home_address'])?$user[0]['home_address']:''; ?></p>
+                                <p class="musicianName text-muted">
+									<?php 
+										if(!empty($user[0]['first_name']))
+											echo $user[0]['first_name']; 
+										else
+											echo "";
+									?> 
+									<?php 
+										if(!empty($user[0]['last_name']))
+											echo $user[0]['last_name'];
+										else
+											echo "";
+										
+										?>
+									</p>
+                                <p class="text-muted">
+									<?php 
+										if(!empty($user[0]['home_address']))
+										{
+												echo $user[0]['home_address'];
+										}	
+										
+										?></p>
 							</div>
                             <div class="btnColumn hidden">
                                 <button class="btn shareBtn" data-toggle="modal" data-target="#myModal">Share</button>
