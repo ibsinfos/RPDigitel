@@ -60,7 +60,7 @@
                 <div class="col-sm-4">
                     <div class="personalInfoWrap text-center">
                         <div class="musicianWrap">
-                            <div class="btnColumn">
+                            <div class="btnColumn hidden">
                                <a href="<?php echo backend_passport_url(); ?>paasport-update/<?php echo $user[0]['id'];  ?>" > <button class="btn subscribeBtn">Edit</button></a>
                                 
 							</div>
@@ -74,7 +74,7 @@
                                 <p class="musicianName text-muted"><?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?> <?php echo ($user[0]['last_name'])?$user[0]['last_name']:''; ?></p>
                                 <p class="text-muted"><?php echo ($user[0]['home_address'])?$user[0]['home_address']:''; ?></p>
 							</div>
-                            <div class="btnColumn">
+                            <div class="btnColumn hidden">
                                 <button class="btn shareBtn" data-toggle="modal" data-target="#myModal">Share</button>
 							</div>
 						</div>
@@ -158,7 +158,7 @@
 						</li>
 					</ul>
 					
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">

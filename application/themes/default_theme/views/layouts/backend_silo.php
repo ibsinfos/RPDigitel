@@ -118,7 +118,7 @@
 		<!-- Parsley Form Validator 
 		<script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
         <!-- Music List Scripts used in dashboard -->
-        <?php if($page=="dashboard"){?>
+        <?php if($page=="dashboard" || $page=="edit_profile"){?>
             <script src="<?php echo backend_asset_url() ?>build/js/music-list.js"></script>
 		<?php }?>
         <!-- Custom Scrollbar Scripts -->
