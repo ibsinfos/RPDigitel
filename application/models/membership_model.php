@@ -317,6 +317,17 @@
 				return $row->slug;				
 			}	
 		}
+		public function get_paasport_user($id=null)
+		{
+			$this->db->where('user_id',$id);
+			$query = $this->db->get('tbl_vcard_basic');
+			if ($query->num_rows() > 0) 
+			{
+				$row =  $query->first_row();
+				
+				return $row;				
+			}	
+		}
 		public function update_lastlogged_in($id=null)
 		{
 			$update_data=array('last_loggedin'=>date('Y-m-d h:i:s'));
