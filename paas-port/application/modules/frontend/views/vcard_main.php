@@ -1,4 +1,9 @@
-<div class="container vcard-block card wizard-card" data-color="red">
+<?php
+		 // echo '<pre>'; print_r($this->session->userdata); 
+		 // echo '<pre>'; print_r($_SESSION); die; ?>
+		 
+		 
+		 <div class="container vcard-block card wizard-card" data-color="red">
     <div class=" vcard-box">
         <div class="row">
             <div>

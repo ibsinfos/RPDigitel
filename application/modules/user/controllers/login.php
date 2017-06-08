@@ -254,17 +254,33 @@
 			$map['otp']='';
 			$map['two_way_authentication']='';
 			$map['firsttime']='';
-			
+			$map['error']='';
+			$user=array();
 			$user = $this->membership_model->get_user_role();
 			$query_result = $this->membership_model->validate_user($user['role']);
+			$paasportUser=$this->membership_model->get_paasport_user($user['paasport_user_id']);
+			$user_name=$query_result;
+			if(!empty($paasportUser))
+			{
+				if(!empty($paasportUser->first_name))
+				{
+					$user_name=$paasportUser->first_name;
+				}			
+			}
 			
+			
+			// print_r($user);
+			// die('sd');
 			if ($query_result == "error") {// if the user's credentials validated...
 				//echo '<p class="error">' . $query_result;
-				echo '<p class="error">Please Enter valid Username and Password';
-				} else { // incorrect username or password
+				$map['error']='<p class="error">Please Enter valid Username and Password';
+				echo json_encode($map); 
+			} 
+			else 
+			{ // incorrect username or password
 				
 				$user_account=array();
-				$user_account['username']=$this->input->post('username');
+				$user_account['username']=$user_name;
 				$user_account['email']=$user['email_address'];
 				$user_account['user_id']=$user['user_id'];
 				$user_account['role_id']=$user['role_id'];
@@ -277,7 +293,7 @@
 					
 					$data = array(
 					//'username' => $this->input->post('username'),
-					'username' => $query_result,
+					'username' => $user_name,
 					// 'is_logged_in' => true,
 					'role' => $user['role'],
 					'user_id' => $user['user_id'],
@@ -287,17 +303,18 @@
 					'purchase_pack' => $user['purchase_pack'],					
 					'user_account' => $user_account
 					);					
-					$this->session->set_userdata($data);
+					$this->session->set_userdata($data);					
+					
 					
 					$this->send_otp($user['phone_no']);
 					
-					 $map['otp']='otp';
-					 echo json_encode($map);
+					$map['otp']='otp';
+					echo json_encode($map);
 					}else{
 					
 					$data = array(
 					//'username' => $this->input->post('username'),
-					'username' => $query_result,
+					'username' => $user_name,
 					'is_logged_in' => true,
 					'role' => $user['role'],
 					'user_id' => $user['user_id'],
@@ -311,12 +328,13 @@
 					$this->session->set_userdata($data);
 					
 					
+					
 					//echo '<pre>'; print_r($this->session->userdata); exit;
 					
 				}
 				
 				/**/
-				//$passport_user_slug = $this->membership_model->get_paasport_slug($user['user_id']);
+				$passport_user_slug = $this->membership_model->get_paasport_slug($user['paasport_user_id']);
 				
 				/**/
 				
@@ -329,11 +347,10 @@
 				
 				
 				
-				$_SESSION['user_name'] = $this->input->post('username');
-				//                $_SESSION['user_name']="admin";
+				$_SESSION['user_name'] = $user_name;
 				
 				$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
-				//                $_SESSION['password']="55677fc54be3b674770b697114ce0730300da0f6783202e2d17d7191ba68ec97cab4b61d3470f298d0ca2435111c29b8d5ad63058b725916336fdab9584829f4";
+				
 				/* Session set to access paasport dashboard Start */
 				$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
 				/* Session set to access paasport dashboard End */
@@ -348,24 +365,26 @@
 				
 				
 				$user_account=array();
-				$user_account['username']=$this->input->post('username');
+				$user_account['username']=$user_name;
 				$user_account['email']=$user['email_address'];
 				$user_account['user_id']=$user['user_id'];
 				$user_account['role_id']=$user['role_id'];
 				$user_account['purchase_pack']=$user['purchase_pack'];
 				$_SESSION['user_account']=$user_account;
 				//$this->session->set_userdata($user_account);
-				//echo '<pre>'; print_r($_SESSION); exit;
+				
 				$registered_with_crm = $this->membership_model->get_database_details($user['crm_db_id']);
+				
+				
 				
 				if($user['two_way_authentication']!='Y')
 				{
-					 $map['two_way_authentication']='true';
-					 if(empty($user['last_loggedin']))
-					 {
-						 $map['firsttime']='true';
-					 }					
-					  echo json_encode($map);					
+					$map['two_way_authentication']='true';
+					if(empty($user['last_loggedin']))
+					{
+						$map['firsttime']='true';
+					}					
+					echo json_encode($map);					
 				}
 				
 				
@@ -497,40 +516,40 @@
 					//	$this->load->view('includes/template', $data);
 					
 					
-				/*	$user = $this->membership_model->get_user_role($this->input->post('username'));
-					
-					$user_account=array();
-					$user_account['username']=$this->input->post('username');
-					$user_account['email']=$user['email_address'];
-					$user_account['user_id']=$user['user_id'];
-					$user_account['role_id']=$user['role_id'];
-					$user_account['purchase_pack']=$user['purchase_pack'];
-					
-					$data = array(
-					'username' => $this->input->post('username'),
-					'is_logged_in' => true,
-					'role' => $user['role'],
-					'user_id' => $user['user_id'],
-					'user_account'=>$user_account
-					);
-					
-					if (!isset($_SESSION)) {
+					/*	$user = $this->membership_model->get_user_role($this->input->post('username'));
+						
+						$user_account=array();
+						$user_account['username']=$this->input->post('username');
+						$user_account['email']=$user['email_address'];
+						$user_account['user_id']=$user['user_id'];
+						$user_account['role_id']=$user['role_id'];
+						$user_account['purchase_pack']=$user['purchase_pack'];
+						
+						$data = array(
+						'username' => $this->input->post('username'),
+						'is_logged_in' => true,
+						'role' => $user['role'],
+						'user_id' => $user['user_id'],
+						'user_account'=>$user_account
+						);
+						
+						if (!isset($_SESSION)) {
 						session_start();
-					}
-					$_SESSION['user_name'] = $this->input->post('username');
-					
-					$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
-					
-					
-					$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
-					
-					
-					$_SESSION['user_id'] = $user['user_id'];
-					$_SESSION['crm_db_id'] = $user['crm_db_id'];
-					$_SESSION['email_address'] = $user['email_address'];
-					
-					$_SESSION['user_account']=$user_account;
-					
+						}
+						$_SESSION['user_name'] = $this->input->post('username');
+						
+						$_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
+						
+						
+						$_SESSION['paasport_user_id'] = $user['paasport_user_id'];
+						
+						
+						$_SESSION['user_id'] = $user['user_id'];
+						$_SESSION['crm_db_id'] = $user['crm_db_id'];
+						$_SESSION['email_address'] = $user['email_address'];
+						
+						$_SESSION['user_account']=$user_account;
+						
 					$this->session->set_userdata($data); */
 					
 					//$this->session->set_flashdata('verify_message', 'Please verify you account before login.');
@@ -547,11 +566,21 @@
 			if(!empty($email))
 			{
 				$email_addr=urldecode($email);
-				$q=$this->membership_model->update_verification($email_addr);
-				if($q)
+				$data=$this->membership_model->check_verification($email_addr);
+				if($data['verified']!=1)
 				{
+					$q=$this->membership_model->update_verification($email_addr);
+					if($q)
+					{
+						$this->session->set_flashdata('verification_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Your account has been successfully confirmed!</div>');
+						redirect(base_url() . 'login');
+					}			
+				}
+				else if($data['verified']==1)
+				{
+					$this->session->set_flashdata('verification_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Your account is already confirmed!</div>');
 					redirect(base_url() . 'login');
-				}			
+				}	
 			}			
 		}
 		function logout() 

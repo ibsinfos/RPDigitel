@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php 
-		// echo '<pre>'; print_r($_SESSION); die; ?>
+		 // echo '<pre>'; print_r($this->session->userdata); 
+		 // echo '<pre>'; print_r($_SESSION); die; ?>
     <head>
 		
         <meta charset="utf-8">
@@ -318,9 +319,21 @@
                                                         echo "Enterprise";
 														} else if ($this->session->userdata('advanced') == '1') {
                                                         echo "Advanced";
-														} else {
-                                                        echo "Free";
-													}
+														} 
+														else 	
+														{
+															echo "Free";
+														}
+											
+									
+													if ($this->session->userdata('member_service_remaining_days')) {
+											
+														if ($this->session->userdata('member_service_remaining_days')<0) {
+											
+														echo " Expired";
+														
+														}
+													}	
 												?>
 											</small>
 											

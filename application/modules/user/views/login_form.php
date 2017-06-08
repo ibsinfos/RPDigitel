@@ -137,13 +137,13 @@
 								</div>
 								
                                 <?php
-									/*
-										echo validation_errors('<p class="error">');
+									
+									//	echo validation_errors('<p class="error">');
 										
-										if ($this->session->userdata('error_msg')) {
-										echo "<p class='error'>" . $this->session->userdata('error_msg');
-										$this->session->unset_userdata('error_msg');
-									} */
+										if ($this->session->flashdata('verification_message')) {
+										echo $this->session->flashdata('verification_message');
+										
+									} 
 									
 									
 									
@@ -258,7 +258,7 @@
 					else 
 					{
 						$('#password').val("");
-                        $("#errors").html(data);
+                        $("#errors").html(json.error);
 						
 					}
 					

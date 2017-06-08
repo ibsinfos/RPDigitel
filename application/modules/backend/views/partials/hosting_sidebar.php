@@ -19,8 +19,17 @@
         <div class="profileInfo">
             <img src="<?php echo $userImg; ?>" alt="" class="img-circle profile_img">
             
-            <h2 class="profileName">Welcome, <?php //echo ucfirst($session_data['username']) ?><?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?>  </h2>
-            <h4 class="profession"><?php echo ($user[0]['job_title'])?$user[0]['job_title']:''; ?> </h4>
+            <h2 class="profileName">Welcome, <?php //echo ucfirst($session_data['username']) ?>
+				
+				<?php 
+					if(!empty($user[0]['first_name']))
+					echo $user[0]['first_name'] ?>  </h2>
+            <h4 class="profession"><?php 
+				if(!empty($user[0]['job_title']))
+				{
+					echo $user[0]['job_title'];
+				}
+				 ?> </h4>
 		</div>
         <!-- /menu profile quick info -->
 		
