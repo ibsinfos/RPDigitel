@@ -15,7 +15,7 @@ Class News extends MX_Controller
         $this->load->model("common_model");
        // $this->session = $this->session->userdata('user_account');		
         if (!$this->common_model->isLoggedIn())  {
-           redirect(base_url());
+           redirect(base_url().'admin/login');
 		}
     }
 	
@@ -35,7 +35,7 @@ Class News extends MX_Controller
 		{
 			$category = $this->common_model->getRecords(TABLES::$CATEGORY, '*');		
 			$this->template->set('category',$category);
-			$this->template->set('page','dashboard');
+			$this->template->set('page','add_news');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('admin_silo')
 					->title('Admin Dashboard | Silo')
@@ -97,7 +97,7 @@ Class News extends MX_Controller
 		
 			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
 			$this->template->set('news',$news);
-			$this->template->set('page','dashboard');
+			$this->template->set('page','news_list');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('admin_silo')
 					->title('Admin Dashboard | Silo')
@@ -189,10 +189,135 @@ Class News extends MX_Controller
     }
 
 	
+	public function edit_news($id=null)
+	{
+		$this->load->library('session');
+		$this->load->helper('utility_helper');
+		$this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+		$session_data=$this->session->userdata('user_account');
+		$user = array();
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('title', 'News Title', 'trim|required');
+		$this->form_validation->set_rules('description','Description', 'trim|required');
+		 
+		if ($this->form_validation->run() == FALSE) 
+		{
+			$category = $this->common_model->getRecords(TABLES::$CATEGORY, '*');		
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('id'=>$id));		
+			$this->template->set('news',$news);
+			$this->template->set('category',$category);
+			$this->template->set('page','edit_news');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+					->title('Admin Dashboard | Silo')
+					->set_partial('header','partials/admin_header')
+					->set_partial('sidebar','partials/admin_sidebar')
+					->set_partial('footer','partials/admin_footer');
+			$this->template->build('edit_news');
+		}
+		else
+		{
+		 
+					if (isset($_FILES['image']) && !empty($_FILES['image']['name'])) 
+					{
+						$config = array();
+						$config['upload_path'] = './uploads/news/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('image')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$error_array['image']= "User Image upload error - " . $error; 
+							$map ['msg'] = $error_array;
+							echo json_encode($map);
+							exit;
+						} else {
+							$data = array('upload_data' => $this->upload->data());
+						}               
+						$user['image'] = "uploads/news/" . $data['upload_data']['file_name'];
+					}				
+					$user['title'] = $this->input->post('title');
+					$user['description'] = $this->input->post('description');
+					if(!empty($this->input->post('category')))
+					{
+						$user['category'] = implode(',',$this->input->post('category')); 
+					}	
+					$user['user_id'] = $session_data['user_id'];
+					$user['created'] = date('Y-m-d h:i:s');							
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$this->input->post('id')));
+					if ($uid) {				
+						$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+						redirect(base_url().'edit-news/'.$id);
+					}
+					else
+					{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Unable to save news</div>');
+						redirect(base_url().'edit-news/'.$id);
+					}
+		}				
+			
+	}
 	
 
-    
+    public function featured_news()
+	{
+			$this->load->model('common_model');
+			if(!empty($this->input->post('newsids')))
+			{
+				$news_id=$this->input->post('newsids');
+				foreach($news_id as $nid)
+				{
+					
+					$user['featured']=1;
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+				}	
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+				redirect(base_url().'featured_news');
+			}
+	
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
+			$this->template->set('news',$news);
+			$this->template->set('page','news_list');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+					->title('Admin Dashboard | Silo')
+					->set_partial('header','partials/admin_header')
+					->set_partial('sidebar','partials/admin_sidebar')
+					->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('featured_news');	
+	}
     
 	
-   
+    public function latest_news()
+	{
+			$this->load->model('common_model');
+			if(!empty($this->input->post('newsids')))
+			{
+				$news_id=$this->input->post('newsids');
+				foreach($news_id as $nid)
+				{					
+					$user['latest']=1;
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+				}	
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+				redirect(base_url().'latest_news');
+			}
+	
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
+			$this->template->set('news',$news);
+			$this->template->set('page','news_list');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+					->title('Admin Dashboard | Silo')
+					->set_partial('header','partials/admin_header')
+					->set_partial('sidebar','partials/admin_sidebar')
+					->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('latest_news');	
+	}
 }

@@ -77,7 +77,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Add News</h2>                  
+									<h2>Edit News</h2>                  
 									<div class="clearfix"></div>
 								</div>
 								<div class="x_content">
@@ -88,45 +88,79 @@
 											
 										} 
 									?>
-									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>add-news" data-parsley-validate class="form-horizontal form-label-left">
+									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url().'edit-news/'.$news[0]['id'];  ?>" data-parsley-validate class="form-horizontal form-label-left">
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Cover Image 
 											</label>
-											
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div id="image-holder"  > </div>
+												<div id="image-holder"> 
+													
+												<?php
+													if(!empty($news[0]['image']))  
+													{
+													?>
+													<img src="<?php echo base_url().$news[0]['image']; ?>" width="100%"  />
+												<?php } ?>
+												</div>
 												<input type="file" name="image" id="fileUpload" />
+												
 											</div>
 										</div>
-										<div class="item form-group">
+										
+										
+										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Title <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" id="title" name="title"  class="form-control col-md-7 col-xs-12">
+												<input type="hidden" id="id" name="id" value="<?php echo $news[0]['id']  ?>">
+												<input type="text" id="title" name="title" value="<?php echo $news[0]['title']  ?>" class="form-control col-md-7 col-xs-12">
 												<span style="color:red;" ><?php echo form_error('title'); ?></span>
 											</div>
 										</div>
+										
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Description <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<textarea id="description" name="description"  name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+												<textarea id="description" name="description"  name="textarea" class="form-control col-md-7 col-xs-12"><?php echo $news[0]['description']; ?></textarea>
 												<span style="color:red;" ><?php echo form_error('description'); ?></span>	
 											</div>
 										</div>
-										<div class="form-group">
+											<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Category 
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<select class="form-control" id="category" name="category[]" multiple="multiple" >
+												<select id="category" name="category[]" multiple="multiple" class="form-control" >
 													<?php if(!empty($category)) { 
 														foreach($category as $cat){	
-														?>
-														<option value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
-													<?php } } ?>
+															if(!empty($news[0]['category']))
+															{
+																$cat_arry=explode(',',$news[0]['category']);
+																
+																if(in_array($cat['id'],$cat_arry))
+																{
+																	
+																?>
+																<option selected value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
+																<?php 
+																}	
+																
+																else
+																{
+																?>
+																<option value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
+																<?php
+																}
+																
+																
+															} }
+													}
+													?>
 												</select>
 											</div>
-										</div>										
+										</div>
+										
+										
 										<div class="ln_solid"></div>
 										<div class="form-group">
 											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -147,19 +181,17 @@
 			
 			
 			<script>
-				CKEDITOR.replace('description');		
-				
-				
+				CKEDITOR.replace('description');
 				function ChangeUrl(page, url) 
 				{
 					if (typeof (history.pushState) != "undefined") {
 						var obj = {Page: page, Url: url};
 						history.pushState(obj, obj.Page, obj.Url);
-						} else {
-						window.location.href = "homePage";
-						// alert("Browser does not support HTML5.");
+					} else {
+					window.location.href = "homePage";
+					// alert("Browser does not support HTML5.");
 					}
-				}
-				
-				
-			</script>			
+					}
+					
+					
+					</script>					

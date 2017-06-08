@@ -86,7 +86,7 @@
                                 <td><?php echo $project['title'];?></td>
                                 <td><?php echo $project['description'];?></td>
                                 <td><?php echo date('d F Y',strtotime($project['created']));?></td>
-                                <td><a href="#" >Edit</a> | <a href="<?php echo base_url(); ?>backend/news/delete_news/<?php echo  $project['id'];?>" >Delete</a></td>
+                                <td><a href="<?php echo base_url(); ?>edit-news/<?php echo  $project['id'];?>" >Edit</a> | <a href="<?php echo base_url(); ?>backend/news/delete_news/<?php echo  $project['id'];?>" >Delete</a></td>
                               </tr>
                               <?php 
 							        $i++;  

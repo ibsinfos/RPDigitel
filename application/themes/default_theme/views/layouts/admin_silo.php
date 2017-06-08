@@ -88,7 +88,7 @@
         <!-- bootstrap-daterangepicker -->
         <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <?php if ($page == 'project_list') { ?>
+        <?php if ($page == 'project_list' || $page == 'news_list') { ?>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net/js/jquery.dataTables.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
@@ -121,6 +121,46 @@
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
-		
+	<?php if($page=='edit_news' || $page=='add_news') { ?>
+	<script>
+	$(document).ready(function() {
+        $("#fileUpload").on('change', function() {
+          //Get count of selected files
+          var countFiles = $(this)[0].files.length;
+          var imgPath = $(this)[0].value;
+          var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+          var image_holder = $("#image-holder");
+          image_holder.empty();
+          if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof(FileReader) != "undefined") {
+              //loop for each file selected for uploaded.
+              for (var i = 0; i < countFiles; i++) 
+              {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                  $("<img />", {
+                    "src": e.target.result,
+                    "class": "thumb-image"
+                  }).appendTo(image_holder);
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[i]);
+              }
+            } else {
+              alert("This browser does not support FileReader.");
+			  }
+          } else {
+            alert("Pls select only images");
+          }
+        });
+      });
+		</script>
+		<style>
+		.thumb-image{
+			width:100%;
+			
+		}
+		</style>
+	<?php } ?>	
 	</body>
 </html>

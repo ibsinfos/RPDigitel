@@ -55,6 +55,8 @@
 					<ul class="nav child_menu">
 						<li><a href="<?php echo base_url(); ?>add-news">Create News</a></li>						
 						<li><a href="<?php echo base_url(); ?>news">Update News</a></li>						
+						<li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
+						<li><a href="<?php echo base_url(); ?>latest_news">Latest News</a></li>						
 					</ul>
 					</li>
 				
