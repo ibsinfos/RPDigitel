@@ -128,4 +128,22 @@ $config['dbxyz']['stricton'] = FALSE;
 			$this->load->view('includes/template', $data);
 		}
 		
+		function checkout() 
+		{
+		
+			$is_logged_in = $this->session->userdata('is_logged_in');
+			$user_role = $this->session->userdata('role');
+		
+		
+            $this->load->model('common_model');    
+			if(!empty($_SESSION['paasport_user_id']))
+			{
+				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			}
+			//$data['main_content'] = 'fiber-rails';
+       		$data['main_content'] = 'checkout';
+       		$data['page'] = 'fiberrails';
+			$this->load->view('includes/template', $data);
+		}
+
 	}

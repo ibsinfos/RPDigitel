@@ -115,7 +115,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -139,6 +139,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>
@@ -211,7 +217,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -235,6 +241,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>
@@ -307,7 +319,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -331,6 +343,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>
@@ -403,7 +421,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -427,6 +445,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>
@@ -499,7 +523,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -523,6 +547,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>
@@ -595,7 +625,7 @@
 											  	<tr>
 											  		<th>Plan Name</th>
 											  		<th>Duration</th>
-											  		<th>Price</th>
+											  		<th width="200">Price</th>
 											  	</tr>
 											  </thead>
 											  <tbody>
@@ -619,6 +649,12 @@
 											  	<tr>
 											  		<th colspan="2" class="text-right">Total:</th>
 											  		<th>$200</th>
+											  	</tr>
+											  	<tr>
+											  		<td colspan="2"></td>
+											  		<td>
+											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+											  		</td>
 											  	</tr>
 											  </tfoot>
 											</table>

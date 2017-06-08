@@ -346,7 +346,6 @@
 			}	
 			
 		}
-
 		public function check_verification($email){
 			
 			if(!empty($email))
