@@ -188,7 +188,20 @@ Class News extends MX_Controller
 		
     }
 
-	
+	public function community()
+	{
+		
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
+			$this->template->set('news',$news);
+			$this->template->set('page','dashboard');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+					->title('Admin Dashboard | Silo')
+					->set_partial('header','partials/admin_header')
+					->set_partial('sidebar','partials/admin_sidebar')
+					->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('admin-community');	
+	}
 	
 
     
