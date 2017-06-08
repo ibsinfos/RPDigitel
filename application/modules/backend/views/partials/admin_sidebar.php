@@ -38,7 +38,7 @@
 				
                 <ul class="nav side-menu">
 					
-					<li class="acive"><a>
+					<li class=""><a>
 						<div class="menuIcon">
 							<i class="iconDashboard-home"></i>
 						</div> 
@@ -56,6 +56,12 @@
 						<li><a href="<?php echo base_url(); ?>add-news">Create News</a></li>						
 						<li><a href="<?php echo base_url(); ?>news">Update News</a></li>						
 					</ul>
+					</li>
+					<li ><a href="<?php echo base_url(); ?>admin-community">
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Community </a>
 					</li>
 				
 					

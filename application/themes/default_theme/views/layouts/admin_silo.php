@@ -27,8 +27,7 @@
         
         <link href="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 		
-        <!-- Custom Theme Style -->
-        <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
+        
         <?php if ($page == 'project_list') { ?>
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -39,6 +38,9 @@
 		
 		<!-- Dropzone.js -->
         <link href="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+        <!-- Custom Theme Style -->
+        <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
+        <link href="<?php echo backend_asset_url() ?>css/admin-style.css" rel="stylesheet">
 	</head>
 	
     <body class="nav-md">

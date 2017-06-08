@@ -86,6 +86,7 @@ $route['add-subscriber'] = 'backend/subscriber/addSubscriber';
 $route['project-list'] = 'backend/project/projectList';
 $route['add-project'] = 'backend/project/addProject';
 $route['add-news'] = 'backend/news/add_news';
+$route['admin-community'] = 'backend/news/community';
 $route['news'] = 'backend/news/view_news';
 
 $route['upload-files'] = 'backend/project/uploadFiles';
