@@ -910,4 +910,18 @@ ul.typoList li:before {
   }
   /* Subscription css end */
 
+  /* Checkout css start */
+  .checkoutWrap .nav-tabs li {
+    float: none;
+  }
+  .checkoutWrap .tab-content small.pull-right {
+    display: block;
+    margin-top: 15px;
+    float: none !important;
+  }
+  .checkoutWrap .securityCode .popover {
+    min-width: auto;
+  }
+  /* Checkout css end */
+
 }
