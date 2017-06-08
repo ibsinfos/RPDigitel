@@ -53,6 +53,7 @@ $route['login/logout'] = 'user/login/logout';
 $route['login/signup'] = 'user/login/signup';
 $route['fiberrails'] = 'user/fiberrails';
 $route['subscription'] = 'user/fiberrails/subscription';
+$route['check_out'] = 'user/fiberrails/checkout';
 $route['main_dashboard'] = 'user/fiberrails/main_dashboard';
 $route['silo_sd'] = 'user/silo_sd';
 $route['wbs_suite'] = 'user/wbs_suite';
@@ -88,6 +89,7 @@ $route['add-news'] = 'backend/news/add_news';
 $route['featured_news'] = 'backend/news/featured_news';
 $route['latest_news'] = 'backend/news/latest_news';
 $route['edit-news/(:any)'] = 'backend/news/edit_news/$1';
+$route['admin-community'] = 'backend/news/community';
 $route['news'] = 'backend/news/view_news';
 
 $route['upload-files'] = 'backend/project/uploadFiles';

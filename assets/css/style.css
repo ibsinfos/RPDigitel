@@ -489,6 +489,95 @@ ul.typoList li:before {
 }
 /* Subscription css end */
 
+/* Checkout css start */
+.checkoutHeroWrap {
+  background: rgba(0,0,0,0.3) url(../images/checkout-banner.jpg) no-repeat center center/cover;
+  height: 250px;
+  color: #fff;
+  position: relative;
+}
+.checkoutHeroWrap:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+}
+.checkoutHeroWrap .heading {
+  font-size: 36px;
+  margin-top: 9%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.checkoutWrap {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+.checkoutWrap .nav-tabs li {
+  cursor: pointer;
+}
+.checkoutWrap .nav-tabs li.active {
+  cursor: auto;
+}
+.checkoutWrap .nav-tabs li i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.checkoutWrap .tab-content {
+  padding-top: 25px;
+}
+.checkoutWrap .securityCode .popover {
+  min-width: 400px;
+  font-size: 12px;
+}
+.checkoutWrap .radio-inline+.radio-inline {
+  margin-left: 20px;
+}
+.checkoutWrap .orderSummary .heading {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.checkoutWrap .orderSummary .table {
+  margin-bottom: 0;
+}
+.checkoutWrap .orderSummary .table td,
+.checkoutWrap .orderSummary .table th {
+  padding: 15px 8px;
+}
+.checkoutWrap .thankYou {
+  border: 1px solid #ddd;
+  margin: 25px 0;
+  padding: 15px;
+  line-height: 24px;
+  background-color: #fff;
+  position: relative;
+}
+.checkoutWrap .thankYou .heading {
+  position: absolute;
+  top: -26px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 4px;
+}
+.checkoutWrap .thankYou .confirmText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.checkoutWrap .thankYou p {
+  margin-top: 20px;
+}
+/* Checkout css end */
+
 
 /* footer css start */
 .footerWrap {
@@ -526,7 +615,8 @@ ul.typoList li:before {
 /* footer css end */
 
 /* common css start */
-.redText {
+.redText,
+.error {
   color: #FF0000;
 }
 .btn.active.focus, 
@@ -819,5 +909,19 @@ ul.typoList li:before {
     margin: 0 auto 10px;
   }
   /* Subscription css end */
+
+  /* Checkout css start */
+  .checkoutWrap .nav-tabs li {
+    float: none;
+  }
+  .checkoutWrap .tab-content small.pull-right {
+    display: block;
+    margin-top: 15px;
+    float: none !important;
+  }
+  .checkoutWrap .securityCode .popover {
+    min-width: auto;
+  }
+  /* Checkout css end */
 
 }
