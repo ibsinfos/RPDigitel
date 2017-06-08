@@ -1,4 +1,4 @@
-<?php $session_data = $this->session->userdata(); ?>
+<?php $session_data = $this->session->userdata; ?>
 <div class="topbar dark2 ">
     <div class="container">
         <div class="topbar-left-items">
