@@ -17,6 +17,8 @@
 		public static $PROJECTS_FILES = 'tbl_project_files';
 		public static $VCARD_BASIC_DETAILS= 'tbl_vcard_basic';
 		public static $USER_MAP= 'tbl_user_map';
+		public static $NEWS='tbl_news';
+		public static $CATEGORY='tbl_category';
 		
 	}
 	

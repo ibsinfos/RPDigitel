@@ -57,6 +57,17 @@ Class Dashboard extends MX_Controller
                 ->set_partial('footer','partials/footer_community');
         $this->template->build('community');
 	}
+	public function admin_dashboard()
+	{
+	    $this->template->set('page','dashboard');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('admin_silo')
+                ->title('Admin Dashboard | Silo')
+                ->set_partial('header','partials/admin_header')
+                ->set_partial('sidebar','partials/admin_sidebar')
+                ->set_partial('footer', 'partials/admin_footer');
+        $this->template->build('admin_dashboard');
+	}
     public function index()
     {
 		$this->load->library('google_url_api');

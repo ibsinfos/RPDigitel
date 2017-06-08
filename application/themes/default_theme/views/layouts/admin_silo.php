@@ -69,16 +69,16 @@
         <script src="<?php echo backend_asset_url() ?>vendors/iCheck/icheck.min.js"></script>
         <!-- Skycons -->
         <script src="<?php echo backend_asset_url() ?>vendors/skycons/skycons.js"></script>
-        <!-- Flot -->
+        <!-- Flot 
         <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.pie.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.time.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.stack.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.resize.js"></script>
-        <!-- Flot plugins -->
+        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.resize.js"></script>-->
+        <!-- Flot plugins 
         <script src="<?php echo backend_asset_url() ?>vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="<?php echo backend_asset_url() ?>vendors/flot.curvedlines/curvedLines.js"></script>-->
         <!-- DateJS -->
         <script src="<?php echo backend_asset_url() ?>vendors/DateJS/build/date.js"></script>
         <!-- JQVMap -->
@@ -117,60 +117,10 @@
         <script src="<?php echo backend_asset_url() ?>vendors/validator/validator.js"></script>
 		<!-- Parsley Form Validator 
 		<script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
-        <!-- Music List Scripts used in dashboard -->
-        <?php if($page=="dashboard" || $page=="edit_profile"){?>
-            <script src="<?php echo backend_asset_url() ?>build/js/music-list.js"></script>
-		<?php }?>
         <!-- Custom Scrollbar Scripts -->
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
-		
-		
-		<script type="text/javascript"  >
-			$(document).ready(function () {
-				$('#btnemailsend').click(function() {
-					
-					$(".err_mailsend").html('<div class="loader"><div class="title">Sending...</div><div class="load"><div class="bar"></div></div></div>');	
-					
-					$("#err_to").html('');
-					$("#err_from").html('');
-					
-					$.ajax({
-						url: "<?php echo base_url() ?>backend/dashboard/sendmail",
-						type: "POST",
-						data: {
-							to:$('#to').val(),
-							fromid:$('#fromid').val(),
-							shorten_url:$('#shorten_url').val()
-						},
-						success: function (data)
-						{
-							$(".err_mailsend").html('');	
-							var json = JSON.parse(data);
-							if (json.status === 1) 
-							{						
-								
-								$("#err_to").html('');
-								$("#err_from").html('');						
-								$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-								return true;
-							}
-							else 
-							{
-								
-								//$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-								$("#err_to").html('<div class="text-danger">' + json.msg.to + '</div>');
-								$("#err_from").html('<div class="text-danger">' + json.msg.from + '</div>');
-								
-								
-								return false;
-							}
-						}
-					});     
-				});
-			});
-		</script>
 		
 	</body>
 </html>

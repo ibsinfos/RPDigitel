@@ -145,4 +145,5 @@ $config['dbxyz']['stricton'] = FALSE;
        		$data['page'] = 'fiberrails';
 			$this->load->view('includes/template', $data);
 		}
+
 	}

@@ -60,7 +60,7 @@
                 <div class="col-sm-4">
                     <div class="personalInfoWrap text-center">
                         <div class="musicianWrap">
-                            <div class="btnColumn">
+                            <div class="btnColumn hidden">
 							<?php 
 								if(empty($user[0]['id']))
 									$user[0]['id']='';	
@@ -99,7 +99,7 @@
 										
 										?></p>
 							</div>
-                            <div class="btnColumn">
+                            <div class="btnColumn hidden">
                                 <button class="btn shareBtn" data-toggle="modal" data-target="#myModal">Share</button>
 							</div>
 						</div>
@@ -183,7 +183,7 @@
 						</li>
 					</ul>
 					
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">

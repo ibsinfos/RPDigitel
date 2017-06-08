@@ -277,7 +277,7 @@
                                                         data-target="#companydata"> &emsp; Company Info &emsp;
                                                 </button>
                                                 <button type="button" class="btn btn-collapse dropdown-toggle"
-                                                        data-toggle="collapse"
+												data-toggle="collapse"
                                                         data-target="#companydata" style="padding: 8px 8px;">
                                                     <span class="caret"></span>
                                                 </button>

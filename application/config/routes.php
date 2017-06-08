@@ -66,9 +66,11 @@ $route['wbs_suite/wbs_subscribe_payment_fail'] = 'user/wbs_suite/wbs_subscribe_p
 
 /* Silo routs */
 $route['404'] = 'frontend/Pages/pageNotFound404';
+$route['admin/login'] = 'backend/login';
 $route['account/login'] = 'backend/login';
 $route['submitlogin'] = 'backend/login/adminlogin';
 $route['dashboard'] = 'backend/Dashboard/index';
+$route['admin_dashboard'] = 'backend/Dashboard/admin_dashboard';
 $route['register/employee'] = 'frontend/Register/employee';
 $route['my-subscribers'] = 'backend/dashboard/mySubscribers';
 $route['order-history'] = 'backend/dashboard/orderHistory';
@@ -83,6 +85,9 @@ $route['add-subscriber'] = 'backend/subscriber/addSubscriber';
 
 $route['project-list'] = 'backend/project/projectList';
 $route['add-project'] = 'backend/project/addProject';
+$route['add-news'] = 'backend/news/add_news';
+$route['news'] = 'backend/news/view_news';
+
 $route['upload-files'] = 'backend/project/uploadFiles';
 $route['view-files'] = 'backend/project/browse_files';
 
