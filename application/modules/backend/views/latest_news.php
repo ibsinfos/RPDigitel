@@ -88,11 +88,8 @@
 													<td><?php echo $project['description'];?></td>
 													<td><?php echo date('d F Y',strtotime($project['created']));?></td>
 													<td>
-													<?php if($project['latest']==1)  { ?>
-														<input type="checkbox" checked="true" value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
-													<?php }else{ ?>
-														<input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
-													<?php } ?>
+													<input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
+													
 													</td>
 												</tr>
 												<?php 
@@ -104,7 +101,7 @@
 												<div class="form-group">
 													<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 														<button class="btn btn-primary" type="reset">Reset</button>
-														<button type="submit" class="btn btn-success">Submit</button>
+														<button type="submit" class="btn btn-success">Delete</button>
 													</div>
 												</div>
 												</td>

@@ -61,56 +61,52 @@
 									</p-->
 									
 									<form action="<?php echo base_url();?>featured_news" method="post" >
-									<table id="datatable-keytable" class="table table-striped table-bordered">
-										<thead>
-											<tr>
-												<th>S. No.</th>
-												<th>Title</th>
-												<th>Description</th>
-												<th>Created</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										
-										
-										<tbody>
-											
-											<?php 
-												
-												$i=1; 
-												foreach($news as $project)
-												{
-													
-												?>
+										<table id="datatable-keytable" class="table table-striped table-bordered">
+											<thead>
 												<tr>
-													<td><?php echo $i;?></td>
-													<td><?php echo $project['title'];?></td>
-													<td><?php echo $project['description'];?></td>
-													<td><?php echo date('d F Y',strtotime($project['created']));?></td>
-													<td>
-													<?php if($project['featured']==1)  { ?>
-														<input type="checkbox" checked="true" value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
-													<?php }else{ ?>
+													<th>S. No.</th>
+													<th>Title</th>
+													<th>Description</th>
+													<th>Created</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											
+											
+											<tbody>
+												
+												<?php 
+													
+													$i=1; 
+													foreach($news as $project)
+													{
+														
+													?>
+													<tr>
+														<td><?php echo $i;?></td>
+														<td><?php echo $project['title'];?></td>
+														<td><?php echo $project['description'];?></td>
+														<td><?php echo date('d F Y',strtotime($project['created']));?></td>
+														<td>
 														<input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
-													<?php } ?>
+														</td>
+													</tr>
+													<?php 
+														$i++;  
+													}
+												?>
+												<tr  >
+													<td colspan="5" >
+														<div class="form-group">
+															<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+																<button class="btn btn-primary" type="reset">Reset</button>
+																<button type="submit" class="btn btn-success">Delete</button>
+															</div>
+														</div>
 													</td>
 												</tr>
-												<?php 
-													$i++;  
-												}
-											?>
-											<tr  >
-												<td colspan="5" >
-												<div class="form-group">
-													<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-														<button class="btn btn-primary" type="reset">Reset</button>
-														<button type="submit" class="btn btn-success">Submit</button>
-													</div>
-												</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+											</tbody>
+										</table>
 									</form>
 								</div>
 							</div>
@@ -120,6 +116,7 @@
 			</div>
 			
 		</div>
-	</div>
-</div>
-<!-- /page content -->
+		</div>
+		</div>
+		<!-- /page content -->
+				

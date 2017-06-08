@@ -123,7 +123,7 @@
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
-	<?php if($page=='edit_news' || $page=='add_news') { ?>
+	<?php if($page=='edit_news' || $page=='add_news' || $page=='add_featured_news' ) { ?>
 	<script>
 	$(document).ready(function() {
         $("#fileUpload").on('change', function() {
@@ -164,5 +164,20 @@
 		}
 		</style>
 	<?php } ?>	
+	<?php if($page=='add_featured_news') { ?>
+	<script>
+	$(document).ready(function() {
+	$(".divfeatured").hide();
+	$("#divSelectFeatured").show();
+	$("input[name$='select_featured']").click(function() {
+		
+			var test = $(this).val();
+			//alert('hi'+test);
+			$(".divfeatured").hide();
+			$("#" + test).show();
+		});
+	});	
+	</script>	
+	<?php } ?>
 	</body>
 </html>

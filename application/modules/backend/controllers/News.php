@@ -290,14 +290,14 @@ Class News extends MX_Controller
 				foreach($news_id as $nid)
 				{
 					
-					$user['featured']=1;
+					$user['featured']=0;
 					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
 				}	
-				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been deleted successfully</div>');
 				redirect(base_url().'featured_news');
 			}
 	
-			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('featured'=>1));		
 			$this->template->set('news',$news);
 			$this->template->set('page','news_list');
 			$this->template->set_theme('default_theme');
@@ -318,14 +318,14 @@ Class News extends MX_Controller
 				$news_id=$this->input->post('newsids');
 				foreach($news_id as $nid)
 				{					
-					$user['latest']=1;
+					$user['latest']=0;
 					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
 				}	
-				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been deleted successfully</div>');
 				redirect(base_url().'latest_news');
 			}
 	
-			$news = $this->common_model->getRecords(TABLES::$NEWS, '*');		
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('latest'=>1));		
 			$this->template->set('news',$news);
 			$this->template->set('page','news_list');
 			$this->template->set_theme('default_theme');
@@ -336,4 +336,90 @@ Class News extends MX_Controller
 					->set_partial('footer', 'partials/admin_footer');
 			$this->template->build('latest_news');	
 	}
+	public function add_featured_news()
+	{
+		$this->load->library('session');
+		$this->load->helper('utility_helper');
+		$this->load->model('common_model');
+        $this->load->helper(array('form', 'url', 'email'));
+		$session_data=$this->session->userdata('user_account');
+		$user = array();
+		$this->load->library('form_validation');
+		$category = $this->common_model->getRecords(TABLES::$CATEGORY, '*');		
+			$this->template->set('category',$category);
+			
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('featured'=>0));		
+			$this->template->set('news',$news);
+			
+			$this->template->set('page','add_featured_news');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+					->title('Admin Dashboard | Silo')
+					->set_partial('header','partials/admin_header')
+					->set_partial('sidebar','partials/admin_sidebar')
+					->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('add_featured_news');
+		
+		
+		if(!empty($_POST('')))
+		{
+			
+		}
+		
+		$this->form_validation->set_rules('title', 'News Title', 'trim|required');
+		$this->form_validation->set_rules('description','Description', 'trim|required');
+		
+			
+		if ($this->form_validation->run() == FALSE) 
+		{
+			
+		}
+		else
+		{
+		 
+					if (isset($_FILES['image']) && !empty($_FILES['image']['name'])) 
+					{
+						$config = array();
+						$config['upload_path'] = './uploads/news/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('image')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$error_array['image']= "User Image upload error - " . $error; 
+							$map ['msg'] = $error_array;
+							echo json_encode($map);
+							exit;
+						} else {
+							$data = array('upload_data' => $this->upload->data());
+						}               
+						$user['image'] = "uploads/news/" . $data['upload_data']['file_name'];
+					}				
+					$user['title'] = $this->input->post('title');
+					$user['description'] = $this->input->post('description');
+					if(!empty($this->input->post('category')))
+					{
+						$user['category'] = implode(',',$this->input->post('category')); 
+					}	
+					$user['user_id'] = $session_data['user_id'];
+					$user['created'] = date('Y-m-d h:i:s');							
+					$uid= $this->common_model->insertRow($user, TABLES::$NEWS);
+					if ($uid) {				
+						$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+						redirect(base_url() . 'add_featured_news');
+					}
+					else
+					{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Unable to save news</div>');
+						redirect(base_url() . 'add_featured_news');
+					}
+		}				
+			
+	}
+	
 }
