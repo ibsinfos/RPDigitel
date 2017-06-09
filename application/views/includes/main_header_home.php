@@ -103,8 +103,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav navbar-right">
-				<?php if($page == 'fiberrails') 
-					{ ?>
+				<?php if($page == 'fiberrails') { ?>
 					<li>
 						<a href="#">HOME</a>
 					</li>
@@ -117,11 +116,14 @@
 					<li>
 						<a href="#">MODULES</a>
 					</li>
-				<?php } ?>
-				  
-				  <?php  if(!$this->session->userdata('is_logged_in'))
-				  {
+				<?php } 
+				if(!$this->session->userdata('is_logged_in')) {
+				  	if($page=='login') {
 				?>
+					<li>
+				  		<a href="<?php echo base_url(); ?>login/signup" class="top-navlinks">Sign Up</a>
+				  	</li>
+				<?php } else { ?>
 					<li>
 						<!--<a href="#" class="top-navlinks" type="button" data-toggle="modal" data-target="#memberLogin"><img src="<?php echo base_url(); ?>images/wbs-suite/cloud-computing.png" alt="" height="27">
 						Member Login</a>-->
@@ -130,11 +132,9 @@
 							Member Login
 						</a>
 					</li>
-				<?php
-				  }
-				  else
-				  {  
-				 ?>
+				<?php } 
+				} else {  
+				?>
 					<li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 			          	<img src='<?php echo main_asset_url(); ?>images/user.png' alt="user" class="userImage"> <?php echo ucfirst($session_data['username']); ?>
@@ -213,6 +213,7 @@
 				<div class="dropdown-menu" aria-labelledby="learnMoreAbout">
 					<div class="container">
 						<div class="row">
+							<?php if($page!='login') { ?>
 							<div class="col-md-12 text-center">
 								<ul class="list-unstyled list-inline">
 									<li><a href="#">RPDigital</a></li>
@@ -227,6 +228,7 @@
 									<li><a href="#">MarketPlace</a></li>
 								</ul>
 							</div>
+							<?php } ?>
 							<div class="col-sm-6">
 								<div class="col-md-2 hidden-xs hidden-sm"> <img class="block"  src="<?php echo base_url(); ?>images/scandisc%20box82x82.png?crc=4246127547" alt="" width="70" height="70" style=" margin-top: 80px;"></div>
 								<div class="col-md-6 hidden-xs hidden-sm"><img class="block"  src="<?php echo base_url(); ?>images/thingorilla_business_135.jpg?crc=290504810" alt="" width="330" height="220" style="margin-top:80px; margin-bottom:66px;"></div>
