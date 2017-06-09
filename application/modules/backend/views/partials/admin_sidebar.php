@@ -66,24 +66,29 @@
 					<ul class="nav child_menu">
 						<li><a href="<?php echo base_url(); ?>add-news">Create News</a></li>						
 						<li><a href="<?php echo base_url(); ?>news">News</a></li>						
-						<li><a href="<?php echo base_url(); ?>add_featured_news">Create Featured News</a></li>						
-						<li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
-						<li><a href="<?php echo base_url(); ?>latest_news">Latest News</a></li>						
-						<li><a href="<?php echo base_url(); ?>add_latest_news">Create Latest News</a></li>						
 					</ul>
 					</li>
-					<li ><a href="<?php echo base_url(); ?>admin-community">
+					<li ><a>
 						<div class="menuIcon">
 							<i class="iconDashboard-news"></i>
 						</div> 
-					Community </a>
-					</li>
-				
+					Community <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url(); ?>admin-community">Community</a></li>						
 					
-				
-					
-					
-					
+						
+						<li><a href="<?php echo base_url(); ?>add_featured_news">Create Featured News</a></li>						
+						<li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
+						<li><a href="<?php echo base_url(); ?>latest_news">Latest News</a></li>						
+						<li><a href="<?php echo base_url(); ?>add_latest_news">Create Latest News</a></li>	
+						<li><a href="<?php echo base_url(); ?>view-slider">Slider Images</a></li>	
+						<li><a href="<?php echo base_url(); ?>add-slider">Upload Slider Image</a></li>	
+						<li><a href="<?php echo base_url(); ?>header_news">Header News</a></li>	
+						<li><a href="<?php echo base_url(); ?>add_header_news">Add Header News</a></li>	
+						<li><a href="<?php echo base_url(); ?>category_news">Category Slider</a></li>	
+						<li><a href="<?php echo base_url(); ?>add_category_news">Add Category Slider</a></li>	
+					</ul>
+					</li>					
 				</ul>
 				
 			</div>

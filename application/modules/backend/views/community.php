@@ -5,28 +5,52 @@
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				      <img src="images/background1.png" alt="background1" class="img-responsive">
-				    </div>
-				    <div class="item">
-				      <img src="images/background1.png" alt="background1" class="img-responsive">
-					  </div>
+					<?php 
+					 if(!empty($slider))
+					 {
+						$c=0;
+						foreach($slider as $s)
+						{ ?>
+														
+							 <div class="item  <?php if($c==0) { echo "active"; } ?>">
+							  <img src="<?php echo base_url().$s['image']; ?>" alt="background1" class="img-responsive">
+							</div>
+							
+						<?php
+							$c++;
+							}
+					 }
+					 ?>
+				  
+				  
+				  
 				  </div>
+				  
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<a href="" class="newsWrap firstNews">
-					<img src="<?php echo backend_asset_url() ?>/images/community/news1.jpg" alt="background1" class="">
+						<?php
+							$h_img=backend_asset_url().'/images/community/news1.jpg';
+						if(!empty($category['0']['image']))
+							$h_img=base_url().$category['0']['image'];
+						?>
+					<img src="<?php echo $h_img ?>" alt="background1" class="">
 					<div class="newsContent">
-						<span class="newsType">Technology</span>
-						<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
+						<span class="newsType"><?php echo $category['0']['title']; ?></span>
+						<h4><?php echo $category['0']['description']; ?></h4>
 					</div>
 				</a>
 				<a href="" class="newsWrap secondNews">
-					<img src="<?php echo backend_asset_url() ?>/images/community/new2.jpg" alt="background1" class="">
+					<?php
+							$h_img1=backend_asset_url().'/images/community/news2.jpg';
+						if(!empty($category['0']['image']))
+							$h_img1=base_url().$category['1']['image'];
+						?>
+					<img src="<?php echo $h_img1; ?>" alt="background1" class="">
 					<div class="newsContent">
-						<span class="newsType">Technology</span>
-						<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
+						<span class="newsType"><?php echo $category['1']['title']; ?></span>
+						<h4><?php echo $category['1']['description']; ?></h4>
 					</div>
 				</a>
 			</div>
@@ -37,51 +61,32 @@
 				<div class="panel latestNews">
 					<h4 class="heading">Latest News</h4>
 					<ul class="list-unstyled listWrap">
+					<?php 
+					if(!empty($latest_news))
+					{
+						foreach($latest_news as $n) {
+					?>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
-								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
+								<?php
+									$latest_news_url=backend_asset_url().'/images/community/musician.jpg';
+								if(!empty($n['image']))
+									$latest_news_url=base_url().$n['image'];
+								
+									
+								?>
+								<img src="<?php echo $latest_news_url; ?>" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
-								<h5 class="category">Entertainment</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<h5 class="category"><?php echo $n['title'] ?></h5>
+								<p><?php echo $n['description'] ?></p>
 							</div>
 						</li>
-						<li class="row">
-							<div class="col-md-4 imageBlock">
-								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="col-md-8">
-								<h5 class="category">Sport</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="col-md-4 imageBlock">
-								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="col-md-8">
-								<h5 class="category">Entertainment</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="col-md-4 imageBlock">
-								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="col-md-8">
-								<h5 class="category">Fashion</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="col-md-4 imageBlock">
-								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="col-md-8">
-								<h5 class="category">Business</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-							</div>
-						</li>
+					<?php 
+						}
+					} ?>	
+						
+						
 					</ul>
 				</div>
 			</div>
@@ -240,7 +245,30 @@
 					  	</ol>
 					  	<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
-						    <div class="item active">
+						
+						<?php
+							if(!empty($category_slider))
+							{
+							$c1=0;
+								foreach($category_slider as $cs)
+								{
+									
+								?>
+								<div class="item <?php if($c1==0) { echo "active"; } ?>" >
+						      <img src="<?php echo backend_asset_url() ?>/images/community/other-news.jpg" alt="..." class="img-responsive">
+						      <div class="carousel-caption">
+						        <span class="newsType"><?php echo $cs['title'] ?></span>
+								<h4><?php echo $cs['description'] ?></h4>
+						      </div>
+						    </div>
+								<?php
+								$c1++;
+								}
+								
+							}
+							
+							?>
+						    <!--<div class="item active">
 						      <img src="<?php echo backend_asset_url() ?>/images/community/other-news.jpg" alt="..." class="img-responsive">
 						      <div class="carousel-caption">
 						        <span class="newsType">Entertainment</span>
@@ -260,24 +288,32 @@
 						        <span class="newsType">Entertainment</span>
 								<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
 						      </div>
-						    </div>
+						    </div>-->
 					  	</div>
 					</div>
 					<br>
 					<h4 class="heading3">Other News</h4>
 					<ul class="list-unstyled">
+						<?php 
+						if(!empty($other))
+						{
+							foreach($other as $o_news)
+							{
+						?>
 						<li class="row">
 							<div class="col-md-4 imageBlock">
 								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
 							<div class="col-md-8">
 								<p class="category">Business</p>
-								<h4 class="heading4">Simply Sylvio is Vine's first avant -garded gorilla, and he's doing big things </h4>
-								<p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<h4 class="heading4"><?php echo $o_news['title'] ?> </h4>
+								<p class="message"><?php echo $o_news['description'] ?></p>
 							</div>
 						</li>
-						<li class="row">
+						<?php
+							}
+							} ?>
+						<!--<li class="row">
 							<div class="col-md-4 imageBlock">
 								<img src="<?php echo backend_asset_url() ?>/images/community/musician.jpg" alt="" class="img-responsive">
 							</div>
@@ -298,7 +334,7 @@
 								<p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>

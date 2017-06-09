@@ -19,6 +19,7 @@
 		public static $USER_MAP= 'tbl_user_map';
 		public static $NEWS='tbl_news';
 		public static $CATEGORY='tbl_category';
+		public static $COMMUNITY_SLIDER='tbl_community_slider';
 		
 	}
 	

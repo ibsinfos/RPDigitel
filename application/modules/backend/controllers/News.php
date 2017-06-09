@@ -111,7 +111,7 @@
 			if(!empty($id))
 			{
 				$this->common_model->deleteRows(array('id'=>$id),TABLES::$NEWS,'id');
-				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been deleted successfully</div>');
 				redirect(base_url().'news');
 			}
 			else
@@ -336,6 +336,61 @@
 			->set_partial('footer', 'partials/admin_footer');
 			$this->template->build('latest_news');	
 		}
+		
+		public function header_news()
+		{
+			$this->load->model('common_model');
+			if(!empty($this->input->post('newsids')))
+			{
+				$news_id=$this->input->post('newsids');
+				foreach($news_id as $nid)
+				{					
+					$user['header']=0;
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+				}	
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been deleted successfully</div>');
+				redirect(base_url().'header_news');
+			}
+			
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('header'=>1));		
+			$this->template->set('news',$news);
+			$this->template->set('page','header_list');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+			->title('Admin Dashboard | Silo')
+			->set_partial('header','partials/admin_header')
+			->set_partial('sidebar','partials/admin_sidebar')
+			->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('header_news');	
+		}
+		
+		public function category_news()
+		{
+			$this->load->model('common_model');
+			if(!empty($this->input->post('newsids')))
+			{
+				$news_id=$this->input->post('newsids');
+				foreach($news_id as $nid)
+				{					
+					$user['category_slider']=0;
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+				}	
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been deleted successfully</div>');
+				redirect(base_url().'category_news');
+			}
+			
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('category_slider'=>1));		
+			$this->template->set('news',$news);
+			$this->template->set('page','category_list');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+			->title('Admin Dashboard | Silo')
+			->set_partial('header','partials/admin_header')
+			->set_partial('sidebar','partials/admin_sidebar')
+			->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('category_news');	
+		}
+		
 		public function add_featured_news()
 		{
 			$this->load->library('session');
@@ -531,5 +586,204 @@
 			
 		}
 		
+	
+		
+		public function add_header_news()
+		{
+			$this->load->library('session');
+			$this->load->helper('utility_helper');
+			$this->load->model('common_model');
+			$this->load->helper(array('form', 'url', 'email'));
+			$session_data=$this->session->userdata('user_account');
+			$user = array();
+			$this->load->library('form_validation');
+			$category = $this->common_model->getRecords(TABLES::$CATEGORY, '*');		
+			$this->template->set('category',$category);
+			$data=array();
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('header'=>'0'));		
+			$this->template->set('news',$news);		
+			$this->template->set('page','add_header_news');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+			->title('Admin Dashboard | Silo')
+			->set_partial('header','partials/admin_header')
+			->set_partial('sidebar','partials/admin_sidebar')
+			->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('add_header_news');
+			
+			if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divSelectFeatured')
+			{
+				if(!empty($this->input->post('select_news')))
+				{
+					$news_id=$this->input->post('select_news');
+					foreach($news_id as $nid)
+					{					
+						$user['header']=1;
+						$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+					}	
+					$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+					redirect(base_url().'add_header_news');
+				}
+			}
+			else if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divAddFeatured')
+			{	
+				$this->form_validation->set_rules('title', 'News Title', 'trim|required');
+				$this->form_validation->set_rules('description','Description', 'trim|required');		
+				if ($this->form_validation->run() == FALSE) 
+				{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>'.validation_errors().'</div>');
+						redirect(base_url().'add_header_news');
+				}
+				else
+				{
+		 			if (isset($_FILES['image']) && !empty($_FILES['image']['name'])) 
+					{
+						$config = array();
+						$config['upload_path'] = './uploads/news/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+						
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('image')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$error_array['image']= "User Image upload error - " . $error; 
+							$map ['msg'] = $error_array;
+							echo json_encode($map);
+							exit;
+							} else {
+							$data = array('upload_data' => $this->upload->data());
+						}               
+						$user['image'] = "uploads/news/" . $data['upload_data']['file_name'];
+					}				
+					$user['title'] = $this->input->post('title');
+					$user['description'] = $this->input->post('description');
+					if(!empty($this->input->post('category')))
+					{
+						$user['category'] = implode(',',$this->input->post('category')); 
+					}	
+					$user['user_id'] = $session_data['user_id'];
+					$user['created'] = date('Y-m-d h:i:s');							
+					$user['header'] = 1;
+					$uid= $this->common_model->insertRow($user, TABLES::$NEWS);
+					if ($uid) {				
+						$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+						redirect(base_url() . 'add_header_news');
+					}
+					else
+					{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Unable to save Latest news</div>');
+						redirect(base_url().'add_header_news');
+					}
+				}				
+				
+			}
+			
+			
+		}
+		
+	
+	
+		public function add_category_news()
+		{
+			$this->load->library('session');
+			$this->load->helper('utility_helper');
+			$this->load->model('common_model');
+			$this->load->helper(array('form', 'url', 'email'));
+			$session_data=$this->session->userdata('user_account');
+			$user = array();
+			$this->load->library('form_validation');
+			$category = $this->common_model->getRecords(TABLES::$CATEGORY, '*');		
+			$this->template->set('category',$category);
+			$data=array();
+			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('category_slider'=>'0'));		
+			$this->template->set('news',$news);		
+			$this->template->set('page','add_category_news');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('admin_silo')
+			->title('Admin Dashboard | Silo')
+			->set_partial('header','partials/admin_header')
+			->set_partial('sidebar','partials/admin_sidebar')
+			->set_partial('footer', 'partials/admin_footer');
+			$this->template->build('add_category_news');
+			
+			if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divSelectFeatured')
+			{
+				if(!empty($this->input->post('select_news')))
+				{
+					$news_id=$this->input->post('select_news');
+					foreach($news_id as $nid)
+					{					
+						$user['category_slider']=1;
+						$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
+					}	
+					$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+					redirect(base_url().'add_category_news');
+				}
+			}
+			else if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divAddFeatured')
+			{	
+				$this->form_validation->set_rules('title', 'News Title', 'trim|required');
+				$this->form_validation->set_rules('description','Description', 'trim|required');		
+				if ($this->form_validation->run() == FALSE) 
+				{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>'.validation_errors().'</div>');
+						redirect(base_url().'add_category_news');
+				}
+				else
+				{
+		 			if (isset($_FILES['image']) && !empty($_FILES['image']['name'])) 
+					{
+						$config = array();
+						$config['upload_path'] = './uploads/news/';
+						$config['allowed_types'] = 'gif|jpg|png|jpeg';
+						$config['remove_spaces'] = TRUE;
+						$config['encrypt_name'] = TRUE;
+						$config['overwrite'] = FALSE;
+						
+						$this->load->library('upload', $config);
+						$this->upload->initialize($config);
+						if (!$this->upload->do_upload('image')) {
+							$error = $this->upload->display_errors();
+							$map ['status'] = 0;
+							$error_array['image']= "User Image upload error - " . $error; 
+							$map ['msg'] = $error_array;
+							echo json_encode($map);
+							exit;
+							} else {
+							$data = array('upload_data' => $this->upload->data());
+						}               
+						$user['image'] = "uploads/news/" . $data['upload_data']['file_name'];
+					}				
+					$user['title'] = $this->input->post('title');
+					$user['description'] = $this->input->post('description');
+					if(!empty($this->input->post('category')))
+					{
+						$user['category'] = implode(',',$this->input->post('category')); 
+					}	
+					$user['user_id'] = $session_data['user_id'];
+					$user['created'] = date('Y-m-d h:i:s');							
+					$user['category_slider'] = 1;
+					$uid= $this->common_model->insertRow($user, TABLES::$NEWS);
+					if ($uid) {				
+						$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
+						redirect(base_url() . 'add_category_news');
+					}
+					else
+					{
+						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Unable to save news</div>');
+						redirect(base_url().'add_category_news');
+					}
+				}				
+				
+			}
+			
+			
+		}
+		
+	
 	
 	}

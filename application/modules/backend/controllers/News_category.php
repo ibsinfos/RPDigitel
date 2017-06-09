@@ -40,7 +40,7 @@
 			if(!empty($id))
 			{
 				$this->common_model->deleteRows(array('id'=>$id),TABLES::$CATEGORY,'id');
-				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Category has been saved successfully</div>');
+				$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Category has been deleted successfully</div>');
 				redirect(base_url().'category');
 			}
 			else

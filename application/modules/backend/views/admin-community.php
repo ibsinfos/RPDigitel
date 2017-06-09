@@ -4,7 +4,7 @@
 	<div class="communityWrap">
 		<div class="row sliderNewsWrap">
 			<div class="col-sm-6">
-				<a href="" id="carousel-example-generic" class="carousel slide sectionOverlay" data-ride="carousel">
+				<a href="<?php echo base_url(); ?>view-slider" id="carousel-example-generic" class="carousel slide sectionOverlay" data-ride="carousel">
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">
@@ -17,14 +17,14 @@
 				</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="" class="newsWrap firstNews sectionOverlay">
+				<a href="<?php echo base_url(); ?>header_news" class="newsWrap firstNews sectionOverlay">
 					<img src="<?php echo backend_asset_url() ?>/images/community/news1.jpg" alt="background1" class="">
 					<div class="newsContent">
 						<span class="newsType">Technology</span>
 						<h4>Force Touch on the iPhone 6S could change the way you launch apps</h4>
 					</div>
 				</a>
-				<a href="" class="newsWrap secondNews sectionOverlay">
+				<a href="<?php echo base_url(); ?>header_news" class="newsWrap secondNews sectionOverlay">
 					<img src="<?php echo backend_asset_url() ?>/images/community/new2.jpg" alt="background1" class="">
 					<div class="newsContent">
 						<span class="newsType">Technology</span>
@@ -36,7 +36,7 @@
 
 		<div class="row latestSectionWrap">
 			<div class="col-sm-3 ">
-				<a href="" class="panel panel-default latestNews sectionOverlay">
+				<a href="<?php echo base_url() ?>latest_news" class="panel panel-default latestNews sectionOverlay">
 					<h4 class="heading">Latest News</h4>
 					<ul class="list-unstyled listWrap">
 						<li class="row">
@@ -140,7 +140,7 @@
 						<p class="text-center text-uppercase"><a href="">Load More</a></p>
 					</div>
 				</a>
-				<a href="" class="sectionOverlay">
+				<a href="<?php echo base_url(); ?>featured_news" class="sectionOverlay">
 					<div class="panel panel-default featuredNews topBorderPatch">
 						<h4 class="heading2">Featured News</h4>
 						<div class="row">
@@ -271,7 +271,7 @@
 					</a>
 					<br>
 					<h4 class="heading3">Other News</h4>
-					<a href="" class="sectionOverlay">
+					<a href="<?php echo base_url(); ?>news" class="sectionOverlay">
 						<ul class="list-unstyled">
 							<li class="row">
 								<div class="col-md-4 imageBlock">
