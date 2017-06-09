@@ -47,7 +47,7 @@
 				
 				
 			}
-			
+			$data['page']='login';
 			$data['main_content'] = 'login_form';
 			$this->load->view('includes/template', $data);
 		}

@@ -376,6 +376,92 @@ ul.typoList li:before {
 }
 /* Home css end */
 
+/* Login css start */
+html, body, 
+.loginCarousel, 
+.loginCarousel .carousel-inner, 
+.loginCarousel .carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background-image: url(../images/login/music-lovers.jpg);
+}
+.item:nth-child(2) {
+  background-image: url(../images/login/building.jpg);
+}
+.item:nth-child(3) {
+  background-image: url(../images/login/iceworker.jpg);
+}
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3) {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.loginCarousel .carousel-control {
+  background: #FFFFFF;
+}
+.loginCarousel .carousel-control:focus, 
+.loginCarousel .carousel-control:hover {
+  opacity: 0.7;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.loginFormWrap {
+  /*margin: 25px 0;*/
+  position: absolute;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.loginFormWrap .well {
+  padding: 60px 0;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  border-color: #191919;
+}
+.loginFormWrap .well .logo {
+  margin-bottom: 50px;
+}
+.loginFormWrap .well .form-control {
+  font-size: 16px;
+  height: 40px;
+  font-style: italic;
+  padding: 10px 16px;
+}
+.loginFormWrap .well .signUpLink {
+  color: #FFFFFF;
+}
+.loginFormWrap #otp_form {
+  display: none;
+}
+/* Login css end */
+
 /* Subscription css start */
 .subscribeHeroSection {
   background: rgba(0,0,0,0.3) url('../images/subscription/shop-lp-hero-image.png') no-repeat center center/contain;
@@ -678,7 +764,17 @@ ul.typoList li:before {
 
 /* responsive css */
 @media (max-width: 1400px) {
-	
+  /* Login css start */
+  .loginFormWrap .well {
+    padding: 30px 0;
+  }
+  .loginFormWrap .well .logo {
+    margin-bottom: 30px;
+  }
+  .loginFormWrap .well .logo img{
+    width: 150px;
+  }
+  /* Login css end */
 }
 @media (max-width: 1200px) {
   /* Home css start */
@@ -765,6 +861,19 @@ ul.typoList li:before {
     font-size: 13px;
   }
   /* Subscription css end */
+}
+@media (min-width: 992px) {
+  /* Login css start */
+  .loginFormWrap {
+    top: 50%;
+  }
+  .loginFooterWrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  /* Login css end */
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	/*.navbar-header {
@@ -885,6 +994,22 @@ ul.typoList li:before {
     font-size: 12px;
   }
   /* Home css end */
+
+  /* Login css start */
+  .loginFormWrap {
+    width: 300px;
+  }
+  .loginFormWrap .well {
+    padding: 30px 15px;
+  }
+  .loginFormWrap .well .logo {
+    margin-bottom: 20px;
+  }
+  .loginFormWrap .well .logo img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  /* Login css end */
 
   /* Subscription css start */
   .subscribeHeroSection {

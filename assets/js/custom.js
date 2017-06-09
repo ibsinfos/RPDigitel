@@ -7,6 +7,116 @@ $(document).ready(function(){
 		});
 	}
 
+  // Login page script start
+  if ($(".signin_input").length) {
+    $(".signin_input").keyup(function (event) {
+      if (event.keyCode == 13) {
+        $("#signin_button").click();
+      }
+    });
+  }
+  
+  if ($("#signin_button").length) {       
+    $("#signin_button").click(function () {
+
+      //var a='<?php echo base_url(); ?>user/login/validate_credentials';
+      //alert(checkLoginURL);
+        var form_data = $('#signin_form').serialize();
+        $.ajax({
+            type: 'POST',
+            url: checkLoginURL,
+            data: form_data,
+            datatype: 'text',
+            success: function (data) {
+                var json = JSON.parse(data);
+                if (json.two_way_authentication == 'true') 
+                {
+                    if(json.firsttime == 'true')
+                    {
+                        window.location = createPaasportURL;
+                    }
+                    else
+                    {   
+                        //window.location = "<?php //echo base_url(); ?>user/dashboard";
+                        //window.location = "<?php echo base_url(); ?>fiberrails";
+                        window.location = mainDashboardURL;
+                    }   
+                } 
+                else if (json.otp == 'otp')
+                {
+                    //window.location = loginOtpURL;
+                    $('#signin_form').hide();
+                    $('#otp_form').show();
+                } 
+                else 
+                {
+                    $('#password').val("");
+                    $("#errors").html(json.error);
+                    
+                }
+            }
+        });
+    });
+  }
+
+  if ($(".otp_input").length) { 
+    $(".otp_input").keyup(function (event) {
+      if (event.keyCode == 13) {
+        $("#verify_otp_button").click();
+      }
+    });
+  }
+
+  if ($("#verify_otp_button").length) { 
+    $("#verify_otp_button").click(function () {
+      var form_data = $('#otp_form').serialize();
+      $.ajax({
+        type: 'POST',
+        url: verifyOtp,
+        data: form_data,
+        datatype: 'text',
+        success: function (data) {
+          // alert(data);
+          if (data == 'true') {
+            // window.location = "<?php //echo base_url(); ?>user/dashboard";
+            window.location = otpRedirectDashboard;
+          } else {
+            $("#errors").html(data);
+          }
+        }
+      });
+    });
+  }
+
+  if ($("#resend_otp_button").length) { 
+    $("#resend_otp_button").click(function () {
+      
+      $("#errors").html('');
+      // var mobile_no='+918806725624';
+            $.ajax({
+                url: resendOtp,
+        // data: mobile_no,
+        datatype: 'text',
+                success: function (data) {
+          
+                    // if (data == 'true') {
+            
+            $("#errors").html('OTP sent successfully');
+            
+            // } else {
+            
+                        // $("#errors").html(data);
+            
+          // }
+          
+        }
+        
+      });
+      
+    });
+  }
+  // Login page script end
+
 	// bootstrap popover enable
 	$('[data-toggle="popover"]').popover();
 
@@ -144,10 +254,10 @@ function validateMemberDetails() {
       $('.payment_details').removeClass('disabled').addClass('active');
     }
   });
+  $.validator.addMethod( "lettersonly", function( value, element ) {
+    return this.optional( element ) || /^[a-z]+$/i.test( value );
+  }, "Letters only please" );
 }
-$.validator.addMethod( "lettersonly", function( value, element ) {
-  return this.optional( element ) || /^[a-z]+$/i.test( value );
-}, "Letters only please" );
 
 function validatePaymentDetails() {
 

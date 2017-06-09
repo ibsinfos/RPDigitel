@@ -1,4 +1,4 @@
-	<footer class="footerWrap">
+	<footer class="footerWrap <?php if($page=='login') { ?>loginFooterWrap<?php }?>">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-8">
