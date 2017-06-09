@@ -93,6 +93,10 @@ $route['latest_news'] = 'backend/news/latest_news';
 $route['edit-news/(:any)'] = 'backend/news/edit_news/$1';
 $route['admin-community'] = 'backend/news/community';
 $route['news'] = 'backend/news/view_news';
+$route['category'] = 'backend/news_category/index';
+$route['add-category'] = 'backend/news_category/add_category';
+$route['edit-category/(:any)'] = 'backend/news_category/edit_category/$1';
+
 
 $route['upload-files'] = 'backend/project/uploadFiles';
 $route['view-files'] = 'backend/project/browse_files';
