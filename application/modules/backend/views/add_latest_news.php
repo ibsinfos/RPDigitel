@@ -77,7 +77,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Add Featured News</h2>                  
+									<h2>Add Latest News</h2>                  
 									<div class="clearfix"></div>
 								</div>
 								<div class="x_content">
@@ -88,14 +88,14 @@
 											
 										} 
 									?>
-									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>add_featured_news" data-parsley-validate class="form-horizontal form-label-left">
+									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>add_latest_news" data-parsley-validate class="form-horizontal form-label-left">
 										
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name"> 
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Add Featured News
-											<input name="select_featured" value="divSelectFeatured"  type="radio">Select Featured News
+											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Add Latest News
+											<input name="select_featured" value="divSelectFeatured"  type="radio">Select Latest News
 													
 											</div>
 										</div>
@@ -174,9 +174,7 @@
 			
 			
 			<script>
-				CKEDITOR.replace('description');		
-				
-				
+				CKEDITOR.replace('description');					
 				function ChangeUrl(page, url) 
 				{
 					if (typeof (history.pushState) != "undefined") {
@@ -186,7 +184,5 @@
 						window.location.href = "homePage";
 						// alert("Browser does not support HTML5.");
 					}
-				}
-				
-				
+				}			
 			</script>			

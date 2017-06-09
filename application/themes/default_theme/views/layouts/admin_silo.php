@@ -90,7 +90,7 @@
         <!-- bootstrap-daterangepicker -->
         <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <?php if ($page == 'project_list' || $page == 'news_list') { ?>
+        <?php if ($page == 'project_list' || $page == 'news_list' || $page == 'featured_news') { ?>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net/js/jquery.dataTables.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
@@ -123,8 +123,8 @@
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
-	<?php if($page=='edit_news' || $page=='add_news' || $page=='add_featured_news' ) { ?>
-	<script>
+	<?php if($page=='edit_news' || $page=='add_news' || $page=='add_featured_news' || $page=='add_latest_news' ) { ?>
+	<script type="text/javascript" >
 	$(document).ready(function() {
         $("#fileUpload").on('change', function() {
           //Get count of selected files
@@ -160,19 +160,19 @@
 		<style>
 		.thumb-image{
 			width:100%;
+			height:200px;
 			
 		}
 		</style>
 	<?php } ?>	
-	<?php if($page=='add_featured_news') { ?>
-	<script>
+	<?php if($page=='add_featured_news' || $page=='add_latest_news') { ?>
+	<script type="text/javascript" >
 	$(document).ready(function() {
 	$(".divfeatured").hide();
-	$("#divSelectFeatured").show();
+	$("#divAddFeatured").show();
 	$("input[name$='select_featured']").click(function() {
 		
 			var test = $(this).val();
-			//alert('hi'+test);
 			$(".divfeatured").hide();
 			$("#" + test).show();
 		});
