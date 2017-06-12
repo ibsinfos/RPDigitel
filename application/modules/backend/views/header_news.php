@@ -64,7 +64,7 @@
 										<table id="datatable-keytable" class="table table-striped table-bordered">
 											<thead>
 												<tr>
-													<th></th>
+													<!--<th></th>-->
 													<th>S. No.</th>
 													<th>Title</th>
 													<th>Description</th>
@@ -84,7 +84,7 @@
 														
 													?>
 													<tr>
-														<td><input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" /></td>
+														<!--<td><input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" /></td>-->
 														<td><?php echo $i;?></td>
 														<td><?php echo $project['title'];?></td>
 														<td><?php echo $project['description'];?></td>
@@ -100,10 +100,10 @@
 												
 											</tbody>
 										</table>
-										<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+										<!--<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 											<button class="btn btn-primary" type="reset">Reset</button>
 											<button type="submit" class="btn btn-success">Delete</button>
-										</div>
+										</div>-->
 									</form>
 								</div>
 							</div>

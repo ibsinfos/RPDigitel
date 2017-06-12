@@ -90,7 +90,7 @@
         <!-- bootstrap-daterangepicker -->
         <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <?php if ($page == 'project_list' || $page == 'news_list' || $page == 'featured_news' || $page == 'category_list' || $page == 'slider_list' || $page=='header_list' || $page=='category_list' ) { ?>
+        <?php if ($page == 'project_list' || $page == 'news_list' || $page == 'featured_news' || $page == 'category_list' || $page == 'slider_list' || $page=='header_list' || $page=='category_list' || $page=='add_featured_news' || $page=='add_latest_news' || $page=='add_category_news') { ?>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net/js/jquery.dataTables.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>

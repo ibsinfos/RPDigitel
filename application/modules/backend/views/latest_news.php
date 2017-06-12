@@ -105,6 +105,7 @@
 											<button type="submit" class="btn btn-success">Delete</button>
 										</div>
 									</form>
+								
 								</div>
 							</div>
 						</div>

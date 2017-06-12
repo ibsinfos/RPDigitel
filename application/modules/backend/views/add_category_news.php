@@ -58,7 +58,7 @@
 				<div class="">
 					<div class="page-title">
 						<div class="title_left">
-							<h3>News</h3>
+							<h3>Category News</h3>
 						</div>
 						
 						<div class="title_right">
@@ -94,13 +94,56 @@
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name"> 
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Add Latest News
-											<input name="select_featured" value="divSelectFeatured"  type="radio">Select Latest News
+											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Add News
+											<input name="select_featured" value="divSelectFeatured"  type="radio">Select News
 													
 											</div>
 										</div>
 										<div id="divSelectFeatured" class="divfeatured" >
-											<div class="form-group">
+												<table id="datatable-keytable" class="table table-striped table-bordered">
+											<thead>
+												<tr>
+													<th>S. No.</th>
+													<th>Title</th>
+													<th>Description</th>
+													<th>Created</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											
+											
+											<tbody>
+												
+												<?php 
+													
+													$i=1; 
+													foreach($news as $project)
+													{
+														
+													?>
+													<tr>
+														<td><?php echo $i;?></td>
+														<td><?php echo $project['title'];?></td>
+														<td><?php echo $project['description'];?></td>
+														<td><?php echo date('d F Y',strtotime($project['created']));?></td>
+														<td>
+															<input type="checkbox"  value="<?php echo $project['id'];?>" id="select_news" name="select_news[]" />
+														</td>
+													</tr>
+													<?php 
+														$i++;  
+													}
+												?>
+												
+											</tbody>
+										</table>
+										<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+											<button class="btn btn-primary" type="reset">Reset</button>
+											<button type="submit" class="btn btn-success">Submit</button>
+										</div>
+											
+										
+											<!--<div class="form-group">
 												<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Select News 
 												</label>
 												<div class="col-md-6 col-sm-6 col-xs-12">
@@ -112,7 +155,7 @@
 													<?php } } ?>
 													</select>
 												</div>
-											</div>
+											</div>-->
 										</div>
 										<div id="divAddFeatured" class="divfeatured" >
 										<div class="form-group">
@@ -153,7 +196,7 @@
 												</select>
 											</div>
 										</div>										
-										</div>
+										
 										<div class="ln_solid"></div>
 										<div class="form-group">
 											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -161,7 +204,7 @@
 												<input type="submit" name="btnsubmitaddfeatured" value="Submit" class="btn btn-success" />
 											</div>
 										</div>
-										
+										</div>
 									</form>
 								</div>
 							</div>

@@ -29,6 +29,7 @@
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Slider Image List</h2>
+					<a href="<?php echo base_url(); ?>add-slider" class="btn btn-success pull-right" >+ Upload Slider Image</a>
                     <!--ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
