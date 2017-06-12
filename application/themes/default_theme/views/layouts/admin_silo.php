@@ -165,7 +165,7 @@
 		}
 		</style>
 	<?php } ?>	
-	<?php if($page=='add_featured_news' || $page=='add_latest_news' || $page=='add_header_news' || $page=='add_category_news') { ?>
+	<?php if($page=='add_featured_news' || $page=='add_latest_news' || $page=='edit_header_news' || $page=='add_category_news') { ?>
 	<script type="text/javascript" >
 	$(document).ready(function() {
 	$(".divfeatured").hide();

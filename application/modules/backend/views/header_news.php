@@ -64,6 +64,7 @@
 										<table id="datatable-keytable" class="table table-striped table-bordered">
 											<thead>
 												<tr>
+													<th></th>
 													<th>S. No.</th>
 													<th>Title</th>
 													<th>Description</th>
@@ -83,13 +84,13 @@
 														
 													?>
 													<tr>
+														<td><input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" /></td>
 														<td><?php echo $i;?></td>
 														<td><?php echo $project['title'];?></td>
 														<td><?php echo $project['description'];?></td>
 														<td><?php echo date('d F Y',strtotime($project['created']));?></td>
-														<td>
-															<input type="checkbox"  value="<?php echo $project['id'];?>" id="newsids" name="newsids[]" />
-															
+														<td>															
+															<a href="<?php echo base_url().'edit_header_news/'.$project['id'] ?>" >Edit</a>
 														</td>
 													</tr>
 													<?php 

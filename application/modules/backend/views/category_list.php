@@ -3,7 +3,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Category</h3>
+                <h3>News Category</h3>
               </div>
 
               <div class="title_right">
@@ -28,7 +28,9 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Category List</h2>
+                    <h2>News Category List</h2>
+					
+					<a href="<?php echo base_url(); ?>add-category" class="btn btn-success pull-right" >+ Create News Category</a>
                     <!--ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -61,6 +63,7 @@
                           </p-->
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
+						  
                             <thead>
                               <tr>
                                 <th>S. No.</th>

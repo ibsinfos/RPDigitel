@@ -588,7 +588,7 @@
 		
 	
 		
-		public function add_header_news()
+		public function edit_header_news($id=null)
 		{
 			$this->load->library('session');
 			$this->load->helper('utility_helper');
@@ -601,15 +601,17 @@
 			$this->template->set('category',$category);
 			$data=array();
 			$news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('header'=>'0'));		
+			$newsdata = $this->common_model->getRecords(TABLES::$NEWS, '*',array('id'=>$id));	
+			$this->template->set('newsdata',$newsdata);		
 			$this->template->set('news',$news);		
-			$this->template->set('page','add_header_news');
+			$this->template->set('page','edit_header_news');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('admin_silo')
 			->title('Admin Dashboard | Silo')
 			->set_partial('header','partials/admin_header')
 			->set_partial('sidebar','partials/admin_sidebar')
 			->set_partial('footer', 'partials/admin_footer');
-			$this->template->build('add_header_news');
+			$this->template->build('edit_header_news');
 			
 			if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divSelectFeatured')
 			{
@@ -622,7 +624,7 @@
 						$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$nid));					
 					}	
 					$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
-					redirect(base_url().'add_header_news');
+					redirect(base_url().'edit_header_news/'.$id);
 				}
 			}
 			else if(!empty($this->input->post('select_featured')) && $this->input->post('select_featured')=='divAddFeatured')
@@ -632,7 +634,7 @@
 				if ($this->form_validation->run() == FALSE) 
 				{
 						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>'.validation_errors().'</div>');
-						redirect(base_url().'add_header_news');
+						redirect(base_url().'edit_header_news/'.$id);
 				}
 				else
 				{
@@ -664,19 +666,23 @@
 					if(!empty($this->input->post('category')))
 					{
 						$user['category'] = implode(',',$this->input->post('category')); 
-					}	
+					}
+					if(empty($this->input->post('category')))
+					{
+						$user['category'] = ''; 
+					}
 					$user['user_id'] = $session_data['user_id'];
 					$user['created'] = date('Y-m-d h:i:s');							
 					$user['header'] = 1;
-					$uid= $this->common_model->insertRow($user, TABLES::$NEWS);
+					$uid = $this->common_model->updateRow(TABLES::$NEWS,$user,array('id'=>$id));	
 					if ($uid) {				
 						$this->session->set_flashdata('news_message','<div class="alert alert-success" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>News has been saved successfully</div>');
-						redirect(base_url() . 'add_header_news');
+						redirect(base_url().'edit_header_news/'.$id);
 					}
 					else
 					{
 						$this->session->set_flashdata('news_message','<div class="alert alert-danger" style="text-shadow:none;" ><button type="button" class="close" data-dismiss="alert">X</button><strong>Unable to save Latest news</div>');
-						redirect(base_url().'add_header_news');
+						redirect(base_url().'edit_header_news/'.$id);
 					}
 				}				
 				

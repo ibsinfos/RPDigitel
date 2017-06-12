@@ -46,14 +46,13 @@ Class Dashboard extends MX_Controller
            redirect(base_url());
 		}
     }
-	public function community()
+	/*public function community()
 	{
 		$latest_news = $this->common_model->getRecords(TABLES::$NEWS, '*',array('latest'=>'1'));		
 		$slider = $this->common_model->getRecords(TABLES::$COMMUNITY_SLIDER, '*');		
 		$category = $this->common_model->getRecords(TABLES::$NEWS,'*',array('header'=>1),'',2);	
 		$category_slider = $this->common_model->getRecords(TABLES::$NEWS,'*',array('category_slider'=>1),'',3);	
 		$other = $this->common_model->getRecords(TABLES::$NEWS,'*',array('category'=>'','featured'=>'0','latest'=>'0','category_slider'=>'0','header'=>'0'));	
-		//echo '<pre>'; print_r($category); exit;
 		$this->template->set('category_slider',$category_slider);
 		$this->template->set('other',$other);
 		$this->template->set('category',$category);
@@ -66,7 +65,7 @@ Class Dashboard extends MX_Controller
                 ->set_partial('header','partials/header_community')                
                 ->set_partial('footer','partials/footer_community');
         $this->template->build('community');
-	}
+	}*/
 	public function admin_dashboard()
 	{
 	    $this->template->set('page','dashboard');

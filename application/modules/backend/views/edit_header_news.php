@@ -77,7 +77,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Add Header News</h2>                  
+									<h2>Edit Header News</h2>                  
 									<div class="clearfix"></div>
 								</div>
 								<div class="x_content">
@@ -88,14 +88,15 @@
 											
 										} 
 									?>
-									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>add_header_news" data-parsley-validate class="form-horizontal form-label-left">
-										
+									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>edit_header_news/<?php echo $newsdata['0']['id']; ?>" data-parsley-validate class="form-horizontal form-label-left">
+										<input type="hidden" id="id" name="newsid" value="<?php echo $newsdata['0']['id']; ?>">
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name"> 
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Add Latest News
-											<input name="select_featured" value="divSelectFeatured"  type="radio">Select Latest News
+											
+											<input name="select_featured" value="divAddFeatured" checked="checked" type="radio">Edit Header News
+											<input name="select_featured" value="divSelectFeatured"  type="radio">Select Header News
 													
 											</div>
 										</div>
@@ -128,7 +129,8 @@
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Title <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" id="title" name="title"  class="form-control col-md-7 col-xs-12">
+												
+												<input type="text" id="title" name="title" value="<?php echo $newsdata['0']['title']; ?>"  class="form-control col-md-7 col-xs-12">
 												<span style="color:red;" ><?php echo form_error('title'); ?> <?php  if(!empty($title_error)) { echo $title_error; } ?></span>
 											</div>
 										</div>
@@ -136,7 +138,9 @@
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Description <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<textarea id="description" name="description"  name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+												<textarea id="description" name="description"  name="textarea"  class="form-control col-md-7 col-xs-12">
+												<?php echo $newsdata['0']['description']; ?>
+												</textarea>
 												<span style="color:red;" ><?php echo form_error('description'); ?><?php  if(!empty($descr_error)) { echo $descr_error; } ?></span>	
 											</div>
 										</div>
@@ -144,12 +148,39 @@
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Category 
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
+											<?php 
+													$cat_arry=array();
+													if(!empty($newsdata[0]['category']))
+													{
+															$cat_arry=explode(',',$newsdata[0]['category']);
+													}
+											?>
 												<select class="form-control" id="category" name="category[]" multiple="multiple" >
-													<?php if(!empty($category)) { 
-														foreach($category as $cat){	
-														?>
-														<option value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
-													<?php } } ?>
+													<?php if(!empty($category)) 
+													{ 
+														foreach($category as $cat)
+														{	
+															
+																
+																if(in_array($cat['id'],$cat_arry))
+																{
+																	
+																?>
+																<option selected value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
+																<?php 
+																}	
+																
+																else
+																{
+																?>
+																<option value="<?php echo $cat['id']; ?>" ><?php echo $cat['name']; ?></option>
+																<?php
+																}
+																
+																
+															 
+														}
+													} ?>
 												</select>
 											</div>
 										</div>										

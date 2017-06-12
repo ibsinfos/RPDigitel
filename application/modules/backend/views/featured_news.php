@@ -29,7 +29,7 @@
                 <div class="x_panel">
 					<div class="x_title">
 						<h2>Featured News List</h2>
-						
+						<a class="btn btn-success pull-right" href="<?php echo base_url(); ?>add_featured_news" >+ Add Featured News</a>
 						<div class="clearfix"></div>
 					</div>
 					<?php 

@@ -131,8 +131,10 @@
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
 												<select id="category" name="category[]" multiple="multiple" class="form-control" >
-													<?php if(!empty($category)) { 
-														foreach($category as $cat){	
+													<?php if(!empty($category)) 
+													{ 
+														foreach($category as $cat)
+														{	
 															if(!empty($news[0]['category']))
 															{
 																$cat_arry=explode(',',$news[0]['category']);
@@ -153,7 +155,8 @@
 																}
 																
 																
-															} }
+															} 
+														}
 													}
 													?>
 												</select>

@@ -91,7 +91,7 @@ $route['add_featured_news'] = 'backend/news/add_featured_news';
 $route['featured_news'] = 'backend/news/featured_news';
 $route['latest_news'] = 'backend/news/latest_news';
 $route['add_category_news'] = 'backend/news/add_category_news';
-$route['add_header_news'] = 'backend/news/add_header_news';
+$route['edit_header_news/(:any)'] = 'backend/news/edit_header_news/$1';
 $route['edit-news/(:any)'] = 'backend/news/edit_news/$1';
 $route['admin-community'] = 'backend/news/community';
 $route['news'] = 'backend/news/view_news';
@@ -120,7 +120,7 @@ $route['payment-details'] = 'backend/setting/paymentDetails';
 
 $route['sync-with-card'] = 'backend/setting/syncWithCard';
 $route['logout'] = 'backend/Login/logout';
-$route['community'] = 'backend/Dashboard/community';
+$route['community'] = 'backend/Community/community';
 
 
 /*

@@ -23,11 +23,19 @@
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#"><i class="fa fa-file"></i></a></li>
 				<li class="searchWrap"><a href="#"><i class="fa fa-search"></i></a></li>
+				<?php 
+				if(!empty($session_data['user_account']['username']))
+				{
+				?>
 				<li><a href="#" class="userImage">
 						<img src='<?php echo backend_asset_url() ?>/images/img.jpg' alt="user" class="img-responsive">
-						<span class="">Hi, <?php echo ucfirst($session_data['user_account']['username']);?></span>
+						<span class="">Hi, 
+							<?php 
+								if(!empty($session_data['user_account']['username']))
+								echo ucfirst($session_data['user_account']['username']);?></span>
 					</a>
 				</li>
+				<?php } ?>
 				<li>
 					<a href="#">
 						<i class="fa fa-envelope-o"></i>
