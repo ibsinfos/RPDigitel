@@ -95,6 +95,8 @@ $route['edit_header_news/(:any)'] = 'backend/news/edit_header_news/$1';
 $route['edit-news/(:any)'] = 'backend/news/edit_news/$1';
 $route['admin-community'] = 'backend/news/community';
 $route['news'] = 'backend/news/view_news';
+$route['news/(:any)'] = 'backend/news/newsDetail/$1';
+
 $route['header_news'] = 'backend/news/header_news';
 $route['category_news'] = 'backend/news/category_news';
 $route['category'] = 'backend/news_category/index';
@@ -122,6 +124,15 @@ $route['sync-with-card'] = 'backend/setting/syncWithCard';
 $route['logout'] = 'backend/Login/logout';
 $route['community'] = 'backend/Community/community';
 
+
+/*
+ * Routes for testimonials
+ */
+$route['event-list'] = "backend/event/eventList";
+$route['add-event'] = "backend/event/addEvent";
+$route['edit-event'] = "backend/variant/editevent";
+$route['edit-event/(:any)'] = "backend/event/addevent/$1";
+$route['event/(:any)'] = "backend/event/eventDetail/$1";
 
 /*
  * Routes for frontend
