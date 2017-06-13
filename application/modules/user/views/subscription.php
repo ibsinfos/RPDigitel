@@ -19,12 +19,12 @@
 						<p>Enterprise Solutions built for Startups.</p>
 						<a href="" class="btn btnRed">Add the Cloud to Your Bundle</a>
 						<p class="viewMore">View more articles ><br>
- 						Sign up for a new merchant account</p>		
+						Sign up for a new merchant account</p>		
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
 		<div class="subscribeShowPrice">
 			<div class="container">
 				<p>Show me prices based on:</p>
@@ -47,7 +47,7 @@
 						    <li role="presentation"><a href="#wbsBusinessSuite" aria-controls="wbsBusinessSuite" role="tab" data-toggle="tab">WBS Business Suite</a></li>
 						    <li role="presentation"><a href="#paaSPort" aria-controls="paaSPort" role="tab" data-toggle="tab">PaaSPort</a></li>
 						    <li role="presentation"><a href="#siloBank" aria-controls="siloBank" role="tab" data-toggle="tab">Silo Bank</a></li>
-					  	</ul>
+						</ul>
 				  	 	<!-- Tab panes -->
 					  	<div class="tab-content">
 						    <div role="tabpanel" class="tab-pane active" id="fiberRails">
@@ -65,7 +65,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 1','30 days','49')" value="49" id="fiber_rails_portal_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -83,7 +83,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 2','60 days','79')" value="79" id="fiber_rails_portal_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -101,57 +101,58 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 3','90 days','99')" value="99" id="fiber_rails_portal_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
-											</table>
-										</div>
-									</div>
 								</div>
-						    </div>
+						    	<!--<div class="row">
+									<div class="col-md-12">
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
+							
 						    <div role="tabpanel" class="tab-pane" id="siloCloud">
 						    	<div class="row">
 									<div class="col-sm-4">
@@ -167,7 +168,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 1','30 days','49')" value="49" id="silo_cloud_services_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -185,7 +186,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 2','60 days','79')"  value="79" id="silo_cloud_services_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -203,57 +204,57 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 3','90 days','99')"  value="99" id="silo_cloud_services_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
-											</table>
-										</div>
-									</div>
 								</div>
-						    </div>
+								<!--	<div class="row">
+									<div class="col-md-12">
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
 						    <div role="tabpanel" class="tab-pane" id="scandiscRegistry">
 						    	<div class="row">
 									<div class="col-sm-4">
@@ -269,7 +270,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 1','30 days','49')" value="49" id="scandisc_registry_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -287,7 +288,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 2','60 days','79')" value="79" id="scandisc_registry_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -305,57 +306,57 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 3','90 days','99')" value="99" id="scandisc_registry_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
-											</table>
-										</div>
-									</div>
 								</div>
-						    </div>
+						    	<!--<div class="row">
+									<div class="col-md-12">
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
 						    <div role="tabpanel" class="tab-pane" id="wbsBusinessSuite">
 						    	<div class="row">
 									<div class="col-sm-4">
@@ -371,7 +372,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 1','30 days','49')" value="49" id="wbs-business_suite_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -389,7 +390,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 2','60 days','79')" value="79" id="business_suite_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -407,57 +408,57 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 3','90 days','99')" value="99" id="business_suite_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
-											</table>
-										</div>
-									</div>
 								</div>
-						    </div>
+						    	<!--<div class="row">
+									<div class="col-md-12">
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
 						    <div role="tabpanel" class="tab-pane" id="paaSPort">
 						    	<div class="row">
 									<div class="col-sm-4">
@@ -473,7 +474,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 1','30 days','49')" value="49" id="paasport_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -491,7 +492,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 2','60 days','79')"  value="79" id="paasport_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -509,57 +510,57 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 3','90 days','99')"  value="99" id="paasport_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
-											</table>
-										</div>
-									</div>
 								</div>
-						    </div>
+						    	<!--<div class="row">
+									<div class="col-md-12">
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
 						    <div role="tabpanel" class="tab-pane" id="siloBank">
 						    	<div class="row">
 									<div class="col-sm-4">
@@ -575,7 +576,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('silo bank plan 1','30 days','49')" value="49" id="silo_bank_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -593,7 +594,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo bank plan 2','60 days','79')" value="79" id="silo_bank_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -602,7 +603,7 @@
 										<div class="panel plan3">
 											<div class="panel-heading text-center">
 												<h4 class="planName">Plan 3</h4>
-												<h4 class="planAmtWrap">$ <span class="amt">99</span></h4>
+												<h4 class="planAmtWrap">$ <span class="amt">$99</span></h4>
 											</div>
 											<div class="panel-body">
 												<ul class="list-unstyled typoList">
@@ -611,58 +612,115 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo bank plan 3','90 days','99')" value="99" id="silo_bank_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
 									</div>
-						    	</div>
-						    	<div class="row">
+								</div>
+						    	<!--<div class="row">
 									<div class="col-md-12">
-										<div class="table-responsive">
-											<table class="table table-striped">
-											  <thead>
-											  	<tr>
-											  		<th>Plan Name</th>
-											  		<th>Duration</th>
-											  		<th width="200">Price</th>
-											  	</tr>
-											  </thead>
-											  <tbody>
-											  	<tr>
-											  		<td>Plan 1</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 2</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  	<tr>
-											  		<td>Plan 3</td>
-											  		<td>1 Year</td>
-											  		<td>$ 49</td>
-											  	</tr>
-											  </tbody>
-											  <tfoot>
-											  	<tr>
-											  		<th colspan="2" class="text-right">Total:</th>
-											  		<th>$200</th>
-											  	</tr>
-											  	<tr>
-											  		<td colspan="2"></td>
-											  		<td>
-											  			<a href="<?php echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
-											  		</td>
-											  	</tr>
-											  </tfoot>
+									<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+									<tr>
+									<th>Plan Name</th>
+									<th>Duration</th>
+									<th width="200">Price</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>Plan 1</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 2</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									<tr>
+									<td>Plan 3</td>
+									<td>1 Year</td>
+									<td>$ 49</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr>
+									<th colspan="2" class="text-right">Total:</th>
+									<th>$200</th>
+									</tr>
+									<tr>
+									<td colspan="2"></td>
+									<td>
+									<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>
+									</td>
+									</tr>
+									</tfoot>
+									</table>
+									</div>
+									</div>
+								</div>-->
+							</div>
+							
+							
+							
+							<div class="row">
+								<div class="col-md-12">
+									<div class="table-responsive">
+										<form id='form_subcription_plans' method="post" action="<?php echo base_url(); ?>check_out">
+											<table class="table table-striped" id='table_subcription_plans'>
+												<thead>
+													<tr>
+														<th>Plan Name</th>
+														<th>Duration</th>
+														<th width="200">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!--<tr>
+														<td>Plan 1</td>
+														<td>1 Year</td>
+														<td>$ 49</td>
+														</tr>
+														<tr>
+														<td>Plan 2</td>
+														<td>1 Year</td>
+														<td>$ 49</td>
+														</tr>
+														<tr>
+														<td>Plan 3</td>
+														<td>1 Year</td>
+														<td>$ 49</td>
+														</tr>
+													-->
+												</tbody>
+												<tfoot>
+													<tr>
+														<th colspan="2" class="text-right">Total:</th>
+														<th id="subcription_plans_total">0</th>
+													</tr>
+													
+													<tr>
+														<td colspan="2"></td>
+														<td>
+															<!--<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>-->
+															<input type="text" name="pricing_plan_total" id="pricing_plan_total" value="0" hidden>
+															<input type="submit" name="pricing_plan_submit" id="pricing_plan_submit" class="btn btnRed" value="Get Started">
+															
+														</td>
+													</tr>
+												</tfoot>
 											</table>
-										</div>
+										</form>
 									</div>
 								</div>
-						    </div>
-					  	</div>
+							</div>
+							
+							
+							
+						</div>
 					</div>
 				</div>
 				<div class="row wirelesServicesInfo">
@@ -728,5 +786,46 @@
 		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+		<script type="text/javascript">
+			
+			
+			var all_records=[];
+			
+			
+			
+			
+			function add_plan(name,duration,price){
+				
+				// var all = [
+				// ['fiber_plans','Fiber plan 1'],
+				// ['fiber_plans','Fiber plan 2']
+				// ['fiber_plans','Fiber plan 3']
+				// ];
+				
+				var fiber_plans=['Fiber plan 1','Fiber plan 2','Fiber plan 3'];
+				
+				if((fiber_plans.indexOf(name) != -1)){ 
+					// alert(name);
+				}
+				
+				if((all_records.indexOf(name) == -1)){ //To check Duplicate
+					
+					all_records.push(name);
+					
+					$("#table_subcription_plans > tbody").append("<tr><td>"+name+"</td><td>"+duration+"</td><td>"+price+"</td></tr>");
+					
+					var pre_total=$("#subcription_plans_total").text();
+					
+					var new_total=parseInt(pre_total)+parseInt(price);
+					
+					$("#subcription_plans_total").text(parseInt(new_total));
+					$("#pricing_plan_total").val(parseInt(new_total));
+					
+				}
+				
+			}
+			
+			
+		</script>
 	</body>
 </html>
