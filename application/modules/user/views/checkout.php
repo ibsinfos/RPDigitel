@@ -239,14 +239,24 @@
 							<h4 class="heading">ORDER SUMMARY</h4>
 							<table class="table">
 								<tbody>
-									<tr>
+<!--									<tr>
 										<th>Plan:</th>
 										<td>Plan1</td>
 									</tr>
 									<tr>
 										<th>Date:</th>
 										<td>Wed, 07 Jun 2017</td>
-									</tr>
+									</tr>-->
+									<?php
+									
+									$services=array('fiber','silo_cloud','scandisc','wbs','paasport','silo_bank');
+									
+									foreach($services as $service){
+										if($this->session->userdata($service)){
+											echo "<tr><th>Plan Name :</th><td>".$this->session->userdata[$service]['name']."</td></tr><tr><th>Price :</th><td>$ ".$this->session->userdata[$service]['price']."</td></tr>";
+										}
+										}
+									?>
 								</tbody>
 								<tfoot>
 									<tr>
@@ -256,69 +266,69 @@
 											echo $pricing_plan_total;
 										?></th>
 									</tr>
-									<tfoot>
-									</table>
-								</div>
+								</tfoot>
+							</table>
 							</div>
-						</div>
-					</div>
+							</div>
 				</div>
-			</section>
-			<?php $this->load->view('includes/main_footer_home'); ?>		
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+			</div>
+		</div>
+	</section>
+	<?php $this->load->view('includes/main_footer_home'); ?>		
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+	
+	<script type="text/javascript">
+		
+		
+		$("#billing_country").on('change',function (e) {
 			
-			<script type="text/javascript">
-				
-				
-				$("#billing_country").on('change',function (e) {
+			if(this.value!='select'){
+				$.ajax({
 					
-					if(this.value!='select'){
-						$.ajax({
-							
-							url:'<?php echo base_url();?>user/fiberrails/getcities',
-							
-							method:'post',
-							
-							async: false,
-							
-							data:{'country_id':this.value},
-							
-							success:function(data){ 
-								
-								// $("#project_portfolio").empty();
-								// alert(data);
-								$("#billing_state").html(data);
-								
-							}					
-							
-						});
-						}else{
+					url:'<?php echo base_url();?>user/fiberrails/getcities',
+					
+					method:'post',
+					
+					async: false,
+					
+					data:{'country_id':this.value},
+					
+					success:function(data){ 
 						
-						$("#billing_state").html("<option value='select'>Select State</option>");
+						// $("#project_portfolio").empty();
+						// alert(data);
+						$("#billing_state").html(data);
 						
-					}
+					}					
 					
 				});
+				}else{
 				
+				$("#billing_state").html("<option value='select'>Select State</option>");
 				
-				
-				
-				var payment_successful="<?php if($this->session->userdata('payment_successfull')){ echo $this->session->userdata('payment_successfull');
-					$this->session->unset_userdata('payment_successfull');
-				}
-				else{echo '';}?>";
-				
-				if(payment_successful!=''){
-					$('li[role=presentation]').removeClass('active');
-					$('.tab-pane').removeClass('active');
-					$('.status_details').removeClass('disabled').addClass('active');
-				}
-				
-				
-			</script>
+			}
 			
-		</body>
-	</html>									
+		});
+		
+		
+		
+		
+		var payment_successful="<?php if($this->session->userdata('payment_successfull')){ echo $this->session->userdata('payment_successfull');
+			$this->session->unset_userdata('payment_successfull');
+		}
+		else{echo '';}?>";
+		
+		if(payment_successful!=''){
+			$('li[role=presentation]').removeClass('active');
+			$('.tab-pane').removeClass('active');
+			$('.status_details').removeClass('disabled').addClass('active');
+		}
+		
+		
+	</script>
+	
+</body>
+</html>									

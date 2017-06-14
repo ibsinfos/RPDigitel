@@ -118,6 +118,23 @@
 					</ul>
 					</li>
 					<?php } ?>
+					
+					
+					<?php if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
+					<li class="acive"><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-Store"></i>
+						</div> 
+					Store <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url()."dashboard/productlist"; ?>">Product List</a></li>
+						<li><a href="<?php echo base_url()."dashboard/createproduct"; ?>">Create Product</a></li>
+						<li><a href="<?php echo base_url()."dashboard/ordertable"; ?>">Order Table</a></li>
+					</ul>
+					</li>
+					<?php } ?>
+					
+					
 					<?php if(!empty($user_menu) && in_array('Settings',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-setting"></i>
@@ -125,6 +142,7 @@
 					
 					</li>
 					<?php } ?>
+					
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-invoice"></i>
@@ -132,6 +150,7 @@
 					
 					</li>
 					<?php } ?>
+					
 					<?php if(!empty($user_menu) && in_array('Home',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-news"></i>
