@@ -663,3 +663,213 @@ INFO - 2017-06-14 16:36:01 --> Model Class Initialized
 DEBUG - 2017-06-14 16:36:01 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
 INFO - 2017-06-14 16:36:01 --> Final output sent to browser
 DEBUG - 2017-06-14 16:36:01 --> Total execution time: 0.2831
+INFO - 2017-06-14 17:05:47 --> Config Class Initialized
+INFO - 2017-06-14 17:05:47 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:05:47 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:05:47 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:05:47 --> URI Class Initialized
+INFO - 2017-06-14 17:05:47 --> Router Class Initialized
+INFO - 2017-06-14 17:05:47 --> Output Class Initialized
+INFO - 2017-06-14 17:05:47 --> Security Class Initialized
+DEBUG - 2017-06-14 17:05:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:05:47 --> Input Class Initialized
+INFO - 2017-06-14 17:05:47 --> Language Class Initialized
+INFO - 2017-06-14 17:05:47 --> Language Class Initialized
+INFO - 2017-06-14 17:05:47 --> Config Class Initialized
+INFO - 2017-06-14 17:05:47 --> Loader Class Initialized
+INFO - 2017-06-14 17:05:47 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:05:47 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:05:47 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:05:47 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:05:47 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:05:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:05:47 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:05:47 --> Template Class Initialized
+INFO - 2017-06-14 17:05:47 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:05:47 --> Controller Class Initialized
+INFO - 2017-06-14 17:05:47 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:05:47 --> Model Class Initialized
+INFO - 2017-06-14 17:05:47 --> Model Class Initialized
+DEBUG - 2017-06-14 17:05:47 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:05:47 --> Final output sent to browser
+DEBUG - 2017-06-14 17:05:47 --> Total execution time: 0.2941
+INFO - 2017-06-14 17:06:27 --> Config Class Initialized
+INFO - 2017-06-14 17:06:27 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:06:27 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:06:27 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:06:27 --> URI Class Initialized
+INFO - 2017-06-14 17:06:27 --> Router Class Initialized
+INFO - 2017-06-14 17:06:27 --> Output Class Initialized
+INFO - 2017-06-14 17:06:27 --> Security Class Initialized
+DEBUG - 2017-06-14 17:06:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:06:27 --> Input Class Initialized
+INFO - 2017-06-14 17:06:27 --> Language Class Initialized
+INFO - 2017-06-14 17:06:27 --> Language Class Initialized
+INFO - 2017-06-14 17:06:27 --> Config Class Initialized
+INFO - 2017-06-14 17:06:28 --> Loader Class Initialized
+INFO - 2017-06-14 17:06:28 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:06:28 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:06:28 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:06:28 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:06:28 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:06:28 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:06:28 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:06:28 --> Template Class Initialized
+INFO - 2017-06-14 17:06:28 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:06:28 --> Controller Class Initialized
+INFO - 2017-06-14 17:06:28 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:06:28 --> Model Class Initialized
+INFO - 2017-06-14 17:06:28 --> Model Class Initialized
+DEBUG - 2017-06-14 17:06:28 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:06:28 --> Final output sent to browser
+DEBUG - 2017-06-14 17:06:28 --> Total execution time: 0.2866
+INFO - 2017-06-14 17:06:32 --> Config Class Initialized
+INFO - 2017-06-14 17:06:32 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:06:32 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:06:32 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:06:32 --> URI Class Initialized
+INFO - 2017-06-14 17:06:32 --> Router Class Initialized
+INFO - 2017-06-14 17:06:32 --> Output Class Initialized
+INFO - 2017-06-14 17:06:32 --> Security Class Initialized
+DEBUG - 2017-06-14 17:06:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:06:32 --> Input Class Initialized
+INFO - 2017-06-14 17:06:32 --> Language Class Initialized
+INFO - 2017-06-14 17:06:32 --> Language Class Initialized
+INFO - 2017-06-14 17:06:32 --> Config Class Initialized
+INFO - 2017-06-14 17:06:32 --> Loader Class Initialized
+INFO - 2017-06-14 17:06:32 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:06:32 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:06:32 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:06:32 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:06:32 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:06:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:06:32 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:06:32 --> Template Class Initialized
+INFO - 2017-06-14 17:06:32 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:06:32 --> Controller Class Initialized
+INFO - 2017-06-14 17:06:32 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:06:32 --> Model Class Initialized
+INFO - 2017-06-14 17:06:32 --> Model Class Initialized
+DEBUG - 2017-06-14 17:06:32 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:06:32 --> Final output sent to browser
+DEBUG - 2017-06-14 17:06:32 --> Total execution time: 0.2969
+INFO - 2017-06-14 17:08:05 --> Config Class Initialized
+INFO - 2017-06-14 17:08:05 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:08:05 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:08:05 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:08:05 --> URI Class Initialized
+INFO - 2017-06-14 17:08:05 --> Router Class Initialized
+INFO - 2017-06-14 17:08:05 --> Output Class Initialized
+INFO - 2017-06-14 17:08:05 --> Security Class Initialized
+DEBUG - 2017-06-14 17:08:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:08:05 --> Input Class Initialized
+INFO - 2017-06-14 17:08:05 --> Language Class Initialized
+INFO - 2017-06-14 17:08:05 --> Language Class Initialized
+INFO - 2017-06-14 17:08:05 --> Config Class Initialized
+INFO - 2017-06-14 17:08:06 --> Loader Class Initialized
+INFO - 2017-06-14 17:08:06 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:08:06 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:08:06 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:08:06 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:08:06 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:08:06 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:08:06 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:08:06 --> Template Class Initialized
+INFO - 2017-06-14 17:08:06 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:08:06 --> Controller Class Initialized
+INFO - 2017-06-14 17:08:06 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:08:06 --> Model Class Initialized
+INFO - 2017-06-14 17:08:06 --> Model Class Initialized
+DEBUG - 2017-06-14 17:08:06 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:08:06 --> Final output sent to browser
+DEBUG - 2017-06-14 17:08:06 --> Total execution time: 0.3046
+INFO - 2017-06-14 17:08:44 --> Config Class Initialized
+INFO - 2017-06-14 17:08:44 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:08:44 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:08:44 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:08:44 --> URI Class Initialized
+INFO - 2017-06-14 17:08:44 --> Router Class Initialized
+INFO - 2017-06-14 17:08:45 --> Output Class Initialized
+INFO - 2017-06-14 17:08:45 --> Security Class Initialized
+DEBUG - 2017-06-14 17:08:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:08:45 --> Input Class Initialized
+INFO - 2017-06-14 17:08:45 --> Language Class Initialized
+INFO - 2017-06-14 17:08:45 --> Language Class Initialized
+INFO - 2017-06-14 17:08:45 --> Config Class Initialized
+INFO - 2017-06-14 17:08:45 --> Loader Class Initialized
+INFO - 2017-06-14 17:08:45 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:08:45 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:08:45 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:08:45 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:08:45 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:08:45 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:08:45 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:08:45 --> Template Class Initialized
+INFO - 2017-06-14 17:08:45 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:08:45 --> Controller Class Initialized
+INFO - 2017-06-14 17:08:45 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:08:45 --> Model Class Initialized
+INFO - 2017-06-14 17:08:45 --> Model Class Initialized
+DEBUG - 2017-06-14 17:08:45 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:08:45 --> Final output sent to browser
+DEBUG - 2017-06-14 17:08:45 --> Total execution time: 0.3023
+INFO - 2017-06-14 17:10:01 --> Config Class Initialized
+INFO - 2017-06-14 17:10:01 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:10:01 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:10:01 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:10:01 --> URI Class Initialized
+INFO - 2017-06-14 17:10:01 --> Router Class Initialized
+INFO - 2017-06-14 17:10:01 --> Output Class Initialized
+INFO - 2017-06-14 17:10:01 --> Security Class Initialized
+DEBUG - 2017-06-14 17:10:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:10:01 --> Input Class Initialized
+INFO - 2017-06-14 17:10:01 --> Language Class Initialized
+INFO - 2017-06-14 17:10:01 --> Language Class Initialized
+INFO - 2017-06-14 17:10:01 --> Config Class Initialized
+INFO - 2017-06-14 17:10:01 --> Loader Class Initialized
+INFO - 2017-06-14 17:10:01 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:10:01 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:10:01 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:10:01 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:10:01 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:10:01 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:10:01 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:10:01 --> Template Class Initialized
+INFO - 2017-06-14 17:10:01 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:10:01 --> Controller Class Initialized
+INFO - 2017-06-14 17:10:01 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:10:01 --> Model Class Initialized
+INFO - 2017-06-14 17:10:01 --> Model Class Initialized
+DEBUG - 2017-06-14 17:10:01 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:10:01 --> Final output sent to browser
+DEBUG - 2017-06-14 17:10:01 --> Total execution time: 0.3295
+INFO - 2017-06-14 17:10:10 --> Config Class Initialized
+INFO - 2017-06-14 17:10:10 --> Hooks Class Initialized
+DEBUG - 2017-06-14 17:10:10 --> UTF-8 Support Enabled
+INFO - 2017-06-14 17:10:10 --> Utf8 Class Initialized
+INFO - 2017-06-14 17:10:10 --> URI Class Initialized
+INFO - 2017-06-14 17:10:10 --> Router Class Initialized
+INFO - 2017-06-14 17:10:10 --> Output Class Initialized
+INFO - 2017-06-14 17:10:10 --> Security Class Initialized
+DEBUG - 2017-06-14 17:10:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 17:10:10 --> Input Class Initialized
+INFO - 2017-06-14 17:10:10 --> Language Class Initialized
+INFO - 2017-06-14 17:10:10 --> Language Class Initialized
+INFO - 2017-06-14 17:10:10 --> Config Class Initialized
+INFO - 2017-06-14 17:10:10 --> Loader Class Initialized
+INFO - 2017-06-14 17:10:10 --> Helper loaded: form_helper
+INFO - 2017-06-14 17:10:10 --> Helper loaded: url_helper
+INFO - 2017-06-14 17:10:10 --> Helper loaded: utility_helper
+INFO - 2017-06-14 17:10:10 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 17:10:10 --> Database Driver Class Initialized
+INFO - 2017-06-14 17:10:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 17:10:11 --> User Agent Class Initialized
+DEBUG - 2017-06-14 17:10:11 --> Template Class Initialized
+INFO - 2017-06-14 17:10:11 --> Encrypt Class Initialized
+INFO - 2017-06-14 17:10:11 --> Controller Class Initialized
+INFO - 2017-06-14 17:10:11 --> Form Validation Class Initialized
+INFO - 2017-06-14 17:10:11 --> Model Class Initialized
+INFO - 2017-06-14 17:10:11 --> Model Class Initialized
+DEBUG - 2017-06-14 17:10:11 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 17:10:11 --> Final output sent to browser
+DEBUG - 2017-06-14 17:10:11 --> Total execution time: 0.3229

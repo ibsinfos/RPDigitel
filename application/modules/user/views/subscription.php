@@ -835,7 +835,7 @@
 					
 					$("#table_subcription_plans > tbody").append("<tr id='"+cat+"'><td>"+name+"</td><td>"+duration+"</td><td class='plan_price'>"+price+" <input type='button' value='X' onclick=\"delete_selected_plan('"+cat+"')\" name='del_"+cat+"' id='del_"+cat+"'></td></tr>");
 					
-					/*AJAX Request start*/
+					/*AJAX Request to add plan start*/
 					$.ajax({
 							
 							url:'<?php echo base_url();?>user/fiberrails/addToCart_Plan',
@@ -855,7 +855,7 @@
 							}					
 							
 						});
-					/*AJAX Request end*/
+					/*AJAX Request to add plan end*/
 					
 					
 					var pre_total=$("#subcription_plans_total").text();
@@ -899,6 +899,30 @@
 					
 					$("#subcription_plans_total").text(parseInt(new_total));
 					$("#pricing_plan_total").val(parseInt(new_total));
+					
+					
+					
+					/*AJAX Request to remove plan start*/
+					$.ajax({
+							
+							url:'<?php echo base_url();?>user/fiberrails/removeFromCart_Plan',
+							
+							method:'post',
+							
+							async: false,
+							
+							data:{'plan_cat':cat,'plan_name':name,'plan_duration':duration,'plan_price':price},
+							
+							success:function(data){
+								
+								// $("#project_portfolio").empty();
+								// alert(data);
+								// $("#billing_state").html(data);
+								
+							}					
+							
+						});
+					/*AJAX Request to remove plan end*/
 					
 					
 					
