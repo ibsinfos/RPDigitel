@@ -33,7 +33,8 @@
 		// Documentation for client options:
 		// https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
 		opts = {
-			url : 'http://silohost.rebelute.in/media/elfinder/php/connector.minimal.php?follow='+user_id, // connector URL (REQUIRED)
+			//url : 'http://silohost.rebelute.in/media/elfinder/php/connector.minimal.php?follow='+user_id, // connector URL (REQUIRED)
+			url : 'http://54.212.235.115/RPDigitel/media/elfinder/php/connector.minimal.php?follow='+user_id, // connector URL (REQUIRED)
 			lang: lang                         // auto detected language (optional)
 		},
 		
@@ -75,7 +76,8 @@
 
 	// config of RequireJS (REQUIRED)
 	require.config({
-		baseUrl : 'http://silohost.rebelute.in/media/backend/elfinder/js/',
+		//baseUrl : 'http://silohost.rebelute.in/media/backend/elfinder/js/',
+		baseUrl : 'http://54.212.235.115/RPDigitel/media/backend/elfinder/js/',
 		paths : {
 			'jquery'   : '//cdnjs.cloudflare.com/ajax/libs/jquery/'+(ie8? '1.12.4' : jqver)+'/jquery.min',
 			'jquery-ui': '//cdnjs.cloudflare.com/ajax/libs/jqueryui/'+uiver+'/jquery-ui.min',

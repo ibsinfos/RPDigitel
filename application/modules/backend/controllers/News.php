@@ -13,9 +13,9 @@ Class News extends MX_Controller {
         $this->load->helper('text');
         $this->load->model("common_model");
         // $this->session = $this->session->userdata('user_account');		
-        if (!$this->common_model->isLoggedIn()) {
-            redirect(base_url() . 'admin/login');
-        }
+        // if (!$this->common_model->isLoggedIn()) {
+            // redirect(base_url() . 'admin/login');
+        // }
     }
 
     public function add_news() {
