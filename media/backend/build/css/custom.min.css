@@ -476,6 +476,16 @@ table.tile_info td p {
     height: 32px;
     width: 34px
 }
+.iconDashboard-community {
+    background-position: 0 -318px;
+    height: 32px;
+    width: 34px;
+}
+.iconDashboard-event {
+    background-position: 0 -350px;
+    height: 36px;
+    width: 34px;
+}
 
 .navbar-form {
     margin: 14px 0
@@ -1005,10 +1015,10 @@ table.tile_info td p {
     text-decoration: none
 }
 .btn {
-	padding: 6px 20px;
+    padding: 6px 20px;
 }
 .btnRed {
-	background-color: #f50707;
+    background-color: #f50707;
 }
 .grayBtn {
     background-color: #353535;
@@ -1019,25 +1029,25 @@ table.tile_info td p {
 .grayBtn,
 .grayBtn:hover,
 .grayBtn:focus {
-	color: #fff;
-	color: #fff;
+    color: #fff;
+    color: #fff;
 }
 
 .editProfileWrap .panel-heading h4 {
-	margin: 0;
+    margin: 0;
 }
 .editProfileWrap .editImgBtn {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 .editProfileWrap .onWebWrap .input-group-addon {
-	color: #fff;
+    color: #fff;
     min-width: 44px;
 }
 .editProfileWrap .addMediaWrap {
     margin: 0 0 30px;
 }
 .editProfileWrap .addMediaWrap:before {
- display: none;
+    display: none;
 }
 @media (min-width:480px) {
     .nav_menu {

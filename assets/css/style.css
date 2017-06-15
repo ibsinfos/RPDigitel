@@ -59,7 +59,7 @@ body {
 }
 .dotMatrixDropdown {
   padding: 20px 0px;
-  width: 650px;
+  width: 95%;
   box-shadow: none;
   -webkit-box-shadow: none;
   text-align: center;
@@ -85,23 +85,23 @@ body {
 }
 .dotMatrixDropdown .siloSDImg {
   width: 125px;
-  margin: 15px auto;
+  margin: 16px auto;
 }
 .dotMatrixDropdown .scanDiscImg {
   width: 150px;
-  margin: 38px auto;
+  margin: 39px auto;
 }
 .dotMatrixDropdown .webSuiteImg {
   width: 150px;
-  margin: 14px auto;
+  margin: 21px auto;
 }
 .dotMatrixDropdown .paasPortImg {
   width: 150px;
-  margin: 18px auto;
+  margin: 26px auto;
 }
 .dotMatrixDropdown .siloBankImg {
   width: 68px;
-  margin: 14px auto;
+  margin: 22px auto;
 }
 .dotMatrixDropdown.open {
   display: block;

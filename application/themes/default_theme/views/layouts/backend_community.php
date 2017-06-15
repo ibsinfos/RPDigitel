@@ -10,6 +10,9 @@
 		<!-- Font Awesome -->
 		<link href="<?php echo backend_asset_url() ?>/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo backend_asset_url() ?>/css/community.css"  rel="stylesheet" />
+                <?php if($page == 'event'){ ?>
+		<link href="<?php echo backend_asset_url() ?>/css/news.css"  rel="stylesheet" />
+                <?php } ?>
 		
 		<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
