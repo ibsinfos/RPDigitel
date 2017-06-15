@@ -119,6 +119,15 @@ $(document).ready(function(){
 	
 	// bootstrap popover enable
 	$('[data-toggle="popover"]').popover();
+
+    // Validate Subscription Checkout page
+    if ($('#memberDetailsForm').length) {
+      validateMemberDetails();
+    }
+    if ($('#paymentDetailsForm').length) {
+      validatePaymentDetails();
+    }
+
 	
 	// Start script for Wizard used in checkout page
     // $('.wizard a[data-toggle="tab"]').on('show.bs.tab', function (e) {
@@ -156,13 +165,6 @@ $(document).ready(function(){
 		}
 	});
 });
-
-function nextTab(elem) {
-    $(elem).next().find('a[data-toggle="tab"]').click();
-}
-function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
-}
 
 function isNumberKey(evt){
 	var charCode = (evt.which) ? evt.which : event.keyCode
