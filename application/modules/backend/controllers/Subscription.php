@@ -134,19 +134,64 @@
 				
 				$name=$this->input->post('name');
 				$price=$this->input->post('price');
-				$feature=$this->input->post('feature');
+				
+				
+				/*for newly added features*/
+
+				
+				if($this->input->post('new_added_feature')){
+				$new_added_feature=$this->input->post('new_added_feature');
+				$feature_ids=$this->Subscription_model->register_features($new_added_feature);
+				}else{
+				$feature_ids='';
+				}
+				
+				
+				if($feature_ids!=''){
+					// $feature=$this->input->post('feature');
+				$new_feature_ids = implode(',', $feature_ids);
+				}else{
+				$new_feature_ids="";
+				}
+				
+				/*for newly added features*/
+				
+				if($this->input->post('feature')){
+					$feature=$this->input->post('feature');
+				$feature = implode(',', $feature);
+				}else{
+				$feature="";
+				}
+				
+				
+				if($feature!='' && $new_feature_ids==""){
+					$update_feature_ids=$feature;
+					}else if($feature=='' && $new_feature_ids!=""){
+					$update_feature_ids=$new_feature_ids;
+					}else if($feature!='' && $new_feature_ids!=""){
+					$update_feature_ids=$feature.",".$new_feature_ids;
+					}else if($feature=='' && $new_feature_ids==""){
+					$update_feature_ids="";
+					}
+				
+				// echo $feature;
+				// print_r($new_added_feature);
+				// die();
+				
+				
+				
 				$plan_id=$this->input->post('plan_id');
 				
-				$feature = implode(',', $feature);
 				
 				
-				$up_data=array('name'=>$name,'price'=>$price,'features'=>$feature);
+				$up_data=array('name'=>$name,'price'=>$price,'features'=>$update_feature_ids);
 				$condition=array('id'=>$plan_id);
 				
 				$data = $this->common_model->updateRow('member_services_plans',$up_data,$condition);
 				
 				// die('sa');
-				redirect(base_url()."plan-list");
+				// redirect(base_url()."plan-list");
+				redirect(base_url()."admin-subscription");
 				// die();
 				
 			}
@@ -171,7 +216,7 @@
 			
 			$this->template->set('page', 'edit_plan');
 			$this->template->set_theme('default_theme');
-			$this->template->set_layout('backend_silo')
+			$this->template->set_layout('admin_silo')
 			->title('Project List | Silo')
 			->set_partial('header','partials/admin_header')
 			->set_partial('sidebar','partials/admin_sidebar')
@@ -268,6 +313,8 @@
 			if(!empty($_SESSION['paasport_user_id']))
 			{
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			}else{
+				$data['slug'] = '';
 			}
 			
 			$data['services'] = $this->common_model->getRecords('services','*','','');

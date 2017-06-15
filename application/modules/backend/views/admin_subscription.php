@@ -106,12 +106,16 @@
 															<ul class="list-unstyled typoList">
 																
 																<?php 
+																if($plan_detail->features!=''){
 																	$feature_details = $this->common_model->getFeatureDetails($plan_detail->features);
 																	foreach($feature_details as $feature){
 																		
 																		echo "<li>".$feature->description."</li>";
 																		
 																	}
+																	}
+																	
+																	
 																?>
 																
 																<!--<li>Unlimited SMS</li>
