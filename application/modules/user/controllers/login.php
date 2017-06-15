@@ -342,8 +342,8 @@ class login extends CI_Controller {
             $user_account['role_id'] = $user['role_id'];
             $user_account['purchase_pack'] = $user['purchase_pack'];
             $user_account['admin_login'] = '1';
-            $user_account['login_user_id'] = $user['user_id'];
-            $user_account['name'] = $user_name;
+            $user_account['login_user_id'] = '1';
+            $user_account['name'] = 'atul';
             $user_account['login_type'] = 'admin';
 
 

@@ -1,15 +1,5 @@
-<!Doctype html>
-<html>
-	<head>
-		<title>FiberRails</title>
-		<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/style.css">
-	</head>
-	<body>
-		<?php $this->load->view('includes/main_header_home'); ?>
+<!-- page content -->
+<div class="right_col" role="main">
 		
 		<section class="subscribeHeroSection">
 			<div class="container">
@@ -103,95 +93,100 @@
 												// print_r($plan_detail->name);
 											?>
 											<div class="col-sm-4">
-												<div class="panel plan<?php echo $plan_count;?>">
-													<div class="panel-heading text-center">
-														<h4 class="planName"><?php echo $plan_detail->name;?></h4>
-														<h4 class="planAmtWrap">$ <span class="amt"><?php echo $plan_detail->price;?></span></h4>
-													</div>
-													<div class="panel-body">
-														<ul class="list-unstyled typoList">
-															
-															<?php 
-															 $feature_details = $this->common_model->getFeatureDetails($plan_detail->features);
-															 foreach($feature_details as $feature){
-															 
-																echo "<li>".$feature->description."</li>";
+												
+												
+												<a href="<?php echo base_url()."edit-plan/".$plan_detail->id; ?>" class="newsWrap firstNews sectionOverlay">
+													
+													<div class="panel plan<?php echo $plan_count;?>">
+														<div class="panel-heading text-center">
+															<h4 class="planName"><?php echo $plan_detail->name;?></h4>
+															<h4 class="planAmtWrap">$ <span class="amt"><?php echo $plan_detail->price;?></span></h4>
+														</div>
+														<div class="panel-body">
+															<ul class="list-unstyled typoList">
 																
-															 }
+																<?php 
+																	$feature_details = $this->common_model->getFeatureDetails($plan_detail->features);
+																	foreach($feature_details as $feature){
+																		
+																		echo "<li>".$feature->description."</li>";
+																		
+																	}
 																?>
-															
-															<!--<li>Unlimited SMS</li>
-															<li>E-Class Data 3-5G</li>-->
-														</ul>
-														<div class="text-center">
+																
+																<!--<li>Unlimited SMS</li>
+																<li>E-Class Data 3-5G</li>-->
+															</ul>
+															<div class="text-center">
 															<button class="btn btnRed choose_plan" onclick="add_plan('<?php echo $service['category'];?>','<?php echo $plan_detail->name;?>','30 days','<?php echo $plan_detail->price;?>')" value="<?php echo $plan_detail->price;?>" id="fiber_rails_portal_1">Choose Plan</button>
 														</div>
 													</div>
 												</div>
-											</div>
-											
-										<?php } ?>
+											</a>
+										</div>
 										
-										<!--
-											
-											<div class="col-sm-4">
-											<div class="panel plan1">
-											<div class="panel-heading text-center">
-											<h4 class="planName">Plan 1</h4>
-											<h4 class="planAmtWrap">$ <span class="amt">4</span></h4>
-											</div>
-											<div class="panel-body">
-											<ul class="list-unstyled typoList">
-											<li>Unlimited Voice</li>
-											<li>Unlimited SMS</li>
-											<li>E-Class Data 3-5G</li>
-											</ul>
-											<div class="text-center">
-											<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 1','30 days','49')" value="49" id="fiber_rails_portal_1">Choose Plan</button>
-											</div>
-											</div>
-											</div>
-											</div>
-											
-											
-											<div class="col-sm-4">
-											<div class="panel plan2">
-											<div class="panel-heading text-center">
-											<h4 class="planName">Plan 2</h4>
-											<h4 class="planAmtWrap">$ <span class="amt">7</span></h4>
-											</div>
-											<div class="panel-body">
-											<ul class="list-unstyled typoList">
-											<li>Unlimited Voice</li>
-											<li>Unlimited SMS</li>
-											<li>E-Class Data 5G</li>
-											</ul>
-											<div class="text-center">
-											<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 2','60 days','79')" value="79" id="fiber_rails_portal_2">Choose Plan</button>
-											</div>
-											</div>
-											</div>
-											</div>
-											<div class="col-sm-4">
-											<div class="panel plan3">
-											<div class="panel-heading text-center">
-											<h4 class="planName">Plan 3</h4>
-											<h4 class="planAmtWrap">$ <span class="amt">9</span></h4>
-											</div>
-											<div class="panel-body">
-											<ul class="list-unstyled typoList">
-											<li>Unlimited Voice</li>
-											<li>Unlimited SMS</li>
-											<li>Unlimited Data</li>
-											</ul>
-											<div class="text-center">
-											<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 3','90 days','99')" value="99" id="fiber_rails_portal_3">Choose Plan</button>
-											</div>
-											</div>
-											</div>
-											</div>
-											
-										-->
+									<?php } ?>
+									
+									<!--
+										
+										<div class="col-sm-4">
+										<div class="panel plan1">
+										<div class="panel-heading text-center">
+										<h4 class="planName">Plan 1</h4>
+										<h4 class="planAmtWrap">$ <span class="amt">4</span></h4>
+										</div>
+										<div class="panel-body">
+									<ul class="list-unstyled typoList">
+									<li>Unlimited Voice</li>
+									<li>Unlimited SMS</li>
+									<li>E-Class Data 3-5G</li>
+									</ul>
+									<div class="text-center">
+									<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 1','30 days','49')" value="49" id="fiber_rails_portal_1">Choose Plan</button>
+									</div>
+									</div>
+									</div>
+									</div>
+									
+									
+									<div class="col-sm-4">
+									<div class="panel plan2">
+									<div class="panel-heading text-center">
+									<h4 class="planName">Plan 2</h4>
+									<h4 class="planAmtWrap">$ <span class="amt">7</span></h4>
+									</div>
+									<div class="panel-body">
+									<ul class="list-unstyled typoList">
+									<li>Unlimited Voice</li>
+									<li>Unlimited SMS</li>
+									<li>E-Class Data 5G</li>
+									</ul>
+									<div class="text-center">
+									<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 2','60 days','79')" value="79" id="fiber_rails_portal_2">Choose Plan</button>
+									</div>
+									</div>
+									</div>
+									</div>
+									<div class="col-sm-4">
+									<div class="panel plan3">
+									<div class="panel-heading text-center">
+									<h4 class="planName">Plan 3</h4>
+									<h4 class="planAmtWrap">$ <span class="amt">9</span></h4>
+									</div>
+									<div class="panel-body">
+									<ul class="list-unstyled typoList">
+									<li>Unlimited Voice</li>
+									<li>Unlimited SMS</li>
+									<li>Unlimited Data</li>
+									</ul>
+									<div class="text-center">
+									<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 3','90 days','99')" value="99" id="fiber_rails_portal_3">Choose Plan</button>
+									</div>
+									</div>
+									</div>
+									</div>
+									
+									-->
 									</div>
 									
 								</div>
@@ -561,10 +556,12 @@
 								
 							-->
 							
+							
+							<!--
 							<div class="row">
 								<div class="col-md-12">
 									<div class="table-responsive">
-										<form id='form_subcription_plans' method="post" action="<?php echo base_url(); ?>check_out">
+										<form id='form_subcription_plans' method="post" action="<?php// echo base_url(); ?>check_out">
 											<table class="table table-striped" id='table_subcription_plans'>
 												<thead>
 													<tr>
@@ -585,7 +582,6 @@
 													<tr>
 														<td colspan="2"></td>
 														<td>
-															<!--<a href="<?php //echo base_url(); ?>check_out" class="btn btnRed">Get Started</a>-->
 															<input type="text" name="pricing_plan_total" id="pricing_plan_total" value="0" hidden>
 															<input type="submit" name="pricing_plan_submit" id="pricing_plan_submit" class="btn btnRed" value="Get Started">
 															
@@ -597,7 +593,7 @@
 									</div>
 								</div>
 							</div>
-							
+							-->
 							
 							
 						</div>
@@ -662,151 +658,5 @@
 				</div>
 			</div>
 		</section>
-		<?php $this->load->view('includes/main_footer_home'); ?>		
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
-		<script type="text/javascript">
-			
-			
-			var all_records=[];
-			var fiber_flag=0;
-			function add_plan(cat,name,duration,price){
-				
-				// var all = [
-				// ['fiber_plans','Fiber plan 1'],
-				// ['fiber_plans','Fiber plan 2']
-				// ['fiber_plans','Fiber plan 3']
-				// ];
-				
-				// var fiber_plans=['Fiber plan 1','Fiber plan 2','Fiber plan 3'];
-				
-				// if(fiber_flag==0){
-				// alert(name);
-				// }
-				
-				// if((fiber_plans.indexOf(name) == -1)){ 
-				// alert('ds');
-				// }
-				
-				// alert(cat);
-				
-				
-				if((all_records.indexOf(name) == -1)){ //To check Duplicate
-					
-					// all_records.push(name);
-					
-					all_records.push({title:cat,link:name});
-					
-					// alert(JSON.stringify(all_records));
-					
-					// delete all_records['fiber'];
-					
-					
-					// const index = all_records.indexOf('Fiber plan 3');
-					// array.splice(index, 1);
-					// alert(index);
-					
-					
-					
-					$("#table_subcription_plans > tbody tr#"+cat).remove();
-					
-					
-					
-					$("#table_subcription_plans > tbody").append("<tr id='"+cat+"'><td>"+name+"</td><td>"+duration+"</td><td class='plan_price'>"+price+" <input type='button' value='X' onclick=\"delete_selected_plan('"+cat+"')\" name='del_"+cat+"' id='del_"+cat+"'></td></tr>");
-					
-					/*AJAX Request to add plan start*/
-					$.ajax({
-						
-						url:'<?php echo base_url();?>user/fiberrails/addToCart_Plan',
-						
-						method:'post',
-						
-						async: false,
-						
-						data:{'plan_cat':cat,'plan_name':name,'plan_duration':duration,'plan_price':price},
-						
-						success:function(data){
-							
-							// $("#project_portfolio").empty();
-							// alert(data);
-							// $("#billing_state").html(data);
-							
-						}					
-						
-					});
-					/*AJAX Request to add plan end*/
-					
-					
-					var pre_total=$("#subcription_plans_total").text();
-					
-					
-					var new_total=0;
-					$( ".plan_price" ).each(function() {
-						
-						var single_plan_price=($(this).html());
-						// alert(strr);
-						new_total=parseInt(new_total)+parseInt(single_plan_price);
-					});
-					
-					
-					// var new_total=parseInt(pre_total)+parseInt(price);
-					
-					$("#subcription_plans_total").text(parseInt(new_total));
-					$("#pricing_plan_total").val(parseInt(new_total));
-					
-				}
-				
-				
-				
-			}
-			
-			
-			function delete_selected_plan(cat){
-				
-				$("#table_subcription_plans > tbody tr#"+cat).remove();
-				
-				
-				
-				var new_total=0;
-				$( ".plan_price" ).each(function() {
-					
-					var single_plan_price=($(this).html());
-					new_total=parseInt(new_total)+parseInt(single_plan_price);
-					
-				});
-				
-				
-				$("#subcription_plans_total").text(parseInt(new_total));
-				$("#pricing_plan_total").val(parseInt(new_total));
-				
-				
-				
-				/*AJAX Request to remove plan start*/
-				$.ajax({
-					
-					url:'<?php echo base_url();?>user/fiberrails/removeFromCart_Plan',
-					
-					method:'post',
-					
-					async: false,
-					
-					data:{'plan_cat':cat},
-					
-					success:function(data){
-						
-						// alert(data);
-						
-					}					
-					
-				});
-				/*AJAX Request to remove plan end*/
-				
-				
-				
-				
-			}
-			
-		</script>
-	</body>
-</html>
+			</div>
+		

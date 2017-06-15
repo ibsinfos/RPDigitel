@@ -452,5 +452,41 @@ class Common_Model extends CI_Model {
 		 return $slug;
 	}
 	
+	public function getPlanDetails($service_id)
+	{
+		
+	
+			$query = $this->db->query("SELECT p.*,mp.service_id FROM member_services_plans p,services_plan_mapping mp WHERE p.id=mp.plan_id and mp.service_id='".$service_id."'");
+			
+			
+			return $query->result();
+			
+			/*
+			if ($query->num_rows == 1) {
+				//return true;
+				foreach ($query->result() as $plan_info) {
+					$username = $plan_info->username;
+				}
+				return $username;
+				} else {
+				
+				return "error";
+			}
+			*/
+			
+	
+	
+	}
+	
+	public function getFeatureDetails($features_id)
+	{
+		
+			$query = $this->db->query("SELECT * FROM plan_features WHERE id IN (".$features_id.")");
+			
+			return $query->result();
+			
+	}
+	
+	
 }
 ?>
