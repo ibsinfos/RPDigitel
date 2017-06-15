@@ -274,7 +274,7 @@
 				//echo '<p class="error">' . $query_result;
 				$map['error']='<p class="error">Please Enter valid Username and Password';
 				echo json_encode($map); 
-			} 
+			}
 			else 
 			{ // incorrect username or password
 				
