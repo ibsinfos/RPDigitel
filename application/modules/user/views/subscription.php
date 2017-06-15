@@ -65,7 +65,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 1','30 days','49')" value="49" id="fiber_rails_portal_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 1','30 days','49')" value="49" id="fiber_rails_portal_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -83,7 +83,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 2','60 days','79')" value="79" id="fiber_rails_portal_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 2','60 days','79')" value="79" id="fiber_rails_portal_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -101,7 +101,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Fiber plan 3','90 days','99')" value="99" id="fiber_rails_portal_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('fiber','Fiber plan 3','90 days','99')" value="99" id="fiber_rails_portal_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -168,7 +168,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 1','30 days','49')" value="49" id="silo_cloud_services_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo_cloud','silo cloud plan 1','30 days','49')" value="49" id="silo_cloud_services_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -186,7 +186,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 2','60 days','79')"  value="79" id="silo_cloud_services_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo_cloud','silo cloud plan 2','60 days','79')"  value="79" id="silo_cloud_services_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -204,7 +204,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('silo cloud plan 3','90 days','99')"  value="99" id="silo_cloud_services_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo_cloud','silo cloud plan 3','90 days','99')"  value="99" id="silo_cloud_services_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -270,7 +270,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 1','30 days','49')" value="49" id="scandisc_registry_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('scandisc','Scandisc plan 1','30 days','49')" value="49" id="scandisc_registry_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -288,7 +288,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 2','60 days','79')" value="79" id="scandisc_registry_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('scandisc','Scandisc plan 2','60 days','79')" value="79" id="scandisc_registry_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -306,7 +306,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('Scandisc plan 3','90 days','99')" value="99" id="scandisc_registry_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('scandisc','Scandisc plan 3','90 days','99')" value="99" id="scandisc_registry_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -372,7 +372,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 1','30 days','49')" value="49" id="wbs-business_suite_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('wbs','WBS plan 1','30 days','49')" value="49" id="wbs-business_suite_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -390,7 +390,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 2','60 days','79')" value="79" id="business_suite_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('wbs','WBS plan 2','60 days','79')" value="79" id="business_suite_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -408,7 +408,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('WBS plan 3','90 days','99')" value="99" id="business_suite_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('wbs','WBS plan 3','90 days','99')" value="99" id="business_suite_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -474,7 +474,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 1','30 days','49')" value="49" id="paasport_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('paasport','Paasport plan 1','30 days','49')" value="49" id="paasport_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -492,7 +492,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 2','60 days','79')"  value="79" id="paasport_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('paasport','Paasport plan 2','60 days','79')"  value="79" id="paasport_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -510,7 +510,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan"  onclick="add_plan('Paasport plan 3','90 days','99')"  value="99" id="paasport_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('paasport','Paasport plan 3','90 days','99')"  value="99" id="paasport_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -576,7 +576,7 @@
 													<li>E-Class Data 3-5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan"  onclick="add_plan('silo bank plan 1','30 days','49')" value="49" id="silo_bank_1">Choose Plan</button>
+													<button class="btn btnRed choose_plan"  onclick="add_plan('silo_bank','silo bank plan 1','30 days','49')" value="49" id="silo_bank_1">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -594,7 +594,7 @@
 													<li>E-Class Data 5G</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('silo bank plan 2','60 days','79')" value="79" id="silo_bank_2">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo_bank','silo bank plan 2','60 days','79')" value="79" id="silo_bank_2">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -603,7 +603,7 @@
 										<div class="panel plan3">
 											<div class="panel-heading text-center">
 												<h4 class="planName">Plan 3</h4>
-												<h4 class="planAmtWrap">$ <span class="amt">$99</span></h4>
+												<h4 class="planAmtWrap">$ <span class="amt">99</span></h4>
 											</div>
 											<div class="panel-body">
 												<ul class="list-unstyled typoList">
@@ -612,7 +612,7 @@
 													<li>Unlimited Data</li>
 												</ul>
 												<div class="text-center">
-													<button class="btn btnRed choose_plan" onclick="add_plan('silo bank plan 3','90 days','99')" value="99" id="silo_bank_3">Choose Plan</button>
+													<button class="btn btnRed choose_plan" onclick="add_plan('silo_bank','silo bank plan 3','90 days','99')" value="99" id="silo_bank_3">Choose Plan</button>
 												</div>
 											</div>
 										</div>
@@ -790,11 +790,8 @@
 			
 			
 			var all_records=[];
-			
-			
-			
-			
-			function add_plan(name,duration,price){
+			var fiber_flag=0;
+			function add_plan(cat,name,duration,price){
 				
 				// var all = [
 				// ['fiber_plans','Fiber plan 1'],
@@ -802,29 +799,135 @@
 				// ['fiber_plans','Fiber plan 3']
 				// ];
 				
-				var fiber_plans=['Fiber plan 1','Fiber plan 2','Fiber plan 3'];
+				// var fiber_plans=['Fiber plan 1','Fiber plan 2','Fiber plan 3'];
 				
-				if((fiber_plans.indexOf(name) != -1)){ 
-					// alert(name);
-				}
+				// if(fiber_flag==0){
+				// alert(name);
+				// }
+				
+				// if((fiber_plans.indexOf(name) == -1)){ 
+				// alert('ds');
+				// }
+				
+				// alert(cat);
+				
 				
 				if((all_records.indexOf(name) == -1)){ //To check Duplicate
 					
-					all_records.push(name);
+					// all_records.push(name);
 					
-					$("#table_subcription_plans > tbody").append("<tr><td>"+name+"</td><td>"+duration+"</td><td>"+price+"</td></tr>");
+					all_records.push({title:cat,link:name});
+					
+					// alert(JSON.stringify(all_records));
+					
+					// delete all_records['fiber'];
+					
+					
+					// const index = all_records.indexOf('Fiber plan 3');
+					// array.splice(index, 1);
+					// alert(index);
+					
+					
+					
+					$("#table_subcription_plans > tbody tr#"+cat).remove();
+					
+					
+					
+					$("#table_subcription_plans > tbody").append("<tr id='"+cat+"'><td>"+name+"</td><td>"+duration+"</td><td class='plan_price'>"+price+" <input type='button' value='X' onclick=\"delete_selected_plan('"+cat+"')\" name='del_"+cat+"' id='del_"+cat+"'></td></tr>");
+					
+					/*AJAX Request to add plan start*/
+					$.ajax({
+							
+							url:'<?php echo base_url();?>user/fiberrails/addToCart_Plan',
+							
+							method:'post',
+							
+							async: false,
+							
+							data:{'plan_cat':cat,'plan_name':name,'plan_duration':duration,'plan_price':price},
+							
+							success:function(data){
+								
+								// $("#project_portfolio").empty();
+								// alert(data);
+								// $("#billing_state").html(data);
+								
+							}					
+							
+						});
+					/*AJAX Request to add plan end*/
+					
 					
 					var pre_total=$("#subcription_plans_total").text();
 					
-					var new_total=parseInt(pre_total)+parseInt(price);
+					
+					var new_total=0;
+					$( ".plan_price" ).each(function() {
+						
+						var single_plan_price=($(this).html());
+						// alert(strr);
+						new_total=parseInt(new_total)+parseInt(single_plan_price);
+					});
+					
+					
+					// var new_total=parseInt(pre_total)+parseInt(price);
 					
 					$("#subcription_plans_total").text(parseInt(new_total));
 					$("#pricing_plan_total").val(parseInt(new_total));
 					
 				}
 				
+				
+				
 			}
 			
+			
+			function delete_selected_plan(cat){
+
+					$("#table_subcription_plans > tbody tr#"+cat).remove();
+
+					
+						
+					var new_total=0;
+					$( ".plan_price" ).each(function() {
+						
+						var single_plan_price=($(this).html());
+						new_total=parseInt(new_total)+parseInt(single_plan_price);
+						
+					});
+					
+					
+					$("#subcription_plans_total").text(parseInt(new_total));
+					$("#pricing_plan_total").val(parseInt(new_total));
+					
+					
+					
+					/*AJAX Request to remove plan start*/
+					$.ajax({
+							
+							url:'<?php echo base_url();?>user/fiberrails/removeFromCart_Plan',
+							
+							method:'post',
+							
+							async: false,
+							
+							data:{'plan_cat':cat,'plan_name':name,'plan_duration':duration,'plan_price':price},
+							
+							success:function(data){
+								
+								// $("#project_portfolio").empty();
+								// alert(data);
+								// $("#billing_state").html(data);
+								
+							}					
+							
+						});
+					/*AJAX Request to remove plan end*/
+					
+					
+					
+					
+					}
 			
 		</script>
 	</body>

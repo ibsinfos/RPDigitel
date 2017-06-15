@@ -116,7 +116,6 @@
 			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
 			
-			
             $this->load->model('common_model');    
 			if(!empty($_SESSION['paasport_user_id']))
 			{
@@ -151,14 +150,14 @@
 			
 			if($this->input->post('pricing_plan_total')){
 				
-				 $data['pricing_plan_total']=$this->input->post('pricing_plan_total');
+				$data['pricing_plan_total']=$this->input->post('pricing_plan_total');
 				$this->session->set_userdata(array('pricing_plan_total'=>$data['pricing_plan_total']));
 				
 				}else if($this->session->userdata('pricing_plan_total')){
 				
-				 $data['pricing_plan_total']=$this->session->userdata('pricing_plan_total');
+				$data['pricing_plan_total']=$this->session->userdata('pricing_plan_total');
 				
-			}else{
+				}else{
 				$data['pricing_plan_total']='';
 			}
 			
@@ -181,5 +180,60 @@
 				echo "<option value='".$state['id']."'>".$state['name']."</option>";
 			}
 		}
+		
+		
+		function addToCart_Plan() 
+		{
+			$this->load->model('common_model');
+			$plan_cat=$this->input->post('plan_cat');
+			$plan_name=$this->input->post('plan_name');
+			$plan_duration=$this->input->post('plan_duration');
+			$plan_price=$this->input->post('plan_price');
+			
+			// echo "dd";
+			/*remove from cart start*/
+			
+			// 'rowid' => 'b99ccdf16028f015540f341130b6d8ec',
+			/*		
+				$remove_data = array(
+				'id' => $plan_cat,
+				'qty'   => 0
+				);
+				
+				$this->cart->update($remove_data);
+			*/
+			
+			
+			/*remove from cart end*/
+			
+			
+			/*
+			$data = array(
+			'id'      => $plan_cat,
+			'qty'     => 1,
+			'price'   => $plan_price,
+			'name'    => $plan_name,
+			'options' => array('duration' => $plan_duration, 'plan_cat' => $plan_cat)
+			);
+			
+			$this->cart->insert($data);
+			*/
+			// print_r($this->cart->contents());
+			
+			$plan_details=array(
+			'name'    => $plan_name,
+			'cat'      => $plan_cat,
+			'qty'     => 1,
+			'price'   => $plan_price,
+			'duration' => $plan_duration
+			);
+			
+			$selected_plans=array($plan_cat=>$plan_details);
+			
+			$this->session->set_userdata($selected_plans);
+			
+			print_r($this->session->all_userdata());
+		}
+		
 		
 	}
