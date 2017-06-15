@@ -120,30 +120,14 @@ $(document).ready(function(){
 	// bootstrap popover enable
 	$('[data-toggle="popover"]').popover();
 
-	// Start script for Wizard used in checkout page
-    // $('.wizard a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-    //     var $target = $(e.target);
-    //     if ($target.parent().hasClass('disabled')) {
-    //         return false;
-    //     }
-    // });
-
-    // $(".next-step").click(function (e) {
-    //     var $active = $('.wizard .nav-tabs li.active');
-    //     $active.next().removeClass('disabled');
-    //     nextTab($active);
-
-    // });
-
-    // $(".prev-step").click(function (e) {
-    //     var $active = $('.wizard .nav-tabs li.active');
-    //     prevTab($active);
-    // });
-    // end script for Wizard used in checkout page
 
     // Validate Subscription Checkout page
-    validateMemberDetails();
-    validatePaymentDetails();
+    if ($('#memberDetailsForm').length) {
+      validateMemberDetails();
+    }
+    if ($('#paymentDetailsForm').length) {
+      validatePaymentDetails();
+    }
 
 	// script used for subscription checkout page
 	$('.checkoutWrap').on('click', '.radio-inline', function () {
@@ -156,13 +140,6 @@ $(document).ready(function(){
 		}
 	});
 });
-
-function nextTab(elem) {
-    $(elem).next().find('a[data-toggle="tab"]').click();
-}
-function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
-}
 
 function isNumberKey(evt){
   var charCode = (evt.which) ? evt.which : event.keyCode

@@ -12,8 +12,13 @@ $(document).ready(function(){
 	});
 
 	// script used for datatable checkbox
-	$('#datatable').on('click', '#checkAll', function () {
+	$('#datatable, .mailBoxWrap').on('click', '#checkAll', function () {
 		$(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
+	});
+
+	// script used for mail box checkbox
+	$('.mailBoxWrap').on('click', '#checkAll', function () {
+		$(this).closest('.mailBoxWrap').find('td input:checkbox').prop('checked', this.checked);
 	});
 
 });

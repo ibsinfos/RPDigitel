@@ -24,6 +24,9 @@
         <link href="<?php echo backend_asset_url() ?>vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
         <!-- bootstrap-daterangepicker -->
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+        <!-- FullCalendar -->
+        <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
         
         <link href="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 		
@@ -59,6 +62,9 @@
         <script src="<?php echo backend_asset_url() ?>vendors/fastclick/lib/fastclick.js"></script>
         <!-- NProgress -->
         <script src="<?php echo backend_asset_url() ?>vendors/nprogress/nprogress.js"></script>
+        <!-- FullCalendar -->
+    <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
+    <script src="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.js"></script>
         <!-- Chart.js -->
         <script src="<?php echo backend_asset_url() ?>vendors/Chart.js/dist/Chart.min.js"></script>
         <!-- gauge.js -->
