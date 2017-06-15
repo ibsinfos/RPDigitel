@@ -873,8 +873,6 @@ INFO - 2017-06-14 17:10:11 --> Model Class Initialized
 DEBUG - 2017-06-14 17:10:11 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
 INFO - 2017-06-14 17:10:11 --> Final output sent to browser
 DEBUG - 2017-06-14 17:10:11 --> Total execution time: 0.3229
-<<<<<<< HEAD
-=======
 INFO - 2017-06-14 18:03:14 --> Config Class Initialized
 INFO - 2017-06-14 18:03:14 --> Hooks Class Initialized
 DEBUG - 2017-06-14 18:03:14 --> UTF-8 Support Enabled
@@ -1029,4 +1027,3 @@ INFO - 2017-06-14 18:16:52 --> Model Class Initialized
 DEBUG - 2017-06-14 18:16:52 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
 INFO - 2017-06-14 18:16:52 --> Final output sent to browser
 DEBUG - 2017-06-14 18:16:52 --> Total execution time: 0.3180
->>>>>>> master
