@@ -119,11 +119,41 @@
 					</li>
 					<?php } ?>
 					
+							
+					<?php if(!empty($user_menu) && in_array('Calender',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Calender </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					<?php if(!empty($user_menu) && in_array('Services',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/services"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Services </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Email Template </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					
+					
 					
 					<?php if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
 					<li class="acive"><a>
 						<div class="menuIcon">
-							<i class="iconDashboard-store"></i>
+							<i class="iconDashboard-Store"></i>
 						</div> 
 					Store <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">

@@ -54,6 +54,7 @@ $route['login/signup'] = 'user/login/signup';
 $route['fiberrails'] = 'user/fiberrails';
 $route['subscription'] = 'user/fiberrails/subscription';
 $route['check_out'] = 'user/fiberrails/checkout';
+$route['register_user'] = 'user/fiberrails/register_user';
 $route['main_dashboard'] = 'user/fiberrails/main_dashboard';
 $route['silo_sd'] = 'user/silo_sd';
 $route['wbs_suite'] = 'user/wbs_suite';
@@ -73,6 +74,9 @@ $route['dashboard'] = 'backend/Dashboard/index';
 $route['dashboard/productlist'] = 'backend/Dashboard/productList';
 $route['dashboard/createproduct'] = 'backend/Dashboard/createProduct';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
+$route['dashboard/calender'] = 'backend/Dashboard/calender';
+$route['dashboard/services'] = 'backend/Dashboard/services';
+$route['dashboard/email_template'] = 'backend/Dashboard/email_template';
 $route['admin_dashboard'] = 'backend/Dashboard/admin_dashboard';
 $route['register/employee'] = 'frontend/Register/employee';
 $route['my-subscribers'] = 'backend/dashboard/mySubscribers';
@@ -85,7 +89,23 @@ $route['setting'] = 'backend/dashboard/setting';
 $route['subscriber-list'] = 'backend/subscriber/subscriberList';
 $route['add-subscriber'] = 'backend/subscriber/addSubscriber';
 
+	/*added by ranjit for services subscription on 14 june 2017 Start*/
 
+	$route['plan-list'] = 'backend/subscription/plan_list';
+	$route['assign-plans'] = 'backend/subscription/assign_plans';
+	$route['add-plan'] = 'backend/subscription/add_plan';
+	$route['delete-plan/(:any)'] = 'backend/subscription/delete_plan/$1';
+	$route['edit-plan'] = 'backend/subscription/edit_plan';
+	$route['edit-plan/(:any)'] = 'backend/subscription/edit_plan/$1';
+	$route['assign-plan'] = 'backend/subscription/assign_plan';
+	
+	
+	$route['admin-subscription'] = 'backend/subscription/admin_subscription';
+	
+	
+	/*added by ranjit for services subscription on 14 june 2017 End*/
+	
+	
 $route['project-list'] = 'backend/project/projectList';
 $route['add-project'] = 'backend/project/addProject';
 $route['add-news'] = 'backend/news/add_news';

@@ -111,7 +111,7 @@
 										</div>
 									</div>
 									<ul class="list-inline">
-			                            <li><button type="submit" class="btn btnRed next-step">Next</button></li>
+			                            <li><button type="submit" class="btn btnRed next-step" >Next</button></li>
 									</ul>
 								</form>
 							</div>
@@ -327,7 +327,7 @@
 			$('.status_details').removeClass('disabled').addClass('active');
 		}
 		
-		
+		var regiter_user_url="<?php echo base_url().'register_user';?>";
 	</script>
 	
 </body>

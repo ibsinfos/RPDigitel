@@ -873,3 +873,160 @@ INFO - 2017-06-14 17:10:11 --> Model Class Initialized
 DEBUG - 2017-06-14 17:10:11 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
 INFO - 2017-06-14 17:10:11 --> Final output sent to browser
 DEBUG - 2017-06-14 17:10:11 --> Total execution time: 0.3229
+<<<<<<< HEAD
+=======
+INFO - 2017-06-14 18:03:14 --> Config Class Initialized
+INFO - 2017-06-14 18:03:14 --> Hooks Class Initialized
+DEBUG - 2017-06-14 18:03:14 --> UTF-8 Support Enabled
+INFO - 2017-06-14 18:03:14 --> Utf8 Class Initialized
+INFO - 2017-06-14 18:03:14 --> URI Class Initialized
+INFO - 2017-06-14 18:03:14 --> Router Class Initialized
+INFO - 2017-06-14 18:03:14 --> Output Class Initialized
+INFO - 2017-06-14 18:03:14 --> Security Class Initialized
+DEBUG - 2017-06-14 18:03:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 18:03:14 --> Input Class Initialized
+INFO - 2017-06-14 18:03:14 --> Language Class Initialized
+INFO - 2017-06-14 18:03:14 --> Language Class Initialized
+INFO - 2017-06-14 18:03:14 --> Config Class Initialized
+INFO - 2017-06-14 18:03:14 --> Loader Class Initialized
+INFO - 2017-06-14 18:03:14 --> Helper loaded: form_helper
+INFO - 2017-06-14 18:03:14 --> Helper loaded: url_helper
+INFO - 2017-06-14 18:03:14 --> Helper loaded: utility_helper
+INFO - 2017-06-14 18:03:14 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 18:03:15 --> Database Driver Class Initialized
+INFO - 2017-06-14 18:03:15 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 18:03:15 --> User Agent Class Initialized
+DEBUG - 2017-06-14 18:03:15 --> Template Class Initialized
+INFO - 2017-06-14 18:03:15 --> Encrypt Class Initialized
+INFO - 2017-06-14 18:03:15 --> Controller Class Initialized
+INFO - 2017-06-14 18:03:15 --> Helper loaded: text_helper
+INFO - 2017-06-14 18:03:15 --> Form Validation Class Initialized
+INFO - 2017-06-14 18:03:15 --> Model Class Initialized
+INFO - 2017-06-14 18:03:15 --> Model Class Initialized
+DEBUG - 2017-06-14 18:03:15 --> Config file loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\config/google_url_api.php
+DEBUG - 2017-06-14 18:03:15 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/partials/vcard_header_view.php
+DEBUG - 2017-06-14 18:03:15 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/vcard_detail_view.php
+DEBUG - 2017-06-14 18:03:15 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\themes/default_theme/views/layouts/vcard_view.php
+INFO - 2017-06-14 18:03:15 --> Final output sent to browser
+DEBUG - 2017-06-14 18:03:15 --> Total execution time: 1.6153
+INFO - 2017-06-14 18:03:15 --> Config Class Initialized
+INFO - 2017-06-14 18:03:15 --> Hooks Class Initialized
+DEBUG - 2017-06-14 18:03:15 --> UTF-8 Support Enabled
+INFO - 2017-06-14 18:03:15 --> Utf8 Class Initialized
+INFO - 2017-06-14 18:03:15 --> URI Class Initialized
+INFO - 2017-06-14 18:03:15 --> Router Class Initialized
+INFO - 2017-06-14 18:03:15 --> Output Class Initialized
+INFO - 2017-06-14 18:03:15 --> Security Class Initialized
+INFO - 2017-06-14 18:03:16 --> Config Class Initialized
+INFO - 2017-06-14 18:03:16 --> Config Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 18:03:16 --> Hooks Class Initialized
+INFO - 2017-06-14 18:03:16 --> Hooks Class Initialized
+INFO - 2017-06-14 18:03:16 --> Input Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> UTF-8 Support Enabled
+DEBUG - 2017-06-14 18:03:16 --> UTF-8 Support Enabled
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Utf8 Class Initialized
+INFO - 2017-06-14 18:03:16 --> Utf8 Class Initialized
+INFO - 2017-06-14 18:03:16 --> URI Class Initialized
+INFO - 2017-06-14 18:03:16 --> URI Class Initialized
+INFO - 2017-06-14 18:03:16 --> Router Class Initialized
+INFO - 2017-06-14 18:03:16 --> Router Class Initialized
+INFO - 2017-06-14 18:03:16 --> Output Class Initialized
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Output Class Initialized
+INFO - 2017-06-14 18:03:16 --> Security Class Initialized
+INFO - 2017-06-14 18:03:16 --> Config Class Initialized
+INFO - 2017-06-14 18:03:16 --> Security Class Initialized
+INFO - 2017-06-14 18:03:16 --> Loader Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: form_helper
+DEBUG - 2017-06-14 18:03:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 18:03:16 --> Input Class Initialized
+INFO - 2017-06-14 18:03:16 --> Input Class Initialized
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: url_helper
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: utility_helper
+INFO - 2017-06-14 18:03:16 --> Language Class Initialized
+INFO - 2017-06-14 18:03:16 --> Config Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 18:03:16 --> Config Class Initialized
+INFO - 2017-06-14 18:03:16 --> Loader Class Initialized
+INFO - 2017-06-14 18:03:16 --> Loader Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: form_helper
+INFO - 2017-06-14 18:03:16 --> Database Driver Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: form_helper
+INFO - 2017-06-14 18:03:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 18:03:16 --> Helper loaded: url_helper
+INFO - 2017-06-14 18:03:16 --> Helper loaded: url_helper
+INFO - 2017-06-14 18:03:16 --> Helper loaded: utility_helper
+INFO - 2017-06-14 18:03:16 --> User Agent Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: utility_helper
+DEBUG - 2017-06-14 18:03:16 --> Template Class Initialized
+INFO - 2017-06-14 18:03:16 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 18:03:16 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 18:03:16 --> Encrypt Class Initialized
+INFO - 2017-06-14 18:03:16 --> Controller Class Initialized
+INFO - 2017-06-14 18:03:16 --> Form Validation Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 18:03:16 --> Final output sent to browser
+DEBUG - 2017-06-14 18:03:16 --> Total execution time: 0.4535
+INFO - 2017-06-14 18:03:16 --> Database Driver Class Initialized
+INFO - 2017-06-14 18:03:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 18:03:16 --> User Agent Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> Template Class Initialized
+INFO - 2017-06-14 18:03:16 --> Encrypt Class Initialized
+INFO - 2017-06-14 18:03:16 --> Controller Class Initialized
+INFO - 2017-06-14 18:03:16 --> Form Validation Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 18:03:16 --> Final output sent to browser
+DEBUG - 2017-06-14 18:03:16 --> Total execution time: 0.4922
+INFO - 2017-06-14 18:03:16 --> Database Driver Class Initialized
+INFO - 2017-06-14 18:03:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 18:03:16 --> User Agent Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> Template Class Initialized
+INFO - 2017-06-14 18:03:16 --> Encrypt Class Initialized
+INFO - 2017-06-14 18:03:16 --> Controller Class Initialized
+INFO - 2017-06-14 18:03:16 --> Form Validation Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+INFO - 2017-06-14 18:03:16 --> Model Class Initialized
+DEBUG - 2017-06-14 18:03:16 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 18:03:16 --> Final output sent to browser
+DEBUG - 2017-06-14 18:03:16 --> Total execution time: 0.5920
+INFO - 2017-06-14 18:16:52 --> Config Class Initialized
+INFO - 2017-06-14 18:16:52 --> Hooks Class Initialized
+DEBUG - 2017-06-14 18:16:52 --> UTF-8 Support Enabled
+INFO - 2017-06-14 18:16:52 --> Utf8 Class Initialized
+INFO - 2017-06-14 18:16:52 --> URI Class Initialized
+INFO - 2017-06-14 18:16:52 --> Router Class Initialized
+INFO - 2017-06-14 18:16:52 --> Output Class Initialized
+INFO - 2017-06-14 18:16:52 --> Security Class Initialized
+DEBUG - 2017-06-14 18:16:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-06-14 18:16:52 --> Input Class Initialized
+INFO - 2017-06-14 18:16:52 --> Language Class Initialized
+INFO - 2017-06-14 18:16:52 --> Language Class Initialized
+INFO - 2017-06-14 18:16:52 --> Config Class Initialized
+INFO - 2017-06-14 18:16:52 --> Loader Class Initialized
+INFO - 2017-06-14 18:16:52 --> Helper loaded: form_helper
+INFO - 2017-06-14 18:16:52 --> Helper loaded: url_helper
+INFO - 2017-06-14 18:16:52 --> Helper loaded: utility_helper
+INFO - 2017-06-14 18:16:52 --> Helper loaded: encrypt_helper
+INFO - 2017-06-14 18:16:52 --> Database Driver Class Initialized
+INFO - 2017-06-14 18:16:52 --> Session: Class initialized using 'files' driver.
+INFO - 2017-06-14 18:16:52 --> User Agent Class Initialized
+DEBUG - 2017-06-14 18:16:52 --> Template Class Initialized
+INFO - 2017-06-14 18:16:52 --> Encrypt Class Initialized
+INFO - 2017-06-14 18:16:52 --> Controller Class Initialized
+INFO - 2017-06-14 18:16:52 --> Form Validation Class Initialized
+INFO - 2017-06-14 18:16:52 --> Model Class Initialized
+INFO - 2017-06-14 18:16:52 --> Model Class Initialized
+DEBUG - 2017-06-14 18:16:52 --> File loaded: C:\xampp\htdocs\RPDigitel\paas-port\application\modules/frontend/views/page_not_found.php
+INFO - 2017-06-14 18:16:52 --> Final output sent to browser
+DEBUG - 2017-06-14 18:16:52 --> Total execution time: 0.3180
+>>>>>>> master
