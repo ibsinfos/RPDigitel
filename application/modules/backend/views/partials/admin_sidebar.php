@@ -53,9 +53,9 @@
 						</div> 
 					News Category <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">
-											
+						
 						<li><a href="<?php echo base_url(); ?>category">News Category</a></li>						
-										
+						
 					</ul>
 					</li>
 					<li ><a>
@@ -74,7 +74,7 @@
 					Community <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">
 						<li><a href="<?php echo base_url(); ?>admin-community">Community</a></li>						
-					
+						
 						
 						<!--<li><a href="">Create Featured News</a></li>-->						
 						<li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
@@ -87,7 +87,34 @@
 						<li><a href="<?php echo base_url(); ?>category_news">Category Slider</a></li>	
 						<!--<li><a href="<?php echo base_url(); ?>add_category_news">Add Category Slider</a></li>	-->
 					</ul>
-					</li>					
+					</li>	
+					
+					<!--
+					<li><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Subscription <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						
+						<li><a href="<?php //echo base_url(); ?>plan-list">Add Plans</a></li>						
+						<li><a href="<?php //echo base_url(); ?>assign-plan">Assign Plans</a></li>						
+						
+					</ul>
+					</li>	
+					-->
+					
+						<li><a href="<?php echo base_url(); ?>admin-subscription">
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Subscription </a>
+					
+					</li>	
+					
+					
+					
+					
 				</ul>
 				
 			</div>

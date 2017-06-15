@@ -122,6 +122,14 @@
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			}
 			//$data['main_content'] = 'fiber-rails';
+			
+			$data['services'] = $this->common_model->getRecords('services','*','','');
+			
+			// echo "<pre>";
+			// print_r($data['services']);
+			// die();
+			
+			
        		$data['main_content'] = 'subscription';
        		$data['page'] = 'fiberrails';
 			$this->load->view('includes/template', $data);
@@ -145,8 +153,20 @@
 			$data['pricing_plan_total']=$this->input->post('pricing_plan_total');
 			$data['country_list'] = $this->common_model->getRecords('tbl_countries');
 			
-			// print_r($data['country_list']);
+			// print_r($this->session->all_userdata());
+			// die('sfd');
 			
+			if($this->session->userdata('email')){
+			$data['user_details'] = $this->common_model->getRecords('membership','*',array('email_address'=>$this->session->userdata('email')),'',1);
+			}else{
+			$data['user_details']='';
+			}
+			
+			/*
+			echo "<pre>";
+			 print_r($data['user_details']);
+			die();
+			*/
 			
 			if($this->input->post('pricing_plan_total')){
 				
@@ -233,6 +253,24 @@
 			$this->session->set_userdata($selected_plans);
 			
 			print_r($this->session->all_userdata());
+		}
+		
+		function removeFromCart_Plan() 
+		{
+			$this->load->model('common_model');
+			$plan_cat=$this->input->post('plan_cat');
+			
+			$this->session->unset_userdata($plan_cat);
+			
+			print_r($this->session->all_userdata());
+		}
+
+		
+		function register_user() 
+		{
+		
+		echo '1';		
+		
 		}
 		
 		

@@ -559,6 +559,9 @@
 				}
 			}
 		}
+		
+		
+		
 		function verification($email=null)
 		{
 			$this->load->model('membership_model');
