@@ -267,14 +267,14 @@
 					$user_name=$paasportUser->first_name;
 				}			
 			}			
-
+			
 			// print_r($user);
 			// die('sd');
 			if ($query_result == "error") {// if the user's credentials validated...
 				//echo '<p class="error">' . $query_result;
 				$map['error']='<p class="error">Please Enter valid Username and Password';
 				echo json_encode($map); 
-			} 
+			}
 			else 
 			{ // incorrect username or password
 				
@@ -369,6 +369,15 @@
 				$user_account['user_id']=$user['user_id'];
 				$user_account['role_id']=$user['role_id'];
 				$user_account['purchase_pack']=$user['purchase_pack'];
+				
+				$user_account['admin_login'] = '1';
+				
+				$user_account['login_user_id'] = $user['user_id'];
+				
+				$user_account['name'] = $user_name;
+				
+				$user_account['login_type'] = 'admin';
+				
 				$_SESSION['user_account']=$user_account;
 				//$this->session->set_userdata($user_account);
 				

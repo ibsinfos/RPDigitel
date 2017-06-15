@@ -123,6 +123,7 @@
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
+        <script src="<?php echo backend_asset_url() ?>build/js/admin_custom.js"></script>
 	<?php if($page=='edit_news' || $page=='add_news' || $page=='add_featured_news' || $page=='add_latest_news' || $page=='add_slider' || $page=='edit_slider' || $page=='add_header_news' || $page=='add_category_news') { ?>
 	<script type="text/javascript" >
 	$(document).ready(function() {

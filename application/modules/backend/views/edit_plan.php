@@ -88,7 +88,7 @@
 											
 										} 
 									?>
-									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url();?>edit-plan" data-parsley-validate class="form-horizontal form-label-left">
+									<form id="demo-form2" enctype="multipart/form-data"  method="post" action="<?php echo base_url()."edit-plan/".$plan_details['0']->id;?>" data-parsley-validate class="form-horizontal form-label-left">
 										
 										<div class="item form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Plan Name <span class="required">*</span>
@@ -123,26 +123,56 @@
 											<div class="col-md-6 col-sm-6 col-xs-12">
 												
 												
+												
+												<table class="table table-striped" id='table_plan_features'>
+												<thead>
+													<tr>
+														<th>Feature Name</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+												
 												<?php 
 													 foreach($plan_features_list as $feature){
 														
-														/*
-														if(in_array($features->id,explode(',',$plan_details['0']->features))){
-															$selected="selected";
-															}else{
-															$selected="";
-														}
-														echo $selected;
-														*/
-														echo $feature->id;
-														echo $feature->description;
-														echo "<br />";
-														// $a=explode(',',$plan_details['0']->features);
+														echo "<tr  id='".$feature->id."'><td> <input type='hidden' name='feature[]' value='".$feature->id."'> ".$feature->description."</td><td><input type='button' value='X' onclick=\"delete_selected_feature('".$feature->id."')\" name='del_".$feature->id."' id='del_".$feature->id."'></td></tr>";
+														
 														// print_r($a);
 													 }
 													
+													
+														
+														
 												?>
 												
+													
+												</tbody>
+												<tfoot>
+												<?php
+													
+														echo "<tr><td> <input type='text' name='add_new_feature[]' id='add_new_feature' value=''></td><td><input type='button' value='Add' onclick=\"add_feature()\" name='add_new' id='add_new'></td></tr>";
+														?>
+												</tfoot>
+<!--												<tfoot>
+													<tr>
+														<th colspan="2" class="text-right">Total:</th>
+														<th id="subcription_plans_total">0</th>
+													</tr>
+													
+													<tr>
+														<td colspan="2"></td>
+														<td>
+															<input type="text" name="pricing_plan_total" id="pricing_plan_total" value="0" hidden>
+															<input type="submit" name="pricing_plan_submit" id="pricing_plan_submit" class="btn btnRed" value="Get Started">
+															
+														</td>
+													</tr>
+												</tfoot>-->
+											</table>
+											
+											
+											
 												<span style="color:red;" ><?php echo form_error('name'); ?></span>
 											</div>
 										</div>	
@@ -150,7 +180,7 @@
 										
 										<div class="form-group">
 											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-												<button class="btn btn-primary" type="reset">Reset</button>
+												<!--<button class="btn btn-primary" type="reset">Reset</button>-->
 												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
@@ -167,6 +197,7 @@
 			
 			
 			<script>
+			
 				CKEDITOR.replace('description');		
 				
 				
@@ -182,4 +213,4 @@
 				}
 				
 				
-			</script>						
+			</script>

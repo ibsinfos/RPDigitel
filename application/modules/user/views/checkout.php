@@ -41,33 +41,74 @@
 										</div>
 										<div class="col-sm-6 form-group">
 			                                <label>First Name</label>
-			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="">
+			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="<?php if($user_details!==''){ echo $user_details[0]['first_name'];}?>">
 										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>Last Name</label>
-			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="">
+			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="<?php if($user_details!==''){ echo $user_details[0]['last_name'];}?>">
 										</div>
 									</div>
+									
+									<div class="row">
+			                            <div class="col-sm-6 form-group">
+			                                <label>Country code</label>
+											
+											
+											
+											<select name="country" id="country" class="signin_input form-control -lg">
+												<option value="0" label="Select a country" selected="selected">Select Country Code</option>
+												<?php	foreach($country_code_list as $country){	?>
+													
+													<option value="<?= $country->phonecode;?>" label="<?= $country->nicename;?>"><?php echo $country->iso."  +".$country->phonecode."";?></option>
+													
+												<?php } ?>
+											</select>
+											
+											
+										</div>
+										
+			                            <div class="col-sm-6 form-group">
+			                                <label>Phone Number</label>
+			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php if($user_details!==''){ echo $user_details[0]['phone_no'];}?>">
+											</div>
+										
+										
+									</div>
+									
+									
+									
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Email</label>
-			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="">
+			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php if($user_details!==''){ echo $user_details[0]['email_address'];}?>">
 										</div>
-			                            <div class="col-sm-6 form-group">
+										
+										<?php if($user_details==''){ ?>
+										<div class="col-sm-6 form-group">
 			                                <label>Password</label>
-			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password">
+			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password" >
 										</div>
+										<?php } ?>
+										
 									</div>
+									
+									
 			                        <div class="row">
-			                            <div class="col-sm-6 form-group">
-			                                <label>Phone Number</label>
-			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="">
-										</div>
+										
 										<div class="col-sm-12 form-group">
 											<hr>
 											<h4>STEP #2: Billing Address</h4>
 										</div>
 									</div>
+									
+									
+									
+									
+									
+									
+									
+									
+									
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Address</label>
@@ -239,22 +280,18 @@
 							<h4 class="heading">ORDER SUMMARY</h4>
 							<table class="table">
 								<tbody>
-<!--									<tr>
-										<th>Plan:</th>
-										<td>Plan1</td>
-									</tr>
 									<tr>
-										<th>Date:</th>
-										<td>Wed, 07 Jun 2017</td>
-									</tr>-->
+										<th>Plan Name</th>
+										<th>Price</th>
+									</tr>
 									<?php
-									
-									$services=array('fiber','silo_cloud','scandisc','wbs','paasport','silo_bank');
-									
-									foreach($services as $service){
-										if($this->session->userdata($service)){
-											echo "<tr><th>Plan Name :</th><td>".$this->session->userdata[$service]['name']."</td></tr><tr><th>Price :</th><td>$ ".$this->session->userdata[$service]['price']."</td></tr>";
-										}
+										
+										$services=array('fiber','silo_cloud','scandisc','wbs','paasport','silo_bank');
+										
+										foreach($services as $service){
+											if($this->session->userdata($service)){
+												echo "<tr><td>".$this->session->userdata[$service]['name']."</td><td>$ ".$this->session->userdata[$service]['price']."</td></tr>";
+											}
 										}
 									?>
 								</tbody>
@@ -262,14 +299,14 @@
 									<tr>
 										<th>Total Price:</th>
 										<!--<th>$99</th>-->
-										<th><?php
+										<th>$ <?php
 											echo $pricing_plan_total;
 										?></th>
 									</tr>
 								</tfoot>
 							</table>
-							</div>
-							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -327,7 +364,7 @@
 			$('.status_details').removeClass('disabled').addClass('active');
 		}
 		
-		var regiter_user_url="<?php echo base_url().'register_user';?>";
+		// var memberDetailsForm_save_URL="<?php echo base_url().'checkout_save_member';?>";
 	</script>
 	
 </body>
