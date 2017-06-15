@@ -41,33 +41,74 @@
 										</div>
 										<div class="col-sm-6 form-group">
 			                                <label>First Name</label>
-			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="">
+			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="<?php if($user_details!==''){ echo $user_details[0]['first_name'];}?>">
 										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>Last Name</label>
-			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="">
+			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="<?php if($user_details!==''){ echo $user_details[0]['last_name'];}?>">
 										</div>
 									</div>
+									
+									<div class="row">
+			                            <div class="col-sm-6 form-group">
+			                                <label>Country code</label>
+											
+											
+											
+											<select name="country" id="country" class="signin_input form-control -lg">
+												<option value="0" label="Select a country" selected="selected">Select Country Code</option>
+												<?php	foreach($country_code_list as $country){	?>
+													
+													<option value="<?= $country->phonecode;?>" label="<?= $country->nicename;?>"><?php echo $country->iso."  +".$country->phonecode."";?></option>
+													
+												<?php } ?>
+											</select>
+											
+											
+										</div>
+										
+			                            <div class="col-sm-6 form-group">
+			                                <label>Phone Number</label>
+			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php if($user_details!==''){ echo $user_details[0]['phone_no'];}?>">
+											</div>
+										
+										
+									</div>
+									
+									
+									
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Email</label>
-			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="">
+			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php if($user_details!==''){ echo $user_details[0]['email_address'];}?>">
 										</div>
-			                            <div class="col-sm-6 form-group">
+										
+										<?php if($user_details==''){ ?>
+										<div class="col-sm-6 form-group">
 			                                <label>Password</label>
-			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password">
+			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password" >
 										</div>
+										<?php } ?>
+										
 									</div>
+									
+									
 			                        <div class="row">
-			                            <div class="col-sm-6 form-group">
-			                                <label>Phone Number</label>
-			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="">
-										</div>
+										
 										<div class="col-sm-12 form-group">
 											<hr>
 											<h4>STEP #2: Billing Address</h4>
 										</div>
 									</div>
+									
+									
+									
+									
+									
+									
+									
+									
+									
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Address</label>
@@ -111,7 +152,7 @@
 										</div>
 									</div>
 									<ul class="list-inline">
-			                            <li><button type="submit" class="btn btnRed next-step">Next</button></li>
+			                            <li><button type="submit" class="btn btnRed next-step" >Next</button></li>
 									</ul>
 								</form>
 							</div>
@@ -240,85 +281,91 @@
 							<table class="table">
 								<tbody>
 									<tr>
-										<th>Plan:</th>
-										<td>Plan1</td>
+										<th>Plan Name</th>
+										<th>Price</th>
 									</tr>
-									<tr>
-										<th>Date:</th>
-										<td>Wed, 07 Jun 2017</td>
-									</tr>
+									<?php
+										
+										$services=array('fiber','silo_cloud','scandisc','wbs','paasport','silo_bank');
+										
+										foreach($services as $service){
+											if($this->session->userdata($service)){
+												echo "<tr><td>".$this->session->userdata[$service]['name']."</td><td>$ ".$this->session->userdata[$service]['price']."</td></tr>";
+											}
+										}
+									?>
 								</tbody>
 								<tfoot>
 									<tr>
 										<th>Total Price:</th>
 										<!--<th>$99</th>-->
-										<th><?php
+										<th>$ <?php
 											echo $pricing_plan_total;
 										?></th>
 									</tr>
-									<tfoot>
-									</table>
-								</div>
-							</div>
+								</tfoot>
+							</table>
 						</div>
 					</div>
 				</div>
-			</section>
-			<?php $this->load->view('includes/main_footer_home'); ?>		
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
-			<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+			</div>
+		</div>
+	</section>
+	<?php $this->load->view('includes/main_footer_home'); ?>		
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+	
+	<script type="text/javascript">
+		
+		
+		$("#billing_country").on('change',function (e) {
 			
-			<script type="text/javascript">
-				
-				
-				$("#billing_country").on('change',function (e) {
+			if(this.value!='select'){
+				$.ajax({
 					
-					if(this.value!='select'){
-						$.ajax({
-							
-							url:'<?php echo base_url();?>user/fiberrails/getcities',
-							
-							method:'post',
-							
-							async: false,
-							
-							data:{'country_id':this.value},
-							
-							success:function(data){ 
-								
-								// $("#project_portfolio").empty();
-								// alert(data);
-								$("#billing_state").html(data);
-								
-							}					
-							
-						});
-						}else{
+					url:'<?php echo base_url();?>user/fiberrails/getcities',
+					
+					method:'post',
+					
+					async: false,
+					
+					data:{'country_id':this.value},
+					
+					success:function(data){ 
 						
-						$("#billing_state").html("<option value='select'>Select State</option>");
+						// $("#project_portfolio").empty();
+						// alert(data);
+						$("#billing_state").html(data);
 						
-					}
+					}					
 					
 				});
+				}else{
 				
+				$("#billing_state").html("<option value='select'>Select State</option>");
 				
-				
-				
-				var payment_successful="<?php if($this->session->userdata('payment_successfull')){ echo $this->session->userdata('payment_successfull');
-					$this->session->unset_userdata('payment_successfull');
-				}
-				else{echo '';}?>";
-				
-				if(payment_successful!=''){
-					$('li[role=presentation]').removeClass('active');
-					$('.tab-pane').removeClass('active');
-					$('.status_details').removeClass('disabled').addClass('active');
-				}
-				
-				
-			</script>
+			}
 			
-		</body>
-	</html>									
+		});
+		
+		
+		
+		
+		var payment_successful="<?php if($this->session->userdata('payment_successfull')){ echo $this->session->userdata('payment_successfull');
+			$this->session->unset_userdata('payment_successfull');
+		}
+		else{echo '';}?>";
+		
+		if(payment_successful!=''){
+			$('li[role=presentation]').removeClass('active');
+			$('.tab-pane').removeClass('active');
+			$('.status_details').removeClass('disabled').addClass('active');
+		}
+		
+		// var memberDetailsForm_save_URL="<?php echo base_url().'checkout_save_member';?>";
+	</script>
+	
+</body>
+</html>									

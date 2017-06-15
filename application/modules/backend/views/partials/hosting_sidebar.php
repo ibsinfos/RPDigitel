@@ -118,6 +118,53 @@
 					</ul>
 					</li>
 					<?php } ?>
+					
+							
+					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Calender </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					<?php if(!empty($user_menu) && in_array('Services',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/services"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Services </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
+					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
+						<i class="iconDashboard-setting"></i>
+					</div> Main Box </a>
+					
+					</li>
+					<?php } ?>
+					
+					
+					
+					
+					
+					<?php if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
+					<li class="acive"><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-store"></i>
+						</div> 
+					Store <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url()."dashboard/productlist"; ?>">Product List</a></li>
+						<li><a href="<?php echo base_url()."dashboard/createproduct"; ?>">Create Product</a></li>
+						<li><a href="<?php echo base_url()."dashboard/ordertable"; ?>">Order Table</a></li>
+					</ul>
+					</li>
+					<?php } ?>
+					
+					
 					<?php if(!empty($user_menu) && in_array('Settings',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-setting"></i>
@@ -125,6 +172,7 @@
 					
 					</li>
 					<?php } ?>
+					
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-invoice"></i>
@@ -132,6 +180,7 @@
 					
 					</li>
 					<?php } ?>
+					
 					<?php if(!empty($user_menu) && in_array('Home',$user_menu))  { ?>	
 					<li><a><div class="menuIcon">
 						<i class="iconDashboard-news"></i>

@@ -29,7 +29,8 @@
 		function get_user_role() {
 			$this->db->where('username', $this->input->post('username'));
 			$this->db->or_where('email_address', $this->input->post('username'));
-			$this->db->where('password', md5($this->input->post('password')));
+			// $this->db->where('password', md5($this->input->post('password')));
+			$this->db->where('password', $this->hash($this->input->post('password')));
 			$query = $this->db->get('membership');
 			
 			if ($query->num_rows() > 0) {
@@ -62,7 +63,7 @@
 			$country= $this->input->post('country');
 			$phone_number= $this->input->post('phone_number');
 			$phone_number_with_country_code= "+".$country.$phone_number;
-
+			
 			
 			$send_mail_to = $this->input->post('email_address');
 			
@@ -101,7 +102,7 @@
 				$membership_user_id=$this->db->insert_id();
 				
 				
-			
+				
 				
 				
 				/*             * **************** Insert into novaecard.users table Start***************************** */
@@ -230,9 +231,9 @@
 					$service_id=1;//Becoz we have set service id =1 for crm
 					$member_service_remaining_days=$this->member_service_remaining_days($user_id,$service_id);
 					// if($member_service_remaining_days<0){
-						$this->session->set_userdata('member_service_remaining_days',$member_service_remaining_days);
-						$_SESSION['member_service_remaining_days']=$member_service_remaining_days;
-						// }
+					$this->session->set_userdata('member_service_remaining_days',$member_service_remaining_days);
+					$_SESSION['member_service_remaining_days']=$member_service_remaining_days;
+					// }
 				}
 				else
 				{
@@ -384,7 +385,13 @@
 			}
 		}
 		
-		
+		public function query_get_country(){
+			
+			$query_get_country=$this->db->get('country');
+			return $query_get_country->result();
+			
 		}
+		
+	}
 	
 ?>
