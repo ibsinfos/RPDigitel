@@ -234,24 +234,26 @@ function validateMemberDetails() {
     },
     submitHandler: function(form) {
 
-        // $.ajax({
-        //   url: '/index.php/members/userExist',
-        //   type: 'GET',
-        //   data: {email: $('#email').val() },
-        //   success: function (res) {
+        $.ajax({
+          // url: '/index.php/members/userExist',
+          url: regiter_user_url,
+          type: 'POST',
+          data: {email: $('#email').val() },
+          success: function (res) {
 
-        //     if(res=='exist'){
-        //       alert('User with this email already exist. Please try with different email.');
-        //     } else{
-        //       $('li[role=presentation]').removeClass('active');
-        //       $('.tab-pane').removeClass('active');
-        //       $('.payment_details').addClass('active');
-        //     }
-        //   }
-        // });
-		  $('li[role=presentation]').removeClass('active');
-      $('.tab-pane').removeClass('active');
-      $('.payment_details').removeClass('disabled').addClass('active');
+            if(res=='exist'){
+              alert('User with this email already exist. Please try with different email.');
+            } else{
+              $('li[role=presentation]').removeClass('active');
+              $('.tab-pane').removeClass('active');
+              $('.payment_details').addClass('active');
+            }
+          }
+        });
+		
+		  // $('li[role=presentation]').removeClass('active');
+      // $('.tab-pane').removeClass('active');
+      // $('.payment_details').removeClass('disabled').addClass('active');
     }
   });
   $.validator.addMethod( "lettersonly", function( value, element ) {
