@@ -98,12 +98,17 @@
                           </select>
                         </div>
                         <div class="col-md-2 col-sm-6 col-xs-12">
-                        	<button class="btn btnRed">Add New</button>
+                        	<button class="btn btnRed" data-toggle="collapse" data-target="#addCategorycollapse" aria-expanded="false" aria-controls="addCategorycollapse">Add New</button>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Product Category</label>
-                        
+                      <div class="collapse form-group" id="addCategorycollapse">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Add Category</label>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control">
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                          <button class="btn btnRed">Add</button>
+                        </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Digital Download</label>
