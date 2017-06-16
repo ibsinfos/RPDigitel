@@ -174,7 +174,7 @@
 					<?php } ?>
 					
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
-					<li><a><div class="menuIcon">
+					<li><a href="<?php echo base_url()."dashboard/invoices"; ?>"><div class="menuIcon">
 						<i class="iconDashboard-invoice"></i>
 					</div> Invoices</a>
 					

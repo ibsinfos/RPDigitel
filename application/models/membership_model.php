@@ -185,6 +185,129 @@
 				return $insert;
 			}
 		}
+		
+		
+		
+		
+		
+		function register_from_subscription_checkout($member_details){
+			
+			$first_name = $member_details['first_name'];
+			$last_name = $member_details['last_name'];
+			$phone_no = $member_details['phone_no'];
+			$email_address = $member_details['email_address'];
+			$username = $member_details['username'];
+			$password = $this->hash($member_details['password']);
+			$role = $member_details['role'];
+			
+			
+			$country_code = $member_details['country_code'];
+			
+			$phone_number_with_country_code= "+".$country_code.$phone_no;
+			
+			$send_mail_to = $email_address;
+			
+			$new_member_insert_data = array(
+			'first_name' =>$member_details['first_name'],
+			'last_name' => $member_details['last_name'],
+			'phone_no' => $member_details['phone_no'],
+			'email_address'=> $member_details['email_address'],
+			'username' => $member_details['username'],
+			'password' => $this->hash($member_details['password']),
+			'role' => $member_details['role']
+			);
+			
+			$insert = $this->db->insert('membership', $new_member_insert_data);
+			$membership_user_id=$this->db->insert_id();
+			
+			$this->session->set_userdata('user_id',$membership_user_id);
+			$_SESSION['user_id']=$membership_user_id;
+			
+			
+			
+			/*             * **************** Insert into novaecard.users table Start***************************** */
+			/*$VC_DB_SRC_HOST = 'localhost';
+				$VC_DB_SRC_USER = 'root';
+				$VC_DB_SRC_PASS = '';
+				$VC_DB_SRC_NAME = 'novaevcard';
+			*/
+			//*                 * ********************* INSERT **********************
+			/*          $vc_con = new mysqli($VC_DB_SRC_HOST, $VC_DB_SRC_USER, $VC_DB_SRC_PASS) or die($vc_con->error);
+				mysqli_select_db($vc_con, $VC_DB_SRC_NAME) or die($vc_con->error);
+			*/
+			/*
+				$vc_email_address =$this->input->post('email_address');
+				$vc_username =$this->input->post('username');
+				$vc_phone_no =$this->input->post('phone_no');
+				$vc_password=$this->input->post('password');
+				
+				$ins_user_query = "INSERT INTO tbl_users (first_name, last_name, email, password, mobile, created_time, role_id, user_status, vcard_complete_status, plan_id) VALUES ('".$vc_username."', '', '".$vc_email_address."', '".$vc_password."', '".$vc_phone_no."','".date('Y-m-d H:i:s', time())."','0', '1', '0', 'monthly')";
+				
+				$result = mysqli_query($vc_con, $ins_user_query) or die($vc_con->error);
+			*/          
+			
+			$new_vcuser_insert_data = array(
+			'email' => $email_address,
+			'first_name' => $username,
+			// 'mobile' => $this->input->post('phone_number'),
+			'mobile' => $phone_number_with_country_code,
+			'verified' =>'1',
+			'email_verify' =>'1',
+			'password' => $this->hash($password)
+			);
+			
+			$insert_vc_user = $this->db->insert('tbl_users', $new_vcuser_insert_data);
+			$paasport_user_id=$this->db->insert_id();
+			$paasport_user_data = array('paasport_user_id' => $paasport_user_id);
+			
+			//Code to update paasport_user_id value in rpdigitel.membership table
+			$this->db->where('user_id', $membership_user_id);
+			$this->db->update('membership', $paasport_user_data);
+			
+			/*             * **************** Insert into novaecard.users table End***************************** */
+			
+			/* start add user map entry in tbl_users_map */
+			$this->create_user_map($membership_user_id);
+			/* end add user map entry in tbl_users_map */
+			
+			/* Send mail Start */
+			
+			$config = Array(
+			'protocol' => 'smtp',
+			'smtp_host' => 'ssl://smtp.googlemail.com',
+			'smtp_port' => 465,
+			'smtp_user' => 'rpdigitel@gmail.com', // change it to yours
+			'smtp_pass' => 'Rebelute@905', // change it to yours
+			'mailtype' => 'html',
+			'charset' => 'iso-8859-1',
+			'wordwrap' => TRUE
+			);
+			
+			$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "user/login/verification/".urlencode($email_address)." <br><br> Thanks & Regards, <br> RPDigitel Team";
+			$this->load->library('email', $config);
+			$this->email->set_newline("\r\n");
+			$this->email->from('rpdigitel@gmail.com'); // change it to yours
+			$this->email->to($send_mail_to); // change it to yours
+			$this->email->subject('Welcome to RP Digital');
+			$this->email->message($message);
+			
+			
+			
+			if ($this->email->send()) {
+				//  echo 'Email sent.';
+				} else {
+				show_error($this->email->print_debugger());
+			}
+			
+			
+			/* Send mail End */
+			
+			return $insert;
+			
+		}
+		
+		
+		
 		public function create_user_map($user_id=null)
 		{
 			
