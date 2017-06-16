@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/config/autoload.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/controllers/fiberrails.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/video-cms/application/views/backend/header.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/video-cms/application/config/routes.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/index.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/controllers/login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/application/views/backend/header.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/views/includes/main_header_home.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/controllers/Admin.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/video-cms/application/controllers/Login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/controllers/Login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/views/backend/header.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/config/config.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/assets/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/views/fiber-rails-main.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/video-cms/application/controllers/Admin.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/application/controllers/Login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/application/config/database.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/helpers/encrypt_helper.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/views/main_dashboard.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/config/routes.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/application/config/config.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/application/controllers/Admin.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/inventory/application/config/autoload.php</file>
+        </group>
+    </open-files>
 </project-private>
