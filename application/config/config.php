@@ -23,9 +23,11 @@
 |
 */
  // $config['base_url'] = 'http://rpdigitel.rebelute.in/';
-// $config['base_url'] = 'http://54.212.235.115/';
-
-$config['base_url'] = 'http://localhost/RPDigitel/';
+ //$config['base_url'] = 'http://54.212.235.115/';
+// $config['base_url'] = 'http://54.212.235.115/RPDigitel/';
+$config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/RPDigitel/";
+ 
+//$config['base_url'] = 'http://localhost/RPDigitel/';
 
 /*
 |--------------------------------------------------------------------------

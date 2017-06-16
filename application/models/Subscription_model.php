@@ -49,10 +49,29 @@
 		
 		
 		function get_plan_features_list($plan_id) {
-			
+			if($plan_id==''){
+			$plan_id =0;
+			}
 			$query = $this->db->query("SELECT * FROM plan_features where id IN (".$plan_id.")");
-			
 			return $query->result();
+			
+		}
+		
+		function register_features($new_added_feature) {
+		
+		$feature_ids=array();
+		
+		foreach($new_added_feature as $feature){
+			
+			$feature_id=$this->db->insert('plan_features',array('description'=>$feature));
+			
+			$insert_id=$this->db->insert_id();
+			
+			array_push($feature_ids,$insert_id);
+						
+			}
+			
+			return $feature_ids;
 			
 		}
 		

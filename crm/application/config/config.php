@@ -23,8 +23,8 @@ function __autoload($classname) {
 |
 */
 //$config['base_url']	= 'http://crm.rebelute.in';
-// $config['base_url']	= 'http://54.212.235.115/crm';
-$config['base_url']	= 'http://localhost/RPDigitel/crm/';
+ $config['base_url']	= 'http://54.212.235.115/RPDigitel/crm';
+//$config['base_url']	= 'http://localhost/RPDigitel/crm/';
 /*
 |--------------------------------------------------------------------------
 | Index File

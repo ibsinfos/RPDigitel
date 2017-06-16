@@ -119,9 +119,8 @@
 					</li>
 					<?php } ?>
 					
-					
-					
-					<?php if(!empty($user_menu) && in_array('Calender',$user_menu))  { ?>	
+							
+					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
 						<i class="iconDashboard-setting"></i>
 					</div> Calender </a>
@@ -142,7 +141,7 @@
 					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
 						<i class="iconDashboard-setting"></i>
-					</div> Email Template </a>
+					</div> Main Box </a>
 					
 					</li>
 					<?php } ?>
@@ -154,7 +153,7 @@
 					<?php if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
 					<li class="acive"><a>
 						<div class="menuIcon">
-							<i class="iconDashboard-Store"></i>
+							<i class="iconDashboard-store"></i>
 						</div> 
 					Store <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">

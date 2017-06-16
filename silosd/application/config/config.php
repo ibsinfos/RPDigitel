@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   | environments.
   |
  */
-$config['base_url'] = 'http://54.212.235.115/silosd/';
+$config['base_url'] = 'http://54.212.235.115/RPDigitel/silosd/';
 
 /*
   |--------------------------------------------------------------------------

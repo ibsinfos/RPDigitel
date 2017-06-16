@@ -142,6 +142,7 @@
 			$user_role = $this->session->userdata('role');
 			
 			
+            $this->load->model('membership_model');
             $this->load->model('common_model');
 			if(!empty($_SESSION['paasport_user_id']))
 			{
@@ -157,16 +158,20 @@
 			// die('sfd');
 			
 			if($this->session->userdata('email')){
-			$data['user_details'] = $this->common_model->getRecords('membership','*',array('email_address'=>$this->session->userdata('email')),'',1);
-			}else{
-			$data['user_details']='';
+				$data['user_details'] = $this->common_model->getRecords('membership','*',array('email_address'=>$this->session->userdata('email')),'',1);
+				}else{
+				$data['user_details']='';
 			}
 			
-			/*
-			echo "<pre>";
-			 print_r($data['user_details']);
-			die();
-			*/
+			
+			// $query_get_country=$this->db->get('country');
+			
+			$data['country_code_list']=$this->membership_model->query_get_country();
+			
+			// echo "<pre>";
+			// print_r($data['user_details']);
+			// die();
+			
 			
 			if($this->input->post('pricing_plan_total')){
 				
@@ -228,15 +233,15 @@
 			
 			
 			/*
-			$data = array(
-			'id'      => $plan_cat,
-			'qty'     => 1,
-			'price'   => $plan_price,
-			'name'    => $plan_name,
-			'options' => array('duration' => $plan_duration, 'plan_cat' => $plan_cat)
-			);
-			
-			$this->cart->insert($data);
+				$data = array(
+				'id'      => $plan_cat,
+				'qty'     => 1,
+				'price'   => $plan_price,
+				'name'    => $plan_name,
+				'options' => array('duration' => $plan_duration, 'plan_cat' => $plan_cat)
+				);
+				
+				$this->cart->insert($data);
 			*/
 			// print_r($this->cart->contents());
 			
@@ -264,13 +269,20 @@
 			
 			print_r($this->session->all_userdata());
 		}
-
 		
-		function register_user() 
+		
+		function checkout_save_member() 
 		{
-		
-		echo '1';		
-		
+			
+			
+			$user_details=array(
+			'name'    => 'aaa'
+			);
+			
+			$this->session->set_userdata($user_details);
+			
+			// print_r($this->session->all_userdata());
+			// echo "exist";
 		}
 		
 		

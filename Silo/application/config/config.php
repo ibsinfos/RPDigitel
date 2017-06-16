@@ -19,7 +19,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   |
  */
 //$config['base_url'] = 'http://silohost.rebelute.in/';
-$config['base_url'] = 'http://localhost/RPDigitel/Silo/'; 
+//$config['base_url'] = 'http://localhost/RPDigitel/Silo/'; 
+$config['base_url'] = 'http://54.212.235.115/RPDigitel/Silo/'; 
 
 /*
   |--------------------------------------------------------------------------
