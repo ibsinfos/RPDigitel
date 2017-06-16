@@ -20,7 +20,7 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<section class="checkoutWrap">
 			<div class="container">
 				<div class="row">
@@ -30,7 +30,7 @@
 						    <li role="presentation" class="member_details active"><a aria-controls="memberDetails" role="tab"><i class="fa fa-edit"></i> Member Details</a></li>
 						    <li role="presentation" class="payment_details disabled"><a aria-controls="payment" role="tab"><i class="fa fa-money"></i> Payment</a></li>
 						    <li role="presentation" class="status_details disabled"><a aria-controls="status" role="tab"><i class="fa fa-check"></i> Status</a></li>
-					  	</ul>
+						</ul>
 					  	<!-- Tab panes -->
 					  	<div class="tab-content">
 					  		<div role="tabpanel" class="tab-pane active member_details" id="memberDetails">
@@ -42,27 +42,27 @@
 										<div class="col-sm-6 form-group">
 			                                <label>First Name</label>
 			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="">
-			                            </div>
+										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>Last Name</label>
 			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="">
-			                            </div>
-			                        </div>
+										</div>
+									</div>
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Email</label>
 			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="">
-			                            </div>
+										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>Password</label>
 			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password">
-			                            </div>
-			                        </div>
+										</div>
+									</div>
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Phone Number</label>
 			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="">
-			                            </div>
+										</div>
 										<div class="col-sm-12 form-group">
 											<hr>
 											<h4>STEP #2: Billing Address</h4>
@@ -72,40 +72,52 @@
 			                            <div class="col-sm-6 form-group">
 			                                <label>Address</label>
 			                                <input name="address" class="form-control" id="billing_address" required="required" type="text" placeholder="Address" value="">
-			                            </div>
+										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>City</label>
 			                                <input name="billing_city" class="form-control" id="billing_city" required="required" type="text" placeholder="City" value="">
-			                            </div>
-			                        </div>
+										</div>
+									</div>
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Country</label>
-			                                <select name="billing_country" class="form-control" required="required">
-			                                	<option>Select Country</option>
-			                                </select>
-			                            </div>
+			                                <select name="billing_country" id="billing_country" class="form-control" required="required">
+			                                	
+												
+												<option value="select">Select Country</option>
+												
+												<?php 
+													foreach($country_list as $country){
+														
+														echo "<option value='".$country['id']."'>".$country['name']."</option>";
+														
+													} ?>
+													
+											</select>
+										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>State</label>
 			                                <select class="form-control" id="billing_state">
-			                                	<option>Select State</option>
-			                                </select>
-			                            </div>
-			                        </div>
+			                                	
+												<option>Select State</option>
+												
+											</select>
+										</div>
+									</div>
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Zip</label>
 			                                <input name="zip" class="form-control" id="billing_zip" required="required" type="text" onkeydown="return isNumberKey(event);" placeholder="Zip" value="">
-			                            </div>
+										</div>
 									</div>
 									<ul class="list-inline">
-			                            <li><button type="submit" class="btn btnRed next-step">Next</button></li>
-			                        </ul>
-		                    	</form>
-						    </div>
+			                            <li><button type="submit" class="btn btnRed next-step" >Next</button></li>
+									</ul>
+								</form>
+							</div>
 						    <div role="tabpanel" class="tab-pane payment_details" id="payment">
-						    	<form id="paymentDetailsForm" role="form" action="" method="post" novalidate="novalidate" class="">
-							    	<div class="row">
+								<div class="row">
+									<form id="paymentDetailsForm" role="form" action="" method="post" novalidate="novalidate" class="">
 										<div class="col-sm-12 form-group">
 											<h4>STEP #3: Enter payment details</h4>
 										</div>
@@ -116,60 +128,86 @@
 									          	<img src="<?php echo main_asset_url(); ?>images/mastercard.png" width="40">
 									          	<img src="<?php echo main_asset_url(); ?>images/american-express.png" width="40">
 									          	<img src="<?php echo main_asset_url(); ?>images/discover.png" width="40">
-									        </label>
+											</label>
 									        <label class="radio-inline">
 									          	<input type="radio" name="paymentOption" data-payment-type="paypal" class="paymentOpt">
 									          	<img src="<?php echo main_asset_url(); ?>images/paypal.png" width="40">
-									        </label>
-									    </div>
+											</label>
+										</div>
 								        <div class="col-sm-6 form-group creaditCardInfo">
 			                                <label>Card Number</label>
 			                                <input name="credit_number" class="form-control" required="required" type="text" onkeydown="return isNumberKey(event);" placeholder="Card Number">
-			                            </div>
+										</div>
 			                            <div class="col-sm-6 form-group securityCode creaditCardInfo">
 			                                <label>Security Code 
 			                                	<span data-toggle="popover" data-trigger="hover" data-html="true" title="CVV" data-content="
 			                                	<p>Your card code is a 3 or 4 digit number that is found in these locations:</p>
 			                                	<div class='row'>
-			                                		<div class='col-sm-7'>
-			                                			<p><strong>Visa/Mastercard</strong></p>
-			                                			<p>The security code is a 3 digit number on the back of your credit card. It immediately follows your main card number.</p>
-			                                			<p><strong>American Express</strong></p>
-			                                			<p>The security code is a 4 digit number on the front of your card, just above and to the right of your main card number.</p>
-			                                		</div>
-			                                		<div class='col-sm-5'>
-			                                			<img src='<?php echo main_asset_url(); ?>images/cvv.png' class='img-responsive'>
-			                                		</div>
+												<div class='col-sm-7'>
+												<p><strong>Visa/Mastercard</strong></p>
+												<p>The security code is a 3 digit number on the back of your credit card. It immediately follows your main card number.</p>
+												<p><strong>American Express</strong></p>
+												<p>The security code is a 4 digit number on the front of your card, just above and to the right of your main card number.</p>
+												</div>
+												<div class='col-sm-5'>
+												<img src='<?php echo main_asset_url(); ?>images/cvv.png' class='img-responsive'>
+												</div>
 			                                	</div>
 			                                	">
 			                                		<i class="fa fa-info-circle"></i>
-			                                	</span>
-			                                </label>
+												</span>
+											</label>
 			                                <input name="security_code" class="form-control" required="required" type="text" onkeydown="return isNumberKey(event);" placeholder="Security Code">
-			                            </div>
+										</div>
 			                            <div class="col-sm-6 form-group creaditCardInfo">
 			                                <label>Expiration Date</label>
 			                                <input name="exp_date" class="form-control" required="required" type="text" placeholder="MM/YY">
-			                            </div>
+										</div>
 			                            <div class="col-sm-12 form-group">
 			                                <div class="checkbox">
 										        <label>
-										          <input type="checkbox" name="terms" checked> I accept <a href="" target="_blank">terms and conditions</a>
-										        </label>
-										    </div>
-			                            </div>
+													<input type="checkbox" name="terms" checked> I accept <a href="" target="_blank">terms and conditions</a>
+												</label>
+											</div>
+										</div>
 			                            <!-- <div class="col-sm-12 form-group">
 			                            	<button class="btn btnRed">Continue</button>
-			                            </div> -->
-									</div>
-									<ul class="list-inline">
-			                            <!-- <li><button type="button" class="btn btnRed prev-step">Previous</button></li> -->
-			                            <li><button type="submit" class="btn btnRed next-step">Submit</button></li>
-			                        </ul>
-			                    </form>
-						    </div>
-						    <div role="tabpanel" class="tab-pane status_details" id="status">
-						    	<div class="thankYou text-center">
+										</div> -->
+									</form>
+								</div>
+								<ul class="list-inline">
+									<!-- <li><button type="button" class="btn btnRed prev-step">Previous</button></li> -->
+									<!--<li><button type="submit" class="btn btnRed next-step">Submit</button></li>-->
+									
+									
+									<li>
+										
+										<form method="POST" action="<?php echo base_url(); ?>user/multi_plan_checkout/SetExpressCheckout">
+											
+											<div class="center padding-bottom-25">
+												<input type="hidden" value="<?php echo $pricing_plan_total;?>" name="amount">
+												<input type="hidden" value="1" name="plan_id">
+												<input type="hidden" value="<?php echo $this->session->userdata('user_id')?>" name="user_id">
+												
+												<input type="hidden" value="<?php echo base_url().'subscription';?>" name="success_url">
+												
+												<input type="hidden" value="<?php echo base_url().'subscription';?>" name="fail_url">
+												
+												
+												<input type="submit" class="btn btnRed" value="Submit">
+												
+											</div>
+											
+										</form>
+										
+									</li>
+									
+									
+								</ul>
+								
+							</div>
+							<div role="tabpanel" class="tab-pane status_details" id="status">
+								<div class="thankYou text-center">
 									<h4 class="heading">Thank You</h4>
 									<p class="confirmText">Your subscription has been confirmed.</p>
 									<p>Dear, [name]</p>
@@ -190,43 +228,107 @@
 								</div>
 								<!-- <ul class="list-inline">
 		                            <li><button type="button" class="btn btnRed prev-step">Previous</button></li>
-		                        </ul> -->
-						    </div>
-					  	</div>
-					  	</form>
-					</div>
-					<div class="col-sm-4">
-						<div class="panel panel-default orderSummary">
-							<div class="panel-body">
-								<h4 class="heading">ORDER SUMMARY</h4>
-								<table class="table">
-									<tbody>
-										<tr>
-											<th>Plan:</th>
-											<td>Plan1</td>
-										</tr>
-										<tr>
-											<th>Date:</th>
-											<td>Wed, 07 Jun 2017</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<th>Total Price:</th>
-											<th>$99</th>
-										</tr>
-									<tfoot>
-								</table>
+								</ul> -->
 							</div>
 						</div>
-					</div>
+					</form>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default orderSummary">
+						<div class="panel-body">
+							<h4 class="heading">ORDER SUMMARY</h4>
+							<table class="table">
+								<tbody>
+<!--									<tr>
+										<th>Plan:</th>
+										<td>Plan1</td>
+									</tr>
+									<tr>
+										<th>Date:</th>
+										<td>Wed, 07 Jun 2017</td>
+									</tr>-->
+									<?php
+									
+									$services=array('fiber','silo_cloud','scandisc','wbs','paasport','silo_bank');
+									
+									foreach($services as $service){
+										if($this->session->userdata($service)){
+											echo "<tr><th>Plan Name :</th><td>".$this->session->userdata[$service]['name']."</td></tr><tr><th>Price :</th><td>$ ".$this->session->userdata[$service]['price']."</td></tr>";
+										}
+										}
+									?>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Total Price:</th>
+										<!--<th>$99</th>-->
+										<th><?php
+											echo $pricing_plan_total;
+										?></th>
+									</tr>
+								</tfoot>
+							</table>
+							</div>
+							</div>
 				</div>
 			</div>
-		</section>
-		<?php $this->load->view('includes/main_footer_home'); ?>		
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
-	</body>
-</html>
+		</div>
+	</section>
+	<?php $this->load->view('includes/main_footer_home'); ?>		
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
+	
+	<script type="text/javascript">
+		
+		
+		$("#billing_country").on('change',function (e) {
+			
+			if(this.value!='select'){
+				$.ajax({
+					
+					url:'<?php echo base_url();?>user/fiberrails/getcities',
+					
+					method:'post',
+					
+					async: false,
+					
+					data:{'country_id':this.value},
+					
+					success:function(data){ 
+						
+						// $("#project_portfolio").empty();
+						// alert(data);
+						$("#billing_state").html(data);
+						
+					}					
+					
+				});
+				}else{
+				
+				$("#billing_state").html("<option value='select'>Select State</option>");
+				
+			}
+			
+		});
+		
+		
+		
+		
+		var payment_successful="<?php if($this->session->userdata('payment_successfull')){ echo $this->session->userdata('payment_successfull');
+			$this->session->unset_userdata('payment_successfull');
+		}
+		else{echo '';}?>";
+		
+		if(payment_successful!=''){
+			$('li[role=presentation]').removeClass('active');
+			$('.tab-pane').removeClass('active');
+			$('.status_details').removeClass('disabled').addClass('active');
+		}
+		
+		var regiter_user_url="<?php echo base_url().'register_user';?>";
+	</script>
+	
+</body>
+</html>									

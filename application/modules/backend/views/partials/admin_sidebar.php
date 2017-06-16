@@ -38,85 +38,107 @@ $userImg = backend_asset_url() . "images/img.jpg";
             <div class="menu_section">
 
                 <ul class="nav side-menu">
-
-                    <li class=""><a>
-                            <div class="menuIcon">
-                                <i class="iconDashboard-home"></i>
-                            </div> 
-                            Home <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="#">Dashboard</a></li>						
-                        </ul>
-                    </li>
-                    <li ><a>
-                            <div class="menuIcon">
-                                <i class="iconDashboard-news"></i>
-                            </div> 
-                            News  <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="<?php echo base_url(); ?>news">News List</a></li>		
-                            <li><a href="<?php echo base_url(); ?>add-news">Add News</a></li>		
-                            <li><a href="<?php echo base_url(); ?>category">News Category</a></li>						
-
-                        </ul>
-                    </li>
-
-                    <li ><a>
-                            <div class="menuIcon">
-                                <i class="iconDashboard-community"></i>
-                            </div> 
-                            Community <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="<?php echo base_url(); ?>admin-community">Community</a></li>						
-
-
-                            <!--<li><a href="">Create Featured News</a></li>-->						
-                            <li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
-                            <li><a href="<?php echo base_url(); ?>latest_news">Latest News</a></li>						
-                            <!--<li><a href="<?php echo base_url(); ?>add_latest_news">Create Latest News</a></li>-->	
-                            <li><a href="<?php echo base_url(); ?>view-slider">Slider Images</a></li>	
-                            <!--<li><a href="<?php echo base_url(); ?>add-slider">Upload Slider Image</a></li>-->
-                            <li><a href="<?php echo base_url(); ?>header_news">Header News</a></li>	
-                            <!--<li><a href="<?php echo base_url(); ?>add_header_news">Add Header News</a></li>	-->
-                            <li><a href="<?php echo base_url(); ?>category_news">Category Slider</a></li>	
-                            <!--<li><a href="<?php echo base_url(); ?>add_category_news">Add Category Slider</a></li>	-->
-                        </ul>
-                    </li>
-
-                    <li ><a>
-                            <div class="menuIcon">
-                                <i class="iconDashboard-event"></i>
-                            </div> 
-                            Events  <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="<?php echo base_url(); ?>event-list">Event List</a></li>		
-                            <li><a href="<?php echo base_url(); ?>add-event">Add Event</a></li>						
-
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-
-
-        </div>
-        <!-- /sidebar menu -->
-
-        <!-- /menu footer buttons 
-                <div class="sidebar-footer hidden-small">
-                <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                </a>
-                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                </a>
-                <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                </a>
-                <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                </a>
-        </div>-->
-        <!-- /menu footer buttons -->
-    </div>
+					
+					<li class=""><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-home"></i>
+						</div> 
+					Home <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="#">Dashboard</a></li>						
+					</ul>
+					</li>
+					<li ><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					News Category <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						
+						<li><a href="<?php echo base_url(); ?>category">News Category</a></li>						
+						
+					</ul>
+					</li>
+					<li ><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					News <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url(); ?>news">News</a></li>						
+					</ul>
+					</li>
+					<li ><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Community <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url(); ?>admin-community">Community</a></li>						
+						
+						
+						<!--<li><a href="">Create Featured News</a></li>-->						
+						<li><a href="<?php echo base_url(); ?>featured_news">Featured News</a></li>						
+						<li><a href="<?php echo base_url(); ?>latest_news">Latest News</a></li>						
+						<!--<li><a href="<?php echo base_url(); ?>add_latest_news">Create Latest News</a></li>-->	
+						<li><a href="<?php echo base_url(); ?>view-slider">Slider Images</a></li>	
+						<!--<li><a href="<?php echo base_url(); ?>add-slider">Upload Slider Image</a></li>-->
+						<li><a href="<?php echo base_url(); ?>header_news">Header News</a></li>	
+						<!--<li><a href="<?php echo base_url(); ?>add_header_news">Add Header News</a></li>	-->
+						<li><a href="<?php echo base_url(); ?>category_news">Category Slider</a></li>	
+						<!--<li><a href="<?php echo base_url(); ?>add_category_news">Add Category Slider</a></li>	-->
+					</ul>
+					</li>	
+					
+					<!--
+					<li><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Subscription <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						
+						<li><a href="<?php //echo base_url(); ?>plan-list">Add Plans</a></li>						
+						<li><a href="<?php //echo base_url(); ?>assign-plan">Assign Plans</a></li>						
+						
+					</ul>
+					</li>	
+					-->
+					
+						<li><a href="<?php echo base_url(); ?>admin-subscription">
+						<div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> 
+					Subscription </a>
+					
+					</li>	
+					
+					
+					
+					
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+		<!-- /sidebar menu -->
+		
+		<!-- /menu footer buttons 
+			<div class="sidebar-footer hidden-small">
+			<a data-toggle="tooltip" data-placement="top" title="Settings">
+			<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+			<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="Lock">
+			<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+			</a>
+		</div>-->
+		<!-- /menu footer buttons -->
+	</div>
 </div>				
