@@ -151,6 +151,7 @@ $(document).ready(function(){
     // end script for Wizard used in checkout page
 	
     // Validate Subscription Checkout page
+	 // alert(memberDetailsForm_save_URL);
     validateMemberDetails();
     validatePaymentDetails();
 	
@@ -174,9 +175,11 @@ function isNumberKey(evt){
 }
 
 function validateMemberDetails() {
-	$('#memberDetailsForm').validate({
 		////// Rules Goes Below //////
+	$('#memberDetailsForm').validate({
 		
+	// alert(memberDetailsForm_save_URL);
+	
 		rules: {
 			//// For General Sales Inquiries
 			first_name: { 
@@ -237,15 +240,14 @@ function validateMemberDetails() {
 		submitHandler: function(form) {
 			
 			
-			/*
-			if (typeof memberDetailsForm_URL == "undefined" || memberDetailsForm_URL == null){
-				
+			
+			if (typeof memberDetailsForm_save_URL == "undefined" || memberDetailsForm_save_URL == null){
 				}else{
 				$.ajax({
 					// url: '/index.php/members/userExist',
 					url: memberDetailsForm_save_URL,
 					type: 'POST',
-					data: {email: $('#email').val() },
+					data: {first_name: $('#first_name').val(),last_name: $('#last_name').val(),country_code: $('#country_code').val(),phone: $('#phone').val(),email: $('#email').val(),u_password: $('#password').val(),billing_address: $('#billing_address').val(),billing_city: $('#billing_city').val(),billing_country: $('#billing_country').val(),billing_state: $('#billing_state').val(),billing_zip: $('#billing_zip').val(),role: 'user'},
 					success: function (res) {
 						
 						if(res=='exist'){
@@ -260,12 +262,12 @@ function validateMemberDetails() {
 			}
 			
 			
-			*/
 			
 			
-			$('li[role=presentation]').removeClass('active');
-			$('.tab-pane').removeClass('active');
-			$('.payment_details').removeClass('disabled').addClass('active');
+			
+			// $('li[role=presentation]').removeClass('active');
+			// $('.tab-pane').removeClass('active');
+			// $('.payment_details').removeClass('disabled').addClass('active');
 		}
 	});
 	$.validator.addMethod( "lettersonly", function( value, element ) {

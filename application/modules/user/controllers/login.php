@@ -594,6 +594,7 @@
 				}	
 			}			
 		}
+
 		function logout() 
 		{
 			$this->load->model('membership_model');

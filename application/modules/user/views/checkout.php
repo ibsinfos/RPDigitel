@@ -41,11 +41,11 @@
 										</div>
 										<div class="col-sm-6 form-group">
 			                                <label>First Name</label>
-			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="<?php if($user_details!==''){ echo $user_details[0]['first_name'];}?>">
+			                                <input name="first_name" class="form-control" id="first_name" required="required" type="text" placeholder="First Name" value="<?php if($user_details!=''){ echo $user_details[0]['first_name'];}?>">
 										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>Last Name</label>
-			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="<?php if($user_details!==''){ echo $user_details[0]['last_name'];}?>">
+			                                <input name="last_name" class="form-control" id="last_name" required="required" type="text" placeholder="Last Name" value="<?php if($user_details!=''){ echo $user_details[0]['last_name'];}?>">
 										</div>
 									</div>
 									
@@ -55,7 +55,7 @@
 											
 											
 											
-											<select name="country" id="country" class="signin_input form-control -lg">
+											<select name="country_code" id="country_code" class="signin_input form-control -lg">
 												<option value="0" label="Select a country" selected="selected">Select Country Code</option>
 												<?php	foreach($country_code_list as $country){	?>
 													
@@ -69,7 +69,7 @@
 										
 			                            <div class="col-sm-6 form-group">
 			                                <label>Phone Number</label>
-			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php if($user_details!==''){ echo $user_details[0]['phone_no'];}?>">
+			                                <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php if($user_details!=''){ echo $user_details[0]['phone_no'];}?>">
 											</div>
 										
 										
@@ -80,13 +80,13 @@
 			                        <div class="row">
 			                            <div class="col-sm-6 form-group">
 			                                <label>Email</label>
-			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php if($user_details!==''){ echo $user_details[0]['email_address'];}?>">
+			                                <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php if($user_details!=''){ echo $user_details[0]['email_address'];}?>">
 										</div>
 										
 										<?php if($user_details==''){ ?>
 										<div class="col-sm-6 form-group">
 			                                <label>Password</label>
-			                                <input name="password" class="form-control" required="required" type="password" placeholder="Password" >
+			                                <input name="password" id="password" class="form-control" required="required" type="password" placeholder="Password" >
 										</div>
 										<?php } ?>
 										
@@ -138,7 +138,7 @@
 										</div>
 			                            <div class="col-sm-6 form-group">
 			                                <label>State</label>
-			                                <select class="form-control" id="billing_state">
+			                                <select class="form-control" name="billing_state" id="billing_state">
 			                                	
 												<option>Select State</option>
 												
@@ -364,7 +364,8 @@
 			$('.status_details').removeClass('disabled').addClass('active');
 		}
 		
-		// var memberDetailsForm_save_URL="<?php echo base_url().'checkout_save_member';?>";
+		var memberDetailsForm_save_URL="<?php echo base_url().'checkout_save_member';?>";
+		// alert(memberDetailsForm_save_URL);
 	</script>
 	
 </body>
