@@ -462,6 +462,33 @@ html, body,
 }
 /* Login css end */
 
+/* Main Dashboard css start */
+.mainDashboardServices {
+  padding: 50px 0;
+}
+.mainDashboardServices .panel {
+  min-height: 315px;
+}
+.mainDashboardServices .websuitImgBox {
+  padding: 20px 0;
+}
+.mainDashboardServices .passportImgBox {
+  padding: 31px 0;
+}
+.mainDashboardServices .siloSDImgBox {
+  padding: 25px 0;
+}
+.mainDashboardServices .scandiscImgBox {
+  padding: 44px 0;
+}
+.mainDashboardServices .panel-body .heading {
+  font-weight: 600;
+}
+.mainDashboardServices .panel-body .description {
+  margin-bottom: 20px;
+}
+/* Main Dashboard css end */
+
 /* Subscription css start */
 .subscribeHeroSection {
   background: rgba(0,0,0,0.3) url('../images/subscription/shop-lp-hero-image.png') no-repeat center center/contain;

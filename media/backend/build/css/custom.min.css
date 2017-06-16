@@ -1475,6 +1475,37 @@ table.tile_info td p {
 } 
 /* Full Calendar css end */
 
+/* Main Dashboard css start */
+.dashboardServicesWrap {
+  margin: 0;
+}
+.dashboardServicesWrap .panel {
+  min-height: 315px;
+}
+.dashboardServicesWrap .panel-heading {
+    background: transparent;
+    border: none;
+}
+.dashboardServicesWrap .websuitImgBox {
+  padding: 20px 0;
+}
+.dashboardServicesWrap .passportImgBox {
+  padding: 31px 0;
+}
+.dashboardServicesWrap .siloSDImgBox {
+  padding: 25px 0;
+}
+.dashboardServicesWrap .scandiscImgBox {
+  padding: 44px 0;
+}
+.dashboardServicesWrap .panel-body .heading {
+  font-weight: 600;
+}
+.dashboardServicesWrap .panel-body .description {
+  margin-bottom: 20px;
+}
+/* Main Dashboard css end */
+
 @media (min-width:480px) {
     .nav_menu {
         position: static
