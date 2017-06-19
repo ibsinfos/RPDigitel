@@ -1,15 +1,4 @@
-<!Doctype html>
-<html>
-	<head>
-		<title>FiberRails</title>
-		<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/style.css">
-	</head>
-	<body>
-		<?php $this->load->view('includes/main_header_home'); ?>
+
 		
 		<div id="carousel-home-banner" class="carousel slide" data-ride="carousel">
 		  <!-- Wrapper for slides -->
@@ -263,9 +252,4 @@
 				</div>
 			</div>
 		</section>
-		<?php $this->load->view('includes/main_footer_home'); ?>		
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
-	</body>
-</html>
+		

@@ -378,7 +378,7 @@ $config['encryption_key'] = 'I6PnEPbQNLslYMj7ChKxDJ2yenuHLkXn';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
+$config['sess_cookie_name'] = 'video-cms';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = 'ci_sessions';
 $config['sess_match_ip'] = FALSE;
