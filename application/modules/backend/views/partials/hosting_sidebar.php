@@ -122,8 +122,8 @@
 							
 					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
-					</div> Calender </a>
+						<i class="iconDashboard-event"></i>
+					</div> Calendar </a>
 					
 					</li>
 					<?php } ?>
@@ -140,8 +140,8 @@
 					
 					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
-					</div> Main Box </a>
+						<i class="iconDashboard-mail"></i>
+					</div> Mail Box </a>
 					
 					</li>
 					<?php } ?>
