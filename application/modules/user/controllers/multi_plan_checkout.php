@@ -278,8 +278,19 @@ class multi_plan_checkout extends CI_Controller {
             );
 
 
+			
+			$this->load->model('subscription_model');
+			
+			
+			
+			$this->subscription_model->update_subscription_details(TABLES::$SUBSCRIPTION_DETAILS);
+			
+			
             $this->db->insert('subscribe_payments', $payment_data);
 
+			
+			
+			
             /* Added by Ranjit on 24 April 2017 to update max_allowed users plan,counter in databasedetails table Start */
 
 
@@ -300,7 +311,9 @@ class multi_plan_checkout extends CI_Controller {
             if ($payment_data['ack'] == 'Success') {
 
                 // redirect('http://'.$_SERVER['SERVER_NAME'].'/crm/login');
-                $this->session->set_userdata('payment_successfull', '1');
+                
+				$this->session->set_userdata('payment_successfull', '1');
+				
                 redirect(base_url() . 'check_out');
 
                 // redirect($success_url);
