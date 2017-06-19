@@ -146,7 +146,7 @@ $active_record = TRUE;
 
 
 //$_SESSION['user_id']='28';
-
+// echo "<pre>";
 // print_r($_SESSION);
 // die(0);
 
