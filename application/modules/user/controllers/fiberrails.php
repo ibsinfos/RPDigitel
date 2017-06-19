@@ -273,15 +273,51 @@
 		
 		function checkout_save_member() 
 		{
+			$post_values=$this->input->post();
+			// print_r($post_values);
 			
 			
-			$user_details=array(
-			'name'    => 'aaa'
+			
+			// $email=$post_values['email'];
+			
+			
+			
+			if (array_key_exists("u_password",$post_values)){
+
+			$member_details=array('member_details'=>$post_values);
+			$this->session->set_userdata($member_details);
+			
+			
+			
+			/* To Register as new user after Subscription Checkout Start*/
+			
+			$this->load->model('membership_model');
+			
+			$member_details=array(
+			"first_name"=>$this->session->userdata['member_details']['first_name'],
+			"last_name"=>$this->session->userdata['member_details']['last_name'],
+			"phone_no"=>$this->session->userdata['member_details']['phone'],
+			"email_address"=>$this->session->userdata['member_details']['email'],
+			"username"=>$this->session->userdata['member_details']['email'],
+			"password"=>$this->session->userdata['member_details']['u_password'],
+			"role"=>'user',
+			"country_code"=>$this->session->userdata['member_details']['country_code'],
 			);
 			
-			$this->session->set_userdata($user_details);
+			$result_register_user=$this->membership_model->register_from_subscription_checkout($member_details);
+			echo $result_register_user."ss";
+			/* To Register as new user after Subscription Checkout End*/
+			
+			
+			}else{
+			
+			//User already loggedin
+			echo "User already loggedin";
+			}
+
 			
 			// print_r($this->session->all_userdata());
+
 			// echo "exist";
 		}
 		
