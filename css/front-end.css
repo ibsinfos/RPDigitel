@@ -1,61 +1,22 @@
 
 /* Navingation bar css start */
 .navbar {
-	margin-bottom: 0;
-	border: 0;
+    margin-bottom: 0;
+    border: 0;
 }
-.dotMatrixWrap {
-	display: inline-block;
-    width: 30px;
-    margin: 0 10px;
-}
-.dotMatrixDropdown {
-	padding: 20px 0px;
-    width: 50%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.dotMatrixDropdown:before {
-    content: "";
-    border-bottom: 15px solid #fff;
-    border-right: 17px solid transparent;
-    border-left: 17px solid transparent;
-    position: absolute;
-    top: -15px;
-    left: 13px;
-    z-index: 10;
-}
-.dotMatrixDropdown img:hover {
-    opacity: 1;
-}
-.dotMatrixDropdown img {
-    opacity: 0.7;
-}
-.learnMoreAbout {
-	position: fixed;
-    top: 70px;
-    z-index: 99;
-    width: 100%;
-    border-bottom: 1px solid #101010;
-}
-.learnMoreAbout .btn-danger {
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-o-border-radius: 0;
-	border-radius: 0;
-}
+
 /* Navingation bar css end */
 
 /* responsive css */
 @media (max-width: 480px) {
 
-	.dotMatrixDropdown {
-		width: 90%;
-	}
-	.dotMatrixDropdown .card-title {
-		font-size: 14px;
-	}
-	.learnMoreAbout {
-		top: 59px;
-	}
+    .dotMatrixDropdown {
+        width: 90%;
+    }
+    .dotMatrixDropdown .card-title {
+        font-size: 14px;
+    }
+    .learnMoreAbout {
+        top: 59px;
+    }
 }

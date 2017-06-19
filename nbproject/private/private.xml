@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/RPDigitel/hrm/system/libraries/Session/drivers/Session_database_driver.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/fiber-rails.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Fiberrails.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/login_form.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/signup_form.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/views/subscription.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/views/includes/main_footer_home.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/css/front-end.css</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/themes/default_theme/views/layouts/frontend.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/backend/controllers/Subscription.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/wbs-suite.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/helpers/utility_helper.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/controllers/backup/login.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Home.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/paasport/views/partials/header.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Subscription.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/config/routes.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/paasport/controllers/signup.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Paasport.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/controllers/multi_plan_checkout.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Wbs_suite.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/assets/frontend/js/custom.js</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/partials/footer.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/user/controllers/express_checkout.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/views/checkout.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/themes/default_theme/views/layouts/rpdigitel_frontend.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/modules/frontend/controllers/Checkout.php</file>
+            <file>file:/C:/xampp/htdocs/RPDigitel/application/models/membership_model.php</file>
+        </group>
+    </open-files>
 </project-private>
