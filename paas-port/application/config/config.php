@@ -22,8 +22,8 @@ date_default_timezone_set('Asia/Kolkata');
   |
  */
  // $config['base_url'] = 'http://localhost/paas-port/'; 
- $config['base_url'] = 'http://54.212.235.115/RPDigitel/paas-port/'; 
- define('MAINBASEURL','http://54.212.235.115/RPDigitel/');
+ $config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/RPDigitel/paas-port/"; 
+ define('MAINBASEURL','http://'.$_SERVER["HTTP_HOST"].'/RPDigitel/');
  
  //$config['base_url'] = 'http://localhost/RPDigitel/paas-port/'; 
 //$config['base_url']	= 'http://54.212.235.115/paas-port/';

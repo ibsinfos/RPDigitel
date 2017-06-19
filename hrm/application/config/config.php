@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/RPDigitel/hrm/';
+$config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/RPDigitel/hrm/";
 
 /*
 |--------------------------------------------------------------------------

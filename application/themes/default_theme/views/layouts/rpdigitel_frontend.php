@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
     <head>
-        <title>test</title>
+        <title><?php echo $template['title'] ?></title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,6 +12,31 @@
         <!-- Custom CSS -->
         <link rel="shortcut icon" href="<?php echo base_url(); ?>images/favicon.ico?crc=4022900773"/>
         <link rel="stylesheet" type="text/css" href="<?php echo main_asset_url(); ?>css/style.css">
+        <?php
+        if ($page == 'wbs-suite') {
+            echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/wbs-suite.css">';
+            echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
+        }
+        ?>
+        <?php
+        if ($page == 'fiber-rails') {
+           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/fiber-rails.css">';
+           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom.min.css">';
+           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom-responsive.css">';
+           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
+        }
+        ?>
+        
+        <?php
+        if ($page == 'paasport') {
+           echo '<link href="'. base_url().'css/paasport.css" rel="stylesheet">';
+           echo '<link href="'.base_url().'css/paasport-login.css" rel="stylesheet">';
+           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
+        }
+        ?>
+       
+        
+        <script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -32,7 +57,7 @@
         }
         ?>
         <!-- jQuery Core library -->
-        <script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
+
         <!-- Bootstrap Core JavaScript -->
         <script type="text/javascript" src="<?php echo main_asset_url(); ?>js/bootstrap.min.js"></script>
         <!-- jQuery Validation Core JavaScript -->
@@ -41,7 +66,8 @@
         <!-- Custom JavaScript -->
         <script type="text/javascript" src="<?php echo main_asset_url(); ?>js/custom.js"></script>
         <script>
-            var checkLoginURL = '<?php echo base_url(); ?>user/login/validate_credentials';
+            var create_member_URL = '<?php echo base_url(); ?>frontend/login/create_member';
+            var checkLoginURL = '<?php echo base_url(); ?>frontend/login/validate_credentials';
             var createPaasportURL = "<?php echo backend_passport_url(); ?>create-paasport";
             var mainDashboardURL = "<?php echo base_url(); ?>main_dashboard";
             var loginOtpURL = "<?php echo base_url(); ?>otp";
