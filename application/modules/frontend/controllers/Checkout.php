@@ -48,6 +48,10 @@
 				$data['billing_address'] = '';
 			}
 			
+			if(empty($data['billing_address'])){
+			$data['billing_address']='';
+				}
+				
 			$data['country_code_list'] = $this->membership_model->query_get_country();
 			
 			$data['services'] = $this->common_model->getRecords('services', 'category');
