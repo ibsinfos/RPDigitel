@@ -516,7 +516,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/login/crm_validate_credentials',
+                url: '<?php echo base_url(); ?>frontend/login/crm_validate_credentials',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -531,9 +531,9 @@
 
                     } else if (data == 'crm') {
                         // window.location = "<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/crm/login"; ?>";
-                        window.location = "<?php echo base_url(); ?>user/wbs_suite";
+                        window.location = "<?php echo base_url(); ?>frontend/wbs_suite";
                     } else if (data == 'true') {
-                        window.location = "<?php echo base_url(); ?>user/wbs_suite";
+                        window.location = "<?php echo base_url(); ?>frontend/wbs_suite";
                     } else {
                         $('#member_login #password').val("");
                         $("#login_errors").html(data);
@@ -558,7 +558,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/otp/verify_otp',
+                url: '<?php echo base_url(); ?>frontend/otp/verify_otp',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -584,7 +584,7 @@
             $("#login_errors").html('');
 
             $.ajax({
-                url: '<?php echo base_url(); ?>user/login/send_otp',
+                url: '<?php echo base_url(); ?>frontend/login/send_otp',
                 datatype: 'text',
                 success: function (data) {
 
@@ -625,7 +625,7 @@
             $('#loader_image_div').show();
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/wbs_suite/wbs_trial',
+                url: '<?php echo base_url(); ?>frontend/wbs_suite/wbs_trial',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -666,7 +666,7 @@
             $('#loader_image_div').show();
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/wbs_suite/wbs_trial_with_signup',
+                url: '<?php echo base_url(); ?>frontend/wbs_suite/wbs_trial_with_signup',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -675,7 +675,7 @@
                     if (data == true) {
                         //                        window.location = "http://localhost/crm/";
                         // window.location = "<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/crm/login"; ?>";
-                        window.location = "<?php echo base_url(); ?>user/wbs_suite";
+                        window.location = "<?php echo base_url(); ?>frontend/wbs_suite";
 
                         // alert("true");
                         // $('#loader_image_div').hide();

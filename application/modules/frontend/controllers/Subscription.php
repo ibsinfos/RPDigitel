@@ -63,12 +63,14 @@
 			// $user_purchased_plans=array();
 			
 			// foreach($purchased_plans as $a){
-				// array_push($user_purchased_plans,$a['plan_id']);
+			// array_push($user_purchased_plans,$a['plan_id']);
 			// }
 			
+			if (!empty($_SESSION['paasport_user_id'])) {
+				$this->template->set('slug', $data['slug']);
+			}
 			$this->template->set('page', 'subscription');
 			$this->template->set('purchased_plans', $purchased_plans);
-			$this->template->set('slug', $data['slug']);
 			$this->template->set('services', $data['services']);
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('rpdigitel_frontend')
@@ -165,9 +167,22 @@
 				
 				// -			$this->session->set_userdata($user_details);
 				$result_register_user=$this->membership_model->register_from_subscription_checkout($member_details);
-				echo $result_register_user."ss";
+			
 				/* To Register as new user after Subscription Checkout End*/
 				
+				$billing_address=array(
+				"user_id"=>$result_register_user,
+				"address"=>$this->session->userdata['member_details']['billing_address'],
+				"city"=>$this->session->userdata['member_details']['billing_city'],
+				"country_id"=>$this->session->userdata['member_details']['billing_country'],
+				"state_id"=>$this->session->userdata['member_details']['billing_state'],
+				"zip"=>$this->session->userdata['member_details']['billing_zip']
+				);
+				
+				// -			$this->session->set_userdata($user_details);
+				$user_billing_address=$this->membership_model->save_subscription_billing_address($billing_address);
+				// echo $result_register_user;
+				// die();
 				
 				}else{
 				

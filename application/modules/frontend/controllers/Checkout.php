@@ -34,17 +34,26 @@
 			}
 			$data['pricing_plan_total'] = $this->input->post('pricing_plan_total');
 			$data['country_list'] = $this->common_model->getRecords('tbl_countries');
+			
 			if ($this->session->userdata('email')) {
 				$data['user_details'] = $this->common_model->getRecords('membership', '*', array('email_address' => $this->session->userdata('email')), '', 1);
 				} else {
 				$data['user_details'] = '';
 			}
+			
+			
+			if ($this->session->userdata('user_id')) {
+				$data['billing_address'] = $this->common_model->getRecords('tbl_subscription_billing_address', '*', array('user_id' => $this->session->userdata('user_id')), '', 1);
+				}else{
+				$data['billing_address'] = '';
+			}
+			
 			$data['country_code_list'] = $this->membership_model->query_get_country();
 			
 			$data['services'] = $this->common_model->getRecords('services', 'category');
 			
 			// echo "<pre>";
-			// print_r($data['services']);
+			// print_r($data['billing_address']);
 			// print_r($this->session->all_userdata());
 			// echo die();
 			
@@ -59,13 +68,16 @@
 				$data['pricing_plan_total'] = '';
 			}
 			
+			if (!empty($_SESSION['paasport_user_id'])) {
+				$this->template->set('slug', $data['slug']);
+			}
 			$this->template->set('services', $data['services']);
 			$this->template->set('country_code_list', $data['country_code_list']);
 			$this->template->set('country_list', $data['country_list']);
 			$this->template->set('user_details', $data['user_details']);
+			$this->template->set('billing_address', $data['billing_address']);
 			$this->template->set('pricing_plan_total', $data['pricing_plan_total']);
 			$this->template->set('page', 'subscription');
-			$this->template->set('slug', $data['slug']);
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('rpdigitel_frontend')
 			->title('Home | RPDigitel')

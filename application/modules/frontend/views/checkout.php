@@ -45,55 +45,83 @@
 							</div>
 							
                             <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <label>Country code</label>
+                                
+								<?php if ($user_details == '') { ?>
 									
+									<div class="col-sm-6 form-group">
+										<label>Country code</label>
+										
+										
+										
+										<select name="country_code" id="country_code" class="signin_input form-control -lg">
+											<option value="0" label="Select a country" selected="selected">Select Country Code</option>
+											<?php foreach ($country_code_list as $country) { ?>
+												
+												<option value="<?= $country->phonecode; ?>" label="<?= $country->nicename; ?>"><?php echo $country->iso . "  +" . $country->phonecode . ""; ?></option>
+												
+											<?php } ?>
+										</select>
+										
+										
+									</div>
 									
-									
-                                    <select name="country_code" id="country_code" class="signin_input form-control -lg">
-                                        <option value="0" label="Select a country" selected="selected">Select Country Code</option>
-                                        <?php foreach ($country_code_list as $country) { ?>
-											
-                                            <option value="<?= $country->phonecode; ?>" label="<?= $country->nicename; ?>"><?php echo $country->iso . "  +" . $country->phonecode . ""; ?></option>
-											
-										<?php } ?>
-									</select>
-									
-									
-								</div>
+								<?php }	?>
 								
-                                <div class="col-sm-6 form-group">
-                                    <label>Phone Number</label>
-                                    <input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php
-										if ($user_details != '') {
-											echo $user_details[0]['phone_no'];
-										}
-									?>">
-								</div>
-								
+								<?php if ($user_details != '') { ?>
+									<div class="col-sm-6 form-group">
+										<label>Phone Number</label>
+										<input name="phone_no" class="form-control" id="phone_no" type="text" placeholder="Phone Number" value="<?php
+											if ($user_details != '') {
+												echo $user_details[0]['phone_no'];
+											}
+										?>" readonly>
+									</div>
+									
+									<div class="col-sm-6 form-group">
+										<label>Email</label>
+										<input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php
+											if ($user_details != '') {
+												echo $user_details[0]['email_address'];
+											}
+										?>" readonly>
+									</div>
+									
+									
+									<?php }else{?>
+									
+									<div class="col-sm-6 form-group">
+										<label>Phone Number</label>
+										<input name="phone" class="form-control" id="phone" required="required" type="text" maxlength="10" onkeydown="return isNumberKey(event);" placeholder="Phone Number" value="<?php
+											if ($user_details != '') {
+												echo $user_details[0]['phone_no'];
+											}
+										?>">
+									</div>	
+									
+								<?php } ?>
 								
 							</div>
 							
 							
 							
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <label>Email</label>
-                                    <input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php
-										if ($user_details != '') {
-											echo $user_details[0]['email_address'];
-										}
-									?>">
-								</div>
-								
-                                <?php if ($user_details == '') { ?>
+							<?php if ($user_details == '') { ?>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label>Email</label>
+										<input name="email" class="form-control" id="email" required="required" type="text" placeholder="Email Address" value="<?php
+											if ($user_details != '') {
+												echo $user_details[0]['email_address'];
+											}
+										?>">
+									</div>
+									
                                     <div class="col-sm-6 form-group">
                                         <label>Password</label>
                                         <input name="password" id="password" class="form-control" required="required" type="password" placeholder="Password" >
 									</div>
-								<?php } ?>
-								
-							</div>
+									
+								</div>
+							<?php } ?>
 							
 							
                             <div class="row">
@@ -105,58 +133,72 @@
 							</div>
 							
 							
-							
-							
-							
-							
-							
-							
-							
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <label>Address</label>
-                                    <input name="address" class="form-control" id="billing_address" required="required" type="text" placeholder="Address" value="">
+								
+								
+								
+								
+								
+								
+								
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label>Address</label>
+										<input name="address" class="form-control" id="billing_address" required="required" type="text" placeholder="Address" value="<?php if ($billing_address != '') { echo $billing_address[0]['address']; }?>">
+									</div>
+									<div class="col-sm-6 form-group">
+										<label>City</label>
+										<input name="billing_city" class="form-control" id="billing_city" required="required" type="text" placeholder="City" value="<?php if ($billing_address != '') { echo $billing_address[0]['city']; }?>">
+									</div>
 								</div>
-                                <div class="col-sm-6 form-group">
-                                    <label>City</label>
-                                    <input name="billing_city" class="form-control" id="billing_city" required="required" type="text" placeholder="City" value="">
-								</div>
-							</div>
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <label>Country</label>
-                                    <select name="billing_country" id="billing_country" class="form-control" required="required">
-										
-										
-                                        <option value="select">Select Country</option>
-										
-                                        <?php
-											foreach ($country_list as $country) {
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label>Country</label>
+										<select name="billing_country" id="billing_country" class="form-control" required="required">
+											
+											<?php if ($billing_address != '') { 
+												echo "<option value=\"select\" value='".$billing_address[0]['country_id']."'>".$billing_address[0]['country_id']."</option>"; 
+												}else{?>
+											
+											
+											<option value="select">Select Country</option>
+												<?php } ?>
 												
-												echo "<option value='" . $country['id'] . "'>" . $country['name'] . "</option>";
-											}
-										?>
-										
-									</select>
+												
+											<?php
+												foreach ($country_list as $country) {
+													
+													echo "<option value='" . $country['id'] . "'>" . $country['name'] . "</option>";
+												}
+											?>
+											
+										</select>
+									</div>
+									<div class="col-sm-6 form-group">
+										<label>State</label>
+										<select class="form-control" name="billing_state" id="billing_state">
+											
+											
+											<?php if ($billing_address != '') { 
+												echo "<option value=\"select\" value='".$billing_address[0]['state_id']."'>".$billing_address[0]['state_id']."</option>"; 
+												}else{?>
+											
+											
+											<option value="select">Select State</option>
+												<?php } ?>
+												
+												
+										</select>
+									</div>
 								</div>
-                                <div class="col-sm-6 form-group">
-                                    <label>State</label>
-                                    <select class="form-control" name="billing_state" id="billing_state">
-										
-                                        <option>Select State</option>
-										
-									</select>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label>Zip</label>
+										<input name="zip" class="form-control" id="billing_zip" required="required" type="text" onkeydown="return isNumberKey(event);" placeholder="Zip" value="<?php if ($billing_address != '') { echo $billing_address[0]['zip']; }?>">
+									</div>
 								</div>
-							</div>
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <label>Zip</label>
-                                    <input name="zip" class="form-control" id="billing_zip" required="required" type="text" onkeydown="return isNumberKey(event);" placeholder="Zip" value="">
-								</div>
-							</div>
-                            <ul class="list-inline">
-                                <li><button type="submit" class="btn btnRed next-step" >Next</button></li>
-							</ul>
+								<ul class="list-inline">
+									<li><button type="submit" class="btn btnRed next-step" >Next</button></li>
+								</ul>
 						</form>
 					</div>
                     <div role="tabpanel" class="tab-pane payment_details" id="payment">
@@ -226,7 +268,7 @@
 							
                             <li>
 								
-                                <form method="POST" action="<?php echo base_url(); ?>user/multi_plan_checkout/SetExpressCheckout">
+                                <form method="POST" action="<?php echo base_url(); ?>frontend/multi_plan_checkout/SetExpressCheckout">
 									
                                     <div class="center padding-bottom-25">
                                         <input type="hidden" value="<?php echo $pricing_plan_total; ?>" name="amount">

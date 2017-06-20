@@ -49,7 +49,7 @@ $route['admin'] = 'admin/login';
 
 
 $route['login'] = 'frontend/login';
-$route['otp'] = 'user/otp/index';
+$route['otp'] = 'frontend/otp/index';
 $route['login/logout'] = 'frontend/login/logout';
 $route['login/signup'] = 'frontend/login/signup';
 $route['fiberrails'] = 'frontend/fiberrails';
@@ -57,15 +57,15 @@ $route['subscription'] = 'frontend/subscription';
 $route['check_out'] = 'frontend/checkout';
 $route['checkout_save_member'] = 'frontend/subscription/checkout_save_member';
 $route['main_dashboard'] = 'frontend/dashboard';
-$route['silo_sd'] = 'user/silo_sd';
+$route['silo_sd'] = 'frontend/silo_sd';
 $route['wbs_suite'] = 'frontend/wbs_suite';
-$route['silo_wallet'] = 'user/silo_wallet';
-$route['silo_bank'] = 'user/silo_bank';
-$route['wbs_suite/wbs_subscribe'] = 'user/wbs_suite/wbs_subscribe';
+$route['silo_wallet'] = 'frontend/silo_wallet';
+$route['silo_bank'] = 'frontend/silo_bank';
+$route['wbs_suite/wbs_subscribe'] = 'frontend/wbs_suite/wbs_subscribe';
 //$route['paasport'] = 'paasport/signup';
 $route['paasport'] = 'frontend/paasport';
-$route['wbs_suite/wbs_subscribe_payment_success'] = 'user/wbs_suite/wbs_subscribe_payment_success';
-$route['wbs_suite/wbs_subscribe_payment_fail'] = 'user/wbs_suite/wbs_subscribe_payment_fail';
+$route['wbs_suite/wbs_subscribe_payment_success'] = 'frontend/wbs_suite/wbs_subscribe_payment_success';
+$route['wbs_suite/wbs_subscribe_payment_fail'] = 'frontend/wbs_suite/wbs_subscribe_payment_fail';
 
 /* Silo routs */
 $route['404'] = 'frontend/Pages/pageNotFound404';
