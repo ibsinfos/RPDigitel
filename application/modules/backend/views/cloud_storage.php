@@ -13,6 +13,8 @@
 ?>
 <script>
     var user_id = '<?php echo $user_id;?>';
+    var elfinder_URL='<?php echo base_url(); ?>media/backend/elfinder/js/';
+    var connector_URL='<?php echo base_url(); ?>media/elfinder/php/connector.minimal.php?follow='+user_id;
 </script>	
 	
 	

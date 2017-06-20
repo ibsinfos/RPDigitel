@@ -1,28 +1,191 @@
 <?php
-error_reporting(0);
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+	error_reporting(0);
+	defined('BASEPATH') OR exit('No direct script access allowed');
+	
     class Webservices_model extends CI_Model
     {
-
+		
+		public function loginUser($post)
+		{			
+			$result = array();
+			$result['data'] = array();
+			
+			if(!empty($this->input->post('username')) && !empty($this->input->post('password'))) {
+				
+				
+				$where=array("username"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
+				// $where=array("username"=>$_POST['username'],"password"=>'b19404464f17034bcb6609779a47d22a0288432a903d0830087a12573e5af4b309827790d16eac7d5b126a26dc2bf39f72f5fcab9c4e0fc0b298fb3456def4d1');
+				// $where="username='".$_POST['username']."' and password='".md5($_POST['password'])."'";
+				
+				
+				$this->db->where($where);
+				$this->db->select('user_id,first_name,last_name,phone_no,email_address,username');
+				$sel_user=$this->db->get('membership');
+				
+				if($sel_user->num_rows>0){
+					
+					$result['data']=$sel_user->result();
+					$result['status']=true;
+					
+					}else{
+					
+					// $result['data']="";
+					$result['status']=false;
+					
+				}		
+				
+				} else {
+				$result['status'] = false;
+			}
+			return $result;
+		}
+		
+		
+		public function registerUser($post)
+		{
+			$result = array();
+			$result['data'] = array();
+			
+			// print_r($this->input->post());
+			// die();
+			
+			if(!empty($this->input->post('username')) && !empty($this->input->post('email_address')) && !empty($this->input->post('password'))) {
+				
+				
+				// $country = $this->input->post('country');
+				// $phone_number = $this->input->post('phone_number');
+				// $phone_number_with_country_code = "+" . $country . $phone_number;
+				
+				$phone_number_with_country_code=$this->input->post('phone_number');
+				
+				$insert_data=array(
+				"first_name"=>$this->input->post('first_name'),
+				"last_name"=>$this->input->post('last_name'),
+				"email_address"=>$this->input->post('email_address'),
+				"username"=>$this->input->post('username'),
+				"password"=>$this->hash($this->input->post('password')),
+				"phone_no"=>$phone_number_with_country_code,
+				"role"=>'user',
+				"purchase_pack"=>'1',
+				"verified"=>'1'
+				);				
+				
+				$this->db->where('username', $this->input->post('username'));
+				$chk_uname = $this->db->get('membership');
+				
+				$this->db->where('email_address', $this->input->post('email_address'));
+				$chk_email = $this->db->get('membership');
+				
+				if ($chk_uname->num_rows() > 0) {
+					
+					$result['data']='This Username already in use';
+					$result['status']=false;
+					
+					} else if ($chk_email->num_rows() > 0) {
+					
+					$result['data']='This Email already in use';
+					$result['status']=false;
+					
+					}else{
+					
+					$ins_user=$this->db->insert('membership',$insert_data);
+					$membership_user_id = $this->db->insert_id();				
+					
+					/*register with paasport start*/
+					
+					
+					
+					$new_vcuser_insert_data = array(
+					'email' => $this->input->post('email_address'),
+					'first_name' => $this->input->post('username'),
+					// 'mobile' => $this->input->post('phone_number'),
+					'mobile' => $phone_number_with_country_code,
+					'verified' => '1',
+					'email_verify' => '1',
+					'password' => $this->hash($this->input->post('password'))
+					);
+					
+					$insert_vc_user = $this->db->insert('tbl_users', $new_vcuser_insert_data);
+					$paasport_user_id = $this->db->insert_id();
+					$paasport_user_data = array('paasport_user_id' => $paasport_user_id);
+					
+					//Code to update paasport_user_id value in rpdigitel.membership table
+					$this->db->where('user_id', $membership_user_id);
+					$this->db->update('membership', $paasport_user_data);
+					
+					/*             * **************** Insert into novaecard.users table End***************************** */
+					
+					/* start add user map entry in tbl_users_map */
+					$this->load->model('membership_model');
+					$this->membership_model->create_user_map($membership_user_id);
+					/* end add user map entry in tbl_users_map */
+					
+					/* Send mail Start */
+					
+					$config = Array(
+					'protocol' => 'smtp',
+					'smtp_host' => 'ssl://smtp.googlemail.com',
+					'smtp_port' => 465,
+					'smtp_user' => 'rpdigitel@gmail.com', // change it to yours
+					'smtp_pass' => 'Rebelute@905', // change it to yours
+					'mailtype' => 'html',
+					'charset' => 'iso-8859-1',
+					'wordwrap' => TRUE
+					);
+					
+					$message = "Hello " . $this->input->post('username') . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "user/login/verification/" . urlencode($this->input->post('email_address')) . " <br><br> Thanks & Regards, <br> RPDigitel Team";
+					$this->load->library('email', $config);
+					$this->email->set_newline("\r\n");
+					$this->email->from('rpdigitel@gmail.com'); // change it to yours
+					$this->email->to($this->input->post('email_address')); // change it to yours
+					$this->email->subject('Welcome to RP Digital');
+					$this->email->message($message);
+					
+					
+					
+					if ($this->email->send()) {
+						//  echo 'Email sent.';
+						} else {
+						show_error($this->email->print_debugger());
+					}
+					
+					
+					
+					/*register with paasport end*/
+					
+					$result['data']=array('user_id'=>$user_id);
+					$result['status']=true;
+					
+				}
+				
+				
+				} else {
+				$result['data'] = "Enter all required information";
+				$result['status'] = false;
+			}
+			return $result;
+		}
+		
+		
+		
 		public function uploadSyncFiles($post, $files)
 		{
-		
+			
 			//$campaign_id = $post['campaign_id'];
 			$result = array();
 			$result['data'] = array();
 			
 			if( isset( $post['userid'] ) && !empty($post['userid'])) {
-			
+				
 				if( !empty($files)) {
 					
 					$paths = json_decode($post['path'], true);
-					 
+					
 					$this->load->library('upload');
 					$counter = 0;
 					
 					foreach( $files as $key => $file ) {
-						echo "sd";
+						
 						$name1 = $paths[$counter];
 						$filepath1 = trim( $name1,'[,],",/' );
 						$fileDir1 = explode("/", $filepath1);
@@ -32,13 +195,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							if (strpos($value, '.') !== false) {
 								
 								$remove1 = array_pop($fileDir1);
-							
+								
 								$file_path1 = implode( '/', $fileDir1 );
 								
 								$fileDetailPath1 = 'uploads/24/SiloSd/'.$file_path1.'/'.$file['name'];
 							}
 						}	
-							
+						
 						$this->db->from('tbl_files');
 						$this->db->where('user_id', stripslashes($post['userid']));
 						$this->db->where('file_name', stripslashes($fileDetailPath1));
@@ -52,24 +215,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							$cnt = 0;
 							
 							foreach($fileDir as $value) {
-
+								
 								if (strpos($value, '.') === false) {
 									if($cnt == 0 ) {
 										
 										if (!is_dir('/uploads/24/SiloSd/'.$value)) {
 											mkdir('./uploads/24/SiloSd/' . $value, 0777, TRUE);
-
+											
 										} 
-									} else {
+										} else {
 										if (!is_dir('/uploads/24/SiloSd/'.$fileDir[$cnt-1]. '/'. $value)) {
 											mkdir('./uploads/24/SiloSd/' .$fileDir[$cnt-1]. '/'. $value, 0777, TRUE);
 										} 
 									}
-								
-								} else {
+									
+									} else {
 									
 									$remove = array_pop($fileDir);
-							
+									
 									$file_path = implode( '/', $fileDir );
 									
 									$fileDetailPath = 'uploads/24/SiloSd/'.$file_path.'/'.$file['name'];									
@@ -83,19 +246,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									
 									if ($this->upload->do_upload($key)) {  
 										$data['upload_data'] = $this->upload->data();
-									
+										
 										$image_path = $data['upload_data']['file_name'];
 										$filedata = array("user_id"=>$post['userid'],
-												  "file_name"=> 'uploads/24/SiloSd/'.$file_path.'/'.$image_path
-												 );
+										"file_name"=> 'uploads/24/SiloSd/'.$file_path.'/'.$image_path
+										);
 										$this->db->insert('tbl_files',$filedata);
 										//echo $this->db->last_query(); die; 
 										$user_id = $this->db->insert_id();
-									
+										
 										$result['status'] = true;
 										
 										/* $result['message'] = "Data uploaded Successfully"; */
-									} else {
+										} else {
 										$error = $this->upload->display_errors();
 										
 										$result['status'] = false;
@@ -105,31 +268,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								$cnt++;
 							}
 							
-						} else {
+							} else {
 							$result['status'] = true;
 							/* $result['message'] = "Recors already exists"; */
 						}
 						$counter++;
 					}	
-				
-				} else {
+					
+					} else {
 					$result['status'] = false;
 					/* $result['message'] = "Failed to upload data."; */
 					
 				}
 				
-			} else {
+				} else {
 				$result['status'] = false;
 			}
 			return $result;
-		}	
+		}
 		
 		public function downloadUserFiles( $post ) {
 			
 			$result = array();
 			$result['data']= array();
 			if( isset( $post['userid'] ) && !empty($post['userid'])) {
-								
+				
 				$this->db->select('file_name');
 				$this->db->from('tbl_files');
 				$this->db->where('user_id', $post['userid']);
@@ -147,11 +310,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					}
 					$result['status'] = true;
 					$result['data'] = $arrFiles; 
-				} else {
+					} else {
 					$result['status'] = false;
 				}	
 				
-			} else {
+				} else {
 				$result['status'] = false;
 			}
 			return $result;
@@ -188,19 +351,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						$arrResult = $query1->row();;
 						$arrDownloadFiles[] = stripslashes($arrResult->file_name);
 						
-					} else {
+						} else {
 						
 						$arrUploadedFiles[] = $value;
 						$result['status'] = true;
 						$result['data']['upload'] = $arrUploadedFiles; 
 					}	
 				}
-			
+				
 				$this->db->select('file_name');
 				$this->db->from('tbl_files');
 				$this->db->where('user_id', $post['userid']);
 				if(!empty($arrDownloadFiles)) {
-				//$this->db->where('file_name NOT IN '. $download );
+					//$this->db->where('file_name NOT IN '. $download );
 					$this->db->where_not_in('file_name', $arrDownloadFiles);
 				}
 				$query1 = $this->db->get(); 
@@ -209,7 +372,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$result['data']['download'] = $query1->result_array(); 
 				
 				
-			} else {
+				} else {
 				$result['status'] = false;
 			}
 			return $result;
@@ -260,26 +423,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				{
 					
 					$data = array("username"=>$username,
-								  "email"=>$email,
-								  "password"=>$password,
-								  "last_ip"=>$last_ip,
-								  "role_id"=>$user_type
-								 );
-								 
+					"email"=>$email,
+					"password"=>$password,
+					"last_ip"=>$last_ip,
+					"role_id"=>$user_type
+					);
+					
 					$this->db->insert('tbl_users',$data);
 					//echo $this->db->last_query(); die; 
 					$user_id = $this->db->insert_id();
 					
 					// Inserting the values in tbl_account_details
 					$data_detail = array("user_id"=>$user_id,
-										 "fullname"=>$name,
-										 "mobile"=>$phone,
-										 "device_id"=>$device_id,
-										 "avatar"=>'uploads/'.$filename									 
-										 );
-										 
+					"fullname"=>$name,
+					"mobile"=>$phone,
+					"device_id"=>$device_id,
+					"avatar"=>'uploads/'.$filename									 
+					);
+					
 					$this->db->insert('tbl_account_details',$data_detail);					 
-                      //echo $this->db->last_query(); 
+					//echo $this->db->last_query(); 
 					$row['status']=true;
 					$row['message']="User Registered Successfully";
 					$row['user_id'] = $user_id;
@@ -305,14 +468,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						$company_mobile = $mcrypt->decrypt(addslashes($post['company_mobile']));
 						
 						$company_array = array("name"=>$company_name,
-											   "phone"=>$company_phone,
-											   "mobile"=>$company_mobile,
-											   "email"=>$company_email
-											  );
-											  
+						"phone"=>$company_phone,
+						"mobile"=>$company_mobile,
+						"email"=>$company_email
+						);
+						
 						$this->db->insert('tbl_client',$company_array);
 						$company_id = $this->db->insert_id();
-                    }
+					}
 					else if($post['company_name']!="" && $post['company_email']=="" && $post['company_phone']=="" && $post['company_mobile']=="")
 					{
 						/// Here in this case the user registers with already existing company
@@ -323,11 +486,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						// IN this case the client registers as a person
 						$company_array = array("name"=>$name,
-											   "phone"=>'',
-											   "mobile"=>$phone,
-											   "email"=>$email
-											  );
-											  
+						"phone"=>'',
+						"mobile"=>$phone,
+						"email"=>$email
+						);
+						
 						$this->db->insert('tbl_client',$company_array);
 						$company_id = $this->db->insert_id();
 					}
@@ -336,32 +499,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					// relating the data to the company id
 					
 					$data = array("username"=>$username,
-								  "email"=>$email,
-								  "password"=>$password,
-								  "last_ip"=>$last_ip,
-								  "role_id"=>$user_type
-								 );
-								 
+					"email"=>$email,
+					"password"=>$password,
+					"last_ip"=>$last_ip,
+					"role_id"=>$user_type
+					);
+					
 					$this->db->insert('tbl_users',$data);
 					$user_id = $this->db->insert_id();
 					
 					// Inserting the values in tbl_account_details
 					$data_detail = array("user_id"=>$user_id,
-										 "fullname"=>$name,
-										 "mobile"=>$phone,
-										 "device_id"=>$device_id,
-										 "avatar"=>'uploads/'.$filename,
-                                         "company"=> $company_id										 
-										 );
-										 
+					"fullname"=>$name,
+					"mobile"=>$phone,
+					"device_id"=>$device_id,
+					"avatar"=>'uploads/'.$filename,
+					"company"=> $company_id										 
+					);
+					
 					$this->db->insert('tbl_account_details',$data_detail);					 
-
+					
 					$row['status']=true;
 					$row['message']="User Registered Successfully";
 					$row['user_id'] = $user_id;
 					
 				}
-
+				
 				
 			}
 			else
@@ -401,13 +564,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			if($login_type==1)
 			{
 				
-			
+				
 			    $username=$mcrypt->decrypt(addslashes($post['username']));
 				$password = $mcrypt->decrypt(addslashes($post['password']));
-					
+				
 				$where = array("a.username"=>$username,
-							   "a.password"=>$password
-							   );
+				"a.password"=>$password
+				);
 				/* ********* Checking the email and password ******** */
 				
 				$this->db->select('a.user_id,a.username,a.role_id,b.fullname,a.email,b.mobile,b.device_id,b.avatar,b.company');
@@ -431,22 +594,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$row = $query->row();
 					if($row->role_id==1)
-						$usertype = "Admin";
+					$usertype = "Admin";
                     else if($row->role_id==2)
-                        $usertype = "Client";
+					$usertype = "Client";
                     else
-                        $usertype="Staff";
+					$usertype="Staff";
 					
 					$data = array("user_id"=>$row->user_id,
-								  "name"=>$row->fullname,
-								  "email"=>$row->email,
-								  "phone"=>$row->mobile,
-								  "profile_image"=>$row->avatar,
-								  "username"=>$row->username,
-								  "user_type"=>$usertype,
-								  "company_id"=>$row->company
-								 );
-								 
+					"name"=>$row->fullname,
+					"email"=>$row->email,
+					"phone"=>$row->mobile,
+					"profile_image"=>$row->avatar,
+					"username"=>$row->username,
+					"user_type"=>$usertype,
+					"company_id"=>$row->company
+					);
+					
 					$result['status']= true;
 					$result['message']= "Success";
 					$result['data']= $data;				
@@ -483,19 +646,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$data1=array("register_type"=>$login_type,"unique_id"=>$unique_id);
 					$this->db->insert('tbl_users',$data1); 
                     $user_id = $this->db->insert_id();
-
+					
                     $data1_detail=array("fullname"=>$name,
-										"device_id"=>$device_id,
-										"avatar"=>$profile_image,
-										"user_id"=>$user_id
-										);
+					"device_id"=>$device_id,
+					"avatar"=>$profile_image,
+					"user_id"=>$user_id
+					);
                     $this->db->insert('tbl_account_details',$data1_detail);	
-
+					
                     // preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image
-							  );					
+					"name" =>$name,
+					"profile_image"=>$profile_image
+					);					
 					
 				}
 				else
@@ -514,9 +677,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					// preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image
-							  );
+					"name" =>$name,
+					"profile_image"=>$profile_image
+					);
 					
 					
 				}
@@ -553,20 +716,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$data1=array("register_type"=>$login_type,"unique_id"=>$unique_id,"email"=>$email);
 					$this->db->insert('tbl_users',$data1);
                     $user_id = $this->db->insert_id();
-
+					
                     $data1_detail=array("fullname"=>$name,
-										"device_id"=>$device_id,
-										"avatar"=>$profile_image,
-										"user_id"=>$user_id
-										); 
+					"device_id"=>$device_id,
+					"avatar"=>$profile_image,
+					"user_id"=>$user_id
+					); 
                     $this->db->insert('tbl_account_details',$data1_detail);	
-
+					
                     // preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image,
-							  "email"=>$email
-							  );										
+					"name" =>$name,
+					"profile_image"=>$profile_image,
+					"email"=>$email
+					);										
 					
 				}
 				else
@@ -585,10 +748,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					// preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image,
-							  "email"=>$email
-							  );
+					"name" =>$name,
+					"profile_image"=>$profile_image,
+					"email"=>$email
+					);
 					
 					
 				}
@@ -624,19 +787,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$data1=array("register_type"=>$login_type,"unique_id"=>$unique_id);
 					$this->db->insert('tbl_users',$data1);
                     $user_id = $this->db->insert_id();
-
+					
                     $data1_detail=array("fullname"=>$name,
-										"device_id"=>$device_id,
-										"profile_image"=>$profile_image,
-										"user_id"=>$user_id
-										); 
+					"device_id"=>$device_id,
+					"profile_image"=>$profile_image,
+					"user_id"=>$user_id
+					); 
                     $this->db->insert('tbl_account_details',$data1_detail);	
-
+					
                     // preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image
-							  );										
+					"name" =>$name,
+					"profile_image"=>$profile_image
+					);										
 					
 				}
 				else
@@ -655,9 +818,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					// preparing the data to be sent to mobile
 					$data = array("user_id"=>$user_id,
-				              "name" =>$name,
-							  "profile_image"=>$profile_image
-							  );
+					"name" =>$name,
+					"profile_image"=>$profile_image
+					);
 					
 				}
 				
@@ -705,10 +868,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				// Updating all the values in tbl_users
 				
 				$update1 = array("username"=>$username,
-				                "password"=>$password,
-								"email" =>$email,
-								"last_ip"=>$last_ip
-								);
+				"password"=>$password,
+				"email" =>$email,
+				"last_ip"=>$last_ip
+				);
 				$this->db->where('user_id',$user_id);
                 $this->db->update('tbl_users',$update1);
 				
@@ -717,14 +880,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				// updating the values in the tbl_account_details
 				
 				$update2 = array("fullname"=>$name,
-				                 "mobile"=>$phone,
-								 "avatar"=>'uploads/'.$filename,
-								 "device_id"=>$device_id
-				                 );
-								 
+				"mobile"=>$phone,
+				"avatar"=>'uploads/'.$filename,
+				"device_id"=>$device_id
+				);
+				
 				$this->db->where('user_id',$user_id);
                 $this->db->update('tbl_account_details',$update2);	
-
+				
                 $result['status']=true;
                 $result['message']= "Profile Updated Successfully";
                 $result['user_id']=$user_id;				
@@ -821,7 +984,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			
 		}
-	
+		
 	    public function saveUserInfoAndMail($post)
 		{
 			require_once dirname(__FILE__) . '/../../libraries/MCrypt.php';
@@ -836,14 +999,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['name'] = $name;
 			
 			$array = array("name"=>$name,
-			               "email"=>$email,
-			               "phone"=>$phone,
-			               "subject"=>$subject,
-			               "message"=>$message
-						   );
-						   
+			"email"=>$email,
+			"phone"=>$phone,
+			"subject"=>$subject,
+			"message"=>$message
+			);
+			
 			$this->db->insert('userEmail_Records',$array);
-
+			
             $insert_id = $this->db->insert_id();
             
             if($insert_id=="" || $insert_id==0)
@@ -874,7 +1037,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$this->load->library('email', $config);
 			$this->email->from($company_email, $company_name);
 			$this->email->to($email);
-
+			
 			$this->email->subject($subject);
 			$this->email->message($message);
 			/*if ($params['resourceed_file'] != '') {
@@ -912,7 +1075,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 		
 		
-	
+		
 	    public function getProjectDetailModel($post)
 		{
 			$project_id = $post['project_id'];
@@ -937,14 +1100,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// creating the array for the project detail
 			
 			$data = array("project_id"=>$row_data->project_id,
-			              "project_name"=>$row_data->project_name,
-			              "progress"=>$row_data->progress,
-			              "start_date"=>$row_data->start_date,
-			              "end_date"=>$row_data->end_date,
-						  "project_cost"=>$row_data->project_cost,
-						  "demo_url"=>$row_data->demo_url,
-						  "project_status"=>$row_data->project_status
-						 );
+			"project_name"=>$row_data->project_name,
+			"progress"=>$row_data->progress,
+			"start_date"=>$row_data->start_date,
+			"end_date"=>$row_data->end_date,
+			"project_cost"=>$row_data->project_cost,
+			"demo_url"=>$row_data->demo_url,
+			"project_status"=>$row_data->project_status
+			);
 			
 			
 			$row['status']= true;
@@ -969,7 +1132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			foreach($row as $data_row)
 			{
 				//decoding the json for participants
-			
+				
 				$part = array_keys(json_decode($data_row->permission,true));
 				
 				$user_ids = implode(",",$part);
@@ -980,11 +1143,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$row_part = $query1->result();// these are the participants for  this bug
 				
 			    $row_data[]=array("bug_id"=>$data_row->bug_id,
-				             "bug_title"=>$data_row->bug_title,
-				             "bug_status"=>$data_row->bug_status,
-				             "priority"=>$data_row->priority,
-							 "assigned_to"=>$row_part
-							);
+				"bug_title"=>$data_row->bug_title,
+				"bug_status"=>$data_row->bug_status,
+				"priority"=>$data_row->priority,
+				"assigned_to"=>$row_part
+				);
 			}
 			
 			$result['status']= true;
@@ -1009,7 +1172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// getting the participants of this bugs
 			
 			$part = array_keys(json_decode($row->permission,true));
-				
+			
 			$user_ids = implode(",",$part); // these  sre the user_id of the users
 			
 			// fetching the name and profile image of the users
@@ -1019,14 +1182,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$row_part = $query1->result();// these are the participants for  this bug
 			
 			$row_data=array("bug_id"=>$row->bug_id,
-								"bug_title"=>$row->bug_title,
-								"bug_status"=>$row->bug_status,
-								"priority"=>$row->priority,
-								"bug_description"=>$row->bug_description,
-								"created_time"=>$row->created_time,
-								"update_time"=>$row->update_time,
-								"participants"=>$row_part
-								);
+			"bug_title"=>$row->bug_title,
+			"bug_status"=>$row->bug_status,
+			"priority"=>$row->priority,
+			"bug_description"=>$row->bug_description,
+			"created_time"=>$row->created_time,
+			"update_time"=>$row->update_time,
+			"participants"=>$row_part
+			);
 			
 			
 			
@@ -1054,7 +1217,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$result['status']= true;
             $result['message'] = "Data fetched Successfully";
             $result['data'] = $query->result();
-
+			
             return $result;			
 			
 		}
@@ -1069,35 +1232,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$mail_comment = $comment;
 			
 			$data = array("user_id"=>$user_id,
-			              "comment"=>$comment,
-						  "bug_id"=>$bug_id
-						 );
-						 
+			"comment"=>$comment,
+			"bug_id"=>$bug_id
+			);
+			
 			$this->db->insert('tbl_task_comment',$data);
-  
+			
             $insert_id = $this->db->insert_id();
             
             if($insert_id!="")
 			{
-				 $result['status']= true;
-				 $result['message']= "Comment Added Successfully";
-				 $result['data']['comment_id'] = $insert_id;
-				 
-				 // inserting the data in the tbl_activities
-			
+				$result['status']= true;
+				$result['message']= "Comment Added Successfully";
+				$result['data']['comment_id'] = $insert_id;
+				
+				// inserting the data in the tbl_activities
+				
 			    $data_activity = array("user"=>$user_id,
-			                       "module"=>"task",
-								   "module_field_id"=>1,
-								   "icon"=>"fa-ticket",
-								   "activity"=>"activity_new_bug_comment",
-								   "value1"=>$comment
-								  );
-								  
+				"module"=>"task",
+				"module_field_id"=>1,
+				"icon"=>"fa-ticket",
+				"activity"=>"activity_new_bug_comment",
+				"value1"=>$comment
+				);
+				
 			    $this->db->insert('tbl_activities',$data_activity);	
-
-            // End Inserting the data in the table activities	
-				 
-				 //Now fetching the BUg data to send  email
+				
+				// End Inserting the data in the table activities	
+				
+				//Now fetching the BUg data to send  email
 				
 				$this->db->select('bug_title,permission');
 				$this->db->from('tbl_bug');
@@ -1140,7 +1303,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$this->email->from($company_email, $company_name);
 					$this->email->to($email);
-
+					
 					$this->email->subject($subject);
 					$this->email->message($message);
 					$send = $this->email->send();
@@ -1148,7 +1311,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				
 				
-				 /* ##################### End Of Mail Sending Code ################# */
+				/* ##################### End Of Mail Sending Code ################# */
 				
 				
 				
@@ -1168,9 +1331,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			// getting the list of the invlices of that company
 			
-		
+			
 			$sql="Select invoices_id,reference_no,due_date,SUBSTR(date_saved, 1, 10) as date_saved,notes
-			      From tbl_invoices  WHERE client_id='$company_id'";
+			From tbl_invoices  WHERE client_id='$company_id'";
 			$query= $this->db->query($sql);
 			$row = $query->result();
 			//echo $this->db->last_query();die;
@@ -1208,17 +1371,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				{
 					$status ="Unpaid";
 				}
-					
+				
 				
 				$data[]=array("invoices_id"=>$data_inv->invoices_id,
-				              "reference_no"=>$data_inv->reference_no,
-				              "date_saved"=>$data_inv->date_saved,
-				              "notes"=>$data_inv->notes,
-				              "total_amount"=>$total_amount,
-				              "paid_amount"=>$paid_amount,
-				              "due_amount"=>$due_amount,
-							  "pay_status"=>$status
-				             );
+				"reference_no"=>$data_inv->reference_no,
+				"date_saved"=>$data_inv->date_saved,
+				"notes"=>$data_inv->notes,
+				"total_amount"=>$total_amount,
+				"paid_amount"=>$paid_amount,
+				"due_amount"=>$due_amount,
+				"pay_status"=>$status
+				);
 				
 			}// end of for each loop
 			
@@ -1282,27 +1445,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			if($status=="all")
 			{
 			    $sql= "Select a.tickets_id,a.ticket_code,a.subject,b.deptname,a.status,SUBSTR(created, 1, 10) as date_saved
-			       FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id and a.reporter='$user_id'";
+				FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id and a.reporter='$user_id'";
 			}
             if($status=="answered")
 			{
 				$sql= "Select a.tickets_id,a.ticket_code,a.subject,b.deptname,a.status,SUBSTR(created, 1, 10) as date_saved
-			       FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='answered' and a.reporter='$user_id'";
+				FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='answered' and a.reporter='$user_id'";
 			}				
             if($status=="in_progress")
 			{
 				$sql= "Select a.tickets_id,a.ticket_code,a.subject,b.deptname,a.status,SUBSTR(created, 1, 10) as date_saved
-			       FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='in_progress' and a.reporter='$user_id'";
+				FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='in_progress' and a.reporter='$user_id'";
 			}
 			if($status=="open")
 			{
 				$sql= "Select a.tickets_id,a.ticket_code,a.subject,b.deptname,a.status,SUBSTR(created, 1, 10) as date_saved
-			       FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='open' and a.reporter='$user_id'";
+				FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='open' and a.reporter='$user_id'";
 			}
 			if($status=="closed")
 			{
 				$sql= "Select a.tickets_id,a.ticket_code,a.subject,b.deptname,a.status,SUBSTR(created, 1, 10) as date_saved
-			       FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='closed' and a.reporter='$user_id'";
+				FROM tbl_tickets  as a INNER JOIN tbl_departments as b ON a.departments_id=b.departments_id WHERE a.status='closed' and a.reporter='$user_id'";
 			}
 			
 			//echo $sql; die;
@@ -1316,8 +1479,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			
 			return $result;
-
-			 
+			
+			
 		}
 		
 		
@@ -1329,25 +1492,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// nOw getting the details of the  tickets
 			
 			$sql= "Select a.ticket_code,a.subject,a.status,a.priority,SUBSTR(a.created, 1, 10) as date_saved,c.deptname,b.fullname
-			        FROM tbl_tickets as a INNER JOIN tbl_account_details as b ON a.reporter=b.user_id
-					INNER JOIN tbl_departments as c on a.departments_id=c.departments_id
-					WHERE a.tickets_id='$tickets_id'"; 
-					
+			FROM tbl_tickets as a INNER JOIN tbl_account_details as b ON a.reporter=b.user_id
+			INNER JOIN tbl_departments as c on a.departments_id=c.departments_id
+			WHERE a.tickets_id='$tickets_id'"; 
+			
 			$query_data = $this->db->query($sql);
             $row_data1 = $query_data->row();
 			
 			$row_data = array("ticket_code"=>$row_data1->ticket_code,
-				                  "subject"=>$row_data1->subject,
-				                  "status"=>$row_data1->status,
-				                  "priority"=>$row_data1->priority,
-				                  "date_saved"=>date('D F Y',strtotime($row_data1->date_saved)),
-				                  "deptname"=>$row_data1->deptname,
-								  "fullname"=>$row_data1->fullname
-								 );
-								 
+			"subject"=>$row_data1->subject,
+			"status"=>$row_data1->status,
+			"priority"=>$row_data1->priority,
+			"date_saved"=>date('D F Y',strtotime($row_data1->date_saved)),
+			"deptname"=>$row_data1->deptname,
+			"fullname"=>$row_data1->fullname
+			);
+			
 			// Now sending all the comments  for the ticket
-
-
+			
+			
             $this->db->select('a.body,b.fullname,b.avatar');			
 			$this->db->from('tbl_tickets_replies as a');
 			$this->db->join('tbl_account_details as b','a.replierid=b.user_id','inner');
@@ -1374,48 +1537,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			// inserting ther data in the tbl_task_attachment
 			
-			 $data_task_attachment = array("user_id"=>$user_id,
-			                               "description"=>$description,
-										   "title"=>$title,
-                                            "bug_id"=>$bug_id										   
-										   );
-										   
+			$data_task_attachment = array("user_id"=>$user_id,
+			"description"=>$description,
+			"title"=>$title,
+			"bug_id"=>$bug_id										   
+			);
+			
 			$this->db->insert('tbl_task_attachment',$data_task_attachment);							   
-										   
+			
 			$attachment_id = $this->db->insert_id();
-
-
+			
+			
             // Now inserting the data in the tbl_task_uploaded_files
             
 			$up_path = $_SERVER['DOCUMENT_ROOT']; 
             $data_upload = array("task_attachment_id"=>$attachment_id,
-			                      "files"=>'uploads/'.$filename,
-			                      "uploaded_path"=>$up_path.'/uploads/'.$filename,
-			                      "file_name"=>$filename,
-			                      "size"=>$filesize,
-			                      "ext"=>'jpg',
-			                      "is_image"=>1,
-			                      "image_width"=>$width,
-			                      "image_height"=>$height
-								  );
-								  
+			"files"=>'uploads/'.$filename,
+			"uploaded_path"=>$up_path.'/uploads/'.$filename,
+			"file_name"=>$filename,
+			"size"=>$filesize,
+			"ext"=>'jpg',
+			"is_image"=>1,
+			"image_width"=>$width,
+			"image_height"=>$height
+			);
+			
 			$this->db->insert('tbl_task_uploaded_files',$data_upload);					  
-			 
+			
 			$insert_id = $this->db->insert_id();
 			
 			
 			// inserting the data in the tbl_activities
 			
 			$data_activity = array("user"=>$user_id,
-			                       "module"=>"bug",
-								   "module_field_id"=>1,
-								   "icon"=>"fa-ticket",
-								   "activity"=>"activity_new_bug_attachment",
-								   "value1"=>$title
-								  );
-								  
+			"module"=>"bug",
+			"module_field_id"=>1,
+			"icon"=>"fa-ticket",
+			"activity"=>"activity_new_bug_attachment",
+			"value1"=>$title
+			);
+			
 			$this->db->insert('tbl_activities',$data_activity);	
-
+			
             // End Inserting the data in the table activities	
 			
 			if($insert_id!="")
@@ -1438,7 +1601,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				// getting the participants of this bugs
 				
 				$part = array_keys(json_decode($row_bug->permission,true));
-					
+				
 				$user_ids = implode(",",$part); // these  sre the user_id of the users
 				
 				// fetching the Email id Of the users
@@ -1473,7 +1636,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$this->email->from($company_email, $company_name);
 					$this->email->to($email);
-
+					
 					$this->email->subject($subject);
 					$this->email->message($message);
 					$send = $this->email->send();
@@ -1481,7 +1644,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				
 				
-				 /* ##################### End Of Mail Sending Code ################# */
+				/* ##################### End Of Mail Sending Code ################# */
 			}
 			else
 			{
@@ -1495,7 +1658,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			
 		}
-	
+		
 	    public function getProjectCommentsListModel($post)
 		{
 			$project_id = $post['project_id'];
@@ -1503,17 +1666,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// getting the comments from tbl_task_comment
 			
 			$sql = "Select a.comment,SUBSTR(a.comment_datetime,1,10) as date_saved,b.fullname,b.avatar
-			        FROM tbl_task_comment as a INNER JOIN tbl_account_details as b on a.user_id=b.user_id
-					WHERE a.project_id='$project_id'";
-					
+			FROM tbl_task_comment as a INNER JOIN tbl_account_details as b on a.user_id=b.user_id
+			WHERE a.project_id='$project_id'";
+			
 			$query = $this->db->query($sql);
-
+			
             $row = $query->result();
-
+			
             $result['status']= true;
             $result['message']="Data Fetched Successfully";
             $result['data'] =  $row;
-
+			
             return $result;			
 		}
 		
@@ -1528,13 +1691,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// first saving the data in the tbl_task_comment
 			
 			$data_comment = array("user_id"=>$user_id,
-			                      "project_id"=>$project_id,
-								  "comment"=>$comment
-			                      );
+			"project_id"=>$project_id,
+			"comment"=>$comment
+			);
 			$this->db->insert('tbl_task_comment',$data_comment);
-
+			
             $comment_id = $this->db->insert_id();
-
+			
             if($comment_id!="")
 			{
 				$result['status']= true;
@@ -1543,18 +1706,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				
 				// inserting the data in the tbl_activities
-			
-			$data_activity = array("user"=>$user_id,
-			                       "module"=>"project",
-								   "module_field_id"=>2,
-								   "icon"=>"fa-ticket",
-								   "activity"=>"activity_new_project_comment",
-								   "value1"=>$comment
-								  );
-								  
-			$this->db->insert('tbl_activities',$data_activity);	
-
-            // End Inserting the data in the table activities	
+				
+				$data_activity = array("user"=>$user_id,
+				"module"=>"project",
+				"module_field_id"=>2,
+				"icon"=>"fa-ticket",
+				"activity"=>"activity_new_project_comment",
+				"value1"=>$comment
+				);
+				
+				$this->db->insert('tbl_activities',$data_activity);	
+				
+				// End Inserting the data in the table activities	
 				
 				
 				//Now fetching the project data
@@ -1591,7 +1754,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$message = '<p>Hi There,</p><p>A new comment has been posted by <strong>{POSTED_BY}</strong> to project <strong>{PROJECT_NAME}</strong>.</p><p>You can view the comment using the link below:<br /><big><a href="{COMMENT_URL}"><strong>View Project</strong></a></big><br /><br /><em>'.$mail_comment.'</em><br /><br />Best Regards,<br />The {SITE_NAME} Team</p>';
 					$projectName = str_replace("{PROJECT_NAME}",$project_name,$message);
-
+					
 					$assigned_by = str_replace("{POSTED_BY}", ucfirst($commented_by), $projectName);
                     $Link = str_replace("{COMMENT_URL}", base_url() . 'admin/project/project_details/' . $project_id . '/' . '3', $assigned_by);
                     $comments = str_replace("{COMMENT_MESSAGE}",$mail_comment,$Link);
@@ -1601,7 +1764,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$this->email->from($company_email, $company_name);
 					$this->email->to($email);
-
+					
 					$this->email->subject($subject);
 					$this->email->message($message);
 					$send = $this->email->send();
@@ -1609,7 +1772,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				
 				
-				 /* ##################### End Of Mail Sending Code ################# */
+				/* ##################### End Of Mail Sending Code ################# */
 				
 			}
             else
@@ -1618,8 +1781,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$result['message'] = "Comment Not Posted , Please Try Again";
 				$result['data'] = $insert_id;
 			}
-
-
+			
+			
             return $result;			
 			
 			
@@ -1636,33 +1799,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			// inserting ther data in the tbl_task_attachment
 			
-			 $data_task_attachment = array("user_id"=>$user_id,
-			                               "description"=>$description,
-										   "title"=>$title,
-                                            "project_id"=>$project_id										   
-										   );
-										   
+			$data_task_attachment = array("user_id"=>$user_id,
+			"description"=>$description,
+			"title"=>$title,
+			"project_id"=>$project_id										   
+			);
+			
 			$this->db->insert('tbl_task_attachment',$data_task_attachment);							   
-										   
+			
 			$attachment_id = $this->db->insert_id();
-
-
+			
+			
             // Now inserting the data in the tbl_task_uploaded_files
             
 			$up_path = $_SERVER['DOCUMENT_ROOT']; 
             $data_upload = array("task_attachment_id"=>$attachment_id,
-			                      "files"=>'uploads/'.$filename,
-			                      "uploaded_path"=>$up_path.'/uploads/'.$filename,
-			                      "file_name"=>$filename,
-			                      "size"=>$filesize,
-			                      "ext"=>'jpg',
-			                      "is_image"=>1,
-			                      "image_width"=>$width,
-			                      "image_height"=>$height
-								  );
-								  
+			"files"=>'uploads/'.$filename,
+			"uploaded_path"=>$up_path.'/uploads/'.$filename,
+			"file_name"=>$filename,
+			"size"=>$filesize,
+			"ext"=>'jpg',
+			"is_image"=>1,
+			"image_width"=>$width,
+			"image_height"=>$height
+			);
+			
 			$this->db->insert('tbl_task_uploaded_files',$data_upload);					  
-			 
+			
 			$insert_id = $this->db->insert_id();
 			
 			if($insert_id!="")
@@ -1673,18 +1836,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				
 				// inserting the data in the tbl_activities
-			
+				
 				$data_activity = array("user"=>$user_id,
-									   "module"=>"project",
-									   "module_field_id"=>2,
-									   "icon"=>"fa-ticket",
-									   "activity"=>"activity_new_project_attachment",
-									   "value1"=>$title
-									  );
-									  
+				"module"=>"project",
+				"module_field_id"=>2,
+				"icon"=>"fa-ticket",
+				"activity"=>"activity_new_project_attachment",
+				"value1"=>$title
+				);
+				
 				$this->db->insert('tbl_activities',$data_activity);	
-
-            // End Inserting the data in the table activities
+				
+				// End Inserting the data in the table activities
 				
 				
 				
@@ -1700,7 +1863,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				// getting the participants of this bugs
 				
 				$part = array_keys(json_decode($row_bug->permission,true));
-					
+				
 				$user_ids = implode(",",$part); // these  sre the user_id of the users
 				
 				// fetching the Email id Of the users
@@ -1735,7 +1898,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$this->email->from($company_email, $company_name);
 					$this->email->to($email);
-
+					
 					$this->email->subject($subject);
 					$this->email->message($message);
 					$send = $this->email->send();
@@ -1743,7 +1906,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				
 				
-				 /* ##################### End Of Mail Sending Code ################# */
+				/* ##################### End Of Mail Sending Code ################# */
 			}
 			else
 			{
@@ -1767,14 +1930,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			// Inserting the data in the tbl_ticket_replies
 			$data_comment = array("tickets_id"=>$tickets_id,
-			                      "body"=>$body,
-                                  "replierid"=>$user_id								   
-			                      );
-								  
+			"body"=>$body,
+			"replierid"=>$user_id								   
+			);
+			
 			$this->db->insert('tbl_tickets_replies',$data_comment);
             //echo $this->db->last_query();die;
             $comment_id = $this->db->insert_id();
-
+			
             if($comment_id!="")
 			{
 				$result['status']= true;
@@ -1795,7 +1958,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				if($row_ticket->permission!="all")
 				{
 					$part = array_keys(json_decode($row_ticket->permission,true));
-						
+					
 					$user_ids = implode(",",$part); // these  sre the user_id of the users
 					
 					// fetching the Email id Of the users
@@ -1828,7 +1991,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						$this->email->from($company_email, $company_name);
 						$this->email->to($email);
-
+						
 						$this->email->subject($subject);
 						$this->email->message($message);
 						$send = $this->email->send();
@@ -1836,8 +1999,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					}
 					
 					
-					 /* ##################### End Of Mail Sending Code ################# */
-				
+					/* ##################### End Of Mail Sending Code ################# */
+					
 				}
 				
 			}
@@ -1847,7 +2010,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$result['message'] = "Comment Not Posted , Please try Again";
 				$result['data'] = $comment_id;
 			}
-
+			
             return $result;			
 			
 		}
@@ -1859,16 +2022,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			if($payment_status=="Success")
 			{
                 $data = array("invoices_id"=>$invoice_number,
-			               "trans_id"=>$transaction_id,
-			               "payer_email"=>$payer_email, 
-			               "amount"=>$amount,
-			               "payment_method"=>6, 
-			               "currency"=>$currency,
-                           "payment_date"=>date('Y-m-d'),
-                           "month_paid"=>date('m'),
-                           "year_paid"=>date('Y'),
-                           "paid_by"=>$user_id						   
-			               );
+				"trans_id"=>$transaction_id,
+				"payer_email"=>$payer_email, 
+				"amount"=>$amount,
+				"payment_method"=>6, 
+				"currency"=>$currency,
+				"payment_date"=>date('Y-m-d'),
+				"month_paid"=>date('m'),
+				"year_paid"=>date('Y'),
+				"paid_by"=>$user_id						   
+				);
                 $this->db->insert('tbl_payments',$data);
 				
 				//echo $this->db->last_query();
@@ -1877,9 +2040,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$updated = array("status"=>"Paid");
 				$this->db->where('invoices_id',$invoice_number);
 				$this->db->update('tbl_invoices',$updated);
-
-            }
-			 
+				
+			}
+			
 			return true;
 			
 		}
@@ -1917,24 +2080,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$row_data1 = $query_data->row();
 			
 			$row_data = array("project_name"=>$row_data1->project_name,
-			                  "task_name"=>$row_data1->task_name,
-			                  "task_description"=>$row_data1->task_description,
-			                  "task_start_date"=>$row_data1->task_start_date,
-			                  "due_date"=>$row_data1->due_date,
-			                  "task_status"=>$row_data1->task_status,
-			                  "task_progress"=>$row_data1->task_progress,
-			                  "task_hour"=>$row_data1->task_hour,
-			                  "timer_status"=>$row_data1->timer_status,
-			                  "task_created_date"=>date('Y-m-d',strtotime($row_data1->task_created_date)),
-			                  "fullname"=>$row_data1->fullname
-			                  );
+			"task_name"=>$row_data1->task_name,
+			"task_description"=>$row_data1->task_description,
+			"task_start_date"=>$row_data1->task_start_date,
+			"due_date"=>$row_data1->due_date,
+			"task_status"=>$row_data1->task_status,
+			"task_progress"=>$row_data1->task_progress,
+			"task_hour"=>$row_data1->task_hour,
+			"timer_status"=>$row_data1->timer_status,
+			"task_created_date"=>date('Y-m-d',strtotime($row_data1->task_created_date)),
+			"fullname"=>$row_data1->fullname
+			);
 			
 			
 			// now  getting the list of  persons  to whom task is assigned
 			if($row_data1->permission!="all")
 			{
 				$part = array_keys(json_decode($row_data1->permission,true));
-						
+				
 				$user_ids = implode(",",$part); // these  sre the user_id of the users
 				
 				// fetching the Email id Of the users
@@ -1963,10 +2126,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$task_id = $post['task_id'];
 			
 			$sql = "SELECT a.comment,SUBSTR('a.comment_datetime',1,10) as save_date ,b.fullname,b.avatar
-			        FROM tbl_task_comment as a
-					INNER JOIN tbl_account_details as b ON a.user_id=b.user_id
-					WHERE a.task_id='$task_id'";
-					
+			FROM tbl_task_comment as a
+			INNER JOIN tbl_account_details as b ON a.user_id=b.user_id
+			WHERE a.task_id='$task_id'";
+			
 			$query = $this->db->query($sql);
             $row = $query->result();
 			
@@ -1984,7 +2147,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$result['data']= $row;
 			
 			return $result;
-             			
+			
 		}
 		
 		public function saveNewTaskCommentModel($post)
@@ -1996,10 +2159,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			
 			$data_comment=array("task_id"=>$task_id,
-			                    "user_id"=>$user_id,
-								"comment"=>$comment,
-							   );
-							   
+			"user_id"=>$user_id,
+			"comment"=>$comment,
+			);
+			
 			$this->db->insert('tbl_task_comment',$data_comment);
             $comment_id = $this->db->insert_id();
 			
@@ -2011,18 +2174,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				
 				// inserting the data in the tbl_activities
-			
+				
 				$data_activity = array("user"=>$user_id,
-									   "module"=>"tasks",
-									   "module_field_id"=>2,
-									   "icon"=>"fa-ticket",
-									   "activity"=>"activity_new_task_comment",
-									   "value1"=>$comment
-									  );
-									  
+				"module"=>"tasks",
+				"module_field_id"=>2,
+				"icon"=>"fa-ticket",
+				"activity"=>"activity_new_task_comment",
+				"value1"=>$comment
+				);
+				
 				$this->db->insert('tbl_activities',$data_activity);	
-
-            // End Inserting the data in the table activities
+				
+				// End Inserting the data in the table activities
 				
 				// getting the users of the tasks 
 				
@@ -2036,7 +2199,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				if($row_user->permission!="all")
 				{
 					$part = array_keys(json_decode($row_user->permission,true));
-						
+					
 					$user_ids = implode(",",$part); // these  sre the user_id of the users
 					
 					// fetching the Email id Of the users
@@ -2070,7 +2233,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						$this->email->from($company_email, $company_name);
 						$this->email->to($email);
-
+						
 						$this->email->subject($subject);
 						$this->email->message($message);
 						$send = $this->email->send();
@@ -2078,8 +2241,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					}
 					
 					
-					 /* ##################### End Of Mail Sending Code ################# */
-				
+					/* ##################### End Of Mail Sending Code ################# */
+					
 				}
 				
 				
@@ -2093,7 +2256,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 			
 			return $result;
-         			
+			
 		}
 		
 		
@@ -2107,48 +2270,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			// inserting ther data in the tbl_task_attachment
 			
-			 $data_task_attachment = array("user_id"=>$user_id,
-			                               "description"=>$description,
-										   "title"=>$title,
-                                            "task_id"=>$task_id										   
-										   );
-										   
+			$data_task_attachment = array("user_id"=>$user_id,
+			"description"=>$description,
+			"title"=>$title,
+			"task_id"=>$task_id										   
+			);
+			
 			$this->db->insert('tbl_task_attachment',$data_task_attachment);							   
-										   
+			
 			$attachment_id = $this->db->insert_id();
-
-
+			
+			
             // Now inserting the data in the tbl_task_uploaded_files
             
 			$up_path = $_SERVER['DOCUMENT_ROOT']; 
             $data_upload = array("task_attachment_id"=>$attachment_id,
-			                      "files"=>'uploads/'.$filename,
-			                      "uploaded_path"=>$up_path.'/uploads/'.$filename,
-			                      "file_name"=>$filename,
-			                      "size"=>$filesize,
-			                      "ext"=>'jpg',
-			                      "is_image"=>1,
-			                      "image_width"=>$width,
-			                      "image_height"=>$height
-								  );
-								  
+			"files"=>'uploads/'.$filename,
+			"uploaded_path"=>$up_path.'/uploads/'.$filename,
+			"file_name"=>$filename,
+			"size"=>$filesize,
+			"ext"=>'jpg',
+			"is_image"=>1,
+			"image_width"=>$width,
+			"image_height"=>$height
+			);
+			
 			$this->db->insert('tbl_task_uploaded_files',$data_upload);					  
-			 
+			
 			$insert_id = $this->db->insert_id();
 			
 			
 			// inserting the data in the tbl_activities
 			
 			$data_activity = array("user"=>$user_id,
-			                       "module"=>"task",
-								   "module_field_id"=>3,
-								   "icon"=>"fa-ticket",
-								   "activity"=>"activity_new_task_attachment",
-								   "value1"=>$title
-								  );
-								  
+			"module"=>"task",
+			"module_field_id"=>3,
+			"icon"=>"fa-ticket",
+			"activity"=>"activity_new_task_attachment",
+			"value1"=>$title
+			);
+			
 			$this->db->insert('tbl_activities',$data_activity);	
-
+			
             // End Inserting the data in the table activities			
 			
 			if($insert_id!="")
@@ -2171,7 +2334,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				// getting the participants of this bugs
 				
 				$part = array_keys(json_decode($row_bug->permission,true));
-					
+				
 				$user_ids = implode(",",$part); // these  sre the user_id of the users
 				
 				// fetching the Email id Of the users
@@ -2206,7 +2369,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					$this->email->from($company_email, $company_name);
 					$this->email->to($email);
-
+					
 					$this->email->subject($subject);
 					$this->email->message($message);
 					$send = $this->email->send();
@@ -2214,7 +2377,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				
 				
-				 /* ##################### End Of Mail Sending Code ################# */
+				/* ##################### End Of Mail Sending Code ################# */
 			}
 			else
 			{
@@ -2240,19 +2403,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			foreach($row as $temp_row)
 			{
 				if($temp_row->activity=="activity_new_bug")
-					$act = "Activity New Bug Added";
+				$act = "Activity New Bug Added";
 				else if($temp_row->activity=="activity_update_bug")
-				    $act = "Activity Bug Updated";
+				$act = "Activity Bug Updated";
 				else if($temp_row->activity=="activity_new_bug_comment")
-                    $act = "Activity Bug New Comment";
+				$act = "Activity Bug New Comment";
                 else
-                    $act ="Activity Attach New Files";					
-				   
-				 $data[]=array("activity"=>$act,
-				               "value1"=>$temp_row->value1,
-							   "fullname"=>$temp_row->fullname,
-							   "avatar"=>$temp_row->avatar
-							   );
+				$act ="Activity Attach New Files";					
+				
+				$data[]=array("activity"=>$act,
+				"value1"=>$temp_row->value1,
+				"fullname"=>$temp_row->fullname,
+				"avatar"=>$temp_row->avatar
+				);
 			}
 			
 			$result['status'] = true;
@@ -2277,19 +2440,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			foreach($row as $temp_row)
 			{
 				if($temp_row->activity=="activity_save_project")
-					$act = "Activity New Project Added";
+				$act = "Activity New Project Added";
 				else if($temp_row->activity=="activity_update_project")
-				    $act = "Activity Project Updated";
+				$act = "Activity Project Updated";
 				else if($temp_row->activity=="activity_new_project_comment")
-                    $act = "Activity Project New Comment";
+				$act = "Activity Project New Comment";
                 else
-                    $act ="Activity Attach New Files";					
-				   
-				 $data[]=array("activity"=>$act,
-				               "value1"=>$temp_row->value1,
-							   "fullname"=>$temp_row->fullname,
-							   "avatar"=>$temp_row->avatar
-							   );
+				$act ="Activity Attach New Files";					
+				
+				$data[]=array("activity"=>$act,
+				"value1"=>$temp_row->value1,
+				"fullname"=>$temp_row->fullname,
+				"avatar"=>$temp_row->avatar
+				);
 			}
 			
 			$result['status'] = true;
@@ -2304,9 +2467,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		{
 			$company_id = $post['company_id'];
 			$sql="Select a.name,b.invoices_id from tbl_client as a 
-			         INNER JOIN  tbl_invoices as b ON a.client_id=b.client_id 
-					 INNER JOIN tbl_payments as c ON b.invoices_id=c.invoices_id
-					 WHERE a.client_id='$company_id'";
+			INNER JOIN  tbl_invoices as b ON a.client_id=b.client_id 
+			INNER JOIN tbl_payments as c ON b.invoices_id=c.invoices_id
+			WHERE a.client_id='$company_id'";
 			//echo $sql;die;
 			$query_main = $this->db->query($sql);
 			$row_main = $query_main->result();
@@ -2333,16 +2496,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				//echo $sql_payment; die;
 				$query_pay = $this->db->query($sql_payment);
 				$row_sum = $query_pay->row();
-			
+				
 				
 				$data[]=array("client_name"=>$data_pay->name,
-				              "total_amount"=>$invoice_amount,
-				              "transaction_id"=>$row_sum->trans_id, 
-				              "pay_date"=>$row_sum->payment_date,
-							  "currency"=>$row_sum->currency,
-							  "invoices_id"=>$invoice_id
+				"total_amount"=>$invoice_amount,
+				"transaction_id"=>$row_sum->trans_id, 
+				"pay_date"=>$row_sum->payment_date,
+				"currency"=>$row_sum->currency,
+				"invoices_id"=>$invoice_id
 				
-				             );
+				);
 				
 				
 			}// end of for each loop
@@ -2373,19 +2536,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$row_main = $query->row();
 			
 			$data_main = array("invoices_id"=>$row_main->invoices_id,
-			                   "reference_no"=>$row_main->reference_no,
-			                   "notes"=>$row_main->notes,
-			                   "total_cost"=>$row_main->total_cost,
-			                   "client_name"=>$row_main->name,
-			                   "trans_id"=>$row_main->trans_id,
-			                   "amount"=>$row_main->amount,
-			                   "currency"=>$row_main->currency,
-			                   "amount"=>$row_main->amount,
-			                   "payment_date"=>$row_main->payment_date,
-							   "payment_method"=>$row_main->method_name
-							   
-			                   );
-							   
+			"reference_no"=>$row_main->reference_no,
+			"notes"=>$row_main->notes,
+			"total_cost"=>$row_main->total_cost,
+			"client_name"=>$row_main->name,
+			"trans_id"=>$row_main->trans_id,
+			"amount"=>$row_main->amount,
+			"currency"=>$row_main->currency,
+			"amount"=>$row_main->amount,
+			"payment_date"=>$row_main->payment_date,
+			"payment_method"=>$row_main->method_name
+			
+			);
+			
 		 	// Getting the cmpany Name and address
 			
 			$sql_company = "Select * from tbl_config where config_key IN('company_address','company_logo','company_name')";
@@ -2393,11 +2556,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$row_company = 	$query_company->result();
 			
 			$company = array($row_company[0]->config_key=>$row_company[0]->value,
-			                 $row_company[1]->config_key=>$row_company[1]->value,
-							 $row_company[2]->config_key=>$row_company[2]->value,
-							);
+			$row_company[1]->config_key=>$row_company[1]->value,
+			$row_company[2]->config_key=>$row_company[2]->value,
+			);
 			
-
+			
             
             $result['status']= true;
             $result['message']="Data Getched Successfully";
@@ -2405,10 +2568,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $result['data']['company'] = $company;
 			
 			return $result;
-            			
-							   
-							   
-							   
+			
+			
+			
+			
 		}
 		
 		
@@ -2427,42 +2590,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// Now saving theese information in tbl_paymetns
 			
 			$data = array("invoices_id"=>$invoice_id,
-			              "trans_id"=>$transaction_id,
-			              "payer_email"=>$user_email,
-			              "payment_method"=>$payment_method,
-			              "amount"=>$amount,
-			              "currency"=>$currency,
-			              "notes"=>$description,
-			              "month_paid"=>date('m'),
-						  "year_paid"=>date('Y'),
-						  "paid_by"=>$user_id,
-						  "payment_date"=>date('Y-m-d')
-			              );
-						  
-						  
+			"trans_id"=>$transaction_id,
+			"payer_email"=>$user_email,
+			"payment_method"=>$payment_method,
+			"amount"=>$amount,
+			"currency"=>$currency,
+			"notes"=>$description,
+			"month_paid"=>date('m'),
+			"year_paid"=>date('Y'),
+			"paid_by"=>$user_id,
+			"payment_date"=>date('Y-m-d')
+			);
+			
+			
 			$this->db->insert('tbl_payments',$data);
-
+			
             $insert_id = $this->db->insert_id();
             
-             if($insert_id!="")
-			 {
-				 $result['status']=true;
-				 $result['message']= "Payment Made Successfully";
-				 $result['data']= $insert_id;
-			 }
-             else
-			 {
-				 $result['status']=false;
-				 $result['message']= "Payment Information Not Saved";
-				 $result['data']= 0;
-			 }
-
+			if($insert_id!="")
+			{
+				$result['status']=true;
+				$result['message']= "Payment Made Successfully";
+				$result['data']= $insert_id;
+			}
+			else
+			{
+				$result['status']=false;
+				$result['message']= "Payment Information Not Saved";
+				$result['data']= 0;
+			}
+			
             return $result;			 
-						  
+			
 			
 		}
-	   
-	
-	
+		
+		
+		
+		public function hash($string) {
+			return hash('sha512', $string . config_item('encryption_key'));
+		}
+		
+		
+		
 	}//End Of class
 ?>

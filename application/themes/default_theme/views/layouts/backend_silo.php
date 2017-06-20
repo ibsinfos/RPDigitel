@@ -32,6 +32,9 @@
 		
         <!-- Custom Theme Style -->
         <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
+        <?php if ($page == 'cloud_storage') { ?>
+        <link href="<?php echo backend_asset_url() ?>build/css/elfinder.css" rel="stylesheet">
+        <?php } ?>
         <?php if ($page == 'project_list') { ?>
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -129,6 +132,10 @@
 		<?php }?>
         <!-- Custom Scrollbar Scripts -->
         <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <?php if($page=="cloud_storage"){?>
+        <!-- elfinder Scripts -->
+        <script data-main="<?php echo backend_asset_url()?>elfinder/main.default.js" src="<?php echo backend_asset_url()?>elfinder/require.min.js"></script>
+        <?php }?>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
         <!-- Custom Scripts -->
