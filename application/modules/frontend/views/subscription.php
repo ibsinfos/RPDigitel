@@ -136,6 +136,7 @@
 																}
 																
 																}else{
+																unset($plan_purchased_flag);
 																// plan_purchased_flag unset
 															}
 															

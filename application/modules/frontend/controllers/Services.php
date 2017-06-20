@@ -10,7 +10,30 @@ class Services extends CI_Controller {
 			parent::__construct();		
 		}	
 		
-		public function syncUserFiles()	{		
+		public function loginUser()	{
+			// echo '<pre/>';
+			// print_r($_POST);
+			// die;
+			
+			$this->load->model('Webservices_model');
+			$data = $this->Webservices_model->loginUser($this->input->post());
+			echo json_encode($data);
+			
+		}
+		
+		
+		public function registerUser()	{
+			// echo '<pre/>';
+			// print_r($_POST);
+			// die;
+			
+			$this->load->model('Webservices_model');
+			$data = $this->Webservices_model->registerUser($this->input->post());
+			echo json_encode($data);
+			
+		}
+		
+		public function syncUserFiles()	{
 			/*echo '<pre/>';		
 			print_r($_POST);	
 			$filepath = trim($_POST['path'],'[,],",/');
