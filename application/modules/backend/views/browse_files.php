@@ -5,28 +5,23 @@
 			<div class="x_panel">
 				<div class="x_title">
 					<h2>Browse Files</h2>
-					<!--ul class="nav navbar-right panel_toolbox">
-						<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-						</li>
-						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-						<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Settings 1</a>
-						</li>
-						<li><a href="#">Settings 2</a>
-						</li>
-						</ul>
-						</li>
-						<li><a class="close-link"><i class="fa fa-close"></i></a>
-						</li>
-					</ul-->
 					<div class="clearfix"></div>
 				</div>
 				<div class="x_content">
-					<div class="row">
-						<div class=""></div>
-					</div>
-					
+					<ul class="list-unstyled row storageBtnWrap">
+						<li class="col-xs-12 col-sm-4 col-sm-offset-2">
+							<a href="" class="panel">
+                				<img src="<?php echo backend_asset_url() ?>images/services/sidoSD.png" alt="sidoSD">
+                				<p>SD Storage</p>
+                			</a>
+						</li>
+						<li class="col-xs-12 col-sm-4">
+							<a href="<?php echo base_url() ?>cloud-storage" class="panel">
+                				<img src="<?php echo backend_asset_url() ?>images/services/silo-cloud.png" alt="silo-cloud">
+                				<p>Cloud / Hosting Storage</p>
+                			</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

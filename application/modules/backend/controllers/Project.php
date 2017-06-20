@@ -206,7 +206,7 @@
 			
 			$this->template->set('page', 'cloud_storage');
 			$this->template->set_theme('default_theme');
-			$this->template->set_layout('elfinder')
+			$this->template->set_layout('backend_silo')
 			->title('Cloud Storage | Silo')
 			->set_partial('header', 'partials/header')
 			->set_partial('sidebar', $this->sidebar)
