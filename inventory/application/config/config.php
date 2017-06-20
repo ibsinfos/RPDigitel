@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/RPDigitel/inventory/';
+$config['base_url'] = 'http://54.212.235.115/RPDigitel/inventory/';
 
 /*
 |--------------------------------------------------------------------------

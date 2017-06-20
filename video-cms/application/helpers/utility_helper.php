@@ -7,7 +7,7 @@ if (!function_exists('master_url()')) {
 	
     function master_url()
     {
-        return 'http://localhost/RPDigitel/';
+        return 'http://54.212.235.115/RPDigitel/';
     }
 
 }
