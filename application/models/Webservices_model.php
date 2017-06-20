@@ -13,14 +13,26 @@
 			if(!empty($this->input->post('username')) && !empty($this->input->post('password'))) {
 				
 				
-				$where=array("username"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
-				// $where=array("username"=>$_POST['username'],"password"=>'b19404464f17034bcb6609779a47d22a0288432a903d0830087a12573e5af4b309827790d16eac7d5b126a26dc2bf39f72f5fcab9c4e0fc0b298fb3456def4d1');
-				// $where="username='".$_POST['username']."' and password='".md5($_POST['password'])."'";
+				// $where=array("username"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
+				
+				// $where2=array("mail_address"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
 				
 				
-				$this->db->where($where);
-				$this->db->select('user_id,first_name,last_name,phone_no,email_address,username');
-				$sel_user=$this->db->get('membership');
+				// $where1=array("username"=>$this->input->post('username'));
+				// $where2=array("password"=>$this->hash($this->input->post('password')));
+				// $where3=array("mail_address"=>$this->input->post('username'));
+				
+				// $this->db->where($where2);
+				// $this->db->where($where1);
+				// $this->db->or_where($where3);
+				// $this->db->select('user_id,first_name,last_name,phone_no,email_address,username');
+				// $sel_user=$this->db->get('membership');
+				
+				
+				
+				$sel_user=$this->db->query("SELECT `user_id`, `first_name`, `last_name`, `phone_no`, `email_address`, `username`
+				FROM (`membership`) WHERE password ='".$this->hash($this->input->post('password'))."' AND (username ='".$this->input->post('username')."' OR email_address='".$this->input->post('username')."')");
+				
 				
 				if($sel_user->num_rows>0){
 					
@@ -153,7 +165,7 @@
 					
 					/*register with paasport end*/
 					
-					$result['data']=array('user_id'=>$user_id);
+					$result['data']=array('user_id'=>$membership_user_id);
 					$result['status']=true;
 					
 				}
