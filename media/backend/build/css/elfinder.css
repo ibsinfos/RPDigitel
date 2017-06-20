@@ -13,13 +13,12 @@
 .ui-button, 
 html .ui-button.ui-state-disabled:hover, 
 html .ui-button.ui-state-disabled:active,
+.elfinder .elfinder-cwd table thead td.ui-state-active,
 .elfinder-cwd table tr:nth-child(odd){
 	background: transparent !important;
 }
 .elfinder-navbar .ui-state-hover,
-.elfinder-cwd table tr.ui-state-hover,
-.elfinder .elfinder-cwd table thead td.ui-state-active,
-.elfinder-cwd table thead td.ui-state-hover {
+.elfinder-cwd table tr.ui-state-hover {
 	background: #212936 !important;
     border-color: #212936 !important;
     color: #fff !important;
