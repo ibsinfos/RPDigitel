@@ -53,7 +53,10 @@ Class Login extends MX_Controller {
         $map['error'] = '';
         $user = array();
         $user = $this->membership_model->get_user_role();
-        $query_result = $this->membership_model->validate_user($user['role']);
+        
+	 	$query_result = $this->membership_model->validate_user($user['role']);
+		      $_SESSION['user_name'] = $query_result;
+		
         $paasportUser = $this->membership_model->get_paasport_user($user['paasport_user_id']);
         $user_name = $query_result;
         if (!empty($paasportUser)) {
@@ -61,6 +64,8 @@ Class Login extends MX_Controller {
                 $user_name = $paasportUser->first_name;
             }
         }
+
+		
 
         // print_r($user);
         // die('sd');
@@ -116,12 +121,11 @@ Class Login extends MX_Controller {
             /**/
             $passport_user_slug = $this->membership_model->get_paasport_slug($user['paasport_user_id']);
 
+       
             /**/
             if (!isset($_SESSION)) {
                 session_start();
             }
-            $_SESSION['user_name'] = $user_name;
-
             $_SESSION['password'] = $this->membership_model->hash($this->input->post('password'));
 
             /* Session set to access paasport dashboard Start */

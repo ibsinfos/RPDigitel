@@ -1123,7 +1123,17 @@ table.tile_info td p {
     position: absolute;
     margin: 5px;
 }
-
+.storageBtnWrap li>a {
+    display: block;
+    background-color: #404042;
+    text-align: center;
+    padding: 25px 15px;
+}
+.storageBtnWrap li>a p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
 /* Email Box css start */
 .responsiveSection {
     width: 100%;

@@ -86,7 +86,7 @@ class multi_plan_checkout extends CI_Controller {
         // Load example cart data to variable
         $this->load->vars('cart', $cart);
 
-        // Set example cart data into session
+// Set example cart data into session
         $this->session->set_userdata('shopping_cart', $cart);
 
         // Example - Load Review Page
@@ -113,8 +113,8 @@ class multi_plan_checkout extends CI_Controller {
          */
         $SECFields = array(
             'maxamt' => $_POST['amount'], // The expected maximum total amount the order will be, including S&H and sales tax.
-            'returnurl' => site_url('user/multi_plan_checkout/GetExpressCheckoutDetails'), // Required.  URL to which the customer will be returned after returning from PayPal.  2048 char max.
-            'cancelurl' => site_url('user/multi_plan_checkout/OrderCancelled'), // Required.  URL to which the customer will be returned if they cancel payment on PayPal's site.
+            'returnurl' => site_url('frontend/multi_plan_checkout/GetExpressCheckoutDetails'), // Required.  URL to which the customer will be returned after returning from PayPal.  2048 char max.
+            'cancelurl' => site_url('frontend/multi_plan_checkout/OrderCancelled'), // Required.  URL to which the customer will be returned if they cancel payment on PayPal's site.
             'hdrimg' => base_url() . 'images/frlogo.png?crc=100938625', // URL for the image displayed as the header during checkout.  Max size of 750x90.  Should be stored on an https:// server or you'll get a warning message in the browser.
             'logoimg' => base_url() . 'images/frlogo.png?crc=100938625', // A URL to your logo image.  Formats:  .gif, .jpg, .png.  190x60.  PayPal places your logo image at the top of the cart review area.  This logo needs to be stored on a https:// server.
             'brandname' => 'RPDigitel', // A label that overrides the business name in the PayPal account on the PayPal hosted checkout pages.  127 char max.
@@ -278,8 +278,19 @@ class multi_plan_checkout extends CI_Controller {
             );
 
 
+			
+			$this->load->model('subscription_model');
+			
+			
+			
+			$this->subscription_model->update_subscription_details(TABLES::$SUBSCRIPTION_DETAILS);
+			
+			
             $this->db->insert('subscribe_payments', $payment_data);
 
+			
+			
+			
             /* Added by Ranjit on 24 April 2017 to update max_allowed users plan,counter in databasedetails table Start */
 
 
@@ -300,7 +311,9 @@ class multi_plan_checkout extends CI_Controller {
             if ($payment_data['ack'] == 'Success') {
 
                 // redirect('http://'.$_SERVER['SERVER_NAME'].'/crm/login');
-                $this->session->set_userdata('payment_successfull', '1');
+                
+				$this->session->set_userdata('payment_successfull', '1');
+				
                 redirect(base_url() . 'check_out');
 
                 // redirect($success_url);

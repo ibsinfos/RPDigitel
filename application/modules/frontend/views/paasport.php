@@ -429,7 +429,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/otp/verify_otp',
+                url: '<?php echo base_url(); ?>frontend/otp/verify_otp',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -458,7 +458,7 @@
             $("#login_errors").html('');
 
             $.ajax({
-                url: '<?php echo base_url(); ?>user/login/send_otp',
+                url: '<?php echo base_url(); ?>frontend/login/send_otp',
                 datatype: 'text',
                 success: function (data) {
 
@@ -500,7 +500,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/login/paasport_validate_credentials',
+                url: '<?php echo base_url(); ?>frontend/login/paasport_validate_credentials',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {
@@ -553,7 +553,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '<?php echo base_url(); ?>user/login/create_member',
+                url: '<?php echo base_url(); ?>frontend/login/create_member',
                 data: form_data,
                 datatype: 'text',
                 success: function (data) {

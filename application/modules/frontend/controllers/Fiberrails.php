@@ -247,10 +247,10 @@ class Fiberrails extends CI_Controller {
         $merchant_email = 'atuls@rebelute.com';
         //here we can put cancle url when payment is not completed.
         //        $cancel_return = "http://localhost/donate-with-paypal/index.php";
-        $cancel_return = base_url() . "user/wbs_suite/wbs_subscribe";
+        $cancel_return = base_url() . "frontend/wbs_suite/wbs_subscribe";
         //here we can put cancle url when payment is Successful.
         //        $success_return = base_url() . "backend/donate/success/" . $lastid;
-        $success_return = base_url() . "user/wbs_suite/wbs_subscription_succesful";
+        $success_return = base_url() . "frontend/wbs_suite/wbs_subscription_succesful";
         ?>
         <div style="margin-left: 38%"><img src="images/ajax-loader.gif"/><img src="images/processing_animation.gif"/></div>
         <form name = "myform" action = "<?php echo $paypal_url; ?>" method = "post" target = "_top">
