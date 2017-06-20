@@ -135,6 +135,8 @@ $route['edit-slider/(:any)'] = 'backend/community_slider/edit_slider/$1';
 
 $route['upload-files'] = 'backend/project/uploadFiles';
 $route['view-files'] = 'backend/project/browse_files';
+$route['sd-storage'] = 'backend/project/sd_storage';
+$route['cloud-storage'] = 'backend/project/cloud_storage';
 
 
 $route['download-data'] = 'backend/download_data/index';
