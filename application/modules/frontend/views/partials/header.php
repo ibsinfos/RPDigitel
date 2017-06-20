@@ -180,7 +180,13 @@
 									if (!$this->session->userdata('is_logged_in')){
 										$service_link = "paasport";
 										}else{
-										$service_link = "paas-port/dashboard";
+										
+										if(check_subscription($header_menu['service_id'],$user_services_array)){
+											$service_link = "paas-port/dashboard";
+											}else{
+											$service_link = "paasport";
+										}
+										
 									}
 									
 									}else if($header_menu['service_id']==6){
