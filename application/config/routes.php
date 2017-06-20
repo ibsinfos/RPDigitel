@@ -1,69 +1,71 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
 /*
-| -------------------------------------------------------------------------
-| URI ROUTING
-| -------------------------------------------------------------------------
-| This file lets you re-map URI requests to specific controller functions.
-|
-| Typically there is a one-to-one relationship between a URL string
-| and its corresponding controller class/method. The segments in a
-| URL normally follow this pattern:
-|
-|	example.com/class/method/id/
-|
-| In some instances, however, you may want to remap this relationship
-| so that a different class/function is called than the one
-| corresponding to the URL.
-|
-| Please see the user guide for complete details:
-|
-|	http://codeigniter.com/user_guide/general/routing.html
-|
-| -------------------------------------------------------------------------
-| RESERVED ROUTES
-| -------------------------------------------------------------------------
-|
-| There area two reserved routes:
-|
-|	$route['default_controller'] = 'welcome';
-|
-| This route indicates which controller class should be loaded if the
-| URI contains no data. In the above example, the "welcome" class
-| would be loaded.
-|
-|	$route['404_override'] = 'errors/page_missing';
-|
-| This route will tell the Router what URI segments to use if those provided
-| in the URL cannot be matched to a valid route.
-|
-*/
+  | -------------------------------------------------------------------------
+  | URI ROUTING
+  | -------------------------------------------------------------------------
+  | This file lets you re-map URI requests to specific controller functions.
+  |
+  | Typically there is a one-to-one relationship between a URL string
+  | and its corresponding controller class/method. The segments in a
+  | URL normally follow this pattern:
+  |
+  |	example.com/class/method/id/
+  |
+  | In some instances, however, you may want to remap this relationship
+  | so that a different class/function is called than the one
+  | corresponding to the URL.
+  |
+  | Please see the user guide for complete details:
+  |
+  |	http://codeigniter.com/user_guide/general/routing.html
+  |
+  | -------------------------------------------------------------------------
+  | RESERVED ROUTES
+  | -------------------------------------------------------------------------
+  |
+  | There area two reserved routes:
+  |
+  |	$route['default_controller'] = 'welcome';
+  |
+  | This route indicates which controller class should be loaded if the
+  | URI contains no data. In the above example, the "welcome" class
+  | would be loaded.
+  |
+  |	$route['404_override'] = 'errors/page_missing';
+  |
+  | This route will tell the Router what URI segments to use if those provided
+  | in the URL cannot be matched to a valid route.
+  |
+ */
 
 //$route['default_controller'] = "user/login"; 
-$route['default_controller'] = "user/fiberrails"; 
+$route['default_controller'] = "frontend/home";
 
 $route['404_override'] = '';
-
-
 $route['admin'] = 'admin/login';
 
 
-$route['login'] = 'user/login';
-$route['otp'] = 'user/otp/index';
-$route['login/logout'] = 'user/login/logout';
-$route['login/signup'] = 'user/login/signup';
-$route['fiberrails'] = 'user/fiberrails';
-$route['subscription'] = 'user/fiberrails/subscription';
-$route['check_out'] = 'user/fiberrails/checkout';
-$route['checkout_save_member'] = 'user/fiberrails/checkout_save_member';
-$route['main_dashboard'] = 'user/fiberrails/main_dashboard';
-$route['silo_sd'] = 'user/silo_sd';
-$route['wbs_suite'] = 'user/wbs_suite';
-$route['silo_wallet'] = 'user/silo_wallet';
-$route['silo_bank'] = 'user/silo_bank';
-$route['wbs_suite/wbs_subscribe'] = 'user/wbs_suite/wbs_subscribe';
-$route['paasport'] = 'paasport/signup';
-$route['wbs_suite/wbs_subscribe_payment_success'] = 'user/wbs_suite/wbs_subscribe_payment_success';
-$route['wbs_suite/wbs_subscribe_payment_fail'] = 'user/wbs_suite/wbs_subscribe_payment_fail';
+$route['login'] = 'frontend/login';
+$route['otp'] = 'frontend/otp/index';
+$route['login/logout'] = 'frontend/login/logout';
+$route['login/signup'] = 'frontend/login/signup';
+$route['fiberrails'] = 'frontend/fiberrails';
+$route['subscription'] = 'frontend/subscription';
+$route['check_out'] = 'frontend/checkout';
+$route['checkout_save_member'] = 'frontend/subscription/checkout_save_member';
+$route['main_dashboard'] = 'frontend/dashboard';
+$route['silo_sd'] = 'frontend/silo_sd';
+$route['wbs_suite'] = 'frontend/wbs_suite';
+$route['silo_wallet'] = 'frontend/silo_wallet';
+$route['silo_bank'] = 'frontend/silo_bank';
+$route['wbs_suite/wbs_subscribe'] = 'frontend/wbs_suite/wbs_subscribe';
+//$route['paasport'] = 'paasport/signup';
+$route['paasport'] = 'frontend/paasport';
+$route['wbs_suite/wbs_subscribe_payment_success'] = 'frontend/wbs_suite/wbs_subscribe_payment_success';
+$route['wbs_suite/wbs_subscribe_payment_fail'] = 'frontend/wbs_suite/wbs_subscribe_payment_fail';
 
 /* Silo routs */
 $route['404'] = 'frontend/Pages/pageNotFound404';
@@ -76,6 +78,8 @@ $route['dashboard/createproduct'] = 'backend/Dashboard/createProduct';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
 $route['dashboard/calender'] = 'backend/Dashboard/calender';
 $route['dashboard/services'] = 'backend/Dashboard/services';
+$route['dashboard/invoices'] = 'backend/Dashboard/invoices';
+$route['dashboard/addproduct'] = 'backend/Dashboard/addproduct';
 $route['dashboard/email_template'] = 'backend/Dashboard/email_template';
 $route['admin_dashboard'] = 'backend/Dashboard/admin_dashboard';
 $route['register/employee'] = 'frontend/Register/employee';
@@ -89,23 +93,23 @@ $route['setting'] = 'backend/dashboard/setting';
 $route['subscriber-list'] = 'backend/subscriber/subscriberList';
 $route['add-subscriber'] = 'backend/subscriber/addSubscriber';
 
-	/*added by ranjit for services subscription on 14 june 2017 Start*/
+/* added by ranjit for services subscription on 14 june 2017 Start */
 
-	$route['plan-list'] = 'backend/subscription/plan_list';
-	$route['assign-plans'] = 'backend/subscription/assign_plans';
-	$route['add-plan'] = 'backend/subscription/add_plan';
-	$route['delete-plan/(:any)'] = 'backend/subscription/delete_plan/$1';
-	$route['edit-plan'] = 'backend/subscription/edit_plan';
-	$route['edit-plan/(:any)'] = 'backend/subscription/edit_plan/$1';
-	$route['assign-plan'] = 'backend/subscription/assign_plan';
-	
-	
-	$route['admin-subscription'] = 'backend/subscription/admin_subscription';
-	
-	
-	/*added by ranjit for services subscription on 14 june 2017 End*/
-	
-	
+$route['plan-list'] = 'backend/subscription/plan_list';
+$route['assign-plans'] = 'backend/subscription/assign_plans';
+$route['add-plan'] = 'backend/subscription/add_plan';
+$route['delete-plan/(:any)'] = 'backend/subscription/delete_plan/$1';
+$route['edit-plan'] = 'backend/subscription/edit_plan';
+$route['edit-plan/(:any)'] = 'backend/subscription/edit_plan/$1';
+$route['assign-plan'] = 'backend/subscription/assign_plan';
+
+
+$route['admin-subscription'] = 'backend/subscription/admin_subscription';
+
+
+/* added by ranjit for services subscription on 14 june 2017 End */
+
+
 $route['project-list'] = 'backend/project/projectList';
 $route['add-project'] = 'backend/project/addProject';
 $route['add-news'] = 'backend/news/add_news';
@@ -131,6 +135,8 @@ $route['edit-slider/(:any)'] = 'backend/community_slider/edit_slider/$1';
 
 $route['upload-files'] = 'backend/project/uploadFiles';
 $route['view-files'] = 'backend/project/browse_files';
+$route['sd-storage'] = 'backend/project/sd_storage';
+$route['cloud-storage'] = 'backend/project/cloud_storage';
 
 
 $route['download-data'] = 'backend/download_data/index';

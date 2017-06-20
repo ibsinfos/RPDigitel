@@ -1,7 +1,7 @@
 <!-- page content -->
 <div class="right_col" role="main">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="x_panel">
 				<div class="x_title">
 					<h2>Calendar Events <small>Sessions</small></h2>
@@ -42,26 +42,25 @@
 				<h4 class="modal-title" id="myModalLabel">New Calendar Entry</h4>
 			</div>
 			<div class="modal-body">
-				<div id="testmodal" style="padding: 5px 20px;">
+				<div id="testmodal">
 					<form id="antoform" class="form-horizontal calender" role="form">
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
+							<label class="col-xs-12 col-sm-3 control-label">Title</label>
+							<div class="col-xs-12 col-sm-9">
 								<input type="text" class="form-control" id="title" name="title">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Description</label>
-							<div class="col-sm-9">
-								<textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+							<label class="col-xs-12 col-sm-3 control-label">Description</label>
+							<div class="col-xs-12 col-sm-9">
+								<textarea class="form-control" rows="5" id="descr" name="descr"></textarea>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary antosubmit">Save changes</button>
+				<button type="button" class="btn btnRed antosubmit">Save</button>
 			</div>
 		</div>
 	</div>
@@ -76,18 +75,18 @@
 			</div>
 			<div class="modal-body">
 
-				<div id="testmodal2" style="padding: 5px 20px;">
+				<div id="testmodal2">
 					<form id="antoform2" class="form-horizontal calender" role="form">
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
+							<label class="col-xs-12 col-sm-3 control-label">Title</label>
+							<div class="col-xs-12 col-sm-9">
 								<input type="text" class="form-control" id="title2" name="title2">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Description</label>
-							<div class="col-sm-9">
-								<textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+							<label class="col-xs-12 col-sm-3 control-label">Description</label>
+							<div class="col-xs-12 col-sm-9">
+								<textarea class="form-control" rows="5" id="descr2" name="descr"></textarea>
 							</div>
 						</div>
 
@@ -95,8 +94,7 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+				<button type="button" class="btn btnRed antosubmit2">Save</button>
 			</div>
 		</div>
 	</div>

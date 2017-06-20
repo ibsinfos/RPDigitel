@@ -122,7 +122,7 @@
 							
 					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
+						<i class="iconDashboard-event"></i>
 					</div> Calendar </a>
 					
 					</li>
@@ -140,17 +140,32 @@
 					
 					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
 					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
+						<i class="iconDashboard-mail"></i>
 					</div> Mail Box </a>
 					
 					</li>
 					<?php } ?>
 					
 					
+					<li><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-projects"></i>
+						</div> 
+					Silo Cloud <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="<?php echo base_url() ?>project-list">Project List</a></li>
+						<li><a href="<?php echo base_url() ?>add-project">Add new project</a></li>
+						<li><a href="<?php echo base_url() ?>upload-files">Upload files</a></li>
+						<li><a href="<?php echo base_url() ?>view-files">Browse Files</a></li>
+					</ul>
+					</li>
 					
 					
+					<?php 
 					
-					<?php if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
+
+					
+					if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
 					<li class="acive"><a>
 						<div class="menuIcon">
 							<i class="iconDashboard-store"></i>
@@ -174,7 +189,7 @@
 					<?php } ?>
 					
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
-					<li><a><div class="menuIcon">
+					<li><a href="<?php echo base_url()."dashboard/invoices"; ?>"><div class="menuIcon">
 						<i class="iconDashboard-invoice"></i>
 					</div> Invoices</a>
 					
