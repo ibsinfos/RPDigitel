@@ -20,7 +20,10 @@ Class Home extends MX_Controller {
         $user_role = $this->session->userdata('role');
         if (!empty($_SESSION['paasport_user_id'])) {
             $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-        }
+        }else{
+            $data['slug'] = "";
+		}
+		
         $this->template->set('slug', $data['slug']);
         $this->template->set('page', 'fiberrail');
         $this->template->set_theme('default_theme');
