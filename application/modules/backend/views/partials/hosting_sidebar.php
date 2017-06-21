@@ -119,7 +119,7 @@
 						</li>
 					<?php } ?>
 					
-					
+					 
 					<?php if(!empty($user_menu) && in_array('Community',$user_menu))  { ?>	
 						<li><a href="<?php echo base_url()."community"; ?>"><div class="menuIcon">
 							<i class="iconDashboard-invoice"></i>
