@@ -352,7 +352,7 @@
 				<div class="panel-body">
 					<h4 class="heading">Work Brakdown Structure Suite</h4>
 					<p class="description">Not so bold details about the products</p>
-					<a href="" class="btn btnRed">Go To Site Builder</a>
+					<a href="http://54.209.190.106/landingpage/" class="btn btnRed">Go To Site Builder</a>
 				</div>
 			</div>
 		</div>

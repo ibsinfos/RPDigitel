@@ -88,7 +88,7 @@
 							</div> 
 						Home <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu">
-							<li><a href="<?php echo backend_passport_url(); ?>dashboard">Go To Paasport</a></li>
+							<li><a href="<?php echo backend_passport_url(); ?>dashboard">Create/Edit Paasport</a></li>
 							<?php 
 								if ($this->session->userdata('member_service_remaining_days')) 
 								{
@@ -113,8 +113,8 @@
 							?>
 							
 							
-							<li><a href="<?php echo $websuit; ?>">Go To WBS Suite</a></li>
-							<li><a href="<?php echo base_url(); ?>dashboard">Go To Silo Host</a></li>
+							<li><a href="<?php echo $websuit; ?>">ERP (Enterprise Resources)</a></li>
+							<li><a href="<?php echo base_url(); ?>dashboard">Silo Web Hosting</a></li>
 							<li><a href="<?php echo base_url(); ?>community">Community</a></li>
 							
 							  <?php
@@ -147,7 +147,7 @@
 							?>
                             
 							<li><a href="<?php echo base_url() . $silo_video_url; ?>">Silo Video</a></li>
-							<li><a href="<?php echo base_url() . $silo_video_url; ?>">B Music</a></li>
+							<li><a href="<?php echo base_url() . $silo_video_url; ?>">Silo Music</a></li>
 						</ul>
 						</li>
 					<?php } ?>
