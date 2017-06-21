@@ -18,6 +18,7 @@ class Services extends CI_Controller {
 			$this->load->model('Webservices_model');
 			$data = $this->Webservices_model->loginUser($this->input->post());
 			echo json_encode($data);
+			// print_r($this->input->post());
 			
 		}
 		

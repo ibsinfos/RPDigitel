@@ -12,26 +12,17 @@
 			
 			if(!empty($this->input->post('username')) && !empty($this->input->post('password'))) {
 				
+				$username=$this->input->post('username');
+				$password=str_ireplace(array("\r","\n",'\r','\n'),'', $this->input->post('password'));
+				// $username=stripslashes($this->input->post('username'));
+				// $password=stripslashes($this->input->post('password'));
 				
-				// $where=array("username"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
+				// $result['pass']=$password;
 				
-				// $where2=array("mail_address"=>$this->input->post('username'),"password"=>$this->hash($this->input->post('password')));
+				$q="SELECT `user_id`, `first_name`, `last_name`, `phone_no`, `email_address`, `username` FROM (`membership`) WHERE password ='".$this->hash($password)."' AND (username ='".$username."' OR email_address='".$username."')";				
+				// $result['query']=$q;
 				
-				
-				// $where1=array("username"=>$this->input->post('username'));
-				// $where2=array("password"=>$this->hash($this->input->post('password')));
-				// $where3=array("mail_address"=>$this->input->post('username'));
-				
-				// $this->db->where($where2);
-				// $this->db->where($where1);
-				// $this->db->or_where($where3);
-				// $this->db->select('user_id,first_name,last_name,phone_no,email_address,username');
-				// $sel_user=$this->db->get('membership');
-				
-				
-				
-				$sel_user=$this->db->query("SELECT `user_id`, `first_name`, `last_name`, `phone_no`, `email_address`, `username`
-				FROM (`membership`) WHERE password ='".$this->hash($this->input->post('password'))."' AND (username ='".$this->input->post('username')."' OR email_address='".$this->input->post('username')."')");
+				$sel_user=$this->db->query($q);
 				
 				
 				if($sel_user->num_rows>0){
@@ -47,6 +38,7 @@
 				}		
 				
 				} else {
+					$result['data']="Enter username password";
 				$result['status'] = false;
 			}
 			return $result;
