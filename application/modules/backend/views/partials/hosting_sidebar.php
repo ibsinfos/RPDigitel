@@ -115,6 +115,39 @@
 							
 							<li><a href="<?php echo $websuit; ?>">Go To WBS Suite</a></li>
 							<li><a href="<?php echo base_url(); ?>dashboard">Go To Silo Host</a></li>
+							<li><a href="<?php echo base_url(); ?>community">Community</a></li>
+							
+							  <?php
+								$this->load->helper('encrypt');
+								$compid = $_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR'];
+								
+								if (isset($_SESSION['user_account']['login_user_id']) && $_SESSION['user_account']['login_user_id'] != '') {
+									$silo_hrm_url = "hrm/index.php?admin/dashboard/" . $_SESSION['user_account']['admin_login'] . "/" . $_SESSION['user_account']['login_user_id'] . "/" . $_SESSION['user_account']['name'] . "/" . $_SESSION['user_account']['login_type'] . "/" . encode_url($compid);
+									} else {
+									$silo_hrm_url = "login";
+								}
+							?>
+							
+							<li><a href="<?php echo base_url() . $silo_hrm_url; ?>">Silo HRM</a></li>
+							<?php
+								if (isset($_SESSION['user_account']['login_user_id']) && $_SESSION['user_account']['login_user_id'] != '') {
+									$silo_inventory_url = "inventory/index.php?admin/dashboard/" . $_SESSION['user_account']['admin_login'] . "/" . $_SESSION['user_account']['login_user_id'] . "/" . $_SESSION['user_account']['name'] . "/" . $_SESSION['user_account']['login_type'] . "/" . encode_url($compid);
+									} else {
+									$silo_inventory_url = "login";
+								}
+							?>
+							<li><a href="<?php echo base_url() . $silo_inventory_url; ?>">Silo Inventory</a></li>
+							
+							<?php
+								if (isset($_SESSION['user_account']['login_user_id']) && $_SESSION['user_account']['login_user_id'] != '') {
+									$silo_video_url = "video-cms/index.php/admin/dashboard/" . $_SESSION['user_account']['admin_login'] . "/" . $_SESSION['user_account']['login_user_id'] . "/" . $_SESSION['user_account']['name'] . "/" . $_SESSION['user_account']['login_type'] . "/" . encode_url($compid);
+									} else {
+									$silo_video_url = "login";
+								}
+							?>
+                            
+							<li><a href="<?php echo base_url() . $silo_video_url; ?>">Silo Video</a></li>
+							<li><a href="<?php echo base_url() . $silo_video_url; ?>">B Music</a></li>
 						</ul>
 						</li>
 					<?php } ?>
@@ -197,6 +230,7 @@
 							</div> 
 						Store <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu">
+							<li><a href="">Store Builder</a></li>
 							<li><a href="<?php echo base_url()."dashboard/productlist"; ?>">Product List</a></li>
 							<li><a href="<?php echo base_url()."dashboard/createproduct"; ?>">Create Product</a></li>
 							<li><a href="<?php echo base_url()."dashboard/ordertable"; ?>">Order Table</a></li>
