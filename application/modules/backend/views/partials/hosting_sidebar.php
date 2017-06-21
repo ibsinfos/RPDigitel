@@ -160,12 +160,28 @@
 						<div class="menuIcon">
 							<i class="iconDashboard-projects"></i>
 						</div> 
-					Silo Cloud <span class="fa fa-chevron-down"></span></a>
+					Silo SD <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">
 						<li><a href="<?php echo base_url() ?>project-list">Project List</a></li>
 						<li><a href="<?php echo base_url() ?>add-project">Add new project</a></li>
 						<li><a href="<?php echo base_url() ?>upload-files">Upload files</a></li>
-						<li><a href="<?php echo base_url() ?>view-files">Browse Files</a></li>
+						<!--<li><a href="<?php //echo base_url() ?>view-files">Browse Files</a></li>-->
+						<li><a href="<?php echo base_url() ?>cloud-storage">Browse Files</a></li>
+					</ul>
+					</li>
+					
+					
+					
+					<li><a>
+						<div class="menuIcon">
+							<i class="iconDashboard-projects"></i>
+						</div> 
+					Silo Cloud <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+						<li><a href="#">Project List</a></li>
+						<li><a href="#">Add new project</a></li>
+						<li><a href="#">Upload files</a></li>
+						<li><a href="#">Browse Files</a></li>
 					</ul>
 					</li>
 					

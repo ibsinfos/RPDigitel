@@ -11,10 +11,6 @@
 			$this->load->model("common_model");
 		}
 		
-		/*
-			* Load view for about us page
-		*/
-		
 		public function index() {
 			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
@@ -28,8 +24,7 @@
 			if (!empty($_SESSION['paasport_user_id'])) {
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			}
-			
-			
+						
 			$services_menu = $this->common_model->getRecords('services', '*', '', '');
 			$user_subscribed_services= $this->common_model->getRecords('tbl_services_subscription', '*', array('user_id'=>$this->session->userdata('user_id')), '');
 			
@@ -37,11 +32,6 @@
 			foreach($user_subscribed_services as $u_services){
 				array_push($user_services_array,$u_services['service_id']);
 			}
-			
-			
-			
-			
-			
 			
 			$this->template->set('page', 'main_dashboard');
 			$this->template->set('slug', $data['slug']);

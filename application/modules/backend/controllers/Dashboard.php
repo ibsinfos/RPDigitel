@@ -316,7 +316,7 @@
 		public function createProduct(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -340,7 +340,7 @@
 		public function orderTable(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -365,7 +365,7 @@
 		public function Calender(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -389,9 +389,29 @@
 		public function services(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			
+			
+			
+			
+			//Added By ranjit on 21 June2017 Start
+			
+			$services_menu = $this->common_model->getRecords('services', '*', '', '');
+			$user_subscribed_services= $this->common_model->getRecords('tbl_services_subscription', '*', array('user_id'=>$_SESSION['user_id']), '');
+			
+			$user_services_array=array();
+			foreach($user_subscribed_services as $u_services){
+				array_push($user_services_array,$u_services['service_id']);
+			}
+			
+			$this->template->set('services_menu', $services_menu);
+			$this->template->set('user_subscribed_services', $user_subscribed_services);
+			$this->template->set('user_services_array', $user_services_array);
+			
+			//Added By ranjit on 21 June2017 End
+			
 			
 			
 			$this->template->set('user_menu',$user_menu);
@@ -412,7 +432,7 @@
 		public function invoices(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -435,7 +455,7 @@
 		public function addproduct(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -460,7 +480,7 @@
 		public function email_template(){
 			
 			$this->load->model('login_model');
-				$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
@@ -484,4 +504,4 @@
 		
 		
 		
-	}
+	}		
