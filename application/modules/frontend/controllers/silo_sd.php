@@ -44,9 +44,6 @@
 			// $data['page'] = 'silo_sd';
 			// $this->load->view('includes/template', $data);
 			
-			
-			
-			
 			$this->template->set('page', 'silo_sd');
 			$this->template->set('slug', $data['slug']);
 			$this->template->set_theme('default_theme');
