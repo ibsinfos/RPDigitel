@@ -10,13 +10,13 @@
 				<div class="x_content">
 					<ul class="list-unstyled row storageBtnWrap">
 						<li class="col-xs-12 col-sm-4 col-sm-offset-2">
-							<a href="" class="panel">
+							<a href="<?php echo base_url() ?>cloud-storage" class="panel">
                 				<img src="<?php echo backend_asset_url() ?>images/sd-cloud/SiloSd_White.png" alt="sidoSD">
                 				<p>SD Storage</p>
                 			</a>
 						</li>
 						<li class="col-xs-12 col-sm-4">
-							<a href="<?php echo base_url() ?>cloud-storage" class="panel">
+							<a href="" class="panel">
                 				<img src="<?php echo backend_asset_url() ?>images/sd-cloud/Silo_Cloud_White.png" alt="silo-cloud">
                 				<p>Cloud / Hosting Storage</p>
                 			</a>

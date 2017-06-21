@@ -21,25 +21,39 @@
 					echo anchor('user/login', 'Login');
 				*/
 				
-//				redirect('user/login');
+				//				redirect('user/login');
 				//redirect('login');
-//				
+				//				
 				//die();
 				//$this->load->view('login_form');
 			}
 		}
 		
 		function index() {
-
+			
 			// $this->load->view('silo-sd');
 			$data['slug']='';
 			if(!empty($_SESSION['paasport_user_id']))
 			{
 				$data['slug']=$this->getSlugname($_SESSION['paasport_user_id']); 
 			}	
-			$data['main_content'] = 'silo-sd';
-			$data['page'] = 'silo_sd';
-			$this->load->view('includes/template', $data);
+			
+			
+			
+			// $data['main_content'] = 'silo-sd';
+			// $data['page'] = 'silo_sd';
+			// $this->load->view('includes/template', $data);
+			
+			$this->template->set('page', 'silo_sd');
+			$this->template->set('slug', $data['slug']);
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('rpdigitel_frontend')
+			->title('Home | RPDigitel')
+			->set_partial('header', 'partials/header')
+			->set_partial('footer', 'partials/footer');
+			$this->template->build('silo-sd');
+			
+			
 		}
 		
 		function getSlugname($user_id)

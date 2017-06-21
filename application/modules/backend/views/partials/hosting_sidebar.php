@@ -18,24 +18,24 @@
         <!-- menu profile quick info -->
         <div class="profileInfo">
             <img src="<?php echo $userImg; ?>" alt="" class="img-circle profile_img">
-
+			
             <h2 class="profileName">Welcome, <?php //echo ucfirst($session_data['username']) ?>
 				
 				<?php 
 					if(!empty($user[0]['first_name']))
-					echo $user[0]['first_name'] ?>  </h2>
-            <h4 class="profession"><?php 
-				if(!empty($user[0]['job_title']))
-				{
-					echo $user[0]['job_title'];
-				}
-				 ?> </h4>
-
-			<ul class="list-unstyled list-inline">
-            	<li><a href="<?php echo base_url(); ?>backend/dashboard/edit_profile" class="btn btnRed">Edit</a></li>
-            	<li><button class="btn grayBtn" data-toggle="modal" data-target="#myModal">Share</button></li>
-            </ul>
-
+				echo $user[0]['first_name'] ?>  </h2>
+				<h4 class="profession"><?php 
+					if(!empty($user[0]['job_title']))
+					{
+						echo $user[0]['job_title'];
+					}
+				?> </h4>
+				
+				<ul class="list-unstyled list-inline">
+					<li><a href="<?php echo base_url(); ?>backend/dashboard/edit_profile" class="btn btnRed">Edit</a></li>
+					<li><button class="btn grayBtn" data-toggle="modal" data-target="#myModal">Share</button></li>
+				</ul>
+				
 		</div>
         <!-- /menu profile quick info -->
 		
@@ -82,68 +82,77 @@
 				</ul> -->
                 <ul class="nav side-menu">
 					<?php if(!empty($user_menu) && in_array('Home',$user_menu))  { ?>					
-					<li class="acive"><a>
-						<div class="menuIcon">
-							<i class="iconDashboard-home"></i>
-						</div> 
-					Home <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
-						<li><a href="<?php echo backend_passport_url(); ?>dashboard">Go To Paasport</a></li>
-						<?php 
-							if ($this->session->userdata('member_service_remaining_days')) 
-							{
-								if ($this->session->userdata('member_service_remaining_days')<0) {
-									
-									$websuit=base_url()."wbs_suite";
-								}
-								else
+						<li class="acive"><a>
+							<div class="menuIcon">
+								<i class="iconDashboard-home"></i>
+							</div> 
+						Home <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
+							<li><a href="<?php echo backend_passport_url(); ?>dashboard">Go To Paasport</a></li>
+							<?php 
+								if ($this->session->userdata('member_service_remaining_days')) 
+								{
+									if ($this->session->userdata('member_service_remaining_days')<0) {
+										
+										$websuit=base_url()."wbs_suite";
+									}
+									else
+									{
+										$websuit=base_url()."crm/login";	
+									}
+								}	
+								else if ($this->session->userdata('crm_subscription')) 
 								{
 									$websuit=base_url()."crm/login";	
 								}
-							}	
-							else if ($this->session->userdata('crm_subscription')) 
-							{
-								$websuit=base_url()."crm/login";	
-							}
-							else
-							{
-								$websuit=base_url()."wbs_suite";
-							}	
+								else
+								{
+									$websuit=base_url()."wbs_suite";
+								}	
+								
+							?>
 							
-						?>
-						
-						
-						<li><a href="<?php echo $websuit; ?>">Go To WBS Suite</a></li>
-						<li><a href="<?php echo base_url(); ?>dashboard">Go To Silo Host</a></li>
-					</ul>
-					</li>
+							
+							<li><a href="<?php echo $websuit; ?>">Go To WBS Suite</a></li>
+							<li><a href="<?php echo base_url(); ?>dashboard">Go To Silo Host</a></li>
+						</ul>
+						</li>
 					<?php } ?>
 					
-							
-					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
-					<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-event"></i>
-					</div> Calendar </a>
+					 
+					<?php if(!empty($user_menu) && in_array('Community',$user_menu))  { ?>	
+						<li><a href="<?php echo base_url()."community"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-invoice"></i>
+						</div> Community</a>
+						
+						</li>
+					<?php } ?>
 					
-					</li>
+					
+					<?php if(!empty($user_menu) && in_array('Calendar',$user_menu))  { ?>	
+						<li><a href="<?php echo base_url()."dashboard/calender"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-event"></i>
+						</div> Calendar </a>
+						
+						</li>
 					<?php } ?>
 					
 					
 					<?php if(!empty($user_menu) && in_array('Services',$user_menu))  { ?>	
-					<li><a href="<?php echo base_url()."dashboard/services"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
-					</div> Services </a>
-					
-					</li>
+						<li><a href="<?php echo base_url()."dashboard/services"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-setting"></i>
+						</div> Services </a>
+						
+						</li>
 					<?php } ?>
 					
 					
 					<?php if(!empty($user_menu) && in_array('Email_Template',$user_menu))  { ?>	
-					<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-mail"></i>
-					</div> Mail Box </a>
-					
-					</li>
+						<li><a href="<?php echo base_url()."dashboard/email_template"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-mail"></i>
+						</div> Mail Box </a>
+						
+						</li>
 					<?php } ?>
 					
 					
@@ -162,67 +171,67 @@
 					
 					
 					<?php 
-					
-
-					
-					if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
-					<li class="acive"><a>
-						<div class="menuIcon">
-							<i class="iconDashboard-store"></i>
-						</div> 
-					Store <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
-						<li><a href="<?php echo base_url()."dashboard/productlist"; ?>">Product List</a></li>
-						<li><a href="<?php echo base_url()."dashboard/createproduct"; ?>">Create Product</a></li>
-						<li><a href="<?php echo base_url()."dashboard/ordertable"; ?>">Order Table</a></li>
-					</ul>
-					</li>
+						
+						
+						
+						if(!empty($user_menu) && in_array('Store',$user_menu))  { ?>					
+						<li class="acive"><a>
+							<div class="menuIcon">
+								<i class="iconDashboard-store"></i>
+							</div> 
+						Store <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
+							<li><a href="<?php echo base_url()."dashboard/productlist"; ?>">Product List</a></li>
+							<li><a href="<?php echo base_url()."dashboard/createproduct"; ?>">Create Product</a></li>
+							<li><a href="<?php echo base_url()."dashboard/ordertable"; ?>">Order Table</a></li>
+						</ul>
+						</li>
 					<?php } ?>
 					
 					
 					<?php if(!empty($user_menu) && in_array('Settings',$user_menu))  { ?>	
-					<li><a><div class="menuIcon">
-						<i class="iconDashboard-setting"></i>
-					</div> Settings </a>
-					
-					</li>
+						<li><a><div class="menuIcon">
+							<i class="iconDashboard-setting"></i>
+						</div> Settings </a>
+						
+						</li>
 					<?php } ?>
 					
 					<?php if(!empty($user_menu) && in_array('Invoices',$user_menu))  { ?>	
-					<li><a href="<?php echo base_url()."dashboard/invoices"; ?>"><div class="menuIcon">
-						<i class="iconDashboard-invoice"></i>
-					</div> Invoices</a>
-					
-					</li>
+						<li><a href="<?php echo base_url()."dashboard/invoices"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-invoice"></i>
+						</div> Invoices</a>
+						
+						</li>
 					<?php } ?>
 					
 					<?php if(!empty($user_menu) && in_array('Home',$user_menu))  { ?>	
-					<li><a><div class="menuIcon">
-						<i class="iconDashboard-news"></i>
-					</div> News <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
-						<li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-						<li><a href="fixed_footer.html">Fixed Footer</a></li>
-					</ul>
-					</li>
+						<li><a><div class="menuIcon">
+							<i class="iconDashboard-news"></i>
+						</div> News <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
+							<li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+							<li><a href="fixed_footer.html">Fixed Footer</a></li>
+						</ul>
+						</li>
 					<?php } ?>
 					
 					<!--<li><a>
 						<div class="menuIcon">
-							<i class="iconDashboard-projects"></i>
+						<i class="iconDashboard-projects"></i>
 						</div> 
-					Projects <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
+						Projects <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
 						<li><a href="<?php echo base_url() ?>project-list">Project List</a></li>
 						<li><a href="<?php echo base_url() ?>add-project">Add new project</a></li>
 						<li><a href="<?php echo base_url() ?>upload-files">Upload files</a></li>
 						<li><a href="<?php echo base_url() ?>view-files">Browse Files</a></li>
-					</ul>
-					</li>
-					<li><a><div class="menuIcon">
+						</ul>
+						</li>
+						<li><a><div class="menuIcon">
 						<i class="iconDashboard-network"></i>
-					</div>  Network <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
+						</div>  Network <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
 						<li><a href="general_elements.html">General Elements</a></li>
 						<li><a href="media_gallery.html">Media Gallery</a></li>
 						<li><a href="typography.html">Typography</a></li>
@@ -232,38 +241,38 @@
 						<li><a href="invoice.html">Invoice</a></li>
 						<li><a href="inbox.html">Inbox</a></li>
 						<li><a href="calendar.html">Calendar</a></li>
-					</ul>
-					</li>
-					<li><a><div class="menuIcon">
+						</ul>
+						</li>
+						<li><a><div class="menuIcon">
 						<i class="iconDashboard-store"></i>
-					</div>  Store <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
+						</div>  Store <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
 						<li><a href="tables.html">Tables</a></li>
 						<li><a href="tables_dynamic.html">Table Dynamic</a></li>
-					</ul>
-					</li>
-					<li><a><div class="menuIcon">
+						</ul>
+						</li>
+						<li><a><div class="menuIcon">
 						<i class="iconDashboard-playlist"></i>
-					</div>  Playlist <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
+						</div>  Playlist <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
 						<li><a href="chartjs.html">Chart JS</a></li>
 						<li><a href="chartjs2.html">Chart JS2</a></li>
 						<li><a href="morisjs.html">Moris JS</a></li>
 						<li><a href="echarts.html">ECharts</a></li>
 						<li><a href="other_charts.html">Other Charts</a></li>
-					</ul>
-					</li>
-					<li><a><div class="menuIcon">
+						</ul>
+						</li>
+						<li><a><div class="menuIcon">
 						<i class="iconDashboard-blog"></i>
-					</div> Blog <span class="fa fa-chevron-down"></span></a>
-					<ul class="nav child_menu">
+						</div> Blog <span class="fa fa-chevron-down"></span></a>
+						<ul class="nav child_menu">
 						<li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
 						<li><a href="fixed_footer.html">Fixed Footer</a></li>
-					</ul>
+						</ul>
 					</li>-->
 					
 				</ul>
-			
+				
 			</div>
 			
 			

@@ -226,6 +226,13 @@
 					
 					<ul class="list-unstyled row">
                         <li class="col-xs-2">
+                          
+                            <a href="<?php echo base_url()."community"; ?>">
+                                <img src="<?php echo main_asset_url(); ?>images/home/silobank.png" class="img-responsive siloBankImg">
+                                <h4>Community</h4>
+							</a>
+						</li>
+                        <li class="col-xs-2">
                             <?php
 								$this->load->helper('encrypt');
 								$compid = $_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR'];
