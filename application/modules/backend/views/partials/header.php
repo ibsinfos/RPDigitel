@@ -72,127 +72,136 @@
 								</span>
 								<span class="message">
 									Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
-									</span>
-								</a>
-							</li>
+								</span>
+							</a>
+						</li>
 						<li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where.
-									</span>
-								</a>
-							</li>
-						<li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
-									</span>
-								</a>
-							</li>
-						<li>
-						<div class="text-center">
 							<a>
-								<strong>See All Alerts</strong>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where.
+								</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
+								</span>
+							</a>
+						</li>
+						<li>
+							<div class="text-center">
+								<a>
+									<strong>See All Alerts</strong>
 									<i class="fa fa-angle-right"></i>
-									</a>
-								</div>
-							</li>
-						</ul>
-					</li>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</li>
 				<li role="presentation" class="dropdown">
-				<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
+					<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+						<i class="fa fa-envelope-o"></i>
 						<span class="badge bg-red">6</span>
-						</a>
+					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
-									</span>
-								</a>
-							</li>
 						<li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
-									</span>
-								</a>
-							</li>
-						<li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where.
-									</span>
-								</a>
-							</li>
-						<li>
-						<a>
-							<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
-								<span>
-								<span>John Smith</span>
-									<span class="time">3 mins ago</span>
-									</span>
-								<span class="message">
-								Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
-									</span>
-								</a>
-							</li>
-						<li>
-						<div class="text-center">
 							<a>
-								<strong>See All Alerts</strong>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
+								</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
+								</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where.
+								</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="image"><img src="<?php echo backend_asset_url() ?>images/img.jpg" alt="Profile Image" /></span>
+								<span>
+									<span>John Smith</span>
+									<span class="time">3 mins ago</span>
+								</span>
+								<span class="message">
+									Film festivals used to be do-or-die moments for movie makers. They were where<?php echo backend_asset_url() ?>.
+								</span>
+							</a>
+						</li>
+						<li>
+							<div class="text-center">
+								<a>
+									<strong>See All Alerts</strong>
 									<i class="fa fa-angle-right"></i>
-									</a>
-								</div>
-							</li>
-						</ul>
-					</li>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</li>
 				<li role="presentation" class="dropdown visible-xs">
-				<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-search"></i>
-						</a>
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="fa fa-search"></i>
+					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled searchForm" role="menu">
-                    <li>
-						<form class="navbar-form navbar-left">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
-									</div>
+						<li>
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
 								<button type="submit" class="btn btn-default">Search Artist</button>
-								</form>
-							</li>
-						</ul>
-					</li>
-				<li class="createProject">
+							</form>
+						</li>
+					</ul>
+				</li>
+				
+			<li>
+				<form id="go_live" name="go_live" action="https://rebelute.net/broadcast/broadcast/broadcast.php" method="POST" target="_blank">
+					<input type="text" name="broadcast_list_flag" id="broadcast_list_flag" value="1" hidden>
+					<input type="submit" name="broadcast_list" id="broadcast_list" value="Broadcast List" class="btn bg-red"></button>
+					
+				</form>
+			</li>
+			
+			<li class="createProject">
 				<button class="btn bg-red">Create Project</button>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+			</li>
+		</ul>
+	</nav>
+</div>
+</div>
 <!-- /top navigation -->
