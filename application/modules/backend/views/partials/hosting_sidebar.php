@@ -147,7 +147,7 @@
 							?>
                             
 							<li><a href="<?php echo base_url() . $silo_video_url; ?>">Silo Video</a></li>
-							<li><a href="<?php echo base_url() . $silo_video_url; ?>">Silo Music</a></li>
+							<li><a href="<?php echo base_url() ."silo-music"; ?>">Silo Music</a></li>
 						</ul>
 						</li>
 					<?php } ?>
