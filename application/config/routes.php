@@ -73,6 +73,7 @@ $route['admin/login'] = 'backend/login';
 $route['account/login'] = 'backend/login';
 $route['submitlogin'] = 'backend/login/adminlogin';
 $route['dashboard'] = 'backend/Dashboard/index';
+
 $route['dashboard/productlist'] = 'backend/Dashboard/productList';
 $route['dashboard/createproduct'] = 'backend/Dashboard/createProduct';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
@@ -140,7 +141,7 @@ $route['cloud-storage'] = 'backend/project/cloud_storage';
 
 
 $route['download-data'] = 'backend/download_data/index';
-
+$route['go-live'] = 'backend/live';
 $route['product-list'] = 'backend/store/productList';
 $route['pending-orders'] = 'backend/store/pendingOrders';
 $route['revenue'] = 'backend/store/revenue';

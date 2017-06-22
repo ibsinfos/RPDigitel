@@ -281,15 +281,13 @@
             'wordwrap' => TRUE
 			);
 			
-			$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "user/login/verification/" . urlencode($email_address) . " <br><br> Thanks & Regards, <br> RPDigitel Team";
+			$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "frontend/login/verification/" . urlencode($email_address) . " <br><br> Thanks & Regards, <br> RPDigitel Team";
 			$this->load->library('email', $config);
 			$this->email->set_newline("\r\n");
 			$this->email->from('rpdigitel@gmail.com'); // change it to yours
 			$this->email->to($send_mail_to); // change it to yours
 			$this->email->subject('Welcome to RP Digital');
 			$this->email->message($message);
-			
-			
 			
 			if ($this->email->send()) {
 				//  echo 'Email sent.';
