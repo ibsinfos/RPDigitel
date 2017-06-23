@@ -165,7 +165,14 @@
                 'wordwrap' => TRUE
 				);
 				
-				$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "user/login/verification/" . urlencode($this->input->post('email_address')) . " <br><br> Thanks & Regards, <br> RPDigitel Team";
+				// $this->load->model('common_model');
+				// $encrypted_email=$this->common_model->encrypt_decrypt('encrypt',$this->input->post('email_address'));
+				// $message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "frontend/login/verification/" .$encrypted_email. " <br><br> Thanks & Regards, <br> RPDigitel Team";
+				// exit($encrypted_email);
+				
+				$message = "Hello " . $username . ", <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp; Welcome to RP Digital. <br /><br /> &nbsp;&nbsp;&nbsp;&nbsp; Please click on below link to verify your account : <br><br> &nbsp;&nbsp;&nbsp;&nbsp;" . base_url() . "frontend/login/verification/" . urlencode($this->input->post('email_address')) . " <br><br> Thanks & Regards, <br> RPDigitel Team";
+				
+				
 				$this->load->library('email', $config);
 				$this->email->set_newline("\r\n");
 				$this->email->from('rpdigitel@gmail.com'); // change it to yours
@@ -307,7 +314,7 @@
 			
 			$insert_billing_address=$this->db->insert('tbl_subscription_billing_address',$billing_address);
 			return $insert_billing_address;
-		
+			
 		}
 		
 		
@@ -340,9 +347,9 @@
 					$user_id = $db_info->user_id;
 					$database_name = $db_info->database_name;
 					$advanced = $db_info->advanced;
-				$enterprise = $db_info->enterprise;
-                $max_allowed_users = $db_info->max_allowed_users;
-                $no_of_registered_users = $db_info->no_of_registered_users;
+					$enterprise = $db_info->enterprise;
+					$max_allowed_users = $db_info->max_allowed_users;
+					$no_of_registered_users = $db_info->no_of_registered_users;
 				}
 				
 				$this->session->set_userdata('advanced', $advanced);
@@ -449,6 +456,10 @@
 		}
 		
 		public function update_verification($email) {
+			
+			$email=urldecode($email);
+			// $this->load->model('common_model');
+			// $email=$this->common_model->encrypt_decrypt('decrypt',$email);
 			
 			if (!empty($email)) {
 				$update_data = array('verified' => 1);

@@ -375,6 +375,7 @@ Class Login extends MX_Controller {
     function verification($email = null) {
         $this->load->model('membership_model');
         if (!empty($email)) {
+            // $email_addr = $email;
             $email_addr = urldecode($email);
             $data = $this->membership_model->check_verification($email_addr);
             if ($data['verified'] != 1) {
