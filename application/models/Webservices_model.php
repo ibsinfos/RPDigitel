@@ -71,8 +71,8 @@
 				"password"=>$this->hash($this->input->post('password')),
 				"phone_no"=>$phone_number_with_country_code,
 				"role"=>'user',
-				"purchase_pack"=>'1',
-				"verified"=>'1'
+				//				"verified"=>'1',
+                                "purchase_pack"=>'1'
 				);				
 				
 				$this->db->where('username', $this->input->post('username'));

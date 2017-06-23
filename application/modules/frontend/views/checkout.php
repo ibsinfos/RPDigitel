@@ -279,15 +279,13 @@
 										
                                         <input type="hidden" value="<?php echo base_url() . 'subscription'; ?>" name="fail_url">
 										
-										
-                                        <input type="submit" class="btn btnRed" value="Submit">
+							            <input type="submit" class="btn btnRed" value="Submit">
 										
 									</div>
 									
 								</form>
 								
 							</li>
-							
 							
 						</ul>
 						
@@ -296,12 +294,11 @@
                         <div class="thankYou text-center">
                             <h4 class="heading">Thank You</h4>
                             <p class="confirmText">Your subscription has been confirmed.</p>
-                            <p>Dear, [name]</p>
                             <p>Welcome to RPDigital.</p>
                             <p>We are thrilled to have you here and look forward to serving you often!<br> 
                                 Please login to RPDigital portal and start enjoying your benefits.<br> 
-                                We have sent you login details to your email address.<br>
-                                To begin please <a href="">click here</a>.
+                                We have sent you <b>Email Verification link</b> to your email address.<br>
+                                
 							</p>
                             <p>We are happy to assist you in any way we can.</p>
                             <p>You can reach us at:<br>
