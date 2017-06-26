@@ -76,6 +76,7 @@ $route['dashboard'] = 'backend/Dashboard/index';
 
 $route['dashboard/productlist'] = 'backend/Dashboard/productList';
 $route['dashboard/createproduct'] = 'backend/Dashboard/createProduct';
+$route['dashboard/create_pdf'] = 'backend/create_pdf';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
 $route['dashboard/calender'] = 'backend/Dashboard/calender';
 $route['dashboard/services'] = 'backend/Dashboard/services';
