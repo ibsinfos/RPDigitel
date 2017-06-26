@@ -784,7 +784,7 @@ table.tile_info td p {
     position: relative
 }
 
-.navTabWrap .btn {
+.navTabWrap #broadcast_list.btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -792,7 +792,7 @@ table.tile_info td p {
     color: #fff
 }
 
-.navTabWrap .btn:before {
+.navTabWrap #broadcast_list:before {
     content: '';
     height: 15px;
     width: 15px;
@@ -1023,6 +1023,12 @@ table.tile_info td p {
 .btn {
     padding: 6px 20px;
 }
+.redText {
+    color: #f50707;
+}
+.noMargin {
+    margin: 0;
+}
 .btnRed {
     background-color: #f50707;
 }
@@ -1053,6 +1059,20 @@ table.tile_info td p {
     margin: 0 0 30px;
 }
 .editProfileWrap .addMediaWrap:before {
+    display: none;
+}
+.createProductWrap .navTabWrap .nav-tabs {
+    margin-bottom: 20px;
+}
+.createProductWrap .radioLabel {
+    margin: 0;
+    padding: 7px 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.createProductWrap .formallyOrganized-information,
+.createProductWrap .partnership-information,
+.createProductWrap .formallyOrganizedLLC-information {
     display: none;
 }
 .createProductWrap .addProductBtn {
@@ -1106,6 +1126,10 @@ table.tile_info td p {
 .addFilePopupLink:hover {
     color: #f50707;
 }
+.dropzone {
+    position: relative;
+}
+.dropzone:after,
 .addFilePopupLink:after {
     content: '';
     border: 1px dashed #ccc;
@@ -1114,6 +1138,8 @@ table.tile_info td p {
     top: 5px;
     right: 5px;
     bottom: 5px;
+    visibility: visible;
+    height: auto;
 }
 .fileSelectModal .panel {
     position: relative;
