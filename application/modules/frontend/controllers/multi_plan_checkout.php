@@ -19,10 +19,10 @@ class multi_plan_checkout extends CI_Controller {
 
         // Load PayPal library config
         $this->config->load('paypal');
-        //        $this->load->model('common_model');
+               $this->load->model('common_model');
         //        $this->load->library('cart');
         //        $this->load->library('M_pdf');
-        //        $this->global_setting = $this->common_model->getGlobalSettings();
+               $this->global_setting = $this->common_model->getGlobalSettings();
 
         $config = array(
             'Sandbox' => $this->config->item('Sandbox'), // Sandbox / testing mode option.

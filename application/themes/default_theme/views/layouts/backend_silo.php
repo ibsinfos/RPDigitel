@@ -115,7 +115,7 @@
             <script src="<?php echo backend_asset_url() ?>vendors/pdfmake/build/vfs_fonts.js"></script>
 		<?php } ?>
 		
-		<?php if($page=="upload_files"){?>
+		<?php if($page=="upload_files" || $page=="createproduct"){?>
 			
 			<!-- Dropzone.js -->
 			<script src="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.js"></script>
@@ -123,7 +123,9 @@
 		<?php }?>
 		
         <!-- validator -->
-        <script src="<?php echo backend_asset_url() ?>vendors/validator/validator.js"></script>
+        <!--<script src="<?php //echo backend_asset_url() ?>vendors/validator/validator.js"></script>-->
+		<!-- validator -->
+        <script src="<?php echo backend_asset_url() ?>js/jquery.validate.min.js"></script>
 		<!-- Parsley Form Validator 
 		<script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
         <!-- Music List Scripts used in dashboard -->

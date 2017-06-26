@@ -365,7 +365,6 @@
 
 <script type="text/javascript">
 	
-	
     $("#billing_country").on('change', function (e) {
 		
         if (this.value != 'select') {
@@ -409,6 +408,6 @@
         $('.status_details').removeClass('disabled').addClass('active');
 	}
 	
-    var memberDetailsForm_save_URL = "<?php echo base_url() . 'checkout_save_member'; ?>";
+    var memberDetailsForm_save_URL = "<?php echo base_url() . 'checkout_save_member'; ?>"; //refer \assets\frontend\js\custom.js
     // alert(memberDetailsForm_save_URL);
 </script>

@@ -237,7 +237,7 @@
 						
 						<form id="go_live" name="go_live" action="https://rebelute.net/broadcast/broadcast/broadcast.php" method="POST" target="_blank">
 							<input type="text" name="broadcast_list_flag" id="broadcast_list_flag" value="2" hidden>
-						<input type="submit" name="broadcast_list" id="broadcast_list" value="Go Live" class="btn bg-red"></button>
+						<button type="submit" name="broadcast_list" id="broadcast_list" class="btn bg-red">Go Live</button>
 						
 					</form>
 					<!--
