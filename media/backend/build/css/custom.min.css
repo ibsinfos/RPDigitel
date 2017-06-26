@@ -1126,6 +1126,9 @@ table.tile_info td p {
 .addFilePopupLink:hover {
     color: #f50707;
 }
+label.error {
+	color: #ff0000;
+}
 .dropzone {
     position: relative;
 }
