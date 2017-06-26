@@ -21,4 +21,11 @@ $(document).ready(function(){
 		$(this).closest('.mailBoxWrap').find('td input:checkbox').prop('checked', this.checked);
 	});
 
+	// script used for Create product page
+	$('.createProductWrap').on('click', '.radio-inline', function () {
+		var attrVal = $(this).attr('data-business-structure');
+		//alert(attrVal);
+		$('.businessStructureInfo').hide();
+		$('.'+attrVal+'-information').show();
+	});
 });

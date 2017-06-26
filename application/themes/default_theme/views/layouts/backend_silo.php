@@ -115,7 +115,7 @@
             <script src="<?php echo backend_asset_url() ?>vendors/pdfmake/build/vfs_fonts.js"></script>
 		<?php } ?>
 		
-		<?php if($page=="upload_files"){?>
+		<?php if($page=="upload_files" || $page=="createproduct"){?>
 			
 			<!-- Dropzone.js -->
 			<script src="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.js"></script>
