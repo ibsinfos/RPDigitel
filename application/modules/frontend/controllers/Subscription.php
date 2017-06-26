@@ -51,9 +51,13 @@
 			
 			/*Unset selected plan Sessions end*/
 			
-			$purchased_plans=$this->common_model->getRecords(TABLES::$SUBSCRIPTION_DETAILS, 'plan_id,end_date',array('user_id'=>$this->session->userdata('user_id')));
-			
-			
+			if($this->session->userdata('user_id')){	
+				
+				$purchased_plans=$this->common_model->getRecords(TABLES::$SUBSCRIPTION_DETAILS, 'plan_id,end_date',array('user_id'=>$this->session->userdata('user_id')));
+				
+				}else{
+				$purchased_plans=array();
+			}
 			
 			// echo "<pre>";
 			// print_r($purchased_plans);
@@ -167,7 +171,7 @@
 				
 				// -			$this->session->set_userdata($user_details);
 				$result_register_user=$this->membership_model->register_from_subscription_checkout($member_details);
-			
+				
 				/* To Register as new user after Subscription Checkout End*/
 				
 				$billing_address=array(

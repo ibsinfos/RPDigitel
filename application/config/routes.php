@@ -75,7 +75,10 @@ $route['submitlogin'] = 'backend/login/adminlogin';
 $route['dashboard'] = 'backend/Dashboard/index';
 
 $route['dashboard/productlist'] = 'backend/Dashboard/productList';
-$route['dashboard/createproduct'] = 'backend/Dashboard/createProduct';
+$route['dashboard/createproduct'] = 'backend/Product/createProduct';
+$route['save_publish_application_basic_info'] = 'backend/Product/save_publish_application_basic_info';
+$route['save_publish_application_company_info'] = 'backend/Product/save_publish_application_company_info';
+
 $route['dashboard/create_pdf'] = 'backend/create_pdf';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
 $route['dashboard/calender'] = 'backend/Dashboard/calender';

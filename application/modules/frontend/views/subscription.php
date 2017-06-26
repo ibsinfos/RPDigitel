@@ -113,6 +113,7 @@
 														
 														// echo "<pre>";
 														// print_r($purchased_plans);
+														
 														if(isset($plan_purchased_flag)){
 															unset($plan_purchased_flag);
 														}
@@ -136,7 +137,7 @@
 																}
 																
 																}else{
-																unset($plan_purchased_flag);
+																// unset($plan_purchased_flag);
 																// plan_purchased_flag unset
 															}
 															
