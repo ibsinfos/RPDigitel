@@ -137,30 +137,30 @@
 				
 				
 				/*for newly added features*/
-
+				
 				
 				if($this->input->post('new_added_feature')){
-				$new_added_feature=$this->input->post('new_added_feature');
-				$feature_ids=$this->Subscription_model->register_features($new_added_feature);
-				}else{
-				$feature_ids='';
+					$new_added_feature=$this->input->post('new_added_feature');
+					$feature_ids=$this->Subscription_model->register_features($new_added_feature);
+					}else{
+					$feature_ids='';
 				}
 				
 				
 				if($feature_ids!=''){
 					// $feature=$this->input->post('feature');
-				$new_feature_ids = implode(',', $feature_ids);
-				}else{
-				$new_feature_ids="";
+					$new_feature_ids = implode(',', $feature_ids);
+					}else{
+					$new_feature_ids="";
 				}
 				
 				/*for newly added features*/
 				
 				if($this->input->post('feature')){
 					$feature=$this->input->post('feature');
-				$feature = implode(',', $feature);
-				}else{
-				$feature="";
+					$feature = implode(',', $feature);
+					}else{
+					$feature="";
 				}
 				
 				
@@ -172,7 +172,7 @@
 					$update_feature_ids=$feature.",".$new_feature_ids;
 					}else if($feature=='' && $new_feature_ids==""){
 					$update_feature_ids="";
-					}
+				}
 				
 				// echo $feature;
 				// print_r($new_added_feature);
@@ -210,7 +210,7 @@
 			
 			// $this->template->set('plan_list', $data); // data to be sent in front end
 			// $this->template->set('features_list', $features_list); 
-
+			
 			$this->template->set('plan_details', $plan_details); 
 			$this->template->set('plan_features_list', $plan_features_list); 
 			
@@ -313,7 +313,7 @@
 			if(!empty($_SESSION['paasport_user_id']))
 			{
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-			}else{
+				}else{
 				$data['slug'] = '';
 			}
 			

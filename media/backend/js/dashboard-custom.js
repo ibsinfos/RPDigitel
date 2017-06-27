@@ -385,3 +385,247 @@ function validatePublisherInformation() {
 
 
 
+
+
+
+
+
+//*************************************************** Stockhoders Table Grid [B. FOC] Start ****************************************************
+
+var add_f_cont=0;
+var all_records=[];
+function foc_add_stockholders(){
+	
+	
+	add_f_cont++;
+	// alert(add_f_cont);
+	
+	
+	
+	// $("#table_plan_features > tbody tr#"+feature_id).remove();
+	
+	var stockholdersName=$("#stockholdersName").val();
+	var homeAddressZipCode=$("#homeAddressZipCode").val();
+	var ssOrTaxId=$("#ssOrTaxId").val();
+	var percentageOfOwnership=$("#percentageOfOwnership").val();
+	var isPublicklyTradedCorporation=$("#isPublicklyTradedCorporation").val();
+	$("#stockholdersName").val('');
+	$("#homeAddressZipCode").val('');
+	$("#ssOrTaxId").val('');
+	$("#percentageOfOwnership").val('');
+	$("#isPublicklyTradedCorporation").val('');
+	
+	$("#table_stockholder_foc > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_stock_stockholdersName[]' value='"+stockholdersName+"'>"+stockholdersName+"</td><td><input type='hidden' name='foc_stock_homeAddressZipCode[]' value='"+homeAddressZipCode+"'>"+homeAddressZipCode+"</td><td><input type='hidden' name='foc_stock_ssOrTaxId[]' value='"+ssOrTaxId+"'>"+ssOrTaxId+"</td><td><input type='hidden' name='foc_stock_percentageOfOwnership[]' value='"+percentageOfOwnership+"'>"+percentageOfOwnership+"</td><td><input type='hidden' name='foc_stock_isPublicklyTradedCorporation[]' value='"+isPublicklyTradedCorporation+"'>"+isPublicklyTradedCorporation+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_stockholder_foc('new_"+add_f_cont+"')\" name='del_featureid' id='del_new"+add_f_cont+"'></td></tr>");
+	
+	$("#stockholdersName").focus();
+	
+	/*
+		if((all_records.indexOf(name) == -1)){ //To check Duplicate
+		
+		
+		
+		// all_records.push(name);
+		
+		all_records.push({title:cat,link:name});
+		
+		// alert(JSON.stringify(all_records));
+		
+		// delete all_records['fiber'];
+		
+		
+		// const index = all_records.indexOf('Fiber plan 3');
+		// array.splice(index, 1);
+		// alert(index);
+		
+		
+		
+		$("#table_subcription_plans > tbody tr#"+cat).remove();
+		
+		
+		
+		$("#table_subcription_plans > tbody").append("<tr id='"+cat+"'><td>"+name+"</td><td>"+duration+"</td><td class='plan_price'>"+price+" <input type='button' value='X' onclick=\"delete_selected_plan('"+cat+"')\" name='del_"+cat+"' id='del_"+cat+"'></td></tr>");
+		
+		//*AJAX Request to add plan start
+		$.ajax({
+		
+		url:'<?php echo base_url();?>user/fiberrails/addToCart_Plan',
+		
+		method:'post',
+		
+		async: false,
+		
+		data:{'plan_cat':cat,'plan_name':name,'plan_duration':duration,'plan_price':price},
+		
+		success:function(data){
+		
+		// $("#project_portfolio").empty();
+		// alert(data);
+		// $("#billing_state").html(data);
+		
+		}					
+		
+		});
+		//*AJAX Request to add plan end
+		
+		
+		var pre_total=$("#subcription_plans_total").text();
+		
+		
+		var new_total=0;
+		$( ".plan_price" ).each(function() {
+		
+		var single_plan_price=($(this).html());
+		// alert(strr);
+		new_total=parseInt(new_total)+parseInt(single_plan_price);
+		});
+		
+		
+		// var new_total=parseInt(pre_total)+parseInt(price);
+		
+		$("#subcription_plans_total").text(parseInt(new_total));
+		$("#pricing_plan_total").val(parseInt(new_total));
+		
+		}
+		
+	*/
+	
+}
+
+
+
+function delete_selected_stockholder_foc(stockholder_foc_id){
+	
+	$("#table_stockholder_foc > tbody tr#"+stockholder_foc_id).remove();
+		
+}
+
+//*************************************************** Stockhoders Table Grid [B. FOC] End ****************************************************
+
+
+//*************************************************** Officers Table Grid [B. FOC] Start ****************************************************
+
+var add_f_cont=0;
+var all_records=[];
+function foc_add_officers(){
+	
+	add_f_cont++;
+	var officers_name=$("#officers_name").val();
+	var officers_homeAddressZipCode=$("#officers_homeAddressZipCode").val();
+	var officers_ssOrTaxId=$("#officers_ssOrTaxId").val();
+	var officers_officeHeld=$("#officers_officeHeld").val();
+	$("#officers_name").val('');
+	$("#officers_homeAddressZipCode").val('');
+	$("#officers_ssOrTaxId").val('');
+	$("#officers_officeHeld").val('');
+		
+	$("#table_officer_foc > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_officers_officerssName[]' value='"+officers_name+"'>"+officers_name+"</td><td><input type='hidden' name='foc_officers_homeAddressZipCode[]' value='"+officers_homeAddressZipCode+"'>"+officers_homeAddressZipCode+"</td><td><input type='hidden' name='foc_officers_ssOrTaxId[]' value='"+officers_ssOrTaxId+"'>"+officers_ssOrTaxId+"</td><td><input type='hidden' name='foc_officers_officeHeld[]' value='"+officers_officeHeld+"'>"+officers_officeHeld+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_officers_foc('new_"+add_f_cont+"')\" name='del_featureid' id='del_new"+add_f_cont+"'></td></tr>");
+	
+	$("#officers_name").focus();
+	
+}
+
+
+function delete_selected_officers_foc(officer_foc_id){
+	
+	$("#table_officer_foc > tbody tr#"+officer_foc_id).remove();
+		
+}
+
+//*************************************************** Officers Table Grid [B. FOC] End ****************************************************
+
+
+//*************************************************** Partners Table Grid [C. Partership] Start ****************************************************
+
+var add_f_cont=0;
+var all_records=[];
+function fol_add_partners(){
+	
+	add_f_cont++;
+	var partners_name=$("#partners_name").val();
+	var partners_homeAddressZipCode=$("#partners_homeAddressZipCode").val();
+	var partners_ssOrTaxId=$("#partners_ssOrTaxId").val();
+	var partners_ownership=$("#partners_ownership").val();
+	$("#partners_name").val('');
+	$("#partners_homeAddressZipCode").val('');
+	$("#partners_ssOrTaxId").val('');
+	$("#partners_ownership").val('');
+		
+	$("#table_partner_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_partners_Name[]' value='"+partners_name+"'>"+partners_name+"</td><td><input type='hidden' name='foc_partners_homeAddressZipCode[]' value='"+partners_homeAddressZipCode+"'>"+partners_homeAddressZipCode+"</td><td><input type='hidden' name='foc_partners_ssOrTaxId[]' value='"+partners_ssOrTaxId+"'>"+partners_ssOrTaxId+"</td><td><input type='hidden' name='foc_partners_percentageOfOwnership[]' value='"+partners_ownership+"'>"+partners_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_partners_foc('new_"+add_f_cont+"')\" name='del_partnerid' id='del_new"+add_f_cont+"'></td></tr>");
+	
+	$("#partners_name").focus();
+	
+}
+
+
+function delete_selected_partners_foc(partner_fol_id){
+	
+	$("#table_partner_fol > tbody tr#"+partner_fol_id).remove();
+		
+}
+
+//*************************************************** Partners Table Grid [C. Partership] End ****************************************************
+
+
+//*************************************************** Members Table Grid [D. FOL] End ****************************************************
+
+var add_f_cont=0;
+var all_records=[];
+function fol_add_members(){
+	
+	add_f_cont++;
+	var members_name=$("#members_name").val();
+	var members_homeAddressZipCode=$("#members_homeAddressZipCode").val();
+	var members_ssOrTaxId=$("#members_ssOrTaxId").val();
+	var members_ownership=$("#members_ownership").val();
+	$("#members_name").val('');
+	$("#members_homeAddressZipCode").val('');
+	$("#members_ssOrTaxId").val('');
+	$("#members_ownership").val('');
+		
+	$("#table_member_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_members_Name[]' value='"+members_name+"'>"+members_name+"</td><td><input type='hidden' name='foc_members_homeAddressZipCode[]' value='"+members_homeAddressZipCode+"'>"+members_homeAddressZipCode+"</td><td><input type='hidden' name='foc_members_ssOrTaxId[]' value='"+members_ssOrTaxId+"'>"+members_ssOrTaxId+"</td><td><input type='hidden' name='foc_members_percentageOfOwnership[]' value='"+members_ownership+"'>"+members_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_members_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
+	
+	$("#members_name").focus();
+	
+}
+
+
+function delete_selected_members_foc(member_fol_id){
+	
+	$("#table_member_fol > tbody tr#"+member_fol_id).remove();
+		
+}
+
+//*************************************************** Members Table Grid [D. FOL] End ****************************************************
+
+
+//*************************************************** Managers Table Grid [D. FOL] Start ****************************************************
+
+var add_f_cont=0;
+var all_records=[];
+function fol_add_managers(){
+	
+	add_f_cont++;
+	var managers_name=$("#managers_name").val();
+	var managers_homeAddressZipCode=$("#managers_homeAddressZipCode").val();
+	var managers_ssOrTaxId=$("#managers_ssOrTaxId").val();
+	var managers_ownership=$("#managers_ownership").val();
+	$("#managers_name").val('');
+	$("#managers_homeAddressZipCode").val('');
+	$("#managers_ssOrTaxId").val('');
+	$("#managers_ownership").val('');
+		
+	$("#table_manager_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_managers_Name[]' value='"+managers_name+"'>"+managers_name+"</td><td><input type='hidden' name='foc_managers_homeAddressZipCode[]' value='"+managers_homeAddressZipCode+"'>"+managers_homeAddressZipCode+"</td><td><input type='hidden' name='foc_managers_ssOrTaxId[]' value='"+managers_ssOrTaxId+"'>"+managers_ssOrTaxId+"</td><td><input type='hidden' name='foc_managers_is_have_authority[]' value='"+managers_ownership+"'>"+managers_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_managers_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
+	
+	$("#managers_name").focus();
+	
+}
+
+function delete_selected_managers_foc(manager_fol_id){
+	
+	$("#table_manager_fol > tbody tr#"+manager_fol_id).remove();
+		
+}
+
+//*************************************************** Managers Table Grid [D. FOL] End ****************************************************
+
+
