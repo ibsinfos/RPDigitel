@@ -247,48 +247,48 @@
 										</div>
 									</div>
 									<p class="text-center redText">*** Please submit a copy of the Certificate of Incorporation with the application *** </p>
-								<!--	<div class="row">
+									<!--	<div class="row">
 										<div class="col-xs-12">
-											<h4><strong>Add Stockholders:</strong></h4>
+										<h4><strong>Add Stockholders:</strong></h4>
 										</div>
 										<div class="col-xs-12 col-sm-4">
-											<div class="form-group">
-												<label for="companyName">Name:</label>
-												<input type="text" class="form-control" id="" name="" placeholder="">
-											</div>
-											<div class="form-group">
-												<label for="companyName">SS# or Tax ID#:</label>
-												<input type="text" class="form-control" id="" name="" placeholder="">
-											</div>
-											<div class="form-group">
-												<label for="companyName">Zip Code:</label>
-												<input type="text" class="form-control" id="" name="" placeholder="">
-											</div>
-											
-											
+										<div class="form-group">
+										<label for="companyName">Name:</label>
+										<input type="text" class="form-control" id="" name="" placeholder="">
+										</div>
+										<div class="form-group">
+										<label for="companyName">SS# or Tax ID#:</label>
+										<input type="text" class="form-control" id="" name="" placeholder="">
+										</div>
+										<div class="form-group">
+										<label for="companyName">Zip Code:</label>
+										<input type="text" class="form-control" id="" name="" placeholder="">
+										</div>
+										
+										
 										
 										</div>
 										<div class="col-xs-12 col-sm-4">
-											<div class="form-group">
-												<label for="companyName">% Of Ownership:</label>
-												<input type="text" class="form-control" id="" name="" placeholder="">
-											</div>
-											<div class="form-group">
-												<label for="companyName">Is Stockholder A Publickly Traded Corporation:</label>
-												<input type="text" class="form-control" id="" name="" placeholder="">
-											</div>
+										<div class="form-group">
+										<label for="companyName">% Of Ownership:</label>
+										<input type="text" class="form-control" id="" name="" placeholder="">
+										</div>
+										<div class="form-group">
+										<label for="companyName">Is Stockholder A Publickly Traded Corporation:</label>
+										<input type="text" class="form-control" id="" name="" placeholder="">
+										</div>
 										</div>
 										<div class="col-xs-12 col-sm-4 form-group">
-											<label for="companyName">Home Address:</label>
-                                            <textarea type="text" class="form-control" id="" name="" placeholder="" style="height: 107px;"></textarea>
+										<label for="companyName">Home Address:</label>
+										<textarea type="text" class="form-control" id="" name="" placeholder="" style="height: 107px;"></textarea>
 										</div>
 										
 										
 										<div class="col-xs-12 text-right">
-											<button type="button" class="btn btnRed">Add</button>
+										<button type="button" class="btn btnRed">Add</button>
 										</div>
-									</div>
-                                    -->
+										</div>
+									-->
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <h4><strong>List All Stockholders:</strong></h4>
@@ -469,37 +469,37 @@
                                     <div class="col-xs-12 col-sm-4">
                                         <label>Publishing Company Name</label>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="publishing_company_name1" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="performing_rights_organization1" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="position_held1" class="form-control" placeholder="">
 										</div>
 									</div>
                                     <div class="col-xs-12 col-sm-4">
                                         <label>Performing Rights Organization</label>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                         <div class="form-group">
+                                            <input type="text" name="publishing_company_name2" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="performing_rights_organization2" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="position_held2" class="form-control" placeholder="">
 										</div>
 									</div>
                                     <div class="col-xs-12 col-sm-4">
                                         <label>Position Held</label>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="publishing_company_name3" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="performing_rights_organization3" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="position_held3" class="form-control" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -585,7 +585,7 @@
 									</div>
                                     <div class="col-xs-12 col-sm-6 form-group">
                                         <label for="">Address</label>
-                                        <input type="text" class="form-control" id="" placeholder="">
+                                        <input type="text" name="administratorAddress" class="form-control" id="" placeholder="">
 									</div>
 								</div>
                                 <p>* You must submit a copy of your Administration Agreement with this application. The Administration Agreement will not be processed until your publisher affiliation has beed finalized.</p>
@@ -634,6 +634,7 @@
                                 <div class="col-xs-12">
                                     <br><br>
 									<form action="homepage.html" class="dropzone"></form>  
+									
                                     <br><br>
 								</div>
                                 <div class="col-xs-12">
@@ -661,7 +662,12 @@
 									</div>
 								</div>
                                 <div class="col-xs-12 text-right form-group">
-                                    <button class="btn btnRed">Submit</button>
+									
+								 	<form class="form-horizontal" id="publisherApplicationForm" name="publisherApplicationForm">
+										
+										<button class="btn btnRed">Submit</button>
+										
+									</form>
 								</div>
 							</div>
 						</div>
@@ -669,16 +675,16 @@
 				</div>
 				
 				<?php
-			/*		if($this->session->userdata('publisher_basic_info')){
+					/*		if($this->session->userdata('publisher_basic_info')){
 						echo "<pre>";
 						print_r($this->session->userdata('publisher_basic_info'));
-					}
-					
-					if($this->session->userdata('publisher_company_info')){
+						}
+						
+						if($this->session->userdata('publisher_company_info')){
 						echo "<pre>";
 						print_r($this->session->userdata('publisher_company_info'));
 					}*/
-					?>
+				?>
 			</div>
 		</div>
 	</div>
@@ -731,17 +737,17 @@
 		
 	?>
 	
-	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	
+	var basicInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_basic_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
+	var companyInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_company_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
+	var publisherApplicationForm_save_URL = "<?php echo base_url() . 'save_publish_application_all_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
 	
 	
-	
-	<script type="text/javascript">
-		
-		var basicInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_basic_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
-		var companyInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_company_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
-		
-		
-		</script>
-		
-		
-				
+</script>
+
+
