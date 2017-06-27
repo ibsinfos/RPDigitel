@@ -76,8 +76,11 @@ $route['dashboard'] = 'backend/Dashboard/index';
 
 $route['dashboard/productlist'] = 'backend/Dashboard/productList';
 $route['dashboard/createproduct'] = 'backend/Product/createProduct';
+$route['dashboard/createpaasport'] = 'backend/Paasport/createPaasport';
+$route['dashboard/broadcast'] = 'backend/Broadcast/index';
 $route['save_publish_application_basic_info'] = 'backend/Product/save_publish_application_basic_info';
 $route['save_publish_application_company_info'] = 'backend/Product/save_publish_application_company_info';
+$route['save_publish_application_all_info'] = 'backend/Product/save_publish_application_all_info';
 
 $route['dashboard/create_pdf'] = 'backend/create_pdf';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';

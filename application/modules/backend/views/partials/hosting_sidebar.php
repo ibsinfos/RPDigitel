@@ -152,6 +152,16 @@
 						</li>
 					<?php } ?>
 					
+					
+						<li><a href="<?php echo base_url()."dashboard/broadcast"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-event"></i>
+						</div> Broadcast </a>
+						</li>
+						
+						<li><a href="<?php echo base_url()."dashboard/createpaasport"; ?>"><div class="menuIcon">
+							<i class="iconDashboard-event"></i>
+						</div> Paasport </a>
+						</li>
 					 
 					<?php if(!empty($user_menu) && in_array('Community',$user_menu))  { ?>	
 						<li><a href="<?php echo base_url()."community"; ?>"><div class="menuIcon">
