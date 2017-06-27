@@ -22,6 +22,14 @@ class Services extends CI_Controller {
 			
 		}
 		
+		public function socialLogin()	{
+		
+			$this->load->model('Webservices_model');
+			$data = $this->Webservices_model->socialLogin($this->input->post());
+			echo json_encode($data);
+			
+		}
+		
 		
 		public function registerUser()	{
 			// echo '<pre/>';
@@ -30,6 +38,14 @@ class Services extends CI_Controller {
 			
 			$this->load->model('Webservices_model');
 			$data = $this->Webservices_model->registerUser($this->input->post());
+			echo json_encode($data);
+			
+		}
+		
+		public function socialRegister()	{
+			
+			$this->load->model('Webservices_model');
+			$data = $this->Webservices_model->socialRegister($this->input->post());
 			echo json_encode($data);
 			
 		}
