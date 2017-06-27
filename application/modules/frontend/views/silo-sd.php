@@ -1,7 +1,7 @@
 
     <!-- Main container -->
-    <div class="learnMoreAbout" style="top: 54px">
-        <a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse">Member Profile</a>
+    <!-- <div class="learnMoreAbout" style="top: 54px">
+        <a href="#demo" class="btn btnRed btn-block" data-toggle="collapse">Member Profile</a>
         <div id="demo" class="collapse" style="background: #ffffff; ">
             <div class="container-fluid">
                 <div class="margin-top-25">
@@ -16,7 +16,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <span class="col-md-4"> <button class="btn btn-danger">Subscribe</button></span>
+                                <span class="col-md-4"> <button class="btn btnRed">Subscribe</button></span>
                                 <span class="col-md-8"> <input id="input-21d" value="4" type="text" class="rating " data-min=0 data-max=5 data-step=0.5 data-size="xs"
                                               title=""></span>
 
@@ -25,7 +25,6 @@
                     </div>
                 </div>
             <div class="main_container col-lg-9">
-                <!-- page content -->
                 <div class="right_col" role="main">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -343,127 +342,112 @@
             </div>
         </div>
 
-            <!-- /page content -->
+            
         </div>
-    </div>
-</nav>
-<!-- Header -->
-<div class="intro-header">
-    <div class="container">
+    </div> -->
 
+<section class="siloSDHero">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-offset-2 col-lg-6">
-                <div class="intro-message">
-                    <h1>Silo MicroSD Cards</h1>
-                    <h4 class="padding-bottom-10">Extra storage for your mobile phone and other devices</h4>
-                    <a href="" class="btn btn-danger ">Where to Buy SiloSD Memory Cards</a>
-                </div>
+            <div class="col-sm-6">
+                <h1 class="heading">Silo MicroSD Cards</h1>
+                <h6>Extra storage for your mobile phone and other devices</h6>
+                <a href="" class="btn btnRed">Where to Buy SiloSD Memory Cards</a>
+            </div>
+            <div class="col-sm-6 clearfix">
+                <img src="<?php echo main_asset_url(); ?>images/silo-sd/card.png" class="sdCardImg">
             </div>
         </div>
-
     </div>
-    <!-- /.container -->
+</section>
 
-</div>
-<!-- /.intro-header -->
-
-<!-- Page Content -->
-<!--Section 1 Start-->
-<div class="row" style="background: #595959;">
-    <div class="container padding-top-20 padding-bottom-20">
-            <div class="col-lg-8">
-            <h3 class="white col-lg-12"> NAME YOUR PERSONAL CLOUD <small class="white">Starting from $9.99</small></h3>
-                <div class="form-group col-lg-6 col-md-6">
-                <input type="text" class="form-control" id="usr" placeholder="Enter your domain name here....">
-                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <button type="button" class="col-lg-6 col-md-6 col-xs-12 btn btn-default">Have a Promo Code ?</button>
-                    <button type="button" class="col-lg-6 col-md-6 col-xs-12 btn btn-danger">SEARCH DOMAIN</button>
-                </div>
-             </div>
-            <div class="col-lg-4 card-img hidden-xs hidden-sm hidden-md">
-                <img src=" <?php echo base_url(); ?>images/silo-sd/card.png" >
-            </div>
-    </div>
-</div>
-<!--Section 1 End-->
-
-<!--Section 2 Start-->
-<div class="row">
+<section class="siloSDSearchDomain">    
     <div class="container">
-        <div class="col-lg-12">
-        <div class="col-lg-offset-3 col-lg-1 col-md-offset-2 col-md-1"> <img src=" <?php echo base_url(); ?>images/silo-sd/silosecureddata.png" height="100" width="60" class="img-responsive center-block"></div>
-        <h1 class="red col-lg-6 col-md-8 margin-bottom-0 security-service">Security As A Service</h1>
-        <h4 class="red col-lg-6 col-md-8 security-sub">Your Privacy, Your Data, Fully-encrypted, Forever Yours.</h4>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="heading"> NAME YOUR PERSONAL CLOUD <small class="white">Starting from $9.99</small></h3>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Enter your domain name here....">
+                  </div>
+                  <button type="button" class="btn btn-default">Have a Promo Code ?</button>
+                  <button type="button" class="btn btnRed">SEARCH DOMAIN</button>
+                </form>
+            </div>
         </div>
-        <div class="col-lg-12">
-        <div class="col-lg-offset-2 col-lg-8 col-md-12">
-            <h3 class=" center">Get Expanded Auxiliary Storage for More Music, Photos,
-            and Videos from Your SiloSD™ Cloud Enabled Device!</h3>
-        </div>
-        </div>
-        <div class="col-lg-12 padding-top-20">
-            <div class="col-lg-offset-3 col-lg-8 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-                <div class="col-lg-3  col-sm-4 col-xs-12 ">
-                    <img src=" <?php echo base_url(); ?>images/silo-sd/domain.png" class="img-responsive center-block">
-                    <h6 class="center">Choose Your Domain</h6>
+    </div>
+</section>
+
+<section class="securityServiceWrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="row">
+                    <div class="col-sm-2"> 
+                        <img src="<?php echo main_asset_url(); ?>images/silo-sd/silosecureddata.png" height="100" width="60" class="img-responsive center-block">
+                    </div>
+                    <div class="col-sm-10"> 
+                        <h1 class="">Security As A Service</h1>
+                        <h4 class="">Your Privacy, Your Data, Fully-encrypted, Forever Yours.</h4>
+                    </div>
+                    <div class="col-sm-12"> 
+                        <h3 class="">Get Expanded Auxiliary Storage for More Music, Photos, and Videos from Your SiloSD™ Cloud Enabled Device!</h3>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-4 col-xs-12 ">
-                    <img src=" <?php echo base_url(); ?>images/silo-sd/hosting.png" class="center-block img-responsive">
-                    <h6 class="center">Personal Secured Webspace and Storage to be used as you wish...</h6>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-xs-12 ">
-                    <img src=" <?php echo base_url(); ?>images/silo-sd/website.png" class="img-responsive center-block">
-                    <h6 class="center">Upload your website in your Secured Space</h6>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <img src="<?php echo main_asset_url(); ?>images/silo-sd/domain.png" class="img-responsive center-block">
+                        <h6 class="center">Choose Your Domain</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="<?php echo main_asset_url(); ?>images/silo-sd/hosting.png" class="center-block img-responsive">
+                        <h6 class="center">Personal Secured Webspace and Storage to be used as you wish...</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="<?php echo main_asset_url(); ?>images/silo-sd/website.png" class="img-responsive center-block">
+                        <h6 class="center">Upload your website in your Secured Space</h6>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--Section 2 End-->
-<!--Section 3 Start-->
-<div class="row">
-    <hr class="hr-red hidden-xs hidden-sm hidden-md">
-    <div class="container margin-top-25">
-        <div class=" col-xs-12 center">
-            <a href="" class="btn bnt-block btn-danger btn-lg margin-bottom-25">Take Free Trial</a>
-        </div>
-        <div class="col-lg-6 col-md-6">
-            <p><strong> 99.9% Uptime Guarantee
-            We are confident in our backup contingency plans that we offer a 99.9%.</strong></p>
+</section>
 
-            <p><strong>Blazing Fast Site Load Time</strong>
-            Host your website with us and experience blazing fast site load speed.</p>
-
-            <p><strong>Easy to Use Control Panel</strong>
-            Our online control panel is designed to be very easy to use.</p>
-
-            <p><strong>Free Migration</strong>
-            Buy any shared, reseller or VPS and our migration expert will migrate your site.</p>
-        </div>
-        <div class="col-lg-6 col-md-6">
-            <p><strong>Auto Installed Apps</strong>
-            All of our hosting plans include a number of free server-side applications.</p>
-
-            <p><strong>Best Infrastructure</strong>
-            A network that is wrapped with better quality and uptime!</p>
-
-            <p><strong>Free 24×7/365 Support</strong>
-            Support specialists are available via e-mail, support tickets and telephone.</p>
-
-            <p><strong>Lowest price in Industry</strong>
-            Our prices are lowest but we do not compromise in service and quality.</p>
+<section class="siloSDFreeTrial">
+    <div class="btnWrap">
+        <a href="" class="btn btnRed">Start Free Trial</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p><strong> 99.9% Uptime Guarantee We are confident in our backup contingency plans that we offer a 99.9%.</strong></p>
+                <p><strong>Blazing Fast Site Load Time</strong><br>
+                Host your website with us and experience blazing fast site load speed.</p>
+                <p><strong>Easy to Use Control Panel</strong><br>
+                Our online control panel is designed to be very easy to use.</p>
+                <p><strong>Free Migration</strong><br>
+                Buy any shared, reseller or VPS and our migration expert will migrate your site.</p>
+            </div>
+            <div class="col-sm-6">
+                <p><strong>Auto Installed Apps</strong><br>
+                All of our hosting plans include a number of free server-side applications.</p>
+                <p><strong>Best Infrastructure</strong><br>
+                A network that is wrapped with better quality and uptime!</p>
+                <p><strong>Free 24×7/365 Support</strong><br>
+                Support specialists are available via e-mail, support tickets and telephone.</p>
+                <p><strong>Lowest price in Industry</strong><br>
+                Our prices are lowest but we do not compromise in service and quality.</p>
+            </div>
         </div>
     </div>
-</div>
-<!--Section 3 End-->
-<!--Section 4 Start-->
+</section>
+
 <div class="row margin-top-25" style=" background: #0f0f0f">
     <div class="col-lg-2 col-md-2 col-sm-2 padding-left-0" >
         <img src="<?php echo base_url(); ?>images/silo-sd/black-sd.jpg" class="img-responsive">
     </div>
     <div class=" col-lg-8 col-md-8 padding-top-15">
-        <h2 class="white center">Extend your mobile device storage to your silocloud... <a href="" class="btn btn-danger btn-lg">Learn More</a></h2>
+        <h2 class="white center">Extend your mobile device storage to your silocloud... <a href="" class="btn btnRed btn-lg">Learn More</a></h2>
     </div>
 
 </div>
@@ -506,54 +490,49 @@
     </div>
 </div>
 <!--Section 5 End-->
-<!-- Section 6 Start-->
-<div class="row" style="background: #8c8c8c">
+
+<section class="sdDataSecurity">
+    <div class="row" style="background: #8c8c8c">
         <div class="col-lg-6  padding-left-0 padding-right-0">
             <img src="<?php echo base_url(); ?>images/silo-sd/datasecurityonredkeyboar_137471-752x471.jpg" style="height: 100%; width: 100%;" class="center-block img-responsive">
         </div>
         <div class="col-lg-6  padding-top-5 ">
             <p class="white">The SiloSd micro SDCG (Secured Data Cloud Gate) cards offer an easy, affordable way to expand your mobile device's on-board memory. Available in native 8GB to 32GB, these cards give you additional storage space for your favorite photos, music and even HD videos by uniquly optimizing stored data from your mobile device to the cloud.</p>
-
             <p class="white">SiloSD micro SDCG cards are new to the landscape of expanded RAM cards due to its patent pending capabilities that extends storage and runtime activities of your mobile device to the Silo Cloud, where your moments and memories are stored and accessible from any network enabled device when you need it.</p>
-
             <p class="white">SiloSD goes a step further with its embedded solution that conditions and optimizes your mobile device by removing damaging cache from your phones internal memory and compressing it in a security auxiliary silo for restoration or future backup.</p>
-
             <p class="white">SiloSD’s Hybrid Data Access allows a user to unlock the unlimited storage potential of our SiloCloud while improving the performance of your mobile device.</p>
-
             <p class="white">SiloSD boast a revolutionary change to traditional storage extenders:
             Optimization</p>
-
             <p class="white">Restoration/Backup to the Cloud</p>
-
             <p class="white">Anti-Virus Security</p>
             <p class="white">The shock proof, x-ray proof, X-ray proof, temperature proof and waterproof SiloSD is guaranteed assurance that your data is secured along with your call logs, text, and
             applications that operate in Hyper V environments.
             Extra storage for your mobile phone and other devices</p>
         </div>
-</div>
-<!-- Section 6 End-->
-<!-- Section 7 Start-->
+    </div>
+</section>
+
 <div class="row">
         <img src="<?php echo base_url(); ?>images/silo-sd/section-memory.jpg" class="center-block img-responsive">
 </div>
-<!-- Section 7 End-->
-<!-- Section 8 Start-->
-<div class="row">
-    <div class="container">
-        <div class="col-lg-4">
-            <img src="<?php echo base_url(); ?>images/silo-sd/device.png" class="img-responsive center-block">
-        </div>
-        <div class="col-lg-8  hidden-xs">
-            <img src="<?php echo base_url(); ?>images/cards.png" class="center-block img-responsive">
-        </div>
-    </div>    
-</div>
-<!-- Section 8 End-->
-<!-- Section 9 Start-->
+
+<section class="sdDataSecurity">
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-4">
+                <img src="<?php echo base_url(); ?>images/silo-sd/device.png" class="img-responsive center-block">
+            </div>
+            <div class="col-lg-8  hidden-xs">
+                <img src="<?php echo base_url(); ?>images/cards.png" class="center-block img-responsive">
+            </div>
+        </div>    
+    </div>
+</section>
+
 <div class="row" style="background: #808080">
     <div class="container-fluid">
             <div class="center">
-        <button type="button" class="btn btn-danger"><a href="" class="white"><h3>ORDER  NOW</h3>
+        <button type="button" class="btn btnRed"><a href="" class="white"><h3>ORDER  NOW</h3>
             <h6>Get started with 5GB free.  Upgrade anytime.</h6>
         </a></button>
             </div>
@@ -601,7 +580,7 @@
             <br><small>$</small>0<br><small>NEVER EXPIRES</small>
             </h2>
             <div class="center">
-            <button type="button" class="btn btn-danger pricing-btn">FREE SIGNUP</button>
+            <button type="button" class="btn btnRed pricing-btn">FREE SIGNUP</button>
             </div>
             <p class="padding-top-10">
             <strong>Cloud storage:</strong><br>
@@ -646,7 +625,7 @@
                 <br><small>$</small>9<sup>99</sup><br><small>NEVER EXPIRES</small>
             </h2>
             <div class="center">
-            <button type="button" class="btn btn-danger pricing-btn" >CUSTOMIZE</button>
+            <button type="button" class="btn btnRed pricing-btn" >CUSTOMIZE</button>
             </div>
             <p class="padding-top-10">
                 <strong>Cloud storage:</strong><br>
@@ -693,7 +672,7 @@
                 <br><small>$</small>5 <sup>99</sup><br><small>NEVER EXPIRES</small>
             </h2>
             <div class="center">
-            <button type="button" class="btn btn-danger pricing-btn">ENROLL</button>
+            <button type="button" class="btn btnRed pricing-btn">ENROLL</button>
             </div>
             <p class="padding-top-10">
                 <strong>Cloud storage:</strong><br>
@@ -760,7 +739,7 @@
 <div class="row margin-top-25">
     <div class="container">
         <div class="center">
-        <button type="button" class="btn btn-danger btn-lg margin-bottom-25">Features</button>
+        <button type="button" class="btn btnRed btn-lg margin-bottom-25">Features</button>
         </div>
         <div class="col-lg-12 landscape-feature">
             <ul class="list-inline ">
@@ -788,10 +767,8 @@
     </div>
 </div>
 
-<!--Section 13 End-->
-<!--Section 14 End-->
 <div class="row">
         <img src="<?php echo base_url(); ?>images/silo-sd/fibrails.png" style="height:100%; width: 100%;" alt="" class="img-responsive center-block">
 </div>
-<!--Section 14 End-->
+
 

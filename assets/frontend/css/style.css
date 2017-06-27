@@ -383,18 +383,18 @@ html, body,
 .loginCarousel .carousel-inner .item {
   height: 100%;
 }
-.item:nth-child(1) {
+.loginCarousel .carousel-inner .item:nth-child(1) {
   background-image: url(../images/login/music-lovers.jpg);
 }
-.item:nth-child(2) {
+.loginCarousel .carousel-inner .item:nth-child(2) {
   background-image: url(../images/login/building.jpg);
 }
-.item:nth-child(3) {
+.loginCarousel .carousel-inner .item:nth-child(3) {
   background-image: url(../images/login/iceworker.jpg);
 }
-.item:nth-child(1),
-.item:nth-child(2),
-.item:nth-child(3) {
+.loginCarousel .carousel-inner .item:nth-child(1),
+.loginCarousel .carousel-inner .item:nth-child(2),
+.loginCarousel .carousel-inner .item:nth-child(3) {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -691,6 +691,231 @@ html, body,
 }
 /* Checkout css end */
 
+/* Paasport page css start */
+.passportCarouselWrap {
+  padding: 0;
+}
+.passportCarouselWrap .carousel .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+}
+.passportCarouselWrap .carousel .slide1 {
+  background-image: url('../images/paasport/Slide1.jpg');
+}
+.passportCarouselWrap .carousel .slide2 {
+  background-image: url('../images/paasport/Slide1.jpg');
+}
+.passportCarouselWrap .carousel-indicators li {
+  border-color: #FF0000;
+}
+.passportCarouselWrap .carousel-caption {
+  bottom: 25%;
+  color: #000;
+}
+.passportCarouselWrap .carousel-indicators .active {
+  background-color: #FF0000;
+}
+.passportToolSection {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+.passportToolSection .heading {
+  color: #5a5a5a;
+  font-size: 30px;
+  /*margin-top: 40px;*/
+}
+.passportToolSection .signUpForm {
+  background: rgba(0,0,0,0.7); 
+  padding:50px 0;
+}
+.passportToolSection .signUpForm .signUpHeading {
+  color: #FFFFFF;
+  text-align: center;
+}
+.passportToolSection .qrCodeImg {
+  height: 160px; 
+  margin: 17px auto 10px;
+}
+.passportToolSection .qrCodeBtn {
+  margin-bottom: 10px;
+}
+.paasportManageCloud {
+  background: url('../images/paasport/enterprise-solutions.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 50px 0;
+}
+.paasportManageCloud:before {
+  position: absolute;
+  content: '';
+  background: rgba(255,255,255,0.95);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 52%;
+}
+.paasportManageCloud .paasportLogo {
+  opacity: 0.7;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.paasportQuickIntegration {
+  background-color:#333333;
+  color: #FFFFFF;
+}
+.paasportQuickIntegration .img-responsive {
+  position: relative; 
+  top: -30px;
+}
+.paasportQuickIntegration .heading {
+  font-size: 36px; 
+}
+.paasportQuickIntegration .subHeading {
+  font-size: 16px; 
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.paasportQuickIntegration .subHeading small {
+  color: #FFFFFF;
+}
+.paasportHowItWorks {
+  color: #5a5a5a;
+  padding: 30px 0;
+}
+.paasportHowItWorks .heading {
+  font-size: 36px;
+}
+.paasportHowItWorks .subHeading,
+.paasportHowItWorks img {
+  margin-bottom: 30px;
+}
+.paasportHowItWorks img,
+.paasportSiloMerchant .qrpaymentImg {
+  opacity: 0.7;
+}
+.paasportHowItWorks img:hover,
+.paasportSiloMerchant .qrpaymentImg:hover {
+  opacity: 1;
+}
+.paasportHowItWorks .paragraph {
+  margin-bottom: 20px;
+}
+.paasportSiloMerchant {
+  background: url('../images/paasport/worldmap.png') no-repeat center center/cover;
+  color: #fff;
+  padding: 50px 0;
+}
+.paasportSiloMerchant .secureImg {
+  height: 200px;
+  position: relative;
+  top: -40px;
+}
+.paasportCampaignSoln {
+  background-color: #7f7f7f;
+  padding: 30px 0;
+  color: #fff;
+}
+.paasportCampaignSoln img.center-block {
+  margin-bottom: 20px;
+}
+.paasportQRCode {
+  padding: 50px 0;
+}
+.paasportQRCode .heading {
+  color: #7F7F7F;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.paasportQRCode .knowAboutHeading {
+  margin-bottom: 50px;
+}
+.paasportQRCode ol>li {
+  margin-bottom: 30px;
+}
+.paasportQRCode ol>li .ques {
+  font-weight: 600;
+}
+.paasportQRCode ol>li .ans {
+  color: #7F7F7F;
+}
+/* Paasport page css end */
+
+/* Silo SD page css start */
+.siloSDHero {
+  background: url('../images/silo-sd/bg.jpg') no-repeat center center/cover;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #fff;
+}
+.siloSDHero .heading {
+  font-size: 34px;
+}
+.siloSDHero .btn {
+  font-size: 11px;
+}
+.siloSDHero .sdCardImg {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 350px;
+}
+.siloSDSearchDomain {
+  background-color: #595959;
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+.siloSDSearchDomain .heading {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.siloSDSearchDomain .heading small {
+  color: #FFFFFF;
+}
+.siloSDSearchDomain .form-control {
+  min-width: 300px;
+  margin-right: 15px;
+}
+.siloSDSearchDomain .btn-default {
+  font-size: 11px;
+  line-height: 11px;
+  color: #7F7F7F;
+  height: 34px;
+  border-color: #fff;
+  margin-right: 5px;
+}
+.siloSDSearchDomain .btnRed {
+  font-size: 12px;
+  font-weight: 700;
+  height: 34px;
+}
+.securityServiceWrap {
+  padding: 20px 0;
+}
+.siloSDFreeTrial {
+  padding-bottom: 30px;
+}
+.siloSDFreeTrial .btnWrap {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.siloSDFreeTrial .btnWrap:before {
+  content: '';
+  background-color: #7F7F7F;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: -1;
+}
+.siloSDFreeTrial .btnWrap .btn {
+  font-weight: 700;
+}
+
+/* Silo SD page css end */
 
 /* footer css start */
 .footerWrap {
@@ -729,7 +954,8 @@ html, body,
 
 /* common css start */
 .redText,
-.error {
+.error,
+label > span {
   color: #FF0000;
 }
 .btn.active.focus, 
@@ -786,6 +1012,21 @@ html, body,
 }
 .tab-content {
   border-top: 10px solid #7f7f7f;
+}
+ol.typoList {
+  margin: 0;
+  padding: 0;
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+ol.upperRoman {
+  list-style-type: upper-roman;
+}
+ol.lowerRoman {
+  list-style-type: lower-roman;
 }
 /* common css end */
 
@@ -923,6 +1164,12 @@ html, body,
     padding: 0 15px;
     line-height: 55px;
   }
+
+  /* Paasport css start */
+  .paasportQRCode ol li.paddingRight {
+    padding-right: 50px;
+  }
+  /* Paasport css end */
 }
 @media (max-width: 767px) {
 	.navbar-inverse .badge {

@@ -27,14 +27,6 @@
         }
         ?>
         
-        <?php
-        if ($page == 'paasport') {
-           echo '<link href="'. base_url().'css/paasport.css" rel="stylesheet">';
-           echo '<link href="'.base_url().'css/paasport-login.css" rel="stylesheet">';
-           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
-        }
-        ?>
-       
         
         <script type="text/javascript" src="<?php echo main_asset_url(); ?>js/jquery-3.2.1.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
