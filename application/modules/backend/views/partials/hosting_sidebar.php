@@ -3,6 +3,11 @@
 	$userImg=backend_asset_url()."images/img.jpg";	
 	if(!empty($user[0]['user_image']))
 	$userImg=backend_passport_url().$user[0]['user_image'];
+
+
+	
+	
+	
 ?>	
 <div class="col-md-3 left_col menu_fixed">
     <div class="left_col scroll-view">
@@ -11,7 +16,7 @@
 			
 			<!--End Add navigation -->
 			
-            <a href="index.html" class="site_title">
+            <a href="<?php echo base_url().'dashboard';?>" class="site_title">
                 <img src="<?php echo backend_asset_url() ?>images/logo.png" alt="logo" width="30" class=""> <span>SCANDISC</span>
 			</a>
 		</div>
@@ -31,6 +36,8 @@
 					}
 				?> </h4>
 				
+				
+			
 				<ul class="list-unstyled list-inline">
 					<li><a href="<?php echo base_url(); ?>backend/dashboard/edit_profile" class="btn btnRed">Edit</a></li>
 					<li><button class="btn grayBtn" data-toggle="modal" data-target="#shareModal">Share</button></li>

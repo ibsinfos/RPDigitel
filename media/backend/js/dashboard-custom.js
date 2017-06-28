@@ -31,7 +31,7 @@ $(document).ready(function(){
 	
 	
 	// $("#save_basic_info").click(function () {
-		validateBasicInformation();
+	validateBasicInformation();
 	// });
 	
 	validateCompanyInformation();
@@ -39,11 +39,11 @@ $(document).ready(function(){
 	
 	//
 	$("#basicInfo").validate();
-
+	
 	// datepicker function initialized
 	if ($('.datepicker').length) {
 		$('.datepicker').datepicker({
-
+			
 		});
 	}
 	
@@ -251,7 +251,7 @@ function validateCompanyInformation() {
                             alert('User with this email already exist. Please try with different email.');
 							} else {
 							
-                         $('li[role=presentation]').removeClass('active');
+							$('li[role=presentation]').removeClass('active');
                             $('.tab-pane').removeClass('active');
                             $('.upload_files').addClass('active');
                             $('#uploadFiles').addClass('active');
@@ -286,7 +286,7 @@ function validatePublisherInformation() {
     $('#publisherApplicationForm').validate({
         // alert(memberDetailsForm_save_URL);
 		
-	
+		
         rules: {
             //// For General Sales Inquiries
             choice1: {
@@ -344,7 +344,7 @@ function validatePublisherInformation() {
 			billing_zip: "Please enter zip"*/
 		},
         submitHandler: function (form) {
-						
+			
             if (typeof companyInformationForm_save_URL == "undefined" || companyInformationForm_save_URL == null) {
 				} else {
 				// alert('sdf');
@@ -366,7 +366,7 @@ function validatePublisherInformation() {
                             alert('User with this email already exist. Please try with different email.');
 							} else {
 							
-                         $('li[role=presentation]').removeClass('active');
+							$('li[role=presentation]').removeClass('active');
                             $('.tab-pane').removeClass('active');
                             $('.upload_files').addClass('active');
                             $('#uploadFiles').addClass('active');
@@ -505,7 +505,7 @@ function foc_add_stockholders(){
 function delete_selected_stockholder_foc(stockholder_foc_id){
 	
 	$("#table_stockholder_foc > tbody tr#"+stockholder_foc_id).remove();
-		
+	
 }
 
 //*************************************************** Stockhoders Table Grid [B. FOC] End ****************************************************
@@ -526,7 +526,7 @@ function foc_add_officers(){
 	$("#officers_homeAddressZipCode").val('');
 	$("#officers_ssOrTaxId").val('');
 	$("#officers_officeHeld").val('');
-		
+	
 	$("#table_officer_foc > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_officers_officerssName[]' value='"+officers_name+"'>"+officers_name+"</td><td><input type='hidden' name='foc_officers_homeAddressZipCode[]' value='"+officers_homeAddressZipCode+"'>"+officers_homeAddressZipCode+"</td><td><input type='hidden' name='foc_officers_ssOrTaxId[]' value='"+officers_ssOrTaxId+"'>"+officers_ssOrTaxId+"</td><td><input type='hidden' name='foc_officers_officeHeld[]' value='"+officers_officeHeld+"'>"+officers_officeHeld+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_officers_foc('new_"+add_f_cont+"')\" name='del_featureid' id='del_new"+add_f_cont+"'></td></tr>");
 	
 	$("#officers_name").focus();
@@ -537,7 +537,7 @@ function foc_add_officers(){
 function delete_selected_officers_foc(officer_foc_id){
 	
 	$("#table_officer_foc > tbody tr#"+officer_foc_id).remove();
-		
+	
 }
 
 //*************************************************** Officers Table Grid [B. FOC] End ****************************************************
@@ -558,7 +558,7 @@ function fol_add_partners(){
 	$("#partners_homeAddressZipCode").val('');
 	$("#partners_ssOrTaxId").val('');
 	$("#partners_ownership").val('');
-		
+	
 	$("#table_partner_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_partners_Name[]' value='"+partners_name+"'>"+partners_name+"</td><td><input type='hidden' name='foc_partners_homeAddressZipCode[]' value='"+partners_homeAddressZipCode+"'>"+partners_homeAddressZipCode+"</td><td><input type='hidden' name='foc_partners_ssOrTaxId[]' value='"+partners_ssOrTaxId+"'>"+partners_ssOrTaxId+"</td><td><input type='hidden' name='foc_partners_percentageOfOwnership[]' value='"+partners_ownership+"'>"+partners_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_partners_foc('new_"+add_f_cont+"')\" name='del_partnerid' id='del_new"+add_f_cont+"'></td></tr>");
 	
 	$("#partners_name").focus();
@@ -569,7 +569,7 @@ function fol_add_partners(){
 function delete_selected_partners_foc(partner_fol_id){
 	
 	$("#table_partner_fol > tbody tr#"+partner_fol_id).remove();
-		
+	
 }
 
 //*************************************************** Partners Table Grid [C. Partership] End ****************************************************
@@ -590,7 +590,7 @@ function fol_add_members(){
 	$("#members_homeAddressZipCode").val('');
 	$("#members_ssOrTaxId").val('');
 	$("#members_ownership").val('');
-		
+	
 	$("#table_member_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_members_Name[]' value='"+members_name+"'>"+members_name+"</td><td><input type='hidden' name='foc_members_homeAddressZipCode[]' value='"+members_homeAddressZipCode+"'>"+members_homeAddressZipCode+"</td><td><input type='hidden' name='foc_members_ssOrTaxId[]' value='"+members_ssOrTaxId+"'>"+members_ssOrTaxId+"</td><td><input type='hidden' name='foc_members_percentageOfOwnership[]' value='"+members_ownership+"'>"+members_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_members_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
 	
 	$("#members_name").focus();
@@ -601,7 +601,7 @@ function fol_add_members(){
 function delete_selected_members_foc(member_fol_id){
 	
 	$("#table_member_fol > tbody tr#"+member_fol_id).remove();
-		
+	
 }
 
 //*************************************************** Members Table Grid [D. FOL] End ****************************************************
@@ -622,7 +622,7 @@ function fol_add_managers(){
 	$("#managers_homeAddressZipCode").val('');
 	$("#managers_ssOrTaxId").val('');
 	$("#managers_ownership").val('');
-		
+	
 	$("#table_manager_fol > tbody").append("<tr id='new_"+add_f_cont+"'><td><input type='hidden' name='foc_managers_Name[]' value='"+managers_name+"'>"+managers_name+"</td><td><input type='hidden' name='foc_managers_homeAddressZipCode[]' value='"+managers_homeAddressZipCode+"'>"+managers_homeAddressZipCode+"</td><td><input type='hidden' name='foc_managers_ssOrTaxId[]' value='"+managers_ssOrTaxId+"'>"+managers_ssOrTaxId+"</td><td><input type='hidden' name='foc_managers_is_have_authority[]' value='"+managers_ownership+"'>"+managers_ownership+"</td><td><input style='text-align:right;' type='button' value='X' class='btn btn-sm btnRed' onclick=\"delete_selected_managers_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
 	
 	$("#managers_name").focus();
@@ -632,9 +632,136 @@ function fol_add_managers(){
 function delete_selected_managers_foc(manager_fol_id){
 	
 	$("#table_manager_fol > tbody tr#"+manager_fol_id).remove();
-		
+	
 }
 
 //*************************************************** Managers Table Grid [D. FOL] End ****************************************************
 
 
+
+/*
+	$('#publisher_application_upload_dropzone').on('drop', function() {
+	var args = Array.prototype.slice.call(arguments);
+	
+	// Look at the output in you browser console, if there is something interesting
+	console.log(args);
+	alert('asd');
+	});
+	
+*/
+
+
+
+
+$(document).ready(function () {
+	Dropzone.autoDiscover = false;
+	var thumbs = [];
+	$("#publisher_application_upload").dropzone({
+		url: uploadProductFiles_URL,
+		addRemoveLinks: true,
+		maxFilesize: 2,
+		acceptedFiles: "image/jpeg,image/png",
+		success: function (file, response) {
+			var file_info=JSON.parse(response);
+			// alert(file_info.type);
+			
+			
+			
+			
+			$("#table_publisher_files > tbody").append("<tr id='"+file_info.file_name+"'><td><input type='checkbox'></td><td><input type='hidden' name='foc_managers_Name[]' value='"+file_info.file_name+"'>"+file_info.file_name+"</td><td><input type='hidden' name='foc_managers_Name[]' value='"+file_info.type+"'>"+file_info.type+"</td><td><input style='text-align:right;' type='button' value='Preview' class='btn btn-sm btnRed' onclick=\"delete_selected_managers_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
+			
+			
+			
+			
+			/*
+				
+				var imgName = response;
+				thumbs.push(imgName);
+				$("#thumbval").val(thumbs);
+				file.previewElement.classList.add("dz-success");
+				new PNotify({
+				title: 'Success',
+				text: imgName + ' uploaded successfully.',
+				type: 'success',
+				hide: true,
+				styling: 'bootstrap3',
+				delay: 2500,
+				history: false,
+				sticker: true
+				});
+			*/
+		},
+		removedfile: function (file) {
+			// $.post('<?= base_url() ?>backend/project/deleteThumbnail', {filename: file.name});
+			$.post(deleteThumbnail_URL, {filename: file.name});
+			$(document).find(file.previewElement).remove();
+			thumbs.splice($.inArray(file.name, thumbs), 1);
+			console.log(thumbs);
+			$("#thumbval").val(thumbs);
+			// alert(file.name);
+			
+			// $("#table_publisher_files > tbody tr#"+file.name").remove();
+			
+			/*
+				new PNotify({
+				title: 'Success',
+				text: file.name + ' removed successfully.',
+				type: 'success',
+				hide: true,
+				styling: 'bootstrap3',
+				delay: 2500,
+				history: false,
+				sticker: true
+			});*/
+			
+		},
+		error: function (file, response) {
+			file.previewElement.classList.add("dz-error");
+			new PNotify({
+				title: 'Error',
+				text: 'Unable to upload image',
+				type: 'error',
+				hide: true,
+				styling: 'bootstrap3'
+			});
+		}
+		
+	});  
+	
+	
+	
+	$('#upload_files_from_silo_cloud').on('click', function () {
+		// alert('df');
+		
+		var silo_form_data=$("#siosd_upload_files_form").serialize();
+		// var silo_sd_files=$("#silo_sd_files").value();
+		
+		// alert(silo_sd_files);
+		
+		
+		$.ajax({
+			
+			url:upload_from_silo_sd_URL,
+			
+			method:'post',
+			
+			async: false,
+			
+			// data:{'upload_files_silo_sd':silo_form_data},
+		data:silo_form_data,
+			// data:{'upload_files_silo_sd':silo_sd_files},
+			
+			success:function(data){
+				
+				// $("#comments").val('');
+				
+				// $("#comments").val(data);
+				
+			}							 
+		});
+		
+	});
+	
+	
+	
+});

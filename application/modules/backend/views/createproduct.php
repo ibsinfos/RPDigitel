@@ -200,7 +200,7 @@
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="affiliationPeriod">Period of Affiliation:</label>
                                             <input type="text" class="form-control" id="io_affiliationPeriod" name="io_affiliationPeriod" placeholder="">
-
+											
 										</div>
 									</div>
 								</div>
@@ -304,7 +304,7 @@
                                                             <th>Is Stockholder A Publickly Traded Corporation</th>
 														</tr>
 													</thead>
-
+													
                                                     <tbody>
 														
 														
@@ -347,7 +347,7 @@
                                                             <th>Office Held</th>
 														</tr>
 													</thead>
-
+													
                                                     <tbody>
                                                         <tr>
 															<td>
@@ -396,7 +396,7 @@
 													</thead>
                                                     <body>
                                                         <tr>
-                                                             <td>
+															<td>
 																<input type="text" name="partners_name[]" id="partners_name" class="form-control">
 															</td>
                                                             <td>
@@ -461,7 +461,7 @@
                                                             <th>Home Address &amp; Zip Code</th>
                                                             <th>SS# or Tax ID#</th>
                                                             <th>% Of Ownership</th>
-
+															
                                                             <th>Action</th>
 														</tr>
 													</thead>
@@ -688,9 +688,11 @@
                         <div role="tabpanel" class="tab-pane" id="uploadFiles">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4">
-                                    <a href="<?php echo base_url()."dashboard/addproduct"; ?>" class="panel addProductBtn siloSDBtn">
+									<a href="" class="addFilePopupLink panel addProductBtn siloSDBtn" data-toggle="modal" data-target="#myModal">
+										<!--<a href="<?php //echo base_url()."dashboard/addproduct"; ?>" class="panel addProductBtn siloSDBtn">-->
                                         <span>Select from SiloSD</span>
 									</a>
+									
 								</div>
                                 <div class="col-xs-12 col-sm-4">
                                     <a href="<?php echo base_url()."dashboard/addproduct"; ?>" class="panel addProductBtn scanDiscBtn">
@@ -707,30 +709,35 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <br><br>
-									<form action="<?php echo base_url().'upload_files_publish_application'; ?>" class="dropzone"></form>  
-	                              <br><br>
+									<!--
+										<form action="<?php //echo base_url().'upload_files_publish_application'; ?>" class="dropzone" id="publisher_application_upload_dropzone"></form>  
+										
+									-->
+									
+									
+									<div id="publisher_application_upload" class="dropzone">
+										<div class="dz-default dz-message">Drag and Drop Files here</div>
+										<input type="hidden" name="thumbnails" id="thumbval">
+									</div>
+									
+									<br><br>
 								</div>
                                 <div class="col-xs-12">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered" id="table_publisher_files">
                                             <thead>
                                                 <tr>
                                                     <th><label class="checkbox-inline"><input type="checkbox"> Check</label></th>
                                                     <th>File Name</th>
                                                     <th>File Type</th>
-                                                    <th>Rating</th>
-                                                    <th>Preview</th>
+                                                    <th>Action</th>
+                                                    <!--<th>Rating</th>
+														<th>Preview</th>
+													-->
 												</tr>
 											</thead>
-                                            <body>
-                                                <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-												</tr>   
-											</body>
+                                            <tbody>
+											</tbody>
 										</table>
 									</div>
 								</div>
@@ -814,11 +821,81 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade fileSelectModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<form id="siosd_upload_files_form" name="siosd_upload_files_form" >
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Select Files</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						
+						
+						<?php
+								$count_file=0;
+							foreach($silosd_files as $silosd_file){
+								$count_file++;
+							?>
+							
+							<div class="col-md-3">
+								<div class="panel panel-default">
+									<input type="checkbox" name="silo_sd_files_chk_<?php echo $count_file;?>" id="silo_sd_files_chk_<?php echo $count_file;?>" value="<?php echo base_url().$silosd_file;?>"  class="chkBox">
+									<!--<input type="text" name="silo_sd_files[]" value="<?php //echo base_url().$silosd_file;?>">-->
+									<img src="<?php echo base_url().$silosd_file;?>" class="img-responsive"></img>
+								</div>
+							</div>
+							
+							<?php
+							}
+						?>
+						
+						<!--
+							<div class="col-md-3">
+							<div class="panel panel-default">
+							<input type="checkbox" class="chkBox">
+							<img src="<?php //echo backend_asset_url() ?>images/dedicated_server.jpg" class="img-responsive">
+							</div>
+							</div>
+							<div class="col-md-3">
+							<div class="panel panel-default">
+							<input type="checkbox" class="chkBox">
+							<img src="<?php //echo backend_asset_url() ?>images/dedicated_server.jpg" class="img-responsive">
+							</div>
+							</div>
+							<div class="col-md-3">
+							<div class="panel panel-default">
+							<input type="checkbox" class="chkBox">
+							<img src="<?php //echo backend_asset_url() ?>images/dedicated_server.jpg" class="img-responsive">
+							</div>
+							</div>
+						-->
+						
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btnRed" id="upload_files_from_silo_cloud">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
 <script type="text/javascript">
 	
 	var basicInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_basic_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
 	var companyInformationForm_save_URL = "<?php echo base_url() . 'save_publish_application_company_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
 	var publisherApplicationForm_save_URL = "<?php echo base_url() . 'save_publish_application_all_info'; ?>"; //refer \media\backend\js\dashboard-custom.js
+	
+	var uploadProductFiles_URL = "<?php echo base_url() . 'uploadProductFiles'; ?>"; //refer \media\backend\js\dashboard-custom.js
+	var deleteThumbnail_URL = "<?php echo base_url() . 'deleteThumbnail'; ?>"; //refer \media\backend\js\dashboard-custom.js
+	var upload_from_silo_sd_URL = '<?php echo  base_url();?>upload_from_silo_sd'; //refer \media\backend\js\dashboard-custom.js
 	
 	
 </script>

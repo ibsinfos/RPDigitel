@@ -3,6 +3,11 @@
 	$userImg=backend_asset_url()."images/img.jpg";	
 	if(!empty($user[0]['user_image']))
 	$userImg=backend_passport_url().$user[0]['user_image'];
+	
+	
+	
+	
+	
 ?>	
 <!-- top navigation -->
 <div class="top_nav">
@@ -189,9 +194,9 @@
 					</ul>
 				</li>
 				
-			<li>
-				<form id="go_live" name="go_live" action="https://rebelute.net/broadcast/broadcast/broadcast.php" method="POST" target="_blank">
-					<input type="text" name="broadcast_list_flag" id="broadcast_list_flag" value="1" hidden>
+				<li>
+					<form id="go_live" name="go_live" action="https://rebelute.net/broadcast/broadcast/broadcast.php" method="POST" target="_blank">
+						<input type="text" name="broadcast_list_flag" id="broadcast_list_flag" value="1" hidden>
 					<input type="submit" name="broadcast_list" id="broadcast_list" value="Broadcast List" class="btn bg-red"></button>
 					
 				</form>
