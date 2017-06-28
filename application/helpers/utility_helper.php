@@ -46,6 +46,15 @@ if (!function_exists('main_asset_url()')) {
 
 }
 
+if (!function_exists('asset_url()')) {
+    
+    function asset_url()
+    {
+        return base_url().'assets/';
+    }
+
+}
+
 
 /**
  * 

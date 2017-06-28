@@ -12,7 +12,7 @@
 			<!--End Add navigation -->
 			
             <a href="index.html" class="site_title">
-                <img src="<?php echo backend_asset_url() ?>images/logo.png" alt="logo" width="30" class=""> <span>SCANDISC</span>
+                <img src="<?php echo asset_url() ?>backend/images/logo.png" alt="logo" width="30" class=""> <span>SCANDISC</span>
 			</a>
 		</div>
         <!-- menu profile quick info -->
