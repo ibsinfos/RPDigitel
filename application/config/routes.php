@@ -82,6 +82,9 @@ $route['save_publish_application_basic_info'] = 'backend/Product/save_publish_ap
 $route['save_publish_application_company_info'] = 'backend/Product/save_publish_application_company_info';
 $route['save_publish_application_all_info'] = 'backend/Product/save_publish_application_all_info';
 $route['upload_files_publish_application'] = 'backend/Product/upload_files_publish_application';
+$route['uploadProductFiles'] = 'backend/Product/uploadProductFiles';
+$route['deleteThumbnail'] = 'backend/Product/deleteThumbnail';
+$route['upload_from_silo_sd'] = 'backend/Product/upload_from_silo_sd';
 
 $route['dashboard/create_pdf'] = 'backend/create_pdf';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
