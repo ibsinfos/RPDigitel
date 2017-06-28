@@ -688,7 +688,7 @@
                         <div role="tabpanel" class="tab-pane" id="uploadFiles">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4">
-									<a href="" class="addFilePopupLink panel addProductBtn siloSDBtn" data-toggle="modal" data-target="#myModal">
+									<a href="" class="panel addProductBtn siloSDBtn" data-toggle="modal" data-target="#myModal">
 										<!--<a href="<?php //echo base_url()."dashboard/addproduct"; ?>" class="panel addProductBtn siloSDBtn">-->
                                         <span>Select from SiloSD</span>
 									</a>
