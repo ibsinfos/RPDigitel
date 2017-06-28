@@ -37,6 +37,15 @@ $(document).ready(function(){
 	validateCompanyInformation();
 	validatePublisherInformation();
 	
+	//
+	$("#basicInfo").validate();
+
+	// datepicker function initialized
+	if ($('.datepicker').length) {
+		$('.datepicker').datepicker({
+
+		});
+	}
 	
 });
 

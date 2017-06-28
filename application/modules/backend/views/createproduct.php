@@ -200,6 +200,7 @@
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="affiliationPeriod">Period of Affiliation:</label>
                                             <input type="text" class="form-control" id="io_affiliationPeriod" name="io_affiliationPeriod" placeholder="">
+
 										</div>
 									</div>
 								</div>
@@ -303,6 +304,7 @@
                                                             <th>Is Stockholder A Publickly Traded Corporation</th>
 														</tr>
 													</thead>
+
                                                     <tbody>
 														
 														
@@ -345,6 +347,7 @@
                                                             <th>Office Held</th>
 														</tr>
 													</thead>
+
                                                     <tbody>
                                                         <tr>
 															<td>
@@ -458,6 +461,7 @@
                                                             <th>Home Address &amp; Zip Code</th>
                                                             <th>SS# or Tax ID#</th>
                                                             <th>% Of Ownership</th>
+
                                                             <th>Action</th>
 														</tr>
 													</thead>

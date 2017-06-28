@@ -33,7 +33,7 @@
 				
 				<ul class="list-unstyled list-inline">
 					<li><a href="<?php echo base_url(); ?>backend/dashboard/edit_profile" class="btn btnRed">Edit</a></li>
-					<li><button class="btn grayBtn" data-toggle="modal" data-target="#myModal">Share</button></li>
+					<li><button class="btn grayBtn" data-toggle="modal" data-target="#shareModal">Share</button></li>
 				</ul>
 				
 		</div>
