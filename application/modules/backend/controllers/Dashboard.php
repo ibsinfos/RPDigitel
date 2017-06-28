@@ -91,12 +91,24 @@
 			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
 			
 			
+				$this->load->library('google_url_api');
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			
+			// create a shorten url start
+			$url = backend_passport_url()."view/".$slug; 
+			$this->google_url_api->enable_debug(FALSE);
+			$short_url = $this->google_url_api->shorten($url);
+			if(!empty($short_url->id))
+			$shorten_url=$short_url->id; 
+			else
+			$shorten_url=$url; 
+			
 			
 			
 			$this->template->set('user_menu',$user_menu);
 			$this->template->set('user',$user);
-			// $this->template->set('shorten_url',$shorten_url);
-			// $this->template->set('slug',$slug);
+			$this->template->set('shorten_url',$shorten_url);
+			$this->template->set('slug',$slug);
 			$this->template->set('page','dashboard');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('backend_silo')
