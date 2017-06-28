@@ -600,15 +600,6 @@ table.tile_info td p {
     margin-top: 10px
 }
 
-.modal .modal-body,
-.modal .modal-header {
-    padding: 10px
-}
-
-.modal .form-group {
-    margin-bottom: 10px
-}
-
 .modal .modalHeading {
     background-color: #e0e0e0;
     padding: 7px 5px;
@@ -626,11 +617,10 @@ table.tile_info td p {
 
 .socialShareWrap a,
 .socialShareWrap a.facebook,
-.facebook {
+.input-group-addon.facebook {
     background-color: #3b56ad;
     border-color: #3b56ad;
 }
-
 .socialShareWrap li {
     padding: 0 1px
 }
@@ -647,35 +637,63 @@ table.tile_info td p {
 }
 
 .socialShareWrap a.twitter,
-.twitter {
+.input-group-addon.twitter {
     background-color: #19b1f0;
     border-color: #19b1f0;
 }
 
 .socialShareWrap a.googlePlus,
-.googlePlus {
+.input-group-addon.googlePlus {
     background-color: #e34e38;
     border-color: #e34e38;
 }
 
 .socialShareWrap a.pinterest,
-.pinterest {
+.input-group-addon.pinterest {
     background-color: #ca1a1c;
     border-color: #ca1a1c;
 }
 
 .socialShareWrap a.instagram,
-.instagram {
+.input-group-addon.instagram {
     background-color: #4072a3;
     border-color: #4072a3;
 }
 
 .socialShareWrap a.linkedin,
-.linkedin {
+.input-group-addon.linkedin {
     background-color: #0068a5;
     border-color: #0068a5;
 }
-
+.input-group-addon.youtube {
+    background-color: #c4302b;
+    border-color: #c4302b;
+}
+.input-group-addon.email {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+.socialCircleIcon a {
+    display: block;
+}
+.socialCircleIcon a.facebook {
+    color: #3b56ad
+}
+.socialCircleIcon a.twitter {
+    color: #19b1f0
+}
+.socialCircleIcon a.googlePlus {
+    color: #e34e38
+}
+.socialCircleIcon a.linkedin {
+    color: #0068a5
+}
+.socialCircleIcon a.pinterest {
+    color: #ca1a1c
+}
+.socialCircleIcon a.youtube {
+    color: #c4302b
+}
 .audioPlayerWrap {
     color: grey;
     margin-bottom: 35px
@@ -1032,6 +1050,15 @@ table.tile_info td p {
 .btnRed {
     background-color: #f50707;
 }
+.btnRed.btn-o {
+    color: #FF3B30;
+    border: 1px solid #FF3B30;
+    background: #f5f5f5;
+}
+.btnRed.btn-o:hover {
+    background-color: #f50707;
+    color: #FFFFFF;
+}
 .grayBtn {
     background-color: #353535;
 }
@@ -1163,6 +1190,144 @@ label.error {
     font-size: 16px;
     margin-top: 10px;
 }
+
+/* Create paasport css start */
+.pictureContainer {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.pictureContainer .picture {
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border: 4px solid #CCCCCC;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.pictureContainer .picture:hover {
+    border-color: #FF3B30;
+}
+.pictureContainer .picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.createPaasportWrap {
+    height: auto;
+}
+.createPaasportWrap .heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.createPaasportWrap .mobileViewWrap {
+    position: relative;
+}
+.createPaasportWrap .mobileViewWrap .mobileContent {
+    position: absolute;
+    top: 145px;
+    left: 47px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 227px;
+}
+.createPaasportWrap .mobileViewWrap .btn {
+    text-transform: uppercase;
+}
+.createPaasportWrap .mobileViewWrap .btn-group {
+    margin-bottom: 5px;
+}
+.createPaasportWrap .mobileViewWrap .btn-group>.btn:first-child {
+    min-width: 172px;
+}
+.createPaasportWrap .mobileViewWrap .btnCollapse {
+   background-color: #536270;
+   color: #FFFFFF;
+   padding: 6px 13px;
+   opacity: 0.8;
+}
+.createPaasportWrap .mobileViewWrap .btnCollapse:hover {
+    opacity: 1;
+}
+.createPaasportWrap .mobileViewWrap .collapse {
+    background:#f5f5f5; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    margin-top: -5px;
+}
+.createPaasportWrap .mobileViewWrap .bottomBtns {
+    position: absolute;
+    top: 435px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: 218px;
+}
+.createPaasportWrap .btn-lg {
+    width: 200px;
+    margin-top: 20px;
+}
+.createPaasportWrap .addSectionBtn {
+    border: 2px solid #c7c7c7;
+    color: #c7c7c7;
+    padding: 4px 10px;
+}
+.createPaasportWrap #addSectionCollapse {
+    border: 2px solid #c7c7c7;
+    padding: 10px;
+    position: relative;
+    top: -7px;
+    margin-bottom: 20px;
+}
+.createPaasportWrap #addSectionCollapse a {
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin: 5px;
+    color: #ff0000;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #ff0000;
+    padding: 10px 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.createPaasportWrap .panel-danger {
+    border-color: #ff0000;
+}
+.createPaasportWrap .panel-danger>.panel-heading {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+}
+.createPaasportWrap .panel-danger>.panel-heading:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f078";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* Create paasport css end */
+
 /* Email Box css start */
 .responsiveSection {
     width: 100%;
@@ -1575,6 +1740,13 @@ label.error {
     margin-top: 25px;
 }
 /* Invoice css end */
+
+/* Common css start */
+.socialInputGroup .input-group-addon {
+    color: #fff;
+    min-width: 44px;
+}
+/* Common css end */
 
 
 

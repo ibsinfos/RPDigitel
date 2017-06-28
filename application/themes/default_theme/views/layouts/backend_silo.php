@@ -11,6 +11,9 @@
 		
         <!-- Bootstrap -->
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap datepicker -->
+        <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+
         <!-- Font Awesome -->
         <link href="<?php echo backend_asset_url() ?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- NProgress -->
@@ -22,8 +25,8 @@
         <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
         <!-- JQVMap -->
         <link href="<?php echo backend_asset_url() ?>vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
-        <!-- bootstrap-daterangepicker -->
-        <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+        <!-- bootstrap-daterangepicker 
+        <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">-->
         <!-- FullCalendar -->
         <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
         <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
@@ -56,47 +59,122 @@
                 <?php if (isset($template['partials']['footer'])) echo $template['partials']['footer']; ?>
 			</div>
 		</div>
+
+        <!-- Modal used for share btn in sidebar menu -->
+        <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="shareModalLabel">Share </h4>
+                    </div>
+                    <form>
+                        <div class="err_mailsend" ></div>
+                        <div class="modal-body text-center">
+                            <h4 class="modalHeading">Share by Text or Email</h4>
+                            
+                            <div class="form-group text-left">
+                                <input id="shorten_url" name="shorten_url" type="hidden" value="<?php echo ($shorten_url)?$shorten_url:current_url(); ?>" >
+                                <label for="to">To <small>(required)</small></label>
+                                <input id="to" name="to" type="text" class="form-control" placeholder="Recipients Email" >
+                                <span id="err_to" ></span>    
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="from">From <small>(required)</small></label>
+                                <input id="fromid" name="fromid" type="text"  class="form-control"  placeholder="Senders Email/Name" >
+                                <span id="err_from" ></span>      
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn" id="btnemailsend">Send</button>
+                            </div>
+                        </form> 
+                        <h4 class="modalHeading">Sharing by Social Network</h4>
+                        
+                        <ul class="list-unstyled list-inline socialShareWrap">
+                            
+                            <li>
+                                <a href="//www.facebook.com/sharer/sharer.php?u=<?php echo $shorten_url; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://twitter.com/intent/tweet?url=<?php echo $shorten_url; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="//plus.google.com/share?url=<?php echo $shorten_url; ?>" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="//pinterest.com/pin/create/button/?url=<?php echo $shorten_url; ?>" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+                            </li>
+                            
+                            
+                            <!--<li>
+                                <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </li>-->
+                            
+                            <li>
+                                <a href="//www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $shorten_url; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            
+                        </ul>
+                        <h4 class="modalHeading">Short URL for Sharing Page</h4>
+                        <p><a href=""><?php echo $shorten_url; ?></a></p>
+                        <?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
+                            <h4 class="modalHeading">Scan QRCode for Link</h4>
+                            <img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Modal -->
 		
         <!-- jQuery -->
         <script src="<?php echo backend_asset_url() ?>vendors/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap -->
         <script src="<?php echo backend_asset_url() ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Bootstrap Datepicker-->
+        <script src="<?php echo backend_asset_url(); ?>vendors/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js"></script>
         <!-- FastClick -->
         <script src="<?php echo backend_asset_url() ?>vendors/fastclick/lib/fastclick.js"></script>
         <!-- NProgress -->
         <script src="<?php echo backend_asset_url() ?>vendors/nprogress/nprogress.js"></script>
         <!-- FullCalendar -->
-    <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
-    <script src="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.js"></script>
-        <!-- Chart.js -->
-        <script src="<?php echo backend_asset_url() ?>vendors/Chart.js/dist/Chart.min.js"></script>
-        <!-- gauge.js -->
-        <script src="<?php echo backend_asset_url() ?>vendors/gauge.js/dist/gauge.min.js"></script>
+        <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
+        <script src="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+        <!-- Chart.js 
+        <script src="<?php //echo backend_asset_url() ?>vendors/Chart.js/dist/Chart.min.js"></script>-->
+        <!-- gauge.js 
+        <script src="<?php //echo backend_asset_url() ?>vendors/gauge.js/dist/gauge.min.js"></script>-->
         <!-- bootstrap-progressbar -->
         <script src="<?php echo backend_asset_url() ?>vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
         <!-- iCheck -->
         <script src="<?php echo backend_asset_url() ?>vendors/iCheck/icheck.min.js"></script>
         <!-- Skycons -->
         <script src="<?php echo backend_asset_url() ?>vendors/skycons/skycons.js"></script>
-        <!-- Flot -->
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.pie.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.time.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.stack.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/Flot/jquery.flot.resize.js"></script>
-        <!-- Flot plugins -->
-        <script src="<?php echo backend_asset_url() ?>vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/flot.curvedlines/curvedLines.js"></script>
+        <!-- Flot 
+        <script src="<?php //echo backend_asset_url() ?>vendors/Flot/jquery.flot.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/Flot/jquery.flot.pie.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/Flot/jquery.flot.time.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/Flot/jquery.flot.stack.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/Flot/jquery.flot.resize.js"></script>-->
+        <!-- Flot plugins 
+        <script src="<?php //echo backend_asset_url() ?>vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/flot.curvedlines/curvedLines.js"></script>-->
         <!-- DateJS -->
         <script src="<?php echo backend_asset_url() ?>vendors/DateJS/build/date.js"></script>
         <!-- JQVMap -->
         <script src="<?php echo backend_asset_url() ?>vendors/jqvmap/dist/jquery.vmap.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
         <script src="<?php echo backend_asset_url() ?>vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-        <!-- bootstrap-daterangepicker -->
-        <script src="<?php echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
-        <script src="<?php echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- bootstrap-daterangepicker 
+        <script src="<?php //echo backend_asset_url() ?>vendors/moment/min/moment.min.js"></script>
+        <script src="<?php //echo backend_asset_url() ?>vendors/bootstrap-daterangepicker/daterangepicker.js"></script>-->
         <?php if (($page == 'project_list') || ($page == 'productlist') || ($page == 'ordertable')) { ?>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net/js/jquery.dataTables.min.js"></script>
             <script src="<?php echo backend_asset_url() ?>vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
