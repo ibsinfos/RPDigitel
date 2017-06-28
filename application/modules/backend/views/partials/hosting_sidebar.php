@@ -1,6 +1,6 @@
 <?php $session_data = $this->session->userdata('user_account'); ?>
 <?php
-	$userImg=backend_asset_url()."images/img.jpg";	
+	$userImg=asset_url()."images/img.jpg";	
 	if(!empty($user[0]['user_image']))
 	$userImg=backend_passport_url().$user[0]['user_image'];
 
@@ -17,7 +17,7 @@
 			<!--End Add navigation -->
 			
             <a href="<?php echo base_url().'dashboard';?>" class="site_title">
-                <img src="<?php echo backend_asset_url() ?>images/logo.png" alt="logo" width="30" class=""> <span>SCANDISC</span>
+                <img src="<?php echo asset_url() ?>backend/images/logo.png" alt="logo" width="30" class=""> <span>SCANDISC</span>
 			</a>
 		</div>
         <!-- menu profile quick info -->
