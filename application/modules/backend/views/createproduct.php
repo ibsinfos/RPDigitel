@@ -153,21 +153,21 @@
 										</div>
                                         <div class="col-xs-12 col-sm-4 form-group">
                                             <label>Last</label>
-                                            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="">
+                                            <input type="text" id="io_lastName" name="io_lastName" class="form-control" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-4 form-group">
                                             <label>First</label>
-                                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="">
+                                            <input type="text" id="io_firstName" name="io_firstName" class="form-control" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-4 form-group">
                                             <label>Middle</label>
-                                            <input type="text" id="middleName" name="middleName" class="form-control" placeholder="">
+                                            <input type="text" id="io_middleName" name="io_middleName" class="form-control" placeholder="">
 										</div>
 									</div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4 form-group">
                                             <label for="socailSecurityNo">Social Security Number:</label>
-                                            <input type="text" class="form-control" id="socailSecurityNo" placeholder="">
+                                            <input type="text" class="form-control" id="io_socailSecurityNo" name="io_socailSecurityNo" placeholder="">
 										</div>
 									</div>
                                     <div class="row">
@@ -176,30 +176,30 @@
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="street">Street:</label>
-                                            <input type="text" class="form-control" id="street" name="street" placeholder="">
+                                            <input type="text" class="form-control" id="io_street" name="io_street" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="city">City:</label>
-                                            <input type="text" class="form-control" id="city" name="city" placeholder="">
+                                            <input type="text" class="form-control" id="io_city" name="io_city" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="state">State:</label>
-                                            <input type="text" class="form-control" id="state" name="state" placeholder="">
+                                            <input type="text" class="form-control" id="io_state" name="io_state" placeholder="">
 										</div>
 										<div class="col-xs-12 col-sm-6 form-group">
                                             <label for="zipCode">Zip Code:</label>
-                                            <input type="text" class="form-control" id="zipCode" name="zipCode" placeholder="">
+                                            <input type="text" class="form-control" id="io_zipCode" name="io_zipCode" placeholder="">
 										</div>
 									</div>
                                     <p class="text-center">If you are now or have ever been a writer-member affiliate of BMI, ASCAP, SESAC or any foreign performing rights organization, enter the information below.</p>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="organizationName">Name of Organization:</label>
-                                            <input type="text" class="form-control" id="organizationName" placeholder="">
+                                            <input type="text" class="form-control" id="io_organizationName" name="io_organizationName" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="affiliationPeriod">Period of Affiliation:</label>
-                                            <input type="text" class="form-control" id="affiliationPeriod" name="affiliationPeriod" placeholder="">
+                                            <input type="text" class="form-control" id="io_affiliationPeriod" name="io_affiliationPeriod" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -210,15 +210,15 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="corporationName">Exact Name of Corporation:</label>
-                                            <input type="text" class="form-control" id="corporationName" name="corporationName" placeholder="">
+                                            <input type="text" class="form-control" id="foc_corporationName" name="foc_corporationName" placeholder="">
 										</div>
                                         <div class="col-xs-12 form-group">
                                             <label class="radioLabel">Does this corporation have a division or DBA at ASCAP or SESAC?</label>
                                             <label class="radio-inline">
-												<input type="radio" name="corporationDivision" value="Y" checked> Yes
+												<input type="radio" name="foc_is_corporationDivision" value="Y" checked> Yes
 											</label>
                                             <label class="radio-inline">
-												<input type="radio" name="corporationDivision" value="N"> No
+												<input type="radio" name="foc_is_corporationDivision" value="N"> No
 											</label>
 										</div>
 									</div>
@@ -226,23 +226,23 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="companyName">Company Name:</label>
-                                            <input type="text" class="form-control" id="companyName" name="companyName" placeholder="">
+                                            <input type="text" class="form-control" id="foc_companyName" name="foc_companyName" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="incorporationState">State of Incorporation:</label>
-                                            <input type="text" class="form-control" id="incorporationState" name="incorporationState" placeholder="">
+                                            <input type="text" class="form-control" id="foc_incorporationState" name="foc_incorporationState" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="taxIdentyNo">Tax Identification Number:</label>
-                                            <input type="text" class="form-control" id="taxIdentyNo" name="taxIdentyNo" placeholder="">
+                                            <input type="text" class="form-control" id="foc_taxIdentyNo" name="foc_taxIdentyNo" placeholder="">
 										</div>
                                         <div class="col-xs-12 form-group">
                                             <label class="radioLabel">Is your BMI publishing company a division or DBA of your corporation?</label>
                                             <label class="radio-inline">
-												<input type="radio" name="bmiDivisionRadio" value="division" checked> Division
+												<input type="radio" name="foc_bmiDivisionRadio" value="division" checked> Division
 											</label>
                                             <label class="radio-inline">
-												<input type="radio" name="bmiDivisionRadio" value="dba"> DBA
+												<input type="radio" name="foc_bmiDivisionRadio" value="dba"> DBA
 											</label>
 										</div>
 									</div>
@@ -293,7 +293,7 @@
                                         <div class="col-xs-12">
                                             <h4><strong>List All Stockholders:</strong></h4>
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_stockholder_foc">
                                                     <thead>
                                                         <tr>
                                                             <th>Name</th>
@@ -303,21 +303,40 @@
                                                             <th>Is Stockholder A Publickly Traded Corporation</th>
 														</tr>
 													</thead>
-                                                    <body>
+                                                    <tbody>
+														
+														
                                                         <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            
+															<td>
+																<input type="text" name="stockholdersName[]" id="stockholdersName" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="homeAddressZipCode[]" id="homeAddressZipCode" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="ssOrTaxId[]" id="ssOrTaxId" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="percentageOfOwnership[]" id="percentageOfOwnership" class="form-control">
+															</td>
+															<td>
+																<input type="text" name="isPublicklyTradedCorporation[]" id="isPublicklyTradedCorporation" class="form-control">
+															</td>
+                                                            <td>
+																<input type="button" name="add_new" id="add_new" onclick="foc_add_stockholders()" value="Add" class=" btn btn-sm btnRed">
+															</td>
+                                                            
 														</tr>   
-													</body>
+														
+														
+													</tbody>
 												</table>
 											</div>
 											
                                             <h4><strong>List All Officers:</strong></h4>
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_officer_foc">
                                                     <thead>
                                                         <tr>
                                                             <th>Name</th>
@@ -326,14 +345,26 @@
                                                             <th>Office Held</th>
 														</tr>
 													</thead>
-                                                    <body>
+                                                    <tbody>
                                                         <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-														</tr>   
-													</body>
+															<td>
+																<input type="text" name="officers_name[]" id="officers_name"  class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="officers_homeAddressZipCode[]" id="officers_homeAddressZipCode" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="officers_ssOrTaxId[]" id="officers_ssOrTaxId" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="officers_officeHeld[]" id="officers_officeHeld" class="form-control">
+															</td>
+                                                            <td>
+																<input type="button" name="add_new" id="add_new" onclick="foc_add_officers()" value="Add" class=" btn btn-sm btnRed">
+															</td>
+                                                            
+														</tr>
+													</tbody>
 												</table>
 											</div>
 										</div>
@@ -346,12 +377,12 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="taxIdentyNo">Tax Identification Number/EIN:</label>
-                                            <input type="text" class="form-control" id="taxIdentyNo" placeholder="">
+                                            <input type="text" class="form-control" id="p_taxIdentyNo" name="p_taxIdentyNo" placeholder="">
                                             <span>(cannot be a social security number)</span>
 										</div>
                                         <div class="col-xs-12">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_partner_fol">
                                                     <thead>
                                                         <tr>
                                                             <th>Name of Partners</th>
@@ -362,10 +393,23 @@
 													</thead>
                                                     <body>
                                                         <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
+                                                             <td>
+																<input type="text" name="partners_name[]" id="partners_name" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="partners_homeAddressZipCode[]" id="partners_homeAddressZipCode" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="partners_ssOrTaxId[]" id="partners_ssOrTaxId" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="partners_ownership[]" id="partners_ownership" class="form-control">
+															</td>
+                                                            <td>
+																
+																<input type="button" name="add_new" id="add_new" onclick="fol_add_partners()" value="Add" class=" btn btn-sm btnRed">
+															</td>
+                                                            
 														</tr>   
 													</body>
 												</table>
@@ -380,48 +424,61 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="nameOfLLC">Exact Name of LLC:</label>
-                                            <input type="text" class="form-control" id="nameOfLLC" name="nameOfLLC" placeholder="">
+                                            <input type="text" class="form-control" id="fol_nameOfLLC" name="fol_nameOfLLC" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="companyName">Company Name:</label>
-                                            <input type="text" class="form-control" id="companyName" name="companyName" placeholder="">
+                                            <input type="text" class="form-control" id="fol_companyName" name="fol_companyName" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="incorporationState">State Where Organized:</label>
-                                            <input type="text" class="form-control" id="incorporationState" name="incorporationState" placeholder="">
+                                            <input type="text" class="form-control" id="fol_incorporationState" name="fol_incorporationState" placeholder="">
 										</div>
                                         <div class="col-xs-12 col-sm-6 form-group">
                                             <label for="taxIdentyNo">Tax Identification Number:</label>
-                                            <input type="text" class="form-control" id="taxIdentyNo" name="taxIdentyNo" placeholder="">
+                                            <input type="text" class="form-control" id="fol_taxIdentyNo" name="fol_taxIdentyNo" placeholder="">
 										</div>
                                         <div class="col-xs-12 form-group">
                                             <label class="radioLabel">Is your BMI publishing company a division or DBA of your LLC?</label>
                                             <label class="radio-inline">
-												<input type="radio" name="bmiDivision" value="division" checked> Division
+												<input type="radio" name="fol_bmiDivision" value="division" checked> Division
 											</label>
                                             <label class="radio-inline">
-												<input type="radio" name="bmiDivision" value="dba"> DBA
+												<input type="radio" name="fol_bmiDivision" value="dba"> DBA
 											</label>
 										</div>
                                         <div class="col-xs-12">
                                             <p class="text-center redText">*** Please submit a copy of the Articles of Organization with the application *** </p>
                                             <h4><strong>List All Members</strong></h4>
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_member_fol">
                                                     <thead>
                                                         <tr>
                                                             <th>Name</th>
                                                             <th>Home Address &amp; Zip Code</th>
                                                             <th>SS# or Tax ID#</th>
                                                             <th>% Of Ownership</th>
+                                                            <th>Action</th>
 														</tr>
 													</thead>
                                                     <body>
                                                         <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
+															<td>
+																<input type="text" name="members_name[]" id="members_name" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="members_homeAddressZipCode[]" id="members_homeAddressZipCode" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="members_ssOrTaxId[]" id="members_ssOrTaxId" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="members_ownership[]" id="members_ownership" class="form-control">
+															</td>
+                                                            <td>
+																<input type="button" name="add_new" id="add_new" onclick="fol_add_members()" value="Add" class=" btn btn-sm btnRed">
+															</td>
+                                                            
 														</tr>   
 													</body>
 												</table>
@@ -430,7 +487,7 @@
                                         <div class="col-xs-12">
                                             <h4><strong>List Manager(s) Authorized Under Articles of Organization, If Any:</strong></h4>
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_manager_fol">
                                                     <thead>
                                                         <tr>
                                                             <th>Name</th>
@@ -441,10 +498,23 @@
 													</thead>
                                                     <body>
                                                         <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>
+																<input type="text" name="managers_name[]" id="managers_name" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="managers_homeAddressZipCode[]" id="managers_homeAddressZipCode" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="managers_ssOrTaxId[]" id="managers_ssOrTaxId" class="form-control">
+															</td>
+                                                            <td>
+																<input type="text" name="managers_ownership[]" id="managers_ownership" class="form-control">
+															</td>
+                                                            <td>
+																
+																<input type="button" name="add_new" id="add_new" onclick="fol_add_managers()" value="Add" class=" btn btn-sm btnRed">
+															</td>
+                                                            
 														</tr>   
 													</body>
 												</table>
@@ -480,7 +550,7 @@
 									</div>
                                     <div class="col-xs-12 col-sm-4">
                                         <label>Performing Rights Organization</label>
-                                         <div class="form-group">
+										<div class="form-group">
                                             <input type="text" name="publishing_company_name2" class="form-control" placeholder="">
 										</div>
                                         <div class="form-group">
@@ -633,9 +703,8 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <br><br>
-									<form action="homepage.html" class="dropzone"></form>  
-									
-                                    <br><br>
+									<form action="<?php echo base_url().'upload_files_publish_application'; ?>" class="dropzone"></form>  
+	                              <br><br>
 								</div>
                                 <div class="col-xs-12">
                                     <div class="table-responsive">
