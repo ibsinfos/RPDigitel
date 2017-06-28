@@ -37,16 +37,18 @@ $(document).ready(function(){
 	validateCompanyInformation();
 	validatePublisherInformation();
 	
-	//
-	$("#basicInfo").validate();
-
 	// datepicker function initialized
 	if ($('.datepicker').length) {
 		$('.datepicker').datepicker({
-
+			autoclose: true
 		});
 	}
-	
+
+	// Script used for CK Editor
+	if ($('textarea.editor').length) {
+		$('textarea.editor').ckeditor();
+	}
+
 });
 
 

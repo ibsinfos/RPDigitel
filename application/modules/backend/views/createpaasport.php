@@ -55,7 +55,7 @@
 											<div class="col-xs-6">
 												<div class="pictureContainer">
 													<div class="picture">
-														<img src="<?php echo backend_asset_url(); ?>images/paasport/plus-sign.png" height="105" class="center-block">
+														<img src="<?php echo asset_url(); ?>backend/images/paasport/plus-sign.png" height="105" class="center-block">
 														<input type="file" id="wizard-picture" name="wizard-picture">
 													</div>
 													<input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : ''; ?>" name="old_user_image">
@@ -114,7 +114,7 @@
 													</li>
 													<li>
 														<input id="addbtn" type="button" class="btn btnRed"
-														data-toggle="modal" data-target="#myModal" value="Add +">
+														data-toggle="modal" data-target="#professionalInfoModal" value="Add +">
 													</li>
 												</ul>
 												<div class="text-center">
@@ -126,7 +126,7 @@
 								</div>
 								<div class="col-sm-4">
 									<div class="mobileViewWrap">
-										<img src="<?php echo backend_asset_url(); ?>images/paasport/phone.png" alt="" class="center-block mobileImg" height="550">
+										<img src="<?php echo asset_url(); ?>backend/images/paasport/phone.png" alt="" class="center-block mobileImg" height="550">
 										<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
 											<div class="pictureContainer">
 												<div class="picture">
@@ -136,7 +136,7 @@
 	                                                else
 	                                                    $wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
 													*/
-	                                                    $wizard_pic_preview = backend_asset_url() . "images/paasport/default-avatar.png";
+	                                                    $wizard_pic_preview = asset_url() . "backend/images/paasport/default-avatar.png";
 	                                                    ?>
 	                                                    <img src="<?php echo $wizard_pic_preview; ?>" class="picture-src img-circle"
 	                                                    id="wizardPicturePreview"
@@ -325,7 +325,7 @@
 
 			            		<div class="col-sm-4">
 			            			<div class="mobileViewWrap">
-			            				<img src="<?php echo backend_asset_url(); ?>images/paasport/socialphone.png" alt="" class="center-block mobileImg" height="550">
+			            				<img src="<?php echo asset_url(); ?>backend/images/paasport/socialphone.png" alt="" class="center-block mobileImg" height="550">
 			            				<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
 			            					<h2 class="text-center">Social Links</h2>
 			            					<ul class="list-unstyled row socialCircleIcon">
@@ -454,7 +454,7 @@
 			            							<div class="frmerror_shortbioinfo" ></div>
 			            							<form id="frmshortBioInfo">
 			            								<label for="editor1">Add About or Short Bio :</label>
-			            								<textarea id="editor1" name="editor1" maxlength="160"></textarea>
+			            								<textarea id="editor1" class="editor" name="editor1" maxlength="160"></textarea>
 			            								<input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
 			            								<div class="text-center">
 			            									<button type="button" id="shortBioSubmit" name="shortBioSubmit"  class="btn btnRed btn-lg">Save</button>
@@ -540,7 +540,7 @@
 			            											<label for="prevStartDate"
 			            											class="col-sm-3 control-label">Start Date</label>
 			            											<div class="col-sm-9">
-			            												<input type="text" class="form-control" id="prevStartDate1"
+			            												<input type="text" class="form-control datepicker" id="prevStartDate1"
 			            												value="" name="prevStartDate">
 			            												<span id="err_prevStartDate" ></span>	 	   
 			            											</div>
@@ -549,7 +549,7 @@
 			            											<label for="prevEndDate"
 			            											class="col-sm-3 control-label">End Date</label>
 			            											<div class="col-sm-9">
-			            												<input type="text" class="form-control" id="prevEndDate1"
+			            												<input type="text" class="form-control datepicker" id="prevEndDate1"
 			            												value="" name="prevEndDate">
 			            												<span id="err_prevEndDate" ></span>		   
 			            											</div>
@@ -643,7 +643,7 @@
 	                                            					<label for="eduStartDate"
 	                                            					class="col-sm-3 control-label">Start Date</label>
 	                                            					<div class="col-sm-9">
-	                                            						<input type="text" class="form-control" id="eduStartDate1"
+	                                            						<input type="text" class="form-control datepicker" id="eduStartDate1"
 	                                            						value="" name="eduStartDate">
 	                                            						<span id="err_eduStartDate" ></span>		   
 	                                            					</div>
@@ -653,7 +653,7 @@
 	                                            					<label for="eduEndDate"
 	                                            					class="col-sm-3 control-label">End Date</label>
 	                                            					<div class="col-sm-9">
-	                                            						<input type="text" class="form-control" id="eduEndDate1"
+	                                            						<input type="text" class="form-control datepicker" id="eduEndDate1"
 	                                            						value="" name="eduEndDate">
 	                                            						<span id="err_eduEndDate" ></span>	   
 	                                            					</div>
@@ -724,7 +724,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                 	<div class="mobileViewWrap">
-                                		<img src="<?php echo backend_asset_url(); ?>images/paasport/aboutphone.png" alt="" class="center-block" height="550">
+                                		<img src="<?php echo asset_url(); ?>backend/images/paasport/aboutphone.png" alt="" class="center-block" height="550">
                                 		<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
                                 			<div class="btn-group">
                                 				<button type="button" class="btn btnCollapse " data-toggle="collapse" data-target="#aboutdata">About</button>
@@ -855,19 +855,19 @@
 								  Add Section
 								</a>
 	                    		<div class="collapse" id="addSectionCollapse">
-	                    			<a data-toggle="modal" data-target="#pricing" class="showSingle" target="1">
+	                    			<a data-toggle="modal" data-target="#pricingModal" class="showSingle" target="1">
 	                    				<i class="fa fa-usd" aria-hidden="true"></i><br> Pricing
 	                    			</a>
-	                    			<a data-toggle="modal" data-target="#portfolio" class="showSingle" target="2">
+	                    			<a data-toggle="modal" data-target="#portfolioModal" class="showSingle" target="2">
 	                    				<i class="fa fa-user" aria-hidden="true"></i><br> Portfolio
 	                    			</a>
-	                    			<a class="showSingle" target="3" data-toggle="modal" data-target="#lists">
+	                    			<a class="showSingle" target="3" data-toggle="modal" data-target="#listModal">
 	                    				<i class="fa fa-list-ul" aria-hidden="true"></i><br> List
 	                    			</a>
-	                    			<a class="showSingle" target="4" data-toggle="modal" data-target="#links">
+	                    			<a class="showSingle" target="4" data-toggle="modal" data-target="#linksModal">
 	                    				<i class="fa fa-link" aria-hidden="true"></i><br> Links
 	                    			</a>
-	                    			<a class="showSingle" target="5" data-toggle="modal" data-target="#Video1">
+	                    			<a class="showSingle" target="5" data-toggle="modal" data-target="#videoModal">
 	                    				<i class="fa fa-video-camera" aria-hidden="true"></i><br> Video
 	                    			</a>
 	                    		</div>
@@ -1056,7 +1056,7 @@
 							</div>
 							<div class="col-sm-4">
 								<div class="mobileViewWrap">
-									<img src="<?php echo backend_asset_url(); ?>images/paasport/Info_mobile.png" alt="" class="center-block" height="550">
+									<img src="<?php echo asset_url(); ?>backend/images/paasport/Info_mobile.png" alt="" class="center-block" height="550">
 									<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
 										<div class="btn-group">
 											<button type="button" class="btn btnCollapse " data-toggle="collapse"
@@ -1327,12 +1327,12 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="professionalInfoModal" tabindex="-1" role="dialog" aria-labelledby="professionalInfoModalLabel">
 	<div class="modal-dialog modal-sm" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Professional Information</h4>
+				<h4 class="modal-title" id="professionalInfoModalLabel">Professional Information</h4>
 			</div>
 			<div class="modal-body">
 				<div class="frmerror_compinfo"></div>
@@ -1340,61 +1340,42 @@
 					<label for="companyname">Company Name
 						<small>(required)</small>
 					</label>
-					<input id="companyname" name="companyname" type="text"
-					class="form-control"
-					placeholder="Enter company name" value=""
-					maxlength="20">
+					<input id="companyname" name="companyname" type="text" class="form-control" placeholder="Enter company name" value="" maxlength="20">
 					<span id="err_companyname" ></span>	   
 				</div>
 				<div class="form-group">
 					<label for="jobTitle">Job Title
 						<small>(required)</small>
 					</label>
-					<input id="jobTitle" name="jobtitle1" type="text"
-					class="form-control"
-					placeholder="Enter Job Title" value=""
-					maxlength="20">
+					<input id="jobTitle" name="jobtitle1" type="text" class="form-control" placeholder="Enter Job Title" value="" maxlength="20">
 					<span id="err_jobtitle1" ></span>	 	   
 				</div>
 				<div class="form-group">
 					<label>Start Date</label>
 					<div id="sandbox-container" class="input-group date">
-						<input type="text" class="form-control datepicker"
-						value="" name="startdate"  placeholder="12-02-2017" >
+						<input type="text" class="form-control datepicker" value="" name="startdate"  placeholder="12-02-2017" >
 						<div class="input-group-addon">
 							<span class="fa fa-calendar"></span>
 						</div>
-
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="companyContact">Contact Number
 					</label>
-					<input id="companyContact" name="companycontact"
-					type="tel"
-					class="form-control"
-					placeholder="Enter Company Contact Number"
-					value="" maxlength="17">
-
+					<input id="companyContact" name="companycontact" type="tel" class="form-control" placeholder="Enter Company Contact Number" value="" maxlength="17">
 				</div>
 				<div class="form-group">
 					<label for="companyEmail">Email
 						<small>(required)</small>
 					</label>
-					<input id="companyEmail" name="companyemail"
-					type="text"
-					class="form-control"
-					placeholder="Enter Company Email" value="">
+					<input id="companyEmail" name="companyemail" type="text" class="form-control" placeholder="Enter Company Email" value="">
 					<span id="err_companyemail" ></span>	   
 				</div>
 				<div class="form-group">
 					<label for="companyWebsite">Website
 						<small>(required)</small>
 					</label>
-					<input id="companyWebsite" name="companywebsite"
-					type="text"
-					class="form-control"
-					placeholder="Company Website URL" value="">
+					<input id="companyWebsite" name="companywebsite" type="text" class="form-control" placeholder="Company Website URL" value="">
 					<span id="err_companywebsite" ></span>	   
 				</div>
 			</div>
@@ -1418,7 +1399,7 @@
 			<div class="modal-body">
 				<form id="frmblog" class="form-horizontal" enctype="multipart/form-data" >
 					<div class="frmerror_blog"></div>
-					<div class="form-group">
+					<div class="form-group blogModalRadioWrap">
 						<label class="radio-inline">
 							<input type="radio" name="blog" id="blogcoverimg" value="coverimagediv" checked="checked"> Upload Cover Image
 						</label>
@@ -1429,13 +1410,12 @@
 							<input type="radio" name="blog" id="blogvideourl" value="blogvideourldiv"> Video URL
 						</label>
 					</div> 
-					<div class="form-group blogclass" id="coverimagediv" style="display:block;" >
+					<div class="form-group blogclass" id="coverimagediv">
 						<label for="coverimage">Cover Image
 							<small>(required)</small>
 						</label>
 						<input type="file" name="coverimage" id="coverimage" />
 						<span id="err_coverimage"></span>	
-
 					</div>
 					<div class="form-group blogclass" id="blogvideodiv" style="display:none;" >
 						<label for="bloguploadvideo">Upload Video
@@ -1463,7 +1443,7 @@
 					<div class="form-group">
 						<label for="companyContact">Short Description <small>(required)</small>
 						</label>
-						<textarea id="blogshortdesc" name="blogshortdesc" class="form-control" placeholder="Enter Short Description" >
+						<textarea id="blogshortdesc" name="blogshortdesc" class="form-control editor" placeholder="Enter Short Description" >
 
 						</textarea>
 						<input type="hidden" id="blogshortdesc1" name="blogshortdesc1" >
@@ -1472,7 +1452,7 @@
 					<div class="form-group">
 						<label for="companyContact">Long Description <small>(required)</small>
 						</label>                                                               
-						<textarea id="bloglongdesc" name="bloglongdesc" class="form-control" placeholder="Enter Long Description" value=""  ></textarea>
+						<textarea id="bloglongdesc" name="bloglongdesc" class="form-control editor" placeholder="Enter Long Description" value=""  ></textarea>
 						<input type="hidden" id="bloglongdesc1" name="bloglongdesc1" >
 						<span id="err_bloglongdesc"></span>		   
 					</div>    
@@ -1490,211 +1470,150 @@
 				</div>
 			</div>
 		</div>
-	</div>									
-	<!--End blog Modal -->
+	</div>	
+</div>								
+<!--End blog Modal -->
 
-	<!-- Modal -->
-	<div id="pricing" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-        <!--<button type="button" class="close" data-dismiss="modal">
-            &times;
-        </button>-->
-        <h4 class="modal-title"> Add Pricing Plan Details </h4>
-    </div>
-    <div class="frmerror_priceplanupload" ></div>
-    <div class="frmerror_price_plane" ></div>
-    <div class="modal-body">
-
-    	<div class="radio radio-primary col-md-4">
-
-    		<input type="radio" name="priceimage" id="radio1" value="imagediv" checked="checked" >
-    		<label for="radio1">
-    			Upload Image
-    		</label>
-    	</div>
-    	<div class="radio radio-primary col-md-5">
-    		<input type="radio" name="priceimage" id="radio2" value="descprining">
-    		<label for="radio2">
-    			Add Pricing plan desciption
-    		</label>
-    	</div>
-
-    	<div class="clear"></div>
-
-    	<div id="imagediv" class="priceplanimage" style="display: block;">
-				<!-- 
-				<div class="form-group">
-				<label for="jobTitle">Upload Image
-							<small>(required)</small>
-						</label>
-				<div class="input-group" style="width:100%">
-						
-					<div class="clear"></div>
-					<input type="file" name="img[]" class="file">
-					<div class="input-group col-xs-12">
-					  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-					  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-					  <span class="input-group-btn">
-						<button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-					  </span>
-					</div>
-				</div>
-				</div>
-			--> 
-
-			<div class="form-group">
-				<form id="example-1" action="" method="POST" enctype="multipart/form-data" class="page">
-					<input type="hidden" name="pricing_id" id="pricing_id" >
-
-
-
-					<table id="price_image_update"  style="display:none;">
-						<thead><tr><th width='80'>Image</th><th>Select</th></tr></thead>
-						<tbody>
-							<tr>
-								<td><img src="" id="selImgPrice" class="img-responsive" /></td>
-								<td><input type="file" name="updatefile" id="updatefile" /></td>
-							</tr>
-						</tbody>
-					</table>	
-
-					<div id="dropzone-0">																				
-						<input type="file" name="file[]" id="file" multiple />
-					</div>
-
-				</form>
-			</div>
-
-
-
-			<div class="form-group text-center">
-				<button type="button" id="addpricingimage" class="btn btn-danger width150">Add                                                 
-				</button>
-			</div>
-		</div>
-		<div id="descprining" class="priceplanimage" style="display: none;">
-			
-			<form id="frmPricingPlan">	
-
-				<div class="form-group">
-					<label for="jobTitle">Pricing Plan Title
-						<small>(required)</small>
-					</label>
-					<input type="hidden" name="pricing_id1" id="pricing_id1" >
-					<input id="pricingtitle" name="pricingtitle"
-					type="text"
-					class="form-control"
-					placeholder="">
-					<span id="err_pricingtitle"></span>	   
-				</div>
-
-
-				<div class="form-group">
-					<label for="jobTitle">Pricing Plan Description
-						<small>(required)</small>
-					</label>
-					<textarea id="pricingdescription" name="pricingdescription" class="form-control" rows="3"></textarea>
-					<span id="err_pricingdescription"></span>	 
-				</div>
-
-				<div class="form-group">
-					<label for="companyContact">Price
-					</label>
-					<input id="pricingprice" name="pricingprice"
-					type="text"
-					class="form-control"
-					placeholder=""
-					value="" maxlength="17">
-				</div>
-
-				<div class="form-group text-center">
-					<button type="button" id="addpricingdetails" class="btn btn-danger width150">Add                                                 
-					</button>
-				</div>
-
-			</form>	
-			<hr>
-
-			<div class="form-group">
-				<div class="table-responsive">
-					<table class="table preview-table-ex4">
-						<thead>
-							<tr>
-
-								<th>Pricing Plan Title</th>
-								<th>Description</th>
-								<th>Price</th>
-							</tr>
-						</thead>
-						<tbody>
-
-						</tbody>
-
-					</table>
-
-
-				</div>
-			</div>
-		</div>
-		
-
-	</div>
-
-	<div class="modal-footer">
-        <!--<button type="button" class="btn btn-danger"
-                data-dismiss="modal" id="showAdd">Save
-            </button>-->
-            <button type="button" class="btn btn-danger btn-o"
-            data-dismiss="modal">
-            Close
-        </button>
-    </div>
-
-</div>
-
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div id="portfolio" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
+<!-- Start pricing Modal -->
+<div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="pricingModalLabel">
+	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-					&times;
-				</button>
-				<h4 class="modal-title"> Portfolio </h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="pricingModalLabel">Add Pricing Plan Details</h4>
 			</div>
-			<div class="frmerror_portfolio" ></div>
 			<div class="modal-body">
+			    <div class="frmerror_priceplanupload" ></div>
+			    <div class="frmerror_price_plane" ></div>
+			    <div class="form-group pricingModalRadioWrap">
+			    	<label class="radio-inline" for="radio1">
+			    		<input type="radio" name="priceimage" id="radio1" value="imagediv" checked="checked" >
+			    		Upload Image
+			    	</label>
+			    	<label class="radio-inline" for="radio2">
+			    		<input type="radio" name="priceimage" id="radio2" value="descprining">
+			    		Add Pricing plan desciption
+			    	</label>
+			    </div>
+		    	
+    			<div id="imagediv" class="priceplanimage">
+					<!-- 
+					<div class="form-group">
+					<label for="jobTitle">Upload Image
+								<small>(required)</small>
+							</label>
+					<div class="input-group" style="width:100%">
+							
+						<div class="clear"></div>
+						<input type="file" name="img[]" class="file">
+						<div class="input-group col-xs-12">
+						  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+						  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
+						  <span class="input-group-btn">
+							<button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+						  </span>
+						</div>
+					</div>
+					</div>
+					--> 
+					<div class="form-group">
+						<form id="example-1" action="" method="POST" enctype="multipart/form-data" class="page">
+							<input type="hidden" name="pricing_id" id="pricing_id" >
+							<table id="price_image_update"  style="display:none;">
+								<thead><tr><th width='80'>Image</th><th>Select</th></tr></thead>
+								<tbody>
+									<tr>
+										<td><img src="" id="selImgPrice" class="img-responsive" /></td>
+										<td><input type="file" name="updatefile" id="updatefile" /></td>
+									</tr>
+								</tbody>
+							</table>	
+							<div id="dropzone-0">																				
+								<input type="file" name="file[]" id="file" multiple />
+							</div>
+						</form>
+					</div>
+					<div class="form-group text-center">
+						<button type="button" id="addpricingimage" class="btn btnRed">Add                                                 
+						</button>
+					</div>
+				</div>
+				<div id="descprining" class="priceplanimage" style="display: none;">
+					<form id="frmPricingPlan">	
+						<div class="form-group">
+							<label for="jobTitle">Pricing Plan Title
+								<small>(required)</small>
+							</label>
+							<input type="hidden" name="pricing_id1" id="pricing_id1" >
+							<input id="pricingtitle" name="pricingtitle" type="text" class="form-control" placeholder="">
+							<span id="err_pricingtitle"></span>	   
+						</div>
+						<div class="form-group">
+							<label for="jobTitle">Pricing Plan Description
+								<small>(required)</small>
+							</label>
+							<textarea id="pricingdescription" name="pricingdescription" class="form-control" rows="3"></textarea>
+							<span id="err_pricingdescription"></span>	 
+						</div>
+						<div class="form-group">
+							<label for="companyContact">Price</label>
+							<input id="pricingprice" name="pricingprice" type="text" class="form-control" placeholder="" value="" maxlength="17">
+						</div>
+						<div class="form-group text-center">
+							<button type="button" id="addpricingdetails" class="btn btnRed">Add</button>
+						</div>
+					</form>	
+					<hr>
+					<div class="form-group">
+						<div class="table-responsive">
+							<table class="table preview-table-ex4">
+								<thead>
+									<tr>
+										<th>Pricing Plan Title</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+	            <button type="button" class="btn btnRed btn-o" data-dismiss="modal">
+		            Close
+		        </button>
+		    </div>
+		</div>
+    </div>
+</div>
+<!-- end pricing Modal -->
+
+<!-- Start portfolio Modal -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="portfolioModalLabel">Portfolio</h4>
+			</div>
+			<div class="modal-body">
+				<div class="frmerror_portfolio" ></div>
 				<form id="example-2" method="POST" enctype="multipart/form-data"  >
-
 					<input type="hidden" name="videourl_portfolio_id" id="videourl_portfolio_id" />
-
-					<div class="radio radio-primary col-md-4">
-						<input type="radio" name="portfolioDiv" id="radio3" value="imagediv1" checked="checked">
-						<label for="radio3">
+					<div class="form-group portfolioModalRadioWrap">
+						<label class="radio-inline" for="radio3">
+							<input type="radio" name="portfolioDiv" id="radio3" value="imagediv1" checked="checked">
 							Upload Image
 						</label>
-					</div>
-					<div class="radio radio-primary col-md-5">
-						<input type="radio" name="portfolioDiv" id="radio4" value="descprining1">
-						<label for="radio4">
+						<label class="radio-inline" for="radio4">
+							<input type="radio" name="portfolioDiv" id="radio4" value="descprining1">
 							Add a video
 						</label>
 					</div>
-
-					<div class="clear"></div>
-
-
-					<div id="imagediv1" class="portfolioContent page" style="display: block;" >
+					<div id="imagediv1" class="portfolioContent page">
 						<table id="portfolio_image_update"  style="display:none;">
 							<thead><tr><th width='80'>Image</th><th>Select</th></tr></thead>
 							<tbody>
@@ -1709,292 +1628,220 @@
 							<div id="dropzone"><input type="file" name="file-2[]" id="file-2" multiple  /></div>
 							<p class="demo-text"></p>
 							<!--</form>-->
-
 						</div>
 					</div>
 					<div id="descprining1" class="portfolioContent" style="display: none;">
-
 						<div class="form-group">
 							<label for="jobTitle">Video URL
 								<small>(required)</small>
 							</label>
-							<input id="videourl_portfolio" name="videourl_portfolio"
-							type="text"
-							class="form-control" required
-							placeholder="www.google.com">
+							<input id="videourl_portfolio" name="videourl_portfolio" type="text" class="form-control" required placeholder="www.google.com">
 							<span id="err_port_video" ></span>	   
 						</div>															
 					</div>
-
-
-
-
 					<div class="form-group text-center">
-						<button type="button" id="btnaddportfolio" class="btn btn-danger width150">Add                                                 
-						</button>
+						<button type="button" id="btnaddportfolio" class="btn btnRed">Add</button>
 					</div>
-
 				</form>
 				<hr>
-				
 				<div class="table-responsive">
 					<table class="table portfolio-preview">
 						<thead>
 							<tr>
 								<th>Image</th>
 								<th>Video URL</th>
-
 							</tr>
 						</thead>
 						<tbody>
-							
 						</tbody>
-
 					</table>
-
-
 				</div>
-
-
 			</div>
-
 			<div class="modal-footer">
-                <!--<button type="button" class="btn btn-danger"
-                        data-dismiss="modal" id="showAdd">Save
-                    </button> -->
-                    <button type="button" class="btn btn-danger btn-o"
-                    data-dismiss="modal">
-                    Close
-                </button>
+                <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
-
         </div>
-
     </div>
 </div>
+<!-- end portfolio Modal -->
 
-<!-- Modal -->
-<div id="lists" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
+<!-- Start lists Modal -->
+<div class="modal fade" id="listModal" tabindex="-1" role="dialog" aria-labelledby="listModalLabel">
+	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-					&times;
-				</button>
-				<h4 class="modal-title"> List </h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="listModalLabel">List</h4>
 			</div>
-			<div class="frmerror_list" ></div>
 			<div class="modal-body">
-
+				<div class="frmerror_list" ></div>
 				<form id="frmlist" >
-
 					<div class="form-group">
 						<label for="jobTitle">List Name
 							<small>(required)</small>
 						</label>
-						<input id="list_id" name="list_id"
-						type="hidden" >
-						<input id="listname" name="listname"
-						type="text"
-						class="form-control"
-						placeholder="">
+						<input id="list_id" name="list_id" type="hidden" >
+						<input id="listname" name="listname" type="text" class="form-control" placeholder="">
 						<span id="err_listname" ></span>	   
 					</div>
-
 					<div class="form-group text-center">
-						<button type="button" id="btnlistadd" class="btn btn-danger width150">Add                                                 
-						</button>
+						<button type="button" id="btnlistadd" class="btn btnRed">Add</button>
 					</div>
 				</form>
 				<hr>
-				
 				<div class="table-responsive">
 					<table class="table list-preview-table-ex4">
 						<thead>
 							<tr>
 								<th width="80">Sr. No.</th>
 								<th>List Names</th>
-
 							</tr>
 						</thead>
 						<tbody>
 						</tbody>
-
 					</table>
-
-
 				</div>
-
-
 			</div>
-
 			<div class="modal-footer">
-
-				<button type="button" class="btn btn-danger btn-o"
-				data-dismiss="modal">
-				Close
-			</button>
+				<button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
+			</div>
 		</div>
-
 	</div>
-
 </div>
-</div>
+<!-- end lists Modal -->
 
-<!-- Modal -->
-<div id="links" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
+<!-- Start links Modal -->
+<div class="modal fade" id="linksModal" tabindex="-1" role="dialog" aria-labelledby="linksModalLabel">
+	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-					&times;
-				</button>
-				<h4 class="modal-title"> Links </h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="linksModalLabel">Links</h4>
 			</div>
-			<div class="frmerror_addlink"></div>
 			<div class="modal-body">
-
+				<div class="frmerror_addlink"></div>
 				<form id="frmaddlink">
-					
-					
 					<div class="form-group">
 						<label for="jobTitle">Add Your Links
 							<small>(required)</small>
 						</label>
 						<input id="addlink_id" name="addlink_id" type="hidden" >
-						<input id="addlink" name="addlink"
-						type="text"
-						class="form-control"
-						placeholder="">
+						<input id="addlink" name="addlink" type="text" class="form-control" placeholder="">
 						<span id="err_addlink" ></span>  
 					</div>
-
 					<div class="form-group text-center">
-						<button type="button" id="btnAddLink" class="btn btn-danger width150">Add                                                 
-						</button>
+						<button type="button" id="btnAddLink" class="btn btnRed">Add</button>
 					</div>
 				</form>
 				<hr>
-				
 				<div class="table-responsive">
 					<table class="table link-preview">
 						<thead>
 							<tr>
 								<th width="80">Sr. No.</th>
 								<th>Links</th>
-
 							</tr>
 						</thead>
 						<tbody>
-							
 						</tbody>
-
 					</table>
-
-
 				</div>
-
-
 			</div>
-
 			<div class="modal-footer">
-                <!--<button type="button" class="btn btn-danger"
-                        data-dismiss="modal" id="showAdd">Save
-                    </button>-->
-                    <button type="button" class="btn btn-danger btn-o"
-                    data-dismiss="modal">
-                    Close
-                </button>
+                <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
-
         </div>
-
     </div>
 </div>
+<!-- end links Modal -->
 
-
-<!-- Modal -->
-<div id="Video1" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
+<!-- Start video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel">
+	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-					&times;
-				</button>
-				<h4 class="modal-title"> Video </h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="videoModalLabel">Video</h4>
 			</div>
-			<div class="frmerror_videourl" ></div>
 			<div class="modal-body">
-
-				
+				<div class="frmerror_videourl" ></div>
 				<form id="frmvideourl" >
-
 					<div class="form-group">
 						<label for="jobTitle">Video URL
 							<small>(required)</small>
 						</label>
-						<input id="videourl_id" name="videourl_id"
-						type="hidden"    >
-						<input id="videourl" name="videourl"
-						type="text"
-						class="form-control"
-						placeholder="">
+						<input id="videourl_id" name="videourl_id" type="hidden"    >
+						<input id="videourl" name="videourl" type="text" class="form-control" placeholder="">
 						<span id="err_videourl" ></span>	   
 					</div>
 					<div class="form-group">
-						<label for="jobTitle">Video Description
-
-						</label>
-						<textarea id="video_description" name="video_description"
-						type="text"
-						class="form-control"
-						placeholder=""></textarea>
+						<label for="jobTitle">Video Description</label>
+						<textarea id="video_description" name="video_description" type="text" class="form-control" placeholder=""></textarea>
 					</div>
-
 					<div class="form-group text-center">
-						<button type="button" id="btnvideourl" class="btn btn-danger width150">Add                                                 
-						</button>
+						<button type="button" id="btnvideourl" class="btn btnRed">Add</button>
 					</div>
 				</form>
 				<hr>
-				
 				<div class="table-responsive">
 					<table class="table video-preview">
 						<thead>
 							<tr>
 								<th width="80">Sr. No.</th>
 								<th>Video URL</th>
-
 							</tr>
 						</thead>
 						<tbody>								
 						</tbody>
-
 					</table>
-
-
 				</div>
-
-
 			</div>
-
 			<div class="modal-footer">
-               <!-- <button type="button" class="btn btn-danger"
-                        data-dismiss="modal" id="showAdd">Save
-                    </button> -->
-                    <button type="button" class="btn btn-danger btn-o"
-                    data-dismiss="modal">
+               <button type="button" class="btn btnRed btn-o" data-dismiss="modal">
                     Close
                 </button>
             </div>
-
         </div>
-
     </div>
 </div>
+<!-- end video Modal -->
+
+<script type="text/javascript">
+	var baseURL = '<?php echo base_url(); ?>';
+	var mainDashboardURL = "<?php echo base_url(); ?>dashboard";
+	var removeSkillsAndExerptiseURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/removeSkillsAndExerptise";
+	var removeAllSkillsAndExerptiseURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/removeAllSkillsAndExerptise";
+	var saveSkillsURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveSkills";
+	var deleteSkillURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/deleteSkill";
+	var saveExperienceURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveExperience";
+	var deleteExperienceURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/deleteExperience";
+	var saveEducationURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveEducation";
+	var deleteEducationURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/deleteEducation";
+	var deleteblogURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/deleteblog";
+	var deletePriceURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/deletePrice";
+	var saveUserinfoURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveUserinfo";
+	var saveCompanyInfoURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveCompanyInfo";
+	var saveSocialInfoURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveSocialInfo";
+	var saveShortBioURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveShortBio";
+	var saveSkillsAndExerptiseURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveSkillsAndExerptise";
+	var savePricePlanURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/savePricePlan";
+	var savePricePlanImageURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/savePricePlanImage";
+	var saveListURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveList";
+	var saveLinkURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveLink";
+	var saveVideoURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveVideoUrl";
+	var savePortfolioURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/savePortfolio";
+	var saveBloginfoURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveBloginfo";
+	var getSkillsAndExerptiseURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getSkillsAndExerptise";
+	var getSkillsAndExerptDetailURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getSkillsAndExerptDetail";
+	var getExperienceDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getExperienceData";
+	var getExperienceDataMobileURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getExperienceDataMobile";
+	var getEducationDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getEducationData";
+	var getEducationDataMobileURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getEducationDataMobile";
+	var getListDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getListData";
+	var getMainListDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getMainListData";
+	var getListDataMobileURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getListDataMobile";
+	var getLinkDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getLinkData";
+	var getVideoDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getVideoData";
+	var getPriceDataURL = "<?php echo base_url() ?>paas-port/frontend/Vcard/getPriceData";
+	var saveSkillsAndExerptise1URL = "<?php echo base_url() ?>paas-port/frontend/Vcard/saveSkillsAndExerptise1";
+</script>

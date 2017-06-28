@@ -10,12 +10,11 @@
         <title><?php echo $template['title'] ?> </title>
 		
         <!-- Bootstrap -->
-        <link href="<?php echo backend_asset_url() ?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo asset_url() ?>backend/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap datepicker -->
-        <link href="<?php echo backend_asset_url() ?>vendors/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
-
+        <link href="<?php echo asset_url() ?>backend/vendors/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
         <!-- Font Awesome -->
-        <link href="<?php echo backend_asset_url() ?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo asset_url() ?>backend/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- NProgress -->
         <link href="<?php echo backend_asset_url() ?>vendors/nprogress/nprogress.css" rel="stylesheet">
         <!-- iCheck -->
@@ -31,10 +30,9 @@
         <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
         <link href="<?php echo backend_asset_url() ?>vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
         
-        <link href="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-		
-        <!-- Custom Theme Style -->
-        <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
+        <link href="<?php echo asset_url() ?>backend/vendors/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+		<!-- Dropzone -->
+        <link href="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
         <?php if ($page == 'cloud_storage') { ?>
         <link href="<?php echo backend_asset_url() ?>build/css/elfinder.css" rel="stylesheet">
         <?php } ?>
@@ -45,9 +43,13 @@
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
 			<link href="<?php echo backend_asset_url() ?>vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 		<?php } ?>
-		
-		<!-- Dropzone.js -->
-        <link href="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+        <?php if ($page == 'createpaasport') { ?>
+        <link href="<?php echo asset_url() ?>backend/css/demo.css" rel="stylesheet">
+        <?php } ?>
+		<!-- Custom Theme Style -->
+        <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
+        <!-- Custom Style -->
+        <link href="<?php echo asset_url() ?>backend/css/style.css" rel="stylesheet">
 	</head>
 	
     <body class="nav-md">
@@ -134,11 +136,11 @@
         <!--End Modal -->
 		
         <!-- jQuery -->
-        <script src="<?php echo backend_asset_url() ?>vendors/jquery/dist/jquery.min.js"></script>
+        <script src="<?php echo asset_url() ?>backend/js/jquery.min.js"></script>
         <!-- Bootstrap -->
-        <script src="<?php echo backend_asset_url() ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="<?php echo asset_url() ?>backend/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
         <!--Bootstrap Datepicker-->
-        <script src="<?php echo backend_asset_url(); ?>vendors/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js"></script>
+        <script src="<?php echo asset_url(); ?>backend/vendors/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js"></script>
         <!-- FastClick -->
         <script src="<?php echo backend_asset_url() ?>vendors/fastclick/lib/fastclick.js"></script>
         <!-- NProgress -->
@@ -202,16 +204,19 @@
 		
         <!-- validator -->
         <!--<script src="<?php //echo backend_asset_url() ?>vendors/validator/validator.js"></script>-->
+        <!-- ckeditor -->
+        <script src="<?php echo asset_url(); ?>backend/vendors/ckeditor/ckeditor.js"></script>
+        <script src="<?php echo asset_url(); ?>backend/vendors/ckeditor/adapters/jquery.js"></script>
 		<!-- validator -->
-        <script src="<?php echo backend_asset_url() ?>js/jquery.validate.min.js"></script>
+        <script src="<?php echo asset_url() ?>backend/js/jquery.validate.min.js"></script>
 		<!-- Parsley Form Validator 
 		<script src="<?php //echo backend_asset_url() ?>vendors/parsleyjs/dist/parsley.min.js"></script>-->
         <!-- Music List Scripts used in dashboard -->
         <?php if($page=="dashboard" || $page=="edit_profile"){?>
-            <script src="<?php echo backend_asset_url() ?>build/js/music-list.js"></script>
+            <script src="<?php echo asset_url() ?>backend/js/music-list.js"></script>
 		<?php }?>
         <!-- Custom Scrollbar Scripts -->
-        <script src="<?php echo backend_asset_url() ?>vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="<?php echo asset_url() ?>backend/vendors/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
         <?php if($page=="cloud_storage"){?>
         <!-- elfinder Scripts -->
         <script data-main="<?php echo backend_asset_url()?>elfinder/main.default.js" src="<?php echo backend_asset_url()?>elfinder/require.min.js"></script>
@@ -220,7 +225,9 @@
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
         <!-- Custom Scripts -->
         <script src="<?php echo backend_asset_url() ?>js/dashboard-custom.js"></script>
-		
+        <?php if($page=="createpaasport"){?>
+        <script src="<?php echo asset_url() ?>backend/js/paasport-custom.js"></script>
+		<?php }?>
 		
 		<script type="text/javascript"  >
 			$(document).ready(function () {
