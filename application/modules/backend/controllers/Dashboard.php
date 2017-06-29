@@ -291,32 +291,6 @@
 			}			
 		}
 		
-		public function productList(){
-			
-			$this->load->model('login_model');
-			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
-			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
-			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-			
-			
-			$this->template->set('user_menu',$user_menu);
-			
-			$application_list = $this->common_model->getRecords(TABLES::$PUBLISHER_APPLICATION, '*', array('user_id'=>$_SESSION['user_id']),'');
-			
-			
-			$this->template->set('slug',$slug);
-			$this->template->set('user',$user);
-			$this->template->set('application_list',$application_list);
-			$this->template->set('page','productlist');
-			$this->template->set_theme('default_theme');
-			$this->template->set_layout('backend_silo')
-			->title('Admin Product List | Silo')
-			->set_partial('header', 'partials/header')
-			->set_partial('sidebar', $this->sidebar)
-			->set_partial('footer', 'partials/footer');
-			$this->template->build('productlist');
-			
-		}
 		
 		
 		/*
