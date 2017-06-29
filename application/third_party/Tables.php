@@ -20,9 +20,10 @@
 		public static $NEWS='tbl_news';
 		public static $CATEGORY='tbl_category';
 		public static $COMMUNITY_SLIDER='tbl_community_slider';
-                public static $MST_EVENTS = 'tbl_events';
-                public static $USERS = ' tbl_users';
-                public static $SUBSCRIPTION_DETAILS = 'tbl_services_subscription';
+		public static $MST_EVENTS = 'tbl_events';
+		public static $USERS = ' tbl_users';
+		public static $SUBSCRIPTION_DETAILS = 'tbl_services_subscription';
+		public static $PUBLISHER_APPLICATION = 'tbl_publisher_application';
 		
 	}
 	

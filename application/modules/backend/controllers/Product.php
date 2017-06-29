@@ -36,8 +36,50 @@
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
+			
+			
+			//********************************************************************************************************
+			
+			
+			
+			function getDirContents($dir, &$results = array()){
+				$files = scandir($dir);
+				
+				foreach($files as $key => $value){
+					// $path = realpath($dir.DIRECTORY_SEPARATOR.$value);
+					$path = $dir.DIRECTORY_SEPARATOR.$value;
+					if(!is_dir($path)) {
+						$results[] = $path;
+						} else if($value != "." && $value != "..") {
+						getDirContents($path, $results);
+						// $results[] = $path;  //Directories
+					}
+				}
+				
+				return $results;
+			}
+			
+			$dir='./uploads/'.$_SESSION['user_id'];
+			
+			
+			
+			$silosd_files=getDirContents($dir);
+			
+			// echo "<pre>";
+			// print_r($silosd_files);
+			// die();
+			// var_dump(getDirContents($dir));
+			
+			
+			//********************************************************************************************************
+			
+			
+			
+			
+			
 			$this->template->set('user_menu',$user_menu);
 			
+			$this->template->set('silosd_files',$silosd_files);
 			$this->template->set('slug',$slug);
 			$this->template->set('user',$user);
 			$this->template->set('page','createproduct');
@@ -58,7 +100,7 @@
 			$post_values=$this->input->post();
 			
 			// print_r($post_values['foc_stock_stockholdersName']);
-		
+			
 			
 			$publisher_basic_info=$post_values;
 			
@@ -87,7 +129,7 @@
 			//basic info Inserted
 			
 			
-				//Stockholder
+			//Stockholder
 			$count_busi_stock=0;
 			
 			if(isset($post_values['foc_stock_stockholdersName'])){
@@ -108,7 +150,7 @@
 			}
 			
 			
-				//Officers
+			//Officers
 			$count_busi_officers=0;
 			
 			if(isset($post_values['foc_officers_officerssName'])){
@@ -127,7 +169,7 @@
 			}
 			
 			
-				//PARTNERSHIP
+			//PARTNERSHIP
 			$count_busi_partnership=0;
 			
 			if(isset($post_values['foc_partners_Name'])){
@@ -140,7 +182,7 @@
 					$stockholder_data['address']=$post_values['foc_partners_homeAddressZipCode'][$count_busi_partnership];
 					$stockholder_data['tax_id']=$post_values['foc_partners_ssOrTaxId'][$count_busi_partnership];
 					$stockholder_data['ownership_percentage']=$post_values['foc_partners_percentageOfOwnership'][$count_busi_partnership];
-										
+					
 					
 					$this->db->insert('tbl_publisher_partners',$stockholder_data);
 					$count_busi_partnership++;
@@ -149,7 +191,7 @@
 			}
 			
 			
-				//Members
+			//Members
 			$count_busi_members=0;
 			
 			if(isset($post_values['foc_members_Name'])){
@@ -162,7 +204,7 @@
 					$stockholder_data['address']=$post_values['foc_members_homeAddressZipCode'][$count_busi_members];
 					$stockholder_data['tax_id']=$post_values['foc_members_ssOrTaxId'][$count_busi_members];
 					$stockholder_data['ownership_percentage']=$post_values['foc_members_percentageOfOwnership'][$count_busi_members];
-										
+					
 					
 					$this->db->insert('tbl_publisher_members',$stockholder_data);
 					$count_busi_members++;
@@ -171,7 +213,7 @@
 			}
 			
 			
-				//Members
+			//Members
 			$count_busi_managers=0;
 			
 			if(isset($post_values['foc_managers_Name'])){
@@ -184,7 +226,7 @@
 					$stockholder_data['address']=$post_values['foc_managers_homeAddressZipCode'][$count_busi_managers];
 					$stockholder_data['tax_id']=$post_values['foc_managers_ssOrTaxId'][$count_busi_managers];
 					$stockholder_data['have_authority']=$post_values['foc_managers_is_have_authority'][$count_busi_managers];
-										
+					
 					
 					$this->db->insert('tbl_publisher_managers',$stockholder_data);
 					$count_busi_managers++;
@@ -331,51 +373,148 @@
 			
 		}
 		
-		
-		public function upload_files_publish_application(){
+		/*
+			public function upload_files_publish_application(){
 			
 			if( !empty( $_FILES['file']['name'] ) ) 				
-			{				
+			{
+			
+			$file = time().$_FILES["file"]['name'];					
+			$file = str_replace(" ","_",$file);					
+			$file = str_replace("#","",$file);					
+			$file = str_replace("-","",$file);					
+			$file = str_replace("(","",$file);					
+			$file = str_replace(")","",$file);					
+			
+			$config['file_name'] = $file;
+			$config['upload_path'] = './uploads/silo_publisher_application';					
+			$config['allowed_types'] = 'jpg|png|jpeg';					
+			$config['max_size'] = '10000';					
+			$config['max_width']  = '';					
+			$config['max_height']  = '';					
+			$config['overwrite'] = TRUE;					
+			$config['remove_spaces'] = TRUE;					
+			$this->load->library('upload', $config);					
+			$upload_file=$this->upload->do_upload('file');					
+			
+			if($this->session->userdata('upload_file_list')){
+			
+			$upload_file_list=$this->session->userdata('upload_file_list');
+			
+			array_push($upload_file_list,$file);
+			
+			$this->session->set_userdata('upload_file_list',$upload_file_list);
+			
+			print_r($upload_file_list);
+			
+			}else{
+			
+			$upload_file_list=array();
+			array_push($upload_file_list,$file);
+			
+			$this->session->set_userdata('upload_file_list',$upload_file_list);
+			
+			}
+			
+			}
+		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		public function uploadProductFiles() {
+			
+			if (!empty($_FILES['file']['name'])) {
 				
-				$file = time().$_FILES["file"]['name'];					
-				$file = str_replace(" ","_",$file);					
-				$file = str_replace("#","",$file);					
-				$file = str_replace("-","",$file);					
-				$file = str_replace("(","",$file);					
-				$file = str_replace(")","",$file);					
+				$profile_image = time() . $_FILES["file"]['name'];
+				$profile_image = str_replace(" ", "_", $profile_image);
+				$profile_image = str_replace("#", "", $profile_image);
+				$profile_image = str_replace("-", "", $profile_image);
+				$profile_image = str_replace("(", "", $profile_image);
+				$profile_image = str_replace(")", "", $profile_image);
 				
-				$config['file_name'] = $file;
-				$config['upload_path'] = './uploads/silo_publisher_application';					
-				$config['allowed_types'] = 'jpg|png|jpeg';					
-				$config['max_size'] = '10000';					
-				$config['max_width']  = '';					
-				$config['max_height']  = '';					
-				$config['overwrite'] = TRUE;					
-				$config['remove_spaces'] = TRUE;					
-				$this->load->library('upload', $config);					
-				$upload_file=$this->upload->do_upload('file');					
 				
-				if($this->session->userdata('upload_file_list')){
-					
-					$upload_file_list=$this->session->userdata('upload_file_list');
-					
-					array_push($upload_file_list,$file);
-					
-					$this->session->set_userdata('upload_file_list',$upload_file_list);
-					
-					print_r($upload_file_list);
-					
-					}else{
-					
-					$upload_file_list=array();
-					array_push($upload_file_list,$file);
-					
-					$this->session->set_userdata('upload_file_list',$upload_file_list);
-					// print_r($upload_file_list);
-					
+				
+				
+				$user_id=$this->session->userdata('user_id');
+				$upload_path='./uploads/silo_publisher_application/'.$user_id;
+				
+				if (!is_dir($upload_path)) {
+					mkdir('./uploads/silo_publisher_application/'.$user_id, 0777, TRUE);
 				}
 				
+				
+				$config['file_name'] = $_FILES["file"]['name'];
+				// $config['upload_path'] = './uploads/projects/thumbnails/';
+				$config['upload_path'] = $upload_path;
+				$config['allowed_types'] = 'jpg|png|jpeg';
+				$config['max_size'] = '10000';
+				$config['max_width'] = '';
+				$config['max_height'] = '';
+				$config['overwrite'] = TRUE;
+				$config['remove_spaces'] = TRUE;
+				$this->load->library('upload', $config);
+				$this->upload->do_upload('file');
+				$upload_result = $this->upload->data();
+				
+				/*
+					$image_config = array(
+					'source_image' => $upload_result['full_path'],
+					// 'new_image' => "uploads/projects/thumbnails/260x146/",
+					'new_image' => "uploads/silo_publisher_application/thumbnails/260x146/",
+					'maintain_ratio' => false,
+					'width' => 260,
+					'height' => 146
+					);
+					$this->load->library('image_lib');
+					$this->image_lib->initialize($image_config);
+					$resize_rc = $this->image_lib->resize();
+					$this->image_lib->clear();
+				*/
+				$ext=pathinfo($upload_result['file_name'], PATHINFO_EXTENSION);
+				
+				
+				$result=array('type'=>$ext,'file_name'=>$upload_result['file_name']);
+				echo json_encode($result);
 			}
+		}
+		
+		
+		public function deleteThumbnail() {
+			$path = "./uploads/projects/thumbnails/" . $this->input->post('filename');
+			$this->load->helper("file");
+			delete_files($path);
+			unlink($path);
+		}
+		
+		
+		
+		
+		
+		public function upload_from_silo_sd() {
+			
+			$post_values=$this->input->post();
+			
+			$file_count=1;
+			foreach($post_values as $files){
+				
+				//echo $files;
+				$file_count++;
+				
+				
+					$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
+					$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
+					$publisher_application_files_data['file_path']=$files;
+					
+				$this->db->insert('tbl_publisher_application_files',$publisher_application_files_data);
+				
+			}
+			
 			
 		}
 		

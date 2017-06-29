@@ -23,7 +23,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                    	<div class="row">
+                    	<!--<div class="row">
                     		<div class="col-md-3">
                     			<select class="form-control">
                                     <option>Select Category</option>
@@ -33,39 +33,69 @@
                                 <br>
                     		</div>
                     	</div>
+						-->
                         <table id="datatable" class="table table-striped table-bordered bulk_action">
 	                      <thead>
 	                        <tr>
 	                          <th><input type="checkbox" id="checkAll"></th>
-	                          <th>Product Name</th>
+	                          <!--<th>Product Name</th>
 	                          <th>Product Description</th>
 	                          <th>Last Ordered</th>
+	                          <th>Action</th>-->
+							  
+							  <th>Application No</th>
+	                          <th>user Name</th>
+	                          <th>Email</th>
+	                          <th>Category</th>
 	                          <th>Action</th>
 	                        </tr>
 	                      </thead>
 	                      <tbody>
+						  
+						  <?php
+							  				  foreach($application_list as $application){
+							  						  ?>
+						  
 	                        <tr>
                         	  <td><input type="checkbox"></td>
-	                          <td>Tiger Nixon</td>
-	                          <td>System Architect</td>
-	                          <td>2011/04/25</td>
+	                          <td><?php echo $application['id'];?></td>
+	                          <td><?php echo $_SESSION['user_account']['name'];?></td>
+	                          <td><?php echo $application['business_email'];?></td>
+	                          <td><?php echo $application['category'];?></td>
 	                          <td>
 	                          	<a href="" class="btn btnRed btn-sm">Edit</a>
 	                          	<a href="" class="btn btnRed btn-sm">Hide</a>
 	                          	<a href="" class="btn btnRed btn-sm">Delete</a>
 	                          </td>
 	                        </tr>
+							
+							
+							<?php
+							  }
+							  ?>
+							  
+						  <?php
+							  				  foreach($application_list as $application){
+							  						  ?>
+						  
 	                        <tr>
                         	  <td><input type="checkbox"></td>
-	                          <td>Tiger Nixon</td>
-	                          <td>System Architect</td>
-	                          <td>2011/04/25</td>
+	                          <td><?php echo $application['id'];?></td>
+	                          <td><?php echo $_SESSION['user_account']['name'];?></td>
+	                          <td><?php echo $application['business_email'];?></td>
+	                          <td><?php echo $application['category'];?></td>
 	                          <td>
 	                          	<a href="" class="btn btnRed btn-sm">Edit</a>
 	                          	<a href="" class="btn btnRed btn-sm">Hide</a>
 	                          	<a href="" class="btn btnRed btn-sm">Delete</a>
 	                          </td>
 	                        </tr>
+							
+							
+							<?php
+							  }
+							  ?>
+							  
                       	  </tbody>
                     	</table>
                     </div>
