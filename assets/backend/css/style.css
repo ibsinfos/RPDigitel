@@ -226,6 +226,9 @@
     margin-top: 5px;
     cursor: pointer;
 }
+.createPaasportWrap .targetDiv {
+    display: none;
+}
 .createPaasportWrap .panel-danger {
     border-color: #ff0000;
 }
@@ -242,6 +245,16 @@
     position: absolute;
     right: 10px;
     top: 10px;
+}
+.createPaasportWrap .panel-danger>.panel-heading.panel-collapsed:after {
+    content: "\f077";
+}
+#portfolioModal #example-2 {
+    background: transparent;
+    padding: 0 !important;
+}
+#portfolioModal #example-2 .page{
+    margin-bottom: 10px;
 }
 /* Create paasport css end */
 
@@ -687,7 +700,8 @@
 .btn {
     padding: 6px 20px;
 }
-.redText {
+.redText,
+.text-danger {
     color: #f50707;
 }
 .noMargin {
