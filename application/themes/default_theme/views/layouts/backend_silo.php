@@ -207,6 +207,9 @@
         <!-- ckeditor -->
         <script src="<?php echo asset_url(); ?>backend/vendors/ckeditor/ckeditor.js"></script>
         <script src="<?php echo asset_url(); ?>backend/vendors/ckeditor/adapters/jquery.js"></script>
+        <?php if ($page == 'createpaasport') { ?>
+        <script src="<?php echo asset_url() ?>backend/js/demo.js"></script>
+        <?php } ?>
 		<!-- validator -->
         <script src="<?php echo asset_url() ?>backend/js/jquery.validate.min.js"></script>
 		<!-- Parsley Form Validator 
