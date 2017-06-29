@@ -24,6 +24,17 @@
 		public static $USERS = ' tbl_users';
 		public static $SUBSCRIPTION_DETAILS = 'tbl_services_subscription';
 		public static $PUBLISHER_APPLICATION = 'tbl_publisher_application';
+		public static $PUBLISHER_APPLICATION_COMPANY_INFO = 'tbl_publisher_application_company_info';
+		public static $PUBLISHER_APPLICATION_FILES = 'tbl_publisher_application_files';
+		public static $PUBLISHER_BUSI_FOC = 'tbl_publisher_busi_foc';
+		public static $PUBLISHER_BUSI_FOL = 'tbl_publisher_busi_fol';
+		public static $PUBLISHER_BUSI_IO = 'tbl_publisher_busi_io';
+		public static $PUBLISHER_BUSI_PARTNERSHIP = 'tbl_publisher_busi_partnership';
+		public static $PUBLISHER_MANAGERS = 'tbl_publisher_managers';
+		public static $PUBLISHER_MEMBERS = 'tbl_publisher_members';
+		public static $PUBLISHER_OFFICERS = 'tbl_publisher_officers';
+		public static $PUBLISHER_PARTNERS = 'tbl_publisher_partners';
+		public static $PUBLISHER_STOCKHOLDERS = 'tbl_publisher_stockholders';
 		
 	}
 	

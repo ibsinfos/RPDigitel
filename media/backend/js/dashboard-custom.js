@@ -25,9 +25,16 @@ $(document).ready(function(){
 	$('.createProductWrap').on('click', '.businessStructureRadioWrap .radio-inline', function () {
 		var attrVal = $(this).attr('data-business-structure');
 		//alert(attrVal);
-		$('.businessStructureInfo').hide();
-		$('.'+attrVal+'-information').show();
+		$('.businessStructureInfo').removeClass('active');
+		$('.'+attrVal+'-information').addClass('active');
 	});
+	
+	
+	//To update publisher Application Info
+	
+	// validateUpdateBasicInformation();
+	
+	
 	
 	
 	// $("#save_basic_info").click(function () {
@@ -43,17 +50,17 @@ $(document).ready(function(){
 			autoclose: true
 		});
 	}
-
+	
 	// Script used for CK Editor
 	if ($('textarea.editor').length) {
 		$('textarea.editor').ckeditor();
 	}
-
+	
 });
 
 
 
-//************************************************** Basic Inforamation save Start ***************************************************************
+//******************************************** Basic Inforamation save Start ****************************************************
 
 function validateBasicInformation() {
     ////// Rules Goes Below //////
@@ -163,7 +170,7 @@ function validateBasicInformation() {
 	
 }
 
-//************************************************** Basic Inforamation save end ***************************************************************
+//************************************************** Basic Inforamation save end ******************************************
 
 
 //************************************************** Company Inforamation save Start ***************************************************************
@@ -656,24 +663,23 @@ function delete_selected_managers_foc(manager_fol_id){
 
 
 $(document).ready(function () {
+	
 	Dropzone.autoDiscover = false;
 	var thumbs = [];
+	var file_row_count=0;
 	$("#publisher_application_upload").dropzone({
 		url: uploadProductFiles_URL,
 		addRemoveLinks: true,
 		maxFilesize: 2,
 		acceptedFiles: "image/jpeg,image/png",
 		success: function (file, response) {
+			file_row_count++;
 			var file_info=JSON.parse(response);
 			// alert(file_info.type);
 			
+			$("#table_publisher_files > tbody").append("<tr id='file_row_"+file_row_count+"'><td>"+file_row_count+"</td><td>"+file_info.file_name+"</td><td>"+file_info.type+"</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_"+file_row_count+"','"+file_info.file_id+"')\" name='del_memberid' id='del_new"+file_row_count+"'></td></tr>");
 			
-			
-			
-			$("#table_publisher_files > tbody").append("<tr id='"+file_info.file_name+"'><td><input type='checkbox'></td><td><input type='hidden' name='foc_managers_Name[]' value='"+file_info.file_name+"'>"+file_info.file_name+"</td><td><input type='hidden' name='foc_managers_Name[]' value='"+file_info.type+"'>"+file_info.type+"</td><td><input style='text-align:right;' type='button' value='Preview' class='btn btn-sm btnRed' onclick=\"delete_selected_managers_foc('new_"+add_f_cont+"')\" name='del_memberid' id='del_new"+add_f_cont+"'></td></tr>");
-			
-			
-			
+						
 			
 			/*
 				
@@ -750,11 +756,12 @@ $(document).ready(function () {
 			async: false,
 			
 			// data:{'upload_files_silo_sd':silo_form_data},
-		data:silo_form_data,
+			data:silo_form_data,
 			// data:{'upload_files_silo_sd':silo_sd_files},
 			
 			success:function(data){
 				
+				$('#myModal').modal('hide');
 				// $("#comments").val('');
 				
 				// $("#comments").val(data);
@@ -766,4 +773,112 @@ $(document).ready(function () {
 	
 	
 	
+	
+	
+
+	
+	
+	
+/*
+//******************************************** Basic Inforamation Update Start ****************************************************
+
+function validateUpdateBasicInformation() {
+    ////// Rules Goes Below //////
+    $('#validateUpdateBasicInformation').validate({
+        // alert(memberDetailsForm_save_URL);
+		
+        rules: {
+            //// For General Sales Inquiries
+            choice1: {
+                required: true,
+                // lettersonly: true
+			}
+		},
+        ////// Messages for Rules Goes Below //////
+		
+        messages: {
+            //// For General Sales Inquiries
+            choice1: {
+                // lettersonly: "Letters only please",
+                required: "Please enter first name"
+			}
+		},
+        submitHandler: function (form) {
+			
+            if (typeof basicInformationForm_update_URL == "undefined" || basicInformationForm_update_URL == null) {
+				} else {
+				// alert('sdf');
+				
+				var form_data=$("#updateBasicInformationForm").serialize();
+				// alert(form_data);
+				
+                $.ajax({
+                    url: basicInformationForm_update_URL,
+                    type: 'POST',
+					data: form_data,
+                    success: function (res) {
+                        if (res == 'exist') {
+                            alert('User with this email already exist. Please try with different email.');
+							} else {
+                            $('li[role=presentation]').removeClass('active');
+                            $('.tab-pane').removeClass('active');
+                            $('.company_information').addClass('active');
+                            $('#companyInfo').addClass('active');
+						}
+					}
+				});
+			}
+		}
+	});
+	
+    $.validator.addMethod("lettersonly", function (value, element) {
+        return this.optional(element) || /^[a-z]+$/i.test(value);
+	}, "Letters only please");
+	
+	
+}
+
+//************************************** Basic Inforamation Update end ******************************************
+
+*/
+
+
+	
 });
+
+
+	
+function delete_selected_files(file_row_id,file_id){
+	// alert(file_row_id);
+	$("#table_publisher_files > tbody tr#"+file_row_id).remove();
+	
+
+		// var silo_form_data=$("#siosd_upload_files_form").serialize();
+		// var silo_sd_files=$("#silo_sd_files").value();
+		
+		// alert(silo_sd_files);
+		
+		
+		$.ajax({
+			
+			url:delete_publisher_file_URL,
+			
+			method:'post',
+			
+			async: false,
+			
+			// data:{'upload_files_silo_sd':silo_form_data},
+			data:{'file_id':file_id},
+			// data:{'upload_files_silo_sd':silo_sd_files},
+			
+			success:function(data){
+				// alert('sdf');
+				// $('#myModal').modal('hide');
+				// $("#comments").val('');
+				
+				// $("#comments").val(data);
+				
+			}							 
+		});
+	
+}

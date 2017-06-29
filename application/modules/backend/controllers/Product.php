@@ -75,6 +75,77 @@
 			
 			
 			
+			$application_id=$this->uri->segment(3);
+			// die;
+			if($application_id!=''){
+				$basic_info_data = $this->common_model->getRecords(TABLES::$PUBLISHER_APPLICATION, '*', array('user_id'=>$this->session->userdata['user_id'],'id'=>$application_id),'');
+				
+				$busi_io_data = $this->common_model->getRecords(TABLES::$PUBLISHER_BUSI_IO, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$busi_foc_data = $this->common_model->getRecords(TABLES::$PUBLISHER_BUSI_FOC, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$busi_partnership_data = $this->common_model->getRecords(TABLES::$PUBLISHER_BUSI_PARTNERSHIP, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				
+				$busi_fol_data = $this->common_model->getRecords(TABLES::$PUBLISHER_BUSI_FOL, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$company_info_data = $this->common_model->getRecords(TABLES::$PUBLISHER_APPLICATION_COMPANY_INFO, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$uploaded_files_data = $this->common_model->getRecords(TABLES::$PUBLISHER_APPLICATION_FILES, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				
+				
+				$managers_data = $this->common_model->getRecords(TABLES::$PUBLISHER_MANAGERS, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$members_data = $this->common_model->getRecords(TABLES::$PUBLISHER_MEMBERS, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$officers_data = $this->common_model->getRecords(TABLES::$PUBLISHER_OFFICERS, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$partners_data = $this->common_model->getRecords(TABLES::$PUBLISHER_PARTNERS, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				$stockholders_data = $this->common_model->getRecords(TABLES::$PUBLISHER_STOCKHOLDERS, '*', array('user_id'=>$this->session->userdata['user_id'],'application_id'=>$application_id),'');
+				
+				}else{
+				
+				$basic_info_data=array();
+				$busi_io_data=array();
+				$busi_foc_data=array();
+				$company_info_data=array();
+				$uploaded_files_data=array();
+				$busi_fol_data=array();
+				$busi_partnership_data=array();
+				$managers_data=array();
+				$members_data=array();
+				$officers_data=array();
+				$partners_data=array();
+				$stockholders_data=array();
+				
+			}
+			// echo "<pre>";
+			// print_r($officers_data);
+			
+			//************************************** Basic Information data Start *********************************************
+			
+			
+			
+			
+			
+			//************************************** Basic Information data End *********************************************
+			
+			
+			
+			$this->template->set('basic_info_data',$basic_info_data);
+			$this->template->set('busi_io_data',$busi_io_data);
+			$this->template->set('busi_foc_data',$busi_foc_data);
+			$this->template->set('busi_partnership_data',$busi_partnership_data);
+			$this->template->set('partners_data',$partners_data);
+			$this->template->set('members_data',$members_data);
+			$this->template->set('managers_data',$managers_data);
+			$this->template->set('busi_fol_data',$busi_fol_data);
+			$this->template->set('company_info_data',$company_info_data);
+			$this->template->set('stockholders_data',$stockholders_data);
+			$this->template->set('officers_data',$officers_data);
+			$this->template->set('uploaded_files_data',$uploaded_files_data);
 			
 			
 			$this->template->set('user_menu',$user_menu);
@@ -119,11 +190,22 @@
 			$publisher_application_data['business_phone']=$publisher_basic_info['businessPhone'];
 			$publisher_application_data['business_fax']=$publisher_basic_info['fax'];
 			$publisher_application_data['business_email']=$publisher_basic_info['email'];
+			$publisher_application_data['business_structure_cat']=$publisher_basic_info['businessStructureRadio'];
 			
-			
-			$this->db->insert('tbl_publisher_application',$publisher_application_data);
-			$publisher_application_id=$this->db->insert_id();
-			
+			if(isset($publisher_basic_info['publisher_application_id'])){
+				
+				$this->db->where(array('id'=>$publisher_basic_info['publisher_application_id']));
+				$this->db->update('tbl_publisher_application',$publisher_application_data);
+				
+				$publisher_application_id=$publisher_basic_info['publisher_application_id'];
+				
+				
+				}else{
+				
+				$this->db->insert('tbl_publisher_application',$publisher_application_data);
+				
+				$publisher_application_id=$this->db->insert_id();
+			}
 			$this->session->set_userdata('publisher_application_id',$publisher_application_id);
 			
 			//basic info Inserted
@@ -133,6 +215,14 @@
 			$count_busi_stock=0;
 			
 			if(isset($post_values['foc_stock_stockholdersName'])){
+				
+				if(isset($publisher_basic_info['publisher_application_id'])){
+					
+					$this->db->where(array('application_id'=>$publisher_basic_info['publisher_application_id']));
+					$this->db->delete('tbl_publisher_stockholders');
+					
+				}
+				
 				foreach($post_values['foc_stock_stockholdersName'] as $busi_structure){
 					
 					$stockholder_data['user_id']=$this->session->userdata('user_id');
@@ -147,6 +237,8 @@
 					$count_busi_stock++;
 					
 				}
+				
+				
 			}
 			
 			
@@ -154,15 +246,25 @@
 			$count_busi_officers=0;
 			
 			if(isset($post_values['foc_officers_officerssName'])){
+				
+				if(isset($publisher_basic_info['publisher_application_id'])){
+					
+					$this->db->where(array('application_id'=>$publisher_basic_info['publisher_application_id']));
+					$this->db->delete('tbl_publisher_officers');
+					
+				}
+				
+				
+				
 				foreach($post_values['foc_officers_officerssName'] as $busi_structure){
 					
-					$stockholder_data['user_id']=$this->session->userdata('user_id');
-					$stockholder_data['application_id']=$publisher_application_id;
-					$stockholder_data['name']=$post_values['foc_officers_officerssName'][$count_busi_officers];
-					$stockholder_data['address']=$post_values['foc_officers_homeAddressZipCode'][$count_busi_officers];
-					$stockholder_data['office_held']=$post_values['foc_officers_officeHeld'][$count_busi_officers];
+					$officers_data['user_id']=$this->session->userdata('user_id');
+					$officers_data['application_id']=$publisher_application_id;
+					$officers_data['name']=$post_values['foc_officers_officerssName'][$count_busi_officers];
+					$officers_data['address']=$post_values['foc_officers_homeAddressZipCode'][$count_busi_officers];
+					$officers_data['office_held']=$post_values['foc_officers_officeHeld'][$count_busi_officers];
 					
-					$this->db->insert('tbl_publisher_officers',$stockholder_data);
+					$this->db->insert('tbl_publisher_officers',$officers_data);
 					$count_busi_officers++;
 					
 				}
@@ -173,18 +275,27 @@
 			$count_busi_partnership=0;
 			
 			if(isset($post_values['foc_partners_Name'])){
+				
+				
+				if(isset($publisher_basic_info['publisher_application_id'])){
+					
+					$this->db->where(array('application_id'=>$publisher_basic_info['publisher_application_id']));
+					$this->db->delete('tbl_publisher_partners');
+					
+				}
+				
 				foreach($post_values['foc_partners_Name'] as $busi_structure){
 					
 					
-					$stockholder_data['user_id']=$this->session->userdata('user_id');
-					$stockholder_data['application_id']=$publisher_application_id;
-					$stockholder_data['name']=$post_values['foc_partners_Name'][$count_busi_partnership];
-					$stockholder_data['address']=$post_values['foc_partners_homeAddressZipCode'][$count_busi_partnership];
-					$stockholder_data['tax_id']=$post_values['foc_partners_ssOrTaxId'][$count_busi_partnership];
-					$stockholder_data['ownership_percentage']=$post_values['foc_partners_percentageOfOwnership'][$count_busi_partnership];
+					$partners_data['user_id']=$this->session->userdata('user_id');
+					$partners_data['application_id']=$publisher_application_id;
+					$partners_data['name']=$post_values['foc_partners_Name'][$count_busi_partnership];
+					$partners_data['address']=$post_values['foc_partners_homeAddressZipCode'][$count_busi_partnership];
+					$partners_data['tax_id']=$post_values['foc_partners_ssOrTaxId'][$count_busi_partnership];
+					$partners_data['ownership_percentage']=$post_values['foc_partners_percentageOfOwnership'][$count_busi_partnership];
 					
 					
-					$this->db->insert('tbl_publisher_partners',$stockholder_data);
+					$this->db->insert('tbl_publisher_partners',$partners_data);
 					$count_busi_partnership++;
 					
 				}
@@ -195,18 +306,26 @@
 			$count_busi_members=0;
 			
 			if(isset($post_values['foc_members_Name'])){
+				
+				if(isset($publisher_basic_info['publisher_application_id'])){
+					
+					$this->db->where(array('application_id'=>$publisher_basic_info['publisher_application_id']));
+					$this->db->delete('tbl_publisher_members');
+					
+				}
+				
 				foreach($post_values['foc_members_Name'] as $busi_structure){
 					
 					
-					$stockholder_data['user_id']=$this->session->userdata('user_id');
-					$stockholder_data['application_id']=$publisher_application_id;
-					$stockholder_data['name']=$post_values['foc_members_Name'][$count_busi_members];
-					$stockholder_data['address']=$post_values['foc_members_homeAddressZipCode'][$count_busi_members];
-					$stockholder_data['tax_id']=$post_values['foc_members_ssOrTaxId'][$count_busi_members];
-					$stockholder_data['ownership_percentage']=$post_values['foc_members_percentageOfOwnership'][$count_busi_members];
+					$members_data['user_id']=$this->session->userdata('user_id');
+					$members_data['application_id']=$publisher_application_id;
+					$members_data['name']=$post_values['foc_members_Name'][$count_busi_members];
+					$members_data['address']=$post_values['foc_members_homeAddressZipCode'][$count_busi_members];
+					$members_data['tax_id']=$post_values['foc_members_ssOrTaxId'][$count_busi_members];
+					$members_data['ownership_percentage']=$post_values['foc_members_percentageOfOwnership'][$count_busi_members];
 					
 					
-					$this->db->insert('tbl_publisher_members',$stockholder_data);
+					$this->db->insert('tbl_publisher_members',$members_data);
 					$count_busi_members++;
 					
 				}
@@ -217,18 +336,26 @@
 			$count_busi_managers=0;
 			
 			if(isset($post_values['foc_managers_Name'])){
+				
+				if(isset($publisher_basic_info['publisher_application_id'])){
+					
+					$this->db->where(array('application_id'=>$publisher_basic_info['publisher_application_id']));
+					$this->db->delete('tbl_publisher_managers');
+					
+				}
+				
 				foreach($post_values['foc_managers_Name'] as $busi_structure){
 					
 					
-					$stockholder_data['user_id']=$this->session->userdata('user_id');
-					$stockholder_data['application_id']=$publisher_application_id;
-					$stockholder_data['name']=$post_values['foc_managers_Name'][$count_busi_managers];
-					$stockholder_data['address']=$post_values['foc_managers_homeAddressZipCode'][$count_busi_managers];
-					$stockholder_data['tax_id']=$post_values['foc_managers_ssOrTaxId'][$count_busi_managers];
-					$stockholder_data['have_authority']=$post_values['foc_managers_is_have_authority'][$count_busi_managers];
+					$managers_data['user_id']=$this->session->userdata('user_id');
+					$managers_data['application_id']=$publisher_application_id;
+					$managers_data['name']=$post_values['foc_managers_Name'][$count_busi_managers];
+					$managers_data['address']=$post_values['foc_managers_homeAddressZipCode'][$count_busi_managers];
+					$managers_data['tax_id']=$post_values['foc_managers_ssOrTaxId'][$count_busi_managers];
+					$managers_data['have_authority']=$post_values['foc_managers_is_have_authority'][$count_busi_managers];
 					
 					
-					$this->db->insert('tbl_publisher_managers',$stockholder_data);
+					$this->db->insert('tbl_publisher_managers',$managers_data);
 					$count_busi_managers++;
 					
 				}
@@ -355,7 +482,26 @@
 			$company_info['is_representative_at_bmi']=$publisher_company_info['contactAtBMI'];
 			$company_info['representative_name']=$publisher_company_info['bmiContactName'];
 			
-			$this->db->insert('tbl_publisher_application_company_info',$company_info);
+			
+			
+			
+			if(isset($publisher_company_info['c_publisher_application_id'])){
+				
+				$this->db->where(array('application_id'=>$publisher_company_info['c_publisher_application_id']));
+				$this->db->update('tbl_publisher_application_company_info',$company_info);
+				
+				$publisher_application_id=$publisher_company_info['c_publisher_application_id'];
+				
+				
+				}else{
+				
+				$this->db->insert('tbl_publisher_application_company_info',$company_info);
+				
+			}
+			// $this->session->set_userdata('publisher_application_id',$publisher_application_id);
+			
+			
+			
 			//company info inserted
 			// $publisher_application_id=$this->db->insert_id();
 			
@@ -462,6 +608,16 @@
 				$this->upload->do_upload('file');
 				$upload_result = $this->upload->data();
 				
+				// print_r($upload_result);
+				
+				$files_path="./uploads/silo_publisher_application/".$user_id."/".$config['file_name'];
+				
+				$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
+				$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
+				$publisher_application_files_data['file_path']=$files_path;
+				
+				$this->db->insert('tbl_publisher_application_files',$publisher_application_files_data);
+					$file_id=$this->db->insert_id();		
 				/*
 					$image_config = array(
 					'source_image' => $upload_result['full_path'],
@@ -476,10 +632,11 @@
 					$resize_rc = $this->image_lib->resize();
 					$this->image_lib->clear();
 				*/
+				
 				$ext=pathinfo($upload_result['file_name'], PATHINFO_EXTENSION);
 				
 				
-				$result=array('type'=>$ext,'file_name'=>$upload_result['file_name']);
+				$result=array('type'=>$ext,'file_name'=>$upload_result['file_name'],'raw_name'=>$upload_result['raw_name'],'file_id'=>$file_id);
 				echo json_encode($result);
 			}
 		}
@@ -506,15 +663,25 @@
 				//echo $files;
 				$file_count++;
 				
+				$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
+				$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
+				$publisher_application_files_data['file_path']=$files;
 				
-					$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
-					$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
-					$publisher_application_files_data['file_path']=$files;
-					
 				$this->db->insert('tbl_publisher_application_files',$publisher_application_files_data);
 				
 			}
+		}
+		
+		
+		public function delete_publisher_file() {
 			
+			$post_values=$this->input->post();
+			
+			$file_id=$post_values['file_id'];
+			
+				$this->db->where(array('id'=>$file_id));
+				$this->db->delete('tbl_publisher_application_files');
+				
 			
 		}
 		
@@ -536,6 +703,44 @@
 			
 			
 		}
+		
+		
+		
+		
+		
+		
+		public function productList(){
+			
+			$this->load->model('login_model');
+			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
+			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
+			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+			
+			
+			$this->template->set('user_menu',$user_menu);
+			
+			$application_list = $this->common_model->getRecords(TABLES::$PUBLISHER_APPLICATION, '*', array('user_id'=>$_SESSION['user_id']),"id desc");
+			
+			
+			$this->template->set('slug',$slug);
+			$this->template->set('user',$user);
+			$this->template->set('application_list',$application_list);
+			$this->template->set('page','productlist');
+			$this->template->set_theme('default_theme');
+			$this->template->set_layout('backend_silo')
+			->title('Admin Product List | Silo')
+			->set_partial('header', 'partials/header')
+			->set_partial('sidebar', $this->sidebar)
+			->set_partial('footer', 'partials/footer');
+			$this->template->build('productlist');
+			
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 		

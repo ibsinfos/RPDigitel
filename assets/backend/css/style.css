@@ -8,10 +8,11 @@
     display: inline-block;
     vertical-align: middle;
 }
-.createProductWrap .formallyOrganized-information,
-.createProductWrap .partnership-information,
-.createProductWrap .formallyOrganizedLLC-information {
+.createProductWrap .businessStructureInfo {
     display: none;
+}
+.createProductWrap .businessStructureInfo.active  {
+    display: block;
 }
 .createProductWrap .addProductBtn {
     display: block;

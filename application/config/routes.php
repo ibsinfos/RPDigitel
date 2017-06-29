@@ -74,10 +74,13 @@ $route['account/login'] = 'backend/login';
 $route['submitlogin'] = 'backend/login/adminlogin';
 $route['dashboard'] = 'backend/Dashboard/index';
 
-$route['dashboard/productlist'] = 'backend/Dashboard/productList';
+$route['dashboard/productlist'] = 'backend/Product/productList';
+// $route['dashboard/editproduct'] = 'backend/Product/editProduct';
+$route['dashboard/createproduct/(:any)'] = 'backend/Product/createproduct/$1';
 $route['dashboard/createproduct'] = 'backend/Product/createProduct';
 $route['dashboard/createpaasport'] = 'backend/Paasport/createPaasport';
 $route['dashboard/broadcast'] = 'backend/Broadcast/index';
+//save product publisher application
 $route['save_publish_application_basic_info'] = 'backend/Product/save_publish_application_basic_info';
 $route['save_publish_application_company_info'] = 'backend/Product/save_publish_application_company_info';
 $route['save_publish_application_all_info'] = 'backend/Product/save_publish_application_all_info';
@@ -85,6 +88,16 @@ $route['upload_files_publish_application'] = 'backend/Product/upload_files_publi
 $route['uploadProductFiles'] = 'backend/Product/uploadProductFiles';
 $route['deleteThumbnail'] = 'backend/Product/deleteThumbnail';
 $route['upload_from_silo_sd'] = 'backend/Product/upload_from_silo_sd';
+$route['delete_publisher_file'] = 'backend/Product/delete_publisher_file';
+
+//Update product publisher application
+// $route['update_publish_application_basic_info'] = 'backend/Product/update_publish_application_basic_info';
+// $route['save_publish_application_company_info'] = 'backend/Product/save_publish_application_company_info';
+// $route['save_publish_application_all_info'] = 'backend/Product/save_publish_application_all_info';
+// $route['upload_files_publish_application'] = 'backend/Product/upload_files_publish_application';
+// $route['uploadProductFiles'] = 'backend/Product/uploadProductFiles';
+// $route['deleteThumbnail'] = 'backend/Product/deleteThumbnail';
+// $route['upload_from_silo_sd'] = 'backend/Product/upload_from_silo_sd';
 
 $route['dashboard/create_pdf'] = 'backend/create_pdf';
 $route['dashboard/ordertable'] = 'backend/Dashboard/orderTable';
