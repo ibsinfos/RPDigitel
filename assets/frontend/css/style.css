@@ -377,6 +377,59 @@ ul.typoList li:before {
 /* Home css end */
 
 /* Login css start */
+.loginPageWrap {
+  position: relative;
+}
+.loginPageWrap .redBgCol {
+  background-color: #FF0000;
+  border-right: 1px solid #999999;
+  min-height: 170px;
+  height: 100%;
+  padding: 20px;
+}
+.loginPageWrap .redBgCol .logoWrap {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  width: 360px;
+  display: inline-block;
+  text-decoration: none;
+}
+.loginPageWrap .whiteBGCol {
+  padding: 20px 0;
+  height: 100%;
+}
+.loginPageWrap .whiteBGCol .rpDigitelLogo {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.loginPageWrap .whiteBGCol .formWrap {
+  text-align: center;
+  margin: 25% 0 0;
+}
+.loginPageWrap .whiteBGCol .formWrap .btn {
+  margin-bottom: 50px;
+}
+.loginPageWrap .whiteBGCol .forgetPwdLink,
+.loginPageWrap .whiteBGCol .signUpLink {
+  color: #FF0000;
+  font-size: 12px;
+  line-height: 14px;
+}
+.loginPageWrap .whiteBGCol .copyRight {
+  color: #7F7F7F;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0;
+}
+/* Login css start */
+
+/* Login css start */
 html, body, 
 .loginCarousel, 
 .loginCarousel .carousel-inner, 
@@ -1027,6 +1080,44 @@ ol.upperRoman {
 }
 ol.lowerRoman {
   list-style-type: lower-roman;
+}
+.noPadding {
+  padding: 0;
+}
+.socialIconWrap {
+  text-align: center;
+}
+.socialIconWrap li {
+  padding: 0;
+}
+.socialIconWrap a {
+  color: #fff;
+  display: block;
+  background-color: #3b56ad;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.socialIconWrap a.facebook {
+  background-color: #3b56ad;
+}
+.socialIconWrap a.twitter {
+  background-color: #19b1f0;
+}
+.socialIconWrap a.googlePlus {
+  background-color: #e34e38;
+}
+.socialIconWrap a.pinterest-p {
+  background-color: #ca1a1c;
+}
+.socialIconWrap a.instagram {
+  background-color: #4072a3;
+}
+.socialIconWrap a.linkedin {
+  background-color: #0068a5;
 }
 /* common css end */
 

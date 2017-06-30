@@ -257,7 +257,109 @@
 #portfolioModal #example-2 .page{
     margin-bottom: 10px;
 }
+.createPaasportWrap .mediaTabContentWrap .panel {
+    background: url('../images/paasport/music-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    position: relative;
+    min-height: 150px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+/*.createPaasportWrap .mediaTabContentWrap .panel:before {
+    content: "\f01d";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}*/
+.createPaasportWrap .mediaTabContentWrap .panel:after {
+    background: rgba(0,0,0,0.6);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.createPaasportWrap .mediaTabContentWrap .panel h5 {
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.createPaasportWrap .mediaTabContentWrap .panel audio,
+.createPaasportWrap .mediaTabContentWrap .panel video {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .panel-footer {
+    padding: 6px 15px;
+    background: rgba(255,255,255,0.6);
+    border: 0;
+    text-align: left;
+    border-radius: 0;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .videoPopupLink {
+    display: inline-block;
+    color: #808080;
+}
 /* Create paasport css end */
+
+/* video popup css start */
+#popupBg {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.videoPopup {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 360px;
+    width: 640px;
+    background: #FFF;
+    z-index: 550;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.videoPopup .closePopup {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    font-size: 24px;
+    top: 5px;
+    color: #FFF;
+    right: 5px;
+    display: block;
+    line-height: 31px;
+    background: #333;
+    border-radius: 15px;
+    text-align: center;
+}
+.videoPopup .videoContainer {
+    width: 640px;
+    height: 360px;
+    -moz-box-shadow: 0 0 10px #222;
+    -webkit-box-shadow: 0 0 10px #222;
+    box-shadow: 0 0 10px #222;
+}
+.videoPopup .videoContainer video {
+    width: 100%;
+}
+/* video popup css end */
 
 /* Email Box css start */
 .responsiveSection {

@@ -36,7 +36,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body <?php if ($page == 'main_login') { echo 'class="noPadding"';}?> >
         <?php
         if (isset($template['partials']['header'])) {
             echo $template['partials']['header'];

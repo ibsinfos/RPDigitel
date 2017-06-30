@@ -40,6 +40,12 @@
                         <li role="presentation" class="">
                             <a href="#blog" aria-controls="blog" role="tab" data-toggle="tab">Blog</a>
                         </li>
+                        <li role="presentation" class="">
+                            <a href="#mediaTab" aria-controls="mediaTab" role="tab" data-toggle="tab">Media</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#galleryTab" aria-controls="galleryTab" role="tab" data-toggle="tab">Gallery</a>
+                        </li>
                     </ul>
 
                     <!-- Tab panes -->
@@ -897,6 +903,214 @@ if (!empty($user_blog)) {
                                 </table>                                                                      
                             </div>
                         </div>
+                        <!-- MEDIA TAB START -->
+                        <div role="tabpanel" class="tab-pane" id="mediaTab">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="heading"> Add Media Files</h3>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#audioTab" aria-controls="audioTab" role="tab" data-toggle="tab">Audio</a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#videoTab" aria-controls="videoTab" role="tab" data-toggle="tab">Video</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content mediaTabContentWrap">
+                                <!-- AUDIO TAB START -->
+                                <div role="tabpanel" class="tab-pane active" id="audioTab">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btnRed btn-lg" data-toggle="modal" data-target="#addAudioModal">
+                                              Add Audio File
+                                            </button>
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h4>Uploaded Audio List</h4>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-music fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <audio controls>
+                                                    <source src="<?php echo base_url(); ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
+                                                    Your browser does not support the audio tag.
+                                                </audio>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-music fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <audio controls>
+                                                    <source src="<?php echo base_url(); ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
+                                                    Your browser does not support the audio tag.
+                                                </audio>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-music fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <audio controls>
+                                                    <source src="<?php echo base_url(); ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
+                                                    Your browser does not support the audio tag.
+                                                </audio>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-music fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <audio controls>
+                                                    <source src="<?php echo base_url(); ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
+                                                    Your browser does not support the audio tag.
+                                                </audio>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-music fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <audio controls>
+                                                    <source src="<?php echo base_url(); ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
+                                                    Your browser does not support the audio tag.
+                                                </audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="videoTab">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btnRed btn-lg" data-toggle="modal" data-target="#addVideoModal">
+                                              Add Video File
+                                            </button>
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h4>Uploaded Video List</h4>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-film fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <div class="panel-footer">
+                                                    <a href="javascript:void(0)" rel="<?php echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';?>" class="videoPopupLink">
+                                                        <i class="fa fa-play-circle fa-3x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-film fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <div class="panel-footer">
+                                                    <a href="javascript:void(0)" rel="<?php echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';?>" class="videoPopupLink">
+                                                        <i class="fa fa-play-circle fa-3x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-film fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <div class="panel-footer">
+                                                    <a href="javascript:void(0)" rel="<?php echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';?>" class="videoPopupLink">
+                                                        <i class="fa fa-play-circle fa-3x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="panel panel-default">
+                                                <i class="fa fa-film fa-2x"></i>
+                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
+                                                <div class="panel-footer">
+                                                    <a href="javascript:void(0)" rel="<?php echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';?>" class="videoPopupLink">
+                                                        <i class="fa fa-play-circle fa-3x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GALLERY TAB START -->
+                        <div role="tabpanel" class="tab-pane" id="galleryTab">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="heading"> Add Gallery Files</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btnRed btn-lg" data-toggle="modal" data-target="#addGalleryModal">
+                                      Add Gallery File
+                                    </button>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4>Uploaded Gallery List</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="panel panel-default">
+                                        <img src="<?php echo base_url(); ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -904,6 +1118,13 @@ if (!empty($user_blog)) {
     </div>
 </div>
 
+<!-- Modal -->
+<div id="popupBg"></div>
+<div id="videoPopup" class="videoPopup">
+    <a href="javascript:void(0);" class="closePopup">&times;</a>
+    <div class="videoContainer">
+    </div>
+</div>
 
 
 <!-- Start blog Modal -->
@@ -1323,6 +1544,73 @@ if (!empty($user_blog)) {
     </div>
 </div>
 <!-- end video Modal -->
+
+<!-- Start Add Audio Modal -->
+<div class="modal fade" id="addAudioModal" tabindex="-1" role="dialog" aria-labelledby="addAudioModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addAudioModalLabel">Upload Audio</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <!-- <div class="dropzone">
+                <div class="dz-default dz-message">Drag and Drop Files here</div>
+                <input type="hidden" name="thumbnails" id="thumbval">
+            </div> -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btnRed">Upload</button>
+        <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Add Audio Modal -->
+
+<!-- Start Add Video Modal -->
+<div class="modal fade" id="addVideoModal" tabindex="-1" role="dialog" aria-labelledby="addVideoModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addVideoModalLabel">Upload Video</h4>
+      </div>
+
+      <div class="modal-body">
+        dsds
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btnRed">Upload</button>
+        <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Add Video Modal -->
+
+<!-- Start Add Gallery Modal -->
+<div class="modal fade" id="addGalleryModal" tabindex="-1" role="dialog" aria-labelledby="addGalleryModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addGalleryModalLabel">Upload Gallery</h4>
+      </div>
+
+      <div class="modal-body">
+        dsds
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btnRed">Upload</button>
+        <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Add Gallery Modal -->
 
 <script type="text/javascript">
     var baseURL = '<?php echo base_url(); ?>';

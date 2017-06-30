@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    /* main login page start */
+    var windowWidth = $(window).width();
+    if(windowWidth > 767){
+        setHeight();
+    }
+    $(window).resize(function(){
+        if(windowWidth > 767) {
+            setHeight();
+        }
+        // $('.scrollbar-outer').width($('.contentWrapper .sectionWhite').width() + 10);
+    });
+    /* main login page end */
 
     // scrollbar applied to music list and messages in Profile page
     if ($('.mCustomScrollbar').length) {
@@ -204,6 +216,11 @@ $(document).ready(function () {
         }
     });
 });
+
+function setHeight(){
+    var windowHeight = $( window ).height();
+    $(".loginPageWrap").height(windowHeight);
+}
 
 function isNumberKey(evt) {
     var charCode = (evt.which) ? evt.which : event.keyCode
