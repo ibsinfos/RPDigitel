@@ -32,7 +32,8 @@
 			foreach($user_subscribed_services as $u_services){
 				array_push($user_services_array,$u_services['service_id']);
 			}
-			
+						//print_r($this->session->all_userdata());
+						
 			$this->template->set('page', 'main_dashboard');
 			$this->template->set('slug', $data['slug']);
 			$this->template->set('services_menu', $services_menu);

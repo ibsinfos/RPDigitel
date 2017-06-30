@@ -49,6 +49,7 @@ $route['admin'] = 'admin/login';
 
 
 $route['login'] = 'frontend/login';
+$route['main_login'] = 'frontend/login/main_login';
 $route['otp'] = 'frontend/otp/index';
 $route['login/logout'] = 'frontend/login/logout';
 $route['login/signup'] = 'frontend/login/signup';

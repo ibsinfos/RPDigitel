@@ -664,6 +664,8 @@ function delete_selected_managers_foc(manager_fol_id){
 
 $(document).ready(function () {
 	
+	if ($('.dropzone').length) {
+	
 	Dropzone.autoDiscover = false;
 	var thumbs = [];
 	var file_row_count=0;
@@ -842,7 +844,7 @@ function validateUpdateBasicInformation() {
 
 */
 
-
+}
 	
 });
 
