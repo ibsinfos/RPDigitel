@@ -666,7 +666,6 @@ $(document).ready(function () {
 
     // Start Save basic information ajax call	
     $('#basicInfoSubmit').on('click', function (e) {
-		
 		$(".frmerror").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
 		
 		$("#err_email").html('');
@@ -1348,7 +1347,7 @@ $(document).ready(function () {
 					CKEDITOR.instances.bloglongdesc.setData('');
 					CKEDITOR.instances.blogshortdesc.setData('');
 					$(".frmerror_blog").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-                    window.location = mainDashboardURL;
+                   // window.location = mainDashboardURL;
 					return true;
                 } else {
 					$(".frmerror_blog").html('');

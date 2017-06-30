@@ -43,6 +43,31 @@ Class Login extends MX_Controller {
                 ->set_partial('footer', 'partials/footer');
         $this->template->build('login_form');
     }
+	
+	
+    public function main_login() {
+        if ($this->session->userdata('is_logged_in') !== FALSE) {
+            // if ($this->session->userdata('role') == 'user') {
+            //            redirect(base_url() . 'user/dashboard');
+            redirect(base_url() . 'fiberrails');
+        } else {
+
+            if (!isset($_SESSION)) {
+                session_start();
+            }
+
+            if ($_SESSION) {
+                session_destroy();
+            }
+        }
+        $this->template->set('page', 'main_login');
+        $this->template->set_theme('default_theme');
+        $this->template->set_layout('rpdigitel_frontend')
+                ->title('Home | RPDigitel')
+                ->set_partial('header', 'partials/blank_header')
+                ->set_partial('footer', 'partials/blank_footer');
+        $this->template->build('main_login_form');
+    }
 
     function validate_credentials() {
         $this->load->model('membership_model');
@@ -93,6 +118,7 @@ Class Login extends MX_Controller {
                     'role_id' => $user['role_id'],
                     'email' => $user['email_address'],
                     'purchase_pack' => $user['purchase_pack'],
+                    'paasport_user_id' => $user['paasport_user_id'],
                     'user_account' => $user_account
                 );
                 $this->session->set_userdata($data);
@@ -113,6 +139,7 @@ Class Login extends MX_Controller {
                     'role_id' => $user['role_id'],
                     'email' => $user['email_address'],
                     'purchase_pack' => $user['purchase_pack'],
+                    'paasport_user_id' => $user['paasport_user_id'],
                     'user_account' => $user_account
                 );
                 $this->session->set_userdata($data);
