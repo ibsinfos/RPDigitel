@@ -66,7 +66,7 @@
 			
 			$this->load->library('google_url_api');
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
-			
+
 			// create a shorten url start
 			$url = backend_passport_url()."view/".$slug; 
 			$this->google_url_api->enable_debug(FALSE);
@@ -142,7 +142,12 @@
                             
 						</ul>
                         <h4 class="modalHeading">Short URL for Sharing Page</h4>
-                        <p><a href=""><?php echo $shorten_url; ?></a></p>
+
+                        <?php
+                        print_r($slug);
+            // die;
+                        ?>
+                        <p><a href="<?php echo $shorten_url;?>"><?php echo $shorten_url; ?></a></p>
                         <?php if(!empty($user[0]['qr_code_image_ext']) && !empty($user[0]['qr_code_image'])) { ?>
                             <h4 class="modalHeading">Scan QRCode for Link</h4>
                             <img src="<?php echo 'data:' . $user[0]['qr_code_image_ext'] . ';base64,' . base64_encode($user[0]['qr_code_image']); ?>" width="200" />
