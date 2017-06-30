@@ -16,6 +16,10 @@
 		public static $USER_PROJECTS = 'tbl_projects';
 		public static $PROJECTS_FILES = 'tbl_project_files';
 		public static $VCARD_BASIC_DETAILS= 'tbl_vcard_basic';
+		public static $SKILLS_AND_EXPERTISE= 'tbl_skills_and_expertise';
+		public static $EXPERIENCE_DETAILS= 'tbl_experience_details';
+		public static $EDUCATION_DETAILS= 'tbl_education_details';
+		public static $BLOG_DETAILS= 'tbl_users_blog';
 		public static $USER_MAP= 'tbl_user_map';
 		public static $NEWS='tbl_news';
 		public static $CATEGORY='tbl_category';
