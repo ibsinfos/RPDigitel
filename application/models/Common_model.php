@@ -443,7 +443,7 @@
 			$slug='';
 			if(!empty($paasport_id))
 			{
-				$vcard_user = $this->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$paasport_id),'id ASC',1);
+				$vcard_user = $this->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$paasport_id),'id DESC',1);
 				if(!empty($vcard_user))
 				{
 					$slug=$vcard_user[0]['slug'];	  

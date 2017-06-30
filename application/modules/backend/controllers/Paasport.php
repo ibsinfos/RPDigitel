@@ -210,7 +210,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
+                $user['user_image'] = "paas-port/uploads/users/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -237,7 +237,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "paas-port/uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -321,7 +321,7 @@ class Paasport extends CI_Controller {
                 $user['work_phone'] = $this->input->post('companycontact');
                 $user['work_email'] = $this->input->post('companyemail');
                 $user['work_website'] = $this->input->post('companywebsite');
-                //$user['user_id'] = $this->session->userdata('paasport_user_id');								   
+                //$user['user_id'] = $this->session->userdata('paasport_user_id');                                 
                 $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id' => $this->session->userdata('vcard_id')));
                 if ($uid) {
                     $map ['status'] = 1;
@@ -404,7 +404,7 @@ class Paasport extends CI_Controller {
 
     //Added by Ranjit on 09 May 2017 to save Short Bio info End
     public function saveShortBio() {
-        //	   $this->load->helper('utility_helper');
+        //     $this->load->helper('utility_helper');
         $this->load->model('common_model');
         //        $this->load->helper(array(
         //            'form',
@@ -500,9 +500,9 @@ class Paasport extends CI_Controller {
             foreach ($user_skills as $user_skill) {
                 $exp_count1++;
                 $str .= '<div class="form-group">
-					<input class="input_update form-control skill-text" name="txt_skill_update[]" id="tb_' . $user_skill['id'] . '" value="' . $user_skill['skill'] . '" type="text">
-					<input class="input_update_id form-control skill-text" name="txt_skill_update_id[]"  value="' . $user_skill['id'] . '" type="hidden">
-					</div>';
+                    <input class="input_update form-control skill-text" name="txt_skill_update[]" id="tb_' . $user_skill['id'] . '" value="' . $user_skill['skill'] . '" type="text">
+                    <input class="input_update_id form-control skill-text" name="txt_skill_update_id[]"  value="' . $user_skill['id'] . '" type="hidden">
+                    </div>';
             }
         }
         echo $str;
@@ -865,13 +865,13 @@ class Paasport extends CI_Controller {
                 $edu['end_date'] = date('Y-m-d', strtotime($this->input->post('eduEndDate')));
 
                 //if(empty($this->input->post('edu_det_id')))
-                //{						
+                //{                     
                 $ins_experience = $this->common_model->insertRow($edu, TABLES::$EDUCATION_DETAILS);
-                //}	
+                //} 
                 //else
                 //{
-                //	$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
-                //}	
+                //  $ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
+                //} 
             }
             if ($ins_experience) {
                 $map ['ins_edu_id'] = $ins_experience;
@@ -1072,8 +1072,9 @@ class Paasport extends CI_Controller {
         $imap = array();
         if (empty($this->input->post('pricing_id'))) {
             $img_upload_flag = 0;
-            if (!empty($this->session->userdata('vcard_id'))) {
 
+            if (!empty($this->session->userdata('vcard_id'))) {
+                //print_r($_FILES['file']['name']);
                 if (!empty($_FILES['file']['name'][0])) {
 
                     for ($i = 0; $i < count($_FILES['file']['name']); $i++) {
@@ -1103,7 +1104,7 @@ class Paasport extends CI_Controller {
                             $data = array('upload_data' => $this->upload->data());
                         }
 
-                        $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+                        $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
                         $user['user_id'] = $this->session->userdata('paasport_user_id');
                         $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1160,7 +1161,7 @@ class Paasport extends CI_Controller {
                 $data = array('upload_data' => $this->upload->data());
             }
 
-            $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+            $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
 
             $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN, $user, array('id' => $this->input->post('pricing_id')));
             if ($ins_experience) {
@@ -1226,7 +1227,7 @@ class Paasport extends CI_Controller {
     }
 
     // End save price plan image
-    // start save list	
+    // start save list  
     public function saveList() {
 
         $this->load->helper('utility_helper');
@@ -1333,7 +1334,7 @@ class Paasport extends CI_Controller {
     }
 
     // end save list
-    // start save link	
+    // start save link  
     public function saveLink() {
 
         $this->load->helper('utility_helper');
@@ -1419,7 +1420,7 @@ class Paasport extends CI_Controller {
         }
     }
 
-    // start save video url	
+    // start save video url 
     public function getVideoData() {
 
         $this->load->model('common_model');
@@ -1511,7 +1512,7 @@ class Paasport extends CI_Controller {
             $chk_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id')));
 
             //if(count($chk_user)==1)
-            //{	
+            //{ 
             if (!empty($this->session->userdata('vcard_id'))) {
 
                 $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'id' => $this->session->userdata('vcard_id')));
@@ -1556,7 +1557,7 @@ class Paasport extends CI_Controller {
 
                 $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, array("qr_code_image" => $qr_code_image, "qr_code_image_ext" => $ext), array("id" => $this->session->userdata('vcard_id')));
             }
-            //}	
+            //} 
         }
     }
 
@@ -1665,7 +1666,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                    $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1722,7 +1723,7 @@ class Paasport extends CI_Controller {
                     $data = array('upload_data' => $this->upload->data());
                 }
 
-                $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                 $user['user_id'] = $this->session->userdata('paasport_user_id');
                 $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1779,7 +1780,7 @@ class Paasport extends CI_Controller {
         exit;
     }
 
-    // End save portfolio	
+    // End save portfolio   
     //  vcard update
     public function updateVcard() {
         if (!isset($_SESSION)) {
@@ -1946,7 +1947,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
+                $user['user_image'] = "paas-port/uploads/users/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -1973,7 +1974,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "paas-port/uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -2107,7 +2108,7 @@ class Paasport extends CI_Controller {
     }
 
     public function updateShortBio() {
-        //	   $this->load->helper('utility_helper');
+        //     $this->load->helper('utility_helper');
         $this->load->model('common_model');
         //        $this->load->helper(array(
         //            'form',
@@ -2487,7 +2488,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+                    $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2541,7 +2542,7 @@ class Paasport extends CI_Controller {
                 $data = array('upload_data' => $this->upload->data());
             }
 
-            $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+            $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
             $user['vcard_id'] = $this->input->post('vcard_id');
 
             $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN, $user, array('id' => $this->input->post('pricing_id')));
@@ -2669,7 +2670,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                    $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2726,7 +2727,7 @@ class Paasport extends CI_Controller {
                     $data = array('upload_data' => $this->upload->data());
                 }
 
-                $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                 $user['user_id'] = $this->session->userdata('paasport_user_id');
                 $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2897,7 +2898,7 @@ class Paasport extends CI_Controller {
                     } else {
                         $data = array('upload_data' => $this->upload->data());
                     }
-                    $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+                    $user['cover_image'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
                 }
                 if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) {
                     $config = array();
@@ -2919,7 +2920,7 @@ class Paasport extends CI_Controller {
                     } else {
                         $data = array('upload_data' => $this->upload->data());
                     }
-                    $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+                    $user['video'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
                 }
                 if (!empty($this->input->post('txtblogvideourl'))) {
                     $user['video_url'] = $this->input->post('txtblogvideourl');
@@ -2950,7 +2951,7 @@ class Paasport extends CI_Controller {
     }
 
     public function updateBloginfo() {
-        //echo '<pre>'; print_r($_FILES); 	echo '<pre>'; print_r($_POST); 		exit;
+        //echo '<pre>'; print_r($_FILES);   echo '<pre>'; print_r($_POST);      exit;
         $this->load->helper('utility_helper');
         $this->load->model('common_model');
         $this->load->helper(array('form', 'url', 'email'));
@@ -3027,7 +3028,7 @@ class Paasport extends CI_Controller {
                 } else {
                     $data = array('upload_data' => $this->upload->data());
                 }
-                $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
             }
             if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) {
                 $config = array();
@@ -3049,7 +3050,7 @@ class Paasport extends CI_Controller {
                 } else {
                     $data = array('upload_data' => $this->upload->data());
                 }
-                $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
+                $user['video'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
             }
             if (!empty($this->input->post('txtblogvideourl'))) {
                 $user['video_url'] = $this->input->post('txtblogvideourl');
