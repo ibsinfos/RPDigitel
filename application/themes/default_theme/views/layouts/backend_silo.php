@@ -241,7 +241,13 @@
         <?php if($page=="cloud_storage"){?>
 			<!-- elfinder Scripts -->
 			<script data-main="<?php echo backend_asset_url()?>elfinder/main.default.js" src="<?php echo backend_asset_url()?>elfinder/require.min.js"></script>
-		<?php }?>
+		<?php }
+        if($page=="broadcast") { ?>
+        <script src="<?php echo asset_url() ?>backend/vendors/broadcast/firebase.js"></script>
+        <script src="<?php echo asset_url() ?>backend/vendors/broadcast/RTCPeerConnection-v1.5.js"></script>
+        <script src="<?php echo asset_url() ?>backend/vendors/broadcast/broadcast.js"></script>
+        <script src="<?php echo asset_url() ?>backend/vendors/broadcast/broadcast-ui.js"></script>
+        <?php }?>
         <!-- Custom Theme Scripts -->
         <script src="<?php echo backend_asset_url() ?>build/js/custom.min.js"></script>
         <!-- Custom Scripts -->
