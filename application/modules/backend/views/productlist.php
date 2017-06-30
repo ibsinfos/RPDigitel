@@ -37,13 +37,14 @@
                         <table id="datatable" class="table table-striped table-bordered bulk_action">
 	                      <thead>
 	                        <tr>
-	                          <th><input type="checkbox" id="checkAll"></th>
-	                          <!--<th>Product Name</th>
+	                          <!--<th><input type="checkbox" id="checkAll"></th>
+	                          <th>Product Name</th>
 	                          <th>Product Description</th>
 	                          <th>Last Ordered</th>
 	                          <th>Action</th>-->
 							  
-							  <th>Application No</th>
+							  <th>Sr. No.</th>
+							  <th>Application No.</th>
 	                          <th>user Name</th>
 	                          <th>Email</th>
 	                          <th>Category</th>
@@ -53,19 +54,20 @@
 	                      <tbody>
 						  
 						  <?php
+						  $count_publisher_application=0;
 							  				  foreach($application_list as $application){
-							  						  ?>
+							  						  $count_publisher_application++;
+													  ?>
 						  
 	                        <tr>
-                        	  <td><input type="checkbox"></td>
+                        	  <td><?php echo $count_publisher_application;?></td>
 	                          <td><?php echo $application['id'];?></td>
 	                          <td><?php echo $_SESSION['user_account']['name'];?></td>
 	                          <td><?php echo $application['business_email'];?></td>
 	                          <td><?php echo $application['category'];?></td>
 	                          <td>
-	                          	<a href="" class="btn btnRed btn-sm">Edit</a>
-	                          	<a href="" class="btn btnRed btn-sm">Hide</a>
-	                          	<a href="" class="btn btnRed btn-sm">Delete</a>
+	                          	<a href="<?php echo base_url().'dashboard/createproduct/'.$application['id'];?>" class="btn btnRed btn-sm">Edit</a>
+<!--	                          	<a href="" class="btn btnRed btn-sm">Delete</a> -->
 	                          </td>
 	                        </tr>
 							
@@ -74,27 +76,6 @@
 							  }
 							  ?>
 							  
-						  <?php
-							  				  foreach($application_list as $application){
-							  						  ?>
-						  
-	                        <tr>
-                        	  <td><input type="checkbox"></td>
-	                          <td><?php echo $application['id'];?></td>
-	                          <td><?php echo $_SESSION['user_account']['name'];?></td>
-	                          <td><?php echo $application['business_email'];?></td>
-	                          <td><?php echo $application['category'];?></td>
-	                          <td>
-	                          	<a href="" class="btn btnRed btn-sm">Edit</a>
-	                          	<a href="" class="btn btnRed btn-sm">Hide</a>
-	                          	<a href="" class="btn btnRed btn-sm">Delete</a>
-	                          </td>
-	                        </tr>
-							
-							
-							<?php
-							  }
-							  ?>
 							  
                       	  </tbody>
                     	</table>

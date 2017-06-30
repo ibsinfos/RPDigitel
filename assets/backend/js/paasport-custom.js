@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    // Image preview
+    $("#wizard-picture").change(function () {
+        readURL(this);
+    });
 
     $('#addSectionCollapse').on('click', '.showSingle', function(){
         $('.targetDiv').hide();
@@ -23,29 +27,137 @@ $(document).ready(function(){
         $('#'+inputVal).show();
     });
 
-    $("#basicInfo").validate();
-	
+    // Show/hide social icons and append social id to anchor in mobile view
+    // $('.socialInputGroup').on('keyup', '.form-control', function () {
+    //     var attrID = $(this).attr('id');
+    //     var inputVal = $(this).val();
+    //     //alert(inputVal);
+    //     var socialAnchor = $('.socialCircleIcon').find('a').filter('.' + attrID);
+    //     if ($(this).val().length)
+    //         $(socialAnchor).show();
+    //     else
+    //         $(socialAnchor).hide();
+
+    //     if (attrID == 'facebook') {
+    //         $(socialAnchor).attr('href', 'https://www.facebook.com/' + encodeURIComponent(inputVal));
+    //     } else if (attrID == 'twitter') {
+    //         $(socialAnchor).attr('href', 'https://twitter.com/' + encodeURIComponent(inputVal));
+    //     } else if (attrID == 'googlePlus') {
+    //         $(socialAnchor).attr('href', 'https://plus.google.com/' + encodeURIComponent(inputVal));
+    //     } else if (attrID == 'linkedin') {
+    //         $(socialAnchor).attr('href', 'https://in.linkedin.com/' + encodeURIComponent(inputVal));
+    //     } else if (attrID == 'youtube') {
+    //         $(socialAnchor).attr('href', 'https://www.youtube.com/' + encodeURIComponent(inputVal));
+    //     } else if (attrID == 'pinterest') {
+    //         $(socialAnchor).attr('href', 'https://in.pinterest.com/' + encodeURIComponent(inputVal));
+    //     }
+    // });
+
+    // Panel open close
+    $('.panel').on('click', '.panel-heading', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('panel-collapsed')) {
+            $this.closest('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            // $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        } else {
+            $this.closest('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            // $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    });
+
+    //$("#basicInfo").validate();
+	validateBasicInformation();
 });
-// (function ($) {
-//     $(window).on("load", function () {
 
-//         $.mCustomScrollbar.defaults.scrollButtons.enable = true; //enable scrolling buttons by default
-//         $.mCustomScrollbar.defaults.axis = "yx"; //enable 2 axis scrollbars by default
-//         $("#preview").mCustomScrollbar({theme: "minimal-dark"});
-//         $(".all-themes-switch a").click(function (e) {
-//             e.preventDefault();
-//             var $this = $(this),
-//                     rel = $this.attr("rel"),
-//                     el = $(".content");
-//             switch (rel) {
-//                 case "toggle-content":
-//                     el.toggleClass("expanded-content");
-//                     break;
-//             }
-//         });
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-//     });
-// })(jQuery);
+        reader.onload = function (e) {
+            $('#wizardPicturePreview').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function validateBasicInformation() {
+    ////// Rules Goes Below //////
+    $('#basicInfo').validate({
+        rules: {
+            firstname: {
+                required: true,
+                lettersonly: true
+            },
+            lastname: {
+                required: true,
+                lettersonly: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            contact:{
+                required: true,
+                number: true
+            },
+            companycontact:{
+                number:true,
+                minlength:10
+            },
+            companyname:{
+                required:true,
+                lettersonly:true
+            },
+            user_url:{
+                required:true,
+                email:true
+            }
+        },
+        ////// Messages for Rules Goes Below //////
+        
+        messages: {
+            //// For General Sales Inquiries
+            firstname: {
+                lettersonly: "Letters only please",
+                required: "Please enter first name"
+            }/*,
+                last_name: {
+                lettersonly: "Letters only please",
+                required: "Please enter last name"
+                },
+                email: {
+                email: "Please enter a valid email address",
+                required: "Please enter an email address"
+                },
+                phone: {
+                minlength: "Please enter a valid phone number",
+                required: "Please enter phone number"
+                },
+                password: "Please enter a passowrd",
+                billing_address: "Please enter address",
+                billing_city: {
+                lettersonly: "Letters only please",
+                required: "Please enter city"
+                },
+                billing_state: "Please select state",
+            billing_zip: "Please enter zip"*/
+        },
+        submitHandler: function (form) {
+            
+           
+        }
+    });
+    
+    
+    $.validator.addMethod("lettersonly", function (value, element) {
+        return this.optional(element) || /^[a-z]+$/i.test(value);
+    }, "Letters only please");
+    
+    
+}
 
 /*for dynamic field addition*/
 $(function () {
@@ -125,103 +237,6 @@ function change() // no ';' here
 //        else elem.value = " Add + ";
 }
 
-$('#facebook').keyup(function () { //alert('in');
-    if ($(this).val().length)
-        $('a.facebook').show();
-    else
-        $('a.facebook').hide();
-});
-$('a.facebook').hide();
-$('#twitter').keyup(function () {
-    if ($(this).val().length)
-        $('a.twitter').show();
-    else
-        $('a.twitter').hide();
-});
-$('a.twitter').hide();
-$('#googleplus').keyup(function () {
-    if ($(this).val().length)
-        $('a.googleplus').show();
-    else
-        $('a.googleplus').hide();
-});
-$('a.googleplus').hide();
-$('#linkedin').keyup(function () {
-    if ($(this).val().length)
-        $('a.linkedin').show();
-    else
-        $('a.linkedin').hide();
-});
-$('a.linkedin').hide();
-$('#youtube').keyup(function () {
-    if ($(this).val().length)
-        $('a.youtube').show();
-    else
-        $('a.youtube').hide();
-});
-$('a.youtube').hide();
-$('#pinterest').keyup(function () {
-    if ($(this).val().length)
-        $('a.pinterest').show();
-    else
-        $('a.pinterest').hide();
-});
-$('a.pinterest').hide();
-
-$('input[name="facebook_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://www.facebook.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
-$('input[name="twitter_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://https://twitter.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
-$('input[name="googleplus_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://plus.google.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
-$('input[name="linkedin_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://in.linkedin.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
-$('input[name="youtube_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://www.youtube.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
-$('input[name="pinterest_url"]').on('change', function () {
-    var self = this,
-            $self = $(self),
-            link = $self.next();
-    $(".mobileContent div div div div a").attr('href', 'https://in.pinterest.com/' + encodeURIComponent(self.value));
-    link.prop('href', function () {
-//            this.href = this.protocol + '//' + this.hostname + '/' + encodeURIComponent(self.value);
-    });
-});
 
 
 $(document).ready(function () {
@@ -1380,21 +1395,7 @@ $(document).ready(function () {
 
 
 
-// Panel open close
-$(document).on('click', '.panel-heading span.clickable', function(e){
-	var $this = $(this);
-	if(!$this.hasClass('panel-collapsed')) {
-		$this.closest('.panel').find('.panel-body').slideUp();
-		$this.addClass('panel-collapsed');
-		$this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-	} else {
-		$this.closest('.panel').find('.panel-body').slideDown();
-		$this.removeClass('panel-collapsed');
-		$this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-	}
-})
 
-//End Panel
 
 //File Upload 
 
@@ -1469,8 +1470,7 @@ $(".image-preview-input input:file").change(function (){
 //$('.remove-div').hide();
 
 // PICK THE VALUES FROM EACH TEXTBOX WHEN "SUBMIT" BUTTON IS CLICKED.
-function getSkillsData()
-{
+function getSkillsData() {
 	$.ajax({
         url: getSkillsAndExerptiseURL,
 		type: "POST",
@@ -1488,8 +1488,8 @@ function getSkillsData()
     });
 	
 }
-function getblockSkillData()
-{
+
+function getblockSkillData() {
 	$.ajax({
         url: getSkillsAndExerptDetailURL,
 		type: "POST",

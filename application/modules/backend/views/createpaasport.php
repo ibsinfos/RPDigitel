@@ -26,7 +26,7 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active">
-							<a href="#basicInfo" aria-controls="basicInfo" role="tab" data-toggle="tab">Basic Information</a>
+							<a href="#basicInfoTab" aria-controls="basicInfoTab" role="tab" data-toggle="tab">Basic Information</a>
 						</li>
 						<li role="presentation" class="">
 							<a href="#socialInfo" aria-controls="socialInfo" role="tab" data-toggle="tab">Social</a>
@@ -45,21 +45,23 @@
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<!-- BASIC INFORMATION TAB START -->
-						<div role="tabpanel" class="tab-pane active" id="basicInfo">
+						<div role="tabpanel" class="tab-pane active" id="basicInfoTab">
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-12">
 									<h3 class="heading"> Let's start with the basic information </h3>
 									<div class="frmerror"></div>
-									<form id="basicInfo" method="POST" enctype="mutlipart/form-data" >
+									<form id="basicInfo" method="POST" role="form" action="" novalidate="novalidate" enctype="mutlipart/form-data" >
 										<div class="row">
-											<div class="col-xs-6">
-												<div class="pictureContainer">
-													<div class="picture">
-														<img src="<?php echo asset_url(); ?>backend/images/paasport/plus-sign.png" height="105" class="center-block">
-														<input type="file" id="wizard-picture" name="wizard-picture">
+											<div class="col-xs-12 col-sm-6">
+												<div class="form-group">
+													<div class="pictureContainer">
+													 	<div class="picture">
+															<img src="<?php echo asset_url(); ?>backend/images/paasport/default-avatar.png" class="picture-src img-circle" id="wizardPicturePreview" title="" height="106"/>
+															<input type="file" id="wizard-picture" name="wizard-picture">
+														</div>
+														<input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : ''; ?>" name="old_user_image">
+														<h4 style="margin: 10px 0 15px;">Choose Picture</h4>
 													</div>
-													<input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : ''; ?>" name="old_user_image">
-													<h4 style="margin: 10px 0 15px;">Choose Picture</h4>
 												</div>
 												<div class="form-group">
 													<label>Email
@@ -74,7 +76,7 @@
 													<textarea name="address" class="form-control" rows="4" placeholder="123 6th St.Melbourne, FL 32904" maxlength="100"></textarea>
 												</div>
 											</div>
-											<div class="col-xs-6">
+											<div class="col-xs-12 col-sm-6">
 												<p></p>
 												<div class="form-group">
 													<label>First Name
@@ -124,314 +126,112 @@
 										</div>
 									</form>
 								</div>
-								<div class="col-sm-4">
-									<div class="mobileViewWrap">
-										<img src="<?php echo asset_url(); ?>backend/images/paasport/phone.png" alt="" class="center-block mobileImg" height="550">
-										<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
-											<div class="pictureContainer">
-												<div class="picture">
-													<?php
-	                                               /* if (!empty($user_data['0']['user_image']))
-	                                                    $wizard_pic_preview = $user_data['0']['user_image'];
-	                                                else
-	                                                    $wizard_pic_preview = asset_url() . "main_vcard/images/default-avatar.png";
-													*/
-	                                                    $wizard_pic_preview = asset_url() . "backend/images/paasport/default-avatar.png";
-	                                                    ?>
-	                                                    <img src="<?php echo $wizard_pic_preview; ?>" class="picture-src img-circle"
-	                                                    id="wizardPicturePreview"
-	                                                    title="" height="106"/>
-                                                </div>
-                                            </div>
-                                            <ul class="list-inline text-center">
-                                            	<li>
-                                            		<h2 data-preview="firstname">asasa</h2>
-                                            	</li>
-                                            	<li>
-                                            		<h2 data-preview="lastname">asasas</h2>
-                                            	</li>
-                                            </ul>
-                                            <div class="btn-group">
-                                            	<button class="btn btnCollapse" type="button" data-toggle="collapse" data-target="#basicdataExample" aria-expanded="false" aria-controls="basicdataExample">Basic Information</button>
-	                                            	<button type="button" class="btn btnCollapse dropdown-toggle"
-	                                            	data-toggle="collapse" data-target="#basicdataExample">
-	                                            	<span class="caret"></span>
-	                                            </button>
-	                                        </div>
-	                                        <ul id="basicdataExample" class="list-unstyled collapse">
-	                                        	<li>
-	                                        		<strong>Email:</strong>
-	                                        		<span data-preview="email"></span>
-	                                        	</li>
-	                                        	<li>
-	                                        		<strong>Contact:</strong>
-	                                        		<span data-preview="contact"></span>
-	                                        	</li>
-	                                        	<li>
-	                                        		<strong>Address:</strong>
-	                                        		<span data-preview="address"></span>
-	                                        	</li>
-	                                        	<li>
-	                                        		<strong>PinCode:</strong>
-	                                        		<span data-preview="pincode"></span>
-	                                        	</li>
-	                                        </ul>
-
-	                                        <div class="btn-group">
-	                                        	<button type="button" class="btn btnCollapse " data-toggle="collapse"
-		                                        	data-target="#companydata"> &emsp; Company Info &emsp;
-		                                        </button>
-	                                        	<button type="button" class="btn btnCollapse dropdown-toggle"
-	                                        		data-toggle="collapse" data-target="#companydata">
-	                                        		<span class="caret"></span>
-	                                    		</button>
-	                                		</div>
-			                                <ul id="companydata" class="list-unstyled collapse">
-			                                	<li>
-			                                		<strong>Company:</strong>
-			                                		<span data-preview="companyname"></span>
-			                                	</li>
-			                                	<li>
-			                                		<strong>JobTitle:</strong>
-			                                		<span data-preview="jobtitle1"></span>
-			                                	</li>
-			                                	<li>
-			                                		<strong>Contact:</strong> 
-			                                		<span data-preview="companycontact"></span>
-			                                	</li>
-			                                	<li>
-			                                		<strong>Startdate:</strong> 
-			                                		<span data-preview="startdate"></span>
-			                                	</li>
-			                                	<li>
-			                                		<strong>Email:</strong> 
-			                                		<span data-preview="companyemail"></span>
-			                                	</li>
-			                                	<li>
-			                                		<strong>Website:</strong> 
-			                                		<span data-preview="companywebsite"></span>
-			                                	</li>
-			                                </ul>
-	                            		</div>
-			                            <ul class="list-inline bottomBtns">
-			                            	<li>
-			                            		<button type="button" class="btn btnRed btn-dropdown btn-o btn-sm">
-			                            			<i class="fa fa-share-alt" aria-hidden="true"></i>
-			                            			Share
-			                            		</button>
-			                            	</li>
-			                            	<li>
-			                            		<button type="submit" class="btn btnRed btn-sm">
-			                            			<i class="fa fa-floppy-o" aria-hidden="true"></i>
-			                            			Save
-			                            		</button>
-			                            	</li>
-			                            </ul>
-	                        		</div>
-	                    		</div>
 	                		</div>
 	            		</div>
 
 			            <!-- SOCIAL INFORMATION TAB START -->
 			            <div role="tabpanel" class="tab-pane" id="socialInfo">
 			            	<div class="row">
-			            		<div class="col-sm-8">
+			            		<div class="col-xs-12">
 			            			<h3 class="heading"> Enter Some of your social links to add </h3>
 			            			<div class="frmerror_socialinfo" ></div>
-			            			<form id="frmSocialInfo">
-			            				<div class="col-sm-8 col-sm-offset-2 socialInputGroup">
-			            					<div class="form-group">
-			            						<label for="facebook">Facebook</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon facebook">
-			            								<i class="fa fa-facebook"></i>
-			            							</span>
-			            							<input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
-			            							<input id="facebook" name="facebook_url" type="text" class="form-control" placeholder="facebook id only" value="" >
-			            						</div>
-			            						<span id="err_facebook_url" ></span>
-			            					</div>
-			            					<div class="form-group">
-			            						<label for="twitter">Twitter</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon twitter">
-			            								<i class="fa fa-twitter"></i>
-			            							</span>
-			            							<input id="twitter" name="twitter_url" type="text" class="form-control" value="" placeholder="Enter Twitter page id">
-			            						</div>
-			            						<span id="err_twitter_url" ></span>	
-			            					</div>
-			            					<div class="form-group">
-			            						<label for="googleplus">Google plus</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon googlePlus">
-			            								<i class="fa fa-google-plus"></i>
-			            							</span>
-			            							<input id="googleplus" name="googleplus_url" type="text" class="form-control" value="" placeholder="Enter google plus page id">
-			            						</div>
-			            						<span id="err_googleplus_url" ></span>	
-			            					</div>
-			            					<div class="form-group">
-			            						<label for="linkedin">Linkedin</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon linkedin">
-			            								<i class="fa fa-linkedin"></i>
-			            							</span>
-			            							<input id="linkedin" name="linkedin_url" type="text" class="form-control" value="" placeholder="Enter Linked in page id">
-			            						</div>
-			            						<span id="err_linkedin_url" ></span>
-			            					</div>
-			            					<div class="form-group">
-			            						<label for="youtube">Youtube</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon youtube">
-			            								<i class="fa fa-youtube-play"></i>
-			            							</span>
-			            							<input id="youtube" name="youtube_url" type="text" class="form-control" value="" placeholder="Enter Youtube page url">
-			            						</div>
-			            						<span id="err_youtube_url" ></span>	
-			            					</div>
-			            					<div class="form-group">
-			            						<label for="pinterest">Pinterest</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon pinterest">
-			            								<i class="fa fa-pinterest"></i>
-			            							</span>
-			            							<input id="pinterest" name="pinterest_url" type="text"
-			            							class="form-control" value=""
-			            							placeholder="Enter pinterest url">
-			            						</div>
-			            						<span id="err_pinterest_url" ></span>
-			            					</div>
-			            					<div class="form-group">
-			            						<label>Email:
-			            							<small>(Enter Your Email To receive mails from contact form)</small>
-			            						</label>
-			            						<div class="input-group">
-			            							<span class="input-group-addon email">
-			            								<i class="fa fa-envelope"></i>
-			            							</span>
-			            							<input name="user_url" type="text" class="form-control" value=""
-			            							placeholder="johndoe@website.com">
-			            						</div>
-			            						<span id="err_user_url" ></span>
-			            					</div>
-			            				</div>
-			            				<div class="text-center">
-			            					<button type="button" id="socialInfoSubmit" name="socialInfoSubmit"  class="btn btnRed btn-lg">Save</button>
-			            				</div>
-			            			</form>
-			            		</div>
-
-			            		<div class="col-sm-4">
-			            			<div class="mobileViewWrap">
-			            				<img src="<?php echo asset_url(); ?>backend/images/paasport/socialphone.png" alt="" class="center-block mobileImg" height="550">
-			            				<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
-			            					<h2 class="text-center">Social Links</h2>
-			            					<ul class="list-unstyled row socialCircleIcon">
-			            						<li class="col-xs-6">
-			            							<a href="{value of facebook_url}" class="text-center facebook">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Facebook</p>
-			            							</a>
-			            						</li>
-			            						<li class="col-xs-6">
-			            							<a href="{value of twitter_url}" class="text-center twitter">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Twitter</p>
-			            							</a>
-			            						</li>
-			            						<li class="col-xs-6">
-			            							<a href="{value of googleplus_url}" class="text-center googlePlus">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Google+</p>
-			            							</a>
-			            						</li>
-			            						<li class="col-xs-6">
-			            							<a href="{value of linkedin_url}" class="text-center linkedin">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Linkedin</p>
-			            							</a>
-			            						</li>
-			            						<li class="col-xs-6">
-			            							<a href="{value of youtube_url}" class="text-center youtube">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Youtube</p>
-			            							</a>
-			            						</li>
-			            						<li class="col-xs-6">
-			            							<a href="{value of pinterest_url}" class="text-center pinterest">
-			            								<span class="fa-stack fa-lg">
-			            									<i class="fa fa-circle fa-stack-2x"></i>
-			            									<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-			            								</span>
-			            								<p>Pinterest</p>
-			            							</a>
-			            						</li>
-			            					</ul>
-
-			            					<div class="padding-10">
-			            						<h4 class="text-center">Contact Form</h4>
-			            						<div class="form-group">
-			            							<label for="visitor-email">Your Email:</label>
-			            							<input id="visitor-email" type="text" placeholder="Enter Your Email" class="form-control">
-			            						</div>
-			            						<div class="form-group">
-			            							<label for="subject">Subject :</label>
-			            							<input id="subject" type="text" placeholder="Enter subject" class="form-control">
-			            						</div>
-			            						<div class="form-group">
-			            							<label for="message">Your Message :</label>
-			            							<textarea id="message" placeholder="Your Message" class="form-control">
-			            							</textarea>
-			            						</div>
-			            						<div class="form-group">
-			            							<button type="submit" class="btn btnRed btn-sm btn-block">
-			            								<i class="fa fa-paper-plane" aria-hidden="true"></i>
-			            								Send
-			            							</button>
-			            						</div>
-			            					</div>
-			            				</div>
-
-			            				<ul class="list-inline bottomBtns">
-			            					<li>
-			            						<button type="button" class="btn btnRed btn-dropdown btn-o btn-sm">
-			            							<i class="fa fa-share-alt" aria-hidden="true"></i>
-			            							Share
-			            						</button>
-			            					</li>
-			            					<li>
-			            						<button type="submit" class="btn btnRed btn-sm">
-			            							<i class="fa fa-floppy-o" aria-hidden="true"></i>
-			            							Save
-			            						</button>
-			            					</li>
-			            				</ul>
-			            			</div>
 			            		</div>
 			            	</div>
+	            			<form id="frmSocialInfo" class="socialInputGroup">
+	            				<div class="row">
+		            				<div class="col-sm-6 form-group">
+	            						<label for="facebook">Facebook</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon facebook">
+	            								<i class="fa fa-facebook"></i>
+	            							</span>
+	            							<input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : ''; ?>" name="id">
+	            							<input id="facebook" name="facebook_url" type="text" class="form-control" placeholder="facebook id only" value="" >
+	            						</div>
+	            						<span id="err_facebook_url" ></span>
+	            					</div>
+	            					<div class="col-sm-6 form-group">
+	            						<label for="twitter">Twitter</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon twitter">
+	            								<i class="fa fa-twitter"></i>
+	            							</span>
+	            							<input id="twitter" name="twitter_url" type="text" class="form-control" value="" placeholder="Enter Twitter page id">
+	            						</div>
+	            						<span id="err_twitter_url" ></span>	
+	            					</div>
+	            				</div>
+	            				<div class="row">
+	            					<div class="col-sm-6 form-group">
+	            						<label for="googleplus">Google plus</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon googlePlus">
+	            								<i class="fa fa-google-plus"></i>
+	            							</span>
+	            							<input id="googlePlus" name="googleplus_url" type="text" class="form-control" value="" placeholder="Enter google plus page id">
+	            						</div>
+	            						<span id="err_googleplus_url" ></span>	
+	            					</div>
+	            					<div class="col-sm-6 form-group">
+	            						<label for="linkedin">Linkedin</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon linkedin">
+	            								<i class="fa fa-linkedin"></i>
+	            							</span>
+	            							<input id="linkedin" name="linkedin_url" type="text" class="form-control" value="" placeholder="Enter Linked in page id">
+	            						</div>
+	            						<span id="err_linkedin_url" ></span>
+	            					</div>
+	            				</div>
+	            				<div class="row">
+	            					<div class="col-sm-6 form-group">
+	            						<label for="youtube">Youtube</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon youtube">
+	            								<i class="fa fa-youtube-play"></i>
+	            							</span>
+	            							<input id="youtube" name="youtube_url" type="text" class="form-control" value="" placeholder="Enter Youtube page url">
+	            						</div>
+	            						<span id="err_youtube_url" ></span>	
+	            					</div>
+	            					<div class="col-sm-6 form-group">
+	            						<label for="pinterest">Pinterest</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon pinterest">
+	            								<i class="fa fa-pinterest"></i>
+	            							</span>
+	            							<input id="pinterest" name="pinterest_url" type="text"
+	            							class="form-control" value=""
+	            							placeholder="Enter pinterest url">
+	            						</div>
+	            						<span id="err_pinterest_url" ></span>
+	            					</div>
+	            				</div>
+	            				<div class="row">
+	            					<div class="col-sm-6 form-group">
+	            						<label>Email:
+	            							<small>(Enter Your Email To receive mails from contact form)</small>
+	            						</label>
+	            						<div class="input-group">
+	            							<span class="input-group-addon email">
+	            								<i class="fa fa-envelope"></i>
+	            							</span>
+	            							<input name="user_url" type="text" class="form-control" value=""
+	            							placeholder="johndoe@website.com">
+	            						</div>
+	            						<span id="err_user_url" ></span>
+		            				</div>
+		            				<div class="col-xs-12 text-center">
+		            					<button type="button" id="socialInfoSubmit" name="socialInfoSubmit"  class="btn btnRed btn-lg">Save</button>
+		            				</div>
+		            			</div>
+	            			</form>
 			            </div>
 
 			            <!-- ABOUT INFORMATION TAB START -->
 			            <div role="tabpanel" class="tab-pane" id="aboutInfo">
 			            	<div class="row">
-			            		<div class="col-sm-8">
+			            		<div class="col-xs-12">
 			            			<h3 class="heading"> Tell Us More About You </h3>
 			            			<div class="tabbable-panel">
 			            				<div class="tabbable-line">
@@ -475,7 +275,7 @@
 			            											</div>
 			            										</div>																
 			            										<div class="form-group">
-			            											<div class="col-sm-12 text-right">
+			            											<div class="col-xs-12 text-right">
 			            												<button type="button" class="btn btn-default preview-add-button-skill" id="btnadd_skill" name="btnadd_skill">
 			            													<span class="fa fa-plus"></span>
 			            													Add
@@ -511,51 +311,63 @@
 			            								<form id="frmExperience">
 			            									<div class="panel-body form-horizontal Experience-form">
 			            										<div class="frmerror_experience" ></div>
+			            										<div class="row">
+			            											<div class="col-sm-6">
+			            												<div class="form-group">
+					            											<label for="prevCompanyName"
+					            											class="col-sm-4 control-label">Company
+					            											Name</label>
+					            											<div class="col-sm-8">
+					            												<input type="hidden" id="exp_det_id" name="exp_det_id" value="" />
+					            												<input type="text" class="form-control"
+					            												id="prevCompanyName"
+					            												name="prevCompanyName"
+					            												placeholder="Enter name of firm or company">
+					            												<span id="err_prevCompanyName" ></span>	   
+					            											</div>
+					            										</div>
+			            											</div>
+			            											<div class="col-sm-6">
+			            												<div class="form-group">
+					            											<label for="prevJobTitle"
+					            											class="col-sm-4 control-label">Position
+					            											Title</label>
+					            											<div class="col-sm-8">
+					            												<input type="text" class="form-control"
+					            												id="prevJobTitle"
+					            												name="prevJobTitle"
+					            												placeholder="eg. Web Developer">
+					            												<span id="err_prevJobTitle" ></span>	   
+					            											</div>
+					            										</div>
+			            											</div>
+			            										</div>
+			            										<div class="row">
+			            											<div class="col-sm-6">
+					            										<div id="prevStartDate" class="form-group ">
+					            											<label for="prevStartDate"
+					            											class="col-sm-4 control-label">Start Date</label>
+					            											<div class="col-sm-8">
+					            												<input type="text" class="form-control datepicker" id="prevStartDate1"
+					            												value="" name="prevStartDate">
+					            												<span id="err_prevStartDate" ></span>	 	   
+					            											</div>
+					            										</div>
+					            									</div>
+					            									<div class="col-sm-6">
+					            										<div id="prevEndDate" class="form-group ">
+					            											<label for="prevEndDate"
+					            											class="col-sm-4 control-label">End Date</label>
+					            											<div class="col-sm-8">
+					            												<input type="text" class="form-control datepicker" id="prevEndDate1"
+					            												value="" name="prevEndDate">
+					            												<span id="err_prevEndDate" ></span>		   
+					            											</div>
+					            										</div>
+					            									</div>
+					            								</div>
 			            										<div class="form-group">
-			            											<label for="prevCompanyName"
-			            											class="col-sm-3 control-label">Company
-			            											Name</label>
-			            											<div class="col-sm-9">
-			            												<input type="hidden" id="exp_det_id" name="exp_det_id" value="" />
-			            												<input type="text" class="form-control"
-			            												id="prevCompanyName"
-			            												name="prevCompanyName"
-			            												placeholder="Enter name of firm or company">
-			            												<span id="err_prevCompanyName" ></span>	   
-			            											</div>
-			            										</div>
-			            										<div class="form-group">
-			            											<label for="prevJobTitle"
-			            											class="col-sm-3 control-label">Position
-			            											Title</label>
-			            											<div class="col-sm-9">
-			            												<input type="text" class="form-control"
-			            												id="prevJobTitle"
-			            												name="prevJobTitle"
-			            												placeholder="eg. Web Developer">
-			            												<span id="err_prevJobTitle" ></span>	   
-			            											</div>
-			            										</div>
-			            										<div id="prevStartDate" class="form-group ">
-			            											<label for="prevStartDate"
-			            											class="col-sm-3 control-label">Start Date</label>
-			            											<div class="col-sm-9">
-			            												<input type="text" class="form-control datepicker" id="prevStartDate1"
-			            												value="" name="prevStartDate">
-			            												<span id="err_prevStartDate" ></span>	 	   
-			            											</div>
-			            										</div>
-			            										<div id="prevEndDate" class="form-group ">
-			            											<label for="prevEndDate"
-			            											class="col-sm-3 control-label">End Date</label>
-			            											<div class="col-sm-9">
-			            												<input type="text" class="form-control datepicker" id="prevEndDate1"
-			            												value="" name="prevEndDate">
-			            												<span id="err_prevEndDate" ></span>		   
-			            											</div>
-			            										</div>
-			            										<div class="form-group">
-			            											<div class="col-sm-12 text-right">
+			            											<div class="col-xs-12 text-right">
 			            												<button type="button" class="btn btn-default preview-add-button1" id="add_experience" name="add_experience">
 			            													<span class="fa fa-plus"></span>
 			            													Add
@@ -615,52 +427,59 @@
 	                                            		<h3>Education</h3>
 
 	                                            		<div class="panel panel-default">
-	                                            			<div class="panel-body form-horizontal Education-form"
-	                                            			style="padding:15px;">
-	                                            			<div class="form-group">
-	                                            				<label for="eduInstituteName"
-	                                            				class="col-sm-3 control-label">Institute
-	                                            				Name</label>
-	                                            				<div class="col-sm-9">
+	                                            			<div class="panel-body form-horizontal Education-form">
+	                                            				<div class="row">
+			            											<div class="col-sm-6">
+				                                            			<div class="form-group">
+				                                            				<label for="eduInstituteName"
+				                                            				class="col-sm-4 control-label">Institute
+				                                            				Name</label>
+				                                            				<div class="col-sm-8">
 
-	                                            					<input type="hidden" class="form-control" id="edu_det_id" name="edu_det_id">
-	                                            					<input type="text" class="form-control"
-	                                            					id="eduInstituteName"
-	                                            					name="eduInstituteName">
-	                                            					<span id="err_eduInstituteName" ></span>	   
-	                                            				</div>
-	                                            			</div>
-	                                            			<div class="form-group">
-	                                            				<label for="degree" class="col-sm-3 control-label">Degree
-	                                            					or Certificate</label>
-	                                            					<div class="col-sm-9">
-	                                            						<input type="text" class="form-control" id="degree"
-	                                            						name="degree">
-	                                            						<span id="err_degree" ></span>		   
-	                                            					</div>
-	                                            				</div>
-	                                            				<div id="eduStartDate" class="form-group ">
-	                                            					<label for="eduStartDate"
-	                                            					class="col-sm-3 control-label">Start Date</label>
-	                                            					<div class="col-sm-9">
-	                                            						<input type="text" class="form-control datepicker" id="eduStartDate1"
-	                                            						value="" name="eduStartDate">
-	                                            						<span id="err_eduStartDate" ></span>		   
-	                                            					</div>
-	                                            				</div>
-
-	                                            				<div id="eduEndDate" class="form-group ">
-	                                            					<label for="eduEndDate"
-	                                            					class="col-sm-3 control-label">End Date</label>
-	                                            					<div class="col-sm-9">
-	                                            						<input type="text" class="form-control datepicker" id="eduEndDate1"
-	                                            						value="" name="eduEndDate">
-	                                            						<span id="err_eduEndDate" ></span>	   
-	                                            					</div>
-	                                            				</div>
+				                                            					<input type="hidden" class="form-control" id="edu_det_id" name="edu_det_id">
+				                                            					<input type="text" class="form-control"
+				                                            					id="eduInstituteName"
+				                                            					name="eduInstituteName">
+				                                            					<span id="err_eduInstituteName" ></span>	   
+				                                            				</div>
+				                                            			</div>
+				                                            		</div>
+				                                            		<div class="col-sm-6">
+				                                            			<div class="form-group">
+				                                            				<label for="degree" class="col-sm-4 control-label">Degree or Certificate</label>
+			                                            					<div class="col-sm-8">
+			                                            						<input type="text" class="form-control" id="degree"
+			                                            						name="degree">
+			                                            						<span id="err_degree" ></span>		   
+			                                            					</div>
+			                                            				</div>
+			                                            			</div>
+			                                            		</div>
+			                                            		<div class="row">
+			            											<div class="col-sm-6">
+			                                            				<div id="eduStartDate" class="form-group ">
+			                                            					<label for="eduStartDate" class="col-sm-4 control-label">Start Date</label>
+			                                            					<div class="col-sm-8">
+			                                            						<input type="text" class="form-control datepicker" id="eduStartDate1"
+			                                            						value="" name="eduStartDate">
+			                                            						<span id="err_eduStartDate" ></span>		   
+			                                            					</div>
+			                                            				</div>
+			                                            			</div>
+		                                            				<div class="col-sm-6">
+			                                            				<div id="eduEndDate" class="form-group ">
+			                                            					<label for="eduEndDate" class="col-sm-4 control-label">End Date</label>
+			                                            					<div class="col-sm-8">
+			                                            						<input type="text" class="form-control datepicker" id="eduEndDate1"
+			                                            						value="" name="eduEndDate">
+			                                            						<span id="err_eduEndDate" ></span>	   
+			                                            					</div>
+			                                            				</div>
+			                                            			</div>
+			                                            		</div>
 
 	                                            				<div class="form-group">
-	                                            					<div class="col-sm-12 text-right">
+	                                            					<div class="col-xs-12 text-right">
 	                                            						<button type="button"
 	                                            						class="btn btn-default preview-add-button2" id="educationSubmit">
 	                                            						<span class="fa fa-plus"></span>
@@ -722,135 +541,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                	<div class="mobileViewWrap">
-                                		<img src="<?php echo asset_url(); ?>backend/images/paasport/aboutphone.png" alt="" class="center-block" height="550">
-                                		<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
-                                			<div class="btn-group">
-                                				<button type="button" class="btn btnCollapse " data-toggle="collapse" data-target="#aboutdata">About</button>
-                                				<button type="button" class="btn btnCollapse dropdown-toggle" data-toggle="collapse" data-target="#aboutdata">
-                                					<span class="caret"></span>
-                                				</button>
-                                			</div>
-                                			<ul id="aboutdata" class="list-unstyled collapse">
-                                				<div id="trackingDiv"></div>
-                                			</ul>
-
-                                			<div class="btn-group">
-                                				<button type="button" class="btn btnCollapse " data-toggle="collapse" data-target="#skillsdata">Skills &amp; Expertise</button>
-                                				<button type="button" class="btn btnCollapse dropdown-toggle" data-toggle="collapse" data-target="#skillsdata">
-                                					<span class="caret"></span>
-                                				</button>
-                                			</div>
-                                			<ul id="skillsdata" class="list-unstyled collapse">
-                                				<div class="content-append">
-                                					<div id="blockSkillDataMobile" >
-                                						<p><b>Skills you have added: </b></p>
-                                					</div>		
-
-                                					<?php if(!empty($user_skills)) { 
-                                						$exp_count = 0;
-                                						foreach ($user_skills as $user_skill) {
-                                							$exp_count++;
-                                                			//echo ($user_skill['skill']) ? $user_skill['skill'] : ''; 
-                                							?><br>
-                                							<?php } 
-                                						} ?>		
-                                					</div>
-                                				</ul>
-
-                                				<div class="btn-group">
-                                					<button type="button" class="btn btnCollapse " data-toggle="collapse"
-                                					data-target="#experiencedata">Experience
-                                				</button>
-                                				<button type="button" class="btn btnCollapse dropdown-toggle"
-                                				data-toggle="collapse"
-                                				data-target="#experiencedata">
-                                				<span class="caret"></span>
-                                			</button>
-                                		</div>
-                                		<ul id="experiencedata" class="list-unstyled collapse">
-                                			<div class="preview-table-ex1">
-                                				<?php
-                                               /* $exp_count = 0;
-                                                foreach ($user_exp_data as $user_exp) {
-                                                    $exp_count++;
-                                                    ?>
-
-                                                    <div id="info-remove<?php echo $exp_count; ?>">
-                                                        <div class="content-company div-delete"> 
-                                                            <strong>Company Name: </strong><?php echo ($user_exp['company_name']) ? $user_exp['company_name'] : ''; ?>
-                                                        </div>
-                                                        <div class="content-position div-delete"><strong>Position Title: </strong><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?>
-                                                        </div>
-                                                        <div class="start-date div-delete"><strong>Start Date: </strong><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?>
-                                                        </div>
-                                                        <div class="end-date div-delete"><strong>End Date: </strong><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?>
-                                                        </div>
-                                                        <hr>
-                                                    </div>
-                                                    <?php } */ ?>
-                                                </div>
-                                            </ul>
-
-                                            <div class="btn-group">
-                                            	<button type="button" class="btn btnCollapse " data-toggle="collapse"
-                                            	data-target="#educationdata">Education
-                                            </button>
-                                            <button type="button" class="btn btnCollapse dropdown-toggle"
-                                            data-toggle="collapse"
-                                            data-target="#educationdata">
-                                            <span class="caret"></span>
-                                        </button>
-                                    </div>
-                                    <ul id="educationdata" class="list-unstyled collapse">
-                                    	<div class="preview-table-ex3-edu">
-
-                                    		<?php
-                                                    /*$edu_count = 0;
-                                                    foreach ($user_edu_data as $user_edu) {
-                                                        $edu_count++;
-                                                        ?>
-
-
-                                                        <div id="info-remove<?php echo $edu_count; ?>">
-                                                            <div class="content-company div-delete">
-                                                                <strong>Institute Name: </strong><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?>
-                                                            </div>
-                                                            <div class="content-position div-delete"><strong>Degree or Certificate: </strong><?php echo ($user_edu['degree_or_certificate']) ? $user_edu['degree_or_certificate'] : ''; ?>
-                                                            </div><div class="start-date div-delete"><strong>Start Date: </strong><?php echo ($user_edu['start_date']) ? $user_edu['start_date'] : ''; ?>
-                                                            </div><div class="end-date div-delete"><strong>End Date: </strong><?php echo ($user_edu['end_date']) ? $user_edu['end_date'] : ''; ?>
-                                                            </div>
-                                                            <hr>
-                                                        </div>
-
-                                                        <?php } */ ?>
-                                                    </div>
-                                                </ul>
-                                                <span data-preview="prev1"></span>
-                                            </div>
-                                            <ul class="list-inline bottomBtns">
-                                            	<li>
-                                            		<button type="button" class="btn btnRed btn-dropdown btn-o btn-sm">
-                                            			<i class="fa fa-share-alt" aria-hidden="true"></i>
-                                            			Share
-                                            		</button>
-                                            	</li>
-                                            	<li>
-                                            		<button type="submit" class="btn btnRed btn-sm">
-                                            			<i class="fa fa-floppy-o" aria-hidden="true"></i>
-                                            			Save
-                                            		</button>
-                                            	</li>
-                                            </ul>
-                                        </div>
-                                    </div>
                             </div>
                         </div>
 
 	                    <!-- ADDITIONAL INFORMATION TAB START -->
 	                    <div role="tabpanel" class="tab-pane" id="additionalInfo">
-	                    	<div class="col-sm-8">
+	                    	<div class="col-xs-12">
 	                    		<a class="btn addSectionBtn" role="button" data-toggle="collapse" href="#addSectionCollapse" aria-expanded="false" aria-controls="addSectionCollapse">
 								  Add Section
 								</a>
@@ -1052,237 +748,6 @@
 												}*/ ?>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="mobileViewWrap">
-									<img src="<?php echo asset_url(); ?>backend/images/paasport/Info_mobile.png" alt="" class="center-block" height="550">
-									<div class="mobileContent mCustomScrollbar" id="preview" data-mcs-theme="minimal-dark">
-										<div class="btn-group">
-											<button type="button" class="btn btnCollapse " data-toggle="collapse"
-													data-target="#pricing-plan">Pricing Plan
-											</button>
-											<button type="button" class="btn btnCollapse dropdown-toggle"
-												data-toggle="collapse"
-												data-target="#pricing-plan">
-												<span class="caret"></span>
-											</button>
-										</div>
-										<ul id="pricing-plan" class="list-unstyled collapse">
-											<!-- Pricing plan Starts Here-->
-											<div class="desc-panel preview-table-ex6">
-												<?php 
-													/*if(!empty($user_priceplan))
-													{
-														foreach($user_priceplan as $u_plan)
-														{
-															if(!empty($u_plan['plan_title']))
-															{
-													?>	
-														<div class='panel panel-danger'>
-															<div class='panel-heading'>
-																<h3 class='panel-title'> <?php echo $u_plan['plan_title']; ?> </h3>
-																<span class='pull-right clickable'>
-																<i class='glyphicon glyphicon-chevron-up'></i></span></div>
-																<div class='panel-body'>
-																<div class='panel-body-content'> <?php echo $u_plan['plan_description']; ?> </div>
-																<div class='footer1'> <?php echo $u_plan['price']; ?> </div>
-															</div>
-														</div>
-													<?php
-															}
-															else if(!empty($u_plan['plan_image']))
-															{ ?>
-															<div class='panel panel-danger'>
-																<div class='panel-heading'>
-																	<h3 class='panel-title'>  </h3>
-																	<span class='pull-right clickable'>
-																	<i class='glyphicon glyphicon-chevron-up'></i></span></div>
-																	<div class='panel-body'>
-																	<div class='panel-body-content'><img src="<?php echo base_url().$u_plan['plan_image']; ?>" class="img-responsive"/> </div>
-																	<div class='footer1'>  </div>
-																</div>
-															</div>				
-																
-														<?php
-															}	
-														}
-													} */
-													?>
-											</div>
-											<!--End Here-->
-										</ul>
-
-										<div class="btn-group">
-											<button type="button" class="btn btnCollapse " data-toggle="collapse"
-												data-target="#Portfolio">Portfolio
-											</button>
-											<button type="button" class="btn btnCollapse dropdown-toggle"
-												data-toggle="collapse"
-												data-target="#Portfolio">
-												<span class="caret"></span>
-											</button>
-										</div>
-										<ul id="Portfolio" class="list-unstyled collapse">
-											<div class="desc-panel">
-												<div class="panel panel-danger">
-													<div class="panel-heading">
-														<h3 class="panel-title">&nbsp;</h3>
-													</div>
-													<div class="panel-body portfolio-preview6">
-														<?php /* if(!empty($user_portfolio)) { 
-															foreach($user_portfolio as $u_portfolio)
-															{
-														?>
-															<div class="panel-body-content text-center">
-															<?php if(!empty($u_portfolio['image'])) {?>
-																<img src="<?php echo base_url().$u_portfolio['image']; ?>" class="img-responsive"/>
-															<?php } ?>	
-															<hr>
-															<?php if(!empty($u_portfolio['video_url'])) { ?>
-															<div class="embed-responsive embed-responsive-4by3">
-															  <iframe class="embed-responsive-item" src="<?php echo $u_portfolio['video_url'] ?>"></iframe>
-															</div>									
-															<?php } ?>
-															</div>
-														<?php
-															}
-														}  */ ?>
-														
-													</div>
-												</div>
-											</div>
-										</ul>
-
-										<div class="btn-group">
-											<button type="button" class="btn btnCollapse " data-toggle="collapse"
-											data-target="#List">List
-											</button>
-											<button type="button" class="btn btnCollapse dropdown-toggle"
-												data-toggle="collapse"
-												data-target="#List">
-												<span class="caret"></span>
-											</button>
-										</div>
-										<ul id="List" class="list-unstyled collapse">
-											<div class=" desc-panel">
-												<div class="panel panel-danger">
-													<div class="panel-heading">
-														<h3 class="panel-title">List</h3>
-													</div>
-													<div class="panel-body">
-														<div class="panel-body-content">
-															<ul class="list list-preview-table-ex6">
-																<?php
-																		/*if(!empty($user_list))
-																		{
-																			foreach($user_list as $ulist)
-																			{
-																		?>
-																		<li><?php echo $ulist['list'] ?></li>
-																		<?php
-																			}
-																		} */?>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>											   
-										</ul>
-
-										<div class="btn-group">
-											<button type="button" class="btn btnCollapse " data-toggle="collapse"
-												data-target="#Links">Links
-											</button>
-											<button type="button" class="btn btnCollapse dropdown-toggle"
-												data-toggle="collapse"
-												data-target="#Links">
-												<span class="caret"></span>
-											</button>
-										</div>
-										<ul id="Links" class="list-unstyled collapse">
-											<div class=" desc-panel">
-												<div class="panel panel-danger">
-													<div class="panel-heading">
-														<h3 class="panel-title">Links</h3>
-													</div>
-													<div class="panel-body">
-														<div class="panel-body-content">
-															<ul class="list link-preview-ex6">
-																<?php /* if(!empty($user_link)) { 
-																	foreach($user_link as $u_link) {
-																?>
-																	<div class="linking"><a href=""><?php echo $u_link['link'];  ?><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span></a></div>
-																<?php 
-																	}
-																} */ ?>
-
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</ul>
-
-										<div class="btn-group">
-											<button type="button" class="btn btnCollapse " data-toggle="collapse"
-												data-target="#Video">Video
-											</button>
-											<button type="button" class="btn btnCollapse dropdown-toggle"
-											data-toggle="collapse"
-											data-target="#Video">
-											<span class="caret"></span>
-											</button>
-										</div>
-										<ul id="Video" class="list-unstyled collapse">
-											<div class="preview-table-ex3"></div>
-											<div  class="desc-panel">
-												<div class="panel panel-danger">
-													<div class="panel-heading">
-														<h3 class="panel-title">Video</h3>
-													</div>
-													<div class="panel-body video-preview6">
-														<?php 
-															/*if(!empty($user_video_url))
-															{
-																foreach($user_video_url as $u_video_url) 
-																{	
-															?>
-															<div class="panel-body-content text-center">
-															
-															<div class="embed-responsive embed-responsive-4by3">
-															  <iframe class="embed-responsive-item" src="<?php echo $u_video_url['video_url']; ?>"></iframe>
-															</div>									
-															<hr>
-															<div>
-															<?php echo $u_video_url['video_description']; ?>
-															</div>
-															
-															</div>
-															<?php 
-																}
-															}*/ ?>
-
-													</div>
-												</div>
-											</div>
-										</ul>
-									</div>
-
-									<ul class="list-inline bottomBtns">
-										<li>
-											<button type="button" class="btn btnRed btn-dropdown btn-o btn-sm">
-												<i class="fa fa-share-alt" aria-hidden="true"></i>
-												Share
-											</button>
-										</li>
-										<li>
-											<button type="submit" class="btn btnRed btn-sm">
-												<i class="fa fa-floppy-o" aria-hidden="true"></i>
-												Save
-											</button>
-										</li>
-									</ul>
 								</div>
 							</div>
 						</div>
