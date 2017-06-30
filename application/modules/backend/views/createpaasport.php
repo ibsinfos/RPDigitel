@@ -60,7 +60,7 @@
                                                             <img src="<?php echo asset_url(); ?>backend/images/paasport/default-avatar.png" class="picture-src img-circle" id="wizardPicturePreview" title="" height="106"/>
                                                             <input type="file" id="wizard-picture" name="wizard-picture">
                                                         </div>
-                                                        <input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : '';  ?>" name="old_user_image">
+                                                        <input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : '';   ?>" name="old_user_image">
                                                         <h4 style="margin: 10px 0 15px;">Choose Picture</h4>
                                                     </div>
                                                 </div>
@@ -68,13 +68,17 @@
                                                     <label>Email
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';  ?>" name="id">
-                                                    <input name="email" type="email" class="form-control" placeholder="eg. johndoe@website.com" value="">
-                                                    <span id="err_email" ></span>	   
+                                                    <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';   ?>" name="id">
+                                                    <input name="email" type="email" class="form-control" placeholder="eg. johndoe@website.com" value="<?php if (!empty($user)) {
+    echo $user[0]['email'];
+} ?>">
+                                                    <span id="err_email"></span>	   
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Address</label>
-                                                    <textarea name="address" class="form-control" rows="4" placeholder="123 6th St.Melbourne, FL 32904" maxlength="100"></textarea>
+                                                    <textarea name="address" class="form-control" rows="4" placeholder="123 6th St.Melbourne, FL 32904" maxlength="100"><?php if (!empty($user)) {
+    echo $user[0]['home_address'];
+} ?></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-6">
@@ -84,26 +88,34 @@
                                                         <small>(required)</small>
                                                     </label>
                                                     <input name="firstname" id="firstname" type="text" class="form-control"
-                                                           placeholder="Enter your name" value="" maxlength="10">
+                                                           placeholder="Enter your name" value="<?php if (!empty($user)) {
+    echo $user[0]['first_name'];
+} ?>" maxlength="10">
                                                     <span id="err_firstname" ></span>	
                                                 </div> 
                                                 <div class="form-group">
                                                     <label>Last Name
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input name="lastname" type="text" class="form-control" value="" placeholder="Enter your surname"  maxlength="10">
+                                                    <input name="lastname" type="text" class="form-control" value="<?php if (!empty($user)) {
+    echo $user[0]['last_name'];
+} ?>" placeholder="Enter your surname"  maxlength="10">
                                                     <span id="err_lastname" ></span>	   
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Contact Number
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input name="contact" type="tel" class="form-control" placeholder="eg.(417) 123-4567" value="">
+                                                    <input name="contact" type="tel" class="form-control" placeholder="eg.(417) 123-4567" value="<?php if (!empty($user)) {
+    echo $user[0]['mobile'];
+} ?>">
                                                     <span id="err_contact" ></span>	   
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Pincode</label>
-                                                    <input name="pincode" type="text" class="form-control" placeholder="422010" value="" >
+                                                    <input name="pincode" type="text" class="form-control" placeholder="422010" value="<?php if (!empty($user)) {
+    echo $user[0]['home_postal_code'];
+} ?>">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Cover Image</label>
@@ -198,8 +210,8 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h3 class="heading"> Enter Some of your social links to add <?php
-                                        //print_r($this->session->all_userdata());
-                                        ?></h3>
+//print_r($this->session->all_userdata());
+?></h3>
                                     <div class="frmerror_socialinfo" ></div>
                                 </div>
                             </div>
@@ -211,8 +223,10 @@
                                             <span class="input-group-addon facebook">
                                                 <i class="fa fa-facebook"></i>
                                             </span>
-                                            <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';  ?>" name="id">
-                                            <input id="facebook" name="facebook_url" type="text" class="form-control" placeholder="facebook id only" value="" >
+                                            <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';   ?>" name="id">
+                                            <input id="facebook" name="facebook_url" type="text" class="form-control" placeholder="facebook id only" value="<?php if (!empty($user)) {
+    echo $user[0]['facebook_link'];
+} ?>">
                                         </div>
                                         <span id="err_facebook_url" ></span>
                                     </div>
@@ -222,7 +236,9 @@
                                             <span class="input-group-addon twitter">
                                                 <i class="fa fa-twitter"></i>
                                             </span>
-                                            <input id="twitter" name="twitter_url" type="text" class="form-control" value="" placeholder="Enter Twitter page id">
+                                            <input id="twitter" name="twitter_url" type="text" class="form-control" value="<?php if (!empty($user)) {
+    echo $user[0]['twitter_link'];
+} ?>" placeholder="Enter Twitter page id">
                                         </div>
                                         <span id="err_twitter_url" ></span>	
                                     </div>
@@ -234,7 +250,9 @@
                                             <span class="input-group-addon googlePlus">
                                                 <i class="fa fa-google-plus"></i>
                                             </span>
-                                            <input id="googlePlus" name="googleplus_url" type="text" class="form-control" value="" placeholder="Enter google plus page id">
+                                            <input id="googlePlus" name="googleplus_url" type="text" class="form-control"  value="<?php if (!empty($user)) {
+    echo $user[0]['google_plus_link'];
+} ?>" placeholder="Enter google plus page id">
                                         </div>
                                         <span id="err_googleplus_url" ></span>	
                                     </div>
@@ -244,7 +262,9 @@
                                             <span class="input-group-addon linkedin">
                                                 <i class="fa fa-linkedin"></i>
                                             </span>
-                                            <input id="linkedin" name="linkedin_url" type="text" class="form-control" value="" placeholder="Enter Linked in page id">
+                                            <input id="linkedin" name="linkedin_url" type="text" class="form-control"  value="<?php if (!empty($user)) {
+    echo $user[0]['linkedin_link'];
+} ?>" placeholder="Enter Linked in page id">
                                         </div>
                                         <span id="err_linkedin_url" ></span>
                                     </div>
@@ -256,7 +276,9 @@
                                             <span class="input-group-addon youtube">
                                                 <i class="fa fa-youtube-play"></i>
                                             </span>
-                                            <input id="youtube" name="youtube_url" type="text" class="form-control" value="" placeholder="Enter Youtube page url">
+                                            <input id="youtube" name="youtube_url" type="text" class="form-control"  value="<?php if (!empty($user)) {
+    echo $user[0]['youtube_link'];
+} ?>" placeholder="Enter Youtube page url">
                                         </div>
                                         <span id="err_youtube_url" ></span>	
                                     </div>
@@ -267,7 +289,9 @@
                                                 <i class="fa fa-pinterest"></i>
                                             </span>
                                             <input id="pinterest" name="pinterest_url" type="text"
-                                                   class="form-control" value=""
+                                                   class="form-control"  value="<?php if (!empty($user)) {
+    echo $user[0]['pinterest_link'];
+} ?>" 
                                                    placeholder="Enter pinterest url">
                                         </div>
                                         <span id="err_pinterest_url" ></span>
@@ -282,8 +306,9 @@
                                             <span class="input-group-addon email">
                                                 <i class="fa fa-envelope"></i>
                                             </span>
-                                            <input name="user_url" type="text" class="form-control" value=""
-                                                   placeholder="johndoe@website.com">
+                                            <input name="user_url" type="text" class="form-control" value="<?php if (!empty($user)) {
+    echo $user[0]['received_email'];
+} ?>" placeholder="johndoe@website.com">
                                         </div>
                                         <span id="err_user_url" ></span>
                                     </div>
@@ -320,8 +345,10 @@
                                                     <div class="frmerror_shortbioinfo" ></div>
                                                     <form id="frmshortBioInfo">
                                                         <label for="editor1">Add About or Short Bio :</label>
-                                                        <textarea id="editor1" class="editor" name="editor1" maxlength="160"></textarea>
-                                                        <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';  ?>" name="id">
+                                                        <textarea id="editor1" class="editor" name="editor1" maxlength="160">
+<?php echo ($user_data[0]['short_bio']) ? $user_data[0]['short_bio'] : ''; ?>
+                                                        </textarea>
+                                                        <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';   ?>" name="id">
                                                         <div class="text-center">
                                                             <button type="button" id="shortBioSubmit" name="shortBioSubmit"  class="btn btnRed btn-lg">Save</button>
                                                         </div>
@@ -360,6 +387,24 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+
+<?php
+$edu_count = 0;
+foreach ($user_skills as $user_skill) {
+    $edu_count++;
+    ?>
+
+                                                                                    <tr id="<?php echo $user_skill['id']; ?>">
+                                                                                        <td><input name="record" type="checkbox" value="<?php echo ($user_skill['id']) ? $user_skill['id'] : ''; ?>" ></td>
+                                                                                        <td><?php echo ($user_skill['skill']) ? $user_skill['skill'] : ''; ?></td>
+<!--
+                                                                                        <td>
+                                                                                            <a href="#" onclick="getSkillDetailUpdate('<?php echo $user_skill['id']; ?>', '<?php echo $user_skill['skill']; ?>');" >Edit</a>
+                                                                                        </td>
+                                                                                        -->
+                                                                                    </tr>
+
+<?php } ?>
                                                                             </tbody>
                                                                             <!-- preview content goes here-->
                                                                         </table>
@@ -454,25 +499,25 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <?php /* $exp_count = 0;
-                                                                                  foreach ($user_exp_data as $user_exp) {
-                                                                                  $exp_count++;
-                                                                                  ?>
 
-                                                                                  <tr id="<?php echo ($user_exp['id']) ? $user_exp['id'] : ''; ?>">
-                                                                                  <td><input name="record" type="checkbox" value="<?php echo ($user_exp['id']) ? $user_exp['id'] : ''; ?>"></td>
-                                                                                  <td><?php echo ($user_exp['company_name']) ? $user_exp['company_name'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?></td>
-                                                                                  <td>
-                                                                                  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-                                                                                  <a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>','<?php echo $user_exp['company_name']; ?>','<?php echo $user_exp['position_title']; ?>','<?php echo $user_exp['start_date']; ?>','<?php echo $user_exp['end_date']; ?>');" >Edit</a>
-                                                                                  <?php } ?>
-                                                                                  </td>
-                                                                                  </tr>
+<?php
+$exp_count = 0;
+foreach ($user_exp_data as $user_exp) {
+    $exp_count++;
+    ?>
 
-                                                                                  <?php } */ ?>
+                                                                                    <tr id="<?php echo ($user_exp['id']) ? $user_exp['id'] : ''; ?>">
+                                                                                        <td><input name="record" type="checkbox" value="<?php echo ($user_exp['id']) ? $user_exp['id'] : ''; ?>"></td>
+                                                                                        <td><?php echo ($user_exp['company_name']) ? $user_exp['company_name'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?></td>
+                                                                                        <!--<td>											
+                                                                                            <a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>', '<?php echo $user_exp['company_name']; ?>', '<?php echo $user_exp['position_title']; ?>', '<?php echo $user_exp['start_date']; ?>', '<?php echo $user_exp['end_date']; ?>');" >Edit</a>
+                                                                                        </td>-->
+                                                                                    </tr>
+
+<?php } ?>
 
                                                                             </tbody>
                                                                             <!-- preview content goes here-->
@@ -568,25 +613,27 @@
                                                                             </thead>
                                                                             <tbody>
 
-                                                                                <?php /* $edu_count = 0;
-                                                                                  foreach ($user_edu_data as $user_edu) {
-                                                                                  $edu_count++;
-                                                                                  ?>
+<?php
+$edu_count = 0;
+foreach ($user_edu_data as $user_edu) {
+    $edu_count++;
+    ?>
 
-                                                                                  <tr id="<?php echo $edu_count; ?>">
-                                                                                  <td><input name="record" type="checkbox" value="<?php echo ($user_edu['id']) ? $user_edu['id'] : ''; ?>" ></td>
-                                                                                  <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_edu['degree_or_certificate']) ? $user_edu['degree_or_certificate'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_edu['start_date']) ? $user_edu['start_date'] : ''; ?></td>
-                                                                                  <td><?php echo ($user_edu['end_date']) ? $user_edu['end_date'] : ''; ?></td>
-                                                                                  <td>
-                                                                                  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-                                                                                  <a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>','<?php echo $user_edu['institute_name']; ?>','<?php echo $user_edu['degree_or_certificate']; ?>','<?php echo $user_edu['start_date']; ?>','<?php echo $user_edu['end_date']; ?>');" >Edit</a>
-                                                                                  <?php } ?>
-                                                                                  </td>
-                                                                                  </tr>
+                                                                                    <tr id="<?php echo $user_edu['id']; ?>">
+                                                                                        <td><input name="record" type="checkbox" value="<?php echo ($user_edu['id']) ? $user_edu['id'] : ''; ?>" ></td>
+                                                                                        <td><?php echo ($user_edu['institute_name']) ? $user_edu['institute_name'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_edu['degree_or_certificate']) ? $user_edu['degree_or_certificate'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_edu['start_date']) ? $user_edu['start_date'] : ''; ?></td>
+                                                                                        <td><?php echo ($user_edu['end_date']) ? $user_edu['end_date'] : ''; ?></td>
+                                                                                        <!--<td>
 
-                                                                                  <?php } */ ?>
+                                                                                            <a href="#" onclick="getEduDetailUpdate('<?php echo $user_edu['id']; ?>', '<?php echo $user_edu['institute_name']; ?>', '<?php echo $user_edu['degree_or_certificate']; ?>', '<?php echo $user_edu['start_date']; ?>', '<?php echo $user_edu['end_date']; ?>');" >Edit</a>
+
+                                                                                        </td>-->
+                                                                                    </tr>
+
+<?php } ?>
+
 
 
                                                                             </tbody>
@@ -634,52 +681,55 @@
 
                                 <div class="err_priceplandetail" ></div>
                                 <div id="div1" class="pricing-plan-content desc-panel targetDiv preview-table-ex5">
-<?php
-/* if(!empty($user_priceplan))
-  {
-  foreach($user_priceplan as $u_plan)
-  {
-  if(!empty($u_plan['plan_title']))
-  {
-  ?>
+                                    <?php
+                                    
+                                     if(!empty($user_priceplan))
+                                      {
+                                         
+                                          
+                                      foreach($user_priceplan as $u_plan)
+                                      {
+                                      if(!empty($u_plan['plan_title']))
+                                      {
+                                      ?>
 
-  <div class="panel panel-danger">
-  <div class="panel-heading">
-  <h3 class="panel-title"><?php echo $u_plan['plan_title'] ?></h3>
-  <div class="pull-right">
-  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-  <span id="editpanel" class="badge editbutton" onclick="openPrice('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_title']; ?>','<?php echo $u_plan['plan_description']; ?>','<?php echo $u_plan['price']; ?>');" title="Edit">
-  <?php } ?>
-  <i class="fa fa-pencil-square-o"></i></span>
-  <span id="deletepanel" class="badge editbutton" title="Delete">
-  <i class="fa fa-trash"></i></span><span class="pull-right clickable">
-  <i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
-  <div class="panel-body"><div class="panel-body-content"><?php echo $u_plan['plan_description'] ?> </div><div class="footer1"><?php echo $u_plan['price'] ?></div>
-  </div></div>
+                                      <div class="panel panel-danger">
+                                      <div class="panel-heading">
+                                      <h3 class="panel-title"><?php echo $u_plan['plan_title'] ?></h3>
+                                      <div class="pull-right">
+                                      <?php if($this->uri->segment(1)=='vcard-update') { ?>
+                                      <span id="editpanel" class="badge editbutton" onclick="openPrice('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_title']; ?>','<?php echo $u_plan['plan_description']; ?>','<?php echo $u_plan['price']; ?>');" title="Edit">
+                                      <?php } ?>
+                                      <i class="fa fa-pencil-square-o"></i></span>
+                                      <span id="deletepanel" class="badge editbutton" title="Delete">
+                                      <i class="fa fa-trash"></i></span><span class="pull-right clickable">
+                                      <i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
+                                      <div class="panel-body"><div class="panel-body-content"><?php echo $u_plan['plan_description'] ?> </div><div class="footer1"><?php echo $u_plan['price'] ?></div>
+                                      </div></div>
 
-  <?php
-  }
-  else if(!empty($u_plan['plan_image']))
-  { ?>
-  <div class="panel panel-danger">
-  <div class="panel-heading">
-  <h3 class="panel-title"></h3>
-  <div class="pull-right">
-  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-  <span id="editpanel" class="badge editbutton" onclick="openPriceImage('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_image']; ?>');" title="Edit" >
-  <?php } ?>
-  <i class="fa fa-pencil-square-o"></i></span>
-  <span id="deletepanel" class="badge editbutton" title="Delete">
-  <i class="fa fa-trash"></i></span><span class="pull-right clickable">
-  <i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
-  <div class="panel-body"><div class="panel-body-content"><img src="<?php echo base_url().$u_plan['plan_image']; ?>" class="img-responsive"/> </div><div class="footer1"></div>
-  </div></div>
+                                      <?php
+                                      }
+                                      else if(!empty($u_plan['plan_image']))
+                                      { ?>
+                                      <div class="panel panel-danger">
+                                      <div class="panel-heading">
+                                      <h3 class="panel-title"></h3>
+                                      <div class="pull-right">
+                                      <?php if($this->uri->segment(1)=='vcard-update') { ?>
+                                      <span id="editpanel" class="badge editbutton" onclick="openPriceImage('<?php echo $u_plan['id']; ?>','<?php echo $u_plan['plan_image']; ?>');" title="Edit" >
+                                      <?php } ?>
+                                      <i class="fa fa-pencil-square-o"></i></span>
+                                      <span id="deletepanel" class="badge editbutton" title="Delete">
+                                      <i class="fa fa-trash"></i></span><span class="pull-right clickable">
+                                      <i class="glyphicon glyphicon-chevron-up"></i></span></div></div>
+                                      <div class="panel-body"><div class="panel-body-content"><img src="<?php echo base_url().$u_plan['plan_image']; ?>" class="img-responsive"/> </div><div class="footer1"></div>
+                                      </div></div>
 
-  <?php
-  }
-  }
-  } */
-?>
+                                      <?php
+                                      }
+                                      }
+                                      } 
+                                    ?>
                                 </div>
                                 <div class="clear"></div>
                                 <div id="div2" class="targetDiv view-portfolio desc-panel">
@@ -689,36 +739,36 @@
                                         </div>
                                         <div class="panel-body portfolio-preview5">
 
-<?php /* if(!empty($user_portfolio)) { 
-  foreach($user_portfolio as $u_portfolio)
-  {
-  ?>
-  <div class="panel-body-content text-center">
-  <?php if(!empty($u_portfolio['image'])) {?>
-  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-  <div class='pull-right'>
-  <span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioImage('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['image']; ?>')" ><i class="fa fa-pencil-square-o"></i>
-  </span>
-  </div>
-  <?php } ?>
-  <img src="<?php echo base_url().$u_portfolio['image']; ?>" class="img-responsive"/>
-  <?php } ?>
-  <hr>
-  <?php if(!empty($u_portfolio['video_url'])) { ?>
-  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-  <div class='pull-right'>
-  <span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioVideo('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['video_url']; ?>')" ><i class="fa fa-pencil-square-o"></i>
-  </span>
-  </div>
-  <?php } ?>
-  <div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="<?php echo $u_portfolio['video_url'] ?>"></iframe>
-  </div>
-  <?php } ?>
-  </div>
-  <?php
-  }
-  } */ ?>	
+                                            <?php  if(!empty($user_portfolio)) { 
+                                              foreach($user_portfolio as $u_portfolio)
+                                              {
+                                              ?>
+                                              <div class="panel-body-content text-center">
+                                              <?php if(!empty($u_portfolio['image'])) {?>
+                                              <?php if($this->uri->segment(1)=='vcard-update') { ?>
+                                              <div class='pull-right'>
+                                              <span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioImage('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['image']; ?>')" ><i class="fa fa-pencil-square-o"></i>
+                                              </span>
+                                              </div>
+                                              <?php } ?>
+                                              <img src="<?php echo base_url().$u_portfolio['image']; ?>" class="img-responsive"/>
+                                              <?php } ?>
+                                              <hr>
+                                              <?php if(!empty($u_portfolio['video_url'])) { ?>
+                                              <?php if($this->uri->segment(1)=='vcard-update') { ?>
+                                              <div class='pull-right'>
+                                              <span id='editpanelportfolio' class='badge editbutton' title='Edit' onclick="openPortfolioVideo('<?php echo $u_portfolio['id']; ?>','<?php echo $u_portfolio['video_url']; ?>')" ><i class="fa fa-pencil-square-o"></i>
+                                              </span>
+                                              </div>
+                                              <?php } ?>
+                                              <div class="embed-responsive embed-responsive-4by3">
+                                              <iframe class="embed-responsive-item" src="<?php echo $u_portfolio['video_url'] ?>"></iframe>
+                                              </div>
+                                              <?php } ?>
+                                              </div>
+                                              <?php
+                                              }
+                                              }  ?>	
                                         </div>
                                     </div>
                                 </div>
@@ -731,7 +781,7 @@
                                         <div class="panel-body">
                                             <div class="panel-body-content">
                                                 <ul class="list list-preview-table-ex5">
-<?php /* if(!empty($user_list))
+<?php  if(!empty($user_list))
   {
   foreach($user_list as $ulist)
   {
@@ -746,7 +796,7 @@
   </li>
   <?php
   }
-  } */ ?>
+  }  ?>
                                                 </ul>
                                             </div>
                                         </div>
@@ -760,20 +810,20 @@
                                         </div>
                                         <div class="panel-body">
                                             <div class="panel-body-content text-center link-preview-ex5">
-<?php /* if(!empty($user_link)) { 
-  foreach($user_link as $u_link) {
-  ?>
-  <div class="linking"><a href=""><?php echo $u_link['link'];  ?></a><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span>
-  <?php if($this->uri->segment(1)=='vcard-update') { ?>
-  <div class="pull-right">
-  <span id="editpanellinks" class="badge editbutton" title="Edit" onclick="openLink('<?php echo $u_link['id'] ?>','<?php echo $u_link['link'] ?>');">
-  <i class="fa fa-pencil-square-o"></i></span>
-  </div>
-  <?php } ?>
-  </div>
-  <?php
-  }
-  } */ ?>
+                                            <?php  if(!empty($user_link)) { 
+                                              foreach($user_link as $u_link) {
+                                              ?>
+                                              <div class="linking"><a href=""><?php echo $u_link['link'];  ?></a><span class="pull-right"><i class="fa fa-external-link" aria-hidden="true"></i></span>
+                                              <?php if($this->uri->segment(1)=='vcard-update') { ?>
+                                              <div class="pull-right">
+                                              <span id="editpanellinks" class="badge editbutton" title="Edit" onclick="openLink('<?php echo $u_link['id'] ?>','<?php echo $u_link['link'] ?>');">
+                                              <i class="fa fa-pencil-square-o"></i></span>
+                                              </div>
+                                              <?php } ?>
+                                              </div>
+                                              <?php
+                                              }
+                                              }  ?>
                                             </div>
                                         </div>
                                     </div>
@@ -784,7 +834,7 @@
                                             <h3 class="panel-title">Video</h3>
                                         </div>
                                         <div class="panel-body video-preview5">
-<?php /* if(!empty($user_video_url))
+<?php  if(!empty($user_video_url))
   {
   foreach($user_video_url as $u_video_url)
   {
@@ -807,7 +857,7 @@
   </div>
   <?php
   }
-  } */ ?>
+  }  ?>
                                         </div>
                                     </div>
                                 </div>
