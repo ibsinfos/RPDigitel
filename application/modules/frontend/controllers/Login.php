@@ -60,12 +60,12 @@ Class Login extends MX_Controller {
                 session_destroy();
             }
         }
-        $this->template->set('page', 'login');
+        $this->template->set('page', 'main_login');
         $this->template->set_theme('default_theme');
         $this->template->set_layout('rpdigitel_frontend')
                 ->title('Home | RPDigitel')
-                ->set_partial('header', 'partials/header')
-                ->set_partial('footer', 'partials/footer');
+                ->set_partial('header', 'partials/blank_header')
+                ->set_partial('footer', 'partials/blank_footer');
         $this->template->build('main_login_form');
     }
 

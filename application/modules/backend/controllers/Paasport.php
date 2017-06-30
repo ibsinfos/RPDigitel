@@ -356,7 +356,7 @@ class Paasport extends CI_Controller {
                 $user['work_phone'] = $this->input->post('companycontact');
                 $user['work_email'] = $this->input->post('companyemail');
                 $user['work_website'] = $this->input->post('companywebsite');
-                //$user['user_id'] = $this->session->userdata('paasport_user_id');								   
+                //$user['user_id'] = $this->session->userdata('paasport_user_id');                                 
                 $uid = $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('id' => $this->session->userdata('vcard_id')));
                 if ($uid) {
                     $map ['status'] = 1;
@@ -441,7 +441,7 @@ class Paasport extends CI_Controller {
 
     //Added by Ranjit on 09 May 2017 to save Short Bio info End
     public function saveShortBio() {
-        //	   $this->load->helper('utility_helper');
+        //     $this->load->helper('utility_helper');
         $this->load->model('common_model');
         //        $this->load->helper(array(
         //            'form',
@@ -537,9 +537,9 @@ class Paasport extends CI_Controller {
             foreach ($user_skills as $user_skill) {
                 $exp_count1++;
                 $str .= '<div class="form-group">
-					<input class="input_update form-control skill-text" name="txt_skill_update[]" id="tb_' . $user_skill['id'] . '" value="' . $user_skill['skill'] . '" type="text">
-					<input class="input_update_id form-control skill-text" name="txt_skill_update_id[]"  value="' . $user_skill['id'] . '" type="hidden">
-					</div>';
+                    <input class="input_update form-control skill-text" name="txt_skill_update[]" id="tb_' . $user_skill['id'] . '" value="' . $user_skill['skill'] . '" type="text">
+                    <input class="input_update_id form-control skill-text" name="txt_skill_update_id[]"  value="' . $user_skill['id'] . '" type="hidden">
+                    </div>';
             }
         }
         echo $str;
@@ -902,13 +902,13 @@ class Paasport extends CI_Controller {
                 $edu['end_date'] = date('Y-m-d', strtotime($this->input->post('eduEndDate')));
 
                 //if(empty($this->input->post('edu_det_id')))
-                //{						
+                //{                     
                 $ins_experience = $this->common_model->insertRow($edu, TABLES::$EDUCATION_DETAILS);
-                //}	
+                //} 
                 //else
                 //{
-                //	$ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
-                //}	
+                //  $ins_experience = $this->common_model->updateRow(TABLES::$EDUCATION_DETAILS,$edu,array('id'=>$this->input->post('edu_det_id')));
+                //} 
             }
             if ($ins_experience) {
                 $map ['ins_edu_id'] = $ins_experience;
@@ -1264,7 +1264,7 @@ class Paasport extends CI_Controller {
     }
 
     // End save price plan image
-    // start save list	
+    // start save list  
     public function saveList() {
 
         $this->load->helper('utility_helper');
@@ -1371,7 +1371,7 @@ class Paasport extends CI_Controller {
     }
 
     // end save list
-    // start save link	
+    // start save link  
     public function saveLink() {
 
         $this->load->helper('utility_helper');
@@ -1457,7 +1457,7 @@ class Paasport extends CI_Controller {
         }
     }
 
-    // start save video url	
+    // start save video url 
     public function getVideoData() {
 
         $this->load->model('common_model');
@@ -1549,7 +1549,7 @@ class Paasport extends CI_Controller {
             $chk_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id')));
 
             //if(count($chk_user)==1)
-            //{	
+            //{ 
             if (!empty($this->session->userdata('vcard_id'))) {
 
                 $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'id' => $this->session->userdata('vcard_id')));
@@ -1594,7 +1594,7 @@ class Paasport extends CI_Controller {
 
                 $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, array("qr_code_image" => $qr_code_image, "qr_code_image_ext" => $ext), array("id" => $this->session->userdata('vcard_id')));
             }
-            //}	
+            //} 
         }
     }
 
@@ -1817,7 +1817,7 @@ class Paasport extends CI_Controller {
         exit;
     }
 
-    // End save portfolio	
+    // End save portfolio   
     //  vcard update
     public function updateVcard() {
         if (!isset($_SESSION)) {
@@ -2145,7 +2145,7 @@ class Paasport extends CI_Controller {
     }
 
     public function updateShortBio() {
-        //	   $this->load->helper('utility_helper');
+        //     $this->load->helper('utility_helper');
         $this->load->model('common_model');
         //        $this->load->helper(array(
         //            'form',
@@ -2988,7 +2988,7 @@ class Paasport extends CI_Controller {
     }
 
     public function updateBloginfo() {
-        //echo '<pre>'; print_r($_FILES); 	echo '<pre>'; print_r($_POST); 		exit;
+        //echo '<pre>'; print_r($_FILES);   echo '<pre>'; print_r($_POST);      exit;
         $this->load->helper('utility_helper');
         $this->load->model('common_model');
         $this->load->helper(array('form', 'url', 'email'));
