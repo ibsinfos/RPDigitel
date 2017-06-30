@@ -67,6 +67,31 @@ $(document).ready(function(){
         }
     });
 
+    //call video for event popup (video page)
+    $('.videoPopupLink').click(function(){
+
+        var videoId = $(this).attr('rel');
+        var title = $(this).data('title');
+        var description = $(this).data('description');
+
+        if ($(window).width() <= 768) {
+          var url = 'https://www.youtube.com/watch?v='+videoId;
+          window.open(url, '_blank');
+        }else{
+          $('.videoContainer').html('<iframe width="640" height="360" src="'+ videoId +'" frameborder="0" allowfullscreen></iframe>');
+          // $('.videoContainer').html('<iframe width="640" height="360" src="https://www.youtube.com/embed/'+ videoId +'" frameborder="0" allowfullscreen></iframe>');
+          // $('.infoContainer h3').html(title);
+          // $('.infoContainer p').html(description);
+          $('#popupBg, #videoPopup').fadeIn(200);
+        }
+    });
+    // close video
+    $('#popupBg, .closePopup').click(function(event) {
+        $('.videoContainer').empty();
+        $('#popupBg, #videoPopup').fadeOut(200);
+    });
+  // end
+
     //$("#basicInfo").validate();
 	validateBasicInformation();
 });
