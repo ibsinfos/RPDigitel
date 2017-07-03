@@ -717,7 +717,7 @@ $(document).ready(function () {
 	$("#publisher_application_upload").dropzone({
 		url: uploadProductFiles_URL,
 		addRemoveLinks: true,
-		maxFilesize: 2,
+		maxFilesize: 25,
 		acceptedFiles: "image/jpeg,image/png",
 		success: function (file, response) {
 			file_row_count++;
