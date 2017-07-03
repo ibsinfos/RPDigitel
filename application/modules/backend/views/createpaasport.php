@@ -1798,7 +1798,9 @@
     var getVideoDataURL = "<?php echo base_url() ?>backend/paasport/getVideoData";
     var getPriceDataURL = "<?php echo base_url() ?>backend/paasport/getPriceData";
     var saveSkillsAndExerptise1URL = "<?php echo base_url() ?>backend/paasport/saveSkillsAndExerptise1";
+
     var uploadAudioFilesURL = "<?php echo base_url() ?>backend/paasport/uploadAudioFiles";
     var uploadVideoFilesURL = "<?php echo base_url() ?>backend/paasport/uploadVideoFiles";
     var uploadGalleryFilesURL = "<?php echo base_url() ?>backend/paasport/uploadGalleryFiles";
+
 </script>
