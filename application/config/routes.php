@@ -200,7 +200,8 @@ $route['contact-us'] = 'frontend/pages/contactUs';
 $route['register'] = 'frontend/pages/register';
 $route['support'] = 'frontend/pages/support';
 //$route['silo_login'] = 'frontend/pages/login';
-
+$route['domain'] = 'frontend/domain/index';
+$route['domain-results'] = 'frontend/domain/domain_results';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -179,6 +179,14 @@ $(document).ready(function () {
     }
 
 
+    $('.domainResults').on('click', '.btn', function () {
+        $(this).closest('li').find('.priceAction .btn').toggleClass('added');
+    });
+    // script used for check all checkboxes
+    $('.domainSidebar').on('click', '#checkAll', function () {
+        $(this).closest('.list-unstyled').find('li input:checkbox').prop('checked', this.checked);
+    });
+
     // Start script for Wizard used in checkout page
     // $('.wizard a[data-toggle="tab"]').on('show.bs.tab', function (e) {
     //     var $target = $(e.target);
