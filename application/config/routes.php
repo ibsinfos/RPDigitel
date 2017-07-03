@@ -202,5 +202,13 @@ $route['support'] = 'frontend/pages/support';
 //$route['silo_login'] = 'frontend/pages/login';
 
 
+/* Domain search result API   start here    */
+
+$route['domains'] = 'frontend/domain/domains';
+$route['get-domain-results'] = "frontend/domain/domainsResults";
+
+/* Domain search result API  end here  */
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

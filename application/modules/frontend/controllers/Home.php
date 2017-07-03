@@ -15,14 +15,14 @@ Class Home extends MX_Controller {
      * Load view for about us page
      */
 
-    public function index() {
+    public function index() { 
         $is_logged_in = $this->session->userdata('is_logged_in');
         $user_role = $this->session->userdata('role');
         if (!empty($_SESSION['paasport_user_id'])) {
             $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
         }else{
             $data['slug'] = "";
-		}
+	}
 		
         $this->template->set('slug', $data['slug']);
         $this->template->set('page', 'fiberrail');
