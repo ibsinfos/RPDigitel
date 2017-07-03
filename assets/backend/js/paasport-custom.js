@@ -90,7 +90,27 @@ $(document).ready(function(){
         $('.videoContainer').empty();
         $('#popupBg, #videoPopup').fadeOut(200);
     });
-  // end
+    // end
+
+    if ($("#uploadAudioFiles").length) {
+        $('#uploadAudioFiles').dropzone({
+            url: "/ajax_file_upload_handler/"
+        });
+    }
+
+    if ($("#uploadVideoFiles").length) {
+        $('#uploadVideoFiles').dropzone({
+            url: "/ajax_file_upload_handler/"
+        });
+    }
+
+    if ($("#uploadGalleryFiles").length) {
+        $('#uploadGalleryFiles').dropzone({
+            url: "/ajax_file_upload_handler/"
+        });
+    }
+
+
 
     //$("#basicInfo").validate();
 	validateBasicInformation();

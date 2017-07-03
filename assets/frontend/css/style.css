@@ -274,19 +274,8 @@ body {
   font-size: 12px;
   margin-bottom: 5px;
 }
-ul.typoList li {
-  position: relative;
-  padding-left: 15px;
-}
-ul.typoList li:before {
-  content: "";
+.productSection ul li:before {
   background: #00a4ed;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  top: 5px;
-  left: 0;
 }
 .productSection .panel-body .price {
   font-weight: 600;
@@ -379,6 +368,35 @@ ul.typoList li:before {
 /* Login css start */
 .loginPageWrap {
   position: relative;
+}
+.loginPageWrap .hamburgerIcon {
+  background: transparent;
+  border: 0;
+  position: fixed;
+  right: 10px;
+  top: 15px;
+  z-index: 1;
+  outline: none;
+}
+.loginPageWrap .hamburgerIcon .icon-bar {
+  border: 1px solid #888;
+  display: block;
+  width: 22px;
+  height: 4px;
+}
+.loginPageWrap .hamburgerIcon .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+.loginPageWrap .menuWrap {
+  background: rgba(0,0,0,0.75);
+  border-radius: 30px 0 0 30px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  padding: 15px 8px 0 10px;
+}
+.loginPageWrap .menuWrap ul li {
+  margin-bottom: 15px;
 }
 .loginPageWrap .redBgCol {
   background-color: #FF0000;
@@ -622,6 +640,9 @@ html, body,
 }
 .subscribePlanSection .panel ul li {
   margin-bottom: 8px;
+}
+.subscribePlanSection .panel ul li:before {
+  background: #333;
 }
 .subscribePlanSection .btn {
   padding: 8px 30px;
@@ -926,10 +947,6 @@ html, body,
 .siloSDSearchDomain .heading small {
   color: #FFFFFF;
 }
-.siloSDSearchDomain .form-control {
-  min-width: 300px;
-  margin-right: 15px;
-}
 .siloSDSearchDomain .btn-default {
   font-size: 11px;
   line-height: 11px;
@@ -969,6 +986,190 @@ html, body,
 }
 
 /* Silo SD page css end */
+
+/* Domain page css start */
+.takeYourBusiness .heading {
+  color: #616161;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.webHostingSignUp {
+  background: url('../images/domain/sign-up-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 35px 0;
+  position: relative;
+}
+.webHostingSignUp:before {
+  content: '';
+  background: rgba(0,0,0,0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.webHostingSignUp .heading {
+  font-size: 30px;
+  line-height: 32px;
+  margin: 0 0 25px;
+  font-weight: 500;
+}
+.webHostingSignUp .paragraph {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+.webHostingSignUp .btn {
+  font-weight: 600;
+  padding: 6px 30px;
+  margin: 0 0 50px;
+}
+.webHostingSignUp a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.webHostingSignUp a.link:hover {
+  color: #FF0000
+}
+.webHostingPackages {
+  padding: 30px 0;
+}
+.webHostingPackages .heading {
+  color: #7F7F7F;
+  margin: 5px 0 20px;
+  font-size: 36px;
+}
+.webHostingPackages .panel {
+  border-radius: 0;
+  border-top: 10px solid #FF0000;
+  -webkit-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  -o-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.webHostingPackages .panel .panel-heading {
+  background: transparent;
+  border: 0;
+  color: #1C1C1C;
+}
+.webHostingPackages .panel .planName {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 5px;
+}
+.webHostingPackages .panel .planPrice {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+}
+.webHostingPackages .panel-heading .btn {
+  border-radius: 20px;
+  font-weight: 700;
+  width: 140px;
+  text-transform: uppercase;
+}
+.webHostingPackages .panel .planFeatures {
+  font-size: 19px;
+  font-weight: 700;
+}
+.webHostingPackages .panel .listHeading {
+  margin: 0;
+}
+.webHostingPackages .panel .typoList {
+  margin-bottom: 15px;
+}
+.webHostingPackages .panel .typoList li:before {
+  background: #333;
+}
+.webHostingPackages .conditionText {
+  font-size: 10px;
+  color: #000;
+}
+.webHostingPackages .needHelp {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.webHostingPackages .featureBtn {
+  padding: 10px 30px;
+  margin: 15px 0 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+.domainListWrap {
+  padding: 30px 0;
+}
+.domainListWrap .domainResults {
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.domainListWrap .domainResults>li {
+  padding: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  clear: both;
+}
+.domainListWrap .domainResults>li:last-child {
+  border-bottom: 0;
+}
+.domainListWrap .domainResults>li>div {
+  display: inline-block;
+}
+.domainListWrap .domainResults>li .domainType {
+  font-size: 18px;
+  font-weight: 600;
+}
+.domainListWrap .domainResults>li .priceStrike {
+  font-size: 14px!important;
+  line-height: 2;
+  text-decoration: line-through;
+  padding-right: 0;
+  color: #6a7e8e;
+}
+.domainListWrap .domainResults>li .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF0000;
+  padding: 5px 20px 5px 5px;
+}
+.domainListWrap .domainResults>li .btn span.remove,
+.domainListWrap .domainResults>li .btn.added span.add {
+  display: none;
+}
+.domainListWrap .domainResults>li .btn.added {
+  background-color: #000;
+}
+.domainListWrap .domainResults>li .btn.added span.remove {
+  display: block;
+}
+.domainListWrap .domainSidebar {
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  padding: 15px;
+}
+.domainListWrap .domainSidebar ul {
+  max-height: 200px;
+  overflow: hidden;
+}
+.domainListWrap .domainSidebar ul li {
+  margin-bottom: 5px;
+}
+/* Domain page css end */
 
 /* footer css start */
 .footerWrap {
@@ -1065,6 +1266,19 @@ label > span {
 }
 .tab-content {
   border-top: 10px solid #7f7f7f;
+}
+ul.typoList li {
+  position: relative;
+  padding-left: 15px;
+}
+ul.typoList li:before {
+  content: "";
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 ol.typoList {
   margin: 0;
@@ -1220,6 +1434,12 @@ ol.lowerRoman {
     font-size: 13px;
   }
   /* Subscription css end */
+
+  /* Domain css start */
+  .siloSDHero .sdCardImg {
+    width: 250px;
+  }
+  /* Domain css end */
 }
 @media (min-width: 992px) {
   /* Login css start */
@@ -1233,6 +1453,12 @@ ol.lowerRoman {
     right: 0;
   }
   /* Login css end */
+
+  /* Domain css start */
+  .webHostingPackages .panel {
+    min-height: 850px;
+  }
+  /* Domain css end */
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	/*.navbar-header {
@@ -1248,6 +1474,12 @@ ol.lowerRoman {
 	.navbar-collapse.in {
 		display: block !important;
 	}*/
+
+  /* Domain css start */
+  .webHostingPackages .panel {
+    min-height: 1024px;
+  }
+  /* Domain css end */
 	
 }
 @media (min-width: 768px) {
@@ -1261,6 +1493,16 @@ ol.lowerRoman {
     padding-right: 50px;
   }
   /* Paasport css end */
+
+  /* Domain css start */
+  .siloSDSearchDomain .form-control {
+    min-width: 300px;
+    margin-right: 15px;
+  }
+  .domainListWrap .domainResults>li .priceAction {
+    float: right;
+  }
+  /* Domain css end */
 }
 @media (max-width: 767px) {
 	.navbar-inverse .badge {
@@ -1413,5 +1655,12 @@ ol.lowerRoman {
     min-width: auto;
   }
   /* Checkout css end */
+
+  /* Domain css start */
+  .siloSDHero .sdCardImg {
+    position: relative;
+    width: 200px;
+  }
+  /* Domain css end */
 
 }
