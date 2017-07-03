@@ -1512,7 +1512,7 @@ if (!empty($user_blog)) {
         </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btnRed">Upload</button>
+        <button type="submit" class="btn btnRed" name="uploadAudio" id="uploadAudio">Upload</button>
         <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -1610,4 +1610,5 @@ if (!empty($user_blog)) {
     var getVideoDataURL = "<?php echo base_url() ?>backend/paasport/getVideoData";
     var getPriceDataURL = "<?php echo base_url() ?>backend/paasport/getPriceData";
     var saveSkillsAndExerptise1URL = "<?php echo base_url() ?>backend/paasport/saveSkillsAndExerptise1";
+    var uploadMediaAudioURL = "<?php echo base_url() ?>backend/paasport/uploadMediaAudio";
 </script>

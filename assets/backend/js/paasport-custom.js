@@ -92,11 +92,21 @@ $(document).ready(function(){
     });
     // end
 
+
+Dropzone.autoDiscover = false;
     if ($("#uploadAudioFiles").length) {
+//    $("#uploadAudio").click(function(event){
         $('#uploadAudioFiles').dropzone({
-            url: "/ajax_file_upload_handler/"
+            url: uploadMediaAudioURL,
+            autoProcessQueue: false
         });
     }
+//    });
+
+
+    $("#uploadAudio").click(function(event){
+ $('#uploadAudioFiles').get(0).dropzone.processQueue();
+    });
 
     if ($("#uploadVideoFiles").length) {
         $('#uploadVideoFiles').dropzone({
