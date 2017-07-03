@@ -92,8 +92,12 @@ $(document).ready(function () {
     });
     // end
 
+
+Dropzone.autoDiscover = false;
     if ($("#uploadAudioFiles").length) {
+//    $("#uploadAudio").click(function(event){
         $('#uploadAudioFiles').dropzone({
+
             url: uploadAudioFilesURL,
             addRemoveLinks: true,
             maxFilesize: 25,
@@ -122,6 +126,12 @@ $(document).ready(function () {
 
         });
     }
+//    });
+
+
+    $("#uploadAudio").click(function(event){
+ $('#uploadAudioFiles').get(0).dropzone.processQueue();
+    });
 
 
 

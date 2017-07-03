@@ -2993,6 +2993,9 @@ class Paasport extends CI_Controller {
         exit;
     }
 
+    
+    
+    
     public function updateBloginfo() {
         //echo '<pre>'; print_r($_FILES);   echo '<pre>'; print_r($_POST);      exit;
         $this->load->helper('utility_helper');
@@ -3252,6 +3255,79 @@ class Paasport extends CI_Controller {
 
         $this->load->view('vcard_detail_view_main', $data);
     }
+    
+    
+    
+    
+    //To Upload Media-Audio   
+    
+		public function uploadMediaAudio() {
+			
+			if (!empty($_FILES['file']['name'])) {
+				
+				$audio_file = time() . $_FILES["file"]['name'];
+				$audio_file= str_replace(" ", "_", $audio_file);
+				$audio_file= str_replace("#", "", $audio_file);
+				$audio_file= str_replace("-", "", $audio_file);
+				$audio_file= str_replace("(", "", $audio_file);
+				$audio_file= str_replace(")", "", $audio_file);
+				
+				
+				
+				
+				$user_id=$this->session->userdata('user_id');
+				$upload_path='./paas-port/uploads/media/audio/'.$user_id;
+				
+				if (!is_dir($upload_path)) {
+					mkdir('./uploads/silo_publisher_application/'.$user_id, 0777, TRUE);
+				}
+				
+				
+				$config['file_name'] = $_FILES["file"]['name'];
+				// $config['upload_path'] = './uploads/projects/thumbnails/';
+				$config['upload_path'] = $upload_path;
+				$config['allowed_types'] = 'jpg|png|jpeg';
+				$config['max_size'] = '10000';
+				$config['max_width'] = '';
+				$config['max_height'] = '';
+				$config['overwrite'] = TRUE;
+				$config['remove_spaces'] = TRUE;
+				$this->load->library('upload', $config);
+				$this->upload->do_upload('file');
+				$upload_result = $this->upload->data();
+				
+				// print_r($upload_result);
+				
+				$files_path="./uploads/silo_publisher_application/".$user_id."/".$config['file_name'];
+				
+				$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
+				$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
+				$publisher_application_files_data['file_path']=$files_path;
+				
+				$this->db->insert('tbl_publisher_application_files',$publisher_application_files_data);
+					$file_id=$this->db->insert_id();		
+				/*
+					$image_config = array(
+					'source_image' => $upload_result['full_path'],
+					// 'new_image' => "uploads/projects/thumbnails/260x146/",
+					'new_image' => "uploads/silo_publisher_application/thumbnails/260x146/",
+					'maintain_ratio' => false,
+					'width' => 260,
+					'height' => 146
+					);
+					$this->load->library('image_lib');
+					$this->image_lib->initialize($image_config);
+					$resize_rc = $this->image_lib->resize();
+					$this->image_lib->clear();
+				*/
+				
+				$ext=pathinfo($upload_result['file_name'], PATHINFO_EXTENSION);
+				
+				
+				$result=array('type'=>$ext,'file_name'=>$upload_result['file_name'],'raw_name'=>$upload_result['raw_name'],'file_id'=>$file_id);
+				echo json_encode($result);
+			}
+		}
 
     public function uploadAudioFiles() {
 

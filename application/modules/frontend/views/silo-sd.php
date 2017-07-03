@@ -370,7 +370,7 @@
                   <div class="form-group">
                     <input type="text" class="form-control" id="usr" placeholder="Enter your domain name here....">
                   </div>
-                  <button type="button" class="btn btn-default">Have a Promo Code ?</button>
+                  <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
                   <button type="button" class="btn btnRed">SEARCH DOMAIN</button>
                 </form>
             </div>
