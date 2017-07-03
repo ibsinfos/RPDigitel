@@ -22,7 +22,7 @@
                   <div class="form-group">
                     <input type="text" class="form-control" id="usr" placeholder="Enter your domain name here....">
                   </div>
-                  <button type="button" class="btn btn-default">Have a Promo Code ?</button>
+                  <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
                   <button type="button" class="btn btnRed">SEARCH DOMAIN</button>
                 </form>
             </div>
@@ -40,7 +40,7 @@
 	                        <span>rpdigitel.guru</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$29.99</span>
+	                        <!-- <span class="price priceStrike">$29.99</span> -->
 	                        <span class="price">$9.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -53,7 +53,7 @@
 	                        <span>rpdigitel.solution</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$24.99</span>
+	                        <!-- <span class="price priceStrike">$24.99</span> -->
 	                        <span class="price">$19.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -66,7 +66,7 @@
 	                        <span>rpdigitel.live</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$27.99</span>
+	                        <!-- <span class="price priceStrike">$27.99</span> -->
 	                        <span class="price">$14.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -79,7 +79,7 @@
 	                        <span>rpdigitel.technology</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$24.99</span>
+	                        <!-- <span class="price priceStrike">$24.99</span> -->
 	                        <span class="price">$9.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -92,7 +92,7 @@
 	                        <span>rpdigitel.cloud</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$29.99</span>
+	                        <!-- <span class="price priceStrike">$29.99</span> -->
 	                        <span class="price">$9.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -105,7 +105,7 @@
 	                        <span>rpdigitel.club</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$14.99</span>
+	                        <!-- <span class="price priceStrike">$14.99</span> -->
 	                        <span class="price">$9.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>
@@ -118,7 +118,7 @@
 	                        <span>rpdigitel.systems</span>
 	                    </div>
 	                    <div class="priceAction">
-	                        <span class="price priceStrike">$14.99</span>
+	                        <!-- <span class="price priceStrike">$14.99</span> -->
 	                        <span class="price">$8.99</span>
 	                        <a class="btn btnRed">
 	                        	<span class="add">Select</span>

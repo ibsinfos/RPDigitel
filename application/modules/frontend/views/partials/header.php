@@ -322,7 +322,7 @@
 							</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>">Profile</a></li>
-                                <!--<li><a href="#">Go to Dashboard</a></li>-->
+                                <li><a href="#">Go to Dashboard</a></li>
                                 <li>
                                     <a href="<?php echo base_url(); ?>login/logout">
                                         <i class="fa fa-sign-out pull-right"></i>

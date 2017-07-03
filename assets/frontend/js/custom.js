@@ -1,14 +1,21 @@
 $(document).ready(function () {
     /* main login page start */
-    var windowWidth = $(window).width();
-    if(windowWidth > 767){
-        setHeight();
-    }
-    $(window).resize(function(){
-        if(windowWidth > 767) {
-            setHeight();
-        }
-        // $('.scrollbar-outer').width($('.contentWrapper .sectionWhite').width() + 10);
+    // var windowWidth = $(window).width();
+    // if(windowWidth > 767){
+    //     setHeight();
+    // }
+    // $(window).resize(function(){
+    //     if(windowWidth > 767) {
+    //         setHeight();
+    //     }
+    //     // $('.scrollbar-outer').width($('.contentWrapper .sectionWhite').width() + 10);
+    // });
+    $('.loginPageWrap').on('click', '.hamburgerIcon', function(){
+        $('.menuWrap').addClass('open');
+    });
+    $('.loginPageWrap').on('click', '.closeBtn', function(e){
+        e.preventDefault();
+        $(this).closest('.menuWrap').removeClass('open');
     });
     /* main login page end */
 
