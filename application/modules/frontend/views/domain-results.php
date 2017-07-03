@@ -1,3 +1,18 @@
+
+<!--<form name="frm_search_domains" id="frm_search_domains" action="<?php echo base_url(); ?>domains-results" method="POST"enctype="multipart/form-data" >
+   <input style="margin-left:50px;margin-top:50px;" type="text" name="search" id="search" value="" />
+   <input type="checkbox" id="com" name="domainTld[]" class="domain" value=".com" />.com &nbsp;&nbsp;
+   <input type="checkbox" id="org" name="domainTld[]" class="domain"  value=".org" />.org &nbsp;&nbsp;
+   <input type="checkbox" id="in" name="domainTld[]" class="domain" value=".in" />.in &nbsp;&nbsp;
+    <button type="button" name="btn_submit" placeholder="Enter a domain name" class="btn btn-primary" value="" id="btnSubmit" >Search Domain</button>
+        <div id="domain_div">
+        </div>
+</form>-->
+
+
+
+
+
 <section class="siloSDHero">
     <div class="container">
         <div class="row">
@@ -18,23 +33,26 @@
         <div class="row">
             <div class="col-sm-12">
                 <h3 class="heading"> CHOOSE YOUR DOMAIN <small class="white">Starting from $9.99</small></h3>
-                <form class="form-inline">
+                
+                    <form name="frm_search_domains" class="form-inline" id="frm_search_domains" action="<?php echo base_url(); ?>domains-results" method="POST"enctype="multipart/form-data" >
+                    <input type="hidden" name="base_url" id="base_url" value="<?php echo base_url() ?>" />
                   <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Enter your domain name here....">
+                    <input type="text" class="form-control" name="search" id="search" value="<?php if(isset($domain_name) && $domain_name != ''){ echo $domain_name;} ?>" placeholder="Enter your domain name here....">
                   </div>
                   <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
-                  <button type="button" class="btn btnRed">SEARCH DOMAIN</button>
+                  <button type="button" id="btnSubmit" name="btnSubmit" class="btn btnRed">SEARCH DOMAIN</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
+       
 
 <section class="domainListWrap">
     <div class="container">
 	 	<div class="row">
-	        <div class="col-sm-8">
-	            <ul class="list-unstyled domainResults">
+	        <div class="col-sm-8" id="domain_div">
+<!--	            <ul class="list-unstyled domainResults">
 	                <li>
 	                    <div class="domainType">
 	                        <span>rpdigitel.guru</span>
@@ -126,7 +144,7 @@
 	                        </a>
 	                    </div>
 	                </li>
-	            </ul>
+	            </ul>-->
 	        </div>
 	        <aside class="col-sm-4">
 	            <div class="domainSidebar">
@@ -141,73 +159,73 @@
 	                        </li>
 	                        <li>
 	                        	<label for="com" class="checkbox-inline">
-	                            	<input type="checkbox" name="com" value="com" id="com">
+	                            	<input type="checkbox" class="domainTld" name="domainTld[]" value="com" id="com">
 	                            	.com
 	                            </label>
 	                        </li>
 	                        <li>
 	                        	<label for="net" class="checkbox-inline">
-		                            <input type="checkbox" name="net" value="net" id="net">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="net" id="net">
 		                            .net
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="cloud" class="checkbox-inline">
-		                            <input type="checkbox" name="cloud" value="cloud" id="cloud">
+		                            <input type="checkbox" name="domainTld[]" value="cloud" id="cloud">
 		                            .cloud
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="co" class="checkbox-inline">
-		                            <input type="checkbox" name="co" value="co" id="co">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="co" id="co">
 		                            .co
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="guru" class="checkbox-inline">
-		                            <input type="checkbox" name="guru" value="guru" id="guru">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="guru" id="guru">
 		                            .guru
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="solution" class="checkbox-inline">
-		                            <input type="checkbox" name="solution" value="solution" id="solution">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="solution" id="solution">
 		                            .solution
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="technology" class="checkbox-inline">
-		                            <input type="checkbox" name="technology" value="technology" id="technology">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="technology" id="technology">
 		                            .technology
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="club" class="checkbox-inline">
-		                            <input type="checkbox" name="club" value="club" id="club">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="club" id="club">
 		                            .club
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="system" class="checkbox-inline">
-		                            <input type="checkbox" name="system" value="system" id="system">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="system" id="system">
 		                            .system
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="email" class="checkbox-inline">
-		                            <input type="checkbox" name="email" value="email" id="email">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="email" id="email">
 		                            .email
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="support" class="checkbox-inline">
-		                            <input type="checkbox" name="support" value="support" id="support">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="support" id="support">
 		                            .support
 		                        </label>
 	                        </li>
 	                        <li>
 	                        	<label for="computer" class="checkbox-inline">
-		                            <input type="checkbox" name="computer" value="computer" id="computer">
+		                            <input type="checkbox" class="domainTld" name="domainTld[]" value="computer" id="computer">
 		                            .computer
 		                        </label>
 	                        </li>
@@ -218,3 +236,42 @@
        	</div>
     </div>
 </section>
+
+<script type="text/javascript">
+                
+                jQuery(document).ready(function(e) { 
+                  
+                    
+                $('#btnSubmit').click(function() { 
+                    var search = $('#search').val();
+                    
+                    var domainTld = [];
+                    $('.domainTld:checked').each(function(i, e) {
+                        domainTld.push($(this).val());
+                    });
+                    
+                    $.ajax({
+                        url: "<?php echo base_url() . 'get-domain-results'; ?>", //The url where the server req would we made.
+                        async: false,
+                        type: "POST", //The type which you want to use: GET/POST
+                        //data: "search=" + search, //The variables which are going.
+                        data: {
+                            search: search,
+                            //domainTld: $('.domainTld:checked').serialize(),
+                            'domainTld[]': domainTld.join()
+                            //contact:JSON.stringify(data)
+                        },
+                        dataType: "html", //Return data type (what we expect).
+
+                        //This is the function which will be called if ajax call is successful.
+                        success: function(data) { 
+                            //data is the html of the page where the request is made.
+                            $('#domain_div').html(data);
+                        }
+                    });
+                });
+
+
+            });
+    </script>
+
