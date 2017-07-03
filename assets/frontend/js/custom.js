@@ -1,14 +1,21 @@
 $(document).ready(function () {
     /* main login page start */
-    var windowWidth = $(window).width();
-    if(windowWidth > 767){
-        setHeight();
-    }
-    $(window).resize(function(){
-        if(windowWidth > 767) {
-            setHeight();
-        }
-        // $('.scrollbar-outer').width($('.contentWrapper .sectionWhite').width() + 10);
+    // var windowWidth = $(window).width();
+    // if(windowWidth > 767){
+    //     setHeight();
+    // }
+    // $(window).resize(function(){
+    //     if(windowWidth > 767) {
+    //         setHeight();
+    //     }
+    //     // $('.scrollbar-outer').width($('.contentWrapper .sectionWhite').width() + 10);
+    // });
+    $('.loginPageWrap').on('click', '.hamburgerIcon', function(){
+        $('.menuWrap').addClass('open');
+    });
+    $('.loginPageWrap').on('click', '.closeBtn', function(e){
+        e.preventDefault();
+        $(this).closest('.menuWrap').removeClass('open');
     });
     /* main login page end */
 
@@ -179,6 +186,46 @@ $(document).ready(function () {
     }
 
 
+    $('.domainResults').on('click', '.btn', function () {
+        $(this).closest('li').find('.priceAction .btn').toggleClass('added');
+    });
+    // script used for check all checkboxes
+    $('.domainSidebar').on('click', '#checkAll', function () {
+        $(this).closest('.list-unstyled').find('li input:checkbox').prop('checked', this.checked);
+    });
+    
+    
+    
+//     $('#btnSubmit').click(function() { 
+//                    var search = $('#search').val();
+//                    var base_url=$('#base_url').val();
+//                    var url = base_url.'get-domain-results';
+//                    $.ajax({
+//                        url: url, //The url where the server req would we made.
+//                        async: false,
+//                        type: "POST", //The type which you want to use: GET/POST
+//                        //data: "search=" + search, //The variables which are going.
+//                        data: {
+//                            search: search,
+//                            //domainTld: JSON.stringify(p),
+//                        },
+//                        dataType: "html", //Return data type (what we expect).
+//
+//                        //This is the function which will be called if ajax call is successful.
+//                        success: function(data) { 
+//                            //data is the html of the page where the request is made.
+//                            $('#domain_div').html(data);
+//                        }
+//                    });
+//                });
+                
+                
+                
+                
+                
+                
+                 
+
     // Start script for Wizard used in checkout page
     // $('.wizard a[data-toggle="tab"]').on('show.bs.tab', function (e) {
     //     var $target = $(e.target);
@@ -228,6 +275,7 @@ function isNumberKey(evt) {
         return false;
     return true;
 }
+
 
 function validateMemberDetails() {
     ////// Rules Goes Below //////

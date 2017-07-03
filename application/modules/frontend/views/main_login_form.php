@@ -1,11 +1,5 @@
-<div class="container-fluid">
-    <div class="row loginPageWrap">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<div class="container-fluid loginPageWrap">
+    <div class="row mainRow">
         <div class="col-sm-6 col-md-7 redBgCol">
             <a href="" class="logoWrap">
                 <img src="<?php echo asset_url(); ?>images/logodigitellg.png" class="img-responsive" alt="logodigitellg">
@@ -13,6 +7,12 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-5 whiteBGCol">
+            <button type="button" class="hamburgerIcon">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <ul class="list-unstyled list-inline socialIconWrap">
                 <li>
                     <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -69,6 +69,38 @@
                 </div>
 
             </div>
+        </div>
+        <div class="menuWrap">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="">
+                        <img src="<?php echo asset_url(); ?>frontend/images/login/users.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="<?php echo asset_url(); ?>frontend/images/login/tags.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="<?php echo asset_url(); ?>frontend/images/login/cloud.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="<?php echo asset_url(); ?>frontend/images/login/devices.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="<?php echo asset_url(); ?>frontend/images/login/bank.png">
+                    </a>
+                </li>
+                <li class="text-center">
+                    <a href="" class="closeBtn"><i class="fa fa-times"></i></a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

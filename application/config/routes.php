@@ -203,5 +203,16 @@ $route['support'] = 'frontend/pages/support';
 $route['domain'] = 'frontend/domain/index';
 $route['domain-results'] = 'frontend/domain/domain_results';
 
+
+/* Domain search result API   start here    */
+
+$route['domains'] = 'frontend/domain/domains';
+$route['domains-results-main'] = 'frontend/domain/domainsSearchMain';
+$route['domains-results-main/(:any)'] = 'frontend/domain/domainsSearchMain/$1';
+$route['get-domain-results'] = "frontend/domain/domainsResults";
+
+/* Domain search result API  end here  */
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
