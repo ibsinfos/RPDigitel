@@ -55,6 +55,50 @@ $(document).ready(function(){
 	if ($('textarea.editor').length) {
 		$('textarea.editor').ckeditor();
 	}
+
+	// Script used for Share modal in sidebar to send mail
+	if ($('#btnemailsend').length) {
+		$('#btnemailsend').click(function() {
+						
+			$(".err_mailsend").html('<div class="loader"><div class="title">Sending...</div><div class="load"><div class="bar"></div></div></div>');	
+			
+			$("#err_to").html('');
+			$("#err_from").html('');
+			
+			$.ajax({
+				url: shareModalSendMailURL,
+				type: "POST",
+				data: {
+					to:$('#to').val(),
+					fromid:$('#fromid').val(),
+					shorten_url:$('#shorten_url').val()
+				},
+				success: function (data)
+				{
+					$(".err_mailsend").html('');	
+					var json = JSON.parse(data);
+					if (json.status === 1) 
+					{						
+						
+						$("#err_to").html('');
+						$("#err_from").html('');						
+						$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+						return true;
+					}
+					else 
+					{
+						
+						//$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
+						$("#err_to").html('<div class="text-danger">' + json.msg.to + '</div>');
+						$("#err_from").html('<div class="text-danger">' + json.msg.from + '</div>');
+						
+						
+						return false;
+					}
+				}
+			});     
+		});
+	}
 	
 });
 
@@ -669,6 +713,7 @@ $(document).ready(function () {
 	Dropzone.autoDiscover = false;
 	var thumbs = [];
 	var file_row_count=0;
+	if ($('#publisher_application_upload').length) {
 	$("#publisher_application_upload").dropzone({
 		url: uploadProductFiles_URL,
 		addRemoveLinks: true,
@@ -737,6 +782,7 @@ $(document).ready(function () {
 		}
 		
 	});  
+	}
 	
 	
 	
