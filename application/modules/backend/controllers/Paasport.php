@@ -37,6 +37,41 @@ class Paasport extends CI_Controller {
         $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $_SESSION['paasport_user_id']), '', 1);
         $slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 
+        $this->session->set_userdata('vcard_id', $user[0]['id']);
+        
+
+        $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
+        
+        $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'id' => $this->session->userdata('vcard_id')));
+        $user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id')));
+
+        //To get User Experience, Education Details        
+        $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_skills = $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_priceplan = $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        //print_r($user_priceplan);
+        $user_list = $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_link = $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_video_url = $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $user_portfolio = $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+
+        $user_blog = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        $this->template->set('user_blog', $user_blog);
+
+        $this->template->set('user_data', $userdata_paasport);
+        $this->template->set('user_company', $user_company);
+        $this->template->set('user_exp_data', $user_experience_data);
+        $this->template->set('user_edu_data', $user_education_data);
+        $this->template->set('user_skills', $user_skills);
+        $this->template->set('user_priceplan', $user_priceplan);
+        $this->template->set('user_list', $user_list);
+        $this->template->set('user_link', $user_link);
+        $this->template->set('user_video_url', $user_video_url);
+        $this->template->set('user_portfolio', $user_portfolio);
+
+
+
         $this->template->set('user_menu', $user_menu);
 
         $this->template->set('slug', $slug);
@@ -62,7 +97,7 @@ class Paasport extends CI_Controller {
         }
 
         $session_data = $this->session->userdata();
-        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $this->session->userdata('paasport_user_id')));
+        $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
 
         $first_user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']), 'id ASC', 1);
 
@@ -378,7 +413,9 @@ class Paasport extends CI_Controller {
             $map ['msg'] = $error_array;
             echo json_encode($map);
         } else {
+            //print_r($this->session->all_userdata());
             if (!empty($this->session->userdata('vcard_id'))) {
+//            echo "here";
                 $map = array();
                 $user = array();
                 $user['facebook_link'] = $this->input->post('facebook_url');
@@ -1607,7 +1644,7 @@ class Paasport extends CI_Controller {
           print_r($result_ins_qrc);
           exit; */
 
-        $this->common_model->updateRow(TABLES::$ADMIN_USER, array("slug" => $slug, "qr_code_image" => $qr_code_image, "qr_code_image_ext" => $ext), array("id" => $user['user_id']));
+        $this->common_model->updateRow(TABLES::$USERS, array("slug" => $slug, "qr_code_image" => $qr_code_image, "qr_code_image_ext" => $ext), array("id" => $user['user_id']));
     }
 
     //start  save portfolio
@@ -1793,7 +1830,7 @@ class Paasport extends CI_Controller {
 
         $session_data = $this->session->userdata();
 
-        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $this->session->userdata('paasport_user_id')));
+        $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
 
         $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id']));
 
@@ -1853,7 +1890,7 @@ class Paasport extends CI_Controller {
 
         $session_data = $this->session->userdata();
 
-        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $this->session->userdata('paasport_user_id')));
+        $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
 
         $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id'], 'id' => $vcard_id));
 

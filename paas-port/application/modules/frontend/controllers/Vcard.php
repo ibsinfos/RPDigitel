@@ -1811,7 +1811,7 @@ class Vcard extends CI_Controller {
 
         $session_data = $this->session->userdata();
 
-        $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
+      //  $userdata = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('id' => $session_data['user_account']['user_id']));
 
         $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $session_data['paasport_user_id'], 'id' => $vcard_id));
 

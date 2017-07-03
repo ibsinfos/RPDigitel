@@ -1,431 +1,272 @@
-
-<section class="subscribeHeroSection">
+<section class="siloSDHero">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-                <h4 class="heading">Launch Your Personal Silo Cloud Package</h4>
-                <p>Enterprise Solutions built for Startups.</p>
-                <a href="" class="btn btnRed">Add the Cloud to Your Bundle</a>
-                <p class="viewMore">View more articles ><br>
-				Sign up for a new merchant account</p>		
-			</div>
-		</div>
-	</div>
+            <div class="col-sm-8 col-md-6">
+                <h1 class="heading">Silo Webhosting Service</h1>
+                <h6>Extend your website with fiberrail extensions.</h6>
+                <a href="" class="btn btnRed">Where to Buy SiloSD Memory Cards</a>
+            </div>
+            <div class="col-sm-4 col-md-6 clearfix text-center">
+                <img src="<?php echo asset_url(); ?>frontend/images/domain/storage.png" class="sdCardImg">
+            </div>
+        </div>
+    </div>
 </section>
 
-<div class="subscribeShowPrice">
-    <div class="container">
-        <p>Show me prices based on:</p>
-	</div>
-</div>
-<div class="subscribeRedStrip">
-    <div class="container-fluid text-center">
-        <p>Free Scandisc Activation when you have the RP Digital Bundle for Business Wireless plan. - save $49!</p>
-	</div>
-</div>
-<section class="subscribePlanSection">
+<section class="siloSDSearchDomain">    
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-					
-					
-                    <?php
-						// $ser_count=0;
-						
-						$ser_count = 0;
-						foreach ($services as $service) {
-							/*
-								if($service['service_name']=='WBS Business Suite'){
-								$service_link='siloCloud';
-							} */
-						?>
-                        <li role="presentation" class="<?php
-							if ($ser_count == 0) {
-								echo 'active';
-							}
-							?>"><a href="#<?php echo $service['category'] . '_tab'; ?>" aria-controls="<?php echo $service['category'] . '_tab'; ?>" role="tab" data-toggle="tab">
-								<?php
-                                    echo $service['service_name'];
-								?></a></li>
-								
-								<?php
-									$ser_count++;
-								}
-					?>
-					
-				</ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-					
-                    <?php
-						$ser_tab_count = 0;
-						foreach ($services as $service) {
-							
-							
-							$plan_details = $this->common_model->getPlanDetails($service['service_id']);
-							
-							// echo "<pre>";
-							// print_r($plan_details);
-							// die();
-						?>
-						
-                        <div role="tabpanel" class="tab-pane <?php
-							if ($ser_tab_count == 0) {
-								echo 'active';
-							}
-							?>" id="<?php echo $service['category'] . '_tab'; ?>">
-                            <div class="row">
-								
-								
-                                <?php
-									$plan_count = 0;
-									foreach ($plan_details as $plan_detail) {
-										$plan_count++;
-										// echo "<pre>";
-										// print_r($plan_detail->name);
-									?>
-                                    <div class="col-sm-4">
-                                        <div class="panel plan<?php echo $plan_count; ?>">
-                                            <div class="panel-heading text-center">
-                                                <h4 class="planName"><?php echo $plan_detail->name; ?></h4>
-                                                <h4 class="planAmtWrap">$ <span class="amt"><?php echo $plan_detail->price; ?></span></h4>
-											</div>
-                                            <div class="panel-body">
-                                                <ul class="list-unstyled typoList">
-													
-                                                    <?php
-														$feature_details = $this->common_model->getFeatureDetails($plan_detail->features);
-														foreach ($feature_details as $feature) {
-															
-															echo "<li>" . $feature->description . "</li>";
-														}
-													?>
-													
-                                                    <!--<li>Unlimited SMS</li>
-													<li>E-Class Data 3-5G</li>-->
-												</ul>
-                                                <div class="text-center">
-													
-													<?php 
-														
-														
-														// echo "<pre>";
-														// print_r($purchased_plans);
-														
-														if(isset($plan_purchased_flag)){
-															unset($plan_purchased_flag);
-														}
-														if(isset($plan_expired)){
-															unset($plan_expired);
-														}
-														
-														foreach ($purchased_plans as $purchased) {
-															
-															if($plan_detail->id==$purchased['plan_id']){
-																
-																$plan_purchased_flag=1;
-																$today=date_create(date('Y-m-d'));
-																$e_date=date_create($purchased['end_date']);
-																
-																$diff=date_diff($today,$e_date);
-																$date_diff=$diff->format('%r%a days');;
-																
-																if($date_diff<0){
-																	$plan_expired=1;
-																}
-																
-																}else{
-																// unset($plan_purchased_flag);
-																// plan_purchased_flag unset
-															}
-															
-														}
-														
-														// if(in_array($plan_detail->id,$purchased_plans)){
-														if(isset($plan_purchased_flag)){
-															
-															if(isset($plan_expired)){
-																
-																
-															?>
-															<button class="btn btnRed choose_plan" onclick="add_plan( '<?php echo $plan_detail->id; ?>','<?php echo $service['category']; ?>', '<?php echo $plan_detail->name; ?>', '30 days', '<?php echo $plan_detail->price; ?>')" value="<?php echo $plan_detail->price; ?>" id="fiber_rails_portal_1">Renew Plan</button>
-															
-															<?php
-																}else{
-																
-															?>
-															<!--
-															<a href="<?php //echo base_url().$service['url'];?>"><button class="btn btnRed choose_plan" id="fiber_rails_portal_1" >Go To Dashboard</button></a>
-															-->
-															
-															<button class="btn btnRed choose_plan" id="fiber_rails_portal_1" disabled>Purchased Plan</button>
-															
-															<?php
-															}													
-															
-															}else{
-														?>
-														
-														<button class="btn btnRed choose_plan" onclick="add_plan( '<?php echo $plan_detail->id; ?>','<?php echo $service['category']; ?>', '<?php echo $plan_detail->name; ?>', '30 days', '<?php echo $plan_detail->price; ?>')" value="<?php echo $plan_detail->price; ?>" id="fiber_rails_portal_1">Choose Plan</button>
-														<?php
-														}
-													?>		
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-								<?php } ?>
-								
-							</div>
-							
-						</div>
-						
-						
-						<?php
-							$ser_tab_count++;
-						}
-					?>
-					
-					
-					
-					
-					
-					
-					<div class="row">
-						<div class="col-md-12">
-							<div class="table-responsive">
-								<form id='form_subcription_plans' method="post" action="<?php echo base_url(); ?>check_out">
-									<table class="table table-striped" id='table_subcription_plans'>
-										<thead>
-											<tr>
-												<th>Plan Name</th>
-												<th>Duration</th>
-												<th width="200">Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											
-										</tbody>
-										<tfoot>
-											<tr>
-												<th colspan="2" class="text-right">Total:</th>
-												<th id="subcription_plans_total">0</th>
-											</tr>
-											
-											<tr>
-												<td colspan="2"></td>
-												<td>
-													<!--<a href="<?php //echo base_url();              ?>check_out" class="btn btnRed">Get Started</a>-->
-													<input type="text" name="pricing_plan_total" id="pricing_plan_total" value="0" hidden>
-													<input type="submit" name="pricing_plan_submit" id="pricing_plan_submit" class="btn btnRed" value="Get Started">
-													
-												</td>
-											</tr>
-										</tfoot>
-									</table>
-								</form>
-							</div>
-						</div>
-					</div>
-					
-					
-					
-				</div>
-			</div>
-		</div>
-		<div class="row wirelesServicesInfo">
-			<div class="col-sm-12">
-				<div class="text-center">
-					<p class="rpDigitelLogo"><img src="<?php echo main_asset_url(); ?>images/subscription/rpdigitel.png"></p>
-					<p class="whyRP">Learn Why RP Digi<span class="redText">tel</span> is Wireless Services</p>
-					<p class="reImagine">RE-IMAGINED</p>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="row">
-					<div class="imageBlock col-sm-2">
-						<img src="<?php echo main_asset_url(); ?>images/subscription/phone.png" class="img-responsive">
-					</div>
-					<div class="col-sm-10">
-						<p>RP Digitel is wireless done differently... Bring Your Own Phone, or Purchase one of ours... No matter what carrier GSM, CDMA or Unlocked, We've got a plan and a device that suits you.</p> 
-						<a href="">Click to Get your Unlocked Sim Card</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="row">
-					<div class="imageBlock col-sm-2">
-						<img src="<?php echo main_asset_url(); ?>images/subscription/customerservices.png" class="img-responsive">
-					</div>
-					<div class="col-sm-10">
-						<p>At RP Digitel, Customer service comes first. Our support team is USA based and is ready to assist you with any questions you may have about all services and products we offer 24 hours a day. </p>
-						<a href="">Learn More about other Services!</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="row">
-					<div class="imageBlock col-sm-2">
-						<img src="<?php echo main_asset_url(); ?>images/subscription/wireless.png" class="img-responsive">
-					</div>
-					<div class="col-sm-10">
-						<p>We are not just wireless, We are nationwide data services that expand coverage to both rural and metro communities in order to ensure complete customer satisfaction at a reduced cost. </p>
-						<a href="">Learn about our Data Only Plans now!</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="row">
-					<div class="imageBlock col-sm-2">
-						<img src="<?php echo main_asset_url(); ?>images/subscription/winningplans.png" class="img-responsive">
-					</div>
-					<div class="col-sm-10">
-						<p>RP Digital Communications Services has a wide variety of wireless plans, data services and cloud services that meets the needs of every customer, at a fraction of the cost. </p>
-						<a href="">Visit our corporate site to learn more about the vision of RP Digital. </a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 text-center">
-				<p>Get the All New <strong>Scandisc UGC Media Package</strong> when you have the RP Digital Bundle for Business Wireless plan.</p>
-				<button class="btn btnRed">Enter</button>
-			</div>
-		</div>
-	</div>
+            <div class="col-sm-12">
+                <h3 class="heading"> CHOOSE YOUR DOMAIN <small class="white">Starting from $9.99</small></h3>
+                    <form class="form-inline" name="frm_search_domains" id="frm_search_domains" action="<?php echo base_url(); ?>domains-results-main" method="POST"enctype="multipart/form-data" >
+                  <input type="hidden" name="base_url" id="base_url" value="<?php echo base_url() ?>" />
+                        <div class="form-group">
+                    <input type="text" class="form-control" id="domain_name" id="domain_name" value="" placeholder="Enter your domain name here....">
+                  </div>
+                  <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
+                  <!--<button type="submit" name="btn_submit" id="btn_submit" class="btn btnRed">SEARCH DOMAIN</button>-->
+                  <input type="button" name="btns_submit_domain" id="btns_submit_domain" class="btn btnRed" value="SEARCH DOMAIN" />
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 
+<section class="securityServiceWrap takeYourBusiness">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="col-sm-12"> 
+                        <h3 class="heading text-center">TAKE YOUR BUSINESS MOBILE WITH FIBERRAILS</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/domain.png" class="img-responsive center-block">
+                        <h6 class="center">Choose Your Domain</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/hosting.png" class="center-block img-responsive">
+                        <h6 class="center">Personal Secured Webspace and Storage to be used as you wish...</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/website.png" class="img-responsive center-block">
+                        <h6 class="center">Upload your website in your Secured Space</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="webHostingSignUp text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+            	<h4 class="heading">Sign up for a full website, and your business enterprise management suite is included</h4>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            	<p class="paragraph">When you sign up for Web Hosting, not only do you get secured storage, business email and unlimited data transfer.  Sign up today and launch your startup on the Next Generation Fiber Rails Platform.  All included in plans starting as low as $29.99 per month.</p>
+            	<a href="" class="btn btnRed">Learn More</a>
+            	<div class="row">
+            		<div class="col-xs-4">
+            			<a href="" class="link">Stores</a>
+            		</div>
+            		<div class="col-xs-4">
+            			<a href="" class="link">Shops</a>
+            		</div>
+            		<div class="col-xs-4">
+            			<a href="" class="link">Ecommerce</a>
+            		</div>
+            	</div>
+        	</div>
+        </div>
+    </div>
+</section>
+
+<section class="webHostingPackages">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+            	<img src="<?php echo asset_url(); ?>frontend/images/home/silocloud.png" width="120">
+            	<h4 class="heading">Silo Webhosting Packages</h4>
+            </div>
+            <div class="col-sm-4">
+            	<div class="panel panel-default">
+            		<div class="panel-heading text-center">
+            			<h5 class="planName">
+            				<strong>BASIC</strong> <br> Select
+            			</h5>
+            			<p class="planPrice">$9/mo</p>
+            			<p><strong>never expires</strong></p>
+            			<a href="" class="btn btnRed">Get Started</a>
+            		</div>
+            		<div class="panel-body">
+            			<ul class="list-unstyled text-center planFeatures">
+            				<li>1 Hosted Domain</li>
+            				<li>10GB Secured Storage</li>
+            				<li>Unlimited Transfer</li>
+            				<li>Standard Server</li>
+            				<li>1 Mobile Optimized Site</li>
+            				<li>25 Email Address</li>
+            			</ul>
+            			<p><strong>Free SiloCloud storage:</strong></p>
+            			<p class="listHeading"><strong>Sharing</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Send links to files and folders</li>
+            				<li>Recipients of links do not need a Sync account</li>
+            				<li>Password protection</li>
+            			</ul>
+            			<p class="listHeading"><strong>Collaboration</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Create shared folders</li>
+            				<li>Invite anyone to shared folders</li>
+            			</ul>
+            			<p class="listHeading"><strong>Backup and restore</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Sync or restore to any computer</li>
+            				<li>Realtime backup</li>
+            				<li>Selectively sync folders</li>
+            				<li>Deleted file recovery (30-day)</li>
+            				<li>File version history (30-day)</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
+            <div class="col-sm-4">
+            	<div class="panel panel-default">
+            		<div class="panel-heading text-center">
+            			<h5 class="planName">
+            				<strong>Enhanced</strong> <br> Select
+            			</h5>
+            			<p class="planPrice">$29<sup>99</sup></p>
+            			<p><strong>PER MONTH</strong></p>
+            			<a href="" class="btn btnRed">Customize</a>
+            		</div>
+            		<div class="panel-body">
+            			<ul class="list-unstyled text-center planFeatures">
+            				<li>Unlimited Hosted Sites</li>
+            				<li>50 GB Secured Storage</li>
+            				<li>Unlimited Transfer</li>
+            				<li>Standard Server</li>
+            				<li>Mobile Optimized Website</li>
+            				<li>Unlimited Bandwidth</li>
+            				<li>Unlimited Parked Domains</li>
+            				<li>100 Email Address</li>
+            				<li>$200 Included</li>
+            				<li>Private Cloud</li>
+            				<li>Cpanel</li>
+            				<li>SiteBuilder</li>
+            			</ul>
+            			<p><strong>Cloud storage:</strong></p>
+            			<p>1TB secure storage</p>
+            			<p>Includes all Starter features plus:</p>
+            			<p class="listHeading"><strong>Support</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Help guides and knowledge base</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
+            <div class="col-sm-4">
+            	<div class="panel panel-default">
+            		<div class="panel-heading text-center">
+            			<h5 class="planName">
+            				<strong>Premium</strong> <br> Select
+            			</h5>
+            			<p class="planPrice">$49<sup>99</sup></p>
+            			<p><strong>PER MONTH</strong></p>
+            			<a href="" class="btn btnRed">Enroll</a>
+            		</div>
+            		<div class="panel-body">
+            			<ul class="list-unstyled text-center planFeatures">
+            				<li>Unlimited Hosted Domain</li>
+            				<li>UNLIMITED</li>
+            				<li>Unlimited Transfer</li>
+            				<li>Premium Server</li>
+            				<li>1</li>
+            				<li>Unlimited Bandwidth</li>
+            				<li>100 Email Address</li>
+            				<li>$200 Included</li>
+            				<li>Private Cloud</li>
+            				<li>Cpanel</li>
+            				<li>SiteBuilder</li>
+            				<li>Domain Privacy</li>
+            				<li>Fiber Rails Account Management</li>
+            			</ul>
+            			<ul class="list-unstyled typoList">
+            				<li>Administrative console to provision multiple users</li>
+            				<li>Per user, per folder access controls and permission management with advanced collaboration tools</li>
+            				<li>Offboard users per folder or per account</li>
+            				<li>Transfer account ownership</li>
+            			</ul>
+            			<p>Desktop Application - Server management</p>
+            			<p class="listHeading"><strong>Centralized billing</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Single invoice billing for all users</li>
+            			</ul>
+            			<p class="listHeading"><strong>Support</strong></p>
+            			<ul class="list-unstyled typoList">
+            				<li>Priority email (first in line)</li>
+            				<li>99.9% uptime SLA</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <p class="conditionText">*Discount applies to Website Builder annual plans. Discount applicable to initial term only and does not apply to downgrades or upgrades to existing customer plans. Offer is nontransferable and may not be combined with other offers and discounts, exchanged, or redeemed for cash. See the Fiber Rails Terms of Service for additional terms and conditions. Offer expires on 4/15/2017.</p>
+    </div>
+    <h4 class="needHelp">Need help? Call us at 832 886 7422 (USA)</h4>
+    <div class="container">
+        <div class="row">
+        	<div class="col-sm-6">
+        		<p>
+        			<strong>No hardware or software costs</strong><br>
+        			No upfront investment and you only pay for the mailboxes you create.
+        		</p>
+        		<p>
+        			<strong>Virtualized mailboxes</strong><br>
+        			Use our cloud solution and free up server space.
+        		</p>
+        		<p>
+        			<strong>Easy deployment</strong><br>
+        			With our turn-key product you will be up and running in no time.
+        		</p>
+        	</div>
+        	<div class="col-sm-6">
+        		<p>
+        			<strong>In-house 24/7 abuse team</strong><br>
+        			Let us worry about blacklist mitigation while you focus on your business.
+        		</p>
+        		<p>
+        			<strong>Secure data centers</strong><br>
+        			We are committed to stringent security.
+        		</p>
+        		<p>
+        			<strong>Affordable</strong><br>
+        			Full mailboxes start at Rs 49/- per month*.
+        		</p>
+        	</div>
+        	<div class="col-sm-12 text-center">
+        		<a href="" class="btn btnRed featureBtn">Features</a>
+        	</div>
+        </div>
+    </div>
+</section>
 <script type="text/javascript">
-	
-	
-	var all_records = [];
-	var fiber_flag = 0;
-	function add_plan(plan_id,cat, name, duration, price) {
-		
-		// var all = [
-		// ['fiber_plans','Fiber plan 1'],
-		// ['fiber_plans','Fiber plan 2']
-		// ['fiber_plans','Fiber plan 3']
-		// ];
-		
-		// var fiber_plans=['Fiber plan 1','Fiber plan 2','Fiber plan 3'];
-		
-		// if(fiber_flag==0){
-		// alert(name);
-		// }
-		
-		// if((fiber_plans.indexOf(name) == -1)){ 
-		// alert('ds');
-		// }
-		
-		// alert(cat);
-		
-		
-		if ((all_records.indexOf(name) == -1)) { //To check Duplicate
-			
-			// all_records.push(name);
-			
-			all_records.push({title: cat, link: name});
-			
-			// alert(JSON.stringify(all_records));
-			
-			// delete all_records['fiber'];
-			
-			
-			// const index = all_records.indexOf('Fiber plan 3');
-			// array.splice(index, 1);
-			// alert(index);
-			
-			
-			
-			$("#table_subcription_plans > tbody tr#" + cat).remove();
-			
-			
-			
-			$("#table_subcription_plans > tbody").append("<tr id='" + cat + "'><td>" + name + "</td><td>" + duration + "</td><td class='plan_price'>" + price + " <input type='button' value='X' onclick=\"delete_selected_plan('" + cat + "')\" name='del_" + cat + "' id='del_" + cat + "'></td></tr>");
-			
-			/*AJAX Request to add plan start*/
-			$.ajax({
-				url: '<?php echo base_url(); ?>frontend/subscription/addToCart_Plan',
-				method: 'post',
-				async: false,
-				data: {'plan_id':plan_id,'plan_cat': cat, 'plan_name': name, 'plan_duration': duration, 'plan_price': price},
-				success: function (data) {
-					
-					// $("#project_portfolio").empty();
-					// alert(data);
-					// $("#billing_state").html(data);
-					
-				}
-				
-			});
-			/*AJAX Request to add plan end*/
-			
-			
-			var pre_total = $("#subcription_plans_total").text();
-			
-			
-			var new_total = 0;
-			$(".plan_price").each(function () {
-				
-				var single_plan_price = ($(this).html());
-				// alert(strr);
-				new_total = parseInt(new_total) + parseInt(single_plan_price);
-			});
-			
-			
-			// var new_total=parseInt(pre_total)+parseInt(price);
-			
-			$("#subcription_plans_total").text(parseInt(new_total));
-			$("#pricing_plan_total").val(parseInt(new_total));
-			
-		}
-		
-		
-		
-	}
-	
-	
-	function delete_selected_plan(cat) {
-		
-		$("#table_subcription_plans > tbody tr#" + cat).remove();
-		
-		
-		
-		var new_total = 0;
-		$(".plan_price").each(function () {
-			
-			var single_plan_price = ($(this).html());
-			new_total = parseInt(new_total) + parseInt(single_plan_price);
-			
-		});
-		
-		
-		$("#subcription_plans_total").text(parseInt(new_total));
-		$("#pricing_plan_total").val(parseInt(new_total));
-		
-		
-		
-		/*AJAX Request to remove plan start*/
-		$.ajax({
-			url: '<?php echo base_url(); ?>frontend/subscription/removeFromCart_Plan',
-			method: 'post',
-			async: false,
-			data: {'plan_cat': cat},
-			success: function (data) {
-				
-				// alert(data);
-				
-			}
-			
-		});
-		/*AJAX Request to remove plan end*/
-		
-		
-		
-		
-	}
-	
+    
+
+$('#btns_submit_domain').click(function() { 
+                    var domain_name = $('#domain_name').val(); 
+                    var base_url=$('#base_url').val();
+                    var url = base_url+'domains-results-main/'+domain_name;
+                    //window.location(url);
+                    window.location=""+url;
+                   
+                });
+
 </script>
+
+
+
