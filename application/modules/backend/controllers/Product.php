@@ -62,9 +62,11 @@
 			$dir='./uploads/'.$_SESSION['user_id'];
 			
 			
-			
+			if (is_dir($dir)) {
 			$silosd_files=getDirContents($dir);
-			
+                        }else{
+                            $silosd_files=array();
+                        }
 			// echo "<pre>";
 			// print_r($silosd_files);
 			// die();

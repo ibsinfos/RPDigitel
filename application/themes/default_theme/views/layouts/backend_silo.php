@@ -218,12 +218,12 @@
             <script src="<?php echo backend_asset_url() ?>vendors/pdfmake/build/vfs_fonts.js"></script>
 		<?php } ?>
 		
-		<?php if($page=="upload_files" || $page=="createproduct"){?>
+		<?php if($page=="upload_files" || $page=="createproduct" || $page=="createpaasport"){?>
 			
 			<!-- Dropzone.js -->
 			<script src="<?php echo backend_asset_url() ?>vendors/dropzone/dist/min/dropzone.min.js"></script>
-			
-		<?php }?>
+            
+        <?php }?>
 		
         <!-- validator -->
         <!--<script src="<?php //echo backend_asset_url() ?>vendors/validator/validator.js"></script>-->
@@ -262,48 +262,7 @@
 		<?php }?>
 		
 		<script type="text/javascript"  >
-			$(document).ready(function () {
-				$('#btnemailsend').click(function() {
-					
-					$(".err_mailsend").html('<div class="loader"><div class="title">Sending...</div><div class="load"><div class="bar"></div></div></div>');	
-					
-					$("#err_to").html('');
-					$("#err_from").html('');
-					
-					$.ajax({
-						url: "<?php echo base_url() ?>backend/dashboard/sendmail",
-						type: "POST",
-						data: {
-							to:$('#to').val(),
-							fromid:$('#fromid').val(),
-							shorten_url:$('#shorten_url').val()
-						},
-						success: function (data)
-						{
-							$(".err_mailsend").html('');	
-							var json = JSON.parse(data);
-							if (json.status === 1) 
-							{						
-								
-								$("#err_to").html('');
-								$("#err_from").html('');						
-								$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-								return true;
-							}
-							else 
-							{
-								
-								//$(".err_mailsend").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">X</button><strong>' + json.msg + '</div>');
-								$("#err_to").html('<div class="text-danger">' + json.msg.to + '</div>');
-								$("#err_from").html('<div class="text-danger">' + json.msg.from + '</div>');
-								
-								
-								return false;
-							}
-						}
-					});     
-				});
-			});
+			var shareModalSendMailURL = "<?php echo base_url() ?>backend/dashboard/sendmail";
 		</script>
 		
 	</body>
