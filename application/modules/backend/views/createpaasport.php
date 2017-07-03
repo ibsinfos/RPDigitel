@@ -1505,10 +1505,10 @@ if (!empty($user_blog)) {
       </div>
       <div class="modal-body">
         <div class="form-group">
-            <!-- <div class="dropzone">
+            <div class="dropzone" id="uploadAudioFiles">
                 <div class="dz-default dz-message">Drag and Drop Files here</div>
                 <input type="hidden" name="thumbnails" id="thumbval">
-            </div> -->
+            </div>
         </div>
       </div>
       <div class="modal-footer">
@@ -1530,7 +1530,12 @@ if (!empty($user_blog)) {
       </div>
 
       <div class="modal-body">
-        dsds
+        <div class="form-group">
+            <div class="dropzone" id="uploadVideoFiles">
+                <div class="dz-default dz-message">Drag and Drop Files here</div>
+                <input type="hidden" name="thumbnails" id="thumbval">
+            </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btnRed">Upload</button>
@@ -1551,7 +1556,12 @@ if (!empty($user_blog)) {
       </div>
 
       <div class="modal-body">
-        dsds
+        <div class="form-group">
+            <div class="dropzone" id="uploadGalleryFiles">
+                <div class="dz-default dz-message">Drag and Drop Files here</div>
+                <input type="hidden" name="thumbnails" id="thumbval">
+            </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btnRed">Upload</button>
