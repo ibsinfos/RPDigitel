@@ -202,6 +202,7 @@ $route['support'] = 'frontend/pages/support';
 //$route['silo_login'] = 'frontend/pages/login';
 $route['domain'] = 'frontend/domain/index';
 $route['domain-results'] = 'frontend/domain/domain_results';
+$route['dashboard/domainlist'] = 'backend/domain/dashboard';
 
 
 /* Domain search result API   start here    */
