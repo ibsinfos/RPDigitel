@@ -973,25 +973,149 @@ html, body,
   padding: 20px 0;
 }
 .siloSDFreeTrial {
-  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 .siloSDFreeTrial .btnWrap {
   position: relative;
   text-align: center;
   margin-bottom: 25px;
 }
-.siloSDFreeTrial .btnWrap:before {
+.siloSDFreeTrial .btnWrap:before,
+.siloSDFreeTrial .btnWrap:after {
   content: '';
   background-color: #7F7F7F;
   height: 3px;
-  width: 100%;
+  width: 42%;
   position: absolute;
   top: 15px;
-  left: 0;
   z-index: -1;
+}
+.siloSDFreeTrial .btnWrap:before {
+  left: 0;
+}
+.siloSDFreeTrial .btnWrap:after {
+  right: 0;
 }
 .siloSDFreeTrial .btnWrap .btn {
   font-weight: 700;
+}
+.siloSDFreeTrial .deviceStorage {
+  background: #0f0f0f url('../images/silo-sd/black-sd.jpg') no-repeat center left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0 15px;
+  margin-top: 15px;
+}
+.siloSDPlatform {
+
+}
+.sdDataSecurity {
+  background-color: #8c8c8c;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.sdDataSecurity .contentBox {
+  padding: 25px 25px 0;
+}
+.siloSDStorageWrap {
+  background-color: #B7180A;
+  padding: 30px 0;
+}
+.siloSDStorageWrap .cardImg {
+  margin: 0 25px 30px 0;
+}
+.siloSDStorageWrap ul>li {
+  background-color: #fff;
+  padding: 5px 15px;
+  margin: 0 2px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.siloSDMemoryWrap {
+  padding-top: 20px;
+}
+.siloSDMemoryWrap .orderNow {
+  background-color: #616161;
+}
+.siloSDMemoryWrap .orderNow .btn {
+  padding: 0 30px;
+}
+.siloSDRetailers {
+  padding: 30px 0 50px;
+  position: relative;
+}
+.siloSDRetailers:after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  background-color: #9C9C9C;
+  border-radius: 25px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+}
+.siloSDRetailers .heading {
+  color: #616161;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.webHostingPackages.siloSDPackagesWrap .needHelp {
+  margin-bottom: 0;
+}
+.siloSDPackagesWrap .features {
+  background-color: #E8E8E5;
+  padding-top: 50px;
+}
+.siloSDLogoWrap {
+  padding: 0 0 50px;
+}
+.siloSDStartup {
+
+}
+.siloSDStartup .startUpText {
+  color: #96989a;
+  font-size: 44px;
+  font-weight: 700;
+  margin-left: -50px;
+  margin-bottom: 0;
+}
+.siloSDStartup .pricePerMonth {
+  font-size: 40px;
+  margin: 0 0 30px;
+}
+.siloSDStartup .packageIncludes {
+  text-align: center;
+  padding: 0 10px;
+  line-height: 25px;
+}
+.siloSDStartup .infoCol {
+  margin-top: 4%;
+}
+.siloSDStartup .redBgCol {
+  position: relative;
+  padding: 15px 0;
+}
+.siloSDStartup .redBgCol:before {
+  border-bottom: 254px solid #ed3237;
+  border-left: 140px solid rgba(0, 0, 0, 0);
+  border-right: 0 solid rgba(0, 0, 0, 0);
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 420px;
+  z-index: -1;
+}
+.siloSDStartup .redBgCol ul {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
 }
 
 /* Silo SD page css end */
@@ -1306,6 +1430,9 @@ ol.lowerRoman {
 }
 .noPadding {
   padding: 0;
+}
+.noMargin {
+  margin: 0;
 }
 .socialIconWrap {
   text-align: center;

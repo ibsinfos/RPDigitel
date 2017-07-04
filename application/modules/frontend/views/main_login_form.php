@@ -2,7 +2,7 @@
     <div class="row mainRow">
         <div class="col-sm-6 col-md-7 redBgCol">
             <a href="" class="logoWrap">
-                <img src="<?php echo asset_url(); ?>images/logodigitellg.png" class="img-responsive" alt="logodigitellg">
+                <img src="<?php echo asset_url(); ?>frontend/images/logodigitellg.png" class="img-responsive" alt="logodigitellg">
                 <span>Its Digital for Real People!</span>
             </a>
         </div>
@@ -36,7 +36,7 @@
             <div class="row formWrap">
                 <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
                     <a href="" class="rpDigitelLogo">
-                        <img src="<?php echo asset_url(); ?>images/rpdigital.png" alt="rpdigital">
+                        <img src="<?php echo asset_url(); ?>frontend/images/rpdigital.png" alt="rpdigital">
                     </a>
                     <p>Sign in to Silo Social Commerce</p>
                     <form role="form" action="<?php echo base_url(); ?>login/validate_credentials" method="post" id="signin_form">
