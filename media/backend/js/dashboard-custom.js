@@ -708,16 +708,15 @@ function delete_selected_managers_foc(manager_fol_id){
 
 $(document).ready(function () {
 	
-	if ($('.dropzone').length) {
+	if ($('#publisher_application_upload').length) {
 	
 	Dropzone.autoDiscover = false;
 	var thumbs = [];
 	var file_row_count=0;
-	if ($('#publisher_application_upload').length) {
 	$("#publisher_application_upload").dropzone({
 		url: uploadProductFiles_URL,
 		addRemoveLinks: true,
-		maxFilesize: 2,
+		maxFilesize: 25,
 		acceptedFiles: "image/jpeg,image/png",
 		success: function (file, response) {
 			file_row_count++;
@@ -782,7 +781,7 @@ $(document).ready(function () {
 		}
 		
 	});  
-	}
+	
 	
 	
 	

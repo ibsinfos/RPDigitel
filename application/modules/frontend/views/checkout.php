@@ -119,7 +119,12 @@
                                         <label>Password</label>
                                         <input name="password" id="password" class="form-control" required="required" type="password" placeholder="Password" >
 									</div>
-									
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+                                        <label>Confirm Password</label>
+                                        <input name="confirmpassword" id="confirmpassword" class="form-control" required="required" type="password" placeholder="Confirm Password" >
+									</div>
 								</div>
 							<?php } ?>
 							
@@ -208,17 +213,29 @@
                                     <h4>STEP #3: Enter payment details</h4>
 								</div>
                                 <div class="col-sm-12 form-group">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="paymentOption" data-payment-type="card" class="paymentOpt" checked> 
-                                        <img src="<?php echo main_asset_url(); ?>images/visa.png" width="40">
-                                        <img src="<?php echo main_asset_url(); ?>images/mastercard.png" width="40">
-                                        <img src="<?php echo main_asset_url(); ?>images/american-express.png" width="40">
-                                        <img src="<?php echo main_asset_url(); ?>images/discover.png" width="40">
-									</label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="paymentOption" data-payment-type="paypal" class="paymentOpt">
-                                        <img src="<?php echo main_asset_url(); ?>images/paypal.png" width="40">
-									</label>
+                                	<ul class="list-inline">
+	                                    <li>
+	                                    	<label class="radio-inline">
+		                                        <input type="radio" name="paymentOption" data-payment-type="card" class="paymentOpt" checked> 
+		                                        <img src="<?php echo main_asset_url(); ?>images/visa.png" width="40">
+		                                        <img src="<?php echo main_asset_url(); ?>images/mastercard.png" width="40">
+		                                        <img src="<?php echo main_asset_url(); ?>images/american-express.png" width="40">
+		                                        <img src="<?php echo main_asset_url(); ?>images/discover.png" width="40">
+											</label>
+										</li>
+										<li>
+		                                    <label class="radio-inline">
+		                                        <input type="radio" name="paymentOption" data-payment-type="paypal" class="paymentOpt">
+		                                        <img src="<?php echo main_asset_url(); ?>images/paypal.png" width="40">
+											</label>
+										</li>
+										<li>
+											<label class="radio-inline">
+		                                        <input type="radio" name="paymentOption" data-payment-type="siloWallet" class="paymentOpt">
+		                                        Silo Wallet
+											</label>
+										</li>
+									</ul>
 								</div>
                                 <div class="col-sm-6 form-group creaditCardInfo">
                                     <label>Card Number</label>
@@ -248,6 +265,10 @@
                                 <div class="col-sm-6 form-group creaditCardInfo">
                                     <label>Expiration Date</label>
                                     <input name="exp_date" class="form-control" required="required" type="text" placeholder="MM/YY">
+								</div>
+								<div class="col-sm-12 form-group silWalletInfo">
+                                    <img src='<?php echo asset_url(); ?>frontend/images/wbs-suite/sded199x199.jpg' class='img-responsive'><br>
+                                    <p>Scan QR code to complete payment using Silo Wallet</p>
 								</div>
                                 <div class="col-sm-12 form-group">
                                     <div class="checkbox">

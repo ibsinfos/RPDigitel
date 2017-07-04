@@ -100,11 +100,11 @@
 <section class="siloSDPlatform">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6">
-                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/scandisc-platform.png" class="img-responsive center-block">
-            </div>
-            <div class="col-sm-6">
-                <img src="<?php echo base_url(); ?>images/fiber-rails/our%20platform.png" class="img-responsive center-block">
+            <!-- <div class="col-sm-6">
+                <img src="<?php //echo asset_url(); ?>frontend/images/silo-sd/scandisc-platform.png" class="img-responsive center-block">
+            </div> -->
+            <div class="col-sm-12">
+                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/our-platform.png" class="img-responsive center-block">
             </div>
         </div>
         <div class="row">
@@ -460,6 +460,9 @@
                 <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/2.png" class="img-responsive center-block"></a>
             </li>
             <li>
+               <a href=""><img src="<?php echo asset_url(); ?>frontend/images/home/wbssuite.png" class="" height="55"></a>
+            </li>
+            <li>
                 <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/3.png" class="img-responsive center-block"></a>
             </li>
             <li>
@@ -470,6 +473,12 @@
             </li>
             <li>
                 <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/6.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+               <a href=""><img src="<?php echo asset_url(); ?>frontend/images/home/silosd-cloud.png" class="" height="55"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/8.png" class="img-responsive center-block"></a>
             </li>
         </ul>
     </div>

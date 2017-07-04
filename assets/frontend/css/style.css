@@ -709,7 +709,7 @@ html, body,
 }
 .checkoutWrap {
   padding: 30px 0;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
 }
 .checkoutWrap .nav-tabs li {
   cursor: pointer;
@@ -730,6 +730,9 @@ html, body,
 }
 .checkoutWrap .radio-inline+.radio-inline {
   margin-left: 20px;
+}
+.checkoutWrap #paymentDetailsForm .silWalletInfo {
+  display: none;
 }
 .checkoutWrap .orderSummary .heading {
   margin: 0 0 20px;
@@ -1072,8 +1075,9 @@ html, body,
 .siloSDLogoWrap {
   padding: 0 0 50px;
 }
-.siloSDStartup {
-
+.siloSDLogoWrap ul>li {
+  vertical-align: middle;
+  padding: 0 15px;
 }
 .siloSDStartup .startUpText {
   color: #96989a;

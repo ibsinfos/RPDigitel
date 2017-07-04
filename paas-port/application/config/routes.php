@@ -174,7 +174,7 @@ $route['backend/cms/edit/(:any)'] = "backend/cms/editCMS/$1";
 $route['crontxtms.html'] = "cronejob/cronjob/cronTextMsg";
 $route['autoresponder.html'] = "cronejob/cronjob/cronAutoResponder";
 $route['appointment.html'] = "cronejob/cronjob/cronAppointment";
-$route['homepage'] = 'frontend/Pages/home';
+$route['homepage'] = 'frontend/Pages/home';$route['getaudiolist'] = 'frontend/vcard/getaudiolist';
 $route['404'] = 'frontend/Pages/pageNotFound404';
 $route['404_override'] = 'frontend/Pages/pageNotFound404';
 $route['(:any)'] = 'frontend/ClientsVcard/index/$1';

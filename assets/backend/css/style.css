@@ -266,6 +266,7 @@
     text-align: center;
     padding-top: 40px;
 }
+
 /*.createPaasportWrap .mediaTabContentWrap .panel:before {
     content: "\f01d";
     font: normal normal normal 14px/1 FontAwesome;
@@ -284,6 +285,12 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .fa-ellipsis-h {
+	position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
 }
 .createPaasportWrap .mediaTabContentWrap .panel h5 {
     padding: 0 5px;
@@ -820,6 +827,38 @@
 }
 /* Broadcast css end */
 
+/* Domain List css Start */
+.domainListWrap {
+    background: #fff;
+}
+.domainListWrap .panel { 
+    position: relative;
+}
+.domainListWrap .panel .panel-heading {
+    padding: 0;
+    overflow: hidden;
+    max-height: 150px;
+    position: relative;
+}
+.domainListWrap .panel .panel-heading:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+.domainListWrap .panel .fa-ellipsis-v { 
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+}
+/* Domain List css end */
+
 /* Common css start */
 .socialInputGroup .input-group-addon {
     color: #fff;
@@ -883,4 +922,6 @@
 label.error {
     color: #ff0000;
 }
+
+
 /* Common css end */
