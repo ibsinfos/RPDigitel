@@ -37,8 +37,9 @@ class Paasport extends CI_Controller {
         $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $_SESSION['paasport_user_id']), '', 1);
         $slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 
+        if(!empty($user)){
+            
         $this->session->set_userdata('vcard_id', $user[0]['id']);
-
 
         $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
 
@@ -58,8 +59,16 @@ class Paasport extends CI_Controller {
         $media_audio_list = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
         $media_video_list = $this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
         $gallary_list = $this->common_model->getRecords(TABLES::$PAASPORT_GALLARY, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-//        print_r($media_audio_list);
         $user_blog = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+       
+        }else{
+            
+        $userdata =$userdata_paasport =$user_company =$user_experience_data =$user_education_data = $user_skills =array();
+        $user_priceplan =$user_list = $user_link = $user_video_url = $user_portfolio = array();
+        $media_audio_list = $media_video_list =$gallary_list = $user_blog =array();
+        
+        }
+        
         $this->template->set('user_blog', $user_blog);
 
         $this->template->set('user_data', $userdata_paasport);
@@ -3424,10 +3433,12 @@ class Paasport extends CI_Controller {
             $files_path = "paas-port/uploads/media/video/" . $user_id . "/" . $config['file_name'];
 
             $media_video_files_data['paasport_user_id'] = $this->session->userdata('paasport_user_id');
-            $media_video_files_data['name'] =$_FILES["file"]['name'];
+            $media_video_files_data['name'] =pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
             $media_video_files_data['file_path'] = $files_path;
             $media_video_files_data['vcard_id'] = $this->session->userdata('vcard_id');
+            $media_video_files_data['encrypted_file_name'] = $upload_result['raw_name'];
 
+            
             $this->db->insert('tbl_paasport_video', $media_video_files_data);
             $file_id = $this->db->insert_id();
 
@@ -3482,6 +3493,38 @@ class Paasport extends CI_Controller {
 
             $result = array('type' => $ext, 'file_name' => $upload_result['file_name'], 'raw_name' => $upload_result['raw_name'], 'file_id' => $file_id);
             echo json_encode($result);
+        }
+    }
+    
+    
+    
+    
+    public function updateAudioModalDetails() {
+
+        if (!empty($this->input->post('audio_file_id'))) {
+
+            $audio_file_id=$this->input->post('audio_file_id');
+            $audio['name']=$this->input->post('audio_file_name');
+            $audio['genre']=$this->input->post('audio_file_genre');
+            
+            $this->db->where('id', $this->input->post('audio_file_id'));
+            $this->db->update('tbl_paasport_audio', $audio);
+           
+            
+        }
+    }
+
+    public function updateVideoModalDetails() {
+
+        if (!empty($this->input->post('video_file_id'))) {
+
+            $video_file_id=$this->input->post('video_file_id');
+            $video['name']=$this->input->post('video_file_name');
+            $video['genre']=$this->input->post('video_file_genre');
+            
+            $this->db->where('id', $this->input->post('video_file_id'));
+            $this->db->update('tbl_paasport_video', $video);
+           
         }
     }
 

@@ -891,5 +891,10 @@ label.error {
     color: #ff0000;
 }
 
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
 
 /* Common css end */

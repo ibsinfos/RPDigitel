@@ -3173,12 +3173,13 @@
 		
 		
 		public function getaudiolist($slug){
-			
+			//echo $slug.'dd';
+                     
 			$data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
 			$this->load->model('common_model');
 			
-			
-			$data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, "id as track,name,encrypted_file_name as file,'1:21' as length");
+			//print_r($data['user']);
+			$data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, "id as track,name,encrypted_file_name as file,'1:21' as length",array('paasport_user_id' => $data['user'][0]['user_id']));
 			
 			echo json_encode($data['media_audio_list']);
 			
