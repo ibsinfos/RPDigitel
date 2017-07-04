@@ -66,7 +66,7 @@
                                                             <img src="<?php echo asset_url(); ?>backend/images/paasport/default-avatar.png" class="picture-src img-circle" id="wizardPicturePreview" title="" height="106"/>
                                                             <input type="file" id="wizard-picture" name="wizard-picture">
                                                         </div>
-                                                        <input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : '';     ?>" name="old_user_image">
+                                                        <input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : '';      ?>" name="old_user_image">
                                                         <h4 style="margin: 10px 0 15px;">Choose Picture</h4>
                                                     </div>
                                                 </div>
@@ -74,7 +74,7 @@
                                                     <label>Email
                                                         <small>(required)</small>
                                                     </label>
-                                                    <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';     ?>" name="id">
+                                                    <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';      ?>" name="id">
                                                     <input name="email" type="email" class="form-control" placeholder="eg. johndoe@website.com" value="<?php
                                                     if (!empty($user)) {
                                                         echo $user[0]['email'];
@@ -241,7 +241,7 @@
                                             <span class="input-group-addon facebook">
                                                 <i class="fa fa-facebook"></i>
                                             </span>
-                                            <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';     ?>" name="id">
+                                            <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';      ?>" name="id">
                                             <input id="facebook" name="facebook_url" type="text" class="form-control" placeholder="facebook id only" value="<?php
                                             if (!empty($user)) {
                                                 echo $user[0]['facebook_link'];
@@ -378,9 +378,9 @@
                                                     <form id="frmshortBioInfo">
                                                         <label for="editor1">Add About or Short Bio :</label>
                                                         <textarea id="editor1" class="editor" name="editor1" maxlength="160">
-                                                            <?php echo ($user_data[0]['short_bio']) ? $user_data[0]['short_bio'] : ''; ?>
+                                                            <?php if(!empty($user_data)){echo ($user_data[0]['short_bio']) ? $user_data[0]['short_bio'] : '';} ?>
                                                         </textarea>
-                                                        <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';     ?>" name="id">
+                                                        <input type="hidden" value="<?php //echo ($user_data[0]['id']) ? $user_data[0]['id'] : '';      ?>" name="id">
                                                         <div class="text-center">
                                                             <button type="button" id="shortBioSubmit" name="shortBioSubmit"  class="btn btnRed btn-lg">Save</button>
                                                         </div>
@@ -968,7 +968,7 @@
 
                                             <div class="col-xs-12 col-sm-3">
                                                 <div class="panel panel-default ">
-                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_modal_details()"></i>
+                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>')"></i>
                                                     <i class="fa fa-music fa-2x"></i>
                                                     <h5><?php
                                                         if ($audio['name'] != "") {
@@ -986,49 +986,7 @@
                                             </div>
 
                                         <?php } ?>
-                                        <!--
-                                        <div class="col-xs-12 col-sm-3">
-                                            <div class="panel panel-default">
-                                                <i class="fa fa-music fa-2x"></i>
-                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
-                                                <audio controls>
-                                                    <source src="<?php //echo base_url();   ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
-                                                    Your browser does not support the audio tag.
-                                                </audio>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <div class="panel panel-default">
-                                                <i class="fa fa-music fa-2x"></i>
-                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
-                                                <audio controls>
-                                                    <source src="<?php //echo base_url();   ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
-                                                    Your browser does not support the audio tag.
-                                                </audio>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <div class="panel panel-default">
-                                                <i class="fa fa-music fa-2x"></i>
-                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
-                                                <audio controls>
-                                                    <source src="<?php //echo base_url();   ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
-                                                    Your browser does not support the audio tag.
-                                                </audio>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <div class="panel panel-default">
-                                                <i class="fa fa-music fa-2x"></i>
-                                                <h5>Chadta_Suraj_Dheere_Dheere</h5>
-                                                <audio controls>
-                                                    <source src="<?php //echo base_url();   ?>uploads/40/SiloSd/Music/Chadta_Suraj_Dheere_Dheere_(Qawwali)-(DJmaza.co).mp3" type="audio/mpeg">
-                                                    Your browser does not support the audio tag.
-                                                </audio>
-                                            </div>
-                                        </div>
-                                        
-                                        -->
+
                                     </div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="videoTab">
@@ -1054,7 +1012,7 @@
 
                                             <div class="col-xs-12 col-sm-3">
                                                 <div class="panel panel-default">
-                                                     <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateVideoModal"></i>
+                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateVideoModal" onclick="update_video_modal_details('<?php echo $video['id']; ?>')"></i>
                                                     <i class="fa fa-film fa-2x"></i>
                                                     <h5><?php
                                                         if ($video['name'] != "") {
@@ -1079,7 +1037,7 @@
                                                  <i class="fa fa-film fa-2x"></i>
                                                  <h5>Chadta_Suraj_Dheere_Dheere</h5>
                                                  <div class="panel-footer">
-                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';  ?>" class="videoPopupLink">
+                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';   ?>" class="videoPopupLink">
                                                          <i class="fa fa-play-circle fa-3x"></i>
                                                      </a>
                                                  </div>
@@ -1090,7 +1048,7 @@
                                                  <i class="fa fa-film fa-2x"></i>
                                                  <h5>Chadta_Suraj_Dheere_Dheere</h5>
                                                  <div class="panel-footer">
-                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';  ?>" class="videoPopupLink">
+                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';   ?>" class="videoPopupLink">
                                                          <i class="fa fa-play-circle fa-3x"></i>
                                                      </a>
                                                  </div>
@@ -1101,7 +1059,7 @@
                                                  <i class="fa fa-film fa-2x"></i>
                                                  <h5>Chadta_Suraj_Dheere_Dheere</h5>
                                                  <div class="panel-footer">
-                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';  ?>" class="videoPopupLink">
+                                                     <a href="javascript:void(0)" rel="<?php //echo base_url().'uploads/40/SiloSd/Recording/RECORDING_20170620_191650_-794896059.mp4';   ?>" class="videoPopupLink">
                                                          <i class="fa fa-play-circle fa-3x"></i>
                                                      </a>
                                                  </div>
@@ -1113,7 +1071,7 @@
                             </div>
                         </div>
                         <!-- GALLERY TAB START -->
-                        <div role="tabpanel" class="tab-pane" id="galleryTab">
+                        <div role="tabpanel" class="tab-pane container" id="galleryTab">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h3 class="heading"> Add Gallery Files</h3>
@@ -1135,56 +1093,24 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <!--
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3 col-md-2">
-                                    <div class="panel panel-default">
-                                        <img src="<?php //echo base_url();   ?>uploads/40/SiloSd/download.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                -->
+                              
                                 <?php
                                 $count_gallary = 1;
                                 foreach ($gallary_list as $gallary) {
                                     ?>
 
                                     <div class="col-xs-6 col-sm-3 col-md-2">
-                                        <div class="panel panel-default">
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="<?php echo base_url() . $gallary['file_path']; ?>" class="img-responsive">
+                                            <div class="panel panel-default">
                                             <img src="<?php echo base_url() . $gallary['file_path']; ?>" class="img-responsive">
                                         </div>
+                                        </a>
                                     </div>
 
                                 <?php } ?>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -1192,6 +1118,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
 
 <!-- Modal -->
 <div id="popupBg"></div>
@@ -1654,22 +1585,22 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="updateAudioModalLabel">Update Audio Details</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body audio-modal-body">
                 <div class="form-group">
                     <label>Name </label>
-                    <input type="text" name="file_name" id="file_name" class="form-control">
-                    <input type="text" name="audio_file_id" id="audio_file_id" class="form-control">
+                    <input type="text" name="audio_file_name" id="audio_file_name" class="form-control">
+                    <input type="hidden" name="audio_file_id" id="audio_file_id" class="form-control">
 
                 </div>
 
                 <div class="form-group">
                     <label>Genre</label>
-                    <input type="text" name="file_genre" id="file_genre" class="form-control">
+                    <input type="text" name="audio_file_genre" id="audio_file_genre" class="form-control">
 
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnRed">Update</button>
+                <button type="submit" class="btn btnRed" id="updateAudioModalDetails">Update</button>
                 <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1711,22 +1642,22 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="updateVideoModalLabel">Update Video Details</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body video-modal-body">
                 <div class="form-group">
                     <label>Name </label>
-                    <input type="text" name="file_name" id="file_name" class="form-control">
-                    <input type="text" name="video_file_id" id="video_file_id" class="form-control">
+                    <input type="text" name="video_file_name" id="video_file_name" class="form-control">
+                    <input type="hidden" name="video_file_id" id="video_file_id" class="form-control">
 
                 </div>
 
                 <div class="form-group">
                     <label>Genre</label>
-                    <input type="text" name="file_genre" id="file_genre" class="form-control">
+                    <input type="text" name="video_file_genre" id="video_file_genre" class="form-control">
 
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnRed">Update</button>
+                <button type="submit" class="btn btnRed" id="updateVideoModalDetails">Update</button>
                 <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1802,5 +1733,7 @@
     var uploadAudioFilesURL = "<?php echo base_url() ?>backend/paasport/uploadAudioFiles";
     var uploadVideoFilesURL = "<?php echo base_url() ?>backend/paasport/uploadVideoFiles";
     var uploadGalleryFilesURL = "<?php echo base_url() ?>backend/paasport/uploadGalleryFiles";
+    var updateAudioModalDetailsURL = "<?php echo base_url() ?>backend/paasport/updateAudioModalDetails";
+    var updateVideoModalDetailsURL = "<?php echo base_url() ?>backend/paasport/updateVideoModalDetails";
 
 </script>

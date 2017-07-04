@@ -93,7 +93,7 @@ $(document).ready(function () {
     // end
 
 
-Dropzone.autoDiscover = false;
+    Dropzone.autoDiscover = false;
     if ($("#uploadAudioFiles").length) {
 //    $("#uploadAudio").click(function(event){
         $('#uploadAudioFiles').dropzone({
@@ -107,7 +107,7 @@ Dropzone.autoDiscover = false;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -120,7 +120,7 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
             }
 
 
@@ -129,15 +129,15 @@ Dropzone.autoDiscover = false;
 //    });
 
 
-    $("#uploadAudio").click(function(event){
- $('#uploadAudioFiles').get(0).dropzone.processQueue();
+    $("#uploadAudio").click(function (event) {
+        $('#uploadAudioFiles').get(0).dropzone.processQueue();
     });
 
 
 
     if ($("#uploadVideoFiles").length) {
         $('#uploadVideoFiles').dropzone({
-            
+
             url: uploadVideoFilesURL,
             addRemoveLinks: true,
             maxFilesize: 50,
@@ -147,7 +147,7 @@ Dropzone.autoDiscover = false;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -160,7 +160,7 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
             }
 
 
@@ -169,17 +169,17 @@ Dropzone.autoDiscover = false;
 
     if ($("#uploadGalleryFiles").length) {
         $('#uploadGalleryFiles').dropzone({
-            
+
             url: uploadGalleryFilesURL,
             addRemoveLinks: true,
             maxFilesize: 25,
-            //acceptedFiles: "mp3/image/jpeg,image/png",
+            acceptedFiles: "image/jpeg,image/png",
             success: function (file, response) {
                 //file_row_count++;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -192,7 +192,7 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
             }
 
 
@@ -203,11 +203,59 @@ Dropzone.autoDiscover = false;
 
     //$("#basicInfo").validate();
     validateBasicInformation();
-    
-    
-    
-    
+
+
+    $("#updateAudioModalDetails").click(function () {
+
+        $.ajax({
+            url: updateAudioModalDetailsURL,
+            type: "POST",
+            data: {audio_file_id: $(".audio-modal-body #audio_file_id").val(), audio_file_name: $(".audio-modal-body #audio_file_name").val(), audio_file_genre: $(".audio-modal-body #audio_file_genre").val()},
+            success: function (response) {
+//        alert(response);
+                $('#updateAudioModal').modal('hide');
+
+            }
+        });
+
+    });
+
+
+    $("#updateVideoModalDetails").click(function () {
+        $.ajax({
+            url: updateVideoModalDetailsURL,
+            type: "POST",
+            data: {video_file_id: $(".video-modal-body #video_file_id").val(), video_file_name: $(".video-modal-body #video_file_name").val(), video_file_genre: $(".video-modal-body #video_file_genre").val()},
+            success: function (response) {
+                $('#updateVideoModal').modal('hide');
+            }
+        });
+    });
+
+
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+
 });
+
+
+
+
+function update_audio_modal_details(audio_id) {
+    $(".audio-modal-body #audio_file_id").val(audio_id);
+    $(".audio-modal-body #audio_file_name").val('');
+    $(".audio-modal-body #audio_file_genre").val('');
+}
+
+
+function update_video_modal_details(video_id) {
+    $(".video-modal-body #video_file_id").val(video_id);
+    $(".video-modal-body #video_file_name").val('');
+    $(".video-modal-body #video_file_genre").val('');
+}
+
 
 function readURL(input) {
     if (input.files && input.files[0]) {
