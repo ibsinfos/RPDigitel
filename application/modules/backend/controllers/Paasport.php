@@ -1165,7 +1165,7 @@ class Paasport extends CI_Controller {
                             $data = array('upload_data' => $this->upload->data());
                         }
 
-                        $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+                        $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
                         $user['user_id'] = $this->session->userdata('paasport_user_id');
                         $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1222,7 +1222,7 @@ class Paasport extends CI_Controller {
                 $data = array('upload_data' => $this->upload->data());
             }
 
-            $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
+            $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
 
             $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN, $user, array('id' => $this->input->post('pricing_id')));
             if ($ins_experience) {
@@ -1727,7 +1727,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                    $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1784,7 +1784,7 @@ class Paasport extends CI_Controller {
                     $data = array('upload_data' => $this->upload->data());
                 }
 
-                $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
+                $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
                 $user['user_id'] = $this->session->userdata('paasport_user_id');
                 $user['vcard_id'] = $this->session->userdata('vcard_id');
 

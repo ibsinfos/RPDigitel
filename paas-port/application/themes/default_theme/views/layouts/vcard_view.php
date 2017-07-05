@@ -162,13 +162,15 @@ function update_video_modal_details(video_id,name,genere) {
                             // }
                             //**********************************************************************************
                             var supportsAudio = !!document.createElement('audio').canPlayType;
+							var audio_user_id="<?php echo $membership[0]['user_id']; ?>";
+							alert(audio_user_id);
                             if (supportsAudio) {
                                 // alert(response);
 
                                 var index = 0,
                                         playing = false,
                                         // mediaPath = 'https://archive.org/download/mythium/',
-                                        mediaPath = 'http://localhost/RPDigitel/paas-port/uploads/media/audio/40/',
+                                        mediaPath = "http://54.212.235.115/RPDigitel/paas-port/uploads/media/audio/"+audio_user_id+"/",
                                         extension = '',
                                         // tracks = [{
                                         // "track": 1,
