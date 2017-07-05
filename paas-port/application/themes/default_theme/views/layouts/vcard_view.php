@@ -163,7 +163,7 @@ function update_video_modal_details(video_id,name,genere) {
                             //**********************************************************************************
                             var supportsAudio = !!document.createElement('audio').canPlayType;
 							var audio_user_id="<?php echo $membership[0]['user_id']; ?>";
-							alert(audio_user_id);
+							//alert(audio_user_id);
                             if (supportsAudio) {
                                 // alert(response);
 
