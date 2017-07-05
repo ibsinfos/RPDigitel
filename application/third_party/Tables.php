@@ -42,6 +42,9 @@ class Tables {
     public static $CONTACTED_USERS = 'tbl_contacted_users';
     public static $VIDEO_DETAILS = 'tbl_video';
     public static $PORTFOLIO_DETAILS = 'tbl_portfolio';
+    public static $PAASPORT_AUDIO = 'tbl_paasport_audio';
+    public static $PAASPORT_VIDEO = 'tbl_paasport_video';
+    public static $PAASPORT_GALLARY = 'tbl_paasport_gallary';
     public static $VCARD_COMPANY_DETAILS = 'tbl_company_details';
     public static $USER_MAP = 'tbl_user_map';
     public static $NEWS = 'tbl_news';

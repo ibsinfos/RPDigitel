@@ -1,11 +1,5 @@
-<div class="container-fluid">
-    <div class="row loginPageWrap">
-        <button type="button" class="hamburgerIcon">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+<div class="container-fluid loginPageWrap">
+    <div class="row mainRow">
         <div class="col-sm-6 col-md-7 redBgCol">
             <a href="" class="logoWrap">
                 <img src="<?php echo asset_url(); ?>images/logodigitellg.png" class="img-responsive" alt="logodigitellg">
@@ -13,6 +7,12 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-5 whiteBGCol">
+            <button type="button" class="hamburgerIcon">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <ul class="list-unstyled list-inline socialIconWrap">
                 <li>
                     <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -98,7 +98,7 @@
                     </a>
                 </li>
                 <li class="text-center">
-                    <a href=""><i class="fa fa-times"></i></a>
+                    <a href="" class="closeBtn"><i class="fa fa-times"></i></a>
                 </li>
             </ul>
         </div>

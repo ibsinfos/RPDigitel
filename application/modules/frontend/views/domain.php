@@ -23,7 +23,7 @@
                         <div class="form-group">
                     <input type="text" class="form-control" id="domain_name" id="domain_name" value="" placeholder="Enter your domain name here....">
                   </div>
-                  <button type="button" class="btn btn-default">Have a Promo Code ?</button>
+                  <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
                   <!--<button type="submit" name="btn_submit" id="btn_submit" class="btn btnRed">SEARCH DOMAIN</button>-->
                   <input type="button" name="btns_submit_domain" id="btns_submit_domain" class="btn btnRed" value="SEARCH DOMAIN" />
                 </form>
@@ -259,10 +259,14 @@
 
 $('#btns_submit_domain').click(function() { 
                     var domain_name = $('#domain_name').val(); 
-                    var base_url=$('#base_url').val();
-                    var url = base_url+'domains-results-main/'+domain_name;
-                    //window.location(url);
-                    window.location=""+url;
+                    if(domain_name != ''){
+                        var base_url=$('#base_url').val();
+                        var url = base_url+'domains-results-main/'+domain_name;
+                        //window.location(url);
+                        window.location=""+url;
+                    }else{
+                        alert('Please enter domain name');
+                    }
                    
                 });
 

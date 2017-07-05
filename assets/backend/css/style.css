@@ -266,6 +266,7 @@
     text-align: center;
     padding-top: 40px;
 }
+
 /*.createPaasportWrap .mediaTabContentWrap .panel:before {
     content: "\f01d";
     font: normal normal normal 14px/1 FontAwesome;
@@ -284,6 +285,12 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .fa-ellipsis-h {
+	position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
 }
 .createPaasportWrap .mediaTabContentWrap .panel h5 {
     padding: 0 5px;
@@ -883,4 +890,6 @@
 label.error {
     color: #ff0000;
 }
+
+
 /* Common css end */
