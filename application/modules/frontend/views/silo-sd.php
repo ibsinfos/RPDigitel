@@ -146,7 +146,7 @@
             <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/datasecurityonredkeyboard.jpg" class="center-block img-responsive">
         </div>
         <div class="col-sm-6 noPadding">
-            <div class="contentBox">
+            <div class="contentBox mCustomScrollbar">
                 <p>The SiloSd micro SDCG (Secured Data Cloud Gate) cards offer an easy, affordable way to expand your mobile device's on-board memory. Available in native 8GB to 32GB, these cards give you additional storage space for your favorite photos, music and even HD videos by uniquly optimizing stored data from your mobile device to the cloud.</p>
                 <p>SiloSD micro SDCG cards are new to the landscape of expanded RAM cards due to its patent pending capabilities that extends storage and runtime activities of your mobile device to the Silo Cloud, where your moments and memories are stored and accessible from any network enabled device when you need it.</p>
                 <p>SiloSD goes a step further with its embedded solution that conditions and optimizes your mobile device by removing damaging cache from your phones internal memory and compressing it in a security auxiliary silo for restoration or future backup.</p>
@@ -166,10 +166,10 @@
 <section class="siloSDStorageWrap">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-4">
                 <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/scandisc4-crop-u21139.png" class="img-responsive center-block">
             </div>
-            <div class="col-sm-4 col-sm-offset-5 text-right">
+            <div class="col-sm-6 col-md-5 col-md-offset-3 text-right">
                 <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/frame.png" class="cardImg">
                 <ul class="list-unstyled list-inline">
                     <li class="redText">32GB</li>
@@ -487,15 +487,15 @@
 <section class="siloSDStartup">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-md-3">
                 <img src="<?php echo asset_url(); ?>frontend/images/fiberrails-main.png" class="img-responsive">
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-9 col-md-3">
                 <h4 class="startUpText">For START UPs</h4>
                 <h4 class="pricePerMonth"><span>Only</span> <strong>$79/mo</strong></h4>
                 <p class="packageIncludes">Everything in our Premium Package, Plus a high performance server. Domain Policy</p>
             </div>
-            <div class="col-sm-3 infoCol">
+            <div class="col-sm-6 col-md-3 infoCol">
                 <p>
                     Dedicated IP<br>
                     SSL Certificate<br>
@@ -508,7 +508,7 @@
                 </p>
                 <p>ERP/CRM Rails Platform</p>
             </div>
-            <div class="col-sm-3 redBgCol">
+            <div class="col-sm-6 col-md-3 redBgCol">
                 <ul class="list-unstyled">
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secured Domain</li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secured Hosting</li>

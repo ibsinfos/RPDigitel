@@ -546,26 +546,27 @@ html, body,
 .mainDashboardServices {
   padding: 20px 0;
 }
-.mainDashboardServices .panel {
-  min-height: 315px;
+.servicesPanelWrap .panel {
+  min-height: 335px;
 }
-.mainDashboardServices .websuitImgBox {
+.servicesPanelWrap .websuitImgBox {
   padding: 20px 0;
 }
-.mainDashboardServices .passportImgBox {
+.servicesPanelWrap .passportImgBox {
   padding: 31px 0;
 }
-.mainDashboardServices .siloSDImgBox {
+.servicesPanelWrap .siloSDImgBox {
   padding: 25px 0;
 }
-.mainDashboardServices .scandiscImgBox {
+.servicesPanelWrap .scandiscImgBox {
   padding: 44px 0;
 }
-.mainDashboardServices .panel-body .heading {
+.servicesPanelWrap .panel-body .heading {
   font-weight: 600;
 }
-.mainDashboardServices .panel-body .description {
+.servicesPanelWrap .panel-body .description {
   margin-bottom: 20px;
+  min-height: 100px;
 }
 /* Main Dashboard css end */ 
 
@@ -1010,7 +1011,7 @@ html, body,
   margin-top: 15px;
 }
 .siloSDPlatform {
-
+  margin: 0;
 }
 .sdDataSecurity {
   background-color: #8c8c8c;
@@ -1123,6 +1124,175 @@ html, body,
 }
 
 /* Silo SD page css end */
+
+/* Fiberrails page css start */
+.fiberRailsMainWrap {
+  margin: 0;
+}
+.fiberRailsMainWrap .heroSection .carousel .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide1 {
+  background-image: url('../images/silo-sd/bg.jpg');
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide2 {
+  background-image: url('../images/silo-sd/datasecurityonredkeyboard.jpg');
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide3 {
+  background-image: url('../images/fiberrails/black-keyboards.jpg');
+} 
+.fiberRailsMainWrap .toolsFormSection {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+.fiberRailsMainWrap .toolsFormSection .heading {
+  font-size: 20px;
+}
+.fiberRailsMainWrap .deviceSection {
+  padding-top: 20px;
+  position: relative;
+}
+.fiberRailsMainWrap .deviceSection .btn-group {
+  width: 50%;
+  bottom: 135px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 6px 5px #9f9f9f;
+  -moz-box-shadow: 5px 6px 5px #9f9f9f;
+  -o-box-shadow: 5px 6px 5px #9f9f9f;
+  box-shadow: 5px 6px 5px #9f9f9f;
+}
+.fiberRailsMainWrap .deviceSection .btn-group .btn {
+  width: 50%;
+}
+.fiberRailsMainWrap .domainSearchSection {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+.fiberRailsMainWrap .domainSearchSection .well {
+  background-color: #8e8e8e;
+  margin: 0;
+  color: #ffffff;
+}
+.fiberRailsMainWrap .domainSearchSection .siliRailImg {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px transparent;
+  border-radius: 7px;
+}
+.fiberRailsMainWrap .servicesSection {
+  padding: 50px 0;
+}
+.fiberRailsMainWrap .servicesSection .stillQue {
+  color:#8c8c8c;
+  font-weight: 700;
+}  
+.fiberRailsMainWrap .integrationSection {
+  background-color: #8e8e8e;
+  position: relative;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.fiberRailsMainWrap .integrationSection .scandiscLogoWrap {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #8e8e8e;
+  border-radius: 15px 15px 0 0;
+  padding: 3px 10px;
+  display: block;
+  width: 220px;
+  text-align: center;
+}
+.fiberRailsMainWrap .integrationSection .heading {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.fiberRailsMainWrap .introSection {
+  background: url('../images/fiberrails/women-business.jpg') no-repeat center center/cover;
+  padding: 30px 0 100px;
+}
+.fiberRailsMainWrap .introSection .features {
+  margin: 15px 0;
+  font-size: 16px;
+}
+.fiberRailsMainWrap .introSection .features>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .introSection .features>li i {
+  margin-right: 10px;
+}
+.fiberRailsMainWrap .productHostSection {
+  background-color: #ff0000;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 20px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff0000;
+  top: -45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 45px;
+  text-align: center;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap .price {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap sup {
+  font-size: 48px;
+  top: -12px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap small {
+  font-size: 8px;
+}
+.fiberRailsMainWrap .productHostSection .heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.fiberRailsMainWrap .productHostSection .typoList>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .productHostSection .typoList>li:before {
+  background-color: #fff;
+}
+.fiberRailsMainWrap .productHostSection .secureImg {
+  width: 100px;
+  margin: 25px 0 0 42px;
+}
+.fiberRailsMainWrap .eRetailerSection {
+  padding: 30px 0;
+  font-size: 12px;
+}
+.fiberRailsMainWrap .webSolutionSection {
+  background-color: #7a7a7a;
+  padding: 50px 0;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 14px;
+}
+.fiberRailsMainWrap .webSolutionSection ul>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .webSolutionSection ul>li>a {
+  color: #FFFFFF;
+}
+/* Fiberrails page css end */
 
 /* Domain page css start */
 .takeYourBusiness .heading {
@@ -1531,14 +1701,53 @@ ol.lowerRoman {
     padding: 10px 25px;
   }
   /* Subscription css end */
+
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 120px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 320px;
+  }
+  .siloSDStartup .startUpText {
+    font-size: 36px;
+  }
+  .siloSDStartup .pricePerMonth {
+    font-size: 32px;
+  }
+  .siloSDStartup .redBgCol:before {
+    border-left-width: 125px;
+    width: 320px;
+  }
+  /* Silo SD css end */
   
 }
 @media (max-width: 1024px) {
-	
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 110px;
+  }
+  .siloSDFreeTrial .deviceStorage h2 {
+    font-size: 24px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 296px;
+  }
+	/* Silo SD css end */
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-
- 
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Silo SD css start */
+  .siloSDStartup .startUpText {
+    font-size: 30px;
+  }
+  .siloSDStartup .pricePerMonth {
+    font-size: 30px;
+  }
+  .siloSDStartup .redBgCol:before {
+    border-left-width: 135px;
+    width: 325px;
+  }
+  /* Silo SD css end */
 }
 @media (max-width: 992px) {
   /* Home css start */
@@ -1580,6 +1789,15 @@ ol.lowerRoman {
     width: 250px;
   }
   /* Domain css end */
+
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 89px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 215px;
+  }
+  /* Silo SD css end */
 }
 @media (min-width: 992px) {
   /* Login css start */
@@ -1620,7 +1838,30 @@ ol.lowerRoman {
     min-height: 1024px;
   }
   /* Domain css end */
-	
+
+  /* Silo SD css start */
+	.webHostingPackages.siloSDPackagesWrap .panel {
+    min-height: 875px;
+  }
+  .siloSDLogoWrap ul>li {
+    padding: 0 5px;
+    width: 76px;
+  }
+  .siloSDLogoWrap ul>li img {
+    width: 100%;
+    height: auto;
+  }
+  .siloSDStartup .startUpText {
+    margin: 0;
+  }
+  .siloSDStartup .packageIncludes {
+    text-align: left;
+  }
+  .siloSDStartup .redBgCol ul {
+    margin: 0 auto;
+    width: 227px;
+  }
+  /* Silo SD css end */
 }
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav>li>a {
@@ -1820,4 +2061,38 @@ ol.lowerRoman {
   }
   /* Domain css end */
 
+  /* Silo SD css start */
+  .siloSDFreeTrial .deviceStorage .btn {
+    margin-top: 15px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 100%;
+  }
+  .siloSDStorageWrap ul>li {
+    padding: 5px 10px;
+  }
+  .webHostingPackages .heading {
+    font-size: 24px;
+  }
+  .siloSDStartup img {
+    width: 200px;
+  }
+  .siloSDLogoWrap ul>li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .siloSDStartup .startUpText {
+    font-size: 36px;
+    margin-left: 0;
+  }
+  .siloSDStartup .redBgCol {
+    background-color: #ed3237;
+  }
+  .siloSDStartup .redBgCol:before {
+    content: none;
+  }
+  .siloSDStartup .redBgCol ul {
+    padding-left: 30px;
+  }
+  /* Silo SD css end */
 }
