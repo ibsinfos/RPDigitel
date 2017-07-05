@@ -36,7 +36,7 @@
                                 
 								<img src="<?php echo $userImg; ?>" alt="" class="img-circle" width="35">
 								<?php //echo ucfirst($session_data['user_account']['username']);?>
-								<?php echo ($user[0]['first_name'])?$user[0]['first_name']:''; ?>
+                                                                <?php if(isset($user[0]['first_name'])){echo $user[0]['first_name'];}else{} ?>
 							</a>
 						</li>
 						<li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>">Profile</a></li>

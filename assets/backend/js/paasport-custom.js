@@ -101,7 +101,7 @@ $(document).ready(function () {
             url: uploadAudioFilesURL,
             addRemoveLinks: true,
             maxFilesize: 25,
-            //acceptedFiles: "mp3/image/jpeg,image/png",
+//            acceptedFiles: 'mp3|wav|ogg|wma',
             success: function (file, response) {
                 //file_row_count++;
                 var file_info = JSON.parse(response);
@@ -121,6 +121,7 @@ $(document).ready(function () {
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
                 alert(response);
+                
             }
 
 
@@ -243,17 +244,19 @@ $(document).ready(function () {
 
 
 
-function update_audio_modal_details(audio_id) {
+function update_audio_modal_details(audio_id,name,genere) {
     $(".audio-modal-body #audio_file_id").val(audio_id);
-    $(".audio-modal-body #audio_file_name").val('');
-    $(".audio-modal-body #audio_file_genre").val('');
+    $(".audio-modal-body #audio_file_name").val(name);
+    $(".audio-modal-body #audio_file_genre").val(genere);
 }
 
 
-function update_video_modal_details(video_id) {
+function update_video_modal_details(video_id,name,genere) {
     $(".video-modal-body #video_file_id").val(video_id);
-    $(".video-modal-body #video_file_name").val('');
-    $(".video-modal-body #video_file_genre").val('');
+    $(".video-modal-body #video_file_name").val(name);
+    $(".video-modal-body #video_file_genre").val(genere);
+    //$(".video-modal-body #video_file_name").val('');
+    //$(".video-modal-body #video_file_genre").val('');
 }
 
 

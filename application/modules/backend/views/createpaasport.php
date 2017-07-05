@@ -63,7 +63,11 @@
                                                 <div class="form-group">
                                                     <div class="pictureContainer">
                                                         <div class="picture">
-                                                            <img src="<?php echo asset_url(); ?>backend/images/paasport/default-avatar.png" class="picture-src img-circle" id="wizardPicturePreview" title="" height="106"/>
+                                                            <img src="<?php
+                                                    if (!empty($user)) {
+                                                        echo base_url().'paas-port/'.$user[0]['user_image'];
+                                                    }else{echo asset_url().'backend/images/paasport/default-avatar.png';}
+                                                    ?>" class="picture-src img-circle" id="wizardPicturePreview" title="" height="106"/>
                                                             <input type="file" id="wizard-picture" name="wizard-picture">
                                                         </div>
                                                         <input type="hidden" value="<?php //echo ($user_data[0]['user_image']) ? $user_data[0]['user_image'] : '';      ?>" name="old_user_image">
@@ -968,7 +972,7 @@
 
                                             <div class="col-xs-12 col-sm-3">
                                                 <div class="panel panel-default ">
-                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>')"></i>
+                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>','<?php echo $audio['name']; ?>','<?php echo $audio['genre']; ?>')"></i>
                                                     <i class="fa fa-music fa-2x"></i>
                                                     <h5><?php
                                                         if ($audio['name'] != "") {
@@ -1012,7 +1016,7 @@
 
                                             <div class="col-xs-12 col-sm-3">
                                                 <div class="panel panel-default">
-                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateVideoModal" onclick="update_video_modal_details('<?php echo $video['id']; ?>')"></i>
+                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateVideoModal" onclick="update_video_modal_details('<?php echo $video['id']; ?>','<?php echo $video['name']; ?>','<?php echo $video['genre']; ?>')"></i>
                                                     <i class="fa fa-film fa-2x"></i>
                                                     <h5><?php
                                                         if ($video['name'] != "") {

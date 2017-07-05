@@ -31,44 +31,42 @@ class Paasport extends CI_Controller {
     }
 
     public function createPaasport() {
-
+//print_r($this->session->all_userdata());
         $this->load->model('login_model');
         $user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
         $user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $_SESSION['paasport_user_id']), '', 1);
         $slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+//        print_r($user);
+        if (!empty($user)) {
 
-        if(!empty($user)){
-            
-        $this->session->set_userdata('vcard_id', $user[0]['id']);
+            $this->session->set_userdata('vcard_id', $user[0]['id']);
 
-        $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
+            $userdata = $this->common_model->getRecords(TABLES::$USERS, '*', array('id' => $this->session->userdata('paasport_user_id')));
 
-        $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'id' => $this->session->userdata('vcard_id')));
-        $user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id')));
+            $userdata_paasport = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'id' => $this->session->userdata('vcard_id')));
+            $user_company = $this->common_model->getRecords(TABLES::$VCARD_COMPANY_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id')));
 
-        //To get User Experience, Education Details        
-        $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_skills = $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_priceplan = $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            //To get User Experience, Education Details        
+            $user_experience_data = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_education_data = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_skills = $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_priceplan = $this->common_model->getRecords(TABLES::$PRICE_PLAN, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
 
-        $user_list = $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_link = $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_video_url = $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_portfolio = $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $media_audio_list = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $media_video_list = $this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $gallary_list = $this->common_model->getRecords(TABLES::$PAASPORT_GALLARY, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-        $user_blog = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
-       
-        }else{
-            
-        $userdata =$userdata_paasport =$user_company =$user_experience_data =$user_education_data = $user_skills =array();
-        $user_priceplan =$user_list = $user_link = $user_video_url = $user_portfolio = array();
-        $media_audio_list = $media_video_list =$gallary_list = $user_blog =array();
-        
+            $user_list = $this->common_model->getRecords(TABLES::$LIST_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_link = $this->common_model->getRecords(TABLES::$LINK_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_video_url = $this->common_model->getRecords(TABLES::$VIDEO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_portfolio = $this->common_model->getRecords(TABLES::$PORTFOLIO_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $media_audio_list = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $media_video_list = $this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $gallary_list = $this->common_model->getRecords(TABLES::$PAASPORT_GALLARY, '*', array('paasport_user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+            $user_blog = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $this->session->userdata('paasport_user_id'), 'vcard_id' => $this->session->userdata('vcard_id')));
+        } else {
+
+            $userdata = $userdata_paasport = $user_company = $user_experience_data = $user_education_data = $user_skills = array();
+            $user_priceplan = $user_list = $user_link = $user_video_url = $user_portfolio = array();
+            $media_audio_list = $media_video_list = $gallary_list = $user_blog = array();
         }
-        
+
         $this->template->set('user_blog', $user_blog);
 
         $this->template->set('user_data', $userdata_paasport);
@@ -260,7 +258,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['user_image'] = "paas-port/uploads/users/" . $data['upload_data']['file_name'];
+                $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -287,7 +285,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['cover_image'] = "paas-port/uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -318,10 +316,21 @@ class Paasport extends CI_Controller {
 
             $user['slug'] = $slug;
             // create slug
-            $uid = $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
+
+            $is_already_exists = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, 'id', array('user_id' => $this->session->userdata('paasport_user_id')), 'id asc', 1);
+
+            //print_r($is_already_exists);
+            if (empty($is_already_exists)) {
+                $vcard_basic_id= $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
+            } else {
+                $vcard_basic_id= $is_already_exists[0]['id'];
+                $update_vcard_basic= $this->common_model->updateRow(TABLES::$VCARD_BASIC_DETAILS, $user, array('user_id' => $this->session->userdata('paasport_user_id'),'id'=>$vcard_basic_id));
+            }
+
             $paasport_status_update = $this->common_model->updateRow('membership', array('paasport_complete_status' => '1'), array('user_id' => $this->session->userdata('user_id')));
-            if ($uid) {
-                $this->session->set_userdata('vcard_id', $uid);
+            
+            if ($vcard_basic_id) {
+                $this->session->set_userdata('vcard_id', $vcard_basic_id);
                 $map ['status'] = 1;
                 $map ['msg'] = "Basic Information has been saved";
                 echo json_encode($map);
@@ -1156,7 +1165,7 @@ class Paasport extends CI_Controller {
                             $data = array('upload_data' => $this->upload->data());
                         }
 
-                        $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
+                        $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
                         $user['user_id'] = $this->session->userdata('paasport_user_id');
                         $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1213,7 +1222,7 @@ class Paasport extends CI_Controller {
                 $data = array('upload_data' => $this->upload->data());
             }
 
-            $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
+            $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
 
             $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN, $user, array('id' => $this->input->post('pricing_id')));
             if ($ins_experience) {
@@ -1718,7 +1727,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
+                    $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1775,7 +1784,7 @@ class Paasport extends CI_Controller {
                     $data = array('upload_data' => $this->upload->data());
                 }
 
-                $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
+                $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
                 $user['user_id'] = $this->session->userdata('paasport_user_id');
                 $user['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -1999,7 +2008,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['user_image'] = "paas-port/uploads/users/" . $data['upload_data']['file_name'];
+                $user['user_image'] = "uploads/users/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -2026,7 +2035,7 @@ class Paasport extends CI_Controller {
                   if (file_exists($filename)) {
                   unlink($filename);
                   } */
-                $user['cover_image'] = "paas-port/uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "uploads/silo_scan_disc/" . $data['upload_data']['file_name'];
             } else {
                 // $user['user_image'] = $this->input->post('user_image_old');
             }
@@ -2540,7 +2549,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
+                    $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2594,7 +2603,7 @@ class Paasport extends CI_Controller {
                 $data = array('upload_data' => $this->upload->data());
             }
 
-            $user['plan_image'] = "paas-port/uploads/price_plan/" . $data['upload_data']['file_name'];
+            $user['plan_image'] = "uploads/price_plan/" . $data['upload_data']['file_name'];
             $user['vcard_id'] = $this->input->post('vcard_id');
 
             $ins_experience = $this->common_model->updateRow(TABLES::$PRICE_PLAN, $user, array('id' => $this->input->post('pricing_id')));
@@ -2722,7 +2731,7 @@ class Paasport extends CI_Controller {
                         $data = array('upload_data' => $this->upload->data());
                     }
 
-                    $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
+                    $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
                     $user['user_id'] = $this->session->userdata('paasport_user_id');
                     $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2779,7 +2788,7 @@ class Paasport extends CI_Controller {
                     $data = array('upload_data' => $this->upload->data());
                 }
 
-                $user['image'] = "paas-port/uploads/portfolio/" . $data['upload_data']['file_name'];
+                $user['image'] = "uploads/portfolio/" . $data['upload_data']['file_name'];
                 $user['user_id'] = $this->session->userdata('paasport_user_id');
                 $user['vcard_id'] = $this->input->post('vcard_id');
 
@@ -2950,7 +2959,7 @@ class Paasport extends CI_Controller {
                     } else {
                         $data = array('upload_data' => $this->upload->data());
                     }
-                    $user['cover_image'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
+                    $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
                 }
                 if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) {
                     $config = array();
@@ -2972,7 +2981,7 @@ class Paasport extends CI_Controller {
                     } else {
                         $data = array('upload_data' => $this->upload->data());
                     }
-                    $user['video'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
+                    $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
                 }
                 if (!empty($this->input->post('txtblogvideourl'))) {
                     $user['video_url'] = $this->input->post('txtblogvideourl');
@@ -3002,9 +3011,6 @@ class Paasport extends CI_Controller {
         exit;
     }
 
-    
-    
-    
     public function updateBloginfo() {
         //echo '<pre>'; print_r($_FILES);   echo '<pre>'; print_r($_POST);      exit;
         $this->load->helper('utility_helper');
@@ -3083,7 +3089,7 @@ class Paasport extends CI_Controller {
                 } else {
                     $data = array('upload_data' => $this->upload->data());
                 }
-                $user['cover_image'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
+                $user['cover_image'] = "uploads/blogs/" . $data['upload_data']['file_name'];
             }
             if (isset($_FILES['bloguploadvideo']) && !empty($_FILES['bloguploadvideo']['name'])) {
                 $config = array();
@@ -3105,7 +3111,7 @@ class Paasport extends CI_Controller {
                 } else {
                     $data = array('upload_data' => $this->upload->data());
                 }
-                $user['video'] = "paas-port/uploads/blogs/" . $data['upload_data']['file_name'];
+                $user['video'] = "uploads/blogs/" . $data['upload_data']['file_name'];
             }
             if (!empty($this->input->post('txtblogvideourl'))) {
                 $user['video_url'] = $this->input->post('txtblogvideourl');
@@ -3264,79 +3270,77 @@ class Paasport extends CI_Controller {
 
         $this->load->view('vcard_detail_view_main', $data);
     }
-    
-    
-    
-    
+
     //To Upload Media-Audio   
-    
-		public function uploadMediaAudio() {
-			
-			if (!empty($_FILES['file']['name'])) {
-				
-				$audio_file = time() . $_FILES["file"]['name'];
-				$audio_file= str_replace(" ", "_", $audio_file);
-				$audio_file= str_replace("#", "", $audio_file);
-				$audio_file= str_replace("-", "", $audio_file);
-				$audio_file= str_replace("(", "", $audio_file);
-				$audio_file= str_replace(")", "", $audio_file);
-				
-				
-				
-				
-				$user_id=$this->session->userdata('user_id');
-				$upload_path='./paas-port/uploads/media/audio/'.$user_id;
-				
-				if (!is_dir($upload_path)) {
-					mkdir('./uploads/silo_publisher_application/'.$user_id, 0777, TRUE);
-				}
-				
-				
-				$config['file_name'] = $_FILES["file"]['name'];
-				// $config['upload_path'] = './uploads/projects/thumbnails/';
-				$config['upload_path'] = $upload_path;
-				$config['allowed_types'] = 'jpg|png|jpeg';
-				$config['max_size'] = '10000';
-				$config['max_width'] = '';
-				$config['max_height'] = '';
-				$config['overwrite'] = TRUE;
-				$config['remove_spaces'] = TRUE;
-				$this->load->library('upload', $config);
-				$this->upload->do_upload('file');
-				$upload_result = $this->upload->data();
-				
-				// print_r($upload_result);
-				
-				$files_path="./uploads/silo_publisher_application/".$user_id."/".$config['file_name'];
-				
-				$publisher_application_files_data['user_id']=$this->session->userdata('user_id');
-				$publisher_application_files_data['application_id']=$this->session->userdata('publisher_application_id');;
-				$publisher_application_files_data['file_path']=$files_path;
-				
-				$this->db->insert('tbl_publisher_application_files',$publisher_application_files_data);
-					$file_id=$this->db->insert_id();		
-				/*
-					$image_config = array(
-					'source_image' => $upload_result['full_path'],
-					// 'new_image' => "uploads/projects/thumbnails/260x146/",
-					'new_image' => "uploads/silo_publisher_application/thumbnails/260x146/",
-					'maintain_ratio' => false,
-					'width' => 260,
-					'height' => 146
-					);
-					$this->load->library('image_lib');
-					$this->image_lib->initialize($image_config);
-					$resize_rc = $this->image_lib->resize();
-					$this->image_lib->clear();
-				*/
-				
-				$ext=pathinfo($upload_result['file_name'], PATHINFO_EXTENSION);
-				
-				
-				$result=array('type'=>$ext,'file_name'=>$upload_result['file_name'],'raw_name'=>$upload_result['raw_name'],'file_id'=>$file_id);
-				echo json_encode($result);
-			}
-		}
+
+    public function uploadMediaAudio() {
+
+        if (!empty($_FILES['file']['name'])) {
+
+            $audio_file = time() . $_FILES["file"]['name'];
+            $audio_file = str_replace(" ", "_", $audio_file);
+            $audio_file = str_replace("#", "", $audio_file);
+            $audio_file = str_replace("-", "", $audio_file);
+            $audio_file = str_replace("(", "", $audio_file);
+            $audio_file = str_replace(")", "", $audio_file);
+
+
+
+
+            $user_id = $this->session->userdata('user_id');
+            $upload_path = './paas-port/uploads/media/audio/' . $user_id;
+
+            if (!is_dir($upload_path)) {
+                mkdir('./uploads/silo_publisher_application/' . $user_id, 0777, TRUE);
+            }
+
+
+            $config['file_name'] = $_FILES["file"]['name'];
+            // $config['upload_path'] = './uploads/projects/thumbnails/';
+            $config['upload_path'] = $upload_path;
+            $config['allowed_types'] = 'jpg|png|jpeg';
+            $config['max_size'] = '10000';
+            $config['max_width'] = '';
+            $config['max_height'] = '';
+            $config['overwrite'] = TRUE;
+            $config['remove_spaces'] = TRUE;
+            $this->load->library('upload', $config);
+            $this->upload->do_upload('file');
+            $upload_result = $this->upload->data();
+
+            // print_r($upload_result);
+
+            $files_path = "./uploads/silo_publisher_application/" . $user_id . "/" . $config['file_name'];
+
+            $publisher_application_files_data['user_id'] = $this->session->userdata('user_id');
+            $publisher_application_files_data['application_id'] = $this->session->userdata('publisher_application_id');
+            ;
+            $publisher_application_files_data['file_path'] = $files_path;
+
+            $this->db->insert('tbl_publisher_application_files', $publisher_application_files_data);
+            $file_id = $this->db->insert_id();
+            /*
+              $image_config = array(
+              'source_image' => $upload_result['full_path'],
+              // 'new_image' => "uploads/projects/thumbnails/260x146/",
+              'new_image' => "uploads/silo_publisher_application/thumbnails/260x146/",
+              'maintain_ratio' => false,
+              'width' => 260,
+              'height' => 146
+              );
+              $this->load->library('image_lib');
+              $this->image_lib->initialize($image_config);
+              $resize_rc = $this->image_lib->resize();
+              $this->image_lib->clear();
+             */
+
+            $ext = pathinfo($upload_result['file_name'], PATHINFO_EXTENSION);
+
+
+            $result = array('type' => $ext, 'file_name' => $upload_result['file_name'], 'raw_name' => $upload_result['raw_name'], 'file_id' => $file_id);
+            echo json_encode($result);
+        }
+    }
 
     public function uploadAudioFiles() {
 
@@ -3359,7 +3363,7 @@ class Paasport extends CI_Controller {
 
             $config['file_name'] = $audio_file;
             $config['upload_path'] = $upload_path;
-            $config['allowed_types'] = 'mp3|png|jpeg';
+            $config['allowed_types'] = 'mp3|wav|ogg|wma';
             $config['max_size'] = '10000';
             $config['max_width'] = '';
             $config['max_height'] = '';
@@ -3372,10 +3376,10 @@ class Paasport extends CI_Controller {
             $files_path = "paas-port/uploads/media/audio/" . $user_id . "/" . $config['file_name'];
 
             $media_audio_files_data['paasport_user_id'] = $this->session->userdata('paasport_user_id');
-            $media_audio_files_data['name'] =pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
+            $media_audio_files_data['name'] = pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
             $media_audio_files_data['file_path'] = $files_path;
             $media_audio_files_data['vcard_id'] = $this->session->userdata('vcard_id');
-            $media_audio_files_data['encrypted_file_name'] =$upload_result['raw_name'];
+            $media_audio_files_data['encrypted_file_name'] = $upload_result['raw_name'];
 
             $this->db->insert('tbl_paasport_audio', $media_audio_files_data);
             $file_id = $this->db->insert_id();
@@ -3433,12 +3437,12 @@ class Paasport extends CI_Controller {
             $files_path = "paas-port/uploads/media/video/" . $user_id . "/" . $config['file_name'];
 
             $media_video_files_data['paasport_user_id'] = $this->session->userdata('paasport_user_id');
-            $media_video_files_data['name'] =pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
+            $media_video_files_data['name'] = pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
             $media_video_files_data['file_path'] = $files_path;
             $media_video_files_data['vcard_id'] = $this->session->userdata('vcard_id');
             $media_video_files_data['encrypted_file_name'] = $upload_result['raw_name'];
 
-            
+
             $this->db->insert('tbl_paasport_video', $media_video_files_data);
             $file_id = $this->db->insert_id();
 
@@ -3467,7 +3471,7 @@ class Paasport extends CI_Controller {
                 mkdir('paas-port/uploads/gallary/' . $user_id, 0777, TRUE);
             }
 
-            $config['file_name'] =$gallary_file;
+            $config['file_name'] = $gallary_file;
             $config['upload_path'] = $upload_path;
             $config['allowed_types'] = 'jpg|png|jpeg';
             $config['max_size'] = '10000';
@@ -3482,7 +3486,7 @@ class Paasport extends CI_Controller {
             $files_path = "paas-port/uploads/gallary/" . $user_id . "/" . $config['file_name'];
 
             $gallary_files_data['paasport_user_id'] = $this->session->userdata('paasport_user_id');
-            $gallary_files_data['name'] =$_FILES["file"]['name'];
+            $gallary_files_data['name'] = $_FILES["file"]['name'];
             $gallary_files_data['file_path'] = $files_path;
             $gallary_files_data['vcard_id'] = $this->session->userdata('vcard_id');
 
@@ -3495,22 +3499,17 @@ class Paasport extends CI_Controller {
             echo json_encode($result);
         }
     }
-    
-    
-    
-    
+
     public function updateAudioModalDetails() {
 
         if (!empty($this->input->post('audio_file_id'))) {
 
-            $audio_file_id=$this->input->post('audio_file_id');
-            $audio['name']=$this->input->post('audio_file_name');
-            $audio['genre']=$this->input->post('audio_file_genre');
-            
+            $audio_file_id = $this->input->post('audio_file_id');
+            $audio['name'] = $this->input->post('audio_file_name');
+            $audio['genre'] = $this->input->post('audio_file_genre');
+
             $this->db->where('id', $this->input->post('audio_file_id'));
             $this->db->update('tbl_paasport_audio', $audio);
-           
-            
         }
     }
 
@@ -3518,13 +3517,12 @@ class Paasport extends CI_Controller {
 
         if (!empty($this->input->post('video_file_id'))) {
 
-            $video_file_id=$this->input->post('video_file_id');
-            $video['name']=$this->input->post('video_file_name');
-            $video['genre']=$this->input->post('video_file_genre');
-            
+            $video_file_id = $this->input->post('video_file_id');
+            $video['name'] = $this->input->post('video_file_name');
+            $video['genre'] = $this->input->post('video_file_genre');
+
             $this->db->where('id', $this->input->post('video_file_id'));
             $this->db->update('tbl_paasport_video', $video);
-           
         }
     }
 
