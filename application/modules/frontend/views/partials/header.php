@@ -137,6 +137,7 @@ $path .=$_SERVER["SERVER_NAME"];
 
                                     if (check_subscription($header_menu['service_id'], $user_services_array)) {
                                         $service_link = "dashboard";
+                                        $go_to_silo_dashboard_link="dashboard";
                                     } else {
                                         $service_link = "silo_sd";
                                     }
@@ -153,6 +154,7 @@ $path .=$_SERVER["SERVER_NAME"];
 
                                     if (check_subscription($header_menu['service_id'], $user_services_array)) {
                                         $service_link = "dashboard";
+                                        $go_to_silo_dashboard_link="dashboard";
                                     } else {
                                         $service_link = "silo_sd";
                                     }
@@ -316,7 +318,9 @@ if (!$this->session->userdata('is_logged_in')) {
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo backend_passport_url(); ?>view/<?php echo $slug; ?>">Profile</a></li>
-                                <li><a href="#">Go to Dashboard</a></li>
+                               <?php if(isset($go_to_silo_dashboard_link)){?>
+                                <li><a href="<?php echo $go_to_silo_dashboard_link;?>">Go to Dashboard</a></li>
+                               <?php } ?>
                                 <li>
                                     <a href="<?php echo base_url(); ?>login/logout">
                                         <i class="fa fa-sign-out pull-right"></i>
