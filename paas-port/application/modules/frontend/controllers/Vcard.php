@@ -78,6 +78,7 @@
 			// $slug = $this->uri->segment(1);
 			
 			$data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
+			$data['membership'] = $this->common_model->getRecords(TABLES::$MEMBERSHIP, '*', array('paasport_user_id' => $data['user'][0]['user_id']));
 			
 			$data['user_experience_data'] = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
 			
@@ -88,8 +89,12 @@
 			$data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']), 'id DESC ', 2);
 			
 			// $data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, '*', array('paasport_user_id' => $data['user'][0]['user_id']), 'vcard_id' => $data['user'][0]['id']);
+			$data['gallary_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_GALLARY, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+			$data['media_video_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
 			
-			
+			//print_r($data['membership']);
+			//print_r($data['gallary_list']);
+			//         die;
 			$data['shorten_url'] = '';
 			$url = current_url();
 			$this->google_url_api->enable_debug(FALSE);
@@ -103,15 +108,19 @@
 				$this->template->set('slug', $slug);
 			}
 			$this->template->set('user', $data['user']);
+			$this->template->set('membership', $data['membership']);
 			$this->template->set('user_experience_data', $data['user_experience_data']);
 			$this->template->set('user_education_data', $data['user_education_data']);
 			$this->template->set('user_skills', $data['user_skills']);
 			$this->template->set('user_blog', $data['user_blog']);
 			$this->template->set('shorten_url', $data['shorten_url']);
 			// $this->template->set('media_audio_list', $data['media_audio_list']);
+			$this->template->set('gallary_list', $data['gallary_list']);
+			$this->template->set('media_video_list', $data['media_video_list']);
 			
 			
-			$this->template->set('page', 'dashboard');
+			
+			$this->template->set('page', 'vcard_detail_view');
 			$this->template->set('page_type', 'inner');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('vcard_view')
@@ -233,7 +242,7 @@
 				$user['slug'] = $slug;
 				// create slug
 				$uid = $this->common_model->insertRow($user, TABLES::$VCARD_BASIC_DETAILS);
-				$paasport_status_update = $this->common_model->updateRow('membership',array('paasport_complete_status'=>'1'),array('user_id'=>$this->session->userdata('user_id')));
+				$paasport_status_update = $this->common_model->updateRow('membership', array('paasport_complete_status' => '1'), array('user_id' => $this->session->userdata('user_id')));
 				if ($uid) {
 					$this->session->set_userdata('vcard_id', $uid);
 					$map ['status'] = 1;
@@ -463,7 +472,7 @@
 				$exp_count1 = 0;
 				foreach ($user_skills as $user_skill) {
 					$exp_count1++;
-					$str.='<div class="form-group">
+					$str .= '<div class="form-group">
 					<input class="input_update form-control skill-text" name="txt_skill_update[]" id="tb_' . $user_skill['id'] . '" value="' . $user_skill['skill'] . '" type="text">
 					<input class="input_update_id form-control skill-text" name="txt_skill_update_id[]"  value="' . $user_skill['id'] . '" type="hidden">
 					</div>';
@@ -478,14 +487,14 @@
 			$user_skills = $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $session_data['user_account']['user_id'], 'vcard_id' => $this->input->post('vcard_id')));
 			$str = '';
 			if (!empty($user_skills)) {
-				$str.='<div  style="padding: 5px;">';
-				$str.='<p><b>Skills you have added:</b></p>';
+				$str .= '<div  style="padding: 5px;">';
+				$str .= '<p><b>Skills you have added:</b></p>';
 				$exp_count1 = 0;
 				foreach ($user_skills as $user_skill) {
 					$exp_count1++;
-					$str.=$user_skill['skill'] . '<br>';
+					$str .= $user_skill['skill'] . '<br>';
 				}
-				$str.='</div>';
+				$str .= '</div>';
 			}
 			echo $str;
 			exit;
@@ -724,16 +733,16 @@
 			$str = '';
 			if (!empty($user_skills)) {
 				$cnt = 1;
-				$str.="<thead><tr><th>Select</th><th>Company Name</th><th>Position Title</th><th>Start Date</th><th>End Date</th><th></th></tr></thead><tbody>";
+				$str .= "<thead><tr><th>Select</th><th>Company Name</th><th>Position Title</th><th>Start Date</th><th>End Date</th><th></th></tr></thead><tbody>";
 				foreach ($user_skills as $user_skill) {
 					
-					$str.="<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['company_name'] . "</td><td>" . $user_skill['position_title'] . "</td><td>" . $user_skill['start_date'] . "</td><td>" . $user_skill['end_date'] . "</td><td>";
-					$str.="<a href='#' onclick=getExpDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['company_name'] . "','" . $user_skill['position_title'] . "','" . $user_skill['start_date'] . "','" . $user_skill['end_date'] . "'); >Edit</a>";
+					$str .= "<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['company_name'] . "</td><td>" . $user_skill['position_title'] . "</td><td>" . $user_skill['start_date'] . "</td><td>" . $user_skill['end_date'] . "</td><td>";
+					$str .= "<a href='#' onclick=getExpDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['company_name'] . "','" . $user_skill['position_title'] . "','" . $user_skill['start_date'] . "','" . $user_skill['end_date'] . "'); >Edit</a>";
 					
-					$str.="</td></tr>";
-					$cnt+=1;
+					$str .= "</td></tr>";
+					$cnt += 1;
 				}
-				$str.="</tbody>";
+				$str .= "</tbody>";
 			}
 			echo $str;
 			exit;
@@ -747,8 +756,8 @@
 			if (!empty($user_skills)) {
 				$cnt = 1;
 				foreach ($user_skills as $user_skill) {
-					$str.="<div id='info-remove" . $user_skill['id'] . "'><div class='content-company div-delete'> <strong>Company Name: </strong>" . $user_skill['company_name'] . "</div><div class='content-position div-delete'><strong>Position Title: </strong>" . $user_skill['position_title'] . "</div><div class='start-date div-delete'><strong>Start Date: </strong>" . $user_skill['start_date'] . "</div><div class='end-date div-delete'><strong>End Date: </strong>" . $user_skill['end_date'] . "</div><hr></div>";
-					$cnt+=1;
+					$str .= "<div id='info-remove" . $user_skill['id'] . "'><div class='content-company div-delete'> <strong>Company Name: </strong>" . $user_skill['company_name'] . "</div><div class='content-position div-delete'><strong>Position Title: </strong>" . $user_skill['position_title'] . "</div><div class='start-date div-delete'><strong>Start Date: </strong>" . $user_skill['start_date'] . "</div><div class='end-date div-delete'><strong>End Date: </strong>" . $user_skill['end_date'] . "</div><hr></div>";
+					$cnt += 1;
 				}
 			}
 			echo $str;
@@ -858,18 +867,18 @@
 			$str = '';
 			if (!empty($user_skills)) {
 				$cnt = 1;
-				$str.="<thead><tr><th>Select</th><th>Company Name</th><th>Position Title</th><th>Start Date</th><th>End Date</th><th></th></tr></thead><tbody>";
+				$str .= "<thead><tr><th>Select</th><th>Company Name</th><th>Position Title</th><th>Start Date</th><th>End Date</th><th></th></tr></thead><tbody>";
 				foreach ($user_skills as $user_skill) {
 					
-					$str.="<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['institute_name'] . "</td><td>" . $user_skill['degree_or_certificate'] . "</td><td>" . $user_skill['start_date'] . "</td><td>" . $user_skill['end_date'] . "</td><td>";
+					$str .= "<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['institute_name'] . "</td><td>" . $user_skill['degree_or_certificate'] . "</td><td>" . $user_skill['start_date'] . "</td><td>" . $user_skill['end_date'] . "</td><td>";
 					
 					
-					$str.="<a href='#' onclick=getEduDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['institute_name'] . "','" . $user_skill['degree_or_certificate'] . "','" . $user_skill['start_date'] . "','" . $user_skill['end_date'] . "'); >Edit</a>";
+					$str .= "<a href='#' onclick=getEduDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['institute_name'] . "','" . $user_skill['degree_or_certificate'] . "','" . $user_skill['start_date'] . "','" . $user_skill['end_date'] . "'); >Edit</a>";
 					
-					$str.="</td></tr>";
-					$cnt+=1;
+					$str .= "</td></tr>";
+					$cnt += 1;
 				}
-				$str.="</tbody>";
+				$str .= "</tbody>";
 			}
 			echo $str;
 			exit;
@@ -882,18 +891,18 @@
 			$str = '';
 			if (!empty($user_skills)) {
 				$cnt = 1;
-				$str.="<thead><tr><th>Select</th><th>Skill</th><th></th></tr></thead><tbody>";
+				$str .= "<thead><tr><th>Select</th><th>Skill</th><th></th></tr></thead><tbody>";
 				foreach ($user_skills as $user_skill) {
 					
-					$str.="<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['skill'] . "</td><td>";
+					$str .= "<tr id=" . $user_skill['id'] . "><td><input type='checkbox' name='record' value=" . $user_skill['id'] . "></td><td>" . $user_skill['skill'] . "</td><td>";
 					
 					
-					$str.="<a href='#' onclick=getSkillDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['skill'] . "'); >Edit</a>";
+					$str .= "<a href='#' onclick=getSkillDetailUpdate('" . $user_skill['id'] . "','" . $user_skill['skill'] . "'); >Edit</a>";
 					
-					$str.="</td></tr>";
-					$cnt+=1;
+					$str .= "</td></tr>";
+					$cnt += 1;
 				}
-				$str.="</tbody>";
+				$str .= "</tbody>";
 			}
 			echo $str;
 			exit;
@@ -907,9 +916,9 @@
 			if (!empty($user_skills)) {
 				$cnt = 1;
 				foreach ($user_skills as $user_skill) {
-					$str.="<div id='info-remove" . $user_skill['id'] . "'><div class='content-company div-delete'> <strong>Institute Name: </strong>" . $user_skill['institute_name'] . "</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>" . $user_skill['degree_or_certificate'] . "</div><div class='start-date div-delete'><strong>Start Date: </strong>" . $user_skill['start_date'] . "</div><div class='end-date div-delete'><strong>End Date: </strong>" . $user_skill['end_date'] . "</div><hr></div>";
+					$str .= "<div id='info-remove" . $user_skill['id'] . "'><div class='content-company div-delete'> <strong>Institute Name: </strong>" . $user_skill['institute_name'] . "</div><div class='content-position div-delete'><strong>Degree or Certificate: </strong>" . $user_skill['degree_or_certificate'] . "</div><div class='start-date div-delete'><strong>Start Date: </strong>" . $user_skill['start_date'] . "</div><div class='end-date div-delete'><strong>End Date: </strong>" . $user_skill['end_date'] . "</div><hr></div>";
 					
-					$cnt+=1;
+					$cnt += 1;
 				}
 			}
 			echo $str;
@@ -1157,32 +1166,32 @@
 						$var_del_image = '"' . $u_plan['id'] . '"';
 						
 						
-						$str.='<div class="panel panel-success panel-price-plan-' . $u_plan['id'] . '">';
-						$str.='<div class="panel-heading">';
-						$str.='<h3 class="panel-title">' . $u_plan['plan_title'] . '</h3>';
-						$str.='<div class="pull-right">';
-						$str.='<span id="editpanel" class="badge editbutton" title="Edit" onclick=openPrice(' . $var_open_price . ') >';
-						$str.='<i class="fa fa-pencil-square-o"></i></span>';
-						$str.='<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice(' . $var_del_image . ') >';
-						$str.='<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
-						$str.='<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
-						$str.='<div class="panel-body"><div class="panel-body-content">' . $u_plan['plan_description'] . '</div><div class="footer1">' . $u_plan['price'] . '</div>';
-						$str.='</div></div>';
+						$str .= '<div class="panel panel-success panel-price-plan-' . $u_plan['id'] . '">';
+						$str .= '<div class="panel-heading">';
+						$str .= '<h3 class="panel-title">' . $u_plan['plan_title'] . '</h3>';
+						$str .= '<div class="pull-right">';
+						$str .= '<span id="editpanel" class="badge editbutton" title="Edit" onclick=openPrice(' . $var_open_price . ') >';
+						$str .= '<i class="fa fa-pencil-square-o"></i></span>';
+						$str .= '<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice(' . $var_del_image . ') >';
+						$str .= '<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
+						$str .= '<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
+						$str .= '<div class="panel-body"><div class="panel-body-content">' . $u_plan['plan_description'] . '</div><div class="footer1">' . $u_plan['price'] . '</div>';
+						$str .= '</div></div>';
 						} else if (!empty($u_plan['plan_image'])) {
 						$var_open_image = '"' . $u_plan['id'] . '","' . $u_plan['plan_image'] . '"';
 						$var_del_image = '"' . $u_plan['id'] . '"';
 						
-						$str.='<div class="panel panel-success panel-price-plan-' . $u_plan['id'] . '">';
-						$str.='<div class="panel-heading">';
-						$str.='<h3 class="panel-title"></h3>';
-						$str.='<div class="pull-right">';
-						$str.='<span id="editpanel" class="badge editbutton" onclick=openPriceImage(' . $var_open_image . '); title="Edit" >';
-						$str.='<i class="fa fa-pencil-square-o"></i></span>';
-						$str.='<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice(' . $var_del_image . ') >';
-						$str.='<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
-						$str.='<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
-						$str.='<div class="panel-body"><div class="panel-body-content"><img src="' . base_url() . $u_plan['plan_image'] . '" class="img-responsive"/> </div><div class="footer1"></div>';
-						$str.='</div></div>';
+						$str .= '<div class="panel panel-success panel-price-plan-' . $u_plan['id'] . '">';
+						$str .= '<div class="panel-heading">';
+						$str .= '<h3 class="panel-title"></h3>';
+						$str .= '<div class="pull-right">';
+						$str .= '<span id="editpanel" class="badge editbutton" onclick=openPriceImage(' . $var_open_image . '); title="Edit" >';
+						$str .= '<i class="fa fa-pencil-square-o"></i></span>';
+						$str .= '<span id="deletepanel" class="badge editbutton" title="Delete" onclick=deletePrice(' . $var_del_image . ') >';
+						$str .= '<i class="fa fa-trash"></i></span><span class="pull-right clickable">';
+						$str .= '<i class="glyphicon glyphicon-chevron-up"></i></span></div></div>';
+						$str .= '<div class="panel-body"><div class="panel-body-content"><img src="' . base_url() . $u_plan['plan_image'] . '" class="img-responsive"/> </div><div class="footer1"></div>';
+						$str .= '</div></div>';
 					}
 				}
 			}
@@ -1248,12 +1257,12 @@
 			$str = '';
 			if (!empty($user_skills)) {
 				$cnt = 1;
-				$str.=" <thead><tr> <th width='80'>Sr. No.</th><th>List Names</th></tr></thead><tbody>";
+				$str .= " <thead><tr> <th width='80'>Sr. No.</th><th>List Names</th></tr></thead><tbody>";
 				foreach ($user_skills as $user_skill) {
-					$str.="<tr><td> " . $cnt . "</td><td>" . $user_skill['list'] . "</td></tr>";
-					$cnt+=1;
+					$str .= "<tr><td> " . $cnt . "</td><td>" . $user_skill['list'] . "</td></tr>";
+					$cnt += 1;
 				}
-				$str.="</tbody>";
+				$str .= "</tbody>";
 			}
 			echo $str;
 			exit;
@@ -1267,13 +1276,13 @@
 			if (!empty($user_skills)) {
 				$cnt = 1;
 				foreach ($user_skills as $user_skill) {
-					$str.="<li>" . $user_skill['list'];
+					$str .= "<li>" . $user_skill['list'];
 					
-					$str.="<div class='pull-right'>";
-					$str.="<span id='editpanellists' class='badge editbutton' title='Edit' onclick=openList('" . $user_skill['id'] . "','" . $user_skill['list'] . "'); ><i class='fa fa-pencil-square-o'></i></span></div>";
+					$str .= "<div class='pull-right'>";
+					$str .= "<span id='editpanellists' class='badge editbutton' title='Edit' onclick=openList('" . $user_skill['id'] . "','" . $user_skill['list'] . "'); ><i class='fa fa-pencil-square-o'></i></span></div>";
 					
-					$str.="</li>";
-					$cnt+=1;
+					$str .= "</li>";
+					$cnt += 1;
 				}
 			}
 			echo $str;
@@ -1288,9 +1297,9 @@
 			if (!empty($user_skills)) {
 				$cnt = 1;
 				foreach ($user_skills as $user_skill) {
-					$str.="<li>" . $user_skill['list'];
-					$str.="</li>";
-					$cnt+=1;
+					$str .= "<li>" . $user_skill['list'];
+					$str .= "</li>";
+					$cnt += 1;
 				}
 			}
 			echo $str;
@@ -1356,18 +1365,18 @@
 				$str_arr['table'] = "<thead><tr><th width='80'>Sr. No.</th><th>Links</th></tr></thead><tbody>";
 				$str_arr['main_table'] = "";
 				foreach ($user_skills as $user_skill) {
-					$str_arr['table'].="<tr><td> " . $cnt . "</td><td>" . $user_skill['link'] . "</td></tr>";
-					$str_arr['main_table'].="<div class='linking'><a href=''>" . $user_skill['link'] . "</a><span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span>";
+					$str_arr['table'] .= "<tr><td> " . $cnt . "</td><td>" . $user_skill['link'] . "</td></tr>";
+					$str_arr['main_table'] .= "<div class='linking'><a href=''>" . $user_skill['link'] . "</a><span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span>";
 					
-					$str_arr['main_table'].="<div class='pull-right'>";
-					$str_arr['main_table'].="<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openLink('" . $user_skill['id'] . "','" . $user_skill['link'] . "');>";
-					$str_arr['main_table'].="<i class='fa fa-pencil-square-o'></i></span></div>";
+					$str_arr['main_table'] .= "<div class='pull-right'>";
+					$str_arr['main_table'] .= "<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openLink('" . $user_skill['id'] . "','" . $user_skill['link'] . "');>";
+					$str_arr['main_table'] .= "<i class='fa fa-pencil-square-o'></i></span></div>";
 					
-					$str_arr['main_table'].="</div>";
-					$str_arr['moblie_table'].="<div class='linking'><a href=''>" . $user_skill['link'] . "<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
-					$cnt+=1;
+					$str_arr['main_table'] .= "</div>";
+					$str_arr['moblie_table'] .= "<div class='linking'><a href=''>" . $user_skill['link'] . "<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
+					$cnt += 1;
 				}
-				$str_arr['table'].="</tbody>";
+				$str_arr['table'] .= "</tbody>";
 			}
 			echo json_encode($str_arr);
 			exit;
@@ -1397,18 +1406,18 @@
 				
 				$str_arr['main_table'] = "";
 				foreach ($user_skills as $user_skill) {
-					$str_arr['table'].="<tr><td> " . $cnt . "</td><td>" . $user_skill['video_url'] . "</td></tr>";
-					$str_arr['main_table'].="<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=" . $user_skill['video_url'] . "></iframe></div><hr><div>" . $user_skill['video_description'] . "";
+					$str_arr['table'] .= "<tr><td> " . $cnt . "</td><td>" . $user_skill['video_url'] . "</td></tr>";
+					$str_arr['main_table'] .= "<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=" . $user_skill['video_url'] . "></iframe></div><hr><div>" . $user_skill['video_description'] . "";
 					
-					$str_arr['main_table'].="<div class='pull-right'>";
-					$str_arr['main_table'].="<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openvideo('" . $user_skill['id'] . "','" . $user_skill['video_url'] . "','" . $user_skill['video_description'] . "');>";
-					$str_arr['main_table'].="<div class='pull-right'><i class='fa fa-pencil-square-o'></i></span></div>";
+					$str_arr['main_table'] .= "<div class='pull-right'>";
+					$str_arr['main_table'] .= "<span id='editpanellinks' class='badge editbutton' title='Edit' onclick=openvideo('" . $user_skill['id'] . "','" . $user_skill['video_url'] . "','" . $user_skill['video_description'] . "');>";
+					$str_arr['main_table'] .= "<div class='pull-right'><i class='fa fa-pencil-square-o'></i></span></div>";
 					
-					$str_arr['main_table'].="</div></div>";
-					$str_arr['moblie_table'].="<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=" . $user_skill['video_url'] . "></iframe></div><hr><div>" . $user_skill['video_description'] . "</div></div>";
-					$cnt+=1;
+					$str_arr['main_table'] .= "</div></div>";
+					$str_arr['moblie_table'] .= "<div class='panel-body-content text-center'><div class='embed-responsive embed-responsive-4by3'><iframe class='embed-responsive-item' src=" . $user_skill['video_url'] . "></iframe></div><hr><div>" . $user_skill['video_description'] . "</div></div>";
+					$cnt += 1;
 				}
-				$str_arr['table'].="</tbody>";
+				$str_arr['table'] .= "</tbody>";
 			}
 			echo json_encode($str_arr);
 			exit;
@@ -2753,31 +2762,31 @@
 			if (!empty($user_portfolio)) {
 				foreach ($user_portfolio as $u_portfolio) {
 					
-					$str.='<div class="panel-body-content text-center">';
+					$str .= '<div class="panel-body-content text-center">';
 					if (!empty($u_portfolio['image'])) {
 						
 						$var_open_port = '"' . $u_portfolio['id'] . '","' . $u_portfolio['image'] . '"';
 						
-						$str.='<div class="pull-right">';
-						$str.='<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioImage(' . $var_open_port . ') ><i class="fa fa-pencil-square-o"></i>';
-						$str.='</span>';
-						$str.='</div>';
-						$str.='<img src="' . base_url() . $u_portfolio['image'] . '" class="img-responsive"/>';
+						$str .= '<div class="pull-right">';
+						$str .= '<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioImage(' . $var_open_port . ') ><i class="fa fa-pencil-square-o"></i>';
+						$str .= '</span>';
+						$str .= '</div>';
+						$str .= '<img src="' . base_url() . $u_portfolio['image'] . '" class="img-responsive"/>';
 					}
-					$str.='<hr>';
+					$str .= '<hr>';
 					if (!empty($u_portfolio['video_url'])) {
 						
 						$var_open_video = '"' . $u_portfolio['id'] . '","' . $u_portfolio['video_url'] . '"';
 						
-						$str.='<div class="pull-right">';
-						$str.='<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioVideo(' . $var_open_video . ') ><i class="fa fa-pencil-square-o"></i>';
-						$str.='</span>';
-						$str.='</div>';
-						$str.='<div class="embed-responsive embed-responsive-4by3">';
-						$str.='<iframe class="embed-responsive-item" src="' . $u_portfolio['video_url'] . '"></iframe>';
-						$str.='</div>';
+						$str .= '<div class="pull-right">';
+						$str .= '<span id="editpanelportfolio" class="badge editbutton" title="Edit" onclick=openPortfolioVideo(' . $var_open_video . ') ><i class="fa fa-pencil-square-o"></i>';
+						$str .= '</span>';
+						$str .= '</div>';
+						$str .= '<div class="embed-responsive embed-responsive-4by3">';
+						$str .= '<iframe class="embed-responsive-item" src="' . $u_portfolio['video_url'] . '"></iframe>';
+						$str .= '</div>';
 					}
-					$str.='</div>';
+					$str .= '</div>';
 				}
 			}
 			echo $str;
@@ -3047,19 +3056,19 @@
 			$str = '';
 			if (!empty($user_skills)) {
 				$cnt = 1;
-				$str.="<thead><tr><th>Title</th><th>Short Description</th><th>Long Description</th><th>Action</th></tr></thead><tbody>";
+				$str .= "<thead><tr><th>Title</th><th>Short Description</th><th>Long Description</th><th>Action</th></tr></thead><tbody>";
 				foreach ($user_skills as $ub) {
 					
 					$var_blog = '"' . $ub['id'] . '","' . $ub['vcard_id'] . '","' . $ub['cover_image'] . '","' . $ub['video'] . '","' . $ub['video_url'] . '","' . $ub['title'] . '","' . $ub['short_desc'] . '","' . $ub['long_desc'] . '","' . $ub['popular'] . '"';
 					
-					$str.="<tr class=blog-previewdetail-" . $ub['id'] . "  >";
-					$str.="<td> " . $ub['title'] . "</td>";
-					$str.="<td> " . $ub['short_desc'] . "</td>";
-					$str.="<td> " . $ub['long_desc'] . "</td>";
-					$str.='<td><a href="#" onclick=openBlog(' . $ub['id'] . ') > Edit </a> | <a href="#" onclick=deleteBlog(' . $ub['id'] . '); > Delete </a></td>';
-					$str.="</tr>";
+					$str .= "<tr class=blog-previewdetail-" . $ub['id'] . "  >";
+					$str .= "<td> " . $ub['title'] . "</td>";
+					$str .= "<td> " . $ub['short_desc'] . "</td>";
+					$str .= "<td> " . $ub['long_desc'] . "</td>";
+					$str .= '<td><a href="#" onclick=openBlog(' . $ub['id'] . ') > Edit </a> | <a href="#" onclick=deleteBlog(' . $ub['id'] . '); > Delete </a></td>';
+					$str .= "</tr>";
 				}
-				$str.="</tbody>";
+				$str .= "</tbody>";
 			}
 			echo $str;
 			exit;
@@ -3171,16 +3180,17 @@
 			$this->load->view('vcard_detail_view_main', $data);
 		}
 		
-		
-		public function getaudiolist($slug){
-			
+		public function getaudiolist($slug) {
+			//echo $this->input->post('slug').'dd';
+			//$this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+			$slug=$this->input->post('slug');
 			$data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
 			$this->load->model('common_model');
 			
-			
-			$data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, "id as track,name,encrypted_file_name as file,'1:21' as length");
+			//print_r($data['user']);
+			$data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, "id as track,name,encrypted_file_name as file,'1:21' as length", array('paasport_user_id' => $data['user'][0]['user_id']));
 			
 			echo json_encode($data['media_audio_list']);
-			
 		}
+		
 	}
