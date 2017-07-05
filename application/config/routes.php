@@ -205,6 +205,7 @@ $route['domain-results'] = 'frontend/domain/domain_results';
 $route['dashboard/domainlist'] = 'backend/domain/index';
 
 
+
 /* Domain search result API   start here    */
 
 $route['domains'] = 'frontend/domain/domains';

@@ -64,7 +64,8 @@
         <script>
             var create_member_URL = '<?php echo base_url(); ?>frontend/login/create_member';
             var checkLoginURL = '<?php echo base_url(); ?>frontend/login/validate_credentials';
-            var createPaasportURL = "<?php echo backend_passport_url(); ?>create-paasport";
+//            var createPaasportURL = "<?php echo backend_passport_url(); ?>create-paasport";
+            var createPaasportURL = "<?php echo base_url(); ?>dashboard/createpaasport";
             var mainDashboardURL = "<?php echo base_url(); ?>main_dashboard";
             var loginOtpURL = "<?php echo base_url(); ?>otp";
             var otpRedirectDashboard = "<?php echo base_url(); ?>fiberrails";

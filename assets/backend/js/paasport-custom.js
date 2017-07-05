@@ -93,7 +93,7 @@ $(document).ready(function () {
     // end
 
 
-Dropzone.autoDiscover = false;
+    Dropzone.autoDiscover = false;
     if ($("#uploadAudioFiles").length) {
 //    $("#uploadAudio").click(function(event){
         $('#uploadAudioFiles').dropzone({
@@ -101,13 +101,13 @@ Dropzone.autoDiscover = false;
             url: uploadAudioFilesURL,
             addRemoveLinks: true,
             maxFilesize: 25,
-            //acceptedFiles: "mp3/image/jpeg,image/png",
+//            acceptedFiles: 'mp3|wav|ogg|wma',
             success: function (file, response) {
                 //file_row_count++;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -120,7 +120,8 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
+                
             }
 
 
@@ -129,15 +130,15 @@ Dropzone.autoDiscover = false;
 //    });
 
 
-    $("#uploadAudio").click(function(event){
- $('#uploadAudioFiles').get(0).dropzone.processQueue();
+    $("#uploadAudio").click(function (event) {
+        $('#uploadAudioFiles').get(0).dropzone.processQueue();
     });
 
 
 
     if ($("#uploadVideoFiles").length) {
         $('#uploadVideoFiles').dropzone({
-            
+
             url: uploadVideoFilesURL,
             addRemoveLinks: true,
             maxFilesize: 50,
@@ -147,7 +148,7 @@ Dropzone.autoDiscover = false;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -160,7 +161,7 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
             }
 
 
@@ -169,17 +170,17 @@ Dropzone.autoDiscover = false;
 
     if ($("#uploadGalleryFiles").length) {
         $('#uploadGalleryFiles').dropzone({
-            
+
             url: uploadGalleryFilesURL,
             addRemoveLinks: true,
             maxFilesize: 25,
-            //acceptedFiles: "mp3/image/jpeg,image/png",
+            acceptedFiles: "image/jpeg,image/png",
             success: function (file, response) {
                 //file_row_count++;
                 var file_info = JSON.parse(response);
                 // alert(file_info.type);
 
-              //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
+                //  $("#table_publisher_files > tbody").append("<tr id='file_row_" + file_row_count + "'><td>" + file_row_count + "</td><td>" + file_info.file_name + "</td><td>" + file_info.type + "</td><td><input style='text-align:right;' type='button' value='Delete' class='btn btn-sm btnRed' onclick=\"delete_selected_files('file_row_" + file_row_count + "','" + file_info.file_id + "')\" name='del_memberid' id='del_new" + file_row_count + "'></td></tr>");
 
             },
             removedfile: function (file) {
@@ -192,7 +193,7 @@ Dropzone.autoDiscover = false;
             },
             error: function (file, response) {
                 file.previewElement.classList.add("dz-error");
-              alert(response);
+                alert(response);
             }
 
 
@@ -203,11 +204,61 @@ Dropzone.autoDiscover = false;
 
     //$("#basicInfo").validate();
     validateBasicInformation();
-    
-    
-    
-    
+
+
+    $("#updateAudioModalDetails").click(function () {
+
+        $.ajax({
+            url: updateAudioModalDetailsURL,
+            type: "POST",
+            data: {audio_file_id: $(".audio-modal-body #audio_file_id").val(), audio_file_name: $(".audio-modal-body #audio_file_name").val(), audio_file_genre: $(".audio-modal-body #audio_file_genre").val()},
+            success: function (response) {
+//        alert(response);
+                $('#updateAudioModal').modal('hide');
+
+            }
+        });
+
+    });
+
+
+    $("#updateVideoModalDetails").click(function () {
+        $.ajax({
+            url: updateVideoModalDetailsURL,
+            type: "POST",
+            data: {video_file_id: $(".video-modal-body #video_file_id").val(), video_file_name: $(".video-modal-body #video_file_name").val(), video_file_genre: $(".video-modal-body #video_file_genre").val()},
+            success: function (response) {
+                $('#updateVideoModal').modal('hide');
+            }
+        });
+    });
+
+
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+
 });
+
+
+
+
+function update_audio_modal_details(audio_id,name,genere) {
+    $(".audio-modal-body #audio_file_id").val(audio_id);
+    $(".audio-modal-body #audio_file_name").val(name);
+    $(".audio-modal-body #audio_file_genre").val(genere);
+}
+
+
+function update_video_modal_details(video_id,name,genere) {
+    $(".video-modal-body #video_file_id").val(video_id);
+    $(".video-modal-body #video_file_name").val(name);
+    $(".video-modal-body #video_file_genre").val(genere);
+    //$(".video-modal-body #video_file_name").val('');
+    //$(".video-modal-body #video_file_genre").val('');
+}
+
 
 function readURL(input) {
     if (input.files && input.files[0]) {
@@ -381,16 +432,16 @@ $(document).ready(function () {
 
 
     // $("input[name$='blog']").click(function() {
-    // 	var test = $(this).val();			
-    // 	$(".blogclass").hide();
-    // 	$("#" + test).show(); 
+    //  var test = $(this).val();           
+    //  $(".blogclass").hide();
+    //  $("#" + test).show(); 
     // });
 
 
     // $('.child-section').hide();
 
     // $('.parent-section').click(function() {
-    // 	$('.child-section').toggle();
+    //  $('.child-section').toggle();
     // });
 
     var iCnt = 0;
@@ -540,7 +591,7 @@ $(document).ready(function () {
 
                     $("#blockSkillDataMobile").append(mark1);
                     /*var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
-                     $(".preview-table-ex1").append(markup1);						*/
+                     $(".preview-table-ex1").append(markup1);                       */
 
                     $("#err_txt_skill").html('');
                     $("#txt_skill").val('');
@@ -559,7 +610,7 @@ $(document).ready(function () {
         $('#prevCompanyName, #prevJobTitle, #prevStartDate1, #prevEndDate1,#exp_det_id').val("");
     });
     // save skill
-    // delete skill		 
+    // delete skill      
     $(".delete-row-skill").click(function () {
         var delete_exp_array = [];
 
@@ -599,7 +650,7 @@ $(document).ready(function () {
     });
     // delete skill
 
-    //	Code for Experience tab where add row and delete functionality
+    //  Code for Experience tab where add row and delete functionality
     var cnt = 1;
     $(".preview-add-button1").click(function () {
 
@@ -633,7 +684,7 @@ $(document).ready(function () {
                     $("#err_prevEndDate").html('');
 
                     //getExperienceData();
-                    //getExperienceDataMobile();						
+                    //getExperienceDataMobile();                        
 
                     var markup = "<tr id=" + cnt + "><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
                     $(".preview-table-ex").append(markup);
@@ -704,7 +755,7 @@ $(document).ready(function () {
     });
 
 
-    //	Code for Education tab where add row and delete functionality
+    //  Code for Education tab where add row and delete functionality
 
     var cnt1 = 1;
     $(".preview-add-button2").click(function ()
@@ -802,7 +853,7 @@ $(document).ready(function () {
     });
 
 
-    // Start Save basic information ajax call	
+    // Start Save basic information ajax call   
     $('#basicInfoSubmit').on('click', function (e) {
         $(".frmerror").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
 
@@ -843,7 +894,7 @@ $(document).ready(function () {
     });
     // End Save basic information ajax call
 
-    // Start Save Professional information ajax call	
+    // Start Save Professional information ajax call    
     $('#showAdd').on('click', function (e) {
 
         var elem = document.getElementById("addbtn");
@@ -890,7 +941,7 @@ $(document).ready(function () {
     });
     // End Save Professional information ajax call
 
-    // Start Social information ajax call		
+    // Start Social information ajax call       
     $('#socialInfoSubmit').on('click', function (e) {
 
         $(".frmerror_socialinfo").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
@@ -981,7 +1032,7 @@ $(document).ready(function () {
 
 
 
-    // Start Skill ajax call		
+    // Start Skill ajax call        
     $('#ddddddddddddddddddddd').on('click', function () {
 
         $.ajax({
@@ -1008,7 +1059,7 @@ $(document).ready(function () {
 
 
 
-    // Start Experience ajax call		
+    // Start Experience ajax call       
     $('#add_experience').on('click', function () {
 
         /* $.ajax({
@@ -1036,7 +1087,7 @@ $(document).ready(function () {
 
 
 
-// Start Education ajax call		
+// Start Education ajax call        
     $('#educationSubmit').on('click', function (e) {
         /* $.ajax({
          url: "<?php echo base_url() ?>frontend/Vcard/saveEducation",
@@ -1065,7 +1116,7 @@ $(document).ready(function () {
 
 
 
-    //	Code for Education tab where add row and delete functionality
+    //  Code for Education tab where add row and delete functionality
 
     //var cnt2=1;
     $("#addpricingdetails").click(function () {
@@ -1265,7 +1316,7 @@ $(document).ready(function () {
                 if (json.status === 1)
                 {
 
-                    //getLinkData();					
+                    //getLinkData();                    
 
                     var markup1 = "<tr><td> " + cntlink + " </td><td>" + linkname + "</td></tr>";
                     var markup3 = "<div class='linking'><a href=''>" + linkname + "<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
@@ -1436,7 +1487,7 @@ $(document).ready(function () {
     // End add portfolio
 
 
-    // Start Save blog information ajax call	
+    // Start Save blog information ajax call    
     $('#btnsaveBlogAdd').on('click', function (e)
     {
 
@@ -1505,9 +1556,9 @@ $(document).ready(function () {
 
     // adding description of pricing plans
     // $("input[name$='priceimage']").click(function() {
-    // 	var test = $(this).val();
-    // 	$(".priceplanimage").hide();
-    // 	$("#" + test).show();
+    //  var test = $(this).val();
+    //  $(".priceplanimage").hide();
+    //  $("#" + test).show();
     // });
 
     //  Pricing Plan Functionality Ends here
@@ -1515,9 +1566,9 @@ $(document).ready(function () {
     //  Start Portfolio Functionality
 
     // $("input[name$='portfolioDiv']").click(function() {
-    // 	var test1 = $(this).val();
-    // 	$(".portfolioContent").hide();
-    // 	$("#" + test1).show();
+    //  var test1 = $(this).val();
+    //  $(".portfolioContent").hide();
+    //  $("#" + test1).show();
     // });
 
 
@@ -1829,7 +1880,7 @@ function getPriceData()
         processData: false,
         success: function (data)
         {
-            // var json = JSON.parse(data);					
+            // var json = JSON.parse(data);                 
             $(".preview-table-ex5").html('');
             $(".preview-table-ex5").html(data);
 
@@ -1890,7 +1941,7 @@ function GetTextValue() {
 
 
 
-// Start Skills and Expertise ajax call		
+// Start Skills and Expertise ajax call     
 
 
 
@@ -2095,4 +2146,3 @@ function deletePrice(id)
     });
 
 }
-
