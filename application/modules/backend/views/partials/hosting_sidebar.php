@@ -255,8 +255,7 @@
 						</li>
 					<?php } ?>
                                                 
-                                                <?php
-                                                if(!empty($user_menu) && in_array('Domain',$user_menu))  { ?>					
+                                               
 						<li class="acive"><a>
 							<div class="menuIcon">
 								<i class="iconDashboard-store"></i>
@@ -266,7 +265,7 @@
 							<li><a href="<?php echo base_url()."dashboard/domainlist"; ?>">Domain List</a></li>
 						</ul>
 						</li>
-					<?php } ?>
+					
 					
 					
 					<?php if(!empty($user_menu) && in_array('Settings',$user_menu))  { ?>	
