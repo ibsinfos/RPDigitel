@@ -202,7 +202,8 @@ $route['support'] = 'frontend/pages/support';
 //$route['silo_login'] = 'frontend/pages/login';
 $route['domain'] = 'frontend/domain/index';
 $route['domain-results'] = 'frontend/domain/domain_results';
-$route['dashboard/domainlist'] = 'backend/domain/dashboard';
+$route['dashboard/domainlist'] = 'backend/domain/index';
+
 $route['domain/cart'] = 'frontend/domain/cart';
 $route['domain/addToCart'] = 'frontend/domain/addToCart';
 

@@ -27,6 +27,18 @@ $(document).ready(function(){
 		});
 	}
 
+	// Playlist Radio btn in tab
+	$('#playlist').on('click', '.radio-inline input', function () {
+		var radioID = $(this).attr('id');
+		//alert(radioID);
+		if (radioID == 'audioRadioBtn') {
+			$('#videoListWrap').hide();
+			$('#audioListWrap').show();
+		} else {
+			$('#audioListWrap').hide();
+			$('#videoListWrap').show();
+		}
+	});
 	
 	$(function () {
 	  var knownButtons = ['linkedin', 'facebook', 'google-plus'];

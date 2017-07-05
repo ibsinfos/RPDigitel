@@ -432,16 +432,16 @@ $(document).ready(function () {
 
 
     // $("input[name$='blog']").click(function() {
-    // 	var test = $(this).val();			
-    // 	$(".blogclass").hide();
-    // 	$("#" + test).show(); 
+    //  var test = $(this).val();           
+    //  $(".blogclass").hide();
+    //  $("#" + test).show(); 
     // });
 
 
     // $('.child-section').hide();
 
     // $('.parent-section').click(function() {
-    // 	$('.child-section').toggle();
+    //  $('.child-section').toggle();
     // });
 
     var iCnt = 0;
@@ -591,7 +591,7 @@ $(document).ready(function () {
 
                     $("#blockSkillDataMobile").append(mark1);
                     /*var markup1 = "<div id='info-remove"+cnt+"'><div class='content-company div-delete'> <strong>Company Name: </strong>" + prevCompanyName + "</div><div class='content-position div-delete'><strong>Position Title: </strong>" + prevJobTitle + "</div><div class='start-date div-delete'><strong>Start Date: </strong>" + prevStartDate + "</div><div class='end-date div-delete'><strong>End Date: </strong>" + prevEndDate + "</div><hr></div>";
-                     $(".preview-table-ex1").append(markup1);						*/
+                     $(".preview-table-ex1").append(markup1);                       */
 
                     $("#err_txt_skill").html('');
                     $("#txt_skill").val('');
@@ -610,7 +610,7 @@ $(document).ready(function () {
         $('#prevCompanyName, #prevJobTitle, #prevStartDate1, #prevEndDate1,#exp_det_id').val("");
     });
     // save skill
-    // delete skill		 
+    // delete skill      
     $(".delete-row-skill").click(function () {
         var delete_exp_array = [];
 
@@ -650,7 +650,7 @@ $(document).ready(function () {
     });
     // delete skill
 
-    //	Code for Experience tab where add row and delete functionality
+    //  Code for Experience tab where add row and delete functionality
     var cnt = 1;
     $(".preview-add-button1").click(function () {
 
@@ -684,7 +684,7 @@ $(document).ready(function () {
                     $("#err_prevEndDate").html('');
 
                     //getExperienceData();
-                    //getExperienceDataMobile();						
+                    //getExperienceDataMobile();                        
 
                     var markup = "<tr id=" + cnt + "><td><input type='checkbox' name='record' value=" + json.ins_experience_id + " ></td><td>" + prevCompanyName + "</td><td>" + prevJobTitle + "</td><td>" + prevStartDate + "</td><td>" + prevEndDate + "</td></tr>";
                     $(".preview-table-ex").append(markup);
@@ -755,7 +755,7 @@ $(document).ready(function () {
     });
 
 
-    //	Code for Education tab where add row and delete functionality
+    //  Code for Education tab where add row and delete functionality
 
     var cnt1 = 1;
     $(".preview-add-button2").click(function ()
@@ -853,7 +853,7 @@ $(document).ready(function () {
     });
 
 
-    // Start Save basic information ajax call	
+    // Start Save basic information ajax call   
     $('#basicInfoSubmit').on('click', function (e) {
         $(".frmerror").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
 
@@ -894,7 +894,7 @@ $(document).ready(function () {
     });
     // End Save basic information ajax call
 
-    // Start Save Professional information ajax call	
+    // Start Save Professional information ajax call    
     $('#showAdd').on('click', function (e) {
 
         var elem = document.getElementById("addbtn");
@@ -941,7 +941,7 @@ $(document).ready(function () {
     });
     // End Save Professional information ajax call
 
-    // Start Social information ajax call		
+    // Start Social information ajax call       
     $('#socialInfoSubmit').on('click', function (e) {
 
         $(".frmerror_socialinfo").html('<div class="loader"><div class="title">Saving...</div><div class="load"><div class="bar"></div></div></div>');
@@ -1032,7 +1032,7 @@ $(document).ready(function () {
 
 
 
-    // Start Skill ajax call		
+    // Start Skill ajax call        
     $('#ddddddddddddddddddddd').on('click', function () {
 
         $.ajax({
@@ -1059,7 +1059,7 @@ $(document).ready(function () {
 
 
 
-    // Start Experience ajax call		
+    // Start Experience ajax call       
     $('#add_experience').on('click', function () {
 
         /* $.ajax({
@@ -1087,7 +1087,7 @@ $(document).ready(function () {
 
 
 
-// Start Education ajax call		
+// Start Education ajax call        
     $('#educationSubmit').on('click', function (e) {
         /* $.ajax({
          url: "<?php echo base_url() ?>frontend/Vcard/saveEducation",
@@ -1116,7 +1116,7 @@ $(document).ready(function () {
 
 
 
-    //	Code for Education tab where add row and delete functionality
+    //  Code for Education tab where add row and delete functionality
 
     //var cnt2=1;
     $("#addpricingdetails").click(function () {
@@ -1316,7 +1316,7 @@ $(document).ready(function () {
                 if (json.status === 1)
                 {
 
-                    //getLinkData();					
+                    //getLinkData();                    
 
                     var markup1 = "<tr><td> " + cntlink + " </td><td>" + linkname + "</td></tr>";
                     var markup3 = "<div class='linking'><a href=''>" + linkname + "<span class='pull-right'><i class='fa fa-external-link' aria-hidden='true'></i></span></a></div>";
@@ -1487,7 +1487,7 @@ $(document).ready(function () {
     // End add portfolio
 
 
-    // Start Save blog information ajax call	
+    // Start Save blog information ajax call    
     $('#btnsaveBlogAdd').on('click', function (e)
     {
 
@@ -1556,9 +1556,9 @@ $(document).ready(function () {
 
     // adding description of pricing plans
     // $("input[name$='priceimage']").click(function() {
-    // 	var test = $(this).val();
-    // 	$(".priceplanimage").hide();
-    // 	$("#" + test).show();
+    //  var test = $(this).val();
+    //  $(".priceplanimage").hide();
+    //  $("#" + test).show();
     // });
 
     //  Pricing Plan Functionality Ends here
@@ -1566,9 +1566,9 @@ $(document).ready(function () {
     //  Start Portfolio Functionality
 
     // $("input[name$='portfolioDiv']").click(function() {
-    // 	var test1 = $(this).val();
-    // 	$(".portfolioContent").hide();
-    // 	$("#" + test1).show();
+    //  var test1 = $(this).val();
+    //  $(".portfolioContent").hide();
+    //  $("#" + test1).show();
     // });
 
 
@@ -1880,7 +1880,7 @@ function getPriceData()
         processData: false,
         success: function (data)
         {
-            // var json = JSON.parse(data);					
+            // var json = JSON.parse(data);                 
             $(".preview-table-ex5").html('');
             $(".preview-table-ex5").html(data);
 
@@ -1941,7 +1941,7 @@ function GetTextValue() {
 
 
 
-// Start Skills and Expertise ajax call		
+// Start Skills and Expertise ajax call     
 
 
 
@@ -2146,4 +2146,3 @@ function deletePrice(id)
     });
 
 }
-

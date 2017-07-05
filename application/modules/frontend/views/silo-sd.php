@@ -1,351 +1,3 @@
-
-    <!-- Main container -->
-    <!-- <div class="learnMoreAbout" style="top: 54px">
-        <a href="#demo" class="btn btnRed btn-block" data-toggle="collapse">Member Profile</a>
-        <div id="demo" class="collapse" style="background: #ffffff; ">
-            <div class="container-fluid">
-                <div class="margin-top-25">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="<?php echo base_url(); ?>images/silo-sd/background1.png">
-                            <div class="card-block">
-                                <h5 class="card-title">Real Life Inspiration Music</h5>
-
-                                <div class="card-text">
-                                    Areas tackled in the most fundamental parts of medical research include cellular and molecular biology, medical genetics,
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <span class="col-md-4"> <button class="btn btnRed">Subscribe</button></span>
-                                <span class="col-md-8"> <input id="input-21d" value="4" type="text" class="rating " data-min=0 data-max=5 data-step=0.5 data-size="xs"
-                                              title=""></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="main_container col-lg-9">
-                <div class="right_col" role="main">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="dashboard_graph">
-                                <div class="row x_title">
-                                    <div class="col-md-6">
-                                        <h3>Network Activities <small>Graph title sub-title</small></h3>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                            <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <div id="chart_plot_01" class="demo-placeholder"></div>
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-                                    <div class="x_title">
-                                        <h2>Top Campaign Performance</h2>
-                                        <div class="clearfix"></div>
-                                    </div>
-
-                                    <div class="col-md-12 col-sm-12 col-xs-6">
-                                        <div>
-                                            <p>Facebook Campaign</p>
-                                            <div class="">
-                                                <div class="progress progress_sm" style="width: 76%;">
-                                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>Twitter Campaign</p>
-                                            <div class="">
-                                                <div class="progress progress_sm" style="width: 76%;">
-                                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-6">
-                                        <div>
-                                            <p>Conventional Media</p>
-                                            <div class="">
-                                                <div class="progress progress_sm" style="width: 76%;">
-                                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>Bill boards</p>
-                                            <div class="">
-                                                <div class="progress progress_sm" style="width: 76%;">
-                                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <br />
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="x_panel tile fixed_height_320">
-                                <div class="x_title">
-                                    <h2>App Versions</h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <h4>App Usage across versions</h4>
-                                    <div class="widget_summary">
-                                        <div class="w_left w_25">
-                                            <span>0.1.5.2</span>
-                                        </div>
-                                        <div class="w_center w_55">
-                                            <div class="progress">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
-                                                    <span class="sr-only">60% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w_right w_20">
-                                            <span>123k</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-
-                                    <div class="widget_summary">
-                                        <div class="w_left w_25">
-                                            <span>0.1.5.3</span>
-                                        </div>
-                                        <div class="w_center w_55">
-                                            <div class="progress">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                                                    <span class="sr-only">60% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w_right w_20">
-                                            <span>53k</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="widget_summary">
-                                        <div class="w_left w_25">
-                                            <span>0.1.5.4</span>
-                                        </div>
-                                        <div class="w_center w_55">
-                                            <div class="progress">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                                                    <span class="sr-only">60% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w_right w_20">
-                                            <span>23k</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="widget_summary">
-                                        <div class="w_left w_25">
-                                            <span>0.1.5.5</span>
-                                        </div>
-                                        <div class="w_center w_55">
-                                            <div class="progress">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                                                    <span class="sr-only">60% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w_right w_20">
-                                            <span>3k</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="widget_summary">
-                                        <div class="w_left w_25">
-                                            <span>0.1.5.6</span>
-                                        </div>
-                                        <div class="w_center w_55">
-                                            <div class="progress">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
-                                                    <span class="sr-only">60% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w_right w_20">
-                                            <span>1k</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="x_panel tile fixed_height_320 overflow_hidden">
-                                <div class="x_title">
-                                    <h2>Device Usage</h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <table class="" style="width:100%">
-                                        <tr>
-                                            <th style="width:37%;">
-                                                <p>Top 5</p>
-                                            </th>
-                                            <th>
-                                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                                                    <p class="">Device</p>
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                                    <p class="">Progress</p>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
-                                            </td>
-                                            <td>
-                                                <table class="tile_info">
-                                                    <tr>
-                                                        <td>
-                                                            <p><i class="fa fa-square blue"></i>IOS </p>
-                                                        </td>
-                                                        <td>30%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p><i class="fa fa-square green"></i>Android </p>
-                                                        </td>
-                                                        <td>10%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p><i class="fa fa-square purple"></i>Blackberry </p>
-                                                        </td>
-                                                        <td>20%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p><i class="fa fa-square aero"></i>Symbian </p>
-                                                        </td>
-                                                        <td>15%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p><i class="fa fa-square red"></i>Others </p>
-                                                        </td>
-                                                        <td>30%</td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="x_panel tile fixed_height_320">
-                                <div class="x_title">
-                                    <h2>Quick Settings</h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <div class="dashboard-widget-content">
-                                        <ul class="quick-list">
-                                            <li><i class="fa fa-calendar-o"></i><a href="#">Settings</a>
-                                            </li>
-                                            <li><i class="fa fa-bars"></i><a href="#">Subscription</a>
-                                            </li>
-                                            <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
-                                            <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
-                                            </li>
-                                            <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
-                                            <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
-                                            </li>
-                                            <li><i class="fa fa-area-chart"></i><a href="#">Logout</a>
-                                            </li>
-                                        </ul>
-
-                                        <div class="sidebar-widget">
-                                            <h4>Profile Completion</h4>
-                                            <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
-                                            <div class="goal-wrapper">
-                                                <span id="gauge-text" class="gauge-value pull-left">0</span>
-                                                <span class="gauge-value pull-left">%</span>
-                                                <span id="goal-text" class="goal-value pull-right">100%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            
-        </div>
-    </div> -->
-
 <section class="siloSDHero">
     <div class="container">
         <div class="row">
@@ -440,335 +92,435 @@
             </div>
         </div>
     </div>
+    <div class="deviceStorage">
+        <h2>Extend your mobile device storage to your silocloud... <a href="" class="btn btnRed btn-lg">Learn More</a></h2>
+    </div>
 </section>
 
-<div class="row margin-top-25" style=" background: #0f0f0f">
-    <div class="col-lg-2 col-md-2 col-sm-2 padding-left-0" >
-        <img src="<?php echo base_url(); ?>images/silo-sd/black-sd.jpg" class="img-responsive">
-    </div>
-    <div class=" col-lg-8 col-md-8 padding-top-15">
-        <h2 class="white center">Extend your mobile device storage to your silocloud... <a href="" class="btn btnRed btn-lg">Learn More</a></h2>
-    </div>
-
-</div>
-<!--Section 4 End-->
-<!--Section 5 Start-->
-<div class="row">
+<section class="siloSDPlatform">
     <div class="container-fluid">
-        <div class="">
-            <img src="<?php echo base_url(); ?>images/fiber-rails/our%20platform.png" class="img-responsive center-block">
+        <div class="row">
+            <!-- <div class="col-sm-6">
+                <img src="<?php //echo asset_url(); ?>frontend/images/silo-sd/scandisc-platform.png" class="img-responsive center-block">
+            </div> -->
+            <div class="col-sm-12">
+                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/our-platform.png" class="img-responsive center-block">
+            </div>
         </div>
-        <div class="col-lg-12">
-           <ul class=" list-inline ">
-               <li class="col-lg-2 col-sm-3 col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/WINDOWS.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/APPLE.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/lINUX.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/ANDROID.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/AMAZON.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/lG.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6 hidden-lg" >
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/SAMSUNG.png" class="img-responsive center-block">
-               </li>
-               <li class="col-lg-2 col-sm-3  col-xs-6 hidden-lg">
-                   <img src="<?php echo base_url(); ?>images/silo-sd/logos/NVIDIA.png" class="img-responsive center-block">
-               </li>
-
-           </ul>
-        </div>
-    </div>
-</div>
-<!--Section 5 End-->
-
-<section class="sdDataSecurity">
-    <div class="row" style="background: #8c8c8c">
-        <div class="col-lg-6  padding-left-0 padding-right-0">
-            <img src="<?php echo base_url(); ?>images/silo-sd/datasecurityonredkeyboar_137471-752x471.jpg" style="height: 100%; width: 100%;" class="center-block img-responsive">
-        </div>
-        <div class="col-lg-6  padding-top-5 ">
-            <p class="white">The SiloSd micro SDCG (Secured Data Cloud Gate) cards offer an easy, affordable way to expand your mobile device's on-board memory. Available in native 8GB to 32GB, these cards give you additional storage space for your favorite photos, music and even HD videos by uniquly optimizing stored data from your mobile device to the cloud.</p>
-            <p class="white">SiloSD micro SDCG cards are new to the landscape of expanded RAM cards due to its patent pending capabilities that extends storage and runtime activities of your mobile device to the Silo Cloud, where your moments and memories are stored and accessible from any network enabled device when you need it.</p>
-            <p class="white">SiloSD goes a step further with its embedded solution that conditions and optimizes your mobile device by removing damaging cache from your phones internal memory and compressing it in a security auxiliary silo for restoration or future backup.</p>
-            <p class="white">SiloSD’s Hybrid Data Access allows a user to unlock the unlimited storage potential of our SiloCloud while improving the performance of your mobile device.</p>
-            <p class="white">SiloSD boast a revolutionary change to traditional storage extenders:
-            Optimization</p>
-            <p class="white">Restoration/Backup to the Cloud</p>
-            <p class="white">Anti-Virus Security</p>
-            <p class="white">The shock proof, x-ray proof, X-ray proof, temperature proof and waterproof SiloSD is guaranteed assurance that your data is secured along with your call logs, text, and
-            applications that operate in Hyper V environments.
-            Extra storage for your mobile phone and other devices</p>
+        <div class="row">
+            <div class="col-sm-12">
+               <ul class="list-unstyled list-inline text-center">
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/WINDOWS.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/APPLE.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/lINUX.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/ANDROID.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/AMAZON.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/lG.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/SAMSUNG.png" class="img-responsive center-block">
+                   </li>
+                   <li>
+                       <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/NVIDIA.png" class="img-responsive center-block">
+                   </li>
+               </ul>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="row">
-        <img src="<?php echo base_url(); ?>images/silo-sd/section-memory.jpg" class="center-block img-responsive">
-</div>
-
-<section class="sdDataSecurity">
+<section class="sdDataSecurity container-fluid">
     <div class="row">
-        <div class="container">
-            <div class="col-lg-4">
-                <img src="<?php echo base_url(); ?>images/silo-sd/device.png" class="img-responsive center-block">
+        <div class="col-sm-6 noPadding">
+            <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/datasecurityonredkeyboard.jpg" class="center-block img-responsive">
+        </div>
+        <div class="col-sm-6 noPadding">
+            <div class="contentBox mCustomScrollbar">
+                <p>The SiloSd micro SDCG (Secured Data Cloud Gate) cards offer an easy, affordable way to expand your mobile device's on-board memory. Available in native 8GB to 32GB, these cards give you additional storage space for your favorite photos, music and even HD videos by uniquly optimizing stored data from your mobile device to the cloud.</p>
+                <p>SiloSD micro SDCG cards are new to the landscape of expanded RAM cards due to its patent pending capabilities that extends storage and runtime activities of your mobile device to the Silo Cloud, where your moments and memories are stored and accessible from any network enabled device when you need it.</p>
+                <p>SiloSD goes a step further with its embedded solution that conditions and optimizes your mobile device by removing damaging cache from your phones internal memory and compressing it in a security auxiliary silo for restoration or future backup.</p>
+                <p>SiloSD’s Hybrid Data Access allows a user to unlock the unlimited storage potential of our SiloCloud while improving the performance of your mobile device.</p>
+                <p>SiloSD boast a revolutionary change to traditional storage extenders:
+                Optimization</p>
+                <p>Restoration/Backup to the Cloud</p>
+                <p>Anti-Virus Security</p>
+                <p>The shock proof, x-ray proof, X-ray proof, temperature proof and waterproof SiloSD is guaranteed assurance that your data is secured along with your call logs, text, and
+                applications that operate in Hyper V environments.
+                Extra storage for your mobile phone and other devices</p>
             </div>
-            <div class="col-lg-8  hidden-xs">
-                <img src="<?php echo base_url(); ?>images/cards.png" class="center-block img-responsive">
+        </div>
+    </div>
+</section>
+
+<section class="siloSDStorageWrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/scandisc4-crop-u21139.png" class="img-responsive center-block">
+            </div>
+            <div class="col-sm-6 col-md-5 col-md-offset-3 text-right">
+                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/frame.png" class="cardImg">
+                <ul class="list-unstyled list-inline">
+                    <li class="redText">32GB</li>
+                    <li>16GB</li>
+                    <li>8GB</li>
+                    <li>4GB</li>
+                </ul>
             </div>
         </div>    
     </div>
 </section>
 
-<div class="row" style="background: #808080">
-    <div class="container-fluid">
-            <div class="center">
-        <button type="button" class="btn btnRed"><a href="" class="white"><h3>ORDER  NOW</h3>
+<section class="siloSDMemoryWrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <img src="<?php echo asset_url(); ?>frontend/images/silo-sd/device.png" class="img-responsive center-block">
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/sd-blank.jpg"></th>
+                                <th><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/sd-blank.jpg"></th>
+                                <th><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/sd-blank.jpg"></th>
+                                <th><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/sd-blank.jpg"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Capacity</th>
+                                <td>32GB</td>
+                                <td>16GB</td>
+                                <td>8GB</td>
+                                <td>4GB</td>
+                            </tr>
+                            <tr>
+                                <th>Form Factor</th>
+                                <td>Micro SD Card</td>
+                                <td>Micro SD Card</td>
+                                <td>Micro SD Card</td>
+                                <td>Micro SD Card</td>
+                            </tr>
+                            <tr>
+                                <th>Video Speed</th>
+                                <td>C4</td>
+                                <td>C4</td>
+                                <td>C4</td>
+                                <td>C4</td>
+                            </tr>
+                            <tr>
+                                <th>SD Adapter</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orderNow text-center">
+        <a type="button" class="btn btnRed">
+            <h4>ORDER  NOW</h4>
             <h6>Get started with 5GB free.  Upgrade anytime.</h6>
-        </a></button>
+        </a>
+    </div>
+</section>
+
+<section class="siloSDRetailers text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="heading">SILOSD FOUND AT PARTICIPATING RETAILERS (USA)</h4>
             </div>
-    </div>
-</div>
-<!-- Section 9 End-->
-<!-- Section 10 Start-->
-<div class="row">
-    <div class="container">
-        <div>
-            <h3 class="center">SILOSD FOUND AT PARTICIPATING RETAILERS (USA)</h3>
         </div>
-        <div class="col-lg-offset-1 col-lg-12 col-md-offset-2 col-md-10 ">
-        <div class="col-lg-3 col-sm-4  margin-10">
-            <img src="<?php echo base_url(); ?>images/silo-sd/metropcs-logo.png" class="img-responsive center-block">
-        </div>
-        <div class="col-lg-3 col-sm-3 margin-10">
-            <img src="<?php echo base_url(); ?>images/silo-sd/cricket-logo2.png" class="img-responsive center-block">
-        </div>
-        <div class="col-lg-3 col-sm-3 margin-10">
-            <img src="<?php echo base_url(); ?>images/silo-sd/staples-crop-u20681.png" class="img-responsive center-block">
-        </div>
-        </div>
-    </div>
-</div>
-<!-- Section 10 End-->
-<!-- Section 11 Start-->
-<div class="row margin-top-25">
-    <div class="container">
-        <div class="col-lg-12">
-        <div>
-            <img src="<?php echo base_url(); ?>images/silo-sd/silocloud.png"  class="img-responsive center-block" style="height:100px;">
-        </div>
-        </div>
-        <div class="padding-top-10">
-        <h2 class="center">Get started with 5GB free.  Upgrade anytime.</h2>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="container">
-        <div class="col-lg-3 col-md-3 col-sm-3 pricing-table">
-            <h2 class="center">Starter<br>
-                Try Scandisc free
-            <br><small>$</small>0<br><small>NEVER EXPIRES</small>
-            </h2>
-            <div class="center">
-            <button type="button" class="btn btnRed pricing-btn">FREE SIGNUP</button>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="<?php echo base_url(); ?>images/silo-sd/metropcs-logo.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="<?php echo base_url(); ?>images/silo-sd/cricket-logo2.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="<?php echo base_url(); ?>images/silo-sd/staples-crop-u20681.png" class="img-responsive center-block">
+                    </div>
+                </div>
             </div>
-            <p class="padding-top-10">
-            <strong>Cloud storage:</strong><br>
-            5 GB secure storage
-            </p>
-            <p><strong>Features:</strong> </p>
-            <p>
-                <strong>Apps and devices</strong>
-                <br>· Desktop (Windows and Mac)
-                <br>· Mobile (iPhone, iPad and Android)
-                <br>· Web access
-                <br>· End-to-end, zero-knowledge encryption
-            </p>
-            <p><strong>
-            Sharing</strong>
-                <br>· Send links to files and folders
-                <br>· Recipients of links do not need a Sync account
-                <br>· Password protection
-            </p>
-            <p><strong>
-            Collaboration</strong>
-                <br>· Create shared folders
-                <br>· Invite anyone to shared folders
-            </p>
-            <p><strong>
-            Backup and restore</strong>
-                <br>· Sync or restore to any computer
-                <br> · Real time backup
-                <br> · Selectively sync folders
-                <br> · Deleted file recovery (30-day)
-                <br>  · File version history (30-day)
-            </p>
-            <p><strong>
-            Support</strong>
-                <br> · Help guides and knowledge base
-            </p>
-        </div>
-
-        <div class="margin-left-70 col-lg-3 col-md-3 col-sm-3 pricing-table">
-            <h2 class="center">Starter<br>
-                Try Scandisc free
-                <br><small>$</small>9<sup>99</sup><br><small>NEVER EXPIRES</small>
-            </h2>
-            <div class="center">
-            <button type="button" class="btn btnRed pricing-btn" >CUSTOMIZE</button>
-            </div>
-            <p class="padding-top-10">
-                <strong>Cloud storage:</strong><br>
-                1TB secure storage
-                <br>
-                Includes all Starter features plus:
-            </p>
-            <p><strong>Features:</strong> </p>
-            <p>
-                <strong>Apps and devices</strong>
-                <br>· Desktop (Windows and Mac)
-                <br>· Mobile (iPhone, iPad and Android)
-                <br>· Web access
-                <br>· End-to-end, zero-knowledge encryption
-            </p>
-            <p><strong>
-                Sharing</strong>
-                <br>· Send links to files and folders
-                <br>· Recipients of links do not need a Sync account
-                <br>· Password protection
-            </p>
-            <p><strong>
-                Collaboration</strong>
-                <br>· Create shared folders
-                <br>· Invite anyone to shared folders
-            </p>
-            <p><strong>
-                Backup and restore</strong>
-                <br>· Sync or restore to any computer
-                <br> · Real time backup
-                <br> · Selectively sync folders
-                <br> · Deleted file recovery (30-day)
-                <br>  · File version history (30-day)
-            </p>
-            <p><strong>
-                Support</strong>
-                <br> · Help guides and knowledge base
-            </p>
-        </div>
-
-        <div class="margin-left-70 col-lg-3 col-md-3 col-sm-3 pricing-table">
-            <h2 class="center">Starter<br>
-                Try Scandisc free
-                <br><small>$</small>5 <sup>99</sup><br><small>NEVER EXPIRES</small>
-            </h2>
-            <div class="center">
-            <button type="button" class="btn btnRed pricing-btn">ENROLL</button>
-            </div>
-            <p class="padding-top-10">
-                <strong>Cloud storage:</strong><br>
-                1TB secure storage
-                <br>
-                Each user gets all Starter and<br>
-                PRO features, plus account owner gets:
-            </p>
-            <p style="font-size:12px;"><strong>Fiber Rails Account Management</strong>
-            <br>· Administrative console to provision multiple users
-            <br>· Transfer in existing Scandisc accounts
-            <br>· Per user, per folder access controls and permission
-            <br>management with advanced collaboration tools
-            <br>· Offboard users per folder or per account
-            <br>· Transfer account ownership
-            </p>
-            <p>Desktop Application - Server management</p>
-            <p><strong>Centralized billing</strong>
-            <br>
-            · Single invoice billing for all users
-            </p>
-            <p><strong>Support</strong></p>
-            <br>· Priority email (first in line)
-            <br>· 99.9% uptime SLA
-            Support
-            <br>
-            <p>
-            Includes all Starter features plus:
-            </p>
         </div>
     </div>
-</div>
-<!--Section 11 End-->
-<!--Section 12 Start-->
-<div class="row margin-top-25" style="background: #ff0000">
-    <h2 class="center white">Need help? Call us at 832 886 7422 (USA)</h2>
-</div>
-<!--Section 12 End-->
-<!--Section 13 Start-->
-<div class="row margin-top-25">
+</section>
+
+<section class="webHostingPackages siloSDPackagesWrap">
     <div class="container">
-        <div class="col-lg-6 col-md-6 p-size">
-           <p><strong>No hardware or software costs</strong>
-            No upfront investment and you only pay for the mailboxes you create.</p>
-
-            <p><strong>Virtualized mailboxes</strong>
-            Use our cloud solution and free up server space.</p>
-
-            <p><strong>Easy deployment</strong>
-            With our turn-key product you will be up and running in no time.</p>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="<?php echo asset_url(); ?>frontend/images/home/silocloud.png" width="120">
+                <h4 class="heading">Get started with 5GB free.  Upgrade anytime.</h4>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h5 class="planName">
+                            <strong>Starter</strong> <br> Try Scandisc free
+                        </h5>
+                        <p class="planPrice">$0</p>
+                        <p><strong>never expires</strong></p>
+                        <a href="" class="btn btnRed">FREE SIGNUP</a>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Cloud storage:</strong></p>
+                        <p>5 GB secure storage</p>
+                        <p>Features:</p>
+                        <p class="listHeading"><strong>Apps and devices</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Desktop (Windows and Mac)</li>
+                            <li>Mobile (iPhone, iPad and Android)</li>
+                            <li>Web access</li>
+                            <li>End-to-end, zero-knowledge encryption</li>
+                        </ul>
+                        <p class="listHeading"><strong>Sharing</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Send links to files and folders</li>
+                            <li>Recipients of links do not need a Sync account</li>
+                            <li>Password protection</li>
+                        </ul>
+                        <p class="listHeading"><strong>Collaboration</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Create shared folders</li>
+                            <li>Invite anyone to shared folders</li>
+                        </ul>
+                        <p class="listHeading"><strong>Backup and restore</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Sync or restore to any computer</li>
+                            <li>Realtime backup</li>
+                            <li>Selectively sync folders</li>
+                            <li>Deleted file recovery (30-day)</li>
+                            <li>File version history (30-day)</li>
+                        </ul>
+                        <p class="listHeading"><strong>Support</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Help guides and knowledge base</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h5 class="planName">
+                            <strong>Starter</strong> <br> Try Scandisc free
+                        </h5>
+                        <p class="planPrice">$9<sup>99</sup></p>
+                        <p><strong>PER MONTH</strong></p>
+                        <a href="" class="btn btnRed">CUSTOMIZE</a>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Cloud storage:</strong></p>
+                        <p>1 GB secure storage</p>
+                        <p>Includes all Starter features plus:</p>
+                        <p>Features:</p>
+                        <p class="listHeading"><strong>Apps and devices</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Desktop (Windows and Mac)</li>
+                            <li>Mobile (iPhone, iPad and Android)</li>
+                            <li>Web access</li>
+                            <li>End-to-end, zero-knowledge encryption</li>
+                        </ul>
+                        <p class="listHeading"><strong>Sharing</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Send links to files and folders</li>
+                            <li>Recipients of links do not need a Sync account</li>
+                            <li>Password protection</li>
+                        </ul>
+                        <p class="listHeading"><strong>Collaboration</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Create shared folders</li>
+                            <li>Invite anyone to shared folders</li>
+                        </ul>
+                        <p class="listHeading"><strong>Backup and restore</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Sync or restore to any computer</li>
+                            <li>Realtime backup</li>
+                            <li>Selectively sync folders</li>
+                            <li>Deleted file recovery (30-day)</li>
+                            <li>File version history (30-day)</li>
+                        </ul>
+                        <p class="listHeading"><strong>Support</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Help guides and knowledge base</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h5 class="planName">
+                            <strong>Starter</strong> <br> Try Scandisc free
+                        </h5>
+                        <p class="planPrice">$5<sup>99</sup></p>
+                        <p><strong>PER MONTH</strong></p>
+                        <a href="" class="btn btnRed">Enroll</a>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Cloud storage:</strong></p>
+                        <p>1 GB secure storage</p>
+                        <p>Each user gets all Starter and<br>PRO features, plus account owner gets:</p>
+                        <p class="listHeading"><strong>Fiber Rails Account Management:</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Administrative console to provision multiple users</li>
+                            <li>Transfer in existing Scandisc accounts</li>
+                            <li>Per user, per folder access controls and permission management with advanced collaboration tools</li>
+                            <li>Offboard users per folder or per account</li>
+                            <li>Transfer account ownership</li>
+                        </ul>
+                        <p>Desktop Application - Server management</p>
+                        <p class="listHeading"><strong>Centralized billing</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Single invoice billing for all users</li>
+                        </ul>
+                        <p class="listHeading"><strong>Support</strong></p>
+                        <ul class="list-unstyled typoList">
+                            <li>Priority email (first in line)</li>
+                            <li>99.9% uptime SLA</li>
+                        </ul>
+                        <p>Includes all Starter features plus:</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 col-md-6 p-size">
-            <p><strong>In-house 24/7 abuse team</strong>
-            Let us worry about blacklist mitigation while you focus on your business.</p>
-
-            <p><strong>Secure data centers</strong>
-            We are committed to stringent security.</p>
-
-            <p><strong> Affordable</strong>
-            Full mailboxes start at Rs 49/- per month*.</p>
+        <p class="conditionText">*Discount applies to Website Builder annual plans. Discount applicable to initial term only and does not apply to downgrades or upgrades to existing customer plans. Offer is nontransferable and may not be combined with other offers and discounts, exchanged, or redeemed for cash. See the Fiber Rails Terms of Service for additional terms and conditions. Offer expires on 4/15/2017.</p>
+    </div>
+    <h4 class="needHelp">Need help? Call us at 832 886 7422 (USA)</h4>
+    <div class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        <strong>No hardware or software costs</strong><br>
+                        No upfront investment and you only pay for the mailboxes you create.
+                    </p>
+                    <p>
+                        <strong>Virtualized mailboxes</strong><br>
+                        Use our cloud solution and free up server space.
+                    </p>
+                    <p>
+                        <strong>Easy deployment</strong><br>
+                        With our turn-key product you will be up and running in no time.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        <strong>In-house 24/7 abuse team</strong><br>
+                        Let us worry about blacklist mitigation while you focus on your business.
+                    </p>
+                    <p>
+                        <strong>Secure data centers</strong><br>
+                        We are committed to stringent security.
+                    </p>
+                    <p>
+                        <strong>Affordable</strong><br>
+                        Full mailboxes start at Rs 49/- per month*.
+                    </p>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <a href="" class="btn btnRed featureBtn">Features</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="row margin-top-25">
+</section>
+
+<section class="siloSDLogoWrap">
     <div class="container">
-        <div class="center">
-        <button type="button" class="btn btnRed btn-lg margin-bottom-25">Features</button>
-        </div>
-        <div class="col-lg-12 landscape-feature">
-            <ul class="list-inline ">
-                <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/1.png" class="img-responsive center-block">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-2  col-xs-6">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/2.png" class="img-responsive center-block">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-2  col-xs-6">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/3.png" class="img-responsive center-block">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-2  col-xs-6">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/4.png" class="img-responsive center-block">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-2  col-xs-6">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/5.png" class="img-responsive center-block">
-                </li>
-                <li class="col-lg-2 col-md-2 col-sm-2  col-xs-6 hidden-sm">
-                    <img src="<?php echo base_url(); ?>images/silo-sd/6.png" class="img-responsive center-block">
-                </li>
-            </ul>
-        </div>
-
+        <img src="<?php echo asset_url(); ?>frontend/images/rpdigital-black.png" class="img-responsive center-block"><br><br>
+        <ul class="list-unstyled list-inline text-center">
+            <li>
+                <a href="http://crm.rebelute.in/login"><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/1.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/2.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+               <a href=""><img src="<?php echo asset_url(); ?>frontend/images/home/wbssuite.png" class="" height="55"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/3.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/4.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/5.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/6.png" class="img-responsive center-block"></a>
+            </li>
+            <li>
+               <a href=""><img src="<?php echo asset_url(); ?>frontend/images/home/silosd-cloud.png" class="" height="55"></a>
+            </li>
+            <li>
+                <a href=""><img src="<?php echo asset_url(); ?>frontend/images/silo-sd/8.png" class="img-responsive center-block"></a>
+            </li>
+        </ul>
     </div>
-</div>
+</section>
 
-<div class="row">
-        <img src="<?php echo base_url(); ?>images/silo-sd/fibrails.png" style="height:100%; width: 100%;" alt="" class="img-responsive center-block">
-</div>
-
+<section class="siloSDStartup">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <img src="<?php echo asset_url(); ?>frontend/images/fiberrails-main.png" class="img-responsive">
+            </div>
+            <div class="col-sm-9 col-md-3">
+                <h4 class="startUpText">For START UPs</h4>
+                <h4 class="pricePerMonth"><span>Only</span> <strong>$79/mo</strong></h4>
+                <p class="packageIncludes">Everything in our Premium Package, Plus a high performance server. Domain Policy</p>
+            </div>
+            <div class="col-sm-6 col-md-3 infoCol">
+                <p>
+                    Dedicated IP<br>
+                    SSL Certificate<br>
+                    Domain Policy<br>
+                    Site Backup Pro
+                </p>
+                <p>
+                    24 Hour Help Line<br>
+                    Design Center
+                </p>
+                <p>ERP/CRM Rails Platform</p>
+            </div>
+            <div class="col-sm-6 col-md-3 redBgCol">
+                <ul class="list-unstyled">
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secured Domain</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secured Hosting</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ecommerce Suite</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Builder</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;CRM/ERP</li>
+                    <li>&nbsp;&nbsp;Marketing Tools</li>
+                    <li>Private Storage Cloud</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 

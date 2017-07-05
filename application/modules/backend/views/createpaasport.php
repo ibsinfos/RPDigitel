@@ -84,7 +84,7 @@
                                                         echo $user[0]['email'];
                                                     }
                                                     ?>">
-                                                    <span id="err_email"></span>	   
+                                                    <span id="err_email"></span>       
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Address</label>
@@ -107,7 +107,7 @@
                                                                echo $user[0]['first_name'];
                                                            }
                                                            ?>" maxlength="10">
-                                                    <span id="err_firstname" ></span>	
+                                                    <span id="err_firstname" ></span>   
                                                 </div> 
                                                 <div class="form-group">
                                                     <label>Last Name
@@ -118,7 +118,7 @@
                                                         echo $user[0]['last_name'];
                                                     }
                                                     ?>" placeholder="Enter your surname"  maxlength="10">
-                                                    <span id="err_lastname" ></span>	   
+                                                    <span id="err_lastname" ></span>       
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Contact Number
@@ -129,7 +129,7 @@
                                                         echo $user[0]['mobile'];
                                                     }
                                                     ?>">
-                                                    <span id="err_contact" ></span>	   
+                                                    <span id="err_contact" ></span>    
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Pincode</label>
@@ -156,7 +156,7 @@
                                                 </ul>
                                                 <div class="text-center">
                                                     <button type="button" id="basicInfoSubmit" name="basicInfoSubmit" class="btn btnRed btn-lg">Save</button>
-                                                </div>	
+                                                </div>  
                                             </div>
                                         </div>
 
@@ -175,14 +175,14 @@
                                                                 <small>(required)</small>
                                                             </label>
                                                             <input id="companyname" name="companyname" type="text" class="form-control" placeholder="Enter company name" value="" maxlength="20">
-                                                            <span id="err_companyname" ></span>	   
+                                                            <span id="err_companyname" ></span>    
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="jobTitle">Job Title
                                                                 <small>(required)</small>
                                                             </label>
                                                             <input id="jobTitle" name="jobtitle1" type="text" class="form-control" placeholder="Enter Job Title" value="" maxlength="20">
-                                                            <span id="err_jobtitle1" ></span>	 	   
+                                                            <span id="err_jobtitle1" ></span>          
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Start Date</label>
@@ -203,14 +203,14 @@
                                                                 <small>(required)</small>
                                                             </label>
                                                             <input id="companyEmail" name="companyemail" type="text" class="form-control" placeholder="Enter Company Email" value="">
-                                                            <span id="err_companyemail" ></span>	   
+                                                            <span id="err_companyemail" ></span>       
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="companyWebsite">Website
                                                                 <small>(required)</small>
                                                             </label>
                                                             <input id="companyWebsite" name="companywebsite" type="text" class="form-control" placeholder="Company Website URL" value="">
-                                                            <span id="err_companywebsite" ></span>	   
+                                                            <span id="err_companywebsite" ></span>     
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -219,7 +219,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>									
+                                        </div>                                  
                                         <!--End Modal -->
 
                                     </form>
@@ -266,7 +266,7 @@
                                             }
                                             ?>" placeholder="Enter Twitter page id">
                                         </div>
-                                        <span id="err_twitter_url" ></span>	
+                                        <span id="err_twitter_url" ></span> 
                                     </div>
                                 </div>
                                 <div class="row">
@@ -282,7 +282,7 @@
                                             }
                                             ?>" placeholder="Enter google plus page id">
                                         </div>
-                                        <span id="err_googleplus_url" ></span>	
+                                        <span id="err_googleplus_url" ></span>  
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <label for="linkedin">Linkedin</label>
@@ -312,7 +312,7 @@
                                             }
                                             ?>" placeholder="Enter Youtube page url">
                                         </div>
-                                        <span id="err_youtube_url" ></span>	
+                                        <span id="err_youtube_url" ></span> 
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <label for="pinterest">Pinterest</label>
@@ -394,15 +394,15 @@
                                                     <h3>Skills &amp; Expertise</h3>
                                                     <div class="panel panel-default">
                                                         <div class="frmerror_skillsandexpertise"></div>
-                                                        <form id="frmskillsAndExerptise">															
+                                                        <form id="frmskillsAndExerptise">                                                           
                                                             <div class="panel-body form-horizontal Experience-form">
                                                                 <div class="form-group">
                                                                     <label for="prevCompanyName" class="col-sm-3 control-label">Skill &amp; Expertise</label>
                                                                     <div class="col-sm-9">
                                                                         <input class="form-control" id="txt_skill" name="txt_skill" placeholder="Enter Skill &amp; Expertise" type="text">
-                                                                        <span id="err_txt_skill"></span>	   
+                                                                        <span id="err_txt_skill"></span>       
                                                                     </div>
-                                                                </div>																
+                                                                </div>                                                              
                                                                 <div class="form-group">
                                                                     <div class="col-xs-12 text-right">
                                                                         <button type="button" class="btn btn-default preview-add-button-skill" id="btnadd_skill" name="btnadd_skill">
@@ -418,7 +418,7 @@
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Select</th>
-                                                                                    <th>Skill &amp; Expertise</th>																					
+                                                                                    <th>Skill &amp; Expertise</th>                                                                                  
                                                                                     <th></th>
                                                                                 </tr>
                                                                             </thead>
@@ -470,7 +470,7 @@
                                                                                        id="prevCompanyName"
                                                                                        name="prevCompanyName"
                                                                                        placeholder="Enter name of firm or company">
-                                                                                <span id="err_prevCompanyName" ></span>	   
+                                                                                <span id="err_prevCompanyName" ></span>    
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -484,7 +484,7 @@
                                                                                        id="prevJobTitle"
                                                                                        name="prevJobTitle"
                                                                                        placeholder="eg. Web Developer">
-                                                                                <span id="err_prevJobTitle" ></span>	   
+                                                                                <span id="err_prevJobTitle" ></span>       
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -497,7 +497,7 @@
                                                                             <div class="col-sm-8">
                                                                                 <input type="text" class="form-control datepicker" id="prevStartDate1"
                                                                                        value="" name="prevStartDate">
-                                                                                <span id="err_prevStartDate" ></span>	 	   
+                                                                                <span id="err_prevStartDate" ></span>          
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -508,7 +508,7 @@
                                                                             <div class="col-sm-8">
                                                                                 <input type="text" class="form-control datepicker" id="prevEndDate1"
                                                                                        value="" name="prevEndDate">
-                                                                                <span id="err_prevEndDate" ></span>		   
+                                                                                <span id="err_prevEndDate" ></span>        
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -548,7 +548,7 @@
                                                                                         <td><?php echo ($user_exp['position_title']) ? $user_exp['position_title'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['start_date']) ? $user_exp['start_date'] : ''; ?></td>
                                                                                         <td><?php echo ($user_exp['end_date']) ? $user_exp['end_date'] : ''; ?></td>
-                                                                                        <!--<td>											
+                                                                                        <!--<td>                                            
                                                                                             <a href="#" onclick="getExpDetailUpdate('<?php echo $user_exp['id']; ?>', '<?php echo $user_exp['company_name']; ?>', '<?php echo $user_exp['position_title']; ?>', '<?php echo $user_exp['start_date']; ?>', '<?php echo $user_exp['end_date']; ?>');" >Edit</a>
                                                                                         </td>-->
                                                                                     </tr>
@@ -586,7 +586,7 @@
                                                                                 <input type="text" class="form-control"
                                                                                        id="eduInstituteName"
                                                                                        name="eduInstituteName">
-                                                                                <span id="err_eduInstituteName" ></span>	   
+                                                                                <span id="err_eduInstituteName" ></span>       
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -596,7 +596,7 @@
                                                                             <div class="col-sm-8">
                                                                                 <input type="text" class="form-control" id="degree"
                                                                                        name="degree">
-                                                                                <span id="err_degree" ></span>		   
+                                                                                <span id="err_degree" ></span>         
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -608,7 +608,7 @@
                                                                             <div class="col-sm-8">
                                                                                 <input type="text" class="form-control datepicker" id="eduStartDate1"
                                                                                        value="" name="eduStartDate">
-                                                                                <span id="err_eduStartDate" ></span>		   
+                                                                                <span id="err_eduStartDate" ></span>           
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -618,7 +618,7 @@
                                                                             <div class="col-sm-8">
                                                                                 <input type="text" class="form-control datepicker" id="eduEndDate1"
                                                                                        value="" name="eduEndDate">
-                                                                                <span id="err_eduEndDate" ></span>	   
+                                                                                <span id="err_eduEndDate" ></span>     
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -800,7 +800,7 @@
                                                     <?php
                                                 }
                                             }
-                                            ?>	
+                                            ?>  
                                         </div>
                                     </div>
                                 </div>
@@ -908,7 +908,7 @@
                                         <tr>
                                             <th>Title</th>
                                             <th>Short Description</th>
-                                            <th>Long Description</th>																
+                                            <th>Long Description</th>                                                               
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -920,9 +920,9 @@
                                                 <tr class="blog-previewdetail-<?php echo $ub['id']; ?>" >
                                                     <td><?php echo $ub['title']; ?></td>
                                                     <td><?php echo $ub['short_desc']; ?></td>
-                                                    <td><?php echo $ub['long_desc']; ?></td>																						 
+                                                    <td><?php echo $ub['long_desc']; ?></td>                                                                                         
                                                     <td> <a href="#" onclick="deleteBlog('<?php echo $ub['id'] ?>');" > Delete </a></td>
-                                                </tr>				
+                                                </tr>               
                                                 <?php
                                             }
                                         }
@@ -1164,22 +1164,22 @@
                             <small>(required)</small>
                         </label>
                         <input type="file" name="coverimage" id="coverimage" />
-                        <span id="err_coverimage"></span>	
+                        <span id="err_coverimage"></span>   
                     </div>
                     <div class="form-group blogclass" id="blogvideodiv" style="display:none;" >
                         <label for="bloguploadvideo">Upload Video
                             <small>(required)</small>
                         </label>
-                        <input type="file" name="bloguploadvideo" id="bloguploadvideo" />	
-                        <span id="err_bloguploadvideo"></span>		
+                        <input type="file" name="bloguploadvideo" id="bloguploadvideo" />   
+                        <span id="err_bloguploadvideo"></span>      
                     </div>
                     <div class="form-group blogclass" id="blogvideourldiv" style="display:none;" >
                         <label for="txtblogvideourl">Video URL
                             <small>(required)</small>
-                        </label>	
+                        </label>    
                         <input id="txtblogvideourl" name="txtblogvideourl" class="form-control" placeholder="Enter Video URL" value=""  type="text">
-                        <span id="err_txtblogvideourl"></span>		
-                    </div>	
+                        <span id="err_txtblogvideourl"></span>      
+                    </div>  
                     <div class="form-group">
                         <label for="blogTitle">Title
                             <small>(required)</small>
@@ -1187,29 +1187,29 @@
                         <input id="blogid" name="blogid"  type="hidden">
                         <input id="vcard_id" name="vcard_id"  type="hidden">
                         <input id="blogTitle" name="blogTitle" class="form-control" placeholder="Enter Title" value=""  type="text">
-                        <span id="err_blogTitle"></span>	 	   
+                        <span id="err_blogTitle"></span>           
                     </div>                                                            
                     <div class="form-group">
                         <label for="companyContact">Short Description <small>(required)</small>
                         </label>
                         <textarea id="blogshortdesc" name="blogshortdesc" class="form-control editor" placeholder="Enter Short Description" >
-							
+                            
                         </textarea>
                         <input type="hidden" id="blogshortdesc1" name="blogshortdesc1" >
-                        <span id="err_blogshortdesc"></span>	   
+                        <span id="err_blogshortdesc"></span>       
                     </div>
                     <div class="form-group">
                         <label for="companyContact">Long Description <small>(required)</small>
                         </label>                                                               
                         <textarea id="bloglongdesc" name="bloglongdesc" class="form-control editor" placeholder="Enter Long Description" value=""  ></textarea>
                         <input type="hidden" id="bloglongdesc1" name="bloglongdesc1" >
-                        <span id="err_bloglongdesc"></span>		   
+                        <span id="err_bloglongdesc"></span>        
                     </div>    
                     <div class="form-group">
                         <label class="checkbox-inline">
                             <input type="checkbox" name="popular" id="popular" value="1"> Popular Post
                         </label>
-                    </div> 	
+                    </div>  
                 </form>
                 <div class="modal-footer">
                     <button type="button" class="btn btnRed" id="btnsaveBlogAdd">Save</button>
@@ -1219,8 +1219,8 @@
                 </div>
             </div>
         </div>
-    </div>	
-</div>								
+    </div>  
+</div>                              
 <!--End blog Modal -->
 
 <!-- Start pricing Modal -->
@@ -1276,8 +1276,8 @@
                                         <td><input type="file" name="updatefile" id="updatefile" /></td>
                                     </tr>
                                 </tbody>
-                            </table>	
-                            <div id="dropzone-0">																				
+                            </table>    
+                            <div id="dropzone-0">                                                                               
                                 <input type="file" name="file[]" id="file" multiple />
                             </div>
                         </form>
@@ -1288,21 +1288,21 @@
                     </div>
                 </div>
                 <div id="descprining" class="priceplanimage" style="display: none;">
-                    <form id="frmPricingPlan">	
+                    <form id="frmPricingPlan">  
                         <div class="form-group">
                             <label for="jobTitle">Pricing Plan Title
                                 <small>(required)</small>
                             </label>
                             <input type="hidden" name="pricing_id1" id="pricing_id1" >
                             <input id="pricingtitle" name="pricingtitle" type="text" class="form-control" placeholder="">
-                            <span id="err_pricingtitle"></span>	   
+                            <span id="err_pricingtitle"></span>    
                         </div>
                         <div class="form-group">
                             <label for="jobTitle">Pricing Plan Description
                                 <small>(required)</small>
                             </label>
                             <textarea id="pricingdescription" name="pricingdescription" class="form-control" rows="3"></textarea>
-                            <span id="err_pricingdescription"></span>	 
+                            <span id="err_pricingdescription"></span>    
                         </div>
                         <div class="form-group">
                             <label for="companyContact">Price</label>
@@ -1311,7 +1311,7 @@
                         <div class="form-group text-center">
                             <button type="button" id="addpricingdetails" class="btn btnRed">Add</button>
                         </div>
-                    </form>	
+                    </form> 
                     <hr>
                     <div class="form-group">
                         <div class="table-responsive">
@@ -1385,8 +1385,8 @@
                                 <small>(required)</small>
                             </label>
                             <input id="videourl_portfolio" name="videourl_portfolio" type="text" class="form-control" required placeholder="www.google.com">
-                            <span id="err_port_video" ></span>	   
-                        </div>															
+                            <span id="err_port_video" ></span>     
+                        </div>                                                          
                     </div>
                     <div class="form-group text-center">
                         <button type="button" id="btnaddportfolio" class="btn btnRed">Add</button>
@@ -1431,7 +1431,7 @@
                         </label>
                         <input id="list_id" name="list_id" type="hidden" >
                         <input id="listname" name="listname" type="text" class="form-control" placeholder="">
-                        <span id="err_listname" ></span>	   
+                        <span id="err_listname" ></span>       
                     </div>
                     <div class="form-group text-center">
                         <button type="button" id="btnlistadd" class="btn btnRed">Add</button>
@@ -1521,7 +1521,7 @@
                         </label>
                         <input id="videourl_id" name="videourl_id" type="hidden"    >
                         <input id="videourl" name="videourl" type="text" class="form-control" placeholder="">
-                        <span id="err_videourl" ></span>	   
+                        <span id="err_videourl" ></span>       
                     </div>
                     <div class="form-group">
                         <label for="jobTitle">Video Description</label>
@@ -1540,7 +1540,7 @@
                                 <th>Video URL</th>
                             </tr>
                         </thead>
-                        <tbody>								
+                        <tbody>                             
                         </tbody>
                     </table>
                 </div>
