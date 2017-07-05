@@ -7,6 +7,7 @@ Class Domain extends MX_Controller {
         parent::__construct();
         $this->load->helper('url');
         $this->load->helper('cookie');
+        $this->load->library('cart');
         $this->load->model("common_model");
     }
 
@@ -67,17 +68,20 @@ Class Domain extends MX_Controller {
 
         if (!empty($relativeDomainsData['DomainSuggestions']['Domain'])) {
             $domainSearchResults = array_values(array_diff($relativeDomainsData['DomainSuggestions']['Domain'], $cartContent));
-
-
 //            $domainResults = $this->getTLDPrices($domainSearchResults);
         }
-        print_r($domainSearchResults);
+//        print_r($searchTerm);
+//        if(!in_array($searchTerm,$domainSearchResults)){
+//            echo "<h3>This domain is already taken.</h3>";
+//        }
         ?>
 
         <ul class="list-unstyled domainResults">
             <?php
             if (isset($domainSearchResults) && count($domainSearchResults) > 0) {
+                $sr = 0;
                 foreach ($domainSearchResults as $key => $results) {
+                    $sr++;
                     ?>
                     <li>
                         <div class="domainType">
@@ -86,9 +90,9 @@ Class Domain extends MX_Controller {
                         <div class="priceAction">
                             <span class="price priceStrike">$29.99</span>
                             <span class="price">$9.99</span>
-                            <a class="btn btnRed">
-                                <span class="add">Select</span>
-                                <span class="remove">Remove</span>
+                            <a class="btn btnRed" onclick="add_to_cart('<?php echo strtolower($results) ?>',<?php echo $sr ?>, '99')">
+                                <span id="<?php echo 'ad' . $sr; ?>" class="add">Select</span>
+                                <span id="<?php echo 'rm' . $sr; ?>" class="remove">Remove</span>
                             </a>
                         </div>
                     </li>
@@ -126,6 +130,64 @@ Class Domain extends MX_Controller {
         curl_close($ch);
         //echo '<pre>';print_r($response);die;
         return $response;
+    }
+
+    public function addToCart() {
+        $data = array(
+            'id' => $this->input->post('id'),
+            'qty' => $this->input->post('qty'),
+            'price' => $this->input->post('price'),
+            'name' => $this->input->post('name'),
+            'options' => array('Size' => '1')
+        );
+        $insert = $this->cart->insert($data);
+        if ($insert) {
+            $map['status'] = '1';
+            $map['msg'] = 'Item added to cart';
+            echo json_encode($map);
+            exit();
+        } else {
+            $map['status'] = '0';
+            $map['msg'] = 'Unable to add item to cart';
+            echo json_encode($map);
+            exit();
+        }
+    }
+    
+    public function removeCartItem()
+    {
+        $data = array(
+            'rowid' => $this->input->post('rowid'),
+            'qty' => '0',
+        );
+        $remove = $this->cart->update($data);
+        if ($remove) {
+            $map['status'] = '1';
+            $map['msg'] = 'Item removed from cart';
+            echo json_encode($map);
+            exit();
+        } else {
+            $map['status'] = '0';
+            $map['msg'] = 'Unable to remove item';
+            echo json_encode($map);
+            exit();
+        }
+    }
+    
+    public function cart(){
+        $data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+        $contents = $this->cart->contents();
+        //echo '<pre>';print_R($data['domain_name']);die;
+        $this->template->set('page', 'domainResults');
+        $this->template->set_theme('default_theme');
+        $this->template->set('slug', $data['slug']);
+        $this->template->set('contents', $contents);
+        $this->template->set_layout('rpdigitel_frontend')
+                ->title('Domain Results')
+                ->set_partial('header', 'partials/header')
+                ->set_partial('header', 'partials/header')
+                ->set_partial('footer', 'partials/footer');
+        $this->template->build('domain_cart');
     }
 
 }
