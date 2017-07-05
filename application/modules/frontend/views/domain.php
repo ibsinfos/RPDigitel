@@ -259,10 +259,14 @@
 
 $('#btns_submit_domain').click(function() { 
                     var domain_name = $('#domain_name').val(); 
-                    var base_url=$('#base_url').val();
-                    var url = base_url+'domains-results-main/'+domain_name;
-                    //window.location(url);
-                    window.location=""+url;
+                    if(domain_name != ''){
+                        var base_url=$('#base_url').val();
+                        var url = base_url+'domains-results-main/'+domain_name;
+                        //window.location(url);
+                        window.location=""+url;
+                    }else{
+                        alert('Please enter domain name');
+                    }
                    
                 });
 

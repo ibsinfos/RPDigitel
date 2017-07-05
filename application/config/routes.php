@@ -204,6 +204,8 @@ $route['domain'] = 'frontend/domain/index';
 $route['domain-results'] = 'frontend/domain/domain_results';
 $route['dashboard/domainlist'] = 'backend/domain/index';
 
+$route['domain/cart'] = 'frontend/domain/cart';
+$route['domain/addToCart'] = 'frontend/domain/addToCart';
 
 
 /* Domain search result API   start here    */
