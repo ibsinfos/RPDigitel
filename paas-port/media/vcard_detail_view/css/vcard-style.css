@@ -1,51 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
 body {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 /*navbar css start */
 .navbar-default {
-	background-color: #383838;
-	border-radius: 0;
-	border: 0;
-	margin: 0;
+    background-color: #383838;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
 }
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
-	color: #fff;
+    color: #fff;
 }
 .navbar-default .navbar-toggle {
-	display: block;
-	border: 0;
+    display: block;
+    border: 0;
 }
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
-	background-color: transparent;
+    background-color: transparent;
 }
 .navbar-default .searchWrap,
 .navbar-default .navbar-nav>.open>a, 
 .navbar-default .navbar-nav>.open>a:focus, 
 .navbar-default .navbar-nav>.open>a:hover {
-		background-color: #7f7f7f;
-		color: #fff;
+    background-color: #7f7f7f;
+    color: #fff;
 }
 .navbar-default .userImage {
-	padding-top: 13px;
+    padding-top: 13px;
     padding-bottom: 12px;
 }
 .navbar-default .userImage > img {
-	width: 25px;
+    width: 25px;
     display: inline-block;
     height: 25px;
     border-radius: 50%;
     border: 1px solid #7f7f7f;
     margin-right: 5px;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 .navbar-default .badge {
-	background-color: #f00700;
-	position: absolute;
+    background-color: #f00700;
+    position: absolute;
     top: 8px;
     font-size: 10px;
     padding: 2px 5px;
@@ -61,330 +61,330 @@ body {
     outline: none;
 }
 .memberLinkWrap ul {
-	box-shadow: 0 2px 15px #777;
+    box-shadow: 0 2px 15px #777;
     padding: 5px 0;
 }
 .memberLinkWrap .membershipDate {
-	font-size: 12px;
-	margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 .bannerWrap {
-	/*background: url('../images/banner.jpg') no-repeat center center /cover;*/
-	height: 400px;
-	border-bottom: 10px solid #fb0200;
-	margin-bottom: 5px;
+    /*background: url('../images/banner.jpg') no-repeat center center /cover;*/
+    height: 400px;
+    border-bottom: 10px solid #fb0200;
+    margin-bottom: 5px;
 }
 .bannerWrap img {
-	width: 100%;
-	height: 400px;
+    width: 100%;
+    height: 400px;
 }
 .versionWrap {
-	background-color: #1c1c1c;
-	position: relative;
+    background-color: #1c1c1c;
+    position: relative;
 }
 .versionWrap .versionBtn {
-	background: transparent;
-	border-color: #fff;
-	color: #fff;
-	width: 175px;
-	height: 45px;
-	border-radius: 25px;
-	text-transform: uppercase;
-	margin: 20px 0 50px;
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    width: 175px;
+    height: 45px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin: 20px 0 50px;
 }
 .versionWrap audio {
-	margin-bottom: 10px;
-	max-width: 100%;
+    margin-bottom: 10px;
+    max-width: 100%;
 }
 
 /* Audio Player css start */
 .audioPlayerWrap {
-  color: #808080;
+    color: #808080;
 }
 /*.audioPlayerWrap .playerCol {
   display: table-cell;
   vertical-align: middle;
 }*/
 .audioPlayerWrap .secondCol {
-  padding-left: 0;
+    padding-left: 0;
 }
 .audioPlayerWrap .album-image {
-  min-height: 100px;
-  width: 110px;
-  background-size: cover;
+    min-height: 100px;
+    width: 110px;
+    background-size: cover;
 }
 .audioPlayerWrap .player-controls {
-  justify-content: center;
-  text-align: left;
+    justify-content: center;
+    text-align: left;
 }
 .audioPlayerWrap .player-controls small {
-  position: relative;
+    position: relative;
 }
 .audioPlayerWrap .player-controls progress {
-  width: 100%;
+    width: 100%;
 }
 .audioPlayerWrap .player-controls progress[value] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #808080;
-  color: #f72f3c;
-  height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #808080;
+    color: #f72f3c;
+    height: 5px;
 }
 .audioPlayerWrap .player-controls progress[value]::-webkit-progress-bar {
-  background-color: #808080;
-  border-radius: 2px;
-  border: 1px solid #808080;
-  color: #f72f3c;
+    background-color: #808080;
+    border-radius: 2px;
+    border: 1px solid #808080;
+    color: #f72f3c;
 }
 .audioPlayerWrap .player-controls progress::-webkit-progress-value {
-  background-color: #f72f3c;
+    background-color: #f72f3c;
 }
 .audioPlayerWrap .player-controls p {
-  font-size: 1.4rem;
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+    font-size: 1.4rem;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .audioPlayerWrap #play-btn {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid;
-  border-radius: 50%;
-  font-size: 20px;
-  text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
 }
 .audioPlayerWrap #play-btn .fa-play {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 .audioPlayerWrap #play-btn.pause .fa-play,
 .audioPlayerWrap #play-btn .fa-pause {
-  display: none;
+    display: none;
 }
 .audioPlayerWrap #play-btn.pause .fa-pause {
-  display: inline-block;
+    display: inline-block;
 }
 /* Audio Player css end */
 
 /* share social media css start */
 .counter-top .share {
-	float: right;
-	margin-right: 20px;
+    float: right;
+    margin-right: 20px;
 }
 .share .button {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  width: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 40px;
 }
 .share .button .counter {
-  font-size: 12px;
-  line-height: 1em;
-  padding: 2px 0px 1px 0px;
+    font-size: 12px;
+    line-height: 1em;
+    padding: 2px 0px 1px 0px;
 }
 .share .button .counter:empty {
-  display: none;
+    display: none;
 }
 .share .button a {
-  color: inherit;
-  display: block;
-  width: 100%;
-  outline: 0;
-  height: 40px;
-  line-height: 40px;
+    color: inherit;
+    display: block;
+    width: 100%;
+    outline: 0;
+    height: 40px;
+    line-height: 40px;
 }
 .share .button.google-plus {
-  background: #CD3C2A;
+    background: #CD3C2A;
 }
 .share .button.google-plus:hover {
-  background: #d85342;
+    background: #d85342;
 }
 .share .button.google-plus:hover .counter,
 .share .button.google-plus .counter:hover {
-  background: #c03827;
+    background: #c03827;
 }
 .share .button.google-plus .counter {
-  background: #a33021;
+    background: #a33021;
 }
 .share .button.facebook {
-  background: #4966B6;
+    background: #4966B6;
 }
 .share .button.facebook:hover {
-  background: #627bc0;
+    background: #627bc0;
 }
 .share .button.facebook:hover .counter,
 .share .button.facebook .counter:hover {
-  background: #4560ab;
+    background: #4560ab;
 }
 .share .button.facebook .counter {
-  background: #3a5292;
+    background: #3a5292;
 }
 .share .button.linkedin {
-  background: #1783BC;
+    background: #1783BC;
 }
 .share .button.linkedin:hover {
-  background: #1b99dc;
+    background: #1b99dc;
 }
 .share .button.linkedin:hover .counter,
 .share .button.linkedin .counter:hover {
-  background: #157aae;
+    background: #157aae;
 }
 .share .button.linkedin .counter {
-  background: #11638f;
+    background: #11638f;
 }
 /* share social media css start */
 
 
 .versionWrap .musicianWrap {
-	margin-top: -50px;
+    margin-top: -50px;
 }
 .musicianWrap  {
-	display: table;
-	margin: 0 auto;
+    display: table;
+    margin: 0 auto;
 }
 .musicianWrap .btnColumn {
-  display: table-cell;
-  /*vertical-align: middle;*/
+    display: table-cell;
+    /*vertical-align: middle;*/
 }
 .musicianWrap .btn {
-  color: #fff;
-  width: 125px;
-  height: 30px;
-  line-height: 15px;
-  border-radius: 25px;
-  text-transform: uppercase;
-  font-weight: 700;
+    color: #fff;
+    width: 125px;
+    height: 30px;
+    line-height: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .musicianWrap .subscribeBtn {
-	background-color: #f50707;
+    background-color: #f50707;
 }
 .musicianWrap .shareBtn {
-	background-color: #353535;
+    background-color: #353535;
 }
 .musicianWrap .musicianImageName {
     display: table-cell;
     padding: 0 15px;
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
 }
 .musicianWrap .musicianImageName img {
-	border: 3px solid #fff;
-	-webkit-border-radius: 50%;
-	-o-border-radius: 50%;
-  border-radius: 50%;
-  width: 175px;
-  height: 175px;
-	margin-bottom: 15px;
+    border: 3px solid #fff;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    margin-bottom: 15px;
 }
 .musicianWrap .musicianName {
-	font-weight: 700;
+    font-weight: 700;
     margin-bottom: 0;
 }
 .versionWrap .followShare {
-	text-align: right;
-	margin-bottom: 15px;
+    text-align: right;
+    margin-bottom: 15px;
 }
 .versionWrap .followShare .linkedInBtn {
-	padding-right: 10px;
+    padding-right: 10px;
 }
 .versionWrap .followShare .followBtn,
 .musicianListWrap .followWrap .followBtn {
-	background-color: #ea323a;
-  color: #fff;
-  border-radius: 20px;
-  margin: 25px 0 15px;
-	padding: 4px 8px;
+    background-color: #ea323a;
+    color: #fff;
+    border-radius: 20px;
+    margin: 25px 0 15px;
+    padding: 4px 8px;
 }
 .versionWrap .followBtn i,
 .musicianListWrap .followWrap .followBtn i {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 .musicianListWrap {
-	padding-top: 20px;
-	border-radius: 0;
+    padding-top: 20px;
+    border-radius: 0;
 }
 .musicianListWrap ul > li .panel {
-	-webkit-box-shadow: 2px 2px 8px #ccc;
-	-moz-box-shadow: 2px 2px 8px #ccc;
-	box-shadow: 2px 2px 8px #ccc;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-o-border-radius: 0;
-	border-radius: 0;
+    -webkit-box-shadow: 2px 2px 8px #ccc;
+    -moz-box-shadow: 2px 2px 8px #ccc;
+    box-shadow: 2px 2px 8px #ccc;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
 }
 .musicianListWrap ul > li .panel .carousel img {
-  min-height: 200px;
+    min-height: 200px;
 }
 .musicianListWrap ul > li .followWrap {
-	margin-top: -25px;
-  text-align: center;
+    margin-top: -25px;
+    text-align: center;
 }
 .musicianListWrap ul > li .followWrap .circleImage {
-	position: relative;
-	width: 100px;
-	margin: 0 auto;
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
 }
 .musicianListWrap ul > li .followWrap img {
-	width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto 10px;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 .musicianListWrap ul > li .circleImage:hover img {
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .musicianListWrap ul > li .followWrap p {
-	font-weight: 700;
-	margin: 0;
+    font-weight: 700;
+    margin: 0;
 }
 .musicianListWrap ul > li .followWrap .btn {
-	position: absolute;
-  top: 40px;
-  margin: 0;
-  right: -50px;
+    position: absolute;
+    top: 40px;
+    margin: 0;
+    right: -50px;
 }
 .musicianListWrap ul > li .panel h4 {
-	font-weight: 700;
+    font-weight: 700;
     margin: 0 0 20px;
 }
 .musicianListWrap ul > li .panel .subscribeBtn {
-	background-color: #fe0000;
-	text-transform: uppercase;
-	color: #fff;
-	padding: 6px 25px;
-	font-weight: 700;
-	-webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+    background-color: #fe0000;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px 25px;
+    font-weight: 700;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
 }
 
 /* start rating css start */
 .star-rating {
-  display:flex;
-  flex-direction: row-reverse;
-  font-size:2em;
-  justify-content:space-around;
-  padding:0 .2em;
-  text-align:center;
-  width:5em;
-  margin: 0 auto;
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:2em;
+    justify-content:space-around;
+    padding:0 .2em;
+    text-align:center;
+    width:5em;
+    margin: 0 auto;
 }
 .star-rating input {
-  display:none;
+    display:none;
 }
 .star-rating label {
-  color:#767676;
-  cursor:pointer;
+    color:#767676;
+    cursor:pointer;
 }
 /*.star-rating :checked ~ label {
   color:#eb2d37;
@@ -394,57 +394,57 @@ body {
   color:#eb2d37;
 }*/
 .star-rating label.active {
-	color:#eb2d37;
+    color:#eb2d37;
 }
 /* star rating css end */
 
 /* signLoadBtnWrap css start */
 .signLoadBtnWrap {
-	background-color: #c4c4c4;
-	padding: 25px 0;
+    background-color: #c4c4c4;
+    padding: 25px 0;
 }
 .signLoadBtnWrap .btn {
-  text-transform: uppercase;
-  width: 180px;
-  font-weight: 700;
-  color: #fff;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  height: 40px;
+    text-transform: uppercase;
+    width: 180px;
+    font-weight: 700;
+    color: #fff;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    height: 40px;
 }
 .signLoadBtnWrap .redBtn {
-	background-color: #fd0002;
-	margin-right: 15px;
+    background-color: #fd0002;
+    margin-right: 15px;
 }
 .signLoadBtnWrap .blackBtn {
-	background-color: #000;
+    background-color: #000;
 }
 /* signLoadBtnWrap css start */
 
 /* footer css start */
 .footerWrap {
-  background-color: #000;
-  /*padding: 40px 0 90px;*/
-  padding: 25px 0;
+    background-color: #000;
+    /*padding: 40px 0 90px;*/
+    padding: 25px 0;
 }
 .footerWrap .socialMedia {
-	float: right;
-  margin: 0;
+    float: right;
+    margin: 0;
 }
 .socialMedia li {
-	border: 2px solid #fff;
-	-webkit-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	width: 27px;
-	height: 27px;
-	line-height: 25px;
-	text-align: center;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    line-height: 25px;
+    text-align: center;
 }
 .socialMedia li a {
-	display: block;
-	color: #fff;
+    display: block;
+    color: #fff;
 }
 /* footer css end */
 
@@ -453,93 +453,93 @@ body {
 /* Default / Desktop / Firefox */
 audio { width:100%; }
 #mainwrap { 
-  box-shadow:0 0 6px -1px rgba(0,0,0,.25); 
+    box-shadow:0 0 6px -1px rgba(0,0,0,.25); 
 }
 #audiowrap { 
-  background-color:#fafafa; 
-  margin:0 auto; 
+    background-color:#fafafa; 
+    margin:0 auto; 
 }
 #plwrap { 
-  margin:0 auto; 
-  height: 150px; 
-  padding-bottom: 15px;
+    margin:0 auto; 
+    height: 150px; 
+    padding-bottom: 15px;
 }
 #tracks { 
-  position:relative; 
-  text-align:center; 
+    position:relative; 
+    text-align:center; 
 }
 #nowPlay { 
-  display:inline; 
+    display:inline; 
 }
 #npTitle { 
-	padding: 10px; 
-	display: block; 
-	overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-align: center;
+    padding: 10px; 
+    display: block; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
 }
 #npAction { 
-  padding:21px; 
-  position:absolute; 
+    padding:21px; 
+    position:absolute; 
 }
 #plList { 
-  margin:0; 
+    margin:0; 
 }
 #plList li { 
-  background-color:#fafafa; 
-  cursor:pointer; 
-  display:block; 
-  margin:0; 
-  padding:10px 0; 
+    background-color:#fafafa; 
+    cursor:pointer; 
+    display:block; 
+    margin:0; 
+    padding:10px 0; 
 }
 #plList li:hover { 
-  background-color:#eee; 
+    background-color:#eee; 
 }
 #plList li .plItem { 
-  position:relative; 
+    position:relative; 
 }
 #plList li .plTitle { 
-  left:50px; 
-  overflow:hidden; 
-  position:absolute; 
-  right:65px; 
-  text-overflow:ellipsis; 
-  top:0; 
-  white-space:nowrap; 
+    left:50px; 
+    overflow:hidden; 
+    position:absolute; 
+    right:65px; 
+    text-overflow:ellipsis; 
+    top:0; 
+    white-space:nowrap; 
 }
 #plList li .plNum { 
-  padding-left:21px; width:25px; 
+    padding-left:21px; width:25px; 
 }
 #plList li .plLength { 
-  padding-left:21px; 
-  position:absolute; 
-  right:21px; 
-  top:0; 
+    padding-left:21px; 
+    position:absolute; 
+    right:21px; 
+    top:0; 
 }
 .plSel,.plSel:hover { 
-  background-color:#eee!important; 
-  cursor:default!important; 
+    background-color:#eee!important; 
+    cursor:default!important; 
 }
 .audioPLWrap a[id^="btn"] { 
-  background-color:#fafafa; 
-  color:#5a5a5a; 
-  cursor:pointer; 
-  display:inline-block; 
-  font-size:18px; 
-  margin:0; 
-  padding:5px 25px; 
-  text-decoration:none; 
+    background-color:#fafafa; 
+    color:#5a5a5a; 
+    cursor:pointer; 
+    display:inline-block; 
+    font-size:18px; 
+    margin:0; 
+    padding:5px 25px; 
+    text-decoration:none; 
 }
 .audioPLWrap a[id^="btn"]:last-child { 
-  margin-left:-4px; 
+    margin-left:-4px; 
 }
 .audioPLWrap a[id^="btn"]:hover,a[id^="btn"]:active { 
-  background-color:#eee; 
+    background-color:#eee; 
 }
 .audioPLWrap a[id^="btn"]::-moz-focus-inner { 
-  border:0; 
-  padding:0; 
+    border:0; 
+    padding:0; 
 }
 
 /* IE 9 */
@@ -621,78 +621,78 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
 
 /* Tablet Portrait 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	audio { width:526px; }
-	html[data-useragent*="MSIE 9.0"] audio { width:536px; }
-	html[data-useragent*="MSIE 10.0"] audio { width:543px; }
-	html[data-useragent*="rv:11.0"] audio { width:551px; }
-	html[data-useragent*="OS 7"] audio { width:546px; }
-	html[data-useragent*="OS 8"] audio { width:550px; }
-	html[data-useragent*="OS 9"] audio { width:550px; }
+        audio { width:526px; }
+        html[data-useragent*="MSIE 9.0"] audio { width:536px; }
+        html[data-useragent*="MSIE 10.0"] audio { width:543px; }
+        html[data-useragent*="rv:11.0"] audio { width:551px; }
+        html[data-useragent*="OS 7"] audio { width:546px; }
+        html[data-useragent*="OS 8"] audio { width:550px; }
+        html[data-useragent*="OS 9"] audio { width:550px; }
 }*/
 
 /* Mobile Landscape 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	audio { width:390px; }
-	html[data-useragent*="MSIE 9.0"] audio { width:400px; }
-	html[data-useragent*="MSIE 10.0"] audio { width:407px; }
-	html[data-useragent*="rv:11.0"] audio { width:415px; }
-	html[data-useragent*="OS 7"] audio { width:410px; }
-	html[data-useragent*="OS 8"] audio { width:414px; }
-	html[data-useragent*="OS 9"] audio { width:414px; }
-	html[data-useragent*="Chrome"] audio { width:397px; }
+        audio { width:390px; }
+        html[data-useragent*="MSIE 9.0"] audio { width:400px; }
+        html[data-useragent*="MSIE 10.0"] audio { width:407px; }
+        html[data-useragent*="rv:11.0"] audio { width:415px; }
+        html[data-useragent*="OS 7"] audio { width:410px; }
+        html[data-useragent*="OS 8"] audio { width:414px; }
+        html[data-useragent*="OS 9"] audio { width:414px; }
+        html[data-useragent*="Chrome"] audio { width:397px; }
 }*/
 
 /* Mobile Portrait 
 @media only screen and (max-width: 479px) {
-	audio { width:270px; }
-	html[data-useragent*="MSIE 9.0"] audio { width:280px; }
-	html[data-useragent*="MSIE 10.0"] audio { width:287px; }
-	html[data-useragent*="rv:11.0"] audio { width:295px; }
-	html[data-useragent*="OS 7"] audio { width:290px; }
-	html[data-useragent*="OS 8"] audio { width:294px; }
-	html[data-useragent*="OS 9"] audio { width:294px; }
+        audio { width:270px; }
+        html[data-useragent*="MSIE 9.0"] audio { width:280px; }
+        html[data-useragent*="MSIE 10.0"] audio { width:287px; }
+        html[data-useragent*="rv:11.0"] audio { width:295px; }
+        html[data-useragent*="OS 7"] audio { width:290px; }
+        html[data-useragent*="OS 8"] audio { width:294px; }
+        html[data-useragent*="OS 9"] audio { width:294px; }
 }*/
 /* Audio playlist css end */
 
 /* profile css start */
 .musicListWrap {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 .musicListWrap h4,
 .memberListWrap h4 {
-	font-weight: 700;
+    font-weight: 700;
 }
 .musicListWrap .trackName,
 .musicListWrap i {
-	color: #ccc;
+    color: #ccc;
 }
 .musicListWrap .trackLoved {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 .musicListWrap .btn {
-	height: 35px;
+    height: 35px;
     width: 35px;
     border-radius: 50%;
     background: transparent;
     border: 2px solid #e51a4f;
 }
 .musicListWrap .btn i { 
-	color: #e51a4f;
+    color: #e51a4f;
 }
 .learnMoreAbout .learnMoreText {
-	margin: 12px 0 35px;
+    margin: 12px 0 35px;
 }
 .learnMoreAbout .list-inline {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .socialShareWrap {
-  text-align: center;
+    text-align: center;
 }
 .socialShareWrap li {
-	padding: 0 1px;
+    padding: 0 1px;
 }
 .socialShareWrap a {
-	color: #fff;
+    color: #fff;
     display: block;
     background-color: #3b56ad;
     width: 30px;
@@ -703,369 +703,478 @@ html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover { backgro
     border-radius: 3px;
 }
 .socialShareWrap a.facebook {
-	background-color: #3b56ad;
+    background-color: #3b56ad;
 }
 .socialShareWrap a.twitter {
-	background-color: #19b1f0;
+    background-color: #19b1f0;
 }
 .socialShareWrap a.googlePlus {
-	background-color: #e34e38;
+    background-color: #e34e38;
 }
 .socialShareWrap a.pinterest-p {
-	background-color: #ca1a1c;
+    background-color: #ca1a1c;
 }
 .socialShareWrap a.instagram {
-	background-color: #4072a3;
+    background-color: #4072a3;
 }
 .socialShareWrap a.linkedin {
-	background-color: #0068a5;
+    background-color: #0068a5;
 }
 .learnMoreAbout .musicianWrap .btn {
-	width: 115px;
+    width: 115px;
 }
 .learnMoreAbout .musicianWrap .musicianImageName img {
-	width: 150px;
-	height: 150px;
+    width: 150px;
+    height: 150px;
 }
 .modal .modal-header,
 .modal .modal-body {
-  padding: 10px;
+    padding: 10px;
 }
 .modal .form-group {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .modal .modalHeading {
-  background-color: #e0e0e0;
-  padding: 7px 5px;
-  text-align: center;
-  color: #ff0000;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0 0 10px;
+    background-color: #e0e0e0;
+    padding: 7px 5px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 10px;
 }
 .modal .btn {
-  background-color: #ff0000;
-  color: #fff;
+    background-color: #ff0000;
+    color: #fff;
 }
 .memberListWrap .mCustomScrollbar {
-	height: 275px;
+    height: 275px;
 }
 .memberListWrap ul {
-	display: table;
-	width: 100%;
+    display: table;
+    width: 100%;
 }
 .memberListWrap ul li {
-	/*border-top: 1px solid #f2f4f3;
-    padding: 10px;*/
+    /*border-top: 1px solid #f2f4f3;
+padding: 10px;*/
     display: table-row;
 }
 .memberListWrap ul li .memberCol {
-	display: table-cell;
-	padding: 10px 5px;
-	vertical-align: middle;
-  position: relative;
+    display: table-cell;
+    padding: 10px 5px;
+    vertical-align: middle;
+    position: relative;
 }
 .memberListWrap ul li .imageBlock {
-	width: 60px;
+    width: 60px;
 }
 .memberListWrap ul li .imageBlock img {
-	width: 50px;
-	height: 50px;
+    width: 50px;
+    height: 50px;
 }
 .memberListWrap ul li .memberCol p {
-	white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: absolute;
-  right: 30px;
-  left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    right: 30px;
+    left: 5px;
 }
 .memberListWrap ul li.active {
-	background-color: #eff4fa;
+    background-color: #eff4fa;
 }
 /*.memberListWrap ul li a {
-	display: block;
-	color: #828282;
+        display: block;
+        color: #828282;
 }
 .memberListWrap ul li a img {
-	width: 50px;
-	height: 50px;
+        width: 50px;
+        height: 50px;
 }*/
 .memberListWrap ul li h5 {
-	color: #6e7275;
-	margin: 0 0 5px;
+    color: #6e7275;
+    margin: 0 0 5px;
 }
 .memberListWrap ul li .badge {
-	background-color: #e43f43;
-  float: right;
+    background-color: #e43f43;
+    float: right;
 }
 .nav-tabs {
-	border-bottom: 0;
+    border-bottom: 0;
 }
 .nav-tabs>li>a {
-	color: #5c5c5c;
-	font-weight: 700;
-	border-radius: 0;
-	padding: 10px 30px;
-	border: 0;
+    color: #5c5c5c;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 10px 30px;
+    border: 0;
 }
 .nav-tabs>li.active>a, 
 .nav-tabs>li.active>a:focus, 
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li>a:hover {
-	background-color: #dedede;
-	border: 0;
+    background-color: #dedede;
+    border: 0;
 }
 .tab-content {
-	border-top: 10px solid #7f7f7f;
+    border-top: 10px solid #7f7f7f;
 }
 .tab-content .panel {
-	border: 0;
-	box-shadow: none;
-	-webkit-box-shadow: none;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 .tab-content h4 {
-	font-weight: 700;
-	margin-bottom: 15px;
-	color: #787878;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #787878;
 }
 .tab-content .panel-body p {
-	font-size: 12px;
+    font-size: 12px;
 }
 .postWrap .socialMedia {
-	margin: -40px 0 14px 25px;
+    margin: -40px 0 14px 25px;
 }
 .postWrap .googleBtn {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 .postWrap .googleBtn button {
-	background-color: transparent;
-	border: 1px solid #ccc;
-	color: #af525a;
-	height: 25px;
-	width: 40px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #af525a;
+    height: 25px;
+    width: 40px;
 }
 .aboutMeWrap .panel-heading {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 .aboutMeWrap .panel-body {
-	background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 .facebookCommentWrap h4 {
-	margin: 40px 0 50px;
+    margin: 40px 0 50px;
 }
 .facebookCommentWrap .list-unstyled {
-	display: table;
-	width: 100%;
+    display: table;
+    width: 100%;
 }
 .facebookCommentWrap .list-unstyled li {
-	color: #555555;
-	/*padding: 15px 10px;*/
-	display: table-row;
+    color: #555555;
+    /*padding: 15px 10px;*/
+    display: table-row;
 }
 .facebookCommentWrap .list-unstyled li .commentCol {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 10px 5px;
-	border-top: 2px solid #959595;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 5px;
+    border-top: 2px solid #959595;
 }
 .facebookCommentWrap .list-unstyled li .imageBlock {
-	width: 60px;
+    width: 60px;
 }
 .facebookCommentWrap .list-unstyled li h5 {
-	font-weight: 700;
-	margin: 0 50px 10px 0;
+    font-weight: 700;
+    margin: 0 50px 10px 0;
 }
 .facebookCommentWrap .list-unstyled li .imageBlock img {
-	width: 55px;
-	height: 55px;
+    width: 55px;
+    height: 55px;
 }
 .facebookCommentWrap form {
-	border-top: 2px solid #959595;
-	padding: 15px 20px 0;
+    border-top: 2px solid #959595;
+    padding: 15px 20px 0;
 }
 .facebookCommentWrap form h4 {
-	margin: 5px 0 15px;
-	color: #000;
+    margin: 5px 0 15px;
+    color: #000;
 }
 .facebookCommentWrap form .btn {
-	color: #7b7c7e;
-	background-color: #f6f7f9;
-	margin-bottom: 8px;
+    color: #7b7c7e;
+    background-color: #f6f7f9;
+    margin-bottom: 8px;
 }
 .facebookCommentWrap .dropdown-menu {
-  min-width: 110px;
+    min-width: 110px;
 }
 .facebookCommentWrap form .btn,
 .facebookCommentWrap form .form-control {
-	-webkit-border-radius: 0;
-	-o-border-radius: 0;
-	border-radius: 0;
-	box-shadow: none;
-	border-color: #d2d2d2;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #d2d2d2;
 }
 .facebookCommentWrap form .form-control {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .facebookCommentWrap form .pluginText {
-	border-top: 1px solid #ccc;
-	color: #48558a;
-	padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #48558a;
+    padding-top: 10px;
+}
+#video .panel {
+    background: url('../../../../assets/backend/images/paasport/music-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    position: relative;
+    min-height: 150px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40px;
 }
 
+/*.createPaasportWrap .mediaTabContentWrap .panel:before {
+    content: "\f01d";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}*/
+#video .panel:after {
+    background: rgba(0,0,0,0.6);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#video .panel .fa-ellipsis-h {
+	position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+}
+#video .panel h5 {
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#video .panel audio,
+#video .panel video {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#video .panel .panel-footer {
+    padding: 6px 15px;
+    background: rgba(255,255,255,0.6);
+    border: 0;
+    text-align: left;
+    border-radius: 0;
+}
+#video .panel .videoPopupLink {
+    display: inline-block;
+    color: #808080;
+}
 /* profile css end */
+
+/* video popup css start */
+#popupBg {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.videoPopup {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 360px;
+    width: 640px;
+    background: #FFF;
+    z-index: 550;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.videoPopup .closePopup {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    font-size: 24px;
+    top: 5px;
+    color: #FFF;
+    right: 5px;
+    display: block;
+    line-height: 31px;
+    background: #333;
+    border-radius: 15px;
+    text-align: center;
+}
+.videoPopup .videoContainer {
+    width: 640px;
+    height: 360px;
+    -moz-box-shadow: 0 0 10px #222;
+    -webkit-box-shadow: 0 0 10px #222;
+    box-shadow: 0 0 10px #222;
+}
+.videoPopup .videoContainer video {
+    width: 100%;
+}
+/* video popup css end */
 
 /* responsive css */
 @media (max-width: 1400px) {
-	.learnMoreAbout .musicianWrap .musicianImageName img {
-	    width: 100px;
-	    height: 100px;
-	}
-	.learnMoreAbout .musicianWrap .btn {
-    	width: 100px;
-    	font-size: 12px;
-	}
+    .learnMoreAbout .musicianWrap .musicianImageName img {
+        width: 100px;
+        height: 100px;
+    }
+    .learnMoreAbout .musicianWrap .btn {
+        width: 100px;
+        font-size: 12px;
+    }
 }
 @media (max-width: 1200px) {
-  .audioPlayerWrap .secondCol {
-    padding-left: 15px;
-  }
+    .audioPlayerWrap .secondCol {
+        padding-left: 15px;
+    }
 }
 @media (max-width: 1024px) {
-	.facebookCommentWrap form {
-		padding: 15px 0;
-	}
+    .facebookCommentWrap form {
+        padding: 15px 0;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-	.navbar-header {
-		float: none;
-	}
-	.navbar-collapse.collapse {
-		display: none !important;
-		-webkit-overflow-scrolling: touch;
-		border-top: 1px solid transparent;
-		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-	}
-	.navbar-collapse.in {
-		display: block !important;
-	}
-	.versionWrap .versionBtn {
-		width: 145px;
-		font-size: 12px;
-	}
-	.versionWrap .musicianWrap {
-	    margin-top: -28px;
-	}
-	.musicianWrap .btn {
-		width: 105px;	
-	}
-	.musicianWrap .musicianImageName img {
-		width: 100px;
-		height: 100px;
-	}
-	.learnMoreAbout .musicianWrap .btn {
-		width: 65px;
-	    font-size: 9px;
-	    padding: 5px;
-	}
-	.musicianWrap .musicianImageName {
-		padding: 0 5px;
-	}
-  .musicianListWrap ul > li .panel .carousel img {
-    min-height: 160px;
-  }
-	.learnMoreAbout .musicianWrap .musicianImageName img {
-		width: 85px;
-		height: 85px;
-	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    }
+    .navbar-collapse.in {
+        display: block !important;
+    }
+    .versionWrap .versionBtn {
+        width: 145px;
+        font-size: 12px;
+    }
+    .versionWrap .musicianWrap {
+        margin-top: -28px;
+    }
+    .musicianWrap .btn {
+        width: 105px;	
+    }
+    .musicianWrap .musicianImageName img {
+        width: 100px;
+        height: 100px;
+    }
+    .learnMoreAbout .musicianWrap .btn {
+        width: 65px;
+        font-size: 9px;
+        padding: 5px;
+    }
+    .musicianWrap .musicianImageName {
+        padding: 0 5px;
+    }
+    .musicianListWrap ul > li .panel .carousel img {
+        min-height: 160px;
+    }
+    .learnMoreAbout .musicianWrap .musicianImageName img {
+        width: 85px;
+        height: 85px;
+    }
 }
 @media (max-width: 767px) {
-	.navbar-default .badge {
-		top: 13px;
-		right: 15px;
-	}
-	.versionWrap .versionBtn {
-		margin: 25px auto;
-	}
-	.versionWrap audio {
-		margin-bottom: 30px;
-	}
-	.versionWrap .musicianWrap,
-	.learnMoreAbout .musicianWrap {
-		margin: 25px auto 0;
-		width: 290px;
-	}
-	.versionWrap .musicianWrap .btn,
-	.learnMoreAbout .musicianWrap .btn {
-		width: 80px;
-		font-size: 10px;
-		/*margin-top: 35px;*/
-	}
-	.versionWrap .musicianWrap .musicianImageName img,
-	.learnMoreAbout .musicianWrap .musicianImageName img {
-		width: 90px;
-		height: 90px;
-	}
-  .versionWrap .versionDetails .audioPlayerWrap {
-    width: 300px;
-    margin: 0 auto;
-  }
-	.versionWrap .versionDetails,
-	.versionWrap .followShare {
-		text-align: center;
-	}
-	.versionWrap .followShare .linkedInBtn {
-    padding-right: 0;
-    margin-bottom: 20px; 
-	}
-	.nav-tabs>li {
-		float: none;
-		text-align: center;
-	}
-	.followShare .share {
-		float: none;
-		margin: 0 0 25px;
-	}
-	.followShare .share .button {
-	  display: inline-block;
-	  margin-right: 4px;
-	}
-	.followShare .share.counter-top .button {
-	  vertical-align: bottom;
-	}
-	.followShare .share.counter-bottom .button {
-	  vertical-align: top;
-	}
-	.postWrap .googleBtn {
-		margin-bottom: 15px;
-	}
-	.signLoadBtnWrap .btn {
-		width: 125px;
-	}
-	.footerWrap {
-		text-align: center;
-	}
-	.footerWrap .socialMedia {
-		float: none;
-  	margin-top: 20px;
-	}
-  .memberListWrap .mCustomScrollbar {
-    margin-bottom: 20px;
-  }
-	.learnMoreAbout .learnMoreText {
-		margin: 30px 0 20px;
-	}
-	.aboutMeWrap video {
-		height: auto;
-	}
-  .facebookCommentWrap h4 {
-    margin-bottom: 20px;
-  }
+    .navbar-default .badge {
+        top: 13px;
+        right: 15px;
+    }
+    .versionWrap .versionBtn {
+        margin: 25px auto;
+    }
+    .versionWrap audio {
+        margin-bottom: 30px;
+    }
+    .versionWrap .musicianWrap,
+    .learnMoreAbout .musicianWrap {
+        margin: 25px auto 0;
+        width: 290px;
+    }
+    .versionWrap .musicianWrap .btn,
+    .learnMoreAbout .musicianWrap .btn {
+        width: 80px;
+        font-size: 10px;
+        /*margin-top: 35px;*/
+    }
+    .versionWrap .musicianWrap .musicianImageName img,
+    .learnMoreAbout .musicianWrap .musicianImageName img {
+        width: 90px;
+        height: 90px;
+    }
+    .versionWrap .versionDetails .audioPlayerWrap {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .versionWrap .versionDetails,
+    .versionWrap .followShare {
+        text-align: center;
+    }
+    .versionWrap .followShare .linkedInBtn {
+        padding-right: 0;
+        margin-bottom: 20px; 
+    }
+    .nav-tabs>li {
+        float: none;
+        text-align: center;
+    }
+    .followShare .share {
+        float: none;
+        margin: 0 0 25px;
+    }
+    .followShare .share .button {
+        display: inline-block;
+        margin-right: 4px;
+    }
+    .followShare .share.counter-top .button {
+        vertical-align: bottom;
+    }
+    .followShare .share.counter-bottom .button {
+        vertical-align: top;
+    }
+    .postWrap .googleBtn {
+        margin-bottom: 15px;
+    }
+    .signLoadBtnWrap .btn {
+        width: 125px;
+    }
+    .footerWrap {
+        text-align: center;
+    }
+    .footerWrap .socialMedia {
+        float: none;
+        margin-top: 20px;
+    }
+    .memberListWrap .mCustomScrollbar {
+        margin-bottom: 20px;
+    }
+    .learnMoreAbout .learnMoreText {
+        margin: 30px 0 20px;
+    }
+    .aboutMeWrap video {
+        height: auto;
+    }
+    .facebookCommentWrap h4 {
+        margin-bottom: 20px;
+    }
+
 }
 
 /*start  css for loader */
-	@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 .body {  }
 .loader { font-weight: bold; width: 500px; margin: 0 auto; height: 20px; font-family: 'Josefin Sans', sans-serif; }
 .title { color: #FF3B30 ; font-size: 100%; margin-bottom: 5px }
