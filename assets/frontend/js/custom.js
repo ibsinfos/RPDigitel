@@ -301,13 +301,27 @@ function validateMemberDetails() {
                 minlength: 9,
                 required: true
             },
-            billing_address: 'required',
+           
             billing_city: {
                 required: true,
                 lettersonly: true
             },
-            billing_state: 'required',
-            billing_zip: 'required'
+            billing_country: {
+                required: true,
+                //lettersonly: true
+            },
+             billing_state: {
+                required: true,
+                //lettersonly: true
+            },
+             address: {
+                required: true,
+            },
+             zip: {
+                required: true,
+                digits: true
+            },
+            
         },
         ////// Messages for Rules Goes Below //////
 
@@ -330,13 +344,29 @@ function validateMemberDetails() {
                 required: "Please enter phone number"
             },
             password: "Please enter a passowrd",
-            billing_address: "Please enter address",
+            
             billing_city: {
                 lettersonly: "Letters only please",
                 required: "Please enter city"
             },
-            billing_state: "Please select state",
-            billing_zip: "Please enter zip"
+            billing_country: {
+                lettersonly: "Letters only please",
+                required: "Please select country"
+            },
+            billing_state: {
+                lettersonly: "Letters only please",
+                required: "Please select state"
+            },
+             zip: {
+                digits: "Digits only please",
+                required: "Please enter zip"
+            },
+            address: {
+                lettersonly: "Letters only please",
+                required: "Please enter address"
+            },
+           
+           
         },
         submitHandler: function (form) {
 
