@@ -153,7 +153,8 @@ if (!empty($user[0]['user_image']))
                 <li role="presentation"><a href="#network" aria-controls="network" role="tab" data-toggle="tab">Network</a></li>
                 <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
                 <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
-                <li role="presentation"><a href="#playlist" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>
+                <!--<li role="presentation"><a href="#playlist" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>-->
+                <li role="presentation"><a href="#audio" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>
             </ul>
         </div>
         <div class="col-md-12">
@@ -550,6 +551,46 @@ foreach ($gallary_list as $gallary) {
                     </div>
                 </div>
                 <!--Video tab End-->
+                
+                
+                
+                <!--audio tab Start-->
+                <div role="tabpanel" class="tab-pane" id="audio">
+                    <div class="row">     
+                        
+  <?php
+  
+                                        $count_audio = 1;
+                                        foreach ($media_audio_list as $audio) {
+                                            ?>
+
+                                            <div class="col-xs-12 col-sm-3">
+                                                <div class="panel panel-default ">
+                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>','<?php echo $audio['name']; ?>','<?php echo $audio['genre']; ?>')"></i>
+                                                    <i class="fa fa-music fa-2x"></i>
+                                                    <h5><?php
+                                                        if ($audio['name'] != "") {
+                                                            echo $audio['name'];
+                                                        } else {
+                                                            echo "Audio_" . $count_audio;
+                                                            $count_audio++;
+                                                        }
+                                                        ?></h5>
+                                                    <audio controls>
+                                                        <source src="<?php echo MAINBASEURL. $audio['file_path']; ?>" type="audio/mpeg">
+                                                        Your browser does not support the audio tag.
+                                                    </audio>
+                                                </div>
+                                            </div>
+
+                                        <?php } ?>
+                            
+                    </div>
+                </div>
+                <!--audio tab End-->
+                
+                
+                
                 
                 <div role="tabpanel" class="tab-pane" id="playlist">...</div>
             </div>
