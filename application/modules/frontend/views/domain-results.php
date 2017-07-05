@@ -34,14 +34,14 @@
             <div class="col-sm-12">
                 <h3 class="heading"> CHOOSE YOUR DOMAIN <small class="white">Starting from $9.99</small></h3>
                 
-                    <form name="frm_search_domains" class="form-inline" id="frm_search_domains" action="<?php echo base_url(); ?>domains-results" method="POST"enctype="multipart/form-data" >
-                    <input type="hidden" name="base_url" id="base_url" value="<?php echo base_url() ?>" />
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="search" id="search" value="<?php if(isset($domain_name) && $domain_name != ''){ echo $domain_name;} ?>" placeholder="Enter your domain name here....">
-                  </div>
-                  <button type="button" class="btn btn-default">Have a Promo Code ?</button>
-                  <button type="button" id="btnSubmit" name="btnSubmit" class="btn btnRed">SEARCH DOMAIN</button>
-                </form>
+                    <form name="frm_search_domains" class="form-inline" id="frm_search_domains" action="<?php echo base_url(); ?>get-domain-results" method="POST"enctype="multipart/form-data" >
+                        <input type="hidden" name="base_url" id="base_url" value="<?php echo base_url() ?>" />
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="search" id="search" value="<?php if(isset($domain_name) && $domain_name != ''){ echo $domain_name;} ?>" placeholder="Enter your domain name here....">
+                      </div>
+                      <button type="button" class="btn btn-default">Have a Promo Code ?</button>
+                      <button type="button" id="btnSubmit" name="btnSubmit" class="btn btnRed" onclick="">SEARCH DOMAIN</button>
+                    </form>
             </div>
         </div>
     </div>
@@ -238,10 +238,11 @@
 </section>
 
 <script type="text/javascript">
-                
+                $(function(){
+                    $('#btnSubmit').click();
+                });
                 jQuery(document).ready(function(e) { 
-                  
-                    
+                
                 $('#btnSubmit').click(function() { 
                     var search = $('#search').val();
                     

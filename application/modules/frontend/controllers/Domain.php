@@ -75,7 +75,6 @@ Class Domain extends MX_Controller
         if(!empty($relativeDomainsData['DomainSuggestions']['Domain'])) {
             $domainSearchResults = array_values(array_diff($relativeDomainsData['DomainSuggestions']['Domain'], $cartContent));
             
-            
             //$domainResults = $this->getTLDPrices($domainSearchResults);
         }
         
@@ -110,9 +109,8 @@ Class Domain extends MX_Controller
 	                        </a>
 	                    </div>
 	                </li>
-                    <?php } } ?>
-	                
-	            </ul>
+                    <?php } } ?> 
+	</ul>
 <?php
         
         
