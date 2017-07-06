@@ -1,5 +1,5 @@
 
-<section class="mainDashboardServices">
+<section class="mainDashboardServices servicesPanelWrap">
     <div class="container">
 		
 		<div class="row" >

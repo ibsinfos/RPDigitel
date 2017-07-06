@@ -818,6 +818,8 @@ padding: 10px;*/
 }
 .tab-content {
     border-top: 10px solid #7f7f7f;
+    padding-top: 30px;
+    min-height: 500px;
 }
 .tab-content .panel {
     border: 0;
@@ -912,7 +914,7 @@ padding: 10px;*/
     color: #48558a;
     padding-top: 10px;
 }
-#video .panel {
+#playlist .panel {
     background: url('../../../../assets/backend/images/paasport/music-bg.jpg') no-repeat center center/cover;
     color: #FFFFFF;
     position: relative;
@@ -931,7 +933,7 @@ padding: 10px;*/
     top: 0;
     bottom: 0;
 }*/
-#video .panel:after {
+#playlist .panel:after {
     background: rgba(0,0,0,0.6);
     content: '';
     position: absolute;
@@ -941,35 +943,47 @@ padding: 10px;*/
     height: 100%;
     z-index: -1;
 }
-#video .panel .fa-ellipsis-h {
+#playlist .panel .fa-ellipsis-h {
 	position: absolute;
     top: 3px;
     right: 10px;
     cursor: pointer;
 }
-#video .panel h5 {
+#playlist .panel h5 {
     padding: 0 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#video .panel audio,
-#video .panel video {
+#playlist .panel audio,
+#playlist .panel video {
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-#video .panel .panel-footer {
+#playlist .panel .panel-footer {
     padding: 6px 15px;
     background: rgba(255,255,255,0.6);
     border: 0;
     text-align: left;
     border-radius: 0;
 }
-#video .panel .videoPopupLink {
+#playlist .panel .videoPopupLink {
     display: inline-block;
     color: #808080;
+}
+#playlist #videoListWrap {
+    display: none;
+}
+#gallery .panel {
+    border-color: #ddd;
+    overflow: hidden;
+    max-height: 170px;
+    padding: 5px;
+}
+#gallery .panel a>img {
+    
 }
 /* profile css end */
 

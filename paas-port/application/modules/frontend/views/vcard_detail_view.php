@@ -144,6 +144,7 @@ if (!empty($user[0]['user_image']))
             </div>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="col-md-8 col-md-offset-4">
             <!-- Nav tabs -->
@@ -152,9 +153,9 @@ if (!empty($user[0]['user_image']))
                 <li role="presentation"><a href="#merchant" aria-controls="merchant" role="tab" data-toggle="tab">Merchant</a></li>
                 <li role="presentation"><a href="#network" aria-controls="network" role="tab" data-toggle="tab">Network</a></li>
                 <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
-                <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
-                <!--<li role="presentation"><a href="#playlist" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>-->
-                <li role="presentation"><a href="#audio" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>
+                <!--<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
+                <li role="presentation"><a href="#playlist" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>-->
+                <li role="presentation"><a href="#playlist" aria-controls="playlist" role="tab" data-toggle="tab">Playlist</a></li>
             </ul>
         </div>
         <div class="col-md-12">
@@ -489,9 +490,6 @@ if (!empty($user[0]['user_image']))
                  <div role="tabpanel" class="tab-pane" id="gallery">
                     <div class="row">
 
-                        <div class="col-sm-6 col-md-8 aboutMeWrap">
-                            <div class="panel">
-
 <?php
 $count_gallary = 1;
 foreach ($gallary_list as $gallary) {
@@ -499,34 +497,74 @@ foreach ($gallary_list as $gallary) {
     ?>
 
                                     <div class="col-xs-6 col-sm-3 col-md-2">
-                                        <a class="thumbnail fancybox" rel="ligthbox" href="<?php echo MAINBASEURL . $gallary['file_path']; ?>" class="img-responsive">
-                                            <div class="panel panel-default">
-                                                <img src="<?php echo MAINBASEURL . $gallary['file_path']; ?>" class="img-responsive">
-                                            </div>
-                                        </a>
+                                        <div class="panel panel-default">
+                                            
+                                                <a class="fancybox" rel="ligthbox" href="<?php echo MAINBASEURL . $gallary['file_path']; ?>" class="img-responsive">
+                                                    <img src="<?php echo MAINBASEURL . $gallary['file_path']; ?>" class="img-responsive">
+                                                </a>
+                                            
+                                        </div>
                                     </div>
 
 <?php } ?>
 
-                            </div>
-                        </div>
                         
                     </div>
                 </div>
                 <!--Gallery tab End-->
                 
-                <!--Video tab Start-->
-                <div role="tabpanel" class="tab-pane" id="video">
-                    <div class="row">
+                
+                
+                <div role="tabpanel" class="tab-pane" id="playlist">
+                    <ul class="list-unstyled list-inline">
+                        <li>
+                            <label class="radio-inline">
+                                <input type="radio" name="mediaTypeRadio" id="audioRadioBtn" checked>
+                                Audio
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="mediaTypeRadio" id="videoRadioBtn">
+                                Video
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="row" id="audioListWrap">
+                        <?php
+  
+                            $count_audio = 1;
+                            foreach ($media_audio_list as $audio) {
+                                ?>
 
-                            
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="panel panel-default ">
+                                        <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>','<?php echo $audio['name']; ?>','<?php echo $audio['genre']; ?>')"></i>
+                                        <i class="fa fa-music fa-2x"></i>
+                                        <h5><?php
+                                            if ($audio['name'] != "") {
+                                                echo $audio['name'];
+                                            } else {
+                                                echo "Audio_" . $count_audio;
+                                                $count_audio++;
+                                            }
+                                            ?></h5>
+                                        <audio controls>
+                                            <source src="<?php echo MAINBASEURL. $audio['file_path']; ?>" type="audio/mpeg">
+                                            Your browser does not support the audio tag.
+                                        </audio>
+                                    </div>
+                                </div>
+
+                            <?php } ?>
+
+                    </div>
+                    <div class="row" id="videoListWrap">
 
                                         <?php
                                         $count_video = 1;
                                         foreach ($media_video_list as $video) {
                                             ?>
 
-                        <div class="col-xs-12 col-sm-3" style="margin-top:20px">
+                        <div class="col-xs-12 col-sm-3">
                                                 <div class="panel panel-default">
                                                     <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateVideoModal" onclick="update_video_modal_details('<?php echo $video['id']; ?>','<?php echo $video['name']; ?>','<?php echo $video['genre']; ?>')"></i>
                                                     <i class="fa fa-film fa-2x"></i>
@@ -549,50 +587,8 @@ foreach ($gallary_list as $gallary) {
                                         <?php } ?>
                             
                     </div>
-                </div>
-                <!--Video tab End-->
-                
-                
-                
-                <!--audio tab Start-->
-                <div role="tabpanel" class="tab-pane" id="audio">
-                    <div class="row">     
-                        
-  <?php
-  
-                                        $count_audio = 1;
-                                        foreach ($media_audio_list as $audio) {
-                                            ?>
 
-                                            <div class="col-xs-12 col-sm-3">
-                                                <div class="panel panel-default ">
-                                                    <i class="fa fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#updateAudioModal" onclick="update_audio_modal_details('<?php echo $audio['id']; ?>','<?php echo $audio['name']; ?>','<?php echo $audio['genre']; ?>')"></i>
-                                                    <i class="fa fa-music fa-2x"></i>
-                                                    <h5><?php
-                                                        if ($audio['name'] != "") {
-                                                            echo $audio['name'];
-                                                        } else {
-                                                            echo "Audio_" . $count_audio;
-                                                            $count_audio++;
-                                                        }
-                                                        ?></h5>
-                                                    <audio controls>
-                                                        <source src="<?php echo MAINBASEURL. $audio['file_path']; ?>" type="audio/mpeg">
-                                                        Your browser does not support the audio tag.
-                                                    </audio>
-                                                </div>
-                                            </div>
-
-                                        <?php } ?>
-                            
-                    </div>
                 </div>
-                <!--audio tab End-->
-                
-                
-                
-                
-                <div role="tabpanel" class="tab-pane" id="playlist">...</div>
             </div>
         </div>
     </div>

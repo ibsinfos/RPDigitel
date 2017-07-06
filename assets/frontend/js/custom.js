@@ -257,8 +257,13 @@ $(document).ready(function () {
         var payOpt = $(this).find('.paymentOpt').data('payment-type');
         //alert(payOpt);
         if (payOpt == 'paypal') {
+            $('.silWalletInfo').slideUp();
             $('.creaditCardInfo').slideUp();
+        } else if(payOpt == 'siloWallet'){
+            $('.creaditCardInfo').slideUp();
+            $('.silWalletInfo').slideDown();
         } else {
+            $('.silWalletInfo').slideUp();
             $('.creaditCardInfo').slideDown();
         }
     });
@@ -297,6 +302,9 @@ function validateMemberDetails() {
                 email: true
             },
             password: 'required',
+            confirmpassword: {
+              equalTo: "#password"
+            },
             phone: {
                 minlength: 9,
                 required: true
@@ -343,8 +351,9 @@ function validateMemberDetails() {
                 minlength: "Please enter a valid phone number",
                 required: "Please enter phone number"
             },
-            password: "Please enter a passowrd",
-            
+            password: "Please enter a password",
+            confirmpassword: "Confirm password and password should match",
+            billing_address: "Please enter address",
             billing_city: {
                 lettersonly: "Letters only please",
                 required: "Please enter city"

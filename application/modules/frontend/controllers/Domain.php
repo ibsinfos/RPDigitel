@@ -263,7 +263,7 @@ Class Domain extends MX_Controller {
 
                                     <td data-th="Subtotal" class="text-center">$<?php echo $content['subtotal'] ?></td>
                                     <td class="actions" data-th="">
-                                        <button onclick="removeItem('<?php echo $content['rowid'] ?>')" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+                                        <button onclick="removeItem('<?php echo $content['rowid'] ?>')" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>                                
                                     </td>
                                 </tr>
                             <?php } ?>

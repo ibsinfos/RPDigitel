@@ -22,10 +22,10 @@
         ?>
         <?php
         if ($page == 'fiber-rails') {
-           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/fiber-rails.css">';
-           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom.min.css">';
-           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom-responsive.css">';
-           echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
+           // echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/fiber-rails.css">';
+           // echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom.min.css">';
+           // echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/custom-responsive.css">';
+           // echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/class.css">';
         }
         ?>
         
