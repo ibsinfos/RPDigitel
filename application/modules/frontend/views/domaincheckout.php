@@ -267,7 +267,7 @@
 							
                             <li>
 								
-                                <form method="POST" action="<?php echo base_url(); ?>frontend/multi_plan_checkout/SetExpressCheckout">
+                                <form method="POST" action="<?php echo base_url(); ?>frontend/domain_multi_plan_checkout/SetExpressCheckout">
 					<?php
                                             $total = 0;
                                                 if(isset($contents) && count($contents) >0){
@@ -322,6 +322,7 @@
 				</div>
 			</form>
 		</div>
+                <?php if(isset($contents) && count($contents) > 0){ ?>
 		<div class="col-sm-4">
 			<div class="panel panel-default orderSummary">
 				<div class="panel-body">
@@ -361,6 +362,7 @@
 				</div>
 			</div>
 		</div>
+                <?php } ?>
 	</div>
 </div>
 </section>

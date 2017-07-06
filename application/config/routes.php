@@ -56,6 +56,7 @@ $route['login/signup'] = 'frontend/login/signup';
 $route['fiberrails'] = 'frontend/fiberrails';
 $route['subscription'] = 'frontend/subscription';
 $route['check_out'] = 'frontend/checkout';
+$route['domain_check_out'] = 'frontend/domaincheckout';
 $route['checkout_save_member'] = 'frontend/subscription/checkout_save_member';
 $route['main_dashboard'] = 'frontend/dashboard';
 $route['silo_sd'] = 'frontend/silo_sd';

@@ -232,6 +232,7 @@ Class Domain extends MX_Controller {
             //$map['status'] = '1';
             //$map['msg'] = 'Item removed from cart';
             $contents = $this->cart->contents();
+                if(isset($contents) && count($contents) >0){
                     ?>
                     <table id="cart" class="table table-hover table-condensed">
                         <thead>
@@ -281,6 +282,8 @@ Class Domain extends MX_Controller {
                     </table>
 
                 <?php
+                }else{  echo 'Your cart is empty.';
+                }
 //            echo json_encode($map);
 //            exit();
         } else {
