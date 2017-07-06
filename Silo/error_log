@@ -1,0 +1,20 @@
+[24-Feb-2017 10:13:39 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:13:42 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:14:47 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:14:48 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:14:49 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:14:50 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:16:58 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:16:58 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:16:59 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:17:00 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 10:17:32 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 79
+[24-Feb-2017 10:17:33 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 79
+[24-Feb-2017 10:17:33 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 79
+[24-Feb-2017 10:17:34 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 79
+[24-Feb-2017 10:17:35 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 79
+[24-Feb-2017 14:16:23 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 16:14:54 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 16:14:57 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[24-Feb-2017 16:14:58 UTC] PHP Fatal error:  Can't use method return value in write context in /home/rebelute/public_html/silohost/application/modules/backend/views/login.php on line 38
+[03-Mar-2017 16:45:58 UTC] PHP Fatal error:  Access to undeclared static property: TABLES::$USER_PROJECTS in /home/rebelute/public_html/silohost/application/models/Project_Model.php on line 44

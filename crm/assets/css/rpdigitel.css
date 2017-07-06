@@ -1,0 +1,28 @@
+.card-deck a{
+	color:#333333 !important;
+}
+
+.nav_menu_admin li{
+float:left;
+list-style:none
+}
+
+.nav_menu_admin .top_spacing_menu{
+	 margin-top:15px 
+	
+}
+
+.top_spacing_sidebar{
+	margin-top:20px
+}
+
+
+
+
+.nav_menu_admin .brand-logo{
+
+/* padding: 10px 15px; */
+ padding-top: 0px !important; 
+ padding-bottom: 0px !important; 
+
+}

@@ -1,0 +1,932 @@
+/* Create Product css Start */
+.createProductWrap .navTabWrap .nav-tabs {
+    margin-bottom: 20px;
+}
+.createProductWrap .radioLabel {
+    margin: 0;
+    padding: 7px 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.createProductWrap .businessStructureInfo {
+    display: none;
+}
+.createProductWrap .businessStructureInfo.active  {
+    display: block;
+}
+.createProductWrap .addProductBtn {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000;
+    position: relative;
+}
+.createProductWrap .addProductBtn:after {
+    content: '';
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.createProductWrap .addProductBtn span {
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 1;
+    font-size: 16px;
+}
+.createProductWrap .siloSDBtn {
+    background-image: url('../../images/dedicated_server.jpg');
+    min-height: 200px;
+}
+.createProductWrap .scanDiscBtn {
+    background-image: url('../../images/banner3.jpg');
+    min-height: 200px;
+}
+.createProductWrap .cloudBtn {
+    background-image: url('../../images/storage.png');
+    min-height: 200px;
+}
+.addFilePopupLink {
+    display: block;
+    border: 1px solid #ccc;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    font-size: 16px;
+}
+.addFilePopupLink,
+.addFilePopupLink:focus, 
+.addFilePopupLink:hover {
+    color: #f50707;
+}
+.dropzone {
+    position: relative;
+}
+.dropzone:after,
+.addFilePopupLink:after {
+    content: '';
+    border: 1px dashed #ccc;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    visibility: visible;
+    height: auto;
+}
+.fileSelectModal .panel {
+    position: relative;
+    cursor: pointer;
+}
+.fileSelectModal .panel .chkBox {
+    position: absolute;
+    margin: 5px;
+}
+.storageBtnWrap li>a {
+    display: block;
+    background-color: #404042;
+    text-align: center;
+    padding: 25px 15px;
+}
+.storageBtnWrap li>a p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fileSelectModal .panel img {
+	width: 100%;
+	min-height: 100px;
+	max-height: 100px;
+}
+/* Create Product css End */
+/* Create paasport css start */
+.pictureContainer {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.pictureContainer .picture {
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border: 4px solid #CCCCCC;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.pictureContainer .picture:hover {
+    border-color: #FF3B30;
+}
+.pictureContainer .picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.createPaasportWrap {
+    height: auto;
+}
+.createPaasportWrap .heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.createPaasportWrap .mobileViewWrap {
+    position: relative;
+}
+.createPaasportWrap .mobileViewWrap .mobileContent {
+    position: absolute;
+    top: 145px;
+    left: 47px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 227px;
+}
+.createPaasportWrap .mobileViewWrap .btn {
+    text-transform: uppercase;
+}
+.createPaasportWrap .mobileViewWrap .btn-group {
+    margin-bottom: 5px;
+}
+.createPaasportWrap .mobileViewWrap .btn-group>.btn:first-child {
+    min-width: 172px;
+}
+.createPaasportWrap .mobileViewWrap .btnCollapse {
+   background-color: #536270;
+   color: #FFFFFF;
+   padding: 6px 13px;
+   opacity: 0.8;
+}
+.createPaasportWrap .mobileViewWrap .btnCollapse:hover {
+    opacity: 1;
+}
+.createPaasportWrap .mobileViewWrap .collapse {
+    background:#f5f5f5; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    margin-top: -5px;
+}
+.createPaasportWrap .mobileViewWrap .bottomBtns {
+    position: absolute;
+    top: 435px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: 218px;
+}
+.createPaasportWrap .socialCircleIcon a {
+    display: none;
+}
+.createPaasportWrap .btn-lg {
+    width: 200px;
+    margin-top: 20px;
+}
+.createPaasportWrap .addSectionBtn {
+    border: 2px solid #c7c7c7;
+    color: #c7c7c7;
+    padding: 4px 10px;
+}
+.createPaasportWrap #addSectionCollapse {
+    border: 2px solid #c7c7c7;
+    padding: 10px;
+    position: relative;
+    top: -7px;
+    margin-bottom: 20px;
+}
+.createPaasportWrap #addSectionCollapse a {
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin: 5px;
+    color: #ff0000;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #ff0000;
+    padding: 10px 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.createPaasportWrap .targetDiv {
+    display: none;
+}
+.createPaasportWrap .panel-danger {
+    border-color: #ff0000;
+}
+.createPaasportWrap .panel-danger>.panel-heading {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+}
+.createPaasportWrap .panel-danger>.panel-heading:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f078";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.createPaasportWrap .panel-danger>.panel-heading.panel-collapsed:after {
+    content: "\f077";
+}
+#portfolioModal #example-2 {
+    background: transparent;
+    padding: 0 !important;
+}
+#portfolioModal #example-2 .page{
+    margin-bottom: 10px;
+}
+.createPaasportWrap .mediaTabContentWrap .panel {
+    background: url('../images/paasport/music-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    position: relative;
+    min-height: 150px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*.createPaasportWrap .mediaTabContentWrap .panel:before {
+    content: "\f01d";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}*/
+.createPaasportWrap .mediaTabContentWrap .panel:after {
+    background: rgba(0,0,0,0.6);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .fa-ellipsis-h {
+	position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+}
+.createPaasportWrap .mediaTabContentWrap .panel h5 {
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.createPaasportWrap .mediaTabContentWrap .panel audio,
+.createPaasportWrap .mediaTabContentWrap .panel video {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .panel-footer {
+    padding: 6px 15px;
+    background: rgba(255,255,255,0.6);
+    border: 0;
+    text-align: left;
+    border-radius: 0;
+}
+.createPaasportWrap .mediaTabContentWrap .panel .videoPopupLink {
+    display: inline-block;
+    color: #808080;
+}
+/* Create paasport css end */
+
+/* video popup css start */
+#popupBg {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.videoPopup {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 360px;
+    width: 640px;
+    background: #FFF;
+    z-index: 550;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.videoPopup .closePopup {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    font-size: 24px;
+    top: 5px;
+    color: #FFF;
+    right: 5px;
+    display: block;
+    line-height: 31px;
+    background: #333;
+    border-radius: 15px;
+    text-align: center;
+}
+.videoPopup .videoContainer {
+    width: 640px;
+    height: 360px;
+    -moz-box-shadow: 0 0 10px #222;
+    -webkit-box-shadow: 0 0 10px #222;
+    box-shadow: 0 0 10px #222;
+}
+.videoPopup .videoContainer video {
+    width: 100%;
+}
+/* video popup css end */
+
+/* Email Box css start */
+.responsiveSection {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.mailBoxWrap {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    table-layout: fixed;
+    min-width: 1000px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.mailBoxWrap aside {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    padding: 0;
+    vertical-align: top;
+}
+.mailBoxWrap .sm-side {
+    background: none repeat scroll 0 0 #e5e8ef;
+    border-radius: 4px 0 0 4px;
+    width: 25%;
+}
+.mailBoxWrap .lg-side {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 0 4px 4px 0;
+    width: 75%;
+}
+.mailBoxWrap .sm-side .user-head {
+    background: none repeat scroll 0 0 #212936;
+    border-radius: 4px 0 0;
+    color: #fff;
+    min-height: 80px;
+    padding: 10px;
+    border-right: 1px solid #444;
+}
+.mailBoxWrap .user-head .inbox-avatar {
+    float: left;
+    width: 65px;
+}
+.mailBoxWrap .user-head .inbox-avatar img {
+    border-radius: 4px;
+}
+.mailBoxWrap .user-head .user-name {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.mailBoxWrap .user-head .user-name h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.mailBoxWrap .user-head .user-name h5 a {
+    color: #fff;
+}
+.mailBoxWrap .user-head .user-name span a {
+    color: #87e2e7;
+    font-size: 12px;
+}
+.mailBoxWrap a.mail-dropdown {
+    background: none repeat scroll 0 0 #80d3d9;
+    border-radius: 2px;
+    color: #01a7b3;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 3px 5px;
+}
+.mailBoxWrap .inbox-body {
+    padding: 20px;
+}
+.mailBoxWrap .btn-compose {
+    padding: 12px 0;
+    width: 100%;
+}
+.mailBoxWrap .btn-compose:hover {
+    background: none repeat scroll 0 0 #f5675c;
+    color: #fff;
+}
+.mailBoxWrap ul.inbox-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.mailBoxWrap .inbox-divider {
+    border-bottom: 1px solid #d5d8df;
+}
+.mailBoxWrap ul.inbox-nav li {
+    display: inline-block;
+    line-height: 45px;
+    width: 100%;
+}
+.mailBoxWrap ul.inbox-nav li a {
+    color: #6a6a6a;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 20px;
+    width: 100%;
+}
+.mailBoxWrap ul.inbox-nav li a:hover,
+.mailBoxWrap ul.inbox-nav li.active a,
+.mailBoxWrap ul.inbox-nav li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+.mailBoxWrap ul.inbox-nav li a i {
+    color: #6a6a6a;
+    font-size: 16px;
+    padding-right: 10px;
+}
+.mailBoxWrap ul.inbox-nav li a span.label {
+    margin-top: 13px;
+}
+.mailBoxWrap ul.labels-info li h4 {
+    color: #5c5c5e;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.mailBoxWrap ul.labels-info li {
+    margin: 0;
+}
+.mailBoxWrap ul.labels-info li a {
+    border-radius: 0;
+    color: #6a6a6a;
+}
+.mailBoxWrap ul.labels-info li a:hover,
+.mailBoxWrap ul.labels-info li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+.mailBoxWrap ul.labels-info li a i {
+    padding-right: 10px;
+}
+.mailBoxWrap .nav.nav-pills.nav-stacked.labels-info p {
+    color: #9d9f9e;
+    font-size: 11px;
+    margin-bottom: 0;
+    padding: 0 22px;
+}
+.mailBoxWrap .inbox-head {
+    background: none repeat scroll 0 0 #212936;
+    border-radius: 0 4px 0 0;
+    color: #fff;
+    min-height: 80px;
+    padding: 20px;
+}
+.mailBoxWrap .inbox-head h3 {
+    display: inline-block;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 6px;
+}
+.mailBoxWrap .inbox-head .sr-input {
+    border: medium none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+    color: #8a8a8a;
+    float: left;
+    height: 40px;
+    padding: 0 10px;
+}
+.mailBoxWrap .inbox-head .sr-btn {
+    background: none repeat scroll 0 0 #f50707;
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+}
+.mailBoxWrap .table-inbox {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 0;
+}
+.mailBoxWrap .table-inbox tr td {
+    padding: 12px !important;
+}
+.mailBoxWrap .table-inbox tr td:hover {
+    cursor: pointer;
+}
+.mailBoxWrap .table-inbox tr td .fa-star.inbox-started,
+.mailBoxWrap .table-inbox tr td .fa-star:hover {
+    color: #f50707;
+}
+.mailBoxWrap .table-inbox tr td .fa-star {
+    color: #d5d5d5;
+}
+.mailBoxWrap .table-inbox tr.unread td {
+    background: none repeat scroll 0 0 #f7f7f7;
+    font-weight: 600;
+}
+.mailBoxWrap ul.inbox-pagination {
+    float: right;
+}
+.mailBoxWrap ul.inbox-pagination li {
+    float: left;
+}
+.mailBoxWrap .mail-option {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.mailBoxWrap .mail-option .chk-all,
+.mailBoxWrap .mail-option .btn-group {
+    margin-right: 5px;
+}
+.mailBoxWrap .mail-option .chk-all,
+.mailBoxWrap .mail-option .btn-group a.btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.mailBoxWrap .inbox-pagination a.np-btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.mailBoxWrap .mail-option .btn-group a.all {
+    border: medium none;
+    padding: 0;
+}
+.mailBoxWrap .inbox-pagination a.np-btn {
+    margin-left: 5px;
+}
+.mailBoxWrap .inbox-pagination li span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.mailBoxWrap .inbox-body .modal .modal-body input,
+.mailBoxWrap .inbox-body .modal .modal-body textarea {
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+.mailBoxWrap .heading-inbox h4 {
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.mailBoxWrap .sender-info {
+    margin-bottom: 20px;
+}
+.mailBoxWrap .sender-info img {
+    height: 30px;
+    width: 30px;
+}
+.mailBoxWrap .sender-dropdown {
+    background: none repeat scroll 0 0 #eaeaea;
+    color: #777;
+    font-size: 10px;
+    padding: 0 3px;
+}
+.mailBoxWrap .view-mail a {
+    color: #ff6c60;
+}
+.mailBoxWrap .attachment-mail {
+    margin-top: 30px;
+}
+.mailBoxWrap .attachment-mail ul {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.mailBoxWrap .attachment-mail ul li {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
+.mailBoxWrap .attachment-mail ul li img {
+    width: 100%;
+}
+.mailBoxWrap .attachment-mail ul li span {
+    float: right;
+}
+.mailBoxWrap .attachment-mail .file-name {
+    float: left;
+}
+.mailBoxWrap .attachment-mail .links {
+    display: inline-block;
+    width: 100%;
+}
+#composeMailModal .fileinput-button {
+    float: left;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+}
+#composeMailModal .fileinput-button input {
+    cursor: pointer;
+    direction: ltr;
+    font-size: 23px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+}
+#composeMailModal .fileupload-buttonbar .btn,
+#composeMailModal .fileupload-buttonbar .toggle {
+    margin-bottom: 5px;
+}
+#composeMailModal .files .progress {
+    width: 200px;
+}
+#composeMailModal .fileupload-processing .fileupload-loading {
+    display: block;
+}
+#composeMailModal * html .fileinput-button {
+    line-height: 24px;
+    margin: 1px -3px 0 0;
+}
+#composeMailModal * + html .fileinput-button {
+    margin: 1px 0 0;
+    padding: 2px 15px;
+}
+/* Email Box css end */
+
+/* Full Calendar css start */
+#calendar {
+    min-width: 500px;
+}
+#calendar .fc-toolbar button {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow: none;
+}
+#calendar .fc-state-default {
+    color: #212936;
+} 
+#calendar .fc-today-button,
+#calendar .fc-event, 
+#calendar .fc-event-dot {
+    background-color: #212936;
+    color: #fff;
+} 
+#calendar .fc-event {
+    border-color: #212936;
+    text-align: center;
+}
+#calendar .fc-state-active, #calendar .fc-state-down {
+    color: #fff;
+} 
+/* Full Calendar css end */
+
+/* Services css start */
+.dashboardServicesWrap {
+  margin: 0;
+}
+.dashboardServicesWrap .panel {
+  min-height: 270px;
+}
+.dashboardServicesWrap .panel-heading {
+    background: transparent;
+    border: none;
+    padding-top: 20px;
+}
+.dashboardServicesWrap .passportImgBox {
+  padding: 24px 15px;
+}
+.dashboardServicesWrap .rpDigitalImgBox {
+  padding: 37px 15px;
+}
+.dashboardServicesWrap .panel-body .heading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.dashboardServicesWrap .panel-body .description {
+  margin-bottom: 20px;
+}
+.dashboardServicesWrap .smallImg {
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+}
+.dashboardServicesBottom .panel {
+    min-height: 99px;
+}
+.dashboardServicesBottom .heading {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.dashboardServicesBottom .siloSDImg {
+    margin-top: 7px;
+}
+.dashboardServicesBottom .siloSDRailImg {
+    margin-top: 15px;
+}
+/* Services css end */
+
+/* Invoice css start */
+.invoiceWrap {
+    margin-top: 25px;
+}
+/* Invoice css end */
+
+/* Broadcast css start */
+.broadcastWrap {
+
+}
+.broadcastWrap video {
+    width: 100%;
+    height: auto;
+}
+.broadcastWrap .participantCol {
+    max-height: 385px;
+}
+.broadcastWrap .chatBox {
+    margin: 30px 0;
+}
+.broadcastWrap .chatBox .heading {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.broadcastWrap .input-group .input-group-addon {
+    padding: 0;
+    border-color: #f50707;
+}
+.broadcastWrap .input-group .btn {
+    margin: 0;
+    height: 32px;
+    border-radius: 0;
+    padding: 5px 20px;
+}
+.broadcastWrap .chatBox ul li {
+    border-bottom: 1px solid #d4d4d4;
+    padding: 15px 80px 15px 0;
+    margin: 0;
+}
+.broadcastWrap .chatBox .imageBlock {
+    padding: 0;
+}
+.broadcastWrap .chatBox .repliedRow {
+    padding: 15px 0 15px 80px;
+    text-align: right;
+}
+.broadcastWrap .chatBox .personName {
+    font-weight: 700;
+}
+/* Broadcast css end */
+
+/* Domain List css Start */
+.domainListWrap {
+    background: #fff;
+}
+.domainListWrap .panel { 
+    position: relative;
+}
+.domainListWrap .panel .panel-heading {
+    padding: 0;
+    overflow: hidden;
+    max-height: 150px;
+    position: relative;
+}
+.domainListWrap .panel .panel-heading:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+.domainListWrap .panel .fa-ellipsis-v { 
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+}
+/* Domain List css end */
+
+/* Common css start */
+.socialInputGroup .input-group-addon {
+    color: #fff;
+    min-width: 44px;
+}
+.socialCircleIcon a {
+    display: block;
+}
+.socialCircleIcon a.facebook {
+    color: #3b56ad
+}
+.socialCircleIcon a.twitter {
+    color: #19b1f0
+}
+.socialCircleIcon a.googlePlus {
+    color: #e34e38
+}
+.socialCircleIcon a.linkedin {
+    color: #0068a5
+}
+.socialCircleIcon a.pinterest {
+    color: #ca1a1c
+}
+.socialCircleIcon a.youtube {
+    color: #c4302b
+}
+.btn {
+    padding: 6px 20px;
+}
+.redText,
+.text-danger {
+    color: #f50707;
+}
+.noMargin {
+    margin: 0;
+}
+.btnRed {
+    background-color: #f50707;
+}
+.btnRed.btn-o {
+    color: #FF3B30;
+    border: 1px solid #FF3B30;
+    background: #f5f5f5;
+}
+.btnRed.btn-o:hover {
+    background-color: #f50707;
+    color: #FFFFFF;
+}
+.grayBtn {
+    background-color: #353535;
+}
+.btnRed,
+.btnRed:hover,
+.btnRed:focus,
+.grayBtn,
+.grayBtn:hover,
+.grayBtn:focus {
+    color: #fff;
+    color: #fff;
+}
+label.error {
+    color: #ff0000;
+}
+
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Common css end */

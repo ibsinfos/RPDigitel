@@ -1,0 +1,2098 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+
+body {
+	font-family: 'Raleway', sans-serif;
+  padding-top: 89px;
+}
+/*navbar css start */
+.navbar-inverse {
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+  /*height: 55px;*/
+  z-index: 999;
+}
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #fff;
+}
+.navbar-inverse .navbar-toggle {
+	display: block;
+	border: 0;
+}
+.navbar-inverse .searchWrap,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #7f7f7f;
+	color: #fff;
+}
+.navbar-inverse .userImage {
+	width: 25px;
+  display: inline-block;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #7f7f7f;
+  margin-right: 5px;
+	vertical-align: middle;
+}
+.navbar-inverse .badge {
+	background-color: #f00700;
+	position: absolute;
+  top: 8px;
+  font-size: 10px;
+  padding: 2px 5px;
+  right: 5px;
+}
+.navbar .logoWrap {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 6px 0;
+}
+.navbar .logoWrap .dotMatrixImg {
+  margin-right: 10px;
+  height: 30px;
+}
+.navbar .dropdown-menu .fa-sign-out {
+  margin-top: 3px;
+}
+.dotMatrixDropdown {
+  padding: 20px 0px;
+  width: 95%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-align: center;
+}
+.dotMatrixDropdown ul li {
+  height: 125px;
+}
+.dotMatrixDropdown ul li:nth-child(1),
+.dotMatrixDropdown ul li:nth-child(2),
+.dotMatrixDropdown ul li:nth-child(3) {
+  margin-bottom: 20px;
+}
+.dotMatrixDropdown a {
+  display: block;
+  color: #333;
+}
+.navbar .logoWrap,
+.dotMatrixDropdown a:hover {
+  text-decoration: none;
+}
+.dotMatrixDropdown img {
+  margin: 0 auto;
+}
+.dotMatrixDropdown .siloSDImg {
+  width: 125px;
+  margin: 16px auto;
+}
+.dotMatrixDropdown .scanDiscImg {
+  width: 150px;
+  margin: 39px auto;
+}
+.dotMatrixDropdown .webSuiteImg {
+  width: 150px;
+  margin: 21px auto;
+}
+.dotMatrixDropdown .paasPortImg {
+  width: 150px;
+  margin: 26px auto;
+}
+.dotMatrixDropdown .siloBankImg {
+  width: 68px;
+  margin: 22px auto;
+}
+.dotMatrixDropdown.open {
+  display: block;
+}
+.dotMatrixDropdown:before {
+  content: "";
+  border-bottom: 15px solid #fff;
+  border-right: 17px solid transparent;
+  border-left: 17px solid transparent;
+  position: absolute;
+  top: -15px;
+  left: 13px;
+  z-index: 10;
+}
+/* navbar css end */
+
+/* Home css start */
+.learnMoreAbout {
+  position: fixed;
+  top: 54px;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 1px solid #101010;
+}
+.learnMoreAbout .dropdown-menu {
+  width: 100%;
+  margin: -1px 0 0 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #080808;
+}
+.learnMoreAbout .list-inline {
+  margin-bottom: 0;
+}
+#carousel-home-banner .carousel-caption h4 {
+  font-size: 42px;
+  font-weight: 700;
+  padding: 0 29%;
+}
+#carousel-home-banner .carousel-caption h5 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+#carousel-home-banner .carousel-caption .btn {
+  color: #837CD6;
+  background-color: #fff;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 6px 25px;
+  margin-bottom: 10px;
+}
+#carousel-home-banner .item ,
+#carousel-home-smartphone .item {
+  max-height: 750px;
+  overflow: hidden;
+}
+#carousel-home-banner .item:before,
+#carousel-home-smartphone .item:before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#carousel-home-banner .item img ,
+#carousel-home-smartphone .item img {
+  width: 100%;
+}
+#carousel-home-banner .carousel-caption,
+#carousel-home-smartphone .carousel-caption {
+  right: 0;
+  left: 0;
+  padding-bottom: 30px;
+  top: 35%;
+}
+#carousel-home-banner .carousel-caption h3,
+#carousel-home-smartphone .carousel-caption h3 {
+  font-size: 72px;
+  font-weight: 700;
+}
+#carousel-home-smartphone .carousel-caption h4 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+#carousel-home-smartphone .carousel-caption .btn {
+  border-width: 2px;
+  border-color: #fff;
+  background-color: transparent;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 6px 50px;
+}
+#carousel-home-smartphone .carousel-caption .btn:hover {
+  background-color: #FF0000;
+  color: #fff;
+}
+.servicesLogos {
+  padding: 30px 0;
+}
+.servicesLogos ul {
+  margin: 0;
+}
+.servicesLogos ul li {
+  padding: 0 15px;
+}
+.servicesLogos ul li img {
+  width: 60px;
+}
+.enterpriseSoln {
+  padding: 100px 0;
+}
+.enterpriseSoln img {
+  margin-bottom: 30px;
+}
+.enterpriseSoln .btn {
+  background-color: #9E0000;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto 10px;
+  display: block;
+}
+.startShopping {
+  background-color: #9E0000;
+  padding: 30px 0;
+}
+.startShopping .btn {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border-width: 2px;
+  font-weight: 500;
+}
+.startShopping .btn:hover {
+  background-color: #FF0000;
+}
+.productSection {
+  padding-top: 25px;
+}
+.productSection .panel {
+  border-color: #ddd;
+}
+.productSection .panel-heading {
+  position: relative;
+  height: 224px;
+}
+.productSection .panel img {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  max-width: 90%;
+}
+.productSection .panel .heading {
+  font-size: 16px;
+  color: #00a4ed;
+  width: 90%;
+}
+/*.productSection .panel-body {
+  padding-left: 15%;
+}*/
+.productSection ul li {
+  color: #838081;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.productSection ul li:before {
+  background: #00a4ed;
+}
+.productSection .panel-body .price {
+  font-weight: 600;
+  font-size: 16px;
+}
+.dragDropSection {
+  background-color: #DBDBDB;
+  padding: 50px 0;
+}
+.dragDropSection .heading,
+.siloCloudSection .heading {
+  font-size: 36px;
+  font-weight: 400;
+}
+.dragDropSection .tryOut {
+  margin-top: 80px;
+}
+.dragDropSection .btn {
+  width: 75%;
+  margin: 0 auto 10px;
+}
+.enterpriseSoln .signUpLink,
+.dragDropSection .signUpLink,
+.siloCloudSection .signUpLink {
+  color: #FF0000;
+  font-size: 12px;
+}
+.siloCloudSection {
+  background: url('../images/home/silo-cloud-bg.jpg') no-repeat center center / cover;
+  height: 690px;
+  padding-top: 100px;
+  color: #00FFFF;
+}
+.siloCloudSection .heading {
+  padding: 0 30px;
+}
+.siloCloudSection .btn {
+  display: block;
+  margin: 0 auto 10px;
+}
+.fiberRailSection {
+  background-color: #959595;
+  padding-top: 83px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.fiberRailSection .phoneImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -210px;
+  z-index: 1;
+}
+.fiberRailSection .fiberRailImg {
+  width: 60%;
+  margin-top: 35%;
+}
+.fiberRailSection .well {
+  background-color: #242424;
+  padding: 58px 64px 20px 64px;
+  color: #fff;
+  border-color: #242424;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.fiberRailSection .well .heading1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+.fiberRailSection .well .heading2 {
+  font-size: 36px;
+  margin: 5px 0;
+  font-weight: 400;
+}
+.fiberRailSection .well p {
+  margin-left: 25px;
+}
+.fiberRailSection .applyText {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 400;
+}
+/* Home css end */
+
+/* Login css start */
+.loginPageWrap {
+  position: relative;
+}
+.loginPageWrap .hamburgerIcon {
+  background: transparent;
+  border: 0;
+  position: fixed;
+  right: 10px;
+  top: 15px;
+  z-index: 1;
+  outline: none;
+}
+.loginPageWrap .hamburgerIcon .icon-bar {
+  border: 1px solid #888;
+  display: block;
+  width: 22px;
+  height: 4px;
+}
+.loginPageWrap .hamburgerIcon .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+.loginPageWrap .menuWrap {
+  background: rgba(0,0,0,0.75);
+  border-radius: 30px 0 0 30px;
+  position: fixed;
+  right: -55px;
+  bottom: 50px;
+  padding: 15px 8px 0 10px;
+  width: 55px;
+  z-index: 999;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: .35s;
+}
+.loginPageWrap .menuWrap.open {
+  right: 0;
+}
+.loginPageWrap .menuWrap ul>li {
+  margin-bottom: 15px;
+}
+.loginPageWrap .menuWrap ul>li .closeBtn {
+  color: #FF0000;
+}
+.loginPageWrap .redBgCol {
+  background-color: #FF0000;
+  border-right: 1px solid #999999;
+  min-height: 170px;
+  padding: 20px;
+}
+.loginPageWrap .redBgCol .logoWrap {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+  display: inline-block;
+  text-decoration: none;
+}
+.loginPageWrap .whiteBGCol {
+  padding: 20px 0;
+}
+.loginPageWrap .whiteBGCol .rpDigitelLogo {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.loginPageWrap .whiteBGCol .formWrap {
+  text-align: center;
+  margin: 30% 0 0;
+}
+.loginPageWrap .whiteBGCol .formWrap .btn {
+  margin-bottom: 50px;
+}
+.loginPageWrap .whiteBGCol .forgetPwdLink,
+.loginPageWrap .whiteBGCol .signUpLink {
+  color: #FF0000;
+  font-size: 12px;
+  line-height: 14px;
+}
+.loginPageWrap .whiteBGCol .copyRight {
+  color: #7F7F7F;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0;
+}
+/* Login css start */
+
+/* Login css start */
+html, body, 
+.loginCarousel, 
+.loginCarousel .carousel-inner, 
+.loginCarousel .carousel-inner .item {
+  height: 100%;
+}
+.loginCarousel .carousel-inner .item:nth-child(1) {
+  background-image: url(../images/login/music-lovers.jpg);
+}
+.loginCarousel .carousel-inner .item:nth-child(2) {
+  background-image: url(../images/login/building.jpg);
+}
+.loginCarousel .carousel-inner .item:nth-child(3) {
+  background-image: url(../images/login/iceworker.jpg);
+}
+.loginCarousel .carousel-inner .item:nth-child(1),
+.loginCarousel .carousel-inner .item:nth-child(2),
+.loginCarousel .carousel-inner .item:nth-child(3) {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.loginCarousel .carousel-control {
+  background: #FFFFFF;
+}
+.loginCarousel .carousel-control:focus, 
+.loginCarousel .carousel-control:hover {
+  opacity: 0.7;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.loginFormWrap {
+  /*margin: 25px 0;*/
+  position: absolute;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.loginFormWrap .well {
+  padding: 60px 0;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  border-color: #191919;
+}
+.loginFormWrap .well .logo {
+  margin-bottom: 50px;
+}
+.loginFormWrap .well .form-control {
+  font-size: 16px;
+  height: 40px;
+  font-style: italic;
+  padding: 10px 16px;
+}
+.loginFormWrap .well .signUpLink {
+  color: #FFFFFF;
+}
+.loginFormWrap #otp_form {
+  display: none;
+}
+/* Login css end */
+
+/* Main Dashboard css start */
+.mainDashboardServices {
+  padding: 20px 0;
+}
+.servicesPanelWrap .panel {
+  min-height: 335px;
+}
+.servicesPanelWrap .websuitImgBox {
+  padding: 20px 0;
+}
+.servicesPanelWrap .passportImgBox {
+  padding: 31px 0;
+}
+.servicesPanelWrap .siloSDImgBox {
+  padding: 25px 0;
+}
+.servicesPanelWrap .scandiscImgBox {
+  padding: 44px 0;
+}
+.servicesPanelWrap .panel-body .heading {
+  font-weight: 600;
+}
+.servicesPanelWrap .panel-body .description {
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+/* Main Dashboard css end */ 
+
+/* Subscription css start */
+.subscribeHeroSection {
+  background: rgba(0,0,0,0.3) url('../images/subscription/shop-lp-hero-image.png') no-repeat center center/contain;
+  height: 375px;
+  color: #fff;
+}
+.subscribeHeroSection .heading {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0 8%;
+  margin-top: 50px;
+}
+.subscribeHeroSection .viewMore {
+  color: #000;
+  margin-top: 8px;
+}
+.subscribeShowPrice {
+  background-color: #aaaaaa;
+  border-top: 1px solid #7F7F7F;
+  padding: 15px 0;
+  font-size: 22px;
+}
+.subscribeShowPrice p,
+.subscribeRedStrip p {
+  margin-bottom: 0;
+}
+.subscribeRedStrip {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 10px 0;
+}
+.subscribePlanSection {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+.subscribePlanSection .tab-content {
+  padding-top: 20px;
+}
+.subscribePlanSection .panel {
+  border: 1px solid #ddd;
+}
+.subscribePlanSection .planAmtWrap {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 75px;
+  margin: 0 auto -40px;
+  background: #fff;
+  font-size: 14px;
+}
+.subscribePlanSection .planAmtWrap .amt {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+/*.subscribePlanSection .typoList li:before {
+  background: #fff;
+}*/
+.subscribePlanSection .plan1 .panel-heading {
+  background-color: #ed1b24;
+}
+.subscribePlanSection .plan2 .panel-heading {
+  background-color: #f15a25;
+}
+.subscribePlanSection .plan3 .panel-heading {
+  background-color: #9a0000;
+}
+.subscribePlanSection .planName {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  margin: 20px 0;
+}
+.subscribePlanSection .panel ul {
+  margin: 40px 0 34px 15px;
+}
+.subscribePlanSection .panel ul li {
+  margin-bottom: 8px;
+}
+.subscribePlanSection .panel ul li:before {
+  background: #333;
+}
+.subscribePlanSection .btn {
+  padding: 8px 30px;
+}
+.wirelesServicesInfo .rpDigitelLogo {
+  margin-bottom: 25px;
+}
+.wirelesServicesInfo .whyRP {
+  font-size: 29px;
+  line-height: 31px;
+  color: #616161;
+  font-weight: 700;
+}
+.wirelesServicesInfo .reImagine {
+  font-size: 49px;
+  line-height: 51px;
+  color: #FF0000;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.wirelesServicesInfo a {
+  color: #FF0000;
+  font-weight: 600;
+  margin-bottom: 50px;
+  display: block;
+}
+.wirelesServicesInfo .btn {
+  padding: 10px 55px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+/* Subscription css end */
+
+/* Checkout css start */
+.checkoutHeroWrap {
+  background: rgba(0,0,0,0.3) url(../images/checkout-banner.jpg) no-repeat center center/cover;
+  height: 250px;
+  color: #fff;
+  position: relative;
+}
+.checkoutHeroWrap:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+}
+.checkoutHeroWrap .heading {
+  font-size: 36px;
+  margin-top: 9%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.checkoutWrap {
+  padding: 30px 0;
+  /*background-color: #f7f7f7;*/
+}
+.checkoutWrap .nav-tabs li {
+  cursor: pointer;
+}
+.checkoutWrap .nav-tabs li.active {
+  cursor: auto;
+}
+.checkoutWrap .nav-tabs li i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.checkoutWrap .tab-content {
+  padding-top: 25px;
+}
+.checkoutWrap .securityCode .popover {
+  min-width: 400px;
+  font-size: 12px;
+}
+.checkoutWrap .radio-inline+.radio-inline {
+  margin-left: 20px;
+}
+.checkoutWrap #paymentDetailsForm .silWalletInfo {
+  display: none;
+}
+.checkoutWrap .orderSummary .heading {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.checkoutWrap .orderSummary .table {
+  margin-bottom: 0;
+}
+.checkoutWrap .orderSummary .table td,
+.checkoutWrap .orderSummary .table th {
+  padding: 15px 8px;
+}
+.checkoutWrap .thankYou {
+  border: 1px solid #ddd;
+  margin: 25px 0;
+  padding: 15px;
+  line-height: 24px;
+  background-color: #fff;
+  position: relative;
+}
+.checkoutWrap .thankYou .heading {
+  position: absolute;
+  top: -26px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 4px;
+}
+.checkoutWrap .thankYou .confirmText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.checkoutWrap .thankYou p {
+  margin-top: 20px;
+}
+/* Checkout css end */
+
+/* Paasport page css start */
+.passportCarouselWrap {
+  padding: 0;
+}
+.passportCarouselWrap .carousel .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+}
+.passportCarouselWrap .carousel .slide1 {
+  background-image: url('../images/paasport/Slide1.jpg');
+}
+.passportCarouselWrap .carousel .slide2 {
+  background-image: url('../images/paasport/Slide1.jpg');
+}
+.passportCarouselWrap .carousel-indicators li {
+  border-color: #FF0000;
+}
+.passportCarouselWrap .carousel-caption {
+  bottom: 25%;
+  color: #000;
+}
+.passportCarouselWrap .carousel-indicators .active {
+  background-color: #FF0000;
+}
+.passportToolSection {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+.passportToolSection .heading {
+  color: #5a5a5a;
+  font-size: 30px;
+  /*margin-top: 40px;*/
+}
+.passportToolSection .signUpForm {
+  background: rgba(0,0,0,0.7); 
+  padding:50px 0;
+}
+.passportToolSection .signUpForm .signUpHeading {
+  color: #FFFFFF;
+  text-align: center;
+}
+.passportToolSection .qrCodeImg {
+  height: 160px; 
+  margin: 17px auto 10px;
+}
+.passportToolSection .qrCodeBtn {
+  margin-bottom: 10px;
+}
+.paasportManageCloud {
+  background: url('../images/paasport/enterprise-solutions.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 50px 0;
+}
+.paasportManageCloud:before {
+  position: absolute;
+  content: '';
+  background: rgba(255,255,255,0.95);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 52%;
+}
+.paasportManageCloud .paasportLogo {
+  opacity: 0.7;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.paasportQuickIntegration {
+  background-color:#333333;
+  color: #FFFFFF;
+}
+.paasportQuickIntegration .img-responsive {
+  position: relative; 
+  top: -30px;
+}
+.paasportQuickIntegration .heading {
+  font-size: 36px; 
+}
+.paasportQuickIntegration .subHeading {
+  font-size: 16px; 
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.paasportQuickIntegration .subHeading small {
+  color: #FFFFFF;
+}
+.paasportHowItWorks {
+  color: #5a5a5a;
+  padding: 30px 0;
+}
+.paasportHowItWorks .heading {
+  font-size: 36px;
+}
+.paasportHowItWorks .subHeading,
+.paasportHowItWorks img {
+  margin-bottom: 30px;
+}
+.paasportHowItWorks img,
+.paasportSiloMerchant .qrpaymentImg {
+  opacity: 0.7;
+}
+.paasportHowItWorks img:hover,
+.paasportSiloMerchant .qrpaymentImg:hover {
+  opacity: 1;
+}
+.paasportHowItWorks .paragraph {
+  margin-bottom: 20px;
+}
+.paasportSiloMerchant {
+  background: url('../images/paasport/worldmap.png') no-repeat center center/cover;
+  color: #fff;
+  padding: 50px 0;
+}
+.paasportSiloMerchant .secureImg {
+  height: 200px;
+  position: relative;
+  top: -40px;
+}
+.paasportCampaignSoln {
+  background-color: #7f7f7f;
+  padding: 30px 0;
+  color: #fff;
+}
+.paasportCampaignSoln img.center-block {
+  margin-bottom: 20px;
+}
+.paasportQRCode {
+  padding: 50px 0;
+}
+.paasportQRCode .heading {
+  color: #7F7F7F;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.paasportQRCode .knowAboutHeading {
+  margin-bottom: 50px;
+}
+.paasportQRCode ol>li {
+  margin-bottom: 30px;
+}
+.paasportQRCode ol>li .ques {
+  font-weight: 600;
+}
+.paasportQRCode ol>li .ans {
+  color: #7F7F7F;
+}
+/* Paasport page css end */
+
+/* Silo SD page css start */
+.siloSDHero {
+  background: url('../images/silo-sd/bg.jpg') no-repeat center center/cover;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #fff;
+}
+.siloSDHero .heading {
+  font-size: 34px;
+}
+.siloSDHero .btn {
+  font-size: 11px;
+}
+.siloSDHero .sdCardImg {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 350px;
+}
+.siloSDSearchDomain {
+  background-color: #595959;
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+.siloSDSearchDomain .heading {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.siloSDSearchDomain .heading small {
+  color: #FFFFFF;
+}
+.siloSDSearchDomain .btn-default {
+  font-size: 11px;
+  line-height: 11px;
+  color: #7F7F7F;
+  height: 34px;
+  border-color: #fff;
+  margin-right: 5px;
+}
+.siloSDSearchDomain .btnRed {
+  font-size: 12px;
+  font-weight: 700;
+  height: 34px;
+}
+.securityServiceWrap {
+  padding: 20px 0;
+}
+.siloSDFreeTrial {
+  margin-bottom: 50px;
+}
+.siloSDFreeTrial .btnWrap {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.siloSDFreeTrial .btnWrap:before,
+.siloSDFreeTrial .btnWrap:after {
+  content: '';
+  background-color: #7F7F7F;
+  height: 3px;
+  width: 42%;
+  position: absolute;
+  top: 15px;
+  z-index: -1;
+}
+.siloSDFreeTrial .btnWrap:before {
+  left: 0;
+}
+.siloSDFreeTrial .btnWrap:after {
+  right: 0;
+}
+.siloSDFreeTrial .btnWrap .btn {
+  font-weight: 700;
+}
+.siloSDFreeTrial .deviceStorage {
+  background: #0f0f0f url('../images/silo-sd/black-sd.jpg') no-repeat center left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0 15px;
+  margin-top: 15px;
+}
+.siloSDPlatform {
+  margin: 0;
+}
+.sdDataSecurity {
+  background-color: #8c8c8c;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.sdDataSecurity .contentBox {
+  padding: 25px 25px 0;
+}
+.siloSDStorageWrap {
+  background-color: #B7180A;
+  padding: 30px 0;
+}
+.siloSDStorageWrap .cardImg {
+  margin: 0 25px 30px 0;
+}
+.siloSDStorageWrap ul>li {
+  background-color: #fff;
+  padding: 5px 15px;
+  margin: 0 2px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.siloSDMemoryWrap {
+  padding-top: 20px;
+}
+.siloSDMemoryWrap .orderNow {
+  background-color: #616161;
+}
+.siloSDMemoryWrap .orderNow .btn {
+  padding: 0 30px;
+}
+.siloSDRetailers {
+  padding: 30px 0 50px;
+  position: relative;
+}
+.siloSDRetailers:after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  background-color: #9C9C9C;
+  border-radius: 25px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+}
+.siloSDRetailers .heading {
+  color: #616161;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.webHostingPackages.siloSDPackagesWrap .needHelp {
+  margin-bottom: 0;
+}
+.siloSDPackagesWrap .features {
+  background-color: #E8E8E5;
+  padding-top: 50px;
+}
+.siloSDLogoWrap {
+  padding: 0 0 50px;
+}
+.siloSDLogoWrap ul>li {
+  vertical-align: middle;
+  padding: 0 15px;
+}
+.siloSDStartup .startUpText {
+  color: #96989a;
+  font-size: 44px;
+  font-weight: 700;
+  margin-left: -50px;
+  margin-bottom: 0;
+}
+.siloSDStartup .pricePerMonth {
+  font-size: 40px;
+  margin: 0 0 30px;
+}
+.siloSDStartup .packageIncludes {
+  text-align: center;
+  padding: 0 10px;
+  line-height: 25px;
+}
+.siloSDStartup .infoCol {
+  margin-top: 4%;
+}
+.siloSDStartup .redBgCol {
+  position: relative;
+  padding: 15px 0;
+}
+.siloSDStartup .redBgCol:before {
+  border-bottom: 254px solid #ed3237;
+  border-left: 140px solid rgba(0, 0, 0, 0);
+  border-right: 0 solid rgba(0, 0, 0, 0);
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 420px;
+  z-index: -1;
+}
+.siloSDStartup .redBgCol ul {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Silo SD page css end */
+
+/* Fiberrails page css start */
+.fiberRailsMainWrap {
+  margin: 0;
+}
+.fiberRailsMainWrap .heroSection .carousel .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide1 {
+  background-image: url('../images/silo-sd/bg.jpg');
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide2 {
+  background-image: url('../images/silo-sd/datasecurityonredkeyboard.jpg');
+} 
+.fiberRailsMainWrap .heroSection .carousel .slide3 {
+  background-image: url('../images/fiberrails/black-keyboards.jpg');
+} 
+.fiberRailsMainWrap .toolsFormSection {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+.fiberRailsMainWrap .toolsFormSection .heading {
+  font-size: 20px;
+}
+.fiberRailsMainWrap .deviceSection {
+  padding-top: 20px;
+  position: relative;
+}
+.fiberRailsMainWrap .deviceSection .btn-group {
+  width: 50%;
+  bottom: 135px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 6px 5px #9f9f9f;
+  -moz-box-shadow: 5px 6px 5px #9f9f9f;
+  -o-box-shadow: 5px 6px 5px #9f9f9f;
+  box-shadow: 5px 6px 5px #9f9f9f;
+}
+.fiberRailsMainWrap .deviceSection .btn-group .btn {
+  width: 50%;
+}
+.fiberRailsMainWrap .domainSearchSection {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+.fiberRailsMainWrap .domainSearchSection .well {
+  background-color: #8e8e8e;
+  margin: 0;
+  color: #ffffff;
+}
+.fiberRailsMainWrap .domainSearchSection .siliRailImg {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px transparent;
+  border-radius: 7px;
+}
+.fiberRailsMainWrap .servicesSection {
+  padding: 50px 0;
+}
+.fiberRailsMainWrap .servicesSection .stillQue {
+  color:#8c8c8c;
+  font-weight: 700;
+}  
+.fiberRailsMainWrap .integrationSection {
+  background-color: #8e8e8e;
+  position: relative;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.fiberRailsMainWrap .integrationSection .scandiscLogoWrap {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #8e8e8e;
+  border-radius: 15px 15px 0 0;
+  padding: 3px 10px;
+  display: block;
+  width: 220px;
+  text-align: center;
+}
+.fiberRailsMainWrap .integrationSection .heading {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.fiberRailsMainWrap .introSection {
+  background: url('../images/fiberrails/women-business.jpg') no-repeat center center/cover;
+  padding: 30px 0 100px;
+}
+.fiberRailsMainWrap .introSection .features {
+  margin: 15px 0;
+  font-size: 16px;
+}
+.fiberRailsMainWrap .introSection .features>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .introSection .features>li i {
+  margin-right: 10px;
+}
+.fiberRailsMainWrap .productHostSection {
+  background-color: #ff0000;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 20px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff0000;
+  top: -45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 45px;
+  text-align: center;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap .price {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap sup {
+  font-size: 48px;
+  top: -12px;
+}
+.fiberRailsMainWrap .productHostSection .circleWrap small {
+  font-size: 8px;
+}
+.fiberRailsMainWrap .productHostSection .heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.fiberRailsMainWrap .productHostSection .typoList>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .productHostSection .typoList>li:before {
+  background-color: #fff;
+}
+.fiberRailsMainWrap .productHostSection .secureImg {
+  width: 100px;
+  margin: 25px 0 0 42px;
+}
+.fiberRailsMainWrap .eRetailerSection {
+  padding: 30px 0;
+  font-size: 12px;
+}
+.fiberRailsMainWrap .webSolutionSection {
+  background-color: #7a7a7a;
+  padding: 50px 0;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 14px;
+}
+.fiberRailsMainWrap .webSolutionSection ul>li {
+  margin-bottom: 5px;
+}
+.fiberRailsMainWrap .webSolutionSection ul>li>a {
+  color: #FFFFFF;
+}
+/* Fiberrails page css end */
+
+/* Domain page css start */
+.takeYourBusiness .heading {
+  color: #616161;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.webHostingSignUp {
+  background: url('../images/domain/sign-up-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 35px 0;
+  position: relative;
+}
+.webHostingSignUp:before {
+  content: '';
+  background: rgba(0,0,0,0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.webHostingSignUp .heading {
+  font-size: 30px;
+  line-height: 32px;
+  margin: 0 0 25px;
+  font-weight: 500;
+}
+.webHostingSignUp .paragraph {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+.webHostingSignUp .btn {
+  font-weight: 600;
+  padding: 6px 30px;
+  margin: 0 0 50px;
+}
+.webHostingSignUp a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.webHostingSignUp a.link:hover {
+  color: #FF0000
+}
+.webHostingPackages {
+  padding: 30px 0;
+}
+.webHostingPackages .heading {
+  color: #7F7F7F;
+  margin: 5px 0 20px;
+  font-size: 36px;
+}
+.webHostingPackages .panel {
+  border-radius: 0;
+  border-top: 10px solid #FF0000;
+  -webkit-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  -o-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.webHostingPackages .panel .panel-heading {
+  background: transparent;
+  border: 0;
+  color: #1C1C1C;
+}
+.webHostingPackages .panel .planName {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 5px;
+}
+.webHostingPackages .panel .planPrice {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+}
+.webHostingPackages .panel-heading .btn {
+  border-radius: 20px;
+  font-weight: 700;
+  width: 140px;
+  text-transform: uppercase;
+}
+.webHostingPackages .panel .planFeatures {
+  font-size: 19px;
+  font-weight: 700;
+}
+.webHostingPackages .panel .listHeading {
+  margin: 0;
+}
+.webHostingPackages .panel .typoList {
+  margin-bottom: 15px;
+}
+.webHostingPackages .panel .typoList li:before {
+  background: #333;
+}
+.webHostingPackages .conditionText {
+  font-size: 10px;
+  color: #000;
+}
+.webHostingPackages .needHelp {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.webHostingPackages .featureBtn {
+  padding: 10px 30px;
+  margin: 15px 0 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+.domainListWrap {
+  padding: 30px 0;
+}
+.domainListWrap .domainResults {
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.domainListWrap .domainResults>li {
+  padding: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  clear: both;
+}
+.domainListWrap .domainResults>li:last-child {
+  border-bottom: 0;
+}
+.domainListWrap .domainResults>li>div {
+  display: inline-block;
+}
+.domainListWrap .domainResults>li .domainType {
+  font-size: 18px;
+  font-weight: 600;
+}
+.domainListWrap .domainResults>li .priceStrike {
+  font-size: 14px!important;
+  line-height: 2;
+  text-decoration: line-through;
+  padding-right: 0;
+  color: #6a7e8e;
+}
+.domainListWrap .domainResults>li .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008000;
+  padding: 5px 20px 5px 5px;
+}
+.domainListWrap .domainResults>li .btn span.remove,
+.domainListWrap .domainResults>li .btn.added span.add {
+  display: none;
+}
+.domainListWrap .domainResults>li .btn.added {
+  background-color: #000;
+}
+.domainListWrap .domainResults>li .btn.added span.remove {
+  display: block;
+}
+.domainListWrap .domainSidebar {
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  padding: 15px;
+}
+.domainListWrap .domainSidebar ul {
+  max-height: 200px;
+  overflow: hidden;
+}
+.domainListWrap .domainSidebar ul li {
+  margin-bottom: 5px;
+}
+/* Domain page css end */
+
+/* footer css start */
+.footerWrap {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 0;
+}
+.footerWrap .homeFooterText {
+  font-size: 11px;
+  margin: 0;
+}
+.footerWrap .socialMedia {
+	float: right;
+  margin: 0;
+}
+.socialMedia li {
+	padding: 0 2px;
+}
+.socialMedia li a {
+	display: block;
+	color: #fff;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+}
+.socialMedia li a:hover {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+/* footer css end */
+
+/* common css start */
+.redText,
+.error,
+label > span {
+  color: #FF0000;
+}
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus,
+.btn:hover {
+  outline: none;
+  opacity: 0.7;
+}
+.btn,
+.learnMoreAbout .dropdown-menu,
+.fiberRailSection .well {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn-lg {
+  font-size: 15px;
+}
+.btnRed {
+  background-color: #FF0000;
+}
+.btnRed,
+.btnRed:hover,
+.btnRed:focus {
+  color: #fff;
+}
+.textWhite {
+  color: #fff;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs>li {
+  margin-bottom: 0;
+}
+.nav-tabs>li>a {
+  color: #5c5c5c;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 10px 30px;
+  border: 0;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li>a:hover {
+  background-color: #dedede;
+  border: 0;
+}
+.tab-content {
+  border-top: 10px solid #7f7f7f;
+}
+ul.typoList li {
+  position: relative;
+  padding-left: 15px;
+}
+ul.typoList li:before {
+  content: "";
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+ol.typoList {
+  margin: 0;
+  padding: 0;
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+ol.upperRoman {
+  list-style-type: upper-roman;
+}
+ol.lowerRoman {
+  list-style-type: lower-roman;
+}
+.noPadding {
+  padding: 0;
+}
+.noMargin {
+  margin: 0;
+}
+.socialIconWrap {
+  text-align: center;
+}
+.socialIconWrap li {
+  padding: 0;
+}
+.socialIconWrap a {
+  color: #fff;
+  display: block;
+  background-color: #3b56ad;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.socialIconWrap a.facebook {
+  background-color: #3b56ad;
+}
+.socialIconWrap a.twitter {
+  background-color: #19b1f0;
+}
+.socialIconWrap a.googlePlus {
+  background-color: #e34e38;
+}
+.socialIconWrap a.pinterest-p {
+  background-color: #ca1a1c;
+}
+.socialIconWrap a.instagram {
+  background-color: #4072a3;
+}
+.socialIconWrap a.linkedin {
+  background-color: #0068a5;
+}
+/* common css end */
+
+/* responsive css */
+@media (max-width: 1400px) {
+  /* Login css start */
+  .loginFormWrap .well {
+    padding: 30px 0;
+  }
+  .loginFormWrap .well .logo {
+    margin-bottom: 30px;
+  }
+  .loginFormWrap .well .logo img{
+    width: 150px;
+  }
+  /* Login css end */
+}
+@media (max-width: 1200px) {
+  /* Home css start */
+  #carousel-home-banner .item, #carousel-home-smartphone .item {
+    max-height: 575px;
+  }
+  #carousel-home-banner .carousel-caption, #carousel-home-smartphone .carousel-caption {
+    padding: 0 5%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 52px;
+  }
+  #carousel-home-banner .carousel-caption h4 {
+    padding: 0 15%;
+  }
+  .dragDropSection .heading, .siloCloudSection .heading {
+    font-size: 30px;
+  }
+  .fiberRailSection .fiberRailImg {
+    width: 75%;
+  }
+  .fiberRailSection .well {
+    padding: 15px;
+  }
+  .fiberRailSection .well .heading1 {
+    font-size: 22px;
+  }
+  .fiberRailSection .well .heading2 {
+    font-size: 32px;
+  }
+  .fiberRailSection .well p {
+    margin-left: 35px;
+  }
+  .fiberRailSection .applyText {
+    font-size: 24px;
+  }
+  /* Home css end */
+  
+  /* Subscription css start */
+  .subscribePlanSection .nav-tabs>li>a {
+    padding: 10px 25px;
+  }
+  /* Subscription css end */
+
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 120px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 320px;
+  }
+  .siloSDStartup .startUpText {
+    font-size: 36px;
+  }
+  .siloSDStartup .pricePerMonth {
+    font-size: 32px;
+  }
+  .siloSDStartup .redBgCol:before {
+    border-left-width: 125px;
+    width: 320px;
+  }
+  /* Silo SD css end */
+  
+}
+@media (max-width: 1024px) {
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 110px;
+  }
+  .siloSDFreeTrial .deviceStorage h2 {
+    font-size: 24px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 296px;
+  }
+	/* Silo SD css end */
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Silo SD css start */
+  .siloSDStartup .startUpText {
+    font-size: 30px;
+  }
+  .siloSDStartup .pricePerMonth {
+    font-size: 30px;
+  }
+  .siloSDStartup .redBgCol:before {
+    border-left-width: 135px;
+    width: 325px;
+  }
+  /* Silo SD css end */
+}
+@media (max-width: 992px) {
+  /* Home css start */
+  #carousel-home-banner .item, #carousel-home-smartphone .item {
+    max-height: 430px;
+  }
+  #carousel-home-banner .carousel-caption, #carousel-home-smartphone .carousel-caption {
+    top: 23%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 42px;
+  }
+  #carousel-home-banner .carousel-caption h4 {
+    font-size: 32px;
+  }
+  #carousel-home-banner .carousel-caption h5 {
+    margin-bottom: 20px;
+  }
+  #carousel-home-smartphone .carousel-caption h4 {
+    font-size: 28px;
+  }
+  .productSection .panel {
+    min-height: 485px;
+  }
+  .dragDropSection .tryOut {
+    margin-top: 30px;
+  }
+  /* Home css end */
+
+  /* Subscription css start */
+  .subscribePlanSection .nav-tabs>li>a {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+  /* Subscription css end */
+
+  /* Domain css start */
+  .siloSDHero .sdCardImg {
+    width: 250px;
+  }
+  /* Domain css end */
+
+  /* Silo SD css start */
+  .siloSDPlatform ul>li {
+    width: 89px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 215px;
+  }
+  /* Silo SD css end */
+}
+@media (min-width: 992px) {
+  /* Login css start */
+  .loginFormWrap {
+    top: 50%;
+  }
+  .loginFooterWrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  /* Login css end */
+
+  /* Domain css start */
+  .webHostingPackages .panel {
+    min-height: 850px;
+  }
+  /* Domain css end */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	/*.navbar-header {
+		float: none;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+		-webkit-overflow-scrolling: touch;
+		border-top: 1px solid transparent;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	}
+	.navbar-collapse.in {
+		display: block !important;
+	}*/
+
+  /* Domain css start */
+  .webHostingPackages .panel {
+    min-height: 1024px;
+  }
+  /* Domain css end */
+
+  /* Silo SD css start */
+	.webHostingPackages.siloSDPackagesWrap .panel {
+    min-height: 875px;
+  }
+  .siloSDLogoWrap ul>li {
+    padding: 0 5px;
+    width: 76px;
+  }
+  .siloSDLogoWrap ul>li img {
+    width: 100%;
+    height: auto;
+  }
+  .siloSDStartup .startUpText {
+    margin: 0;
+  }
+  .siloSDStartup .packageIncludes {
+    text-align: left;
+  }
+  .siloSDStartup .redBgCol ul {
+    margin: 0 auto;
+    width: 227px;
+  }
+  /* Silo SD css end */
+}
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav>li>a {
+    padding: 0 15px;
+    line-height: 55px;
+  }
+
+  /* Login css start */
+  .loginPageWrap,
+  .loginPageWrap .mainRow,
+  .loginPageWrap .redBgCol,
+  .loginPageWrap .whiteBGCol {
+    height: 100%;
+  }
+  /* Login css end */
+  
+  /* Paasport css start */
+  .paasportQRCode ol li.paddingRight {
+    padding-right: 50px;
+  }
+  /* Paasport css end */
+
+  /* Domain css start */
+  .siloSDSearchDomain .form-control {
+    min-width: 400px;
+    margin-right: 15px;
+  }
+  .domainListWrap .domainResults>li .priceAction {
+    float: right;
+  }
+  /* Domain css end */
+}
+@media (max-width: 767px) {
+	.navbar-inverse .badge {
+		top: 13px;
+		right: 15px;
+	}
+	/* Footer css start */
+	.footerWrap {
+		text-align: center;
+	}
+	.footerWrap .socialMedia {
+		float: none;
+  	margin-top: 20px;
+	}
+  /* Footer css end */
+
+  /* Home css start */
+  .dotMatrixDropdown {
+    width: 290px;
+  }
+  .dotMatrixDropdown ul li {
+    height: 100px;
+  }
+  .dotMatrixDropdown img,
+  .dotMatrixDropdown .siloSDImg,
+  .dotMatrixDropdown .scanDiscImg,
+  .dotMatrixDropdown .webSuiteImg,
+  .dotMatrixDropdown .paasPortImg {
+    width: 50px;
+  }
+  .dotMatrixDropdown .siloBankImg {
+    width: 30px;
+  }
+  .dotMatrixDropdown .scanDiscImg {
+    margin: 25px auto;
+  }
+  .dotMatrixDropdown h4 {
+    font-size: 14px;
+  }
+  .learnMoreAbout ul li {
+    margin-bottom: 20px;
+  }
+  #carousel-home-banner .item img, #carousel-home-smartphone .item img {
+    min-height: 400px;
+  }
+  #carousel-home-banner .carousel-caption {
+    top: 12%;
+    padding: 0 5%;
+  }
+  #carousel-home-smartphone .carousel-caption {
+    top: 30%;
+    padding: 0 5%;
+  }
+  #carousel-home-banner .carousel-caption h3, #carousel-home-smartphone .carousel-caption h3 {
+    font-size: 18px;
+  }
+  #carousel-home-banner .carousel-caption h4,
+  #carousel-home-smartphone .carousel-caption h4 {
+    font-size: 14px;
+    padding: 0;
+  }
+  #carousel-home-banner .carousel-caption h5 {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  #carousel-home-banner .carousel-caption .btn,
+  #carousel-home-smartphone .carousel-caption .btn {
+    font-size: 16px;
+  }
+  .servicesLogos ul li {
+    margin-bottom: 35px;
+  }
+  .servicesLogos ul li:last-child {
+    margin-bottom: 0;
+  }
+  .enterpriseSoln img {
+    width: 100%;
+  }
+  .dragDropSection .heading, .siloCloudSection .heading {
+    font-size: 20px;
+  }
+  .fiberRailSection .phoneImg {
+    width: 250px;
+    top: -145px;
+  }
+  .fiberRailSection .fiberRailImg {
+    margin: 0 auto;
+  }
+  .fiberRailSection .well .heading1 {
+    font-size: 20px;
+  }
+  .fiberRailSection .well .heading2 {
+    font-size: 28px;
+  }
+  .fiberRailSection .well .btn {
+    font-size: 12px;
+  }
+  /* Home css end */
+
+  /* Login css start */
+  .loginPageWrap .redBgCol .logoWrap {
+    width: 200px;
+    bottom: 35px;
+    font-size: 14px;
+  }
+  .loginPageWrap .hamburgerIcon .icon-bar {
+    border-color: #FFFFFF;
+  }
+  .loginFormWrap {
+    width: 300px;
+  }
+  .loginFormWrap .well {
+    padding: 30px 15px;
+  }
+  .loginFormWrap .well .logo {
+    margin-bottom: 20px;
+  }
+  .loginFormWrap .well .logo img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  /* Login css end */
+
+  /* Subscription css start */
+  .subscribeHeroSection {
+    background-size: cover;
+  }
+  .subscribeHeroSection .heading {
+    font-size: 32px;
+  }
+  .subscribePlanSection .nav-tabs>li {
+    float: none;
+  }
+  .wirelesServicesInfo {
+    margin-top: 15px;
+  }
+  .wirelesServicesInfo .whyRP {
+    font-size: 24px;
+  }
+  .wirelesServicesInfo .reImagine {
+    font-size: 36px;
+  }
+  .wirelesServicesInfo .imageBlock img {
+    margin: 0 auto 10px;
+  }
+  /* Subscription css end */
+
+  /* Checkout css start */
+  .checkoutWrap .nav-tabs li {
+    float: none;
+  }
+  .checkoutWrap .tab-content small.pull-right {
+    display: block;
+    margin-top: 15px;
+    float: none !important;
+  }
+  .checkoutWrap .securityCode .popover {
+    min-width: auto;
+  }
+  /* Checkout css end */
+
+  /* Domain css start */
+  .siloSDHero .sdCardImg {
+    position: relative;
+    width: 200px;
+  }
+  /* Domain css end */
+
+  /* Silo SD css start */
+  .siloSDFreeTrial .deviceStorage .btn {
+    margin-top: 15px;
+  }
+  .sdDataSecurity .contentBox {
+    max-height: 100%;
+  }
+  .siloSDStorageWrap ul>li {
+    padding: 5px 10px;
+  }
+  .webHostingPackages .heading {
+    font-size: 24px;
+  }
+  .siloSDStartup img {
+    width: 200px;
+  }
+  .siloSDLogoWrap ul>li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .siloSDStartup .startUpText {
+    font-size: 36px;
+    margin-left: 0;
+  }
+  .siloSDStartup .redBgCol {
+    background-color: #ed3237;
+  }
+  .siloSDStartup .redBgCol:before {
+    content: none;
+  }
+  .siloSDStartup .redBgCol ul {
+    padding-left: 30px;
+  }
+  /* Silo SD css end */
+}

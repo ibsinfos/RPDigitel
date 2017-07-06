@@ -1,0 +1,22 @@
+
+/* Navingation bar css start */
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+/* Navingation bar css end */
+
+/* responsive css */
+@media (max-width: 480px) {
+
+    .dotMatrixDropdown {
+        width: 90%;
+    }
+    .dotMatrixDropdown .card-title {
+        font-size: 14px;
+    }
+    .learnMoreAbout {
+        top: 59px;
+    }
+}

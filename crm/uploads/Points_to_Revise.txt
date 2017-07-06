@@ -1,0 +1,17 @@
+Lint Uses:-
+
+1.Use compound drawables-Textview with drawable
+2.Useless leaf,Useless parent
+3.Deep layouts
+
+A] Use Layout with include,merg tag
+b] SparceArray instide of Map
+	SparseArray->Maps integers to Objects
+	SparseBooleanArray->Maps integers to booleans.
+	SparseIntArray->Maps integers to integers
+c] Two kinds of memories when it comes to Android: Clean RAM and Dirty RAM. 
+http://hsc.com/blog/best-practices-for-memory-optimization-on-android-1
+d] Avoid Creating Unnecessary Objects
+e] ViewStub
+	When you want to load the layout specified by the ViewStub, either set it visible by calling setVisibility(View.VISIBLE) or call inflate().
+f] Optimizing for Doze and App Standby
