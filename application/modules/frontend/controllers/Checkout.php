@@ -53,29 +53,29 @@
 				}
 				
 			$data['country_code_list'] = $this->membership_model->query_get_country();
+			
+			$data['services'] = $this->common_model->getRecords('services', 'category');
+			
 			// echo "<pre>";
 			// print_r($data['billing_address']);
 			// print_r($this->session->all_userdata());
 			// echo die();
 			
-//			if ($this->input->post('pricing_plan_total')) {
-//				
-//				$data['pricing_plan_total'] = $this->input->post('pricing_plan_total');
-//				$this->session->set_userdata(array('pricing_plan_total' => $data['pricing_plan_total']));
-//				} else if ($this->session->userdata('pricing_plan_total')) {
-//				
-//				$data['pricing_plan_total'] = $this->session->userdata('pricing_plan_total');
-//				} else {
-//				$data['pricing_plan_total'] = '';
-//			}
-                        
-			$data['contents'] = $this->cart->contents();
+			if ($this->input->post('pricing_plan_total')) {
+				
+				$data['pricing_plan_total'] = $this->input->post('pricing_plan_total');
+				$this->session->set_userdata(array('pricing_plan_total' => $data['pricing_plan_total']));
+				} else if ($this->session->userdata('pricing_plan_total')) {
+				
+				$data['pricing_plan_total'] = $this->session->userdata('pricing_plan_total');
+				} else {
+				$data['pricing_plan_total'] = '';
+			}
+			
 			if (!empty($_SESSION['paasport_user_id'])) {
 				$this->template->set('slug', $data['slug']);
 			}
-                        
-                        $this->template->set('contents', $data['contents']);
-			//$this->template->set('services', $data['services']);
+			$this->template->set('services', $data['services']);
 			$this->template->set('country_code_list', $data['country_code_list']);
 			$this->template->set('country_list', $data['country_list']);
 			$this->template->set('user_details', $data['user_details']);

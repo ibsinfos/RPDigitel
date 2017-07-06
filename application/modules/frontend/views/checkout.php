@@ -17,7 +17,7 @@
                     <li role="presentation" class="member_details active"><a aria-controls="memberDetails" role="tab"><i class="fa fa-edit"></i> Member Details</a></li>
                     <li role="presentation" class="payment_details disabled"><a aria-controls="payment" role="tab"><i class="fa fa-money"></i> Payment</a></li>
                     <li role="presentation" class="status_details disabled"><a aria-controls="status" role="tab"><i class="fa fa-check"></i> Status</a></li>
-		</ul>
+				</ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active member_details" id="memberDetails">
@@ -119,12 +119,7 @@
                                         <label>Password</label>
                                         <input name="password" id="password" class="form-control" required="required" type="password" placeholder="Password" >
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-6 form-group">
-                                        <label>Confirm Password</label>
-                                        <input name="confirmpassword" id="confirmpassword" class="form-control" required="required" type="password" placeholder="Confirm Password" >
-									</div>
+									
 								</div>
 							<?php } ?>
 							
@@ -165,7 +160,7 @@
 												}else{?>
 											
 											
-											<option value="">Select Country</option>
+											<option value="select">Select Country</option>
 												<?php } ?>
 												
 												
@@ -188,7 +183,7 @@
 												}else{?>
 											
 											
-											<option value="">Select State</option>
+											<option value="select">Select State</option>
 												<?php } ?>
 												
 												
@@ -202,7 +197,7 @@
 									</div>
 								</div>
 								<ul class="list-inline">
-									<li><button type="submit" class="btn btnRed next-step" onclick="saveBillingInformation();">Next</button></li>
+									<li><button type="submit" class="btn btnRed next-step" >Next</button></li>
 								</ul>
 						</form>
 					</div>
@@ -213,29 +208,17 @@
                                     <h4>STEP #3: Enter payment details</h4>
 								</div>
                                 <div class="col-sm-12 form-group">
-                                	<ul class="list-inline">
-	                                    <li>
-	                                    	<label class="radio-inline">
-		                                        <input type="radio" name="paymentOption" data-payment-type="card" class="paymentOpt" checked> 
-		                                        <img src="<?php echo main_asset_url(); ?>images/visa.png" width="40">
-		                                        <img src="<?php echo main_asset_url(); ?>images/mastercard.png" width="40">
-		                                        <img src="<?php echo main_asset_url(); ?>images/american-express.png" width="40">
-		                                        <img src="<?php echo main_asset_url(); ?>images/discover.png" width="40">
-											</label>
-										</li>
-										<li>
-		                                    <label class="radio-inline">
-		                                        <input type="radio" name="paymentOption" data-payment-type="paypal" class="paymentOpt">
-		                                        <img src="<?php echo main_asset_url(); ?>images/paypal.png" width="40">
-											</label>
-										</li>
-										<li>
-											<label class="radio-inline">
-		                                        <input type="radio" name="paymentOption" data-payment-type="siloWallet" class="paymentOpt">
-		                                        Silo Wallet
-											</label>
-										</li>
-									</ul>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="paymentOption" data-payment-type="card" class="paymentOpt" checked> 
+                                        <img src="<?php echo main_asset_url(); ?>images/visa.png" width="40">
+                                        <img src="<?php echo main_asset_url(); ?>images/mastercard.png" width="40">
+                                        <img src="<?php echo main_asset_url(); ?>images/american-express.png" width="40">
+                                        <img src="<?php echo main_asset_url(); ?>images/discover.png" width="40">
+									</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="paymentOption" data-payment-type="paypal" class="paymentOpt">
+                                        <img src="<?php echo main_asset_url(); ?>images/paypal.png" width="40">
+									</label>
 								</div>
                                 <div class="col-sm-6 form-group creaditCardInfo">
                                     <label>Card Number</label>
@@ -266,10 +249,6 @@
                                     <label>Expiration Date</label>
                                     <input name="exp_date" class="form-control" required="required" type="text" placeholder="MM/YY">
 								</div>
-								<div class="col-sm-12 form-group silWalletInfo">
-                                    <img src='<?php echo asset_url(); ?>frontend/images/wbs-suite/sded199x199.jpg' class='img-responsive'><br>
-                                    <p>Scan QR code to complete payment using Silo Wallet</p>
-								</div>
                                 <div class="col-sm-12 form-group">
                                     <div class="checkbox">
                                         <label>
@@ -290,16 +269,9 @@
                             <li>
 								
                                 <form method="POST" action="<?php echo base_url(); ?>frontend/multi_plan_checkout/SetExpressCheckout">
-					<?php
-                                            $total = 0;
-                                                if(isset($contents) && count($contents) >0){
-                                                    foreach ($contents as $content) {
-                                                        $total = $total + $content['subtotal']; 
-                                                    }
-                                                }
-                                        ?>				
+									
                                     <div class="center padding-bottom-25">
-                                        <input type="hidden" value="<?php echo $total; ?>" name="amount">
+                                        <input type="hidden" value="<?php echo $pricing_plan_total; ?>" name="amount">
                                         <input type="hidden" value="1" name="plan_id">
                                         <input type="hidden" value="<?php echo $this->session->userdata('user_id') ?>" name="user_id">
 										
@@ -311,7 +283,7 @@
 										
 									</div>
 									
-				</form>
+								</form>
 								
 							</li>
 							
@@ -321,7 +293,7 @@
                     <div role="tabpanel" class="tab-pane status_details" id="status">
                         <div class="thankYou text-center">
                             <h4 class="heading">Thank You</h4>
-                            <p class="confirmText">Your Product has been confirmed.</p>
+                            <p class="confirmText">Your subscription has been confirmed.</p>
                             <p>Welcome to RPDigital.</p>
                             <p>We are thrilled to have you here and look forward to serving you often!<br> 
                                 Please login to RPDigital portal and start enjoying your benefits.<br> 
@@ -355,27 +327,30 @@
 								<th>Price</th>
 							</tr>
 							<?php
-                                                        $total = 0;
-                                                            if(isset($contents) && count($contents) >0){
-                                                               
-                                                            foreach ($contents as $content) {
-                                                                $total = $total + $content['subtotal']; ?>
-                                                                
-                                                                <tr>
-                                                                    <td><?php echo $content['name'] ?></td>
-                                                                    <td>$<?php echo $content['price'] ?></td>
-                                                                </tr>
-                                                        <?php
-                                                            }
-                                                            }
-                                                        ?>
+                                // $services = array('fiber', 'silo_cloud', 'scandisc', 'wbs', 'paasport', 'silo_bank');
+								
+								// echo '<pre>';
+								// print_r($this->session->all_userdata());
+								// print_r($services);
+								
+								
+								
+                                foreach ($services as $service) {
+									
+									$service=$service['category'];
+									
+									if ($this->session->userdata($service)) {
+								        echo "<tr><td>" . $this->session->userdata[$service]['name'] . "</td><td>$ " . $this->session->userdata[$service]['price'] . "</td></tr>";
+									}
+								}
+							?>
 						</tbody>
 						<tfoot>
 							<tr>
 								<th>Total Price:</th>
 								<!--<th>$99</th>-->
 								<th>$ <?php
-									echo $total;
+									echo $pricing_plan_total;
 								?></th>
 							</tr>
 						</tfoot>
@@ -389,9 +364,7 @@
 
 
 <script type="text/javascript">
-	function saveBillingInformation(){
-            //alert('hi');
-        }
+	
     $("#billing_country").on('change', function (e) {
 		
         if (this.value != 'select') {
@@ -411,7 +384,7 @@
 			});
 			} else {
 			
-            $("#billing_state").html("<option value=''>Select State</option>");
+            $("#billing_state").html("<option value='select'>Select State</option>");
 			
 		}
 		
