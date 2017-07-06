@@ -3,14 +3,14 @@
 	if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 	
-	class Checkout extends CI_Controller {
+	class Domaincheckout extends CI_Controller {
 		
 		public function __construct() {
 			parent::__construct();
 			$this->load->helper('url');
 			$this->load->helper('cookie');
+                        $this->load->library('cart');
 			$this->load->model("common_model");
-			
 			$this->sessdata = $this->session->userdata('user_account');
 			//        if ($this->sessdata['purchase_pack'] == '1') {
 			//            $this->sidebar = 'partials/marketplace_sidebar';
@@ -29,9 +29,11 @@
 			$is_logged_in = $this->session->userdata('is_logged_in');
 			$user_role = $this->session->userdata('role');
 			
-			
+			$contents = $this->cart->contents();
+//                        if(count($contents) < 1){
+//                             redirect(base_url() . "domain/cart");
+//                        }
 			$this->load->model('membership_model');
-			$this->load->model('subscription_model');
 			
 			if (!empty($_SESSION['paasport_user_id'])) {
 				$data['slug'] = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
@@ -57,29 +59,29 @@
 				}
 				
 			$data['country_code_list'] = $this->membership_model->query_get_country();
-			
-			$data['services'] = $this->common_model->getRecords('services', 'category');
-			
 			// echo "<pre>";
 			// print_r($data['billing_address']);
 			// print_r($this->session->all_userdata());
 			// echo die();
 			
-			if ($this->input->post('pricing_plan_total')) {
-				
-				$data['pricing_plan_total'] = $this->input->post('pricing_plan_total');
-				$this->session->set_userdata(array('pricing_plan_total' => $data['pricing_plan_total']));
-				} else if ($this->session->userdata('pricing_plan_total')) {
-				
-				$data['pricing_plan_total'] = $this->session->userdata('pricing_plan_total');
-				} else {
-				$data['pricing_plan_total'] = '';
-			}
-			
+//			if ($this->input->post('pricing_plan_total')) {
+//				
+//				$data['pricing_plan_total'] = $this->input->post('pricing_plan_total');
+//				$this->session->set_userdata(array('pricing_plan_total' => $data['pricing_plan_total']));
+//				} else if ($this->session->userdata('pricing_plan_total')) {
+//				
+//				$data['pricing_plan_total'] = $this->session->userdata('pricing_plan_total');
+//				} else {
+//				$data['pricing_plan_total'] = '';
+//			}
+                        
+			$data['contents'] = $this->cart->contents();
 			if (!empty($_SESSION['paasport_user_id'])) {
 				$this->template->set('slug', $data['slug']);
 			}
-			$this->template->set('services', $data['services']);
+                        
+                        $this->template->set('contents', $data['contents']);
+			//$this->template->set('services', $data['services']);
 			$this->template->set('country_code_list', $data['country_code_list']);
 			$this->template->set('country_list', $data['country_list']);
 			$this->template->set('user_details', $data['user_details']);
@@ -91,7 +93,7 @@
 			->title('Home | RPDigitel')
 			->set_partial('header', 'partials/header')
 			->set_partial('footer', 'partials/footer');
-			$this->template->build('checkout');
+			$this->template->build('domaincheckout');
 		}
 		
 	}

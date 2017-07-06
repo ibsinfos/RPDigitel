@@ -18,15 +18,15 @@
         <div class="row">
             <div class="col-sm-12">
                 <h3 class="heading"> CHOOSE YOUR DOMAIN <small class="white">Starting from $9.99</small></h3>
-                    <form class="form-inline" name="frm_search_domains" id="frm_search_domains" action="<?php echo base_url(); ?>domains-results-main" method="POST"enctype="multipart/form-data" >
+                   <div  class="form-inline" >
                   <input type="hidden" name="base_url" id="base_url" value="<?php echo base_url() ?>" />
                         <div class="form-group">
                     <input type="text" class="form-control" id="domain_name" id="domain_name" value="" placeholder="Enter your domain name here....">
                   </div>
                   <!-- <button type="button" class="btn btn-default">Have a Promo Code ?</button> -->
                   <!--<button type="submit" name="btn_submit" id="btn_submit" class="btn btnRed">SEARCH DOMAIN</button>-->
-                  <input type="button" name="btns_submit_domain" id="btns_submit_domain" class="btn btnRed" value="SEARCH DOMAIN" />
-                </form>
+                  <input type="button" name="btns_submit_domain" id="btns_submit_domain" onclick="searchDomainName();" class="btn btnRed" value="SEARCH DOMAIN" />
+                </div>
             </div>
         </div>
     </div>
@@ -255,21 +255,22 @@
     </div>
 </section>
 <script type="text/javascript">
-    
-
-$('#btns_submit_domain').click(function() { 
-                    var domain_name = $('#domain_name').val(); 
-                    if(domain_name != ''){
-                        var base_url=$('#base_url').val();
-                        var url = base_url+'domains-results-main/'+domain_name;
-                        //window.location(url);
-                        window.location=""+url;
-                    }else{
-                        alert('Please enter domain name');
-                    }
-                   
-                });
-
+    $(document).keypress(function(event){
+        if(event.keyCode == 13){
+            searchDomainName();
+        }
+    });
+    function searchDomainName(){
+        var domain_name = $('#domain_name').val(); 
+        if(domain_name != ''){
+            var base_url=$('#base_url').val();
+            var url = base_url+'domains-results-main/'+domain_name;
+            //window.location(url);
+            window.location=""+url;
+        }else{
+            alert('Please enter domain name');
+        }
+    }
 </script>
 
 
