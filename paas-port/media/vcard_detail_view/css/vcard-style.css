@@ -979,7 +979,7 @@ padding: 10px;*/
 #gallery .panel {
     border-color: #ddd;
     overflow: hidden;
-    max-height: 100px;
+    max-height: 170px;
     padding: 5px;
 }
 #gallery .panel a>img {
