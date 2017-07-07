@@ -78,7 +78,7 @@
 						</div>
 					</div>
 
-					<div class="chatBox">
+				<!--	<div class="chatBox">
 						<h4 class="heading">Chat</h4>
 						<form class="">
 							<div class="form-group">
@@ -113,9 +113,16 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 			</div>
+			
+			<div>
+
+			<iframe src="https://rebelute.net/broadcast/chat-hangout/#1" height="500px" width="1080px"></iframe>
+			
+			</div>
+			
 		</div>
 	</div>
 </div>
