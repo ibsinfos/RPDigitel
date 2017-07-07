@@ -40,7 +40,7 @@
 
                         <td data-th="Subtotal" class="text-center">$<?php echo $content['subtotal'] ?></td>
                         <td class="actions" data-th="">
-                            <button onclick="removeItem('<?php echo $content['rowid'] ?>')" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+                            <button onclick="removeItem('<?php echo $content['rowid'] ?>')" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>                                
                         </td>
                     </tr>
                 <?php } ?>
@@ -53,7 +53,7 @@
                     <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
                     <td colspan="2" class="hidden-xs"></td>
                     <td class="hidden-xs text-center"><strong>Total $<?php echo $total; ?></strong></td>
-                    <td><a href="<?php echo base_url() ?>check_out" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                    <td><a href="<?php echo base_url() ?>domain_check_out" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
                 </tr>
             </tfoot>
             <?php }else{ ?>
