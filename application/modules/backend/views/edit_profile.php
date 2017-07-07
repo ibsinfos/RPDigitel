@@ -28,11 +28,19 @@
 	                        </div>
 	                        <div class="col-xs-12 col-sm-6 form-group">
 	                          <label for="firstName">First Name</label>
-	                          <input type="text" class="form-control" id="firstName" placeholder="First Name">
+	                          <input type="text" class="form-control" id="firstName" placeholder="First Name" value="<?php
+                                                           if (!empty($user)) {
+                                                               echo $user[0]['first_name'];
+                                                           }
+                                                           ?>">
 	                        </div>
 	                        <div class="col-xs-12 col-sm-6 form-group">
 	                          <label for="lastName">Last Name</label>
-	                          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+	                          <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="<?php
+                                                    if (!empty($user)) {
+                                                        echo $user[0]['last_name'];
+                                                    }
+                                                    ?>">
 	                        </div>
 	                        <div class="col-xs-12 col-sm-12 form-group">
 	                          <label for="occupation">Occupation</label>
@@ -302,3 +310,11 @@
 		</div>
     </div>
 </div>
+
+<script type="text/javascript">
+	var getaudiolist_URL="<?php echo base_url(); ?>paas-port/getaudiolist";
+	var edituser_slug_URL="<?php echo $user[0]['slug']; ?>";
+	var audio_user_id="<?php echo $membership[0]['user_id']; ?>";
+	var host_ip="<?php echo $_SERVER['HTTP_HOST']; ?>";
+	                        alert(audio_user_id);
+</script>

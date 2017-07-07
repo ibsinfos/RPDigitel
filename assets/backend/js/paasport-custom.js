@@ -201,7 +201,12 @@ $(document).ready(function () {
     }
 
 
+          
+    $("#uploadAudioModalDetails,#uploadVideoModalDetails,#uploadGalleryModalDetails").click(function () {
+        location.reload(); 
+    });
 
+    
     //$("#basicInfo").validate();
     validateBasicInformation();
 
