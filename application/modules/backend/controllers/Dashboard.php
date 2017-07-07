@@ -25,7 +25,7 @@
 			$this->load->helper('url');
 			$this->load->helper('cookie');
 			$this->load->model("common_model");
-			$this->session = $this->session->userdata('user_account');
+			$this->sessionn = $this->session->userdata('user_account');
 			
 			// print_r($user_details);
 			// die('ss');
@@ -125,17 +125,10 @@
 			$this->load->library('google_url_api');
 			$this->load->model("login_model");
 			
-			//$data['user'][0]['user_id']=31;
-			// echo '<pre>';
-			// print_r($this->session->userdata()); exit;
-			
 			$user = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('user_id'=>$_SESSION['paasport_user_id']),'',1);
 			$slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
 			
-			
-			
 			$user_menu = $this->login_model->get_menu_by_user($_SESSION['user_id']);
-			
 			
 			// create a shorten url
 			$url = backend_passport_url()."view/".$slug; 
@@ -146,13 +139,58 @@
 			else
 			$shorten_url=$url; 
 			
-			// create a shorten url
+			
+
+			      $data['user'] = $this->common_model->getRecords(TABLES::$VCARD_BASIC_DETAILS, '*', array('slug' => $slug));
+        $data['membership'] = $this->common_model->getRecords(TABLES::$ADMIN_USER, '*', array('paasport_user_id' => $data['user'][0]['user_id']));
+
+        $data['user_experience_data'] = $this->common_model->getRecords(TABLES::$EXPERIENCE_DETAILS, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+
+        $data['user_education_data'] = $this->common_model->getRecords(TABLES::$EDUCATION_DETAILS, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+
+        $data['user_skills'] = $this->common_model->getRecords(TABLES::$SKILLS_AND_EXPERTISE, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+
+        $data['user_blog'] = $this->common_model->getRecords(TABLES::$BLOG_DETAILS, '*', array('user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']), 'id DESC ', 2);
+
+        $data['gallary_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_GALLARY, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+        $data['media_video_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_VIDEO, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+        $data['media_audio_list'] = $this->common_model->getRecords(TABLES::$PAASPORT_AUDIO, '*', array('paasport_user_id' => $data['user'][0]['user_id'], 'vcard_id' => $data['user'][0]['id']));
+
+        //print_r($data['media_audio_list']);
+        //echo 'ff';			
+        //print_r($data['gallary_list']);
+        //die;
+        $data['shorten_url'] = '';
+        $url = current_url();
+        $this->google_url_api->enable_debug(FALSE);
+        $short_url = $this->google_url_api->shorten($url);
+        //echo '<pre>'; print_r($short_url); 
+        if (!empty($short_url->id))
+            $data['shorten_url'] = $short_url->id;
+
+        if (!empty($_SESSION['paasport_user_id'])) {
+            $slug = $this->common_model->getPaasportSlug($_SESSION['paasport_user_id']);
+            $this->template->set('slug', $slug);
+        }
+        $this->template->set('user', $data['user']);
+        $this->template->set('membership', $data['membership']);
+        $this->template->set('user_experience_data', $data['user_experience_data']);
+        $this->template->set('user_education_data', $data['user_education_data']);
+        $this->template->set('user_skills', $data['user_skills']);
+        $this->template->set('user_blog', $data['user_blog']);
+        $this->template->set('shorten_url', $data['shorten_url']);
+        $this->template->set('media_audio_list', $data['media_audio_list']);
+        $this->template->set('gallary_list', $data['gallary_list']);
+        $this->template->set('media_video_list', $data['media_video_list']);
+
+
+
 			
 			$this->template->set('user_menu',$user_menu);
 			$this->template->set('shorten_url',$shorten_url);
 			$this->template->set('slug',$slug);
 			$this->template->set('user',$user);
-			$this->template->set('page','dashboard');
+			$this->template->set('page','edit_profile');
 			$this->template->set_theme('default_theme');
 			$this->template->set_layout('backend_silo')
 			->title('Admin Dashboard | Silo')

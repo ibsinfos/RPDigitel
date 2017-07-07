@@ -1573,6 +1573,7 @@
             </div>
             <div class="modal-footer">
                 <!--<button type="submit" class="btn btnRed">Upload</button>-->
+                  <button type="submit" class="btn btnRed" id="uploadAudioModalDetails">Upload</button>
                 <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1631,6 +1632,7 @@
             </div>
             <div class="modal-footer">
                 <!--<button type="submit" class="btn btnRed">Upload</button>-->
+                  <button type="submit" class="btn btnRed" id="uploadVideoModalDetails">Upload</button>
                 <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1688,6 +1690,7 @@
             </div>
             <div class="modal-footer">
                 <!--<button type="submit" class="btn btnRed">Upload</button>-->
+                  <button type="submit" class="btn btnRed" id="uploadGalleryModalDetails">Upload</button>
                 <button type="button" class="btn btnRed btn-o" data-dismiss="modal">Close</button>
             </div>
         </div>

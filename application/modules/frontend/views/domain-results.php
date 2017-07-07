@@ -192,7 +192,7 @@
                      Continue to cart
                 </a>
             </aside>
-       	</div>
+        </div>
     </div>
 </section>
 
