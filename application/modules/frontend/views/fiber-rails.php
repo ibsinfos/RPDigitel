@@ -1,6 +1,6 @@
 <div class="fiberRailsMainWrap">
 	<section class="heroSection">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carousel-example-generic" class="carousel slides" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -10,21 +10,39 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active slide1">
-		    	<div class="carousel-caption">
-		    		<img src="<?php echo asset_url(); ?>frontend/images/wbs-suite/crmt.png">
-		    		<h4>Why More Than 30,000 Startups Trust Us?</h4>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-offset-1">
+		    				<img src="<?php echo asset_url(); ?>frontend/images/wbs-suite/crmt.png" class="img-responsive center-block">
+		    			</div>
+		    			<div class="col-xs-12 col-sm-8 col-md-5">
+		    				<h4>Why More Than <span class="redText">30,000</span> Startups Trust Us?</h4>
+		    			</div>
+		    		</div>
 		    	</div>
 		    </div>
 		    <div class="item slide2">
-		    	<div class="carousel-caption">
-		    		<img src="<?php echo asset_url(); ?>frontend/images/secure.png">
-		    		<h4>Your Data is Our Business Visit us to see how!</h4>
+		    	<div class="container">
+    				<div class="row">
+    					<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-2">
+		    				<img src="<?php echo asset_url(); ?>frontend/images/secure.png" class="img-responsive center-block">
+		    			</div>
+		    			<div class="col-xs-12 col-sm-6">
+		    				<h4>Your Data is Our <span class="redText">Business</span> <span class="visitUsText">Visit us to see how!</span></h4>
+		    			</div>
+		    		</div>
 		    	</div>
 		    </div>
 		    <div class="item slide3">
-		    	<div class="carousel-caption">
-		    		<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/nerdery-threads.png">
-		    		<h4>Learn about the <span>best fluid website</span>  builder on the web!</h4>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
+		    				<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/nerdery-threads.png" class="img-responsive center-block">
+		    			</div>
+		    			<div class="col-xs-12 col-sm-7">
+		    				<h4>Learn about the <span class="redText">best fluid website</span>  builder on the web!</h4>
+		    			</div>
+		    		</div>
 		    	</div>
 		    </div>
 		  </div>
@@ -91,12 +109,12 @@
 		<div class="container">
 			<div class="well">
 			<div class="row">
-				<div class="col-md-3" >
+				<div class="col-sm-3" >
 					<a href="http://54.209.190.106/landingpage/" >
-						<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/silorails.png" class="siliRailImg">
+						<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/silorails.png" class="siliRailImg img-responsive">
 					</a>
 				</div>
-				<div class="col-md-8">
+				<div class="col-sm-8">
 					<h4><strong>Host your business on Silowebhosting.com !</strong></h4>
 					<div class="input-group ">
 						<input type="text" class="form-control">
@@ -162,8 +180,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
 				<div class="col-md-4 col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading scandiscImgBox">
@@ -218,16 +234,16 @@
 					<h5 class="stillQue">Still have questions?</h5>
 					<p>Create your company-specific portfolio and catalogs with prices and terms, and enhance tracking, global management and order processing.</p>
 				</div>
-				<div class="col-sm-2 col-sm-offset-2">
+				<div class="col-xs-6 col-sm-2 col-sm-offset-2">
 					<img src="<?php echo asset_url(); ?>frontend/images/silo-sd/windows.png">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-6 col-sm-2">
 					<img src="<?php echo asset_url(); ?>frontend/images/silo-sd/apple.png">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-6 col-sm-2">
 					<img src="<?php echo asset_url(); ?>frontend/images/silo-sd/linux.png">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-6 col-sm-2">
 					<img src="<?php echo asset_url(); ?>frontend/images/silo-sd/android.png">
 				</div>
 			</div>
@@ -253,25 +269,33 @@
 
 	<section class="testDriveSection container-fluid">
 		<div class="row">
-			<div class="col-md-5 noPadding" style="background-color: #515151;">
-				<div style="position: absolute" class="hover-img1 col-md-offset-4">
-					<img src="<?php echo base_url(); ?>images/projects.jpg">
+			<div class="col-sm-6 leftCol">
+				<div class="row">
+					<div class="hover-img1 col-xs-6 noPadding">
+						<img src="<?php echo base_url(); ?>images/projects.jpg" class="img-responsive">
+					</div>
+					<div class="hover-img2 col-xs-6 noPadding">
+						<img src="<?php echo base_url(); ?>images/signup.jpg" class="img-responsive">
+						<img src="<?php echo base_url(); ?>images/member.png" class="img-responsive">
+					</div>
 				</div>
-				<div class="hover-img2" style="position: relative">
-					<img src="<?php echo base_url(); ?>images/signup.jpg">
-				</div>
-				<div class="hover-img3" style="position: absolute">
-					<img src="<?php echo base_url(); ?>images/member.png">
-				</div>
-				<div class="hover-img4 col-md-offset-7">
-					<img src="<?php echo base_url(); ?>images/invoice.jpg">
+				<div class="row">
+					<div class="hover-img3 col-xs-6 noPadding">
+						<!-- <img src="<?php echo base_url(); ?>images/member.png" class="img-responsive"> -->
+					</div>
+					<div class="hover-img4 col-xs-6 noPadding">
+						<!-- <img src="<?php echo base_url(); ?>images/invoice.jpg" class="img-responsive"> -->
+					</div>
 				</div>
 			</div>
-			<div class="col-md-7 noPadding">
-				<img src="<?php echo base_url(); ?>images/fiber-rails/mesh.jpg" class="mesh">
-				<div class=" col-md-12" style="padding-left:70px; background: #ff0000;">
-					<h2 style=" color:#ffffff;">Test Drive Our Suite !<br>
-					<small style="color: white">Sign up for your 10 day Trial and see what you have been missing !</small></h2>
+			<div class="col-sm-6">
+				<div class="col-sm-8 col-sm-offset-2">
+					<img src="<?php echo base_url(); ?>images/fiber-rails/mesh.jpg" class="img-responsive center-block">
+				</div>
+				<div class="clearfix"></div>
+				<div class="redBox">
+					<h4 class="heading">Test Drive Our Suite !</h4 class="heading">
+					<p>Sign up for your 10 day Trial and see what you have been missing !</p>
 				</div>
 			</div>
 		</div>
@@ -309,10 +333,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-1 col-md-offset-7">
+				<div class="col-sm-1 col-sm-offset-7">
 					<img src="<?php echo asset_url(); ?>frontend/images/fiber-rails.png" class="img-responsive" style="margin-top: 20px;">
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="center">
 						<h2>Introducing Fibre Rails</h2>
 						<h4>Many solutions offer platforms, our focus is on the Handrails!</h4>
@@ -335,7 +359,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 					<br>
 					<p class="text-center">Hosted and Designed</p>
 					<div class="row">
@@ -369,40 +393,45 @@
 			</div>
 		</div>
 	</section>
-	<div class="container-fluid" style="background-color: #ff0000;">
-		<div class="rows">
-					<button type="button" class="btn btn-default btn-block" style="background: #f5f5f5;" data-toggle="collapse" data-target="#demo3">
-					<img src="<?php echo asset_url(); ?>frontend/images/paasport/paasport.png" height="25"></button>
-					<div id="demo3" class="collapse">
-						<ul class="list-unstyled list-inline text-center" style="padding-top:15px">
-							<li>
-								<!-- <i class="fa fa-desktop"></i> -->
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/1.png">
-							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/2.png">
-							</li>
-							<li>
-								<!-- <i class="fa fa-comments-o"></i> -->
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/3.png">
-							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/4.png">
-							</li>
-							<li>
-								<!-- <i class="fa fa-envelope"></i> -->
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/5.png">
-							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/6.png">
-							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>images/icons/pass-services/7.png">
-							</li>
-						</ul>
-					</div>
+
+	<section class="paasportLearnSection">
+		<div class="container">
+			<div class="rows">
+				<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#demo3">
+					<img src="<?php echo asset_url(); ?>frontend/images/paasport/paasport.png" height="25">
+				</button>
+				<div id="demo3" class="collapse">
+					<ul class="list-unstyled list-inline text-center">
+						<li>
+							<!-- <i class="fa fa-desktop"></i> -->
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/1.png">
+						</li>
+						<li>
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/2.png">
+						</li>
+						<li>
+							<!-- <i class="fa fa-comments-o"></i> -->
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/3.png">
+						</li>
+						<li>
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/4.png">
+						</li>
+						<li>
+							<!-- <i class="fa fa-envelope"></i> -->
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/5.png">
+						</li>
+						<li>
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/6.png">
+						</li>
+						<li>
+							<img src="<?php echo base_url(); ?>images/icons/pass-services/7.png">
+						</li>
+					</ul>
 				</div>
 			</div>
+		</div>
+	</section>
+
 	<section class="eRetailerSection">
 		<div class="container">
 			<div class="row">
@@ -411,7 +440,7 @@
 						<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/gi_128600_internetretailergrphccs2.jpg" class="img-responsive center-block">
 					</a>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-8">
 					<p>
 						<strong>Do you have a demo or free trial?</strong><br>
 						The best way to find out whether FiberRails is right for you is to try it!
@@ -427,26 +456,26 @@
 						with any sales or technical support related questions you may have. And
 						we love talking about security, privacy, and encryption too.
 					</p>
-					<div class="row">
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/1.png">
-						</div>
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/2.png">
-						</div>
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/3.png">
-						</div>
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/4.png">
-						</div>
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/5.png">
-						</div>
-						<div class="col-xs-6 col-sm-2">
-							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/6.png" class="hidden-sm">
-						</div>
-					</div>
+					<ul class="list-unstyled list-inline">
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/1.png" class="img-responsive center-block">
+						</li>
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/2.png" class="img-responsive center-block">
+						</li>
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/3.png" class="img-responsive center-block">
+						</li>
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/4.png" class="img-responsive center-block">
+						</li>
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/5.png" class="img-responsive center-block">
+						</li>
+						<li>
+							<img src="<?php echo asset_url(); ?>frontend/images/fiberrails/6.png" class="img-responsive center-block">
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -507,4 +536,3 @@
 		</div>
 	</section>
 </div>
-		

@@ -1134,6 +1134,7 @@ html, body,
   background-position: center center;
   background-size: cover;
   min-height: 400px;
+  padding-top: 100px;
 } 
 .fiberRailsMainWrap .heroSection .carousel .slide1 {
   background-image: url('../images/silo-sd/bg.jpg');
@@ -1144,6 +1145,14 @@ html, body,
 .fiberRailsMainWrap .heroSection .carousel .slide3 {
   background-image: url('../images/fiberrails/black-keyboards.jpg');
 } 
+.fiberRailsMainWrap .heroSection .container h4 {
+  font-size: 36px;
+  margin-top: 35px;
+  color: #FFFFFF;
+}
+.fiberRailsMainWrap .heroSection .container .visitUsText {
+  font-size: 18px;
+}
 .fiberRailsMainWrap .toolsFormSection {
   background-color: #f5f5f5;
   padding: 30px 0;
@@ -1156,7 +1165,7 @@ html, body,
   position: relative;
 }
 .fiberRailsMainWrap .deviceSection .btn-group {
-  width: 50%;
+  width: 500px;
   bottom: 135px;
   position: absolute;
   left: 0;
@@ -1215,6 +1224,25 @@ html, body,
   font-size: 36px;
   margin-bottom: 15px;
 }
+.fiberRailsMainWrap .testDriveSection .leftCol {
+  background-color: #515151;
+}
+.fiberRailsMainWrap .testDriveSection .leftCol img {
+  opacity: 0.6;
+}
+.fiberRailsMainWrap .testDriveSection .leftCol img:hover {
+  opacity: 1;
+  z-index: 1;
+}
+.fiberRailsMainWrap .testDriveSection .redBox {
+  background-color: #ff0000;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
+.fiberRailsMainWrap .testDriveSection .redBox .heading {
+  font-size: 28px;
+}
 .fiberRailsMainWrap .introSection {
   background: url('../images/fiberrails/women-business.jpg') no-repeat center center/cover;
   padding: 30px 0 100px;
@@ -1241,7 +1269,7 @@ html, body,
   border-radius: 50%;
   position: absolute;
   background-color: #ff0000;
-  top: -45%;
+  top: -130px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1275,9 +1303,25 @@ html, body,
   width: 100px;
   margin: 25px 0 0 42px;
 }
+.fiberRailsMainWrap .paasportLearnSection {
+  background-color: #ff0000;
+}
+.fiberRailsMainWrap .paasportLearnSection .btn {
+  background: #f5f5f5;
+}
+.fiberRailsMainWrap .paasportLearnSection ul {
+  padding-top: 15px;
+}
+.fiberRailsMainWrap .paasportLearnSection ul>li {
+  margin-bottom: 30px;
+  max-width: 150px;
+}
 .fiberRailsMainWrap .eRetailerSection {
   padding: 30px 0;
   font-size: 12px;
+}
+.fiberRailsMainWrap .eRetailerSection ul>li {
+  vertical-align: middle;
 }
 .fiberRailsMainWrap .webSolutionSection {
   background-color: #7a7a7a;
@@ -1798,6 +1842,16 @@ ol.lowerRoman {
     max-height: 215px;
   }
   /* Silo SD css end */
+
+  /* Fiberrails page css start */
+  .fiberRailsMainWrap .heroSection .container h4 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .fiberRailsMainWrap .deviceSection .btn-group {
+    bottom: 90px;
+  }
+  /* Fiberrails page css end */
 }
 @media (min-width: 992px) {
   /* Login css start */
@@ -2095,4 +2149,41 @@ ol.lowerRoman {
     padding-left: 30px;
   }
   /* Silo SD css end */
+
+  /* Fiberrails page css start */
+  .fiberRailsMainWrap .deviceSection {
+    text-align: center;
+  }
+  .fiberRailsMainWrap .deviceSection .btn-group {
+    position: relative;
+    width: 80%;
+    bottom: 0;
+  }
+  .fiberRailsMainWrap .deviceSection .btn-group .btn {
+    width: 100%;
+  }
+  .fiberRailsMainWrap .domainSearchSection .input-group {
+    display: block;
+  }
+  .fiberRailsMainWrap .domainSearchSection .input-group .form-control {
+    margin-bottom: 15px;
+  }
+  .fiberRailsMainWrap .integrationSection .heading,
+  .fiberRailsMainWrap .testDriveSection .redBox .heading {
+    font-size: 24px;
+  }
+  .fiberRailsMainWrap .integrationSection h4 {
+    font-size: 14px;
+  }
+  .fiberRailsMainWrap .testDriveSection .redBox {
+    padding: 10px;
+  }
+  .fiberRailsMainWrap .introSection {
+    background-position: center left;
+    padding-bottom: 165px;
+  }
+  .fiberRailsMainWrap .eRetailerSection ul>li {
+    min-height: 70px;
+  }
+  /* Fiberrails page css end */
 }
