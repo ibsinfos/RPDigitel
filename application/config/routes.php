@@ -139,6 +139,7 @@ $route['admin-subscription'] = 'backend/subscription/admin_subscription';
 
 $route['project-list'] = 'backend/project/projectList';
 $route['add-project'] = 'backend/project/addProject';
+$route['chat'] = 'backend/chat/index';
 $route['add-news'] = 'backend/news/add_news';
 $route['add_latest_news'] = 'backend/news/add_latest_news';
 $route['add_featured_news'] = 'backend/news/add_featured_news';

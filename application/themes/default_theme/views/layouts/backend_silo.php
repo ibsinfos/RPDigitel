@@ -48,6 +48,31 @@
         <?php if ($page == 'createpaasport') { ?>
             <link href="<?php echo asset_url() ?>backend/css/demo.css" rel="stylesheet">
         <?php } ?>
+
+<!-- Broadcast menu- Chat application css -->
+    <?php if ($page == 'broadcast') { ?>
+    <link rel="stylesheet" href="<?php echo asset_url() ?>backend/css/firechat.min.css" />
+    <style>
+      #firechat-wrapper {
+     //   height: 475px;
+     //   max-width: 325px;
+        height: 100%;
+        max-width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        margin: 50px auto;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+      //  -webkit-box-shadow: 0 5px 25px #666;
+      //  -moz-box-shadow: 0 5px 25px #666;
+      //  box-shadow: 0 5px 25px #666;
+      }
+    </style>
+        <?php } ?>
+
         <!-- Custom Theme Style -->
         <link href="<?php echo backend_asset_url() ?>build/css/custom.min.css" rel="stylesheet">
         <!-- Custom Style -->
@@ -270,6 +295,262 @@ if ($page == "broadcast") {
     <script type="text/javascript"  >
         var shareModalSendMailURL = "<?php echo base_url() ?>backend/dashboard/sendmail";
     </script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-messaging.js"></script>
+
+<?php if ($page == 'broadcast') { ?>
+    <script src="<?php echo asset_url() ?>backend/js/firebase.js"></script>
+    <script src="<?php echo asset_url() ?>backend/js/firechat.min.js"></script>
+
+      <script type="text/javascript">
+      // Initialize Firebase SDK
+      var config = {
+        <!-- apiKey: "AIzaSyDFlsisAa2yeDhRjSPdoC6Ez0UjOrSf9sc", -->
+        <!-- authDomain: "firechat-demo-app.firebaseapp.com", -->
+        <!-- databaseURL: "https://firechat-demo-app.firebaseio.com" -->
+        
+       // apiKey: "AIzaSyA8lqOQRbs6v5X5RMoUh3YGwWVi3X2tkMw",
+       // authDomain: "broadcast-e9b52.firebaseapp.com",
+        //databaseURL: "https://broadcast-e9b52.firebaseio.com"
+        
+      };
+      
+      firebase.initializeApp(config);
+
+      // Get a reference to the Firebase Realtime Database
+      var chatRef = firebase.database().ref();
+
+      // Create an instance of Firechat
+      var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
+
+      // Listen for authentication state changes
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // If the user is logged in, set them as the Firechat user
+        //chat.setUser(user.uid, "Anonymous" + user.uid.substr(10, 8));
+        chat.setUser('user'+"<?php echo $slug;?>", "<?php echo $slug;?>");
+        //alert("<?php echo $this->session->userdata('user_id');?>");
+        } else {
+          // If the user is not logged in, sign them in anonymously
+          firebase.auth().signInAnonymously().catch(function(error) {
+            console.log("Error signing user in anonymously:", error);
+          });
+        }
+      });
+    </script>
+<?php } ?>
+
+
+
+
+      <script type="text/javascript">
+
+//*******************************************************
+
+
+
+//************************************ Broadcast :Join Group Start *************************
+
+$('#broadcastChatForm').on('click','.join_broadcast_list', function() {
+
+    //$('#message-box-div').css("display","block");;
+
+    broadcast_name=$(this).attr('id');
+    //alert(broadcast_name);
+     readGroupData(broadcast_name);
+
+});
+
+//************************************ Broadcast :Join Group End *************************
+
+
+
+//************************************ Broadcast :Go live Start *************************
+
+$('#chat_broadcast').on('click', function () {
+
+    var userId="<?php echo $this->session->userdata('user_id');?>";
+   //  var userId='190';
+     broadcast_name=$("#broadcast_name").val();
+  // var user_message=$("#user_message").val();
+
+    var config = {
+    apiKey: "AIzaSyA8lqOQRbs6v5X5RMoUh3YGwWVi3X2tkMw",
+    authDomain: "broadcast-e9b52.firebaseapp.com",
+    databaseURL: "https://broadcast-e9b52.firebaseio.com",
+    projectId: "broadcast-e9b52",
+    storageBucket: "broadcast-e9b52.appspot.com",
+    messagingSenderId: "203622783441"
+      };
+
+      if (!firebase.apps.length) {
+      var a=firebase.initializeApp(config);
+    }
+
+    firebase.database();
+
+    var newPostKey = firebase.database().ref().child('chat/'+broadcast_name).push().key;
+
+    var first_msg="User "+userId+" created Broadcast : "+broadcast_name;
+
+    firebase.database().ref('chat/' + broadcast_name+'/'+newPostKey).set({
+        author: userId,
+        message: first_msg
+       // profile_picture : imageUrl
+    });
+
+  //  $('#message_history').append("<br/>user : "+userId+" Message : "+user_message);
+    
+    //$('#broadcast-div').css("display","none");
+
+    $('#broadcast_name').val("");
+
+    $('#broadcast-list').append("<div class='col-md-6 col-sm-6 col-xs-12'><label class='control-label col-md-3 col-sm-3 col-xs-12'>"+broadcast_name+" : <span class='required'></span></label><button type='button' class='btn btn-success join_broadcast_list' id='"+broadcast_name+"'>Join</button></div>");
+
+
+});
+//************************************ Broadcast :Go live End *************************
+
+//************************************ Broadcast :Chat Start *************************
+//$('#send_msg').on('click', function () {
+$("#user_message").keyup(function(event){
+    if(event.keyCode == 13){
+
+    var userId="<?php echo $this->session->userdata('user_id');?>";
+   //  var userId='190';
+    var user_message=$("#user_message").val();
+    
+    var config = {
+    apiKey: "AIzaSyA8lqOQRbs6v5X5RMoUh3YGwWVi3X2tkMw",
+    authDomain: "broadcast-e9b52.firebaseapp.com",
+    databaseURL: "https://broadcast-e9b52.firebaseio.com",
+    projectId: "broadcast-e9b52",
+    storageBucket: "broadcast-e9b52.appspot.com",
+    messagingSenderId: "203622783441"
+      };
+
+      if (!firebase.apps.length) {
+      var a=firebase.initializeApp(config);
+    }
+
+    firebase.database();
+
+    var newPostKey = firebase.database().ref().child('chat/'+broadcast_name).push().key;
+
+    firebase.database().ref('chat/' + broadcast_name+'/'+newPostKey).set({
+        author: userId,
+        message: user_message
+       // profile_picture : imageUrl
+    });
+
+    $('#message_history').append("<br/>user : "+userId+" Message : "+user_message);
+    $('#user_message').val('');
+    updatedUserMessage(broadcast_name);
+
+}
+});
+
+//************************************ Broadcast :Chat End*************************
+
+
+
+//************************************ Broadcast :Chat Group list Start *************************
+
+    var config = {
+        apiKey: "AIzaSyA8lqOQRbs6v5X5RMoUh3YGwWVi3X2tkMw",
+        authDomain: "broadcast-e9b52.firebaseapp.com",
+        databaseURL: "https://broadcast-e9b52.firebaseio.com",
+        projectId: "broadcast-e9b52",
+        storageBucket: "broadcast-e9b52.appspot.com",
+        messagingSenderId: "203622783441"
+          };
+
+    if (!firebase.apps.length) {
+        var a=firebase.initializeApp(config);
+    }
+
+    readUserGroup("<?php echo $this->session->userdata('user_id');?>");
+
+    function readUserGroup(userId) {
+
+        var userId='Q';
+            return firebase.database().ref('/chat').once('value').then(function(snapshot) {
+           
+          // alert(JSON.stringify(snapshot.val()));
+
+            $.each(snapshot.val(), function( index, value ) {
+             
+            $('#broadcast-list').append("<div class='col-md-6 col-sm-6 col-xs-12'><label class='control-label col-md-3 col-sm-3 col-xs-12'>"+index+" : <span class='required'></span></label><button type='button' class='btn btn-success join_broadcast_list' id='"+index+"'>Join</button></div>");
+
+            });
+
+        });
+
+    }
+
+//************************************ Broadcast :Chat Group list End *************************
+
+
+
+//************************************ Broadcast : Fetch Chat history Start *************************
+
+    var config = {
+        apiKey: "AIzaSyA8lqOQRbs6v5X5RMoUh3YGwWVi3X2tkMw",
+        authDomain: "broadcast-e9b52.firebaseapp.com",
+        databaseURL: "https://broadcast-e9b52.firebaseio.com",
+        projectId: "broadcast-e9b52",
+        storageBucket: "broadcast-e9b52.appspot.com",
+        messagingSenderId: "203622783441"
+          };
+
+    if (!firebase.apps.length) {
+        var a=firebase.initializeApp(config);
+    }
+
+   // readUserData("<?php echo $this->session->userdata('user_id');?>");
+
+    function readGroupData(userId) {
+
+       // var userId='Q';
+            return firebase.database().ref('/chat/' + userId).once('value').then(function(snapshot) {
+           
+           // alert(JSON.stringify(snapshot.val()));
+            $('#message_history').html(''); //clear all msgs
+            $.each(snapshot.val(), function( index, value ) {
+              //alert(JSON.stringify(value));
+              //alert(value.author+" msg : "+value.message);
+
+            $('#message_history').append("<br/>user : "+value.author+" Message : "+value.message);
+
+            });
+
+        });
+
+    }
+
+//************************************ Broadcast :Fetch Chat history End*************************
+
+
+
+    function updatedUserMessage(broadcast_name){
+        var starCountRef = firebase.database().ref('chat/' + broadcast_name);
+        starCountRef.on('value', function(snapshot) {
+         // updateStarCount(postElement, snapshot.val());
+        
+         alert(JSON.stringify(snapshot.val()));
+        
+        });
+    }
+
+
+
+//***************************************************************************
+
+</script>
 
 </body>
 </html>
