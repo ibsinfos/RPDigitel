@@ -92,7 +92,7 @@
 						</form>
 						<ul class="list-unstyled">
 							<li class="row">
-								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
+								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php //echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
 								<div class="col-xs-10 col-lg-11">
 									<h5 class="personName">Juliya Anderson <small>January 26, 2016</small></h5>
 									<p>Its about a the news author John snow with that. Hey, tell me something. You’ve got all this money. How come you dress like you’re doing your laundry? Explain that. Leela, Bender, we’re going grave robbing.</p>
@@ -103,10 +103,10 @@
 									<h5 class="personName">Juliya Anderson <small>January 26, 2016</small></h5>
 									<p>Its about a the news author John snow with that. Hey, tell me something. You’ve got all this money. How come you dress like you’re doing your laundry? Explain that. Leela, Bender, we’re going grave robbing.</p>
 								</div>
-								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
+								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php //echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
 							</li>
 							<li class="row">
-								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
+								<div class="col-xs-2 col-lg-1 imageBlock"><img src="<?php //echo asset_url() ?>backend/images/user.png" class="img-responsive img-circle"></div>
 								<div class="col-xs-10 col-lg-11">
 									<h5 class="personName">Juliya Anderson <small>January 26, 2016</small></h5>
 									<p>Its about a the news author John snow with that. Hey, tell me something. You’ve got all this money. How come you dress like you’re doing your laundry? Explain that. Leela, Bender, we’re going grave robbing.</p>
@@ -122,7 +122,7 @@
 			<iframe src="https://rebelute.net/broadcast/chat-hangout/#1" height="500px" width="1080px"></iframe>
 			
 			</div>
-			
+	<!--		<div id="firechat-wrapper"></div>-->
 		</div>
 	</div>
 </div>

@@ -36,7 +36,7 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-sm-offset-1 col-sm-10">
-                            <input type="text" class="signin_input form-control" id="username" name="username" required="required" placeholder="Enter email or username">
+                            <input type="text" class="signin_input form-control" id="userNameEmail" name="userNameEmail" required="required" placeholder="Enter email or username">
                         </div>
                     </div>
                     <div class="row">

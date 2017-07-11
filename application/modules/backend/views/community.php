@@ -466,51 +466,51 @@
             <div class="panel joinCommunity">
                 <h4 class="heading">Join The Community</h4>
                 <form class="">
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <p class="calloutInfo">Username: demo &nbsp; Password: demo </p>
-                    </div>
+                    </div>-->
                     <div class="form-group">
-                        <label class="sr-only" for="userNameEmail">Username Or Email</label>
+                        <label class="sr-only" for="username">Username Or Email</label>
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                            <input type="text" class="form-control" id="userNameEmail" placeholder="Username Or Email">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username Or Email">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="password">Password</label>
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                         </div>
                     </div>
-                    <div class="form-group text-right">
+                    <!--<div class="form-group text-right">
                         <a href="">Forgot your password?</a>
-                    </div>
+                    </div>-->
                     <div class="form-group text-center">
-                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn" id="signin_button">Login</button>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label class="checkbox-inline">
                             <input type="checkbox"> Remember Me
                         </label>
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <ul class="list-unstyled list-inline socialShareWrap">
                             <li>
                                 <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li>
+                           <!-- <li>
                                 <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
-                            </li>
+                            </li>-->
                             <li>
                                 <a href="" class="googlePlus"><i class="fa fa-google-plus"></i></a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a href="" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
                             </li>
                             <li>
                                 <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
-                            </li>
+                            </li>-->
                             <li>
                                 <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
                             </li>
