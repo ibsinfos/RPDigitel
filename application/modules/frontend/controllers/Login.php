@@ -78,8 +78,10 @@ Class Login extends MX_Controller {
         $map['error'] = '';
         $user = array();
         $user = $this->membership_model->get_user_role();
+        //print_r($this->input->post('password'));
         
 	 	$query_result = $this->membership_model->validate_user($user['role']);
+//print_r($query_result);
 		      $_SESSION['user_name'] = $query_result;
 		
         $paasportUser = $this->membership_model->get_paasport_user($user['paasport_user_id']);

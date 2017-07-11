@@ -31,6 +31,15 @@ Class Community extends MX_Controller {
         $events = $this->common_model->getRecords(TABLES::$MST_EVENTS, '*', '', 'id desc');
         $latest_active_users = $this->common_model->getRecords(TABLES::$USERS, 'user_image', array('user_status' => '1'), 'last_visit_date DESC','20');
         
+
+
+         $query_get_country = $this->db->get('country');
+        $data['country_list'] = $query_get_country->result();
+        
+        $this->template->set('country_list', $data['country_list']);
+
+
+
         $this->template->set('communityClass', $this);
         $this->template->set('latest_users', $latest_active_users);
         $this->template->set('events', $events);

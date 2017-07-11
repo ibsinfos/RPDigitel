@@ -32,5 +32,16 @@
 			<script src="<?php echo backend_asset_url() ?>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 			<!-- Custom -->
 			<script src="<?php echo backend_asset_url() ?>/js/community-custom.js"></script>
+
+			<script>
+            var create_member_URL = '<?php echo base_url(); ?>frontend/login/create_member';
+            var checkLoginURL = '<?php echo base_url(); ?>frontend/login/validate_credentials';
+            var createPaasportURL = "<?php echo base_url(); ?>dashboard/createpaasport";
+            var mainDashboardURL = "<?php echo base_url(); ?>main_dashboard";
+            var loginOtpURL = "<?php echo base_url(); ?>otp";
+            var otpRedirectDashboard = "<?php echo base_url(); ?>fiberrails";
+            var resendOtp = '<?php echo base_url(); ?>user/login/send_otp';
+            var verifyOtp = '<?php echo base_url(); ?>user/otp/verify_otp';
+        </script>
 		</body>
 	</html>

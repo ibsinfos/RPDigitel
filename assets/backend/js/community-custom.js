@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	// Sticky Audio player
 	initPlayers($('#player-container').length);
 

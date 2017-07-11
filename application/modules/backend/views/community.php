@@ -463,9 +463,17 @@
             </div>
         </div>
         <div class="col-sm-3">
+
             <div class="panel joinCommunity">
                 <h4 class="heading">Join The Community</h4>
-                <form class="">
+
+                 <div class="row">
+                    <div class="col-sm-12">
+                        <span id="errors" class="redText"></span>
+                    </div>
+                </div>
+
+                <form id="signin_form" method="post">
                     <!--<div class="form-group">
                         <p class="calloutInfo">Username: demo &nbsp; Password: demo </p>
                     </div>-->
@@ -487,7 +495,11 @@
                         <a href="">Forgot your password?</a>
                     </div>-->
                     <div class="form-group text-center">
-                        <button type="submit" class="btn" id="signin_button">Login</button>
+                        <button type="button" class="btn" id="signin_button">Login</button>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="button" class="btn" id="signup_link">Sign Up</button>
                     </div>
                     <!--<div class="form-group">
                         <label class="checkbox-inline">
@@ -518,6 +530,113 @@
                     </div>
                 </form>
             </div>
+
+
+            <div class="panel signUpCommunity" hidden>
+                <h4 class="heading">Join The Community</h4>
+
+               <div class="row">
+                    <div class="col-sm-12">
+                        <span id="signup_errors" class="redText"></span>
+                    </div>
+                </div>
+
+                <form id="signup_form" method="post">
+                    
+                    <div class="form-group">
+                        <label class="sr-only" for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="email_address">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-mail-forward"></i></div>
+                            <input type="text" class="form-control" id="email_address" name="email_address" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="sr-only" for="country">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+                            <select name="country" id="country" class="signin_input form-control input-lg">
+                                <option value="0" label="Select a country" selected="selected">Country</option>
+                                <?php foreach ($country_list as $country) { ?>
+
+                                    <option value="<?= $country->phonecode; ?>" label="<?= $country->nicename; ?>"><?php echo $country->iso . "  +" . $country->phonecode . ""; ?></option>
+
+                                <?php } ?>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+                            <input type="text" class="signin_input form-control input-lg" id="phone_number" name="phone_number" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="confirmpassword">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="button" class="btn" id="signup_button">Sign Up</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" class="btn" id="signin_link">Login</button>
+                    </div>
+                                        <!--<div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>-->
+                    <div class="form-group">
+                        <ul class="list-unstyled list-inline socialShareWrap">
+                            <li>
+                                <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                           <!-- <li>
+                                <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="" class="googlePlus"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <!--<li>
+                                <a href="" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+
 
             <div class="panel activeMembers">
                 <h4 class="heading">Recently Active Members</h4>

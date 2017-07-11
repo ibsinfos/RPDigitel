@@ -621,6 +621,9 @@ body {
   .latestSectionWrap .otherNews img {
     height: 230px;
   }
-  
+  .redText .error{
+    color: #f50707;
+  }
+
   /* community css end */
 }
